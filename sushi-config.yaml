@@ -1,0 +1,32 @@
+# ╭──────────────────────────────────────ImplementationGuide───────────────────────────────────────╮
+# │  The properties below are used to create the ImplementationGuide resource. For a list of       │
+# │  supported properties, see: https://fshschool.org/sushi/configuration/                         │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+id: uv.esavi
+canonical: http://paho.org/esavi
+name: ESAVI
+status: draft
+version: 0.1.0
+fhirVersion: 4.0.1
+copyrightYear: 2021+
+releaseLabel: ci-build
+language: es-AR
+publisher:
+  name: ESAVI - 
+  url: https://covid-19pharmacovigilance.paho.org/resources/updates-on-aefi
+  email:  rizzatodan@paho.org
+
+
+# ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
+# │  To use a provided ig-data/input/includes/menu.xml file, delete the "menu" property below.     │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+menu:
+  Home: index.html
+  Objetivos: objetivos.html
+  Actores: actores.html
+  Operaciones: operaciones.html
+  Artefactos: artifacts.html
+  Recomendaciones: recomendaciones.html
+  Terminologia: terminologia.html
+  Seguridad: seguridad.html
+  Descargas: descargas.html

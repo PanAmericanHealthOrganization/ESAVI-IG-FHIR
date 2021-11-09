@@ -1,0 +1,21 @@
+@startuml
+skinparam defaultFontName Arial
+
+title Interacciones con NOMIVAC
+hide footbox
+participant "CNOM" as Sender
+participant "NOM" as Receiver
+group Registro de Vacuna
+"Sender" --> "Receiver" : POST [url_nom]/Immunization body:[[StructureDefinition-Immunization-ar-core.html]]
+"Receiver" -> "Sender" : response (201 OK) body: Immunization_ar_core_nomivac con ID
+end
+group Consulta por Id
+"Sender" --> "Receiver" : GET [url_ref]/Immunization/[id]
+"Receiver" -> "Sender" : response body: Bundle <{Immunization_ar_core}>
+end
+group Consulta por DNI de Paciente
+"Sender" --> "Receiver" : GET [url_ref]/Immunization?patient=uri_renaper/[dni]
+"Receiver" -> "Sender" : response body: Bundle <{Immunization_ar_core}>
+end
+
+@enduml

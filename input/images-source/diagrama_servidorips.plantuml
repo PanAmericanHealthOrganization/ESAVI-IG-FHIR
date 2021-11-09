@@ -1,0 +1,17 @@
+@startuml
+skinparam defaultFontName Arial
+
+title Consulta Resumen de Historia IPS (Server)
+hide footbox
+participant "IPS" as Sender
+participant "SID" as Receiver
+group Paso 2 - Consulta de Disponibilidad de Resumen
+"Sender" --> "Receiver" : GET [url_dominio_ips]/DocumentReference?subject:Patient.identifier=@dominio_local|@identificador_local&class=https://loinc.org/|60591-5
+"Receiver" -> "Sender" : response body: Bundle <{document_reference_ar_core}>
+end
+group Paso 3 - Obtencion de Resumen
+"Sender" --> "Receiver" : GET [url_dominio_ips]/Bundle/[id_bundle_ips]
+"Receiver" -> "Sender" : response body: {Bundle_ips_ar}
+end
+
+@enduml

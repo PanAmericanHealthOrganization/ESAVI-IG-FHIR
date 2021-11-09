@@ -1,0 +1,17 @@
+@startuml
+skinparam defaultFontName Arial
+
+title Consultas a REFES / Ubicaciones
+hide footbox
+participant "CRF" as Sender
+participant "REF" as Receiver
+group Consulta Directa por ID
+"Sender" --> "Receiver" : GET [url_ref]/Location/[id]
+"Receiver" -> "Sender" : response body: {Location_ar_core}
+end
+group Consulta por Criterio
+"Sender" --> "Receiver" : GET [url_ref]/Location?[criterio]
+"Receiver" -> "Sender" : response body: Bundle <{Organization_ar_core}>
+end
+
+@enduml
