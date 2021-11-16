@@ -32,32 +32,32 @@ i_FechaTomaMuestraConfirmatoria 0..1
 * item[i_AntecedentesPreviosSimilares].linkId = "i_AntecedentesPreviosSimilares"
 * item[i_AntecedentesPreviosSimilares].text = "Antecedentes Previos Similares"
 * item[i_AntecedentesPreviosSimilares].answer.value[x] only Coding
-* item[i_AntecedentesPreviosSimilares].answer.value[x] from RespuestaSiNoNosabeVS
+* item[i_AntecedentesPreviosSimilares].answer.value[x] from respuestaSiNoNosabeVS
 
 * item[i_AntecedentesReaccionesAlergicasOtrasVacunas].linkId = "i_AntecedentesReaccionesAlergicasOtrasVacunas"
 * item[i_AntecedentesReaccionesAlergicasOtrasVacunas].text = "Antecedentes Reacciones Alergicas a Otras Vacunas"
 * item[i_AntecedentesReaccionesAlergicasOtrasVacunas].answer.value[x] only Coding
-* item[i_AntecedentesReaccionesAlergicasOtrasVacunas].answer.value[x] from RespuestaSiNoNosabeVS
+* item[i_AntecedentesReaccionesAlergicasOtrasVacunas].answer.value[x] from respuestaSiNoNosabeVS
 
 * item[i_AntecedentesReaccionesAlergicasMedicamentos].linkId = "i_AntecedentesReaccionesAlergicasMedicamentos"
 * item[i_AntecedentesReaccionesAlergicasMedicamentos].text = "Antecedentes Reacciones Alergicas Medicamentos"
 * item[i_AntecedentesReaccionesAlergicasMedicamentos].answer.value[x] only Coding
-* item[i_AntecedentesReaccionesAlergicasMedicamentos].answer.value[x] from RespuestaSiNoNosabeVS
+* item[i_AntecedentesReaccionesAlergicasMedicamentos].answer.value[x] from respuestaSiNoNosabeVS
 
 * item[i_AntecedentesReaccionesAlergicasMismaVacuna].linkId = "i_AntecedentesReaccionesAlergicasMismaVacuna"
 * item[i_AntecedentesReaccionesAlergicasMismaVacuna].text = "Antecedentes Reacciones Alergicas Misma Vacuna"
 * item[i_AntecedentesReaccionesAlergicasMismaVacuna].answer.value[x] only Coding
-* item[i_AntecedentesReaccionesAlergicasMismaVacuna].answer.value[x] from RespuestaSiNoNosabeVS
+* item[i_AntecedentesReaccionesAlergicasMismaVacuna].answer.value[x] from respuestaSiNoNosabeVS
 
 * item[i_AntecedentesSARSCov2].linkId = "i_AntecedentesSARSCov2"
 * item[i_AntecedentesSARSCov2].text = "Antecedentes SARS COV2"
 * item[i_AntecedentesSARSCov2].answer.value[x] only Coding
-* item[i_AntecedentesSARSCov2].answer.value[x] from RespuestaSiNoNosabeVS
+* item[i_AntecedentesSARSCov2].answer.value[x] from respuestaSiNoNosabeVS
 
 * item[i_Asintomatica].linkId = "i_Asintomatica"
 * item[i_Asintomatica].text = "Asintomatica"
 * item[i_Asintomatica].answer.value[x] only Coding
-* item[i_Asintomatica].answer.value[x] from RespuestaSiNoNosabeVS
+* item[i_Asintomatica].answer.value[x] from respuestaSiNoNosabeVS
 
 * item[i_FechaInicioSintomas].linkId = "i_FechaInicioSintomas"
 * item[i_FechaInicioSintomas].text = "Fecha Inicio Sintomas"

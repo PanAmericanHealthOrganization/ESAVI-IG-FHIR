@@ -1,51 +1,51 @@
 Alias: $v2-0136 = http://terminology.hl7.org/ValueSet/v2-0136
 
-ValueSet: ViaAdministracionMedicamentoVS
-Id: ViaAdministracionMedicamentoVS
+ValueSet: ViaAdminMedicamentoVS
+Id: viaAdminMedicamentoVS
 Description: "Codificacion Estandarizada de vías por las Cuales se Ingresa un Medicamento"
 * include codes from system SCT
 
 ValueSet: DiagComplicacionEmbarazoVS
-Id: DiagComplicacionEmbarazoVS
+Id: diagComplicacionEmbarazoVS
 Description: "Codificacion Estandarizada de diagnóticos de complicaciones de embarazo"
 * include codes from system SCT
 
 
 
 ValueSet: EventoAdversoCodificacionVS
-Id: EventoAdversoCodificacionVS
+Id: eventoAdversoCodificacionVS
 Description: "Codificacion Estandarizada de Evento Adverso"
 * include codes from system http://terminology.hl7.org/CodeSystem/mdr
 * include codes from system http://hl7.org/fhir/sid/icd-10
 
 ValueSet: SustanciaActivaVS
-Id: SustanciaActivaVS
+Id: sustanciaActivaVS
 Description: "Codificación Estandarizda de Sustancia Activa de Medicamento"
 * include codes from system SCT
 * include codes from system ATC
 * include codes from system http://hl7.org/fhir/sid/icd-10
 
 ValueSet: MedicamentoGenericoVS
-Id: MedicamentoGenericoVS
+Id: medicamentoGenericoVS
 Description: "Codificación Estandarizda del Nombre Genéricode Medicamento"
 * include codes from system SCT
 * include codes from system ATC
 
 
 ValueSet: NombreComercialMEdicamentoVS
-Id: NombreComercialMedicamentoVS
+Id: nombreComercialMedicamentoVS
 Description: "Codificación Estandarizda del Nombre Comercial de Medicamento"
 * include codes from system ATC
 
 ValueSet: NombGenericoVacunaVS
-Id: NombGenericoVacunaVS
+Id: nombGenericoVacunaVS
 Description: "Codificación Estandarizda de Nomnbre Genérico de las Vacunas"
 * include codes from system SCT
 * include codes from system ATC
 * include codes from system http://hl7.org/fhir/sid/icd-10
 
 ValueSet: NombreComercialVacunaVS
-Id: NombreComercialVacunaVS
+Id: nombreComercialVacunaVS
 Description: "Codificación Estandarizda del Nombre Comercial Vacuna"
 * include codes from system ATC
 
@@ -53,25 +53,25 @@ Description: "Codificación Estandarizda del Nombre Comercial Vacuna"
 
 
 ValueSet: FormaFarmaceuticaVS
-Id: FormaFarmaceuticaVS
+Id: formaFarmaceuticaVS
 Description: "Codificación Estandarizda de la Forma Farmacéutica de Medicamento"
 * include codes from system ATC
 
 
 ValueSet: EnfermedadesPreviasCodificacionVS
-Id: EnfermedadesPreviasCodificacionVS
+Id: enfermedadesPreviasCodificacionVS
 Description: "Codificación Estandarizada de Diagnósticos"
 * include codes from system http://snomed.info/sct
 
 
 
 ValueSet: RespuestaSiNoNosabeVS
-Id: RespuestaSiNoNosabeVS
+Id: respuestaSiNoNosabeVS
 Description: "Para capturar respuestas simples si/no/no sabe"
 * include codes from system RespuestaSiNoNosabeCS
 
 CodeSystem: RespuestaSiNoNosabeCS
-Id: RespuestaSiNoNosabeCS
+Id: respuestaSiNoNosabeCS
 Title: "Respuestas Si/No/No Sabe"
 Description:  "Respuestas Si/No/No Sabe"
 * #1 "Si"
@@ -79,26 +79,26 @@ Description:  "Respuestas Si/No/No Sabe"
 * #3 "No sabe"
 
 ValueSet: RespuestaVerdaderoFalsoVS
-Id: RespuestaVerdaderoFalsoVS
+Id: respuestaVerdaderoFalsoVS
 Description: "Para capturar respuestas simples Verdadero/Falso"
 * include codes from system RespuestaVerdaderoFalsoCS
 
 CodeSystem: RespuestaVerdaderoFalsoCS
-Id: RespuestaVerdaderoFalsoCS
+Id: respuestaVerdaderoFalsoCS
 Title: "Respuestas Verdadero/Falso"
 Description:  "Respuestas Verdadero/Falso"
 * #1 "Verdadero"
 * #2 "Falso"
 
 ValueSet: GrupoEtnicoVS
-Id: GrupoEtnicoVS
+Id: grupoEtnicoVS
 Title: "Códigos de Grupo Etnico"
 Description:  "Códigos de Grupo Etnico"
 * include codes from system GrupoEtnicoCS
 
 
 CodeSystem: GrupoEtnicoCS
-Id: GrupoEtnicoCS
+Id: grupoEtnicoCS
 Title: "Códigos de Grupo Etnico"
 Description:  "Códigos de Grupo Etnico"
 * #1 "Mestizo"
@@ -110,13 +110,13 @@ Description:  "Códigos de Grupo Etnico"
 * #0 "Otro"
 
 ValueSet: ModoVerificacionVacunaVS
-Id: ModoVerificacionVacunaVS
+Id: modoVerificacionVacunaVS
 Title: "Modos de Verificacion de Vacuna"
 Description:  "Modos de Verificacion de Vacuna"
 * include codes from system ModoVerificacionVacunaCS
 
 CodeSystem: ModoVerificacionVacunaCS
-Id: ModoVerificacionVacunaCS
+Id: modoVerificacionVacunaCS
 Title: "Modo de Verificación de Vacunación Previa"
 Description:  "Modo de Verificación de Vacunación Previa"
 * #1 "Carnet/Registro físico" 
@@ -127,13 +127,13 @@ Description:  "Modo de Verificación de Vacunación Previa"
 * #O "Otro"
 
 ValueSet: ModoConfirmacionInfeccionVS
-Id: ModoConfirmacionInfeccionVS
+Id: modoConfirmacionInfeccionVS
 Title: "Modos de Confirmacion de Infeccion"
 Description: "Modos de Confirmacion de Infeccion"
 * include codes from system ModoConfirmacionInfeccionCS
 
 CodeSystem: ModoConfirmacionInfeccionCS
-Id: ModoConfirmacionInfeccionCS
+Id: modoConfirmacionInfeccionCS
 Title: "Modo de Confirmación de la Infección"
 Description:  "Modo de Confirmación de la Infección"
 * #1 "Solo por las manifestaciones clínicas" 
@@ -143,13 +143,13 @@ Description:  "Modo de Confirmación de la Infección"
 
 
 ValueSet: EventoAdversoVacunaVS
-Id: EventoAdversoVacunaVS
+Id: eventoAdversoVacunaVS
 Title: "Evento Adverso  de Vacuna"
 Description:  "Evento Adverso de Vacuna"
 * include codes from system EventoAdversoVacunaCS
 
 CodeSystem: EventoAdversoVacunaCS
-Id: EventoAdversoVacunaCS
+Id: eventoAdversoVacunaCS
 Title: "Eventos Adversos"
 Description:  "Eventos Adversos"
 * #1 "Fiebre mayor a 38°C"	
@@ -171,13 +171,13 @@ Description:  "Eventos Adversos"
 
 
 ValueSet: ClasificacionDesenlaceVS
-Id: ClasificacionDesenlaceVS
+Id: clasificacionDesenlaceVS
 Title: "Clasificación de Desenlace"
 Description:  "Clasificación de Desenlace"
 * include codes from system ClasificacionDesenlaceCS
 
 CodeSystem: ClasificacionDesenlaceCS
-Id: ClasificacionDesenlaceCS
+Id: clasificacionDesenlaceCS
 Title: "Clasificacion de Desenlace"
 Description:  "Clasificacion de Desenlace"
 * #1 "Recuperado"
@@ -188,24 +188,26 @@ Description:  "Clasificacion de Desenlace"
 * #0 "Desconocido"
 
 ValueSet: InvestigacionTipoVS
-Id: InvestigacionTipoVS
+Id: investigacionTipoVS
 Title: "Tipo de Investigación"
 Description:  "Tipo de Investigación"
 * include codes from system InvestigacionTipoCS
 
 CodeSystem: InvestigacionTipoCS
-Id: InvestigacionTipoCS
+Id: investigacionTipoCS
 Title: "Tipo de Investigación"
 Description:  "Tipo de Investigación"
 * #1 "Concisa"
 * #2 "Completa"
 
 ValueSet: SeccionesNotificacionVS
+Id: seccionesNotificacionVS
 Title: "Conjunto de Valores para las Secciones de la Notificación"
 Description: "Conjunto de Valores para las Secciones de la Notificación"
 * codes from system SeccionesNotificacionCS
 
 CodeSystem: SeccionesNotificacionCS
+Id: seccionesNotificacionCS
 Title: "Códigos de Sección para la Notificación"
 Description: "Códigos de Sección para la Notificación"
 * #s_IdentificacionPersonaAfectada
@@ -235,12 +237,12 @@ Description: "Códigos para las Complicaciones de Embarazo"
 * #05 "Anomalía Congénita"
 
 
-ValueSet: ProfNotificadorVS
+ValueSet: ProfesionalNotificadorVS
 Title: "Conjunto de Valores para las Secciones de la Notificación"
 Description: "Conjunto de Valores para las Secciones de la Notificación"
-* codes from system ProfNotificadorCS
+* codes from system ProfesionalNotificadorCS
 
-CodeSystem: ProfNotificadorCS
+CodeSystem: ProfesionalNotificadorCS
 Title: "Códigos para Profesional Notificador"
 Description: "Códigos para Discriminar la Profesión del Notificador"
 * #1 "Physician"
