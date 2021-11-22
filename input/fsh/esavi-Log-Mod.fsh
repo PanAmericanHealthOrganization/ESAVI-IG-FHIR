@@ -40,22 +40,22 @@ Description: "Modelo Lógico de Notificaciones de Evento Adverso generado eventu
     * etnia 0..1 SU string "Etnia reconcida por el paciente" "Etnia reconocida por el paciente"
 
 * antecedentesMedicos 1..1 BackboneElement "Antecedentes médicos previos identificados por el paciente" "Aquellos antecedentes médicos que el paciente declara como relevantes al momento de declarar ESAVI"
-  * antecedentesEnfermedadesPrevias 1..1 BackboneElement "Antedecentes de enfermedades previas o SARS-Cov2"  "Antedecentes de enfermedades previas o SARS-Cov2"
-    * antecedentesEnfermedades 0..* SU Coding "Listado de enfermedades declaradas por el paciente" "Enfermedades crónicas, mórbidas o co-morbidas declaradas por el pacientes"
-    * antecedentesEnfermedades from EnfermedadesPreviasCodificacionVS (required)
-
-    * antecedentesSarsCov2 1..1 SU code "Declaración de haber tenido Covid-19" "Declaración si paciente ha tenido Covid-19"
-    * antecedentesSarsCov2 from RespuestaSiNoNosabeVS
+  * antecedentesEnfermedadesPrevias 1..* BackboneElement "Antedecentes de enfermedades previas o SARS-Cov2"  "Antedecentes de enfermedades previas o SARS-Cov2"
+    * descripcionEnfPrevia 1..1 SU string "Descripción de la enfermedad notificada" "Definición en texto de la enfermedad notificada"
+    * codigoMedraEnfPrevia 0..1 SU Coding "Código del Antedente de la enfermedad notificada" "Enfermedad notificada en MEDRA"
+    * codigoMedraEnfPrevia from http://terminology.hl7.org/CodeSystem/mdr (required)
+    * otrosCodigosEnfPrevia 0..1 SU Coding "Otro Código de los antecedentes de enfermedad notificada" "Código SCT, CIE-X de la enfermedad notificada" 
+    * otrosCodigosEnfPrevia from EnfermedadesPreviasCodificacionVS (required)
 
   * antecedentesEventosAdversos 0..1 BackboneElement "Declaración de existencia de eventos adversos previos"  "Declaración de existencia de eventos adversos previos" 
-    * antecedentesVacuna 1..1 SU Coding "Declaración de antecedentes de Eventos Adversos con vacunas si|no|desconoce" "Declaración de antecedentes de Eventos Adversos con vacunas si|no|desconoce" 
-    * antecedentesVacuna from RespuestaSiNoNosabeVS (required)
+    * antecedentesAdvVacunas 1..1 SU Coding "Declaración de antecedentes de Eventos Adversos con vacunas si|no|desconoce" "Declaración de antecedentes de Eventos Adversos con vacunas si|no|desconoce" 
+    * antecedentesAdvVacunas from RespuestaSiNoNosabeVS (required)
+   
+    * antecedentesAdvMedicamentos 1..1 SU Coding "Declaración de antecedentes de Eventos Adversos con medicamentos si|no|desconoce" "Declaración de antecedentes de Eventos Adversos con medicamentos" 
+    * antecedentesAdvMedicamentos from RespuestaSiNoNosabeVS (required)
     
-    * antecedentesEventosMedicamentos 1..1 SU Coding "Declaración de antecedentes de Eventos Adversos con medicamentos si|no|desconoce" "Declaración de antecedentes de Eventos Adversos con medicamentos" 
-    * antecedentesEventosMedicamentos from RespuestaSiNoNosabeVS (required)
-    
-    * antecedentesEventosMismaVacuna 1..1 SU Coding "Declaración de antecedentes de Eventos Adversos con misma vacuna si|no|desconoce" "Declaración de antecedentes de Eventos Adversos con misma vacuna si|no|desconoce" 
-    * antecedentesEventosMismaVacuna from RespuestaSiNoNosabeVS (required)
+    * antecedentesAdvMismaVacuna 1..1 SU Coding "Declaración de antecedentes de Eventos Adversos con misma vacuna si|no|desconoce" "Declaración de antecedentes de Eventos Adversos con misma vacuna si|no|desconoce" 
+    * antecedentesAdvMismaVacuna from RespuestaSiNoNosabeVS (required)
 
   * antecedentesSarsCov2 0..* BackboneElement "Antecedentes que Paciente ha padecido COVID-19" "Antecedentes relacionados con COVID-19 del paciente y datos relacionados"
     * asintomaticoSars 0..1 SU code "Covid-19 asintomatico?" "Covid-19 asintomatico?"
@@ -69,11 +69,15 @@ Description: "Modelo Lógico de Notificaciones de Evento Adverso generado eventu
 
 * antecedentesFarmacosVacunas 0..* BackboneElement "Antecedentes si el paciente consume fármcos durante ESAVI o ha recibido otra vacunas en los ultimos 30 días previos a la vacuna con sospecha de generar ESAVI" "Antecedentes si el paciente consume fármcos durante ESAVI o ha recibido otra vacunas en los ultimos 30 días previos a la vacuna con sospecha de generar ESAVI"
   * medicamento 0..* BackboneElement "Antecedentes de medicamentos que el paciente consume al momento de generar ESAVI" "Listado de medicamentos consumidos al generar ESAVI"
- 
+    * descripcionMedicamento 1..1 SU string "Descripción del medicamento consumido" "Decripción en Texto Libre"
+    * codigoMedicamento 0..1 SU Coding "Código WHO del medicamento consumido por el paciente" "Código en WhoDrugs"
+    * codigoMedicamento from MedicamentoGenericoVS
+    * otroCodigoMedicamento 0..1 Coding "Otro código de sistema distinto a WhoDrugs" "Código de otro sistema para notificar medicamentos"
+    * otroCodigoMedicamento from MedicamentoOtroVS
+    
     * sustanciaActiva 0..* SU Coding "Descripción de la o las susbstancias activas del medicamento consumido" "Clasificación en terminología de cada sustancia activa del medicamento"
     * sustanciaActiva from   SustanciaActivaVS (example)     
-    * sustanciaActiva ^comment = "Debe estar este dato o el Nombre Genérico o el Nombre Comercial"
-    
+       
     * nombreGenerico 0..1 SU Coding "Nombre Genérico del Medicamento SNOMED-CT|WHODrugs" "Nombre Genérico del medicamento en codificación"
     * nombreGenerico ^comment = "Debe estar este dato o el Nombre Genérico o el Nombre Comercial"
     * nombreGenerico from MedicamentoGenericoVS (example)
@@ -86,15 +90,11 @@ Description: "Modelo Lógico de Notificaciones de Evento Adverso generado eventu
     * formaFarmacologica 0..1 BackboneElement "Forma Farmacéutica del Medicamento" "Forma Famrmaceutica descrita en la forma, Dosis, Via de Administración y Fecha de Inicio"
       * forma 0..1 SU Coding "Forma Farmaceutica" "Forma faracéutia en código y glosa"
       * forma from FormaFarmaceuticaVS
-      * dosisForma 0..1 SU Quantity "Numero de dosis consumidad al momento del ESAVI" "Cantidad de dosis medicadas consumidas al momento de generar el ESAVI"
+      
       * viaAdministracion 0..1 SU Coding "Vía mediante la cual el medicamento ha sido administrado al paciente" "Vía determinada por medio de codificación"
       * viaAdministracion from ViaAdminMedicamentoVS (example)
-      * fechaInicioConsumo 0..1 SU date "Fecha en la cual se inicio el consumo del medicamento indicado" "Fecha en la cual se inicio el consumo del medicamento indicado"
       
- 
-  * vacunasPrevias 1..1 BackboneElement "Consulta si se han colocado otras vacunas 30 días previos a la supuesta que desencadenó ESAVI" "Consulta previa sobre vacunas colocadas 30 días antes"
-    * consultaVacunasPrev 1..1 SU boolean "Consulta por vacunas previas en 30 días o menos colocadas" "Consulta por vacunas previas en 30 días o menos colocadas"
-
+  
   * vacunasUltimos30Dias 0..* BackboneElement "Descripción de Vacunas colocadas hast 30 días previos a ESAVI" "Descripción de Vacunas colocadas hast 30 días previos a ESAVI"
     * vacunasAdministradas 0..* SU string "Nombre de Vacunas Administradas según paciente" "Debe ser aquella que el paciente describe"
     * mecanismoVerificacion 0..1 SU Coding "Código del mecanismo de verificación de vacuna colocada" "Código del mecanismo de verificación de vacuna colocada"
@@ -108,10 +108,11 @@ Description: "Modelo Lógico de Notificaciones de Evento Adverso generado eventu
   * direccionVacunatorio from DirOrgNotiVS (required)
   
   * datosESAVI 1..* BackboneElement "Datos del ESAVI generado y la relevancia de este" "Datos del ESAVI generado y la relevancia de este"
-    * eventosAdversosReacciones 1..1 SU Coding "Eventos y reacciónes manifestados por el paciente para el ESAVI descrito" "Eventos y reacciónes manifestados por el paciente para el ESAVI descrito. Su Set de Valores debe ser determinado"
-    * eventosAdversosReacciones from EventoAdversoVacunaVS 
-    * eventoAdversoPrincpal 1..1 SU boolean "Determinación si el Evento descrito es principal o no" "Determinación si el Evento descrito es principal o no"
-    * fechaHoraESAVI 1..1 SU dateTime "Hora y fecha en la cual sucedió el ESAVI Reportado" "Hora y fecha en la cual sucedió el ESAVI Reportado"
+    * esaviReacciones 1..1 SU string "Eventos y reacciónes manifestados por el paciente para el ESAVI descrito" "Eventos y reacciónes manifestados por el paciente para el ESAVI descrito. en texto libre"
+    * esaviMedra 0..1 SU Coding "Código Medra de la reacción adversa generada por la vacuna" "Reacción Adversa en Código Medra" 
+    * esaviMedra from EsaviMedraVS (required)
+    * esaviOtroCodigo 0..1 SU Coding "Código no Medra de la reacción adversa generada por la vacuna" "Reacción Adversa en Código no Medra" 
+    * esaviOtroCodigo from EsaviOtroVS (example)
 
   * embarazoESAVI 0..1 BackboneElement "Datos relacionados con paciente embarazada al momento de generar ESAVI" "Datos relacionados con paciente embarazada al momento de generar ESAVI"
     * embarazoDuranteVacuna 1..1 SU Coding "Consulta sobre la condición de embarazo al vacunarse" "Condición de Embarazo al momento de vacunarse" 
@@ -125,11 +126,12 @@ Description: "Modelo Lógico de Notificaciones de Evento Adverso generado eventu
 
   * complicacionesEmbarazo 0..* BackboneElement "Descripción de las complicaciones sufridas durante el embarazo" "Descripción de las complicaciones sufridas durante el embarazo"
     * complicacionDuranteEmbarazo 1..1 SU Coding "Descripción de la complicación" "Uso de codificación y glosa para describir la complicación al embarazo"
-    * complicacionDuranteEmbarazo from ComplicacionEmbarazoVS
-    * diagnosticoComplicacion 1..1 SU Coding "Diagnóstico confirmado de la complicación al embarazo" "Código y glosa de complicación al embarazo"
-    * diagnosticoComplicacion from DiagComplicacionEmbarazoVS
-    * descripcionComplicacion 1..1 SU string "Descripción en texto libre de la complicación sufrida durante el embarazo" "Descripción en texto libre de la complicación sufrida durante el embarazo"
-      
+    * complicacionDuranteEmbarazo from ComplicacionEmbarazoVS (required)
+    * complicacionEmbarazo 1..1 SU string "Descripción de la Complicación" "Descripción de la complicación en texto libre"
+    * complicacionEmbarazoMedra 0..1 SU Coding "Código Medra Confirmación Embarazo" "Código solo en Medra"
+    * complicacionEmbarazoMedra from ComplicacionEmbarazoMedraVS (required)
+    * complicacionEmbarazoOtro 0..1 SU string "Código No Medra Confirmación Embarazo" "Códigos que no sean  Medra"
+    * complicacionEmbarazoOtro from ComplicacionEmbarazoOtroVS (example)
 
   * desenlaceESAVI 1..1 BackboneElement "Determinación del estado de gravedad del ESAVI" "Determinación en base a una serie de categorías de la gravedad del ESAVI"
     * tipoGravedad 1..1 SU boolean "Definición si el ESAVI es de Gravedad o No" "Es Grave o no el ESAVI Reportado"
@@ -157,16 +159,13 @@ Description: "Modelo Lógico de Notificaciones de Evento Adverso generado eventu
     
   
 * registroVacunaCovidOtras 1..* BackboneElement "Registro de la Vacuna COVID19 colocada y de otras colocadas al mismo tiempo" "Registro de las vacunas colocadas junto a la de COVID-19"
-  * nombreGenerico 0..1 SU Coding "Nombre Genérico de la Vacuna" "Nombre Genérico de la vacuna según sistema de codificación"
-  * nombreGenerico from NombGenericoVacunaVS (example)
-  * nombreGenerico ^comment = "Debe ir Nombre Genérico o Nombre no Clasificado o Nombre Comercial, al menos uno de ellos"
-  * nombreNoClasificado 0..1 SU string "Descripción del nombre no clasificado de la vacuna" "Descripción del nombre no clasificado de la vacuna"
-  * nombreNoClasificado ^comment = "Debe ir Nombre Genérico o Nombre no Clasificado o Nombre Comercial, al menos uno de ellos"
-  * nombreComercial 0..1 SU Coding "Nombre Comercial de la Vacuna" "Nombre Comercial de la vacuna según sistema de codificación"
-  * nombreComercial from NombreComercialVacunaVS (example)
-  * nombreComercial ^comment = "Debe ir Nombre Genérico o Nombre no Clasificado o Nombre Comercial, al menos uno de ellos"
-  * fabricanteVacuna 0..1 SU string "Fabricante de la vacuna colocada" "Fabricante de la vacuna colocada"
-  * fechaVacunacion 1..1 SU date "Fecha en la cual se colocó la vacuna que habria generado ESAVI" "Fecha de colocación de vacuna"
+  * descripcionVacuna 1..1 SU string "Descripción de la vacuna sospecha de generar ESAVI" "Descripción de la Vacuna en Texto Libre"
+  * codigoWhoVacuna 0..1 SU Coding "Código WhoDrugs de la Vacuna" "Código WhoDrugs"
+  * codigoWhoVacuna from CodigoWhoVacunaVS
+  * codigoOtroVacuna 0..1 SU Coding "Código no WhoDrugs de la Vacuna" "Código  que no sea WhoDrugs"
+  * codigoOtroVacuna from CodigoOtroVacunaVS
+
+  * fechaHoraVacunacion 1..1 SU dateTime "Fecha y hora en la cual se colocó la vacuna que habria generado ESAVI" "Fecha de colocación de vacuna"
   * dosisVacuna 1..1 SU integer "1a, 2a o 3ra dosis" "Núnero de la dósis colocada" 
   * numeroLote 1..1 SU string "Númer del Lote de la Vacuna colocada" "Númer del Lote de la Vacuna colocada"
   * fechaVencimientoVacuna 1..1 SU date "Fecha de Vencimiento de vacuna" "Fecha de Vencimiento de vacuna"

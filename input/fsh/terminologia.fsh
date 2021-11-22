@@ -5,17 +5,28 @@ Id: ViaAdminMedicamentoVS
 Description: "Codificacion Estandarizada de vías por las Cuales se Ingresa un Medicamento"
 * include codes from system SCT
 
-ValueSet: DiagComplicacionEmbarazoVS
-Id: DiagComplicacionEmbarazoVS
+ValueSet: ComplicacionEmbarazoMedraVS
+Id: ComplicacionEmbarazoMedraVS
 Description: "Codificacion Estandarizada de diagnóticos de complicaciones de embarazo"
+* include codes from system http://terminology.hl7.org/CodeSystem/mdr
+
+ValueSet: ComplicacionEmbarazoOtroVS
+Id: ComplicacionEmbarazoOtroVS
+Description: "Codificacion Estandarizada de diagnóticos de complicaciones de embarazo"
+* include codes from system http://hl7.org/fhir/sid/icd-10
 * include codes from system SCT
 
-
-
-ValueSet: EventoAdversoCodificacionVS
-Id: EventoAdversoCodificacionVS
-Description: "Codificacion Estandarizada de Evento Adverso"
+ValueSet: EsaviMedraVS
+Id: EsaviMedraVS
+Description: "Codificacion Estandarizada de Evento Adverso en Medra"
 * include codes from system http://terminology.hl7.org/CodeSystem/mdr
+
+
+ValueSet: EsaviOtroVS
+Id: EsaviOtroVS
+Description: "Codificacion Estandarizada de Evento Adverso en otro sistema que no sea Medra"
+* include codes from system SCT
+* include codes from system ATC
 * include codes from system http://hl7.org/fhir/sid/icd-10
 
 ValueSet: SustanciaActivaVS
@@ -28,8 +39,13 @@ Description: "Codificación Estandarizda de Sustancia Activa de Medicamento"
 ValueSet: MedicamentoGenericoVS
 Id: MedicamentoGenericoVS
 Description: "Codificación Estandarizda del Nombre Genéricode Medicamento"
-* include codes from system SCT
 * include codes from system ATC
+* include codes from system http://hl7.org/fhir/sid/icd-10
+
+ValueSet: MedicamentoOtroVS
+Id: MedicamentoOtroVS
+Description: "Codificación Estandarizda del Nombre Genéricode Medicamento"
+* include codes from system SCT
 
 
 ValueSet: NombreComercialMEdicamentoVS
@@ -37,8 +53,14 @@ Id: NombreComercialMedicamentoVS
 Description: "Codificación Estandarizda del Nombre Comercial de Medicamento"
 * include codes from system ATC
 
-ValueSet: NombGenericoVacunaVS
-Id: NombGenericoVacunaVS
+ValueSet: CodigoWhoVacunaVS
+Id: CodigoWhoVacunaVS
+Description: "Codificación Estandarizda de Nomnbre Genérico de las Vacunas"
+* include codes from system http://who-umc.org. 
+
+
+ValueSet: CodigoOtroVacunaVS
+Id: CodigoOtroVacunaVS
 Description: "Codificación Estandarizda de Nomnbre Genérico de las Vacunas"
 * include codes from system SCT
 * include codes from system ATC
