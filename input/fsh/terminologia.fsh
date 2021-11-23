@@ -2,28 +2,33 @@ Alias: $v2-0136 = http://terminology.hl7.org/ValueSet/v2-0136
 
 ValueSet: ViaAdminMedicamentoVS
 Id: ViaAdminMedicamentoVS
+Title: "EsaviViaAdministracionMedicamentos"
 Description: "Codificacion Estandarizada de vías por las Cuales se Ingresa un Medicamento"
 * include codes from system SCT
 
 ValueSet: ComplicacionEmbarazoMedraVS
 Id: ComplicacionEmbarazoMedraVS
+Title: "EsaviComplicacionEmbarzoMedra"
 Description: "Codificacion Estandarizada de diagnóticos de complicaciones de embarazo"
 * include codes from system http://terminology.hl7.org/CodeSystem/mdr
 
 ValueSet: ComplicacionEmbarazoOtroVS
 Id: ComplicacionEmbarazoOtroVS
+Title: "EsavoComplicacionEmbarazoOtroVS "
 Description: "Codificacion Estandarizada de diagnóticos de complicaciones de embarazo"
 * include codes from system http://hl7.org/fhir/sid/icd-10
 * include codes from system SCT
 
 ValueSet: EsaviMedraVS
 Id: EsaviMedraVS
+Title: "EsaviMedra"
 Description: "Codificacion Estandarizada de Evento Adverso en Medra"
 * include codes from system http://terminology.hl7.org/CodeSystem/mdr
 
 
 ValueSet: EsaviOtroVS
 Id: EsaviOtroVS
+Title: "EsaviOtrosVS"
 Description: "Codificacion Estandarizada de Evento Adverso en otro sistema que no sea Medra"
 * include codes from system SCT
 * include codes from system ATC
@@ -31,6 +36,7 @@ Description: "Codificacion Estandarizada de Evento Adverso en otro sistema que n
 
 ValueSet: SustanciaActivaVS
 Id: SustanciaActivaVS
+Title: "EsaviSustanciaActivaVS"
 Description: "Codificación Estandarizda de Sustancia Activa de Medicamento"
 * include codes from system SCT
 * include codes from system ATC
@@ -38,29 +44,34 @@ Description: "Codificación Estandarizda de Sustancia Activa de Medicamento"
 
 ValueSet: MedicamentoGenericoVS
 Id: MedicamentoGenericoVS
+Title: "EsaviMedicamentoGenericoVS"
 Description: "Codificación Estandarizda del Nombre Genéricode Medicamento"
 * include codes from system ATC
 * include codes from system http://hl7.org/fhir/sid/icd-10
 
 ValueSet: MedicamentoOtroVS
 Id: MedicamentoOtroVS
+Title: "EsaviMedicamentoOtroVS"
 Description: "Codificación Estandarizda del Nombre Genéricode Medicamento"
 * include codes from system SCT
 
 
 ValueSet: NombreComercialMEdicamentoVS
 Id: NombreComercialMedicamentoVS
+Title: "EsaviNombreComercialMedicamentoVS"
 Description: "Codificación Estandarizda del Nombre Comercial de Medicamento"
 * include codes from system ATC
 
 ValueSet: CodigoWhoVacunaVS
 Id: CodigoWhoVacunaVS
+Title: "EsaviCodigoWhoVacunaVS"
 Description: "Codificación Estandarizda de Nomnbre Genérico de las Vacunas"
 * include codes from system http://who-umc.org. 
 
 
 ValueSet: CodigoOtroVacunaVS
 Id: CodigoOtroVacunaVS
+Title: "EsaviCodigoWhoVacunaVS"
 Description: "Codificación Estandarizda de Nomnbre Genérico de las Vacunas"
 * include codes from system SCT
 * include codes from system ATC
@@ -68,6 +79,7 @@ Description: "Codificación Estandarizda de Nomnbre Genérico de las Vacunas"
 
 ValueSet: NombreComercialVacunaVS
 Id: NombreComercialVacunaVS
+Title: "EsaviNombreComercialVacunaVS"
 Description: "Codificación Estandarizda del Nombre Comercial Vacuna"
 * include codes from system ATC
 
@@ -76,12 +88,14 @@ Description: "Codificación Estandarizda del Nombre Comercial Vacuna"
 
 ValueSet: FormaFarmaceuticaVS
 Id: FormaFarmaceuticaVS
+Title: "EsaviFormaFarmaceuticaVS"
 Description: "Codificación Estandarizda de la Forma Farmacéutica de Medicamento"
 * include codes from system ATC
 
 
 ValueSet: EnfermedadesPreviasCodificacionVS
 Id: EnfermedadesPreviasCodificacionVS
+Title: "EsaviEnfermedadesPreviasCodificacionVS"
 Description: "Codificación Estandarizada de Diagnósticos"
 * include codes from system http://snomed.info/sct
 
@@ -89,12 +103,13 @@ Description: "Codificación Estandarizada de Diagnósticos"
 
 ValueSet: RespuestaSiNoNosabeVS
 Id: RespuestaSiNoNosabeVS
+Title: "EsaviRespuestaSiNoNosabeVS"
 Description: "Para capturar respuestas simples si/no/no sabe"
 * include codes from system RespuestaSiNoNosabeCS
 
 CodeSystem: RespuestaSiNoNosabeCS
 Id: RespuestaSiNoNosabeCS
-Title: "Respuestas Si/No/No Sabe"
+Title: "EsaviRespuestasSiNoNoSabe"
 Description:  "Respuestas Si/No/No Sabe"
 * #1 "Si"
 * #2 "No"
@@ -102,6 +117,7 @@ Description:  "Respuestas Si/No/No Sabe"
 
 ValueSet: RespuestaVerdaderoFalsoVS
 Id: RespuestaVerdaderoFalsoVS
+Title: "EsaviRespuestaVerdaderoFalsoVS"
 Description: "Para capturar respuestas simples Verdadero/Falso"
 * include codes from system RespuestaVerdaderoFalsoCS
 
@@ -133,7 +149,7 @@ Description:  "Códigos de Grupo Etnico"
 
 ValueSet: ModoVerificacionVacunaVS
 Id: ModoVerificacionVacunaVS
-Title: "Modos de Verificacion de Vacuna"
+Title: "EsaviModoVerificacionVacunaVS"
 Description:  "Modos de Verificacion de Vacuna"
 * include codes from system ModoVerificacionVacunaCS
 
@@ -150,7 +166,7 @@ Description:  "Modo de Verificación de Vacunación Previa"
 
 ValueSet: ModoConfirmacionInfeccionVS
 Id: ModoConfirmacionInfeccionVS
-Title: "Modos de Confirmacion de Infeccion"
+Title: "EsaviModoConfirmacionInfeccionVS"
 Description: "Modos de Confirmacion de Infeccion"
 * include codes from system ModoConfirmacionInfeccionCS
 
@@ -166,7 +182,7 @@ Description:  "Modo de Confirmación de la Infección"
 
 ValueSet: EventoAdversoVacunaVS
 Id: EventoAdversoVacunaVS
-Title: "Evento Adverso  de Vacuna"
+Title: "EsaviEventoAdversoVacunaVS"
 Description:  "Evento Adverso de Vacuna"
 * include codes from system EventoAdversoVacunaCS
 
@@ -194,7 +210,7 @@ Description:  "Eventos Adversos"
 
 ValueSet: ClasificacionDesenlaceVS
 Id: ClasificacionDesenlaceVS
-Title: "Clasificación de Desenlace"
+Title: "EsaviClasificacionDesenlaceVS"
 Description:  "Clasificación de Desenlace"
 * include codes from system ClasificacionDesenlaceCS
 
@@ -211,7 +227,7 @@ Description:  "Clasificacion de Desenlace"
 
 ValueSet: InvestigacionTipoVS
 Id: InvestigacionTipoVS
-Title: "Tipo de Investigación"
+Title: "EsaviInvestigacionTipoVS"
 Description:  "Tipo de Investigación"
 * include codes from system InvestigacionTipoCS
 
@@ -224,7 +240,7 @@ Description:  "Tipo de Investigación"
 
 ValueSet: SeccionesNotificacionVS
 Id: SeccionesNotificacionVS
-Title: "Conjunto de Valores para las Secciones de la Notificación"
+Title: "EsaviSeccionesNotificacionVS"
 Description: "Conjunto de Valores para las Secciones de la Notificación"
 * codes from system SeccionesNotificacionCS
 
@@ -245,7 +261,7 @@ Description: "Códigos de Sección para la Notificación"
 * #s_Conclusiones
 
 ValueSet: ComplicacionEmbarazoVS
-Title: "Conjunto de Valores para la sección de Complicación de Embarazo"
+Title: "EsaviComplicacionEmbarazoVS"
 Description: "Conjunto de Valores para la Sección de Complicaciones Embarazo ESAVI"
 * codes from system ComplicacionEmbarazCS
 
@@ -260,7 +276,7 @@ Description: "Códigos para las Complicaciones de Embarazo"
 
 
 ValueSet: ProfesionalNotificadorVS
-Title: "Conjunto de Valores para las Secciones de la Notificación"
+Title: "EsaviProfesionalNotificadorVS"
 Description: "Conjunto de Valores para las Secciones de la Notificación"
 * codes from system ProfesionalNotificadorCS
 
@@ -275,7 +291,7 @@ Description: "Códigos para Discriminar la Profesión del Notificador"
 
 
 ValueSet: DirOrgNotiVS
-Title: "Conjunto de valores de Dirección"
+Title: "EsaviDirOrgNotiVS"
 Description: "Conjunto de Valores para dirección según OPS"
 * codes from system DirOrgNotiCS
 
