@@ -1,5 +1,3 @@
-Alias: $questionnaire-item-control = http://hl7.org/fhir/questionnaire-item-control
-
 Instance: ejemploQuestionnaireEsavi
 Title: "Ejemplo Cuestionario"
 Description: "Description"
