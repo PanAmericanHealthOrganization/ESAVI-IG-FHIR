@@ -145,6 +145,18 @@ Title: "ESAVIQuestionnaire2"
     nombreComercial 0..* and
     formaFarmacologica 0..*
 
+
+//* item[antecedentesFarmacosVacunas].item[medicamento].item[formaFarmacologica].item ^slicing.discriminator.type = #value
+//* item[antecedentesFarmacosVacunas].item[medicamento].item[formaFarmacologica].item ^slicing.discriminator.path = "linkId"
+//* item[antecedentesFarmacosVacunas].item[medicamento].item[formaFarmacologica].item ^slicing.rules = #open
+//* item[antecedentesFarmacosVacunas].item[medicamento].item[formaFarmacologica].item MS
+/*
+* item[antecedentesFarmacosVacunas].item[medicamento].item[formaFarmacologica].item contains
+    forma 0..* and
+    dosisForma 0..* and
+    viaAdministracion 0..* and
+    fechaInicioConsumo 0..*
+*/
 * item[antecedentesFarmacosVacunas].item[consultaVacunasPrev].item ^slicing.discriminator.type = #value
 * item[antecedentesFarmacosVacunas].item[consultaVacunasPrev].item ^slicing.discriminator.path = "linkId"
 * item[antecedentesFarmacosVacunas].item[consultaVacunasPrev].item ^slicing.rules = #open
@@ -159,3 +171,39 @@ Title: "ESAVIQuestionnaire2"
     mecanismoVerificacion 0..* and
     otroMecanismoVerificacion 0..* and
     vacunatorioVacunaPrevia 0..*
+
+
+* item[registroESAVI].item ^slicing.discriminator.type = #value
+* item[registroESAVI].item ^slicing.discriminator.path = "linkId"
+* item[registroESAVI].item ^slicing.rules = #open
+* item[registroESAVI].item MS
+* item[registroESAVI].item contains
+    direccionVacunatorio 0..* and
+    datosESAVI 0..* and
+    embarazoESAVI 0..* and
+    complicacionesEmbarazo  0..* and
+    desenlaceESAVI 0..*
+* item[registroESAVI].item[direccionVacunatorio].item ^slicing.discriminator.type = #value
+* item[registroESAVI].item[direccionVacunatorio].item ^slicing.discriminator.path = "linkId"
+* item[registroESAVI].item[direccionVacunatorio].item ^slicing.rules = #open
+* item[registroESAVI].item[direccionVacunatorio].item MS
+
+* item[registroESAVI].item[datosESAVI].item ^slicing.discriminator.type = #value
+* item[registroESAVI].item[datosESAVI].item ^slicing.discriminator.path = "linkId"
+* item[registroESAVI].item[datosESAVI].item ^slicing.rules = #open
+* item[registroESAVI].item[datosESAVI].item MS
+* item[registroESAVI].item[datosESAVI].item contains
+    eventosAdversosReacciones 0..* and
+    eventoAdversoPrincpal  0..* and
+    fechaHoraESAVI 0..* 
+
+* item[registroESAVI].item[embarazoESAVI].item ^slicing.discriminator.type = #value
+* item[registroESAVI].item[embarazoESAVI].item ^slicing.discriminator.path = "linkId"
+* item[registroESAVI].item[embarazoESAVI].item ^slicing.rules = #open
+* item[registroESAVI].item[embarazoESAVI].item MS
+* item[registroESAVI].item[embarazoESAVI].item contains
+    embarazoDuranteVacuna 0..* and
+    embarazoAlDesarrolloESAVI  0..* and
+    fechaUltimaRegla 0..* and
+    fechaParto 0..* and
+    monitoreoPosteriorVacuna 0..*
