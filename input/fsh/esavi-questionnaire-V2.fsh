@@ -8,8 +8,226 @@ Usage: #example
 * meta.profile = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire|2.7"
 * meta.tag.code = #"lformsVersion: 29.2.1"
 * status = #draft
-* item[0].type = #group
 
+// extension para respuesta condicionada de fecha para fechaConsulta
+* extension[+].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-constraint" 
+* extension[=].extension[0].url = "key"
+* extension[=].extension[=].valueId = "ExFechaCon"
+
+* extension[=].extension[+].url = "severity"
+* extension[=].extension[=].valueCode = #warning 
+
+* extension[=].extension[+].url = "human"
+* extension[=].extension[=].valueString = "Control de que la fecha de Consulta no sea menor que la de nacimiento" 
+
+* extension[=].extension[+].url = "expression"
+* extension[=].extension[=].valueString =  "item.where(linkId='datosNotificacionGeneral').item.where(linkId='fechas').item.where(linkId='fechaConsulta').answer.where(value >= item.where(linkId='datosNotificacionGeneral').item.where(linkId='datosPacienteCaso').item.where(linkId='datosPaciente').item.where(linkId='fechaNacimiento').answer).exists()"
+
+* extension[=].extension[+].url = "location"
+* extension[=].extension[=].valueString = "item.item.where(linkId='fechaConsulta').answer.value"
+//  
+
+// extension para respuesta condicionada de fecha para fechaNotificacion
+* extension[+].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-constraint" 
+* extension[=].extension[0].url = "key"
+* extension[=].extension[=].valueId = "ExFechaNot"
+
+* extension[=].extension[+].url = "severity"
+* extension[=].extension[=].valueCode = #warning 
+
+* extension[=].extension[+].url = "human"
+* extension[=].extension[=].valueString = "Control de que la fecha de Notificación no sea menor que la fecha de Consulta" 
+
+* extension[=].extension[+].url = "expression"
+* extension[=].extension[=].valueString =  "item.where(linkId='datosNotificacionGeneral').item.where(linkId='fechas').item.where(linkId='fechaNotificacion').answer.where(value >= item.where(linkId='datosNotificacionGeneral').item.where(linkId='fechas').item.where(linkId='fechaConsulta').answer).exists()"
+
+* extension[=].extension[+].url = "location"
+* extension[=].extension[=].valueString = "item.item.where(linkId='fechaNotificacion').answer.value"
+// 
+
+// extension para respuesta condicionada de fechaNotificacion 2
+* extension[+].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-constraint" 
+* extension[=].extension[0].url = "key"
+* extension[=].extension[=].valueId = "ExFechaNot2"
+
+* extension[=].extension[+].url = "severity"
+* extension[=].extension[=].valueCode = #warning 
+
+* extension[=].extension[+].url = "human"
+* extension[=].extension[=].valueString = "Control de que la fecha de noticiación no sea menor que la de nacimiento" 
+
+* extension[=].extension[+].url = "expression"
+* extension[=].extension[=].valueString =  "item.where(linkId='datosNotificacionGeneral').item.where(linkId='fechas').item.where(linkId='fechaNotificacion').answer.where(value >= item.where(linkId='datosNotificacionGeneral').item.where(linkId='datosPacienteCaso').item.where(linkId='datosPaciente').item.where(linkId='fechaNacimiento').answer).exists()"
+
+* extension[=].extension[+].url = "location"
+* extension[=].extension[=].valueString = "item.item.where(linkId='fechaNotificacion').answer.value"
+//
+
+// extension para respuesta condicionada de fecha para fechaLlenadoFicha
+* extension[+].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-constraint" 
+* extension[=].extension[0].url = "key"
+* extension[=].extension[=].valueId = "ExFechaLlenadoFicha"
+
+* extension[=].extension[+].url = "severity"
+* extension[=].extension[=].valueCode = #warning 
+
+* extension[=].extension[+].url = "human"
+* extension[=].extension[=].valueString = "Control de que la fecha de llenado de Ficha no sea menor que la fecha de Consulta" 
+
+* extension[=].extension[+].url = "expression"
+* extension[=].extension[=].valueString =  "item.where(linkId='datosNotificacionGeneral').item.where(linkId='fechas').item.where(linkId='fechaLlenadoFicha').answer.where(value >= item.where(linkId='datosNotificacionGeneral').item.where(linkId='fechas').item.where(linkId='fechaConsulta').answer).exists()"
+
+* extension[=].extension[+].url = "location"
+* extension[=].extension[=].valueString = "item.item.where(linkId='fechaLlenadoFicha').answer.value"
+// 
+
+// extension para respuesta condicionada de fecha para fechaLlenadoFicha 2
+* extension[+].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-constraint" 
+* extension[=].extension[0].url = "key"
+* extension[=].extension[=].valueId = "ExFechaLlenadoFicha2"
+
+* extension[=].extension[+].url = "severity"
+* extension[=].extension[=].valueCode = #warning 
+
+* extension[=].extension[+].url = "human"
+* extension[=].extension[=].valueString = "Control de que la fecha de llenado de Ficha no sea menor que la fecha de Notificación" 
+
+* extension[=].extension[+].url = "expression"
+* extension[=].extension[=].valueString =  "item.where(linkId='datosNotificacionGeneral').item.where(linkId='fechas').item.where(linkId='fechaLlenadoFicha').answer.where(value >= item.where(linkId='datosNotificacionGeneral').item.where(linkId='fechas').item.where(linkId='fechaNotificacion').answer).exists()"
+
+* extension[=].extension[+].url = "location"
+* extension[=].extension[=].valueString = "item.item.where(linkId='fechaLlenadoFicha').answer.value"
+// 
+
+
+// extension para respuesta condicionada de fechaLlenadoFicha 3
+* extension[+].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-constraint" 
+* extension[=].extension[0].url = "key"
+* extension[=].extension[=].valueId = "ExFechaLlenadoFicha3"
+
+* extension[=].extension[+].url = "severity"
+* extension[=].extension[=].valueCode = #warning 
+
+* extension[=].extension[+].url = "human"
+* extension[=].extension[=].valueString = "Control de que la fecha de Llenado de Ficha no sea menor que la de nacimiento" 
+
+* extension[=].extension[+].url = "expression"
+* extension[=].extension[=].valueString =  "item.where(linkId='datosNotificacionGeneral').item.where(linkId='fechas').item.where(linkId='fechaLlenadoFicha').answer.where(value >= item.where(linkId='datosNotificacionGeneral').item.where(linkId='datosPacienteCaso').item.where(linkId='datosPaciente').item.where(linkId='fechaNacimiento').answer).exists()"
+
+* extension[=].extension[+].url = "location"
+* extension[=].extension[=].valueString = "item.item.where(linkId='fechaLlenadoFicha').answer.value"
+
+// extension para respuesta condicionada de fecha para fechaAlmacenaRepNacional 
+* extension[+].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-constraint" 
+* extension[=].extension[0].url = "key"
+* extension[=].extension[=].valueId = "ExFechaAlmacenaRepNacional"
+
+* extension[=].extension[+].url = "severity"
+* extension[=].extension[=].valueCode = #warning 
+
+* extension[=].extension[+].url = "human"
+* extension[=].extension[=].valueString = "Control de que la fecha de llenado de Ficha en Repositorio Nacional no sea menor que las otras fechas de Notificación" 
+
+* extension[=].extension[+].url = "expression"
+* extension[=].extension[=].valueString =  "item.where(linkId='datosNotificacionGeneral').item.where(linkId='fechas').item.where(linkId='fechaAlmacenaRepNacional').answer.where(value >= item.where(linkId='datosNotificacionGeneral').item.where(linkId='fechas').item.where(linkId='ExFechaLlenadoFicha').answer).exists()"
+
+* extension[=].extension[+].url = "location"
+* extension[=].extension[=].valueString = "item.item.where(linkId='fechaAlmacenaRepNacional').answer.value"
+// 
+
+// extension para respuesta condicionada de fecha para fechaAlmacenaRepOPS 
+* extension[+].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-constraint" 
+* extension[=].extension[0].url = "key"
+* extension[=].extension[=].valueId = "ExFechaAlmacenaRepOPS"
+
+* extension[=].extension[+].url = "severity"
+* extension[=].extension[=].valueCode = #warning 
+
+* extension[=].extension[+].url = "human"
+* extension[=].extension[=].valueString = "Control de que la fecha de llenado de Ficha en Repositorio OPS no sea menor que las otras fechas de Notificación" 
+
+* extension[=].extension[+].url = "expression"
+* extension[=].extension[=].valueString =  "item.where(linkId='datosNotificacionGeneral').item.where(linkId='fechas').item.where(linkId='fechaAlmacenaRepNacional').answer.where(value >= item.where(linkId='datosNotificacionGeneral').item.where(linkId='fechas').item.where(linkId='ExFechaAlmacenaRepNacional').answer).exists()"
+
+* extension[=].extension[+].url = "location"
+* extension[=].extension[=].valueString = "item.item.where(linkId='fechaAlmacenaRepOPS').answer.value"
+// 
+
+// extension para respuesta condicionada de fecha para fechaSintomasCovid19 
+* extension[+].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-constraint" 
+* extension[=].extension[0].url = "key"
+* extension[=].extension[=].valueId = "ExFechaSitomasCovid19"
+
+* extension[=].extension[+].url = "severity"
+* extension[=].extension[=].valueCode = #warning 
+
+* extension[=].extension[+].url = "human"
+* extension[=].extension[=].valueString = "Control de que la fecha de sintomas de Covid 19 no sea menor que las otras fechas de Notificación" 
+
+* extension[=].extension[+].url = "expression"
+* extension[=].extension[=].valueString =  "item.where(linkId='antecedentesMedicos').item.where(linkId='antecedentesSarsCov2').item.where(linkId='fechaSintomasCovid19').answer.where(value <= item.where(linkId='datosNotificacionGeneral').item.where(linkId='fechas').item.where(linkId='ExFechaAlmacenaRepOPS').answer).exists()"
+
+* extension[=].extension[+].url = "location"
+* extension[=].extension[=].valueString = "item.item.where(linkId='fechaSintomasCovid19').answer.value"
+// 
+
+
+// extension para respuesta condicionada de fecha para fechaTomaMuestraCovid19 
+* extension[+].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-constraint" 
+* extension[=].extension[0].url = "key"
+* extension[=].extension[=].valueId = "ExFechaTomaMuestraCovid19"
+
+* extension[=].extension[+].url = "severity"
+* extension[=].extension[=].valueCode = #warning 
+
+* extension[=].extension[+].url = "human"
+* extension[=].extension[=].valueString = "Control de que la fecha de llenado de toma de muestra de Covid 19 no sea menor que las otras fechas de Notificación" 
+
+* extension[=].extension[+].url = "expression"
+* extension[=].extension[=].valueString =  "item.where(linkId='antecedentesMedicos').item.where(linkId='antecedentesSarsCov2').item.where(linkId='fechaTomaMuestraCovid19').answer.where(value <= item.where(linkId='datosNotificacionGeneral').item.where(linkId='fechas').item.where(linkId='ExFechaAlmacenaRepOPS').answer).exists()"
+
+* extension[=].extension[+].url = "location"
+* extension[=].extension[=].valueString = "item.item.where(linkId='fechaTomaMuestraCovid19').answer.value"
+// 
+
+// extension para respuesta condicionada de fecha para fechaTomaMuestraCovid192 
+* extension[+].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-constraint" 
+* extension[=].extension[0].url = "key"
+* extension[=].extension[=].valueId = "ExFechaTomaMuestraCovid192"
+
+* extension[=].extension[+].url = "severity"
+* extension[=].extension[=].valueCode = #warning 
+
+* extension[=].extension[+].url = "human"
+* extension[=].extension[=].valueString = "Control de que la fecha de llenado de toma de muestra de Covid 19 no sea menor que la  fechas de Sintomas de COVID 19" 
+
+* extension[=].extension[+].url = "expression"
+* extension[=].extension[=].valueString =  "item.where(linkId='antecedentesMedicos').item.where(linkId='antecedentesSarsCov2').item.where(linkId='fechaTomaMuestraCovid19').answer.where(value <= item.where(item.where(linkId='antecedentesMedicos').item.where(linkId='antecedentesSarsCov2').item.where(linkId='fechaSintomasCovid19').answer).exists()"
+
+* extension[=].extension[+].url = "location"
+* extension[=].extension[=].valueString = "item.item.where(linkId='fechaTomaMuestraCovid19').answer.value"
+// 
+
+// extension para respuesta condicionada de fecha para fechaParto
+* extension[+].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-constraint" 
+* extension[=].extension[0].url = "key"
+* extension[=].extension[=].valueId = "ExFechaParto"
+
+* extension[=].extension[+].url = "severity"
+* extension[=].extension[=].valueCode = #warning 
+
+* extension[=].extension[+].url = "human"
+* extension[=].extension[=].valueString = "Control de que la fecha departo no sea menor que la  fecha de ultima Regla" 
+
+* extension[=].extension[+].url = "expression"
+* extension[=].extension[=].valueString =  "item.where(linkId='registroESAVI').item.where(linkId='embarazoESAVI').item.where(linkId='fechaParto').answer.where(value >= item.where(linkId='registroESAVI').item.where(linkId='embarazoESAVI').item.where(linkId='fechaUltimaRegla').answer).exists()"
+
+* extension[=].extension[+].url = "location"
+* extension[=].extension[=].valueString = "item.item.where(linkId='fechaParto').answer.value"
+// 
+
+//Grupo
+* item[0].type = #group
 * item[=].linkId = "datosNotificacionGeneral"
 * item[=].text = "Datos Administrativos de la Notificación"
 * item[=].required = true
@@ -18,83 +236,115 @@ Usage: #example
 * item[=].item[=].required = false
 * item[=].item[=].linkId = "datosNotificacion"
 * item[=].item[=].text = "Datos de quién y donde se realiza la notificación"
+
 * item[=].item[=].item[0].type = #string
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "organizacionNotificadora"
 * item[=].item[=].item[=].text = "Nombre Organización que Notifica"
+
 * item[=].item[=].item[+].type = #choice
 * item[=].item[=].item[=].answerValueSet = "DirOrgNotiVS"
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "direccionOrganizacion"
 * item[=].item[=].item[=].text = "Dirección en formato de OPS de Organización que Notifica ESAVI"
+
 * item[=].item[=].item[+].type = #choice
-* item[=].item[=].item[=].answerValueSet = "DirOrgNotiVS"
+* item[=].item[=].item[=].answerValueSet = "ProfesionalNotificadorVS"
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "profesionalNotificador"
 * item[=].item[=].item[=].text = "Profesión de quien notifica ESAVI"
+
+//Grupo
 * item[=].item[+].type = #group
 * item[=].item[=].required = false
 * item[=].item[=].linkId = "fechas"
 * item[=].item[=].text = "Fechas Administrativas"
+
 * item[=].item[=].item[0].type = #date
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "fechaConsulta"
 * item[=].item[=].item[=].text = "Fecha de consulta por sintómas"
+* item[=].item[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/minValue"
+* item[=].item[=].extension[=].valueDate = 2019-12-01
+
+
+
 * item[=].item[=].item[+].type = #date
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "fechaNotificacion"
-* item[=].item[=].item[=].text = "Fecha de nacimiento"
+* item[=].item[=].item[=].text = "Fecha de Notificación"
+* item[=].item[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/minValue"
+* item[=].item[=].extension[=].valueDate = 2019-12-01
+
 * item[=].item[=].item[+].type = #date
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "fechaLlenadoFicha"
 * item[=].item[=].item[=].text = "Fecha que se llenó este formulario"
+* item[=].item[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/minValue"
+* item[=].item[=].extension[=].valueDate = 2019-12-01
+
 * item[=].item[=].item[+].type = #date
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "FechaAlmacenaRepNacacional"
 * item[=].item[=].item[=].text = "Fecha en la que el formulario fue almacenado localmente"
+
 * item[=].item[=].item[+].type = #date
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "FechaAlmacenaRepOPS"
 * item[=].item[=].item[=].text = "Fecha en la que el formulario fue almacenado en OPS"
+
+
+
 * item[+].type = #group
 * item[=].required = false
 * item[=].linkId = "datosPacienteCaso"
 * item[=].text = "Datos Demográficos de Paciente ESAVI"
+
 * item[=].item.type = #group
 * item[=].item.required = false
 * item[=].item.linkId = "datosPaciente"
 * item[=].item.text = "Datos del Paciente ESAVI"
+
 * item[=].item.item[0].type = #string
 * item[=].item.item[=].required = false
 * item[=].item.item[=].linkId = "numeroCaso"
 * item[=].item.item[=].text = "UUID que identifica el caso"
+
 * item[=].item.item[+].type = #choice
 * item[=].item.item[=].answerValueSet = "Iso3166-1-N"
 * item[=].item.item[=].required = false
 * item[=].item.item[=].linkId = "paisOrigen-Reg"
 * item[=].item.item[=].text = "País en donde se originó el Registro"
+
 * item[=].item.item[+].type = #group
 * item[=].item.item[=].required = false
 * item[=].item.item[=].linkId = "idPaciente"
 * item[=].item.item[=].text = "Número Identificación de Paciente, en UUID"
+
 * item[=].item.item[=].item.type = #string
 * item[=].item.item[=].item.required = false
 * item[=].item.item[=].item.linkId = "value"
 * item[=].item.item[=].item.text = "UUID de identificación"
+
 * item[=].item.item[+].type = #choice
 * item[=].item.item[=].answerValueSet = "DirOrgNotiVS"
 * item[=].item.item[=].required = false
 * item[=].item.item[=].linkId = "residenciaHabitual"
 * item[=].item.item[=].text = "Residencia habitual del Paciente"
+
 * item[=].item.item[+].type = #choice
 * item[=].item.item[=].answerValueSet = "http://hl7.org/fhir/ValueSet/administrative-gender"
 * item[=].item.item[=].required = false
 * item[=].item.item[=].linkId = "sexoPaciente"
 * item[=].item.item[=].text = "Sexo del paciente"
+
 * item[=].item.item[+].type = #date
 * item[=].item.item[=].required = false
 * item[=].item.item[=].linkId = "fechaNacimiento"
 * item[=].item.item[=].text = "Fecha de nacimiento del Paciente"
+* item[=].item[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/minValue"
+* item[=].item[=].extension[=].valueDate = 1900-01-01
+
 * item[=].item.item[+].type = #string
 * item[=].item.item[=].required = false
 * item[=].item.item[=].linkId = "etnia"
@@ -392,6 +642,7 @@ Usage: #example
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "fechaInicioInvestigacion"
 * item[=].item[=].item[=].text = "Fecha en la cual se inicia investigación"
+
 * item[+].type = #group
 * item[=].required = false
 * item[=].linkId = "registroVacunaCovidOtras"
@@ -400,26 +651,42 @@ Usage: #example
 * item[=].item[=].required = false
 * item[=].item[=].linkId = "descripcionVacuna"
 * item[=].item[=].text = "Descripción de la vacuna sospecha de generar ESAVI"
+
 * item[=].item[+].type = #choice
 * item[=].item[=].answerValueSet = "CodigoWhoVacunaVS"
 * item[=].item[=].required = false
 * item[=].item[=].linkId = "codigoWhoVacuna"
 * item[=].item[=].text = "Código WhoDrugs de la Vacuna"
+
 * item[=].item[+].type = #choice
 * item[=].item[=].answerValueSet = "CodigoOtroVacunaVS"
 * item[=].item[=].required = false
 * item[=].item[=].linkId = "codigoOtroVacuna"
 * item[=].item[=].text = "Código no WhoDrugs de la Vacuna"
+
+
 * item[=].item[+].type = #dateTime
 * item[=].item[=].required = false
 * item[=].item[=].linkId = "fechaHoraVacunacion"
 * item[=].item[=].text = "Fecha y hora en la cual se colocó la vacuna que habria generado ESAVI"
+
+// dosis de vacuna con valor maximo y mínimo
 * item[=].item[+].type = #integer
 * item[=].item[=].required = false
 * item[=].item[=].linkId = "dosisVacuna"
 * item[=].item[=].text = "1a, 2a o 3ra dosis"
-* item[=].item[+].type = #string
+* item[=].item[+].type = #integer
 * item[=].item[=].required = false
+// extensión control de valor
+
+* item[=].item[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/minValue"
+* item[=].item[=].extension[=].valueInteger = 1
+* item[=].item[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/maxValue"
+* item[=].item[=].extension[=].valueInteger = 3
+
+
+
+
 * item[=].item[=].linkId = "numeroLote"
 * item[=].item[=].text = "Númer del Lote de la Vacuna colocada"
 * item[=].item[+].type = #date
