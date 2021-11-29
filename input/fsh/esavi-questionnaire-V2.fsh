@@ -1,8 +1,8 @@
 Alias: $questionnaire-item-control = http://hl7.org/fhir/questionnaire-item-control
 
-Instance: ejemploQuestionnaireEsavi
-Title: "Ejemplo Cuestionario"
-Description: "Description"
+Instance: ejemploQuestionnaireEsavi2
+Title: "Ejemplo Cuestionario 2"
+Description: "Description con constraints"
 InstanceOf: Questionnaire
 Usage: #example
 * meta.profile = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire|2.7"
@@ -129,7 +129,7 @@ Usage: #example
 * extension[=].extension[=].valueString = "Control de que la fecha de llenado de Ficha en Repositorio Nacional no sea menor que las otras fechas de Notificación" 
 
 * extension[=].extension[+].url = "expression"
-* extension[=].extension[=].valueString =  "item.where(linkId='datosNotificacionGeneral').item.where(linkId='fechas').item.where(linkId='fechaAlmacenaRepNacional').answer.where(value >= item.where(linkId='datosNotificacionGeneral').item.where(linkId='fechas').item.where(linkId='ExFechaLlenadoFicha').answer).exists()"
+* extension[=].extension[=].valueString =  "item.where(linkId='datosNotificacionGeneral').item.where(linkId='fechas').item.where(linkId='fechaAlmacenaRepNacional').answer.where(value >= item.where(linkId='datosNotificacionGeneral').item.where(linkId='fechas').item.where(linkId='FechaLlenadoFicha').answer).exists()"
 
 * extension[=].extension[+].url = "location"
 * extension[=].extension[=].valueString = "item.item.where(linkId='fechaAlmacenaRepNacional').answer.value"
@@ -147,7 +147,7 @@ Usage: #example
 * extension[=].extension[=].valueString = "Control de que la fecha de llenado de Ficha en Repositorio OPS no sea menor que las otras fechas de Notificación" 
 
 * extension[=].extension[+].url = "expression"
-* extension[=].extension[=].valueString =  "item.where(linkId='datosNotificacionGeneral').item.where(linkId='fechas').item.where(linkId='fechaAlmacenaRepNacional').answer.where(value >= item.where(linkId='datosNotificacionGeneral').item.where(linkId='fechas').item.where(linkId='ExFechaAlmacenaRepNacional').answer).exists()"
+* extension[=].extension[=].valueString =  "item.where(linkId='datosNotificacionGeneral').item.where(linkId='fechas').item.where(linkId='fechaAlmacenaRepNacional').answer.where(value >= item.where(linkId='datosNotificacionGeneral').item.where(linkId='fechas').item.where(linkId='FechaAlmacenaRepNacional').answer).exists()"
 
 * extension[=].extension[+].url = "location"
 * extension[=].extension[=].valueString = "item.item.where(linkId='fechaAlmacenaRepOPS').answer.value"
@@ -165,7 +165,7 @@ Usage: #example
 * extension[=].extension[=].valueString = "Control de que la fecha de sintomas de Covid 19 no sea menor que las otras fechas de Notificación" 
 
 * extension[=].extension[+].url = "expression"
-* extension[=].extension[=].valueString =  "item.where(linkId='antecedentesMedicos').item.where(linkId='antecedentesSarsCov2').item.where(linkId='fechaSintomasCovid19').answer.where(value <= item.where(linkId='datosNotificacionGeneral').item.where(linkId='fechas').item.where(linkId='ExFechaAlmacenaRepOPS').answer).exists()"
+* extension[=].extension[=].valueString =  "item.where(linkId='antecedentesMedicos').item.where(linkId='antecedentesSarsCov2').item.where(linkId='fechaSintomasCovid19').answer.where(value <= item.where(linkId='datosNotificacionGeneral').item.where(linkId='fechas').item.where(linkId='FechaAlmacenaRepOPS').answer).exists()"
 
 * extension[=].extension[+].url = "location"
 * extension[=].extension[=].valueString = "item.item.where(linkId='fechaSintomasCovid19').answer.value"
@@ -184,7 +184,7 @@ Usage: #example
 * extension[=].extension[=].valueString = "Control de que la fecha de llenado de toma de muestra de Covid 19 no sea menor que las otras fechas de Notificación" 
 
 * extension[=].extension[+].url = "expression"
-* extension[=].extension[=].valueString =  "item.where(linkId='antecedentesMedicos').item.where(linkId='antecedentesSarsCov2').item.where(linkId='fechaTomaMuestraCovid19').answer.where(value <= item.where(linkId='datosNotificacionGeneral').item.where(linkId='fechas').item.where(linkId='ExFechaAlmacenaRepOPS').answer).exists()"
+* extension[=].extension[=].valueString =  "item.where(linkId='antecedentesMedicos').item.where(linkId='antecedentesSarsCov2').item.where(linkId='fechaTomaMuestraCovid19').answer.where(value <= item.where(linkId='datosNotificacionGeneral').item.where(linkId='fechas').item.where(linkId='FechaAlmacenaRepOPS').answer).exists()"
 
 * extension[=].extension[+].url = "location"
 * extension[=].extension[=].valueString = "item.item.where(linkId='fechaTomaMuestraCovid19').answer.value"
@@ -224,6 +224,25 @@ Usage: #example
 
 * extension[=].extension[+].url = "location"
 * extension[=].extension[=].valueString = "item.item.where(linkId='fechaParto').answer.value"
+// 
+
+
+// extension para respuesta condicionada de fecha para fechaAlmacenaRepOPS 
+* extension[+].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-constraint" 
+* extension[=].extension[0].url = "key"
+* extension[=].extension[=].valueId = "ExFechaHoraVacunacion"
+
+* extension[=].extension[+].url = "severity"
+* extension[=].extension[=].valueCode = #warning 
+
+* extension[=].extension[+].url = "human"
+* extension[=].extension[=].valueString = "Control de que la fecha de vacunacion   no sea mayor que las otras fechas de Notificación" 
+
+* extension[=].extension[+].url = "expression"
+* extension[=].extension[=].valueString =  "item.where(linkId='registroVacunaCovidOtras').item.where(linkId='fechaHoraVacunacion').answer.where(value <= item.where(linkId='datosNotificacionGeneral').item.where(linkId='fechas').item.where(linkId='fechaAlmacenaRepOPS').answer).exists()"
+
+* extension[=].extension[+].url = "location"
+* extension[=].extension[=].valueString = "item.item.where(linkId='registroVacunaCovidOtras').answer.value"
 // 
 
 //Grupo
@@ -519,88 +538,124 @@ Usage: #example
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "esaviOtroCodigo"
 * item[=].item[=].item[=].text = "Código no Medra de la reacción adversa generada por la vacuna"
+
 * item[=].item[+].type = #group
 * item[=].item[=].required = false
 * item[=].item[=].linkId = "embarazoESAVI"
 * item[=].item[=].text = "Datos relacionados con paciente embarazada al momento de generar ESAVI"
+
+
 * item[=].item[=].item[0].type = #choice
 * item[=].item[=].item[=].answerValueSet = "RespuestaSiNoNosabeVS"
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "embarazoDuranteVacuna"
 * item[=].item[=].item[=].text = "Consulta sobre la condición de embarazo al vacunarse"
+
 * item[=].item[=].item[+].type = #choice
 * item[=].item[=].item[=].answerValueSet = "RespuestaSiNoNosabeVS"
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "embarazoAlDesarrolloESAVI"
 * item[=].item[=].item[=].text = "Consulta sobre la condición de embarazo al desarrolar ESAVI"
+
 * item[=].item[=].item[+].type = #date
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "fechaUltimaRegla"
 * item[=].item[=].item[=].text = "Fecha de la última menstruación de la Paciente"
+
 * item[=].item[=].item[+].type = #date
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "fechaParto"
 * item[=].item[=].item[=].text = "Fecha probable del parto"
+
 * item[=].item[=].item[+].type = #choice
 * item[=].item[=].item[=].answerValueSet = "RespuestaSiNoNosabeVS"
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "monitoreoPosteriorVacuna"
 * item[=].item[=].item[=].text = "Consulta sobre si se monitoreo paciente una vez vacunada"
+
 * item[=].item[+].type = #group
 * item[=].item[=].required = false
 * item[=].item[=].linkId = "complicacionesEmbarazo"
 * item[=].item[=].text = "Descripción de las complicaciones sufridas durante el embarazo"
+// Enable When
+* item[=].item[=].enableWhen.question = "embarazoDuranteVacuna"
+* item[=].item[=].enableWhen.operator = #=
+* item[=].item[=].enableWhen.answerCoding.system = "RespuestaSiNoNosabeVS"
+* item[=].item[=].enableWhen.answerCoding.code = #1
+// enableWhen
+
 * item[=].item[=].item[0].type = #choice
 * item[=].item[=].item[=].answerValueSet = "ComplicacionEmbarazoVS"
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "complicacionDuranteEmbarazo"
 * item[=].item[=].item[=].text = "Descripción de la complicación"
+
 * item[=].item[=].item[+].type = #string
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "complicacionEmbarazo"
 * item[=].item[=].item[=].text = "Descripción de la Complicación"
+
 * item[=].item[=].item[+].type = #choice
 * item[=].item[=].item[=].answerValueSet = "ComplicacionEmbarazoMedraVS"
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "complicacionEmbarazoMedra"
 * item[=].item[=].item[=].text = "Código Medra Confirmación Embarazo"
+
 * item[=].item[=].item[+].type = #choice
 * item[=].item[=].item[=].answerValueSet = "ComplicacionEmbarazoOtroVS"
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "complicacionEmbarazoOtro"
 * item[=].item[=].item[=].text = "Código No Medra Confirmación Embarazo"
+
+
 * item[=].item[+].type = #group
 * item[=].item[=].required = false
 * item[=].item[=].linkId = "desenlaceESAVI"
 * item[=].item[=].text = "Determinación del estado de gravedad del ESAVI"
+
 * item[=].item[=].item[0].type = #boolean
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "tipoGravedad"
 * item[=].item[=].item[=].text = "Definición si el ESAVI es de Gravedad o No"
+
 * item[=].item[=].item[+].type = #boolean
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "gravMuerte"
 * item[=].item[=].item[=].text = "¿Es la gravedad la muerte del paciente?"
+
 * item[=].item[=].item[+].type = #boolean
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "gravRiesgoVida"
 * item[=].item[=].item[=].text = "¿Es la gravedad de Riesgo de Vida del paciente?"
+
 * item[=].item[=].item[+].type = #boolean
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "gravDiscapacidad"
 * item[=].item[=].item[=].text = "¿Es la gravedad la discapacidad del paciente?"
+
 * item[=].item[=].item[+].type = #boolean
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "gravAnomaliaCongenita"
 * item[=].item[=].item[=].text = "¿Es la gravedad el gatillante de una anomalía congénita paciente?"
+
 * item[=].item[=].item[+].type = #boolean
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "gravAborto"
 * item[=].item[=].item[=].text = "¿Es la gravedad aborto en el paciente?"
+* item[=].item[=].item[=].enableWhen.question = "embarazoDuranteVacuna"
+* item[=].item[=].item[=].enableWhen.operator = #=
+* item[=].item[=].item[=].enableWhen.answerCoding.system = "RespuestaSiNoNosabeVS"
+* item[=].item[=].item[=].enableWhen.answerCoding.code = #1
+
 * item[=].item[=].item[+].type = #boolean
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "gravMuerteFetal"
 * item[=].item[=].item[=].text = "¿Es la gravedad la muerte fetal en el paciente?"
+* item[=].item[=].item[=].enableWhen.question = "embarazoDuranteVacuna"
+* item[=].item[=].item[=].enableWhen.operator = #=
+* item[=].item[=].item[=].enableWhen.answerCoding.system = "RespuestaSiNoNosabeVS"
+* item[=].item[=].item[=].enableWhen.answerCoding.code = #1
+
 * item[=].item[=].item[+].type = #boolean
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "otrosEventosImportantes"
@@ -609,35 +664,63 @@ Usage: #example
 * item[=].item[=].item[=].item.required = false
 * item[=].item[=].item[=].item.linkId = "otrosEventosImportantesTx"
 * item[=].item[=].item[=].item.text = "Definición Otros Eventos considerados Médicamente Importantes"
+
 * item[=].item[=].item[+].type = #choice
 * item[=].item[=].item[=].answerValueSet = "ClasificacionDesenlaceVS"
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "desenlaceESAVI"
 * item[=].item[=].item[=].text = "Desenlace según categoría"
+ 
 * item[=].item[=].item[+].type = #date
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "fechaMuerte"
 * item[=].item[=].item[=].text = "Fecha de muerte producida por posible ESAVI"
+* item[=].item[=].item[=].enableWhen.question = "gravMuerte"
+* item[=].item[=].item[=].enableWhen.operator = #=
+* item[=].item[=].item[=].enableWhen.answerBoolean = true
+
 * item[=].item[=].item[+].type = #boolean
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "autopsia"
 * item[=].item[=].item[=].text = "Determinación si hubo o no Autopsia"
+* item[=].item[=].item[=].enableWhen.question = "gravMuerte"
+* item[=].item[=].item[=].enableWhen.operator = #=
+* item[=].item[=].item[=].enableWhen.answerBoolean = true
+
 * item[=].item[=].item[+].type = #date
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "fechaNotificaMuerte"
 * item[=].item[=].item[=].text = "Fecha en la cual se notifico la muerte del paciente al registro nacional"
+* item[=].item[=].item[=].enableWhen.question = "gravMuerte"
+* item[=].item[=].item[=].enableWhen.operator = #=
+* item[=].item[=].item[=].enableWhen.answerBoolean = true
+
 * item[=].item[=].item[+].type = #date
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "fechaNotificaMuerteFetal"
 * item[=].item[=].item[=].text = "Fecha en la cual se notifico la muerte del feto de paciente al registro nacional"
+// multiples condiciones
+* item[=].item[=].item[=].enableWhen.question = "gravAborto"
+* item[=].item[=].item[=].enableWhen.operator = #=
+* item[=].item[=].item[=].enableWhen.answerBoolean = true
+* item[=].item[=].item[=].enableWhen.question = "gravMuerteFetal"
+* item[=].item[=].item[=].enableWhen.operator = #=
+* item[=].item[=].item[=].enableWhen.answerBoolean = true
+//multiples condiciones
+
 * item[=].item[=].item[+].type = #boolean
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "autopsiaFetal"
 * item[=].item[=].item[=].text = "Determinación si hubo o no Autopsia Fetal"
+* item[=].item[=].item[=].enableWhen.question = "gravMuerteFetal"
+* item[=].item[=].item[=].enableWhen.operator = #=
+* item[=].item[=].item[=].enableWhen.answerBoolean = true
+
 * item[=].item[=].item[+].type = #string
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "comentarios"
 * item[=].item[=].item[=].text = "Comentarios adicionales en cuanto al cuadro ESAVI"
+
 * item[=].item[=].item[+].type = #date
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "fechaInicioInvestigacion"
