@@ -3,10 +3,14 @@ InstanceOf: Questionnaire
 Usage: #example
 * extension[0].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-is-modular"
 * extension[=].valueBoolean = true
+
 * extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-assembleContext"
 * extension[=].valueString = "linkIdPrefix"
+
 * extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-assembleContext"
 * extension[=].valueString = "person"
+
+//constraint
 * extension[+].extension[0].url = "key"
 * extension[=].extension[=].valueString = "qcontact-1"
 * extension[=].extension[+].url = "severity"
@@ -15,11 +19,17 @@ Usage: #example
 * extension[=].extension[=].valueString = "Must have either first or last name"
 * extension[=].extension[+].url = "expression"
 * extension[=].extension[=].valueString = "item.where(linkId=%linkIdPrefix+'1').exists() or item.where(linkId=%linkIdPrefix+'2').exists()"
+* extension[=].extension[+].url = "location"
+* extension[=].extension[=].valueString = "item.item.where(linkId='1').answer.value"
 * extension[=].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-constraint"
+
+//
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/variable"
 * extension[=].valueExpression.name = "name"
 * extension[=].valueExpression.language = #text/fhirpath
 * extension[=].valueExpression.expression = "iif(%person.name.where(use='official').exists(),%person.name.where(use='official')[0],%person.name[0])"
+//
+
 * url = "http://hl7.org/fhir/uv/sdc/Questionnaire/sdc-modular-name"
 * version = "2.8.0"
 * name = "QuestionnaireSDCModularName"
@@ -35,6 +45,7 @@ Usage: #example
 * item[0].extension.url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression"
 * item[=].extension.valueExpression.language = #text/fhirpath
 * item[=].extension.valueExpression.expression = "%name.prefix.where($this in ('Mr.'|'Miss'|'Mrs'|'Ms.'))[0]"
+
 * item[=].linkId = "1"
 * item[=].text = "Title"
 * item[=].type = #string
@@ -43,6 +54,7 @@ Usage: #example
 * item[=].answerOption[+].valueString = "Miss"
 * item[=].answerOption[+].valueString = "Mrs."
 * item[=].answerOption[+].valueString = "Ms."
+
 * item[+].extension.url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression"
 * item[=].extension.valueExpression.language = #text/fhirpath
 * item[=].extension.valueExpression.expression = "%name.given[0]"
@@ -50,6 +62,7 @@ Usage: #example
 * item[=].definition = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-question-library#Demographics.name.first"
 * item[=].type = #string
 * item[=].required = true
+
 * item[+].extension.url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression"
 * item[=].extension.valueExpression.language = #text/fhirpath
 * item[=].extension.valueExpression.expression = "%name.given[0]"

@@ -758,8 +758,6 @@ Usage: #example
 * item[=].item[=].required = false
 * item[=].item[=].linkId = "dosisVacuna"
 * item[=].item[=].text = "1a, 2a o 3ra dosis"
-* item[=].item[+].type = #integer
-* item[=].item[=].required = false
 // extensión control de valor
 
 * item[=].item[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/minValue"
@@ -769,7 +767,8 @@ Usage: #example
 
 
 
-
+* item[=].item[+].type = #integer
+* item[=].item[=].required = false
 * item[=].item[=].linkId = "numeroLote"
 * item[=].item[=].text = "Númer del Lote de la Vacuna colocada"
 * item[=].item[+].type = #date
