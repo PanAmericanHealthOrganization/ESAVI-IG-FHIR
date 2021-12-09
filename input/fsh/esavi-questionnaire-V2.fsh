@@ -761,10 +761,6 @@ Usage: #example
 * item[=].item[=].required = true
 * item[=].item[=].linkId = "dosisVacuna"
 * item[=].item[=].text = "1a, 2a o 3ra dosis"
-<<<<<<< HEAD
-=======
-
->>>>>>> 0f01aebcaab7092f9d8c0f0351869a6aafc8e27c
 // extensión control de valor
 
 * item[=].item[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/minValue"
