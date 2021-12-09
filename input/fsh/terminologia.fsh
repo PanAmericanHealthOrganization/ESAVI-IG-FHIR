@@ -304,3 +304,8 @@ Description: "Códigos para Direcciones según OPS"
 * #4 "Comuna 4"
 * #5 "Comuna 5"
 
+ValueSet: CodigoMedraEnfPreviaVS
+Title: "CodigoMedraEnfPreviaVS"
+Description: "Conjunto de Valores para enfermedades previas (Medra)"
+* include codes from system http://terminology.hl7.org/CodeSystem/mdr
+
