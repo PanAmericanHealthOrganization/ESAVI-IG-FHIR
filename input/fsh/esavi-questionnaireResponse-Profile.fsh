@@ -24,6 +24,7 @@ Description:    "Perfil con los elementos mínimos a considerar para generar la 
 * status from  http://hl7.org/fhir/ValueSet/questionnaire-answers-status
 * status = #completed
 
+* authored 0..1 MS
 * authored ^short = "Fecha en la cual se concluyo el formulario"
 * authored ^definition = "Fecha/hora en la cual las respuestas fueron llenadas como definitivas"
 

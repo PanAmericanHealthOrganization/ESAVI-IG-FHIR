@@ -5,8 +5,7 @@ Title: "Ejemplo Cuestionario 2"
 Description: "Description con constraints"
 InstanceOf: Questionnaire
 Usage: #example
-* meta.profile = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire|2.7"
-* meta.tag.code = #"lformsVersion: 29.2.1"
+
 * status = #draft
 
 // extension para respuesta condicionada de fecha para fechaConsulta

@@ -3,8 +3,7 @@ Title: "Ejemplo Respuesta Cuestionario 2"
 Description: "Hoja de respuestas"
 InstanceOf: QuestionnaireResponse
 Usage: #example
-* meta.profile = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse|2.7"
-* meta.tag.code = #"lformsVersion: 29.2.0"
+
 * status = #completed
 * authored = "2021-12-07T15:49:51.722Z"
 * item[0].linkId = "datosNotificacionGeneral"
