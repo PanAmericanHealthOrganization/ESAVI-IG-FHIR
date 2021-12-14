@@ -304,7 +304,7 @@ Usage: #example
 
 * item[=].item[=].item[+].type = #date
 * item[=].item[=].item[=].required = false
-* item[=].item[=].item[=].linkId = "FechaAlmacenaRepNacacional"
+* item[=].item[=].item[=].linkId = "FechaAlmacenaRepNacional"
 * item[=].item[=].item[=].text = "Fecha en la que el formulario fue almacenado localmente"
 
 * item[=].item[=].item[+].type = #date

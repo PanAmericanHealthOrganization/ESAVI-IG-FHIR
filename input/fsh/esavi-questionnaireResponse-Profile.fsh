@@ -44,9 +44,6 @@ Description:    "Perfil con los elementos mínimos a considerar para generar la 
 * source.display ^definition = "Texto plano narrativo que identifica el recurso adicional a la referencia de este"
 
 
-
-
-
-
-
-
+* item ^short = "Grupos, subgrupos y preguntas a responder basadas en el Questionario"
+* item ^definition = "Grupos y preguntas. Las respuestas estan basadas en el cuestionario deben seguir linkId y tipo de datos"
+* item ^comment = "Las respuestas deben contar con el mismo linkId y tipo de datos del Questionnaire, al igual como deben respetar las restricciones generadas tanto para habilitar la respuesta, validar la respuesta o terminologías usadas"

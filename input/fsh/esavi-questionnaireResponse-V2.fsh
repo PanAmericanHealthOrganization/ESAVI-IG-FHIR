@@ -31,7 +31,7 @@ Usage: #example
 * item[=].item[=].item[+].linkId = "fechaLlenadoFicha"
 * item[=].item[=].item[=].text = "Fecha que se llenó este formulario"
 * item[=].item[=].item[=].answer.valueDate = "2021-12-14"
-* item[=].item[=].item[+].linkId = "FechaAlmacenaRepNacacional"
+* item[=].item[=].item[+].linkId = "FechaAlmacenaRepNacional"
 * item[=].item[=].item[=].text = "Fecha en la que el formulario fue almacenado localmente"
 * item[=].item[=].item[=].answer.valueDate = "2021-12-03"
 * item[=].item[=].item[+].linkId = "FechaAlmacenaRepOPS"
