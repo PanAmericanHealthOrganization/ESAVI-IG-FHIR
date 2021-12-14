@@ -262,9 +262,15 @@ Usage: #example
 
 * item[=].item[=].item[+].type = #choice
 * item[=].item[=].item[=].answerValueSet = "DirOrgNotiVS"
-* item[=].item[=].item[=].required = true
+//* item[=].item[=].item[=].required = true
 * item[=].item[=].item[=].linkId = "direccionOrganizacion"
 * item[=].item[=].item[=].text = "Dirección en formato de OPS de Organización que Notifica ESAVI"
+
+* item[=].item[=].item[+].type = #string
+* item[=].item[=].item[=].required = true
+* item[=].item[=].item[=].linkId = "direccionOrganizacionDisplay"
+* item[=].item[=].item[=].text = "Dirección en formato de OPS de Organización que Notifica ESAVI SOLO DISPLAY"
+
 
 * item[=].item[=].item[+].type = #choice
 * item[=].item[=].item[=].answerValueSet = "ProfesionalNotificadorVS"
@@ -306,10 +312,10 @@ Usage: #example
 * item[=].item[=].item[=].linkId = "FechaAlmacenaRepNacional"
 * item[=].item[=].item[=].text = "Fecha en la que el formulario fue almacenado localmente"
 
-* item[=].item[=].item[+].type = #date
-* item[=].item[=].item[=].required = true
-* item[=].item[=].item[=].linkId = "FechaAlmacenaRepOPS"
-* item[=].item[=].item[=].text = "Fecha en la que el formulario fue almacenado en OPS"
+//* item[=].item[=].item[+].type = #date
+//* item[=].item[=].item[=].required = true
+//* item[=].item[=].item[=].linkId = "FechaAlmacenaRepOPS"
+//* item[=].item[=].item[=].text = "Fecha en la que el formulario fue almacenado en OPS"
 
 
 
