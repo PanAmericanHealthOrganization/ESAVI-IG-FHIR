@@ -29,6 +29,7 @@ Description:    "Perfil con los elementos mínimos a considerar para generar la 
 * authored ^definition = "Fecha/hora en la cual las respuestas fueron llenadas como definitivas"
 
 * author 1..1 MS
+* author only Reference(Organization)
 * author ^short = "Organización que recibió y registro las respuestas"
 * author ^definition = "Organización responsable de recibir las respuestas, registrarlas y agregarlas al sistema"
 * author.reference ^short = "Referencia al recurso del autorOrganizacion  del formulario de respuestas"
@@ -37,6 +38,7 @@ Description:    "Perfil con los elementos mínimos a considerar para generar la 
 * author.display ^definition = "Texto plano narrativo que identifica el recurso adicional a la referencia de este"
 
 * source 1..1 MS
+* source only Reference(Practitioner)
 * source ^short = "Profesional que recabó la información del formulario"
 * source ^definition = "Profesional responsable de recibir las respuestas, para volcarlas en el formulario"
 * source.reference ^short = "Referencia al recurso del soucePractitioner  del formulario de respuestas"
