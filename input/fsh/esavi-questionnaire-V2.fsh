@@ -258,13 +258,13 @@ Usage: #example
 * item[=].item[=].item[0].type = #string
 * item[=].item[=].item[=].required = true
 * item[=].item[=].item[=].linkId = "organizacionNotificadora"
-* item[=].item[=].item[=].text = "Nombre Organización que Notifica"
+* item[=].item[=].item[=].text = "Nombre Institución que Notifica"
 
 * item[=].item[=].item[+].type = #choice
 * item[=].item[=].item[=].answerValueSet = "DirOrgNotiVS"
 * item[=].item[=].item[=].required = true
 * item[=].item[=].item[=].linkId = "direccionOrganizacion"
-* item[=].item[=].item[=].text = "Dirección en formato de OPS de Organización que Notifica ESAVI"
+* item[=].item[=].item[=].text = "Nivel Geográfico Subnacional de Institución que Notifica ESAVI"
 
 * item[=].item[=].item[+].type = #choice
 * item[=].item[=].item[=].answerValueSet = "ProfesionalNotificadorVS"
@@ -315,8 +315,8 @@ Usage: #example
 
 * item[+].type = #group
 * item[=].required = true
-* item[=].linkId = "datosPacienteCaso"
-* item[=].text = "Datos Demográficos de Paciente ESAVI"
+* item[=].linkId = "datosVacunadoCaso"
+* item[=].text = "Datos Demográficos de Vacunado que ha generado  ESAVI"
 
 * item[=].item.type = #group
 * item[=].item.required = true
@@ -348,7 +348,7 @@ Usage: #example
 * item[=].item.item[=].answerValueSet = "DirOrgNotiVS"
 * item[=].item.item[=].required = true
 * item[=].item.item[=].linkId = "residenciaHabitual"
-* item[=].item.item[=].text = "Residencia habitual del Paciente"
+* item[=].item.item[=].text = "Nivel goegráfico subnacional de la residencia habitual de la persona afectada por el evento"
 
 * item[=].item.item[+].type = #choice
 * item[=].item.item[=].answerValueSet = "http://hl7.org/fhir/ValueSet/administrative-gender"
@@ -421,7 +421,7 @@ Usage: #example
 * item[=].item[=].item[+].type = #dateTime
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "fechaSintomasCovid19"
-* item[=].item[=].item[=].text = "Fecha en la cual el paciente reconoce haber tenido sintomas"
+* item[=].item[=].item[=].text = "Fecha en la cual el vacunado indicica como el inicio de Síntomas COVID 19"
 * item[=].item[=].item[+].type = #boolean
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "confirmacionDiagnosticoCovid19"
@@ -455,7 +455,7 @@ Usage: #example
 * item[=].item[=].item[=].answerValueSet = "MedicamentoGenericoVS"
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "codigoMedicamento"
-* item[=].item[=].item[=].text = "Código WHO del medicamento consumido por el paciente"
+* item[=].item[=].item[=].text = "Código WHO Drug del medicamento consumido por el paciente"
 * item[=].item[=].item[+].type = #choice
 * item[=].item[=].item[=].answerValueSet = "MedicamentoOtroVS"
 * item[=].item[=].item[=].required = false
@@ -497,7 +497,7 @@ Usage: #example
 * item[=].item[=].item[0].type = #string
 * item[=].item[=].item[=].repeats = true
 * item[=].item[=].item[=].linkId = "vacunasAdministradas"
-* item[=].item[=].item[=].text = "Nombre de Vacunas Administradas según paciente"
+* item[=].item[=].item[=].text = "Nombre de Vacunas Administradas según lo indicada por el/la vacunada/a"
 * item[=].item[=].item[+].type = #choice
 * item[=].item[=].item[=].answerValueSet = "ModoVerificacionVacunaVS"
 * item[=].item[=].item[=].required = false
@@ -511,24 +511,33 @@ Usage: #example
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "vacunatorioVacunaPrevia"
 * item[=].item[=].item[=].text = "Nombre del vacunatorio en donde se inyectó vacuna"
+
 * item[+].type = #group
 * item[=].required = true
 * item[=].linkId = "registroESAVI"
-* item[=].text = "Registro de ESAVI desarrollado por el paciente"
+* item[=].text = "Registro de ESAVI desarrollado por el vacunado o vacunada"
+
 * item[=].item[0].type = #choice
 * item[=].item[=].answerValueSet = "DirOrgNotiVS"
 * item[=].item[=].required = true
 * item[=].item[=].linkId = "direccionVacunatorio"
 * item[=].item[=].text = "Dirección del vacunatorio según código OPS"
+
 * item[=].item[+].type = #group
 * item[=].item[=].required = true
 * item[=].item[=].repeats = true
 * item[=].item[=].linkId = "datosESAVI"
-* item[=].item[=].text = "Datos del ESAVI generado y la relevancia de este"
-* item[=].item[=].item[0].type = #string
+* item[=].item[=].text = "Datos del ESAVI generado y su clasificación"
+
+* item[=].item[=].item[+].type = #dateTime
 * item[=].item[=].item[=].required = true
-* item[=].item[=].item[=].linkId = "esaviReacciones"
-* item[=].item[=].item[=].text = "Eventos y reacciónes manifestados por el paciente para el ESAVI descrito"
+* item[=].item[=].item[=].linkId = "esaviInicioSigno"
+* item[=].item[=].item[=].text = "Fecha y la hora de inicio del signo, hallazgo anormal de laboratorio o síntomas."
+
+* item[=].item[=].item[+].type = #string
+* item[=].item[=].item[=].required = true
+* item[=].item[=].item[=].linkId = "esaviEventos"
+* item[=].item[=].item[=].text = "Eventos  manifestados por el paciente para el ESAVI descrito"
 * item[=].item[=].item[+].type = #choice
 * item[=].item[=].item[=].answerValueSet = "EsaviMedraVS"
 * item[=].item[=].item[=].required = false
@@ -572,12 +581,12 @@ Usage: #example
 * item[=].item[=].item[=].answerValueSet = "RespuestaSiNoNosabeVS"
 * item[=].item[=].item[=].required = true
 * item[=].item[=].item[=].linkId = "monitoreoPosteriorVacuna"
-* item[=].item[=].item[=].text = "Consulta sobre si se monitoreo paciente una vez vacunada"
+* item[=].item[=].item[=].text = "Consulta sobre si se monitoreó paciente embarazada una vez vacunada"
 
 * item[=].item[+].type = #group
 * item[=].item[=].required = true
 * item[=].item[=].linkId = "complicacionesEmbarazo"
-* item[=].item[=].text = "Descripción de las complicaciones sufridas durante el embarazo"
+* item[=].item[=].text = "Definición del  tipo de complicación acontecida u ocurrida con relación al embarazo"
 // Enable When
 * item[=].item[=].enableWhen.question = "embarazoDuranteVacuna"
 * item[=].item[=].enableWhen.operator = #=
@@ -600,7 +609,7 @@ Usage: #example
 * item[=].item[=].item[=].answerValueSet = "ComplicacionEmbarazoMedraVS"
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "complicacionEmbarazoMedra"
-* item[=].item[=].item[=].text = "Código Medra Confirmación Embarazo"
+* item[=].item[=].item[=].text = "Código Medra complicación durante Embarazo"
 
 * item[=].item[=].item[+].type = #choice
 * item[=].item[=].item[=].answerValueSet = "ComplicacionEmbarazoOtroVS"
@@ -617,32 +626,37 @@ Usage: #example
 * item[=].item[=].item[0].type = #boolean
 * item[=].item[=].item[=].required = true
 * item[=].item[=].item[=].linkId = "tipoGravedad"
-* item[=].item[=].item[=].text = "Definición si el ESAVI es de Gravedad o No"
+* item[=].item[=].item[=].text = "Clasificación según la gravedad del ESAVI"
 
 * item[=].item[=].item[+].type = #boolean
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "gravMuerte"
-* item[=].item[=].item[=].text = "¿Es la gravedad la muerte del paciente?"
+* item[=].item[=].item[=].text = "¿Generó Muerte?"
 
 * item[=].item[=].item[+].type = #boolean
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "gravRiesgoVida"
-* item[=].item[=].item[=].text = "¿Es la gravedad de Riesgo de Vida del paciente?"
+* item[=].item[=].item[=].text = "¿Pone en riesgo la vida?"
+
+* item[=].item[=].item[+].type = #boolean
+* item[=].item[=].item[=].required = false
+* item[=].item[=].item[=].linkId = "gravHospitalizacion"
+* item[=].item[=].item[=].text = "¿Genera Hospitalización?"
 
 * item[=].item[=].item[+].type = #boolean
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "gravDiscapacidad"
-* item[=].item[=].item[=].text = "¿Es la gravedad la discapacidad del paciente?"
+* item[=].item[=].item[=].text = "¿Genera discapacidad severa o permanente?"
 
 * item[=].item[=].item[+].type = #boolean
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "gravAnomaliaCongenita"
-* item[=].item[=].item[=].text = "¿Es la gravedad el gatillante de una anomalía congénita paciente?"
+* item[=].item[=].item[=].text = "¿Gatilla  anomalía congénita paciente?"
 
 * item[=].item[=].item[+].type = #boolean
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "gravAborto"
-* item[=].item[=].item[=].text = "¿Es la gravedad aborto en el paciente?"
+* item[=].item[=].item[=].text = "¿Produce aborto?"
 * item[=].item[=].item[=].enableWhen.question = "embarazoDuranteVacuna"
 * item[=].item[=].item[=].enableWhen.operator = #=
 * item[=].item[=].item[=].enableWhen.answerCoding.system = "RespuestaSiNoNosabeVS"
@@ -651,7 +665,7 @@ Usage: #example
 * item[=].item[=].item[+].type = #boolean
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "gravMuerteFetal"
-* item[=].item[=].item[=].text = "¿Es la gravedad la muerte fetal en el paciente?"
+* item[=].item[=].item[=].text = "¿Produce  la muerte fetal?"
 * item[=].item[=].item[=].enableWhen.question = "embarazoDuranteVacuna"
 * item[=].item[=].item[=].enableWhen.operator = #=
 * item[=].item[=].item[=].enableWhen.answerCoding.system = "RespuestaSiNoNosabeVS"
@@ -777,7 +791,7 @@ Usage: #example
 * item[=].item[=].required = true
 * item[=].item[=].linkId = "fechaVencimientoVacuna"
 * item[=].item[=].text = "Fecha de Vencimiento de vacuna"
-* item[=].item[+].type = #string
+* item[=].item[+].type = #date
 * item[=].item[=].required = false
 * item[=].item[=].linkId = "nombreDiluyenteVacuna"
 * item[=].item[=].text = "Nombre del Diluyente de la Vacuna"
