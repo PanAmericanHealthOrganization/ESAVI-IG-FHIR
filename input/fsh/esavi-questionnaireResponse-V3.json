@@ -1,0 +1,905 @@
+{
+    "resourceType": "QuestionnaireResponse",
+ 
+       
+    "status": "completed",
+    "authored": "2021-12-07T15:49:51.722Z",
+    "item": [{
+            "linkId": "datosNotificacionGeneral",
+            "text": "Datos Administrativos de la Notificación",
+            "item": [{
+                    "linkId": "datosNotificacion",
+                    "text": "Datos de quién y donde se realiza la notificación",
+                    "item": [{
+                            "linkId": "organizacionNotificadora",
+                            "text": "Nombre Organización que Notifica",
+                            "answer": [{
+                                "valueString": "asdf"
+                            }]
+                        },
+                        {
+                            "linkId": "direccionOrganizacion",
+                            "text": "Dirección en formato de OPS de Organización que Notifica ESAVI",
+                            "answer": [{
+                                "valueCoding": {
+                                    "system": "http://paho.org/esavi/ValueSet/EsaviDirOrgNotiVS",
+                                    "code": "01",
+                                    "display": "example"
+                                }
+                            }]
+                        },
+                        {
+                            "linkId": "profesionalNotificador",
+                            "text": "Profesión de quien notifica ESAVI",
+                            "answer": [{
+                                "valueCoding": {
+                                    "system": "http://paho.org/esavi/ValueSet/EsaviProfesionalNotificadorVS",
+                                    "code": "01",
+                                    "display": "example"
+                                }
+                            }]
+                        }
+                    ]
+                },
+                {
+                    "linkId": "fechas",
+                    "text": "Fechas Administrativas",
+                    "item": [{
+                            "linkId": "fechaConsulta",
+                            "text": "Fecha de consulta por síntomas",
+                            "answer": [{
+                                "valueDate": "2021-12-07"
+                            }]
+                        },
+                        {
+                            "linkId": "fechaNotificacion",
+                            "text": "Fecha de Notificación",
+                            "answer": [{
+                                "valueDate": "2021-12-15"
+                            }]
+                        },
+                        {
+                            "linkId": "fechaLlenadoFicha",
+                            "text": "Fecha que se llenó este formulario",
+                            "answer": [{
+                                "valueDate": "2021-12-14"
+                            }]
+                        },
+                        {
+                            "linkId": "FechaAlmacenaRepNacacional",
+                            "text": "Fecha en la que el formulario fue almacenado localmente",
+                            "answer": [{
+                                "valueDate": "2021-12-03"
+                            }]
+                        },
+                        {
+                            "linkId": "FechaAlmacenaRepOPS",
+                            "text": "Fecha en la que el formulario fue almacenado en OPS",
+                            "answer": [{
+                                "valueDate": "2021-12-10"
+                            }]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "linkId": "datosPacienteCaso",
+            "text": "Datos Demográficos de Paciente ESAVI",
+            "item": [{
+                "linkId": "datosPaciente",
+                "text": "Datos del Paciente ESAVI",
+                "item": [{
+                        "linkId": "numeroCaso",
+                        "text": "UUID que identifica el caso",
+                        "answer": [{
+                            "valueString": "asdf"
+                        }]
+                    },
+                    {
+                        "linkId": "paisOrigen-Reg",
+                        "text": "País en donde se originó el Registro",
+                        "answer": [{
+                            "valueCoding": {
+                                "system": "Iso3166-1-N",
+                                "code": "01",
+                                "display": "example"
+                            }
+                        }]
+                    },
+                    {
+                        "linkId": "idPaciente",
+                        "text": "Número Identificación de Paciente, en UUID",
+                        "item": [{
+                            "linkId": "value",
+                            "text": "UUID de identificación",
+                            "answer": [{
+                                "valueString": "asdf"
+                            }]
+                        }]
+                    },
+                    {
+                        "linkId": "residenciaHabitual",
+                        "text": "Residencia habitual del Paciente",
+                        "answer": [{
+                            "valueCoding": {
+                                "system": "http://paho.org/esavi/ValueSet/EsaviDirOrgNotiVS",
+                                "code": "01",
+                                "display": "example"
+                            }
+                        }]
+                    },
+                    {
+                        "linkId": "sexoPaciente",
+                        "text": "Sexo del paciente",
+                        "answer": [{
+                            "valueCoding": {
+                                "system": "http://hl7.org/fhir/R4/valueset-administrative-gender.html",
+                                "code": "01",
+                                "display": "example"
+                            }
+                        }]
+                    },
+                    {
+                        "linkId": "fechaNacimiento",
+                        "text": "Fecha de nacimiento del Paciente",
+                        "answer": [{
+                            "valueDate": "2021-12-01"
+                        }]
+                    },
+                    {
+                        "linkId": "etnia",
+                        "text": "Etnia reconcida por el paciente",
+                        "answer": [{
+                            "valueString": "asdf"
+                        }]
+                    }
+                ]
+            }]
+        },
+        {
+            "linkId": "antecedentesMedicos",
+            "text": "Antecedentes médicos previos identificados por el paciente",
+            "item": [{
+                    "linkId": "antecedentesEnfermedadesPrevias",
+                    "text": "Antedecentes de enfermedades previas o SARS-Cov2",
+                    "item": [{
+                            "linkId": "descripcionEnfPrevia",
+                            "text": "Descripción de la enfermedad notificada",
+                            "answer": [{
+                                "valueString": "asdf"
+                            }]
+                        },
+                        {
+                            "linkId": "codigoMedraEnfPrevia",
+                            "text": "Código del Antedente de la enfermedad notificada",
+                            "answer": [{
+                                "valueCoding": {
+                                    "system": "http://paho.org/esavi/ValueSet/EsaviMedra",
+                                    "code": "01",
+                                    "display": "example"
+                                }
+                            }]
+                        },
+                        {
+                            "linkId": "otrosCodigosEnfPrevia",
+                            "text": "Otro Código de los antecedentes de enfermedad notificada",
+                            "answer": [{
+                                "valueCoding": {
+                                    "system": "http://paho.org/esavi/ValueSet/EsaviEnfermedadesPreviasCodificacionVS",
+                                    "code": "01",
+                                    "display": "example"
+                                }
+                            }]
+                        }
+                    ]
+                },
+                {
+                    "linkId": "antecedentesEventosAdversos",
+                    "text": "Declaración de existencia de eventos adversos previos",
+                    "item": [{
+                            "linkId": "antecedentesAdvVacunas",
+                            "text": "Declaración de antecedentes de Eventos Adversos con vacunas si|no|desconoce",
+                            "answer": [{
+                                "valueCoding": {
+                                    "system": "http://paho.org/esavi/ValueSet/EsaviRespuestaSiNoNosabeVS",
+                                    "code": "01",
+                                    "display": "example"
+                                }
+                            }]
+                        },
+                        {
+                            "linkId": "antecedentesAdvMedicamentos",
+                            "text": "Declaración de antecedentes de Eventos Adversos con medicamentos si|no|desconoce",
+                            "answer": [{
+                                "valueCoding": {
+                                    "system": "http://paho.org/esavi/ValueSet/EsaviRespuestaSiNoNosabeVS",
+                                    "code": "01",
+                                    "display": "example"
+                                }
+                            }]
+                        },
+                        {
+                            "linkId": "antecedentesAdvMismaVacuna",
+                            "text": "Declaración de antecedentes de Eventos Adversos con misma vacuna si|no|desconoce",
+                            "answer": [{
+                                "valueCoding": {
+                                    "system": "http://paho.org/esavi/ValueSet/EsaviRespuestaSiNoNosabeVS",
+                                    "code": "01",
+                                    "display": "example"
+                                }
+                            }]
+                        }
+                    ]
+                },
+                {
+                    "linkId": "antecedentesSarsCov2",
+                    "text": "Antecedentes que Paciente ha padecido COVID-19",
+                    "item": [{
+                            "linkId": "asintomaticoSars",
+                            "text": "Covid-19 asintomatico?",
+                            "answer": [{
+                                "valueCoding": {
+                                    "system": "http://paho.org/esavi/ValueSet/EsaviRespuestaSiNoNosabeVS",
+                                    "code": "01",
+                                    "display": "example"
+                                }
+                            }]
+                        },
+                        {
+                            "linkId": "fechaSintomasCovid19",
+                            "text": "Fecha en la cual el paciente reconoce haber tenido sintomas",
+                            "answer": [{
+                                "valueDateTime": "2021-12-07T15:44:15.121Z"
+                            }]
+                        },
+                        {
+                            "linkId": "confirmacionDiagnosticoCovid19",
+                            "text": "¿Diagnóstico de COVID19 confirmado?",
+                            "answer": [{
+                                "valueBoolean": true
+                            }]
+                        },
+                        {
+                            "linkId": "tipoConfirmacionCovid19",
+                            "text": "Tipo de confirmación de diagnóstico COVID.19",
+                            "answer": [{
+                                "valueCoding": {
+                                    "system": "http://paho.org/esavi/ValueSet/EsaviModoConfirmacionInfeccionVS",
+                                    "code": "01",
+                                    "display": "example"
+                                }
+                            }]
+                        },
+                        {
+                            "linkId": "fechaTomaMuestraCovid19",
+                            "text": "Fecha en la cual se tomó la muestra para examen de COVID-19",
+                            "answer": [{
+                                "valueDate": "2021-12-06"
+                            }]
+                        },
+                        {
+                            "linkId": "ensayoClinicoCovid19",
+                            "text": "Consulta si particpó en algún ensayo clínico para COVID-19",
+                            "answer": [{
+                                "valueBoolean": true
+                            }]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "linkId": "antecedentesFarmacosVacunas",
+            "text": "Antecedentes si el paciente consume fármcos durante ESAVI o ha recibido otra vacunas en los ultimos 30 días previos a la vacuna con sospecha de generar ESAVI",
+            "item": [{
+                    "linkId": "medicamento",
+                    "text": "Antecedentes de medicamentos que el paciente consume al momento de generar ESAVI",
+                    "item": [{
+                            "linkId": "descripcionMedicamento",
+                            "text": "Descripción del medicamento consumido",
+                            "answer": [{
+                                "valueString": "asdf"
+                            }]
+                        },
+                        {
+                            "linkId": "codigoMedicamento",
+                            "text": "Código WHO del medicamento consumido por el paciente",
+                            "answer": [{
+                                "valueCoding": {
+                                    "system": "http://paho.org/esavi/ValueSet/EsaviMedicamentoGenericoVS",
+                                    "code": "01",
+                                    "display": "example"
+                                }
+                            }]
+                        },
+                        {
+                            "linkId": "otroCodigoMedicamento",
+                            "text": "Otro código de sistema distinto a WhoDrugs",
+                            "answer": [{
+                                "valueCoding": {
+                                    "system": "http://paho.org/esavi/ValueSet/EsaviMedicamentoOtroVS",
+                                    "code": "01",
+                                    "display": "example"
+                                }
+                            }]
+                        },
+                        {
+                            "linkId": "sustanciaActiva",
+                            "text": "Descripción de la o las susbstancias activas del medicamento consumido",
+                            "answer": [{
+                                "valueCoding": {
+                                    "system": "http://paho.org/esavi/ValueSet/EsaviSustanciaActivaVS",
+                                    "code": "01",
+                                    "display": "example"
+                                }
+                            }]
+                        },
+                        {
+                            "linkId": "nombreGenerico",
+                            "text": "Nombre Genérico del Medicamento SNOMED-CT|WHODrugs",
+                            "answer": [{
+                                "valueCoding": {
+                                    "system": "http://paho.org/esavi/ValueSet/EsaviMedicamentoGenericoVS",
+                                    "code": "01",
+                                    "display": "example"
+                                }
+                            }]
+                        },
+                        {
+                            "linkId": "nombreComercial",
+                            "text": "Nombre comercial con el que se conoce el medicamento",
+                            "answer": [{
+                                "valueCoding": {
+                                    "system": "http://paho.org/esavi/ValueSet/EsaviNombreComercialMedicamentoVS",
+                                    "code": "01",
+                                    "display": "example"
+                                }
+                            }]
+                        },
+                        {
+                            "linkId": "formaFarmacologica",
+                            "text": "Forma Farmacéutica del Medicamento",
+                            "item": [{
+                                    "linkId": "forma",
+                                    "text": "Forma Farmaceutica",
+                                    "answer": [{
+                                        "valueCoding": {
+                                            "system": "http://paho.org/esavi/ValueSet/EsaviFormaFarmaceuticaVS",
+                                            "code": "01",
+                                            "display": "example"
+                                        }
+                                    }]
+                                },
+                                {
+                                    "linkId": "viaAdministracion",
+                                    "text": "Vía mediante la cual el medicamento ha sido administrado al paciente",
+                                    "answer": [{
+                                        "valueCoding": {
+                                            "system": "http://paho.org/esavi/ValueSet/EsaviViaAdministracionMedicamentos",
+                                            "code": "01",
+                                            "display": "example"
+                                        }
+                                    }]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "linkId": "vacunasUltimos30Dias",
+                    "text": "Descripción de Vacunas colocadas hast 30 días previos a ESAVI",
+                    "item": [{
+                            "linkId": "vacunasAdministradas",
+                            "text": "Nombre de Vacunas Administradas según paciente",
+                            "answer": [{
+                                    "valueString": "asdf"
+                                },
+                                {
+                                    "valueString": "asdf"
+                                },
+                                {
+                                    "valueString": "asdf"
+                                },
+                                {
+                                    "valueString": "asdf"
+                                },
+                                {
+                                    "valueString": "asdf"
+                                },
+                                {
+                                    "valueString": "asdf"
+                                },
+                                {
+                                    "valueString": "asdf"
+                                }
+                            ]
+                        },
+                        {
+                            "linkId": "mecanismoVerificacion",
+                            "text": "Código del mecanismo de verificación de vacuna colocada",
+                            "answer": [{
+                                "valueCoding": {
+                                    "system": "http://paho.org/esavi/ValueSet/EsaviModoVerificacionVacunaVS",
+                                    "code": "01",
+                                    "display": "example"
+                                }
+                            }]
+                        },
+                        {
+                            "linkId": "otroMecanismoVerificacion",
+                            "text": "Descripción de otro mecanismo no considerado en los códigos",
+                            "answer": [{
+                                "valueString": "asdf"
+                            }]
+                        },
+                        {
+                            "linkId": "vacunatorioVacunaPrevia",
+                            "text": "Nombre del vacunatorio en donde se inyectó vacuna",
+                            "answer": [{
+                                "valueString": "asdf"
+                            }]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "linkId": "registroESAVI",
+            "text": "Registro de ESAVI desarrollado por el paciente",
+            "item": [{
+                    "linkId": "direccionVacunatorio",
+                    "text": "Dirección del vacunatorio según código OPS",
+                    "answer": [{
+                        "valueCoding": {
+                            "system": "http://paho.org/esavi/ValueSet/EsaviDirOrgNotiVS",
+                            "code": "01",
+                            "display": "example"
+                        }
+                    }]
+                },
+                {
+                    "linkId": "datosESAVI",
+                    "text": "Datos del ESAVI generado y la relevancia de este",
+                    "item": [{
+                            "linkId": "esaviReacciones",
+                            "text": "Eventos y reacciónes manifestados por el paciente para el ESAVI descrito",
+                            "answer": [{
+                                "valueString": "asdf"
+                            }]
+                        },
+                        {
+                            "linkId": "esaviMedra",
+                            "text": "Código Medra de la reacción adversa generada por la vacuna",
+                            "answer": [{
+                                "valueCoding": {
+                                    "system": "http://paho.org/esavi/ValueSet/EsaviMedra",
+                                    "code": "01",
+                                    "display": "example"
+                                }
+                            }]
+                        },
+                        {
+                            "linkId": "esaviOtroCodigo",
+                            "text": "Código no Medra de la reacción adversa generada por la vacuna",
+                            "answer": [{
+                                "valueCoding": {
+                                    "system": "http://paho.org/esavi/ValueSet/EsaviOtrosVS",
+                                    "code": "01",
+                                    "display": "example"
+                                }
+                            }]
+                        }
+                    ]
+                },
+                {
+                    "linkId": "datosESAVI",
+                    "text": "Datos del ESAVI generado y la relevancia de este",
+                    "item": [{
+                            "linkId": "esaviReacciones",
+                            "text": "Eventos y reacciónes manifestados por el paciente para el ESAVI descrito",
+                            "answer": [{
+                                "valueString": "asdf"
+                            }]
+                        },
+                        {
+                            "linkId": "esaviMedra",
+                            "text": "Código Medra de la reacción adversa generada por la vacuna",
+                            "answer": [{
+                                "valueCoding": {
+                                    "system": "http://paho.org/esavi/ValueSet/EsaviMedra",
+                                    "code": "01",
+                                    "display": "example"
+                                }
+                            }]
+                        },
+                        {
+                            "linkId": "esaviOtroCodigo",
+                            "text": "Código no Medra de la reacción adversa generada por la vacuna",
+                            "answer": [{
+                                "valueCoding": {
+                                    "system": "http://paho.org/esavi/ValueSet/EsaviOtrosVS",
+                                    "code": "01",
+                                    "display": "example"
+                                }
+                            }]
+                        }
+                    ]
+                },
+                {
+                    "linkId": "datosESAVI",
+                    "text": "Datos del ESAVI generado y la relevancia de este",
+                    "item": [{
+                            "linkId": "esaviReacciones",
+                            "text": "Eventos y reacciónes manifestados por el paciente para el ESAVI descrito",
+                            "answer": [{
+                                "valueString": "asdf"
+                            }]
+                        },
+                        {
+                            "linkId": "esaviMedra",
+                            "text": "Código Medra de la reacción adversa generada por la vacuna",
+                            "answer": [{
+                                "valueCoding": {
+                                    "system": "http://paho.org/esavi/ValueSet/EsaviMedra",
+                                    "code": "01",
+                                    "display": "example"
+                                }
+                            }]
+                        },
+                        {
+                            "linkId": "esaviOtroCodigo",
+                            "text": "Código no Medra de la reacción adversa generada por la vacuna",
+                            "answer": [{
+                                "valueCoding": {
+                                    "system": "http://paho.org/esavi/ValueSet/EsaviOtrosVS",
+                                    "code": "01",
+                                    "display": "example"
+                                }
+                            }]
+                        }
+                    ]
+                },
+                {
+                    "linkId": "embarazoESAVI",
+                    "text": "Datos relacionados con paciente embarazada al momento de generar ESAVI",
+                    "item": [{
+                            "linkId": "embarazoDuranteVacuna",
+                            "text": "Consulta sobre la condición de embarazo al vacunarse",
+                            "answer": [{
+                                "valueCoding": {
+                                    "system": "http://paho.org/esavi/ValueSet/EsaviRespuestaSiNoNosabeVS",
+                                    "code": "01",
+                                    "display": "example"
+                                }
+                            }]
+                        },
+                        {
+                            "linkId": "embarazoAlDesarrolloESAVI",
+                            "text": "Consulta sobre la condición de embarazo al desarrolar ESAVI",
+                            "answer": [{
+                                "valueCoding": {
+                                    "system": "http://paho.org/esavi/ValueSet/EsaviRespuestaSiNoNosabeVS",
+                                    "code": "01",
+                                    "display": "example"
+                                }
+                            }]
+                        },
+                        {
+                            "linkId": "fechaUltimaRegla",
+                            "text": "Fecha de la última menstruación de la Paciente",
+                            "answer": [{
+                                "valueDate": "2021-12-14"
+                            }]
+                        },
+                        {
+                            "linkId": "fechaParto",
+                            "text": "Fecha probable del parto",
+                            "answer": [{
+                                "valueDate": "2021-12-09"
+                            }]
+                        },
+                        {
+                            "linkId": "monitoreoPosteriorVacuna",
+                            "text": "Consulta sobre si se monitoreo paciente una vez vacunada",
+                            "answer": [{
+                                "valueCoding": {
+                                    "system": "http://paho.org/esavi/ValueSet/EsaviRespuestaSiNoNosabeVS",
+                                    "code": "01",
+                                    "display": "example"
+                                }
+                            }]
+                        }
+                    ]
+                },
+                {
+                    "linkId": "desenlaceESAVI",
+                    "text": "Determinación del estado de gravedad del ESAVI",
+                    "item": [{
+                            "linkId": "tipoGravedad",
+                            "text": "Definición si el ESAVI es de Gravedad o No",
+                            "answer": [{
+                                "valueBoolean": true
+                            }]
+                        },
+                        {
+                            "linkId": "gravMuerte",
+                            "text": "¿Es la gravedad la muerte del paciente?",
+                            "answer": [{
+                                "valueBoolean": true
+                            }]
+                        },
+                        {
+                            "linkId": "gravRiesgoVida",
+                            "text": "¿Es la gravedad de Riesgo de Vida del paciente?",
+                            "answer": [{
+                                "valueBoolean": true
+                            }]
+                        },
+                        {
+                            "linkId": "gravDiscapacidad",
+                            "text": "¿Es la gravedad la discapacidad del paciente?",
+                            "answer": [{
+                                "valueBoolean": true
+                            }]
+                        },
+                        {
+                            "linkId": "gravAnomaliaCongenita",
+                            "text": "¿Es la gravedad el gatillante de una anomalía congénita paciente?",
+                            "answer": [{
+                                "valueBoolean": true
+                            }]
+                        },
+                        {
+                            "linkId": "otrosEventosImportantes",
+                            "text": "Otros Eventos considerados Médicamente Importantes",
+                            "answer": [{
+                                "valueBoolean": true,
+                                "item": [{
+                                    "linkId": "otrosEventosImportantesTx",
+                                    "text": "Definición Otros Eventos considerados Médicamente Importantes",
+                                    "answer": [{
+                                            "valueString": "asdf"
+                                        },
+                                        {
+                                            "valueString": "asdf"
+                                        },
+                                        {
+                                            "valueString": "asdf"
+                                        }
+                                    ]
+                                }]
+                            }]
+                        },
+                        {
+                            "linkId": "desenlaceESAVI",
+                            "text": "Desenlace según categoría",
+                            "answer": [{
+                                "valueCoding": {
+                                    "system": "http://paho.org/esavi/ValueSet/EsaviClasificacionDesenlaceVS",
+                                    "code": "01",
+                                    "display": "example"
+                                }
+                            }]
+                        },
+                        {
+                            "linkId": "fechaMuerte",
+                            "text": "Fecha de muerte producida por posible ESAVI",
+                            "answer": [{
+                                "valueDate": "2021-12-07"
+                            }]
+                        },
+                        {
+                            "linkId": "autopsia",
+                            "text": "Determinación si hubo o no Autopsia",
+                            "answer": [{
+                                "valueBoolean": true
+                            }]
+                        },
+                        {
+                            "linkId": "fechaNotificaMuerte",
+                            "text": "Fecha en la cual se notifico la muerte del paciente al registro nacional",
+                            "answer": [{
+                                "valueDate": "2021-11-30"
+                            }]
+                        },
+                        {
+                            "linkId": "comentarios",
+                            "text": "Comentarios adicionales en cuanto al cuadro ESAVI",
+                            "answer": [{
+                                "valueString": "asdf"
+                            }]
+                        },
+                        {
+                            "linkId": "fechaInicioInvestigacion",
+                            "text": "Fecha en la cual se inicia investigación",
+                            "answer": [{
+                                "valueDate": "2021-12-09"
+                            }]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "linkId": "registroVacunaCovidOtras",
+            "text": "Registro de la Vacuna COVID19 colocada y de otras colocadas al mismo tiempo",
+            "item": [{
+                    "linkId": "descripcionVacuna",
+                    "text": "Descripción de la vacuna sospecha de generar ESAVI",
+                    "answer": [{
+                        "valueString": "asdf"
+                    }]
+                },
+                {
+                    "linkId": "codigoWhoVacuna",
+                    "text": "Código WhoDrugs de la Vacuna",
+                    "answer": [{
+                        "valueCoding": {
+                            "system": "http://paho.org/esavi/ValueSet/EsaviCodigoWhoVacunaVS",
+                            "code": "01",
+                            "display": "example"
+                        }
+                    }]
+                },
+                {
+                    "linkId": "codigoOtroVacuna",
+                    "text": "Código no WhoDrugs de la Vacuna",
+                    "answer": [{
+                        "valueCoding": {
+                            "system": "http://paho.org/esavi/ValueSet/EsaviCodigoWhoVacunaVS",
+                            "code": "01",
+                            "display": "example"
+                        }
+                    }]
+                },
+                {
+                    "linkId": "fechaHoraVacunacion",
+                    "text": "Fecha y hora en la cual se colocó la vacuna que habria generado ESAVI",
+                    "answer": [{
+                        "valueDateTime": "2021-12-14T15:47:24.398Z"
+                    }]
+                },
+                {
+                    "linkId": "dosisVacuna",
+                    "text": "1a, 2a o 3ra dosis",
+                    "answer": [{
+                        "valueInteger": 1
+                    }]
+                },
+                {
+                    "linkId": "numeroLote",
+                    "text": "Númer del Lote de la Vacuna colocada",
+                    "answer": [{
+                        "valueString": 234234
+                    }]
+                },
+                {
+                    "linkId": "fechaVencimientoVacuna",
+                    "text": "Fecha de Vencimiento de vacuna",
+                    "answer": [{
+                        "valueDate": "2021-12-14"
+                    }]
+                },
+                {
+                    "linkId": "nombreDiluyenteVacuna",
+                    "text": "Nombre del Diluyente de la Vacuna",
+                    "answer": [{
+                        "valueString": "asdf"
+                    }]
+                },
+                {
+                    "linkId": "numeroLoteDiluyente",
+                    "text": "Numero del lote del diluyente de la vacuna",
+                    "answer": [{
+                        "valueString": "asdf"
+                    }]
+                },
+                {
+                    "linkId": "fechaVencimientoDiluyente",
+                    "text": "Fecha de vencimiento del diluyente de la vacuna",
+                    "answer": [{
+                        "valueDate": "2021-12-29"
+                    }]
+                },
+                {
+                    "linkId": "fechaHoraReconstitucionVacuna",
+                    "text": "Fecha y Hora de Reconstrucción de la Vacuna",
+                    "answer": [{
+                        "valueDateTime": "2021-12-09T15:48:25.439Z"
+                    }]
+                }
+            ]
+        },
+        {
+            "linkId": "registroVacunaCovidOtras",
+            "text": "Registro de la Vacuna COVID19 colocada y de otras colocadas al mismo tiempo",
+            "item": [{
+                    "linkId": "descripcionVacuna",
+                    "text": "Descripción de la vacuna sospecha de generar ESAVI",
+                    "answer": [{
+                        "valueString": "asdf"
+                    }]
+                },
+                {
+                    "linkId": "codigoWhoVacuna",
+                    "text": "Código WhoDrugs de la Vacuna",
+                    "answer": [{
+                        "valueCoding": {
+                            "system": "http://paho.org/esavi/ValueSet/EsaviCodigoWhoVacunaVS",
+                            "code": "01",
+                            "display": "example"
+                        }
+                    }]
+                },
+                {
+                    "linkId": "codigoOtroVacuna",
+                    "text": "Código no WhoDrugs de la Vacuna",
+                    "answer": [{
+                        "valueCoding": {
+                            "system": "http://paho.org/esavi/ValueSet/EsaviCodigoWhoVacunaVS",
+                            "code": "01",
+                            "display": "example"
+                        }
+                    }]
+                },
+                {
+                    "linkId": "fechaHoraVacunacion",
+                    "text": "Fecha y hora en la cual se colocó la vacuna que habria generado ESAVI",
+                    "answer": [{
+                        "valueDateTime": "2021-12-21T15:48:38.100Z"
+                    }]
+                },
+                {
+                    "linkId": "dosisVacuna",
+                    "text": "1a, 2a o 3ra dosis",
+                    "answer": [{
+                        "valueInteger": 2
+                    }]
+                },
+                {
+                    "linkId": "numeroLote",
+                    "text": "Númer del Lote de la Vacuna colocada",
+                    "answer": [{
+                        "valueInteger": 2332443
+                    }]
+                },
+                {
+                    "linkId": "fechaVencimientoVacuna",
+                    "text": "Fecha de Vencimiento de vacuna",
+                    "answer": [{
+                        "valueDate": "2021-12-13"
+                    }]
+                },
+                {
+                    "linkId": "nombreDiluyenteVacuna",
+                    "text": "Nombre del Diluyente de la Vacuna",
+                    "answer": [{
+                        "valueString": "asdf"
+                    }]
+                },
+                {
+                    "linkId": "numeroLoteDiluyente",
+                    "text": "Numero del lote del diluyente de la vacuna",
+                    "answer": [{
+                        "valueString": "asdf"
+                    }]
+                },
+                {
+                    "linkId": "fechaVencimientoDiluyente",
+                    "text": "Fecha de vencimiento del diluyente de la vacuna",
+                    "answer": [{
+                        "valueDate": "2021-12-14"
+                    }]
+                },
+                {
+                    "linkId": "fechaHoraReconstitucionVacuna",
+                    "text": "Fecha y Hora de Reconstrucción de la Vacuna",
+                    "answer": [{
+                        "valueDateTime": "2021-12-07T15:48:52.693Z"
+                    }]
+                }
+            ]
+        }
+    ]
+}

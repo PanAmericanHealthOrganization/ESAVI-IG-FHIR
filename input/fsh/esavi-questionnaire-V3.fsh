@@ -1,7 +1,7 @@
 Alias: $questionnaire-item-control = http://hl7.org/fhir/questionnaire-item-control
 
-Instance: ejemploQuestionnaireEsavi2
-Title: "Ejemplo Cuestionario 2"
+Instance: ejemploQuestionnaireEsavi3
+Title: "Ejemplo Cuestionario 3"
 Description: "Description con constraints"
 InstanceOf: Questionnaire
 Usage: #example
@@ -361,7 +361,7 @@ Usage: #example
 * item[=].item.item[=].item.text = "UUID de identificación"
 
 * item[=].item.item[+].type = #choice
-* item[=].item.item[=].answerValueSet = "http://paho.org/esavi/ValueSet/DirOrgNotiVS"
+* item[=].item.item[=].answerValueSet = "DirOrgNotiVS"
 * item[=].item.item[=].required = true
 * item[=].item.item[=].linkId = "residenciaHabitual"
 * item[=].item.item[=].text = "Residencia habitual del Paciente"
@@ -506,27 +506,96 @@ Usage: #example
 * item[=].item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].item[=].linkId = "viaAdministracion"
 * item[=].item[=].item[=].item[=].text = "Vía mediante la cual el medicamento ha sido administrado al paciente"
+
+/////////////////////////////
+//vacunas
 * item[=].item[+].type = #group
 * item[=].item[=].required = true
 * item[=].item[=].linkId = "vacunasUltimos30Dias"
 * item[=].item[=].text = "Descripción de Vacunas colocadas hast 30 días previos a ESAVI"
+
+
 * item[=].item[=].item[0].type = #string
-* item[=].item[=].item[=].repeats = true
-* item[=].item[=].item[=].linkId = "vacunasAdministradas"
-* item[=].item[=].item[=].text = "Nombre de Vacunas Administradas según paciente"
+* item[=].item[=].item[=].required = false
+* item[=].item[=].item[=].linkId = "vacunatorioVacunaPrevia"
+* item[=].item[=].item[=].text = "Nombre del vacunatorio en donde se inyectó vacuna"
+
+
+* item[=].item[=].item[+].type = #string
+* item[=].item[=].item[=].required = true
+* item[=].item[=].item[=].linkId = "descripcionVacuna"
+* item[=].item[=].item[=].text = "Descripción de la vacuna sospecha de generar ESAVI"
+
 * item[=].item[=].item[+].type = #choice
 * item[=].item[=].item[=].answerValueSet = "http://paho.org/esavi/ValueSet/ModoVerificacionVacunaVS"
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "mecanismoVerificacion"
 * item[=].item[=].item[=].text = "Código del mecanismo de verificación de vacuna colocada"
+
 * item[=].item[=].item[+].type = #string
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "otroMecanismoVerificacion"
 * item[=].item[=].item[=].text = "Descripción de otro mecanismo no considerado en los códigos"
+
+* item[=].item[=].item[+].type = #choice
+* item[=].item[=].item[=].answerValueSet = "http://paho.org/esavi/ValueSet/CodigoWhoVacunaVS"
+* item[=].item[=].item[=].required = false
+* item[=].item[=].item[=].linkId = "codigoWhoVacuna"
+* item[=].item[=].item[=].text = "Código WhoDrugs de la Vacuna"
+
+* item[=].item[=].item[+].type = #choice
+* item[=].item[=].item[=].answerValueSet = "http://paho.org/esavi/ValueSet/CodigoOtroVacunaVS"
+* item[=].item[=].item[=].required = false
+* item[=].item[=].item[=].linkId = "codigoOtroVacuna"
+* item[=].item[=].item[=].text = "Código no WhoDrugs de la Vacuna"
+
+
+* item[=].item[=].item[+].type = #dateTime
+* item[=].item[=].item[=].required = true
+* item[=].item[=].item[=].linkId = "fechaHoraVacunacion"
+* item[=].item[=].item[=].text = "Fecha y hora en la cual se colocó la vacuna que habria generado ESAVI"
+
+// dosis de vacuna con valor maximo y mínimo
+* item[=].item[=].item[+].type = #integer
+* item[=].item[=].item[=].required = true
+* item[=].item[=].item[=].linkId = "dosisVacuna"
+* item[=].item[=].item[=].text = "1a, 2a o 3ra dosis"
+// extensión control de valor
+
+* item[=].item[=].item[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/minValue"
+* item[=].item[=].item[=].extension[=].valueInteger = 1
+* item[=].item[=].item[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/maxValue"
+* item[=].item[=].item[=].extension[=].valueInteger = 3
+
+
+
+* item[=].item[=].item[+].type = #integer
+* item[=].item[=].item[=].required = false
+* item[=].item[=].item[=].linkId = "numeroLote"
+* item[=].item[=].item[=].text = "Númer del Lote de la Vacuna colocada"
+* item[=].item[=].item[+].type = #string
+* item[=].item[=].item[=].required = true
+* item[=].item[=].item[=].linkId = "fechaVencimientoVacuna"
+* item[=].item[=].item[=].text = "Fecha de Vencimiento de vacuna"
 * item[=].item[=].item[+].type = #string
 * item[=].item[=].item[=].required = false
-* item[=].item[=].item[=].linkId = "vacunatorioVacunaPrevia"
-* item[=].item[=].item[=].text = "Nombre del vacunatorio en donde se inyectó vacuna"
+* item[=].item[=].item[=].linkId = "nombreDiluyenteVacuna"
+* item[=].item[=].item[=].text = "Nombre del Diluyente de la Vacuna"
+* item[=].item[=].item[+].type = #string
+* item[=].item[=].item[=].required = false
+* item[=].item[=].item[=].linkId = "numeroLoteDiluyente"
+* item[=].item[=].item[=].text = "Numero del lote del diluyente de la vacuna"
+* item[=].item[=].item[+].type = #date
+* item[=].item[=].item[=].required = false
+* item[=].item[=].item[=].linkId = "fechaVencimientoDiluyente"
+* item[=].item[=].item[=].text = "Fecha de vencimiento del diluyente de la vacuna"
+* item[=].item[=].item[+].type = #dateTime
+* item[=].item[=].item[=].required = false
+* item[=].item[=].item[=].linkId = "fechaHoraReconstitucionVacuna"
+* item[=].item[=].item[=].text = "Fecha y Hora de Reconstrucción de la Vacuna"
+
+/////////////////////////////////////////////////////////////
+
 * item[+].type = #group
 * item[=].required = true
 * item[=].linkId = "registroESAVI"
@@ -743,69 +812,3 @@ Usage: #example
 * item[=].item[=].item[=].linkId = "fechaInicioInvestigacion"
 * item[=].item[=].item[=].text = "Fecha en la cual se inicia investigación"
 
-* item[+].type = #group
-* item[=].required = true
-* item[=].repeats = true
-* item[=].linkId = "registroVacunaCovidOtras"
-* item[=].text = "Registro de la Vacuna COVID19 colocada y de otras colocadas al mismo tiempo"
-* item[=].item[0].type = #string
-* item[=].item[=].required = true
-* item[=].item[=].linkId = "descripcionVacuna"
-* item[=].item[=].text = "Descripción de la vacuna sospecha de generar ESAVI"
-
-* item[=].item[+].type = #choice
-* item[=].item[=].answerValueSet = "http://paho.org/esavi/ValueSet/CodigoWhoVacunaVS"
-* item[=].item[=].required = false
-* item[=].item[=].linkId = "codigoWhoVacuna"
-* item[=].item[=].text = "Código WhoDrugs de la Vacuna"
-
-* item[=].item[+].type = #choice
-* item[=].item[=].answerValueSet = "http://paho.org/esavi/ValueSet/CodigoOtroVacunaVS"
-* item[=].item[=].required = false
-* item[=].item[=].linkId = "codigoOtroVacuna"
-* item[=].item[=].text = "Código no WhoDrugs de la Vacuna"
-
-
-* item[=].item[+].type = #dateTime
-* item[=].item[=].required = true
-* item[=].item[=].linkId = "fechaHoraVacunacion"
-* item[=].item[=].text = "Fecha y hora en la cual se colocó la vacuna que habria generado ESAVI"
-
-// dosis de vacuna con valor maximo y mínimo
-* item[=].item[+].type = #integer
-* item[=].item[=].required = true
-* item[=].item[=].linkId = "dosisVacuna"
-* item[=].item[=].text = "1a, 2a o 3ra dosis"
-// extensión control de valor
-
-* item[=].item[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/minValue"
-* item[=].item[=].extension[=].valueInteger = 1
-* item[=].item[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/maxValue"
-* item[=].item[=].extension[=].valueInteger = 3
-
-
-
-* item[=].item[+].type = #integer
-* item[=].item[=].required = false
-* item[=].item[=].linkId = "numeroLote"
-* item[=].item[=].text = "Númer del Lote de la Vacuna colocada"
-* item[=].item[+].type = #string
-* item[=].item[=].required = true
-* item[=].item[=].linkId = "fechaVencimientoVacuna"
-* item[=].item[=].text = "Fecha de Vencimiento de vacuna"
-* item[=].item[+].type = #string
-* item[=].item[=].required = false
-* item[=].item[=].linkId = "nombreDiluyenteVacuna"
-* item[=].item[=].text = "Nombre del Diluyente de la Vacuna"
-* item[=].item[+].type = #string
-* item[=].item[=].required = false
-* item[=].item[=].linkId = "numeroLoteDiluyente"
-* item[=].item[=].text = "Numero del lote del diluyente de la vacuna"
-* item[=].item[+].type = #date
-* item[=].item[=].required = false
-* item[=].item[=].linkId = "fechaVencimientoDiluyente"
-* item[=].item[=].text = "Fecha de vencimiento del diluyente de la vacuna"
-* item[=].item[+].type = #dateTime
-* item[=].item[=].required = false
-* item[=].item[=].linkId = "fechaHoraReconstitucionVacuna"
-* item[=].item[=].text = "Fecha y Hora de Reconstrucción de la Vacuna"

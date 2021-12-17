@@ -1,5 +1,5 @@
-Instance: ejemploQuestionnaireResponseEsavi2
-Title: "Ejemplo Respuesta Cuestionario 2"
+Instance: ejemploQuestionnaireResponseEsavi3
+Title: "Ejemplo Respuesta Cuestionario 3"
 Description: "Hoja de respuestas"
 InstanceOf: QuestionnaireResponse
 Usage: #example
@@ -145,26 +145,114 @@ Usage: #example
 * item[=].item[=].item[=].item[+].linkId = "viaAdministracion"
 * item[=].item[=].item[=].item[=].text = "Vía mediante la cual el medicamento ha sido administrado al paciente"
 * item[=].item[=].item[=].item[=].answer.valueCoding = http://paho.org/esavi/ValueSet/EsaviViaAdministracionMedicamentos#01 "example"
+
+
+
+
+
+//////////////////////////////////////-------------------
 * item[=].item[+].linkId = "vacunasUltimos30Dias"
 * item[=].item[=].text = "Descripción de Vacunas colocadas hast 30 días previos a ESAVI"
-* item[=].item[=].item[0].linkId = "vacunasAdministradas"
-* item[=].item[=].item[=].text = "Nombre de Vacunas Administradas según paciente"
-* item[=].item[=].item[=].answer[0].valueString = "asdf"
-* item[=].item[=].item[=].answer[+].valueString = "asdf"
-* item[=].item[=].item[=].answer[+].valueString = "asdf"
-* item[=].item[=].item[=].answer[+].valueString = "asdf"
-* item[=].item[=].item[=].answer[+].valueString = "asdf"
-* item[=].item[=].item[=].answer[+].valueString = "asdf"
-* item[=].item[=].item[=].answer[+].valueString = "asdf"
+
+* item[=].item[=].item[0].linkId = "vacunatorioVacunaPrevia"
+* item[=].item[=].item[=].text = "Nombre del vacunatorio en donde se inyectó vacuna"
+* item[=].item[=].item[=].answer.valueString = "asdf"
+
+* item[=].item[=].item[0].linkId = "descripcionVacuna"
+* item[=].item[=].item[=].text = "Descripción de la vacuna sospecha de generar ESAVI"
+* item[=].item[=].item[=].answer.valueString = "asdf"
+
 * item[=].item[=].item[+].linkId = "mecanismoVerificacion"
 * item[=].item[=].item[=].text = "Código del mecanismo de verificación de vacuna colocada"
 * item[=].item[=].item[=].answer.valueCoding = http://paho.org/esavi/ValueSet/EsaviModoVerificacionVacunaVS#01 "example"
+
 * item[=].item[=].item[+].linkId = "otroMecanismoVerificacion"
 * item[=].item[=].item[=].text = "Descripción de otro mecanismo no considerado en los códigos"
 * item[=].item[=].item[=].answer.valueString = "asdf"
-* item[=].item[=].item[+].linkId = "vacunatorioVacunaPrevia"
-* item[=].item[=].item[=].text = "Nombre del vacunatorio en donde se inyectó vacuna"
+
+
+* item[=].item[=].item[+].linkId = "codigoWhoVacuna"
+* item[=].item[=].item[=].text = "Código WhoDrugs de la Vacuna"
+* item[=].item[=].item[=].answer.valueCoding = http://paho.org/esavi/ValueSet/EsaviCodigoWhoVacunaVS#01 "example"
+
+* item[=].item[=].item[+].linkId = "codigoOtroVacuna"
+* item[=].item[=].item[=].text = "Código no WhoDrugs de la Vacuna"
+* item[=].item[=].item[=].answer.valueCoding = http://paho.org/esavi/ValueSet/EsaviCodigoWhoVacunaVS#01 "example"
+
+
+* item[=].item[=].item[+].linkId = "fechaHoraVacunacion"
+* item[=].item[=].item[=].text = "Fecha y hora en la cual se colocó la vacuna que habria generado ESAVI"
+* item[=].item[=].item[=].answer.valueDateTime = "2021-12-14T15:47:24.398Z"
+
+
+* item[=].item[=].item[+].linkId = "dosisVacuna"
+* item[=].item[=].item[=].text = "1a, 2a o 3ra dosis"
+* item[=].item[=].item[=].answer.valueInteger = 1
+
+* item[=].item[=].item[+].linkId = "numeroLote"
+* item[=].item[=].item[=].text = "Númer del Lote de la Vacuna colocada"
+* item[=].item[=].item[=].answer.valueString = "234234"
+
+* item[=].item[=].item[+].linkId = "fechaVencimientoVacuna"
+* item[=].item[=].item[=].text = "Fecha de Vencimiento de vacuna"
+* item[=].item[=].item[=].answer.valueDate = "2021-12-14"
+
+* item[=].item[=].item[+].linkId = "nombreDiluyenteVacuna"
+* item[=].item[=].item[=].text = "Nombre del Diluyente de la Vacuna"
 * item[=].item[=].item[=].answer.valueString = "asdf"
+
+* item[=].item[=].item[+].linkId = "numeroLoteDiluyente"
+* item[=].item[=].item[=].text = "Numero del lote del diluyente de la vacuna"
+* item[=].item[=].item[=].answer.valueString = "asdf"
+
+* item[=].item[=].item[+].linkId = "fechaVencimientoDiluyente"
+* item[=].item[=].item[=].text = "Fecha de vencimiento del diluyente de la vacuna"
+* item[=].item[=].item[=].answer.valueDate = "2021-12-29"
+
+* item[=].item[=].item[+].linkId = "fechaHoraReconstitucionVacuna"
+* item[=].item[=].item[=].text = "Fecha y Hora de Reconstrucción de la Vacuna"
+* item[=].item[=].item[=].answer.valueDateTime = "2021-12-09T15:48:25.439Z"
+
+/*
+* item[=].item[=].linkId = "registroVacunaCovidOtras"
+* item[=].item[=].text = "Registro de la Vacuna COVID19 colocada y de otras colocadas al mismo tiempo"
+* item[=].item[=].item[0].linkId = "descripcionVacuna"
+* item[=].item[=].item[=].text = "Descripción de la vacuna sospecha de generar ESAVI"
+* item[=].item[=].item[=].answer.valueString = "asdf"
+* item[=].item[=].item[+].linkId = "codigoWhoVacuna"
+* item[=].item[=].item[=].text = "Código WhoDrugs de la Vacuna"
+* item[=].item[=].item[=].answer.valueCoding = http://paho.org/esavi/ValueSet/EsaviCodigoWhoVacunaVS#01 "example"
+* item[=].item[=].item[+].linkId = "codigoOtroVacuna"
+* item[=].item[=].item[=].text = "Código no WhoDrugs de la Vacuna"
+* item[=].item[=].item[=].answer.valueCoding = http://paho.org/esavi/ValueSet/EsaviCodigoWhoVacunaVS#01 "example"
+* item[=].item[=].item[+].linkId = "fechaHoraVacunacion"
+* item[=].item[=].item[=].text = "Fecha y hora en la cual se colocó la vacuna que habria generado ESAVI"
+* item[=].item[=].item[=].answer.valueDateTime = "2021-12-21T15:48:38.100Z"
+* item[=].item[=].item[+].linkId = "dosisVacuna"
+* item[=].item[=].item[=].text = "1a, 2a o 3ra dosis"
+* item[=].item[=].item[=].answer.valueInteger = 2
+* item[=].item[=].item[+].linkId = "numeroLote"
+* item[=].item[=].item[=].text = "Númer del Lote de la Vacuna colocada"
+* item[=].item[=].item[=].answer.valueInteger = 2332443
+* item[=].item[=].item[+].linkId = "fechaVencimientoVacuna"
+* item[=].item[=].item[=].text = "Fecha de Vencimiento de vacuna"
+* item[=].item[=].item[=].answer.valueDate = "2021-12-13"
+* item[=].item[=].item[+].linkId = "nombreDiluyenteVacuna"
+* item[=].item[=].item[=].text = "Nombre del Diluyente de la Vacuna"
+* item[=].item[=].item[=].answer.valueString = "asdf"
+* item[=].item[=].item[+].linkId = "numeroLoteDiluyente"
+* item[=].item[=].item[=].text = "Numero del lote del diluyente de la vacuna"
+* item[=].item[=].item[=].answer.valueString = "asdf"
+* item[=].item[=].item[+].linkId = "fechaVencimientoDiluyente"
+* item[=].item[=].item[=].text = "Fecha de vencimiento del diluyente de la vacuna"
+* item[=].item[=].item[=].answer.valueDate = "2021-12-14"
+* item[=].item[=].item[+].linkId = "fechaHoraReconstitucionVacuna"
+* item[=].item[=].item[=].text = "Fecha y Hora de Reconstrucción de la Vacuna"
+* item[=].item[=].item[=].answer.valueDateTime = "2021-12-07T15:48:52.693Z"
+*/
+/////////////////////------------------------------
+
+
 * item[+].linkId = "registroESAVI"
 * item[=].text = "Registro de ESAVI desarrollado por el paciente"
 * item[=].item[0].linkId = "direccionVacunatorio"
@@ -263,73 +351,3 @@ Usage: #example
 * item[=].item[=].item[+].linkId = "fechaInicioInvestigacion"
 * item[=].item[=].item[=].text = "Fecha en la cual se inicia investigación"
 * item[=].item[=].item[=].answer.valueDate = "2021-12-09"
-* item[+].linkId = "registroVacunaCovidOtras"
-* item[=].text = "Registro de la Vacuna COVID19 colocada y de otras colocadas al mismo tiempo"
-* item[=].item[0].linkId = "descripcionVacuna"
-* item[=].item[=].text = "Descripción de la vacuna sospecha de generar ESAVI"
-* item[=].item[=].answer.valueString = "asdf"
-* item[=].item[+].linkId = "codigoWhoVacuna"
-* item[=].item[=].text = "Código WhoDrugs de la Vacuna"
-* item[=].item[=].answer.valueCoding = http://paho.org/esavi/ValueSet/EsaviCodigoWhoVacunaVS#01 "example"
-* item[=].item[+].linkId = "codigoOtroVacuna"
-* item[=].item[=].text = "Código no WhoDrugs de la Vacuna"
-* item[=].item[=].answer.valueCoding = http://paho.org/esavi/ValueSet/EsaviCodigoWhoVacunaVS#01 "example"
-* item[=].item[+].linkId = "fechaHoraVacunacion"
-* item[=].item[=].text = "Fecha y hora en la cual se colocó la vacuna que habria generado ESAVI"
-* item[=].item[=].answer.valueDateTime = "2021-12-14T15:47:24.398Z"
-* item[=].item[+].linkId = "dosisVacuna"
-* item[=].item[=].text = "1a, 2a o 3ra dosis"
-* item[=].item[=].answer.valueInteger = 1
-* item[=].item[+].linkId = "numeroLote"
-* item[=].item[=].text = "Númer del Lote de la Vacuna colocada"
-* item[=].item[=].answer.valueString = "234234"
-* item[=].item[+].linkId = "fechaVencimientoVacuna"
-* item[=].item[=].text = "Fecha de Vencimiento de vacuna"
-* item[=].item[=].answer.valueDate = "2021-12-14"
-* item[=].item[+].linkId = "nombreDiluyenteVacuna"
-* item[=].item[=].text = "Nombre del Diluyente de la Vacuna"
-* item[=].item[=].answer.valueString = "asdf"
-* item[=].item[+].linkId = "numeroLoteDiluyente"
-* item[=].item[=].text = "Numero del lote del diluyente de la vacuna"
-* item[=].item[=].answer.valueString = "asdf"
-* item[=].item[+].linkId = "fechaVencimientoDiluyente"
-* item[=].item[=].text = "Fecha de vencimiento del diluyente de la vacuna"
-* item[=].item[=].answer.valueDate = "2021-12-29"
-* item[=].item[+].linkId = "fechaHoraReconstitucionVacuna"
-* item[=].item[=].text = "Fecha y Hora de Reconstrucción de la Vacuna"
-* item[=].item[=].answer.valueDateTime = "2021-12-09T15:48:25.439Z"
-* item[+].linkId = "registroVacunaCovidOtras"
-* item[=].text = "Registro de la Vacuna COVID19 colocada y de otras colocadas al mismo tiempo"
-* item[=].item[0].linkId = "descripcionVacuna"
-* item[=].item[=].text = "Descripción de la vacuna sospecha de generar ESAVI"
-* item[=].item[=].answer.valueString = "asdf"
-* item[=].item[+].linkId = "codigoWhoVacuna"
-* item[=].item[=].text = "Código WhoDrugs de la Vacuna"
-* item[=].item[=].answer.valueCoding = http://paho.org/esavi/ValueSet/EsaviCodigoWhoVacunaVS#01 "example"
-* item[=].item[+].linkId = "codigoOtroVacuna"
-* item[=].item[=].text = "Código no WhoDrugs de la Vacuna"
-* item[=].item[=].answer.valueCoding = http://paho.org/esavi/ValueSet/EsaviCodigoWhoVacunaVS#01 "example"
-* item[=].item[+].linkId = "fechaHoraVacunacion"
-* item[=].item[=].text = "Fecha y hora en la cual se colocó la vacuna que habria generado ESAVI"
-* item[=].item[=].answer.valueDateTime = "2021-12-21T15:48:38.100Z"
-* item[=].item[+].linkId = "dosisVacuna"
-* item[=].item[=].text = "1a, 2a o 3ra dosis"
-* item[=].item[=].answer.valueInteger = 2
-* item[=].item[+].linkId = "numeroLote"
-* item[=].item[=].text = "Númer del Lote de la Vacuna colocada"
-* item[=].item[=].answer.valueInteger = 2332443
-* item[=].item[+].linkId = "fechaVencimientoVacuna"
-* item[=].item[=].text = "Fecha de Vencimiento de vacuna"
-* item[=].item[=].answer.valueDate = "2021-12-13"
-* item[=].item[+].linkId = "nombreDiluyenteVacuna"
-* item[=].item[=].text = "Nombre del Diluyente de la Vacuna"
-* item[=].item[=].answer.valueString = "asdf"
-* item[=].item[+].linkId = "numeroLoteDiluyente"
-* item[=].item[=].text = "Numero del lote del diluyente de la vacuna"
-* item[=].item[=].answer.valueString = "asdf"
-* item[=].item[+].linkId = "fechaVencimientoDiluyente"
-* item[=].item[=].text = "Fecha de vencimiento del diluyente de la vacuna"
-* item[=].item[=].answer.valueDate = "2021-12-14"
-* item[=].item[+].linkId = "fechaHoraReconstitucionVacuna"
-* item[=].item[=].text = "Fecha y Hora de Reconstrucción de la Vacuna"
-* item[=].item[=].answer.valueDateTime = "2021-12-07T15:48:52.693Z"
