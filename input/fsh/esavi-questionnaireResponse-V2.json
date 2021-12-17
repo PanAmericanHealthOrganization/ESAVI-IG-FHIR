@@ -84,11 +84,11 @@
             ]
         },
         {
-            "linkId": "datosPacienteCaso",
-            "text": "Datos Demográficos de Paciente ESAVI",
+            "linkId": "datosVacunadoCaso",
+            "text": "Datos Demográficos de Vacunado/a que produjo  ESAVI",
             "item": [{
-                "linkId": "datosPaciente",
-                "text": "Datos del Paciente ESAVI",
+                "linkId": "datosVacunado",
+                "text": "Datos del Vacunado/a que generó ESAVI",
                 "item": [{
                         "linkId": "numeroCaso",
                         "text": "UUID que identifica el caso",

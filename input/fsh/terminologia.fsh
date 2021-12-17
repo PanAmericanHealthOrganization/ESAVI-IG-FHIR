@@ -174,10 +174,11 @@ CodeSystem: ModoConfirmacionInfeccionCS
 Id: ModoConfirmacionInfeccionCS
 Title: "Modo de Confirmación de la Infección"
 Description:  "Modo de Confirmación de la Infección"
-* #1 "Solo por las manifestaciones clínicas" 
-* #2 "Por inmunoensayos"
-* #3 "Por pruebas moleculares" 
-* #0 "Otro"
+* #1 "Por criterio clínico epidemiológico" 
+* #2 "por inmunoensayo"
+* #3 "Por pruebas moleculares"
+* #4 "Por aislamiento viral" 
+* #5 "Otra"
 
 
 ValueSet: EventoAdversoVacunaVS
