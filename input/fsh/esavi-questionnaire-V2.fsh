@@ -332,7 +332,7 @@ Usage: #example
 * item[+].type = #group
 * item[=].required = true
 * item[=].linkId = "datosVacunadoCaso"
-* item[=].text = "Datos Demográficos de Vacunado que ha generado  ESAVI"
+* item[=].text = "Datos Demográficos de Vacunado que ha generado ESAVI"
 
 * item[=].item.type = #group
 * item[=].item.required = true
