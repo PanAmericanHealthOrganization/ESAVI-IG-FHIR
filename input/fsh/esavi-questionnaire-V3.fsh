@@ -484,10 +484,8 @@ Usage: #example
 
 * item[=].item[=].item[0].type = #string
 * item[=].item[=].item[=].required = true
-<<<<<<< HEAD
 * item[=].item[=].item[=].linkId = "NombreMedicamento"
 * item[=].item[=].item[=].text = "Nombre del medicamento consumido de manera concomitante con la vacuna o relevante para el ESAVI, en texto libre"
-=======
 * item[=].item[=].item[=].linkId = "descripcionMedicamento"
 * item[=].item[=].item[=].text = "Descripción del medicamento consumido"
 
@@ -496,7 +494,6 @@ Usage: #example
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "NombreWHODrugMedicamento"
 * item[=].item[=].item[=].text = "Nombre del medicamento según estándar farmacéutico WHO Drug. Puede ser Substance Name, Generic name, Commercial name."
->>>>>>> 0b57f9787337b3345f146f1dc55b0c8b2c2dc4c9
 
 * item[=].item[=].item[+].type = #choice
 * item[=].item[=].item[=].answerValueSet = "http://paho.org/esavi/ValueSet/MedicamentoGenericoVS"
