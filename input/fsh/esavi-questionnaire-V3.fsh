@@ -725,6 +725,18 @@ Usage: #example
 
 
 /////////////////////
+* item[=].item[=].item[+].type = #date
+* item[=].item[=].item[=].required = true
+* item[=].item[=].item[=].linkId = "fechaHoraESAVI"
+* item[=].item[=].item[=].text = "Fecha y hora de inicio del ESAVI referido por el paciente o identificado por el médico"
+
+/////////////////////
+* item[=].item[=].item[+].type = #string
+* item[=].item[=].item[=].required = true
+* item[=].item[=].item[=].linkId = "descripcionESAVI"
+* item[=].item[=].item[=].text = "Descripción narrativa del ESAVI"
+
+/////////////////////
 * item[=].item[=].item[0].type = #choice
 * item[=].item[=].item[=].answerValueSet = "http://paho.org/esavi/ValueSet/RespuestaSiNoNosabeVS"
 * item[=].item[=].item[=].required = true
@@ -831,6 +843,12 @@ Usage: #example
 /////////////////////
 * item[=].item[=].item[+].type = #boolean
 * item[=].item[=].item[=].required = false
+* item[=].item[=].item[=].linkId = "gravHospitalizacion"
+* item[=].item[=].item[=].text = "Hospitalización o prolongación de la misma"
+
+/////////////////////
+* item[=].item[=].item[+].type = #boolean
+* item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "gravAnomaliaCongenita"
 * item[=].item[=].item[=].text = "Anomalía congénita"
 
@@ -863,6 +881,9 @@ Usage: #example
 * item[=].item[=].item[=].item.repeats = true
 * item[=].item[=].item[=].item.linkId = "otrosEventosImportantesTx"
 * item[=].item[=].item[=].item.text = "Definición Otros Eventos considerados Médicamente Importantes"
+
+
+
 
 * item[=].item[=].item[+].type = #choice
 * item[=].item[=].item[=].answerValueSet = "http://paho.org/esavi/ValueSet/ClasificacionDesenlaceVS"
@@ -931,3 +952,42 @@ Usage: #example
 * item[=].item[=].item[=].linkId = "fechaInicioInvestigacion"
 * item[=].item[=].item[=].text = "Fecha en la cual se inicia investigación"
 
+
+/////////////////////
+* item[=].item[+].type = #group
+* item[=].item[=].required = true
+* item[=].item[=].linkId = "causalidadESAVI"
+* item[=].item[=].text = "Información sobre la clasificación de causalidad"
+
+/////////////////////
+* item[=].item[=].item[+].type = #date
+* item[=].item[=].item[=].required = false
+* item[=].item[=].item[=].linkId = "fechaCausalidadESAVI"
+* item[=].item[=].item[=].text = "Fecha de clasificación final del caso"
+
+/////////////////////
+* item[=].item[=].item[+].type = #choice
+* item[=].item[=].item[=].answerValueSet = "http://paho.org/esavi/ValueSet/EsaviClasificaciónCausalidad"
+* item[=].item[=].item[=].required = true
+* item[=].item[=].item[=].linkId = "sistemaclasfcausalidadESAVI"
+* item[=].item[=].item[=].text = "Método de clasificación de causalidad del ESAVI"
+
+/////////////////////
+* item[=].item[=].item[+].type = #string
+* item[=].item[=].item[=].required = false
+* item[=].item[=].item[=].linkId = "clasificacioncausaESAVI"
+* item[=].item[=].item[=].text = "Método de clasificación de causalidad del ESAVI"
+
+/////////////////////
+* item[=].item[=].item[+].type = #choice
+* item[=].item[=].item[=].answerValueSet = "http://paho.org/esavi/ValueSet/ClasificacionDesenlaceVS"
+* item[=].item[=].item[=].required = true
+* item[=].item[=].item[=].linkId = "clasificacionDeCausalidad"
+* item[=].item[=].item[=].text = "Clasificación de causalidad según la metodología WHO AEFI"
+
+/////////////////////
+* item[=].item[=].item[+].type = #choice
+* item[=].item[=].item[=].answerValueSet = "http://paho.org/esavi/ValueSet/ClasificacionDesenlaceVS"
+* item[=].item[=].item[=].required = true
+* item[=].item[=].item[=].linkId = "desenlaceESAVI"
+* item[=].item[=].item[=].text = "Clasificación de casualidad según otra metodología distintat a la de WHO AEFI"
