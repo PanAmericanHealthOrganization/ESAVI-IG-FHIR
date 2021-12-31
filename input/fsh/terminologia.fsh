@@ -310,3 +310,19 @@ Title: "CodigoMedraEnfPreviaVS"
 Description: "Conjunto de Valores para enfermedades previas (Medra)"
 * include codes from system http://terminology.hl7.org/CodeSystem/mdr
 
+
+ValueSet: DosisVacunaVS
+Id: DosisVacunaVS
+Title: "Dosis vacuna"
+Description:  "Indicador de que dosis se esta administrando"
+* include codes from system DosisVacunaCS
+
+CodeSystem: DosisVacunaCS
+Id: DosisVacunaCS
+Title: "Dosis Vacuna"
+Description:  "Indicador de que dosis se esta administrando"
+* #1 "Primera Dosis"	
+* #2 "Segunda Dosis"
+* #3 "Refuerzo"
+* #4 "Primer Refuerzo"
+* #5 "Segundo Refuerzo"
