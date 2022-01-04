@@ -292,7 +292,7 @@ Usage: #example
 * item[=].item[=].item[+].type = #choice
 * item[=].item[=].item[=].answerValueSet = "http://paho.org/esavi/ValueSet/DirOrgNotiVS"
 * item[=].item[=].item[=].required = false
-* item[=].item[=].item[=].linkId = "direccionOrganizacion"
+* item[=].item[=].item[=].linkId = "codigoDireccionOrganizacion"
 * item[=].item[=].item[=].text = "Código del Nivel Geográfico Subnacional de la Ubicación de la Institución que Notifica"
 
 
@@ -427,8 +427,8 @@ Usage: #example
 /////////////////////////
 * item[=].item[=].item[0].type = #string
 * item[=].item[=].item[=].required = true
-* item[=].item[=].item[=].linkId = "descripcionEnfPrevias"
-* item[=].item[=].item[=].text = " Descripción de los problemas de salud previos en la persona afectada por el ESAVI con énfasis en comorbilidades o enfermedades concomitantes al evento adverso, eventos previos similares y eventos médicos relevantes para el evento de salud actual."
+* item[=].item[=].item[=].linkId = "descripcionEnfPrevia"
+* item[=].item[=].item[=].text = " Descripción de problemas de salud previos en la persona afectada por el ESAVI con énfasis en comorbilidades o enfermedades concomitantes al evento adverso, eventos previos similares y eventos médicos relevantes para el evento de salud actual."
 
 /////////////////////////////
 * item[=].item[=].item[+].type = #choice
@@ -637,7 +637,7 @@ Usage: #example
 //////////////nombreVacuuna OK
 * item[=].item[=].item[+].type = #integer
 * item[=].item[=].item[=].required = true
-* item[=].item[=].item[=].linkId = "identificador1Vacuna"
+* item[=].item[=].item[=].linkId = "identificadorVacuna"
 * item[=].item[=].item[=].text = "Identificador correlativo de la vacuna"
 
 
@@ -674,7 +674,7 @@ Usage: #example
 * item[=].item[=].item[+].type = #choice
 * item[=].item[=].item[=].answerValueSet = "http://paho.org/esavi/ValueSet/DosisVacunaVS"
 * item[=].item[=].item[=].required = true
-* item[=].item[=].item[=].linkId = "codigDosisVacuna"
+* item[=].item[=].item[=].linkId = "codigoDosisVacuna"
 * item[=].item[=].item[=].text = "Código de la dosis"
 
 /////////////////////
@@ -1066,5 +1066,5 @@ Usage: #example
 //////////////Identificador vacuna OK
 * item[=].item[=].item[+].type = #integer
 * item[=].item[=].item[=].required = true
-* item[=].item[=].item[=].linkId = "identificador2Vacuna"
-* item[=].item[=].item[=].text = "Identificador correlativo de la vacuna"
+* item[=].item[=].item[=].linkId = "referenciaIdentificadorVacuna"
+* item[=].item[=].item[=].text = "Referencia al Identificador correlativo de la vacuna"
