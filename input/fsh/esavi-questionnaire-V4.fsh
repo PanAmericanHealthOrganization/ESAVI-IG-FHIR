@@ -428,7 +428,7 @@ Usage: #example
 * item[=].item[=].item[0].type = #string
 * item[=].item[=].item[=].required = true
 * item[=].item[=].item[=].linkId = "descripcionEnfPrevia"
-* item[=].item[=].item[=].text = " Descripción de problemas de salud previos en la persona afectada por el ESAVI con énfasis en comorbilidades o enfermedades concomitantes al evento adverso, eventos previos similares y eventos médicos relevantes para el evento de salud actual."
+* item[=].item[=].item[=].text = " Descripción de los problemas de salud previos en la persona afectada por el ESAVI con énfasis en comorbilidades o enfermedades concomitantes al evento adverso, eventos previos similares y eventos médicos relevantes para el evento de salud actual."
 
 /////////////////////////////
 * item[=].item[=].item[+].type = #choice
@@ -774,14 +774,14 @@ Usage: #example
 * item[=].item[=].item[+].type = #choice
 * item[=].item[=].item[=].answerValueSet = "http://paho.org/esavi/ValueSet/EsaviMedraVS"
 * item[=].item[=].item[=].required = false
-* item[=].item[=].item[=].linkId = "codigoEsaviMedDRA"
+* item[=].item[=].item[=].linkId = "codigoESAVIMedDRA"
 * item[=].item[=].item[=].text = "Código MedDRA del Evento Adverso notificado"
 
 /////////////////
 * item[=].item[=].item[+].type = #choice
 * item[=].item[=].item[=].answerValueSet = "http://paho.org/esavi/ValueSet/EsaviOtroVS"
 * item[=].item[=].item[=].required = false
-* item[=].item[=].item[=].linkId = "codigoEsaviOtro"
+* item[=].item[=].item[=].linkId = "codigoESAVIOtro"
 * item[=].item[=].item[=].text = "Código no Medra de la reacción adversa generada por la vacuna"
 
 /////////////////////
@@ -953,7 +953,7 @@ Usage: #example
 * item[=].item[+].type = #group
 * item[=].item[=].required = true
 * item[=].item[=].linkId = "desenlaceESAVI"
-* item[=].item[=].text = "Desenlace Esavi"
+* item[=].item[=].text = "Desenlace ESAVI"
 
 
 /////////////////////
@@ -1033,7 +1033,8 @@ Usage: #example
 /////////////////////////////////////////////////////////////////////////////////
 /////////////////////  Grupo causalidadESAVI //////////////////////////////////
 * item[=].item[+].type = #group
-* item[=].item[=].required = true
+* item[=].item[=].required = false
+* item[=].item[=].repeats = true
 * item[=].item[=].linkId = "causalidadESAVI"
 * item[=].item[=].text = "Información sobre la clasificación de causalidad"
 
@@ -1067,4 +1068,4 @@ Usage: #example
 * item[=].item[=].item[+].type = #integer
 * item[=].item[=].item[=].required = true
 * item[=].item[=].item[=].linkId = "referenciaIdentificadorVacuna"
-* item[=].item[=].item[=].text = "Referencia al Identificador correlativo de la vacuna"
+* item[=].item[=].item[=].text = "Identificador correlativo de la vacuna"
