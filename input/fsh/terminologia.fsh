@@ -99,7 +99,22 @@ Title: "EsaviEnfermedadesPreviasCodificacionVS"
 Description: "Codificación Estandarizada de Diagnósticos"
 * include codes from system http://snomed.info/sct
 
+ValueSet: SistemasDeCodificacionVS
+Id: SistemasDeCodificacionVS
+Title: "Sistemas De Codificacion VS"
+Description: "Sistemas De Codificacion"
+* include codes from system SistemasDeCodificacionCS
 
+CodeSystem: SistemasDeCodificacionCS
+Id: SistemasDeCodificacionCS
+Title: "Sistemas De Codificacion"
+Description: "Sistemas De Codificacion"
+* #1 "SNOMED-CT"
+* #2 "WHODrugs"
+* #3 "ATC"
+* #4 "CIE-10"
+* #5 "CIE-11"
+* #6 "MedDRA"
 
 ValueSet: RespuestaSiNoNosabeVS
 Id: RespuestaSiNoNosabeVS
