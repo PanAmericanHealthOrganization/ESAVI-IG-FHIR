@@ -129,13 +129,13 @@ Usage: #example
 * item[=].item[=].item[=].text = "Código WHO del medicamento consumido por el paciente"
 * item[=].item[=].item[=].answer.valueCoding = http://paho.org/esavi/ValueSet/EsaviMedicamentoGenericoVS#01 "example"
 * item[=].item[=].item[+].linkId = "otroCodigoMedicamento"
-* item[=].item[=].item[=].text = "Otro código de sistema distinto a WhoDrugs"
+* item[=].item[=].item[=].text = "Otro código de sistema distinto a WHODrug"
 * item[=].item[=].item[=].answer.valueCoding = http://paho.org/esavi/ValueSet/EsaviMedicamentoOtroVS#01 "example"
 * item[=].item[=].item[+].linkId = "sustanciaActiva"
 * item[=].item[=].item[=].text = "Descripción de la o las susbstancias activas del medicamento consumido"
 * item[=].item[=].item[=].answer.valueCoding = http://paho.org/esavi/ValueSet/EsaviSustanciaActivaVS#01 "example"
 * item[=].item[=].item[+].linkId = "nombreGenerico"
-* item[=].item[=].item[=].text = "Nombre Genérico del Medicamento SNOMED-CT|WHODrugs"
+* item[=].item[=].item[=].text = "Nombre Genérico del Medicamento SNOMED-CT|WHODrug"
 * item[=].item[=].item[=].answer.valueCoding = http://paho.org/esavi/ValueSet/EsaviMedicamentoGenericoVS#01 "example"
 * item[=].item[=].item[+].linkId = "nombreComercial"
 * item[=].item[=].item[=].text = "Nombre comercial con el que se conoce el medicamento"
@@ -175,11 +175,11 @@ Usage: #example
 
 
 * item[=].item[=].item[+].linkId = "codigoWhoVacuna"
-* item[=].item[=].item[=].text = "Código WhoDrugs de la Vacuna"
+* item[=].item[=].item[=].text = "Código WHODrug de la Vacuna"
 * item[=].item[=].item[=].answer.valueCoding = http://paho.org/esavi/ValueSet/EsaviCodigoWhoVacunaVS#01 "example"
 
 * item[=].item[=].item[+].linkId = "codigoOtroVacuna"
-* item[=].item[=].item[=].text = "Código no WhoDrugs de la Vacuna"
+* item[=].item[=].item[=].text = "Código no WHODrug de la Vacuna"
 * item[=].item[=].item[=].answer.valueCoding = http://paho.org/esavi/ValueSet/EsaviCodigoWhoVacunaVS#01 "example"
 
 
@@ -223,10 +223,10 @@ Usage: #example
 * item[=].item[=].item[=].text = "Descripción de la vacuna sospecha de generar ESAVI"
 * item[=].item[=].item[=].answer.valueString = "asdf"
 * item[=].item[=].item[+].linkId = "codigoWhoVacuna"
-* item[=].item[=].item[=].text = "Código WhoDrugs de la Vacuna"
+* item[=].item[=].item[=].text = "Código WHODrug de la Vacuna"
 * item[=].item[=].item[=].answer.valueCoding = http://paho.org/esavi/ValueSet/EsaviCodigoWhoVacunaVS#01 "example"
 * item[=].item[=].item[+].linkId = "codigoOtroVacuna"
-* item[=].item[=].item[=].text = "Código no WhoDrugs de la Vacuna"
+* item[=].item[=].item[=].text = "Código no WHODrug de la Vacuna"
 * item[=].item[=].item[=].answer.valueCoding = http://paho.org/esavi/ValueSet/EsaviCodigoWhoVacunaVS#01 "example"
 * item[=].item[=].item[+].linkId = "fechaHoraVacunacion"
 * item[=].item[=].item[=].text = "Fecha y hora en la cual se colocó la vacuna que habria generado ESAVI"

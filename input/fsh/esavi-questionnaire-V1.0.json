@@ -294,7 +294,7 @@
 
                             "required": false,
                             "linkId": "otroCodigoMedicamento",
-                            "text": "Otro código de sistema distinto a WhoDrugs"
+                            "text": "Otro código de sistema distinto a WhoDrug"
                         },
                         {
                             "type": "choice",
@@ -310,7 +310,7 @@
 
                             "required": false,
                             "linkId": "nombreGenerico",
-                            "text": "Nombre Genérico del Medicamento SNOMED-CT|WHODrugs"
+                            "text": "Nombre Genérico del Medicamento SNOMED-CT|WHODrug"
                         },
                         {
                             "type": "choice",
@@ -632,7 +632,7 @@
 
                     "required": false,
                     "linkId": "codigoWhoVacuna",
-                    "text": "Código WhoDrugs de la Vacuna"
+                    "text": "Código WhoDrug de la Vacuna"
                 },
                 {
                     "type": "choice",
@@ -640,7 +640,7 @@
 
                     "required": false,
                     "linkId": "codigoOtroVacuna",
-                    "text": "Código no WhoDrugs de la Vacuna"
+                    "text": "Código no WhoDrug de la Vacuna"
                 },
                 {
                     "type": "dateTime",

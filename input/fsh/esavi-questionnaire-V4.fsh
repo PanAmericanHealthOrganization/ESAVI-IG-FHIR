@@ -572,7 +572,6 @@ Usage: #example
 ///////////////////// Enable When
 * item[=].item[=].item[=].enableWhen.question = "embarazoDuranteVacuna"
 * item[=].item[=].item[=].enableWhen.operator = #=
-* item[=].item[=].item[=].enableWhen.answerCoding.system = "http://paho.org/esavi/ValueSet/RespuestaSiNoNosabeVS"
 * item[=].item[=].item[=].enableWhen.answerCoding.code = #1
 
 //
@@ -726,7 +725,7 @@ Usage: #example
 
 /////////////////////////////////////////////////////////////////////////////////
 /////////////////////  Grupo codigoVacunaOtro //////////////////////////////////
-* item[=].item[=].item[+].type = #group
+* item[=].item[=].item[+].type = #choice
 * item[=].item[=].item[=].answerValueSet = "http://paho.org/esavi/ValueSet/EsaviCodigoNoWhoVacunaVS"
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "codigoVacunaOtro"

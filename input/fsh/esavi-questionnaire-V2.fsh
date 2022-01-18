@@ -476,7 +476,7 @@ Usage: #example
 * item[=].item[=].item[=].answerValueSet = "http://paho.org/esavi/ValueSet/MedicamentoOtroVS"
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "otroCodigoMedicamento"
-* item[=].item[=].item[=].text = "Otro código de sistema distinto a WhoDrugs"
+* item[=].item[=].item[=].text = "Otro código de sistema distinto a WHODrug"
 * item[=].item[=].item[+].type = #choice
 * item[=].item[=].item[=].answerValueSet = "http://paho.org/esavi/ValueSet/SustanciaActivaVS"
 * item[=].item[=].item[=].required = true
@@ -486,7 +486,7 @@ Usage: #example
 * item[=].item[=].item[=].answerValueSet = "http://paho.org/esavi/ValueSet/MedicamentoGenericoVS"
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "nombreGenerico"
-* item[=].item[=].item[=].text = "Nombre Genérico del Medicamento SNOMED-CT|WHODrugs"
+* item[=].item[=].item[=].text = "Nombre Genérico del Medicamento SNOMED-CT|WHODrug"
 * item[=].item[=].item[+].type = #choice
 * item[=].item[=].item[=].answerValueSet = "http://paho.org/esavi/ValueSet/NombreComercialMedicamentoVS"
 * item[=].item[=].item[=].required = false
@@ -771,13 +771,13 @@ Usage: #example
 * item[=].item[=].answerValueSet = "http://paho.org/esavi/ValueSet/CodigoWhoVacunaVS"
 * item[=].item[=].required = false
 * item[=].item[=].linkId = "codigoWhoVacuna"
-* item[=].item[=].text = "Código WhoDrugs de la Vacuna"
+* item[=].item[=].text = "Código WHODrug de la Vacuna"
 
 * item[=].item[+].type = #choice
 * item[=].item[=].answerValueSet = "http://paho.org/esavi/ValueSet/CodigoOtroVacunaVS"
 * item[=].item[=].required = false
 * item[=].item[=].linkId = "codigoOtroVacuna"
-* item[=].item[=].text = "Código no WhoDrugs de la Vacuna"
+* item[=].item[=].text = "Código no WHODrug de la Vacuna"
 
 
 * item[=].item[+].type = #dateTime

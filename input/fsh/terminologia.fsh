@@ -2,9 +2,19 @@ Alias: $v2-0136 = http://terminology.hl7.org/ValueSet/v2-0136
 
 ValueSet: ViaAdminMedicamentoVS
 Id: ViaAdminMedicamentoVS
-Title: "EsaviViaAdministracionMedicamentos"
-Description: "Codificacion Estandarizada de vías por las Cuales se Ingresa un Medicamento"
-* include codes from system SCT
+Title: "Códigos para identificar vías de administración de medicamentos"
+Description: "Describe y lista las vías de administración de medicamentos para registro en ESAVI segun SNOMED CT"
+* ^url = "http://paho.org/esavi/ValueSet/ViaAdminMedicamentoVS"
+* ^version = "0.1.0"
+* ^status = #active
+* ^date = "2021-12-30T23:19:35-03:00"
+* ^publisher = "PAHO"
+* include codes from system SNOMED_CT where concept is-a #736479009 "sitio de administración previsto de forma farmacéutica (sitio de administración previsto)"
+
+
+
+
+
 
 ValueSet: ComplicacionEmbarazoMedraVS
 Id: ComplicacionEmbarazoMedraVS
@@ -14,7 +24,7 @@ Description: "Codificacion Estandarizada de diagnóticos de complicaciones de em
 
 ValueSet: ComplicacionEmbarazoOtroVS
 Id: ComplicacionEmbarazoOtroVS
-Title: "EsavoComplicacionEmbarazoOtroVS "
+Title: "EsaviComplicacionEmbarazoOtroVS "
 Description: "Codificacion Estandarizada de diagnóticos de complicaciones de embarazo"
 * include codes from system http://hl7.org/fhir/sid/icd-10
 * include codes from system SCT
@@ -85,13 +95,16 @@ Description: "Codificación Estandarizda del Nombre Comercial Vacuna"
 
 
 
-
 ValueSet: FormaFarmaceuticaVS
 Id: FormaFarmaceuticaVS
-Title: "EsaviFormaFarmaceuticaVS"
-Description: "Codificación Estandarizda de la Forma Farmacéutica de Medicamento"
-* include codes from system ATC
-
+Title: "Códigos apra identificar formas farmacéuticas"
+Description: "Describe y lista las formas farmaceuticas de medicamentos para registro en ESAVI segun SNOMED CT"
+* ^url = "http://paho.org/esavi/ValueSet/FormaFarmaceuticaVS"
+* ^version = "0.1.0"
+* ^status = #active
+* ^date = "2021-12-30T23:19:35-03:00"
+* ^publisher = "ESAVI -"
+* include codes from system SNOMED_CT where concept is-a #736478001 "forma farmacéutica básica (forma farmacéutica básica)"
 
 ValueSet: EnfermedadesPreviasCodificacionVS
 Id: EnfermedadesPreviasCodificacionVS
@@ -110,11 +123,11 @@ Id: SistemasDeCodificacionCS
 Title: "Sistemas De Codificacion"
 Description: "Sistemas De Codificacion"
 * #1 "SNOMED-CT"
-* #2 "WHODrugs"
+* #2 "WHODrug"
 * #3 "ATC"
-* #4 "CIE-10"
-* #5 "CIE-11"
-* #6 "MedDRA"
+//* #4 "CIE-10"
+* #4 "CIE-11"
+//* #6 "MedDRA"
 
 ValueSet: RespuestaSiNoNosabeVS
 Id: RespuestaSiNoNosabeVS
@@ -234,12 +247,21 @@ CodeSystem: ClasificacionDesenlaceCS
 Id: ClasificacionDesenlaceCS
 Title: "Clasificacion de Desenlace"
 Description:  "Clasificacion de Desenlace"
+* #1 "Muy probable o cierta"
+* #2 "Probable"
+* #3 "Posible"
+* #4 "Improbable"
+* #5 "No relacionada"
+* #6 "No clasificable"
+
+/*
 * #1 "Recuperado"
 * #2 "En remisión / recuperación"
 * #3 "No recuperado"
 * #4 "Recuperado con secuelas"
 * #5 "Muerte"
 * #0 "Desconocido"
+*/
 
 ValueSet: InvestigacionTipoVS
 Id: InvestigacionTipoVS

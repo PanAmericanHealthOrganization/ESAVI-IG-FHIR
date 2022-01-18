@@ -70,15 +70,15 @@ Description: "Modelo Lógico de Notificaciones de Evento Adverso generado eventu
 * antecedentesFarmacosVacunas 0..* BackboneElement "Antecedentes si el paciente consume fármcos durante ESAVI o ha recibido otra vacunas en los ultimos 30 días previos a la vacuna con sospecha de generar ESAVI" "Antecedentes si el paciente consume fármcos durante ESAVI o ha recibido otra vacunas en los ultimos 30 días previos a la vacuna con sospecha de generar ESAVI"
   * medicamento 0..* BackboneElement "Antecedentes de medicamentos que el paciente consume al momento de generar ESAVI" "Listado de medicamentos consumidos al generar ESAVI"
     * descripcionMedicamento 1..1 SU string "Descripción del medicamento consumido" "Decripción en Texto Libre"
-    * codigoMedicamento 0..1 SU Coding "Código WHO del medicamento consumido por el paciente" "Código en WhoDrugs"
+    * codigoMedicamento 0..1 SU Coding "Código WHO del medicamento consumido por el paciente" "Código en WhoDrug"
     * codigoMedicamento from MedicamentoGenericoVS
-    * otroCodigoMedicamento 0..1 Coding "Otro código de sistema distinto a WhoDrugs" "Código de otro sistema para notificar medicamentos"
+    * otroCodigoMedicamento 0..1 Coding "Otro código de sistema distinto a WhoDrug" "Código de otro sistema para notificar medicamentos"
     * otroCodigoMedicamento from MedicamentoOtroVS
     
     * sustanciaActiva 0..* SU Coding "Descripción de la o las susbstancias activas del medicamento consumido" "Clasificación en terminología de cada sustancia activa del medicamento"
     * sustanciaActiva from   SustanciaActivaVS (example)     
        
-    * nombreGenerico 0..1 SU Coding "Nombre Genérico del Medicamento SNOMED-CT|WHODrugs" "Nombre Genérico del medicamento en codificación"
+    * nombreGenerico 0..1 SU Coding "Nombre Genérico del Medicamento SNOMED-CT|WHODrug" "Nombre Genérico del medicamento en codificación"
     * nombreGenerico ^comment = "Debe estar este dato o el Nombre Genérico o el Nombre Comercial"
     * nombreGenerico from MedicamentoGenericoVS (example)
       
@@ -160,9 +160,9 @@ Description: "Modelo Lógico de Notificaciones de Evento Adverso generado eventu
   
 * registroVacunaCovidOtras 1..* BackboneElement "Registro de la Vacuna COVID19 colocada y de otras colocadas al mismo tiempo" "Registro de las vacunas colocadas junto a la de COVID-19"
   * descripcionVacuna 1..1 SU string "Descripción de la vacuna sospecha de generar ESAVI" "Descripción de la Vacuna en Texto Libre"
-  * codigoWhoVacuna 0..1 SU Coding "Código WhoDrugs de la Vacuna" "Código WhoDrugs"
+  * codigoWhoVacuna 0..1 SU Coding "Código WhoDrug de la Vacuna" "Código WhoDrug"
   * codigoWhoVacuna from CodigoWhoVacunaVS
-  * codigoOtroVacuna 0..1 SU Coding "Código no WhoDrugs de la Vacuna" "Código  que no sea WhoDrugs"
+  * codigoOtroVacuna 0..1 SU Coding "Código no WhoDrug de la Vacuna" "Código  que no sea WhoDrug"
   * codigoOtroVacuna from CodigoOtroVacunaVS
 
   * fechaHoraVacunacion 1..1 SU dateTime "Fecha y hora en la cual se colocó la vacuna que habria generado ESAVI" "Fecha de colocación de vacuna"

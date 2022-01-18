@@ -1,7 +1,7 @@
 {
     "resourceType": "QuestionnaireResponse",
- 
-       
+
+
     "status": "completed",
     "authored": "2021-12-07T15:49:51.722Z",
     "item": [{
@@ -315,7 +315,7 @@
                         },
                         {
                             "linkId": "otroCodigoMedicamento",
-                            "text": "Otro código de sistema distinto a WhoDrugs",
+                            "text": "Otro código de sistema distinto a WHODrug",
                             "answer": [{
                                 "valueCoding": {
                                     "system": "http://paho.org/esavi/ValueSet/EsaviMedicamentoOtroVS",
@@ -337,7 +337,7 @@
                         },
                         {
                             "linkId": "nombreGenerico",
-                            "text": "Nombre Genérico del Medicamento SNOMED-CT|WHODrugs",
+                            "text": "Nombre Genérico del Medicamento SNOMED-CT|WHODrug",
                             "answer": [{
                                 "valueCoding": {
                                     "system": "http://paho.org/esavi/ValueSet/EsaviMedicamentoGenericoVS",
@@ -733,7 +733,7 @@
                 },
                 {
                     "linkId": "codigoWhoVacuna",
-                    "text": "Código WhoDrugs de la Vacuna",
+                    "text": "Código WHODrug de la Vacuna",
                     "answer": [{
                         "valueCoding": {
                             "system": "http://paho.org/esavi/ValueSet/EsaviCodigoWhoVacunaVS",
@@ -744,7 +744,7 @@
                 },
                 {
                     "linkId": "codigoOtroVacuna",
-                    "text": "Código no WhoDrugs de la Vacuna",
+                    "text": "Código no WHODrug de la Vacuna",
                     "answer": [{
                         "valueCoding": {
                             "system": "http://paho.org/esavi/ValueSet/EsaviCodigoWhoVacunaVS",
@@ -823,7 +823,7 @@
                 },
                 {
                     "linkId": "codigoWhoVacuna",
-                    "text": "Código WhoDrugs de la Vacuna",
+                    "text": "Código WHODrug de la Vacuna",
                     "answer": [{
                         "valueCoding": {
                             "system": "http://paho.org/esavi/ValueSet/EsaviCodigoWhoVacunaVS",
@@ -834,7 +834,7 @@
                 },
                 {
                     "linkId": "codigoOtroVacuna",
-                    "text": "Código no WhoDrugs de la Vacuna",
+                    "text": "Código no WHODrug de la Vacuna",
                     "answer": [{
                         "valueCoding": {
                             "system": "http://paho.org/esavi/ValueSet/EsaviCodigoWhoVacunaVS",
