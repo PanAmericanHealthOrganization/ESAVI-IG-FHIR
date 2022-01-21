@@ -16,9 +16,9 @@ Description: "Describe y lista las vías de administración de medicamentos para
 
 
 
-ValueSet: ComplicacionEmbarazoMedraVS
-Id: ComplicacionEmbarazoMedraVS
-Title: "EsaviComplicacionEmbarzoMedra"
+ValueSet: ComplicacionEmbarazoMedDRAVS
+Id: ComplicacionEmbarazoMedDRAVS
+Title: "EsaviComplicacionEmbarzoMedDRA"
 Description: "Codificacion Estandarizada de diagnóticos de complicaciones de embarazo"
 * include codes from system http://terminology.hl7.org/CodeSystem/mdr
 
@@ -29,17 +29,17 @@ Description: "Codificacion Estandarizada de diagnóticos de complicaciones de em
 * include codes from system http://hl7.org/fhir/sid/icd-10
 * include codes from system SCT
 
-ValueSet: EsaviMedraVS
-Id: EsaviMedraVS
-Title: "EsaviMedra"
-Description: "Codificacion Estandarizada de Evento Adverso en Medra"
+ValueSet: EsaviMedDRAVS
+Id: EsaviMedDRAVS
+Title: "EsaviMedDRA"
+Description: "Codificacion Estandarizada de Evento Adverso en MedDRA"
 * include codes from system http://terminology.hl7.org/CodeSystem/mdr
 
 
 ValueSet: EsaviOtroVS
 Id: EsaviOtroVS
 Title: "EsaviOtrosVS"
-Description: "Codificacion Estandarizada de Evento Adverso en otro sistema que no sea Medra"
+Description: "Codificacion Estandarizada de Evento Adverso en otro sistema que no sea MedDRA"
 * include codes from system SCT
 * include codes from system ATC
 * include codes from system http://hl7.org/fhir/sid/icd-10
@@ -342,10 +342,10 @@ Description: "Códigos para Direcciones según OPS"
 * #4 "Comuna 4"
 * #5 "Comuna 5"
 
-ValueSet: CodigoMedraEnfPreviaVS
-Title: "CodigoMedraEnfPreviaVS"
-Description: "Conjunto de Valores para enfermedades previas (Medra)"
-* include codes from system http://terminology.hl7.org/CodeSystem/mdr
+//ValueSet: CodigoMedDRAEnfPreviaVS
+//Title: "CodigoMedDRAEnfPreviaVS"
+//Description: "Conjunto de Valores para enfermedades previas (MedDRA)"
+//* include codes from system http://terminology.hl7.org/CodeSystem/mdr
 
 
 ValueSet: DosisVacunaVS
@@ -363,3 +363,39 @@ Description:  "Indicador de que dosis se esta administrando"
 * #3 "Refuerzo"
 * #4 "Primer Refuerzo"
 * #5 "Segundo Refuerzo"
+
+
+ValueSet: SistemaClasfCausalidadVS
+Id: SistemaClasfCausalidadVS
+Title: "Método de clasificación de causalidad"
+Description:  "Método de clasificación de causalidad"
+* include codes from system SistemaClasfCausalidadCS
+
+CodeSystem: SistemaClasfCausalidadCS
+Id: SistemaClasfCausalidadCS
+Title: "Método de clasificación de causalidad"
+Description:  "Método de clasificación de causalidad"
+* #WHOUMC "WHO-UMC"	
+* #WHOAEFI "WHO-AEFI"
+* #Naranjo "Naranjo"
+* #otro "Otro siste de clasificacion de causalidad"
+
+
+ValueSet: ClasificacionDesenlaceWHOAEFIVS
+Id: ClasificacionDesenlaceWHOAEFIVS
+Title: "Método de clasificación de causalidad"
+Description:  "Método de clasificación de causalidad"
+* include codes from system ClasificacionDesenlaceWHOAEFICS
+
+CodeSystem: ClasificacionDesenlaceWHOAEFICS
+Id: ClasificacionDesenlaceWHOAEFICS
+Title: "Método de clasificación de causalidad WHO-AEFI"
+Description:  "Método de clasificación de causalidad"
+* #A1 "Evento relacionado con la vacuna o cualquiera de sus componentes"	
+* #A2 "Evento relacionado con una desviacion de calidad del producto biologico o la vacuna"
+* #A3 "Evento relacionado con un error programatico"
+* #A4 "Evento por estres que tuvo lugar inmediatemente antes, durante o inmediatamente despues del proceso de vacunacion"
+* #B1 "La relacion temporal es congruente, pero no hay evidencia definitiva suficiente sobre una relacion causal con la vacuna (puede ser un evento recientemente asociadoa  la vacuna [señal])"
+* #B2 "Factores determinantes para la clasificación muestran tendencias conflictivas a favor y en contra de una asociacion causal con la vacunació"
+* #C "Causa Coincidente"
+* #NC "No clasificable"

@@ -501,7 +501,7 @@ Usage: #example
 * item[=].item[=].item[=].answerValueSet = "http://paho.org/esavi/ValueSet/MedicamentoGenericoVS"
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "codigoMedicamento"
-* item[=].item[=].item[=].text = "Código WHODrug/SCT/ICD-11/ATC del medicamento consumido por el paciente"
+* item[=].item[=].item[=].text = "Código WHODrug/SCT/CIE-11/ATC del medicamento consumido por el paciente"
 
 //////////////////////////////////
 * item[=].item[=].item[+].type = #string
@@ -781,14 +781,14 @@ Usage: #example
 * item[=].item[=].item[=].answerValueSet = "http://paho.org/esavi/ValueSet/ComplicacionEmbarazoMedraVS"
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "complicacionEmbarazoMedra"
-* item[=].item[=].item[=].text = "Código MedDRa de la complicación del embarazo"
+* item[=].item[=].item[=].text = "Código MedDRA de la complicación del embarazo"
 
 ////////////////////
 * item[=].item[=].item[+].type = #choice
 * item[=].item[=].item[=].answerValueSet = "http://paho.org/esavi/ValueSet/ComplicacionEmbarazoOtroVS"
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "complicacionEmbarazoOtro"
-* item[=].item[=].item[=].text = "Código No MedDRa de la complicación del embarazo . Esto será discutido con equipo terminológico"
+* item[=].item[=].item[=].text = "Código No MedDRA de la complicación del embarazo . Esto será discutido con equipo terminológico"
 
 /////////////////////
 * item[=].item[+].type = #group

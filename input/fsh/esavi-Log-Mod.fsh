@@ -42,8 +42,8 @@ Description: "Modelo Lógico de Notificaciones de Evento Adverso generado eventu
 * antecedentesMedicos 1..1 BackboneElement "Antecedentes médicos previos identificados por el paciente" "Aquellos antecedentes médicos que el paciente declara como relevantes al momento de declarar ESAVI"
   * antecedentesEnfermedadesPrevias 1..* BackboneElement "Antedecentes de enfermedades previas o SARS-Cov2"  "Antedecentes de enfermedades previas o SARS-Cov2"
     * descripcionEnfPrevia 1..1 SU string "Descripción de la enfermedad notificada" "Definición en texto de la enfermedad notificada"
-    * codigoMedraEnfPrevia 0..1 SU Coding "Código del Antedente de la enfermedad notificada" "Enfermedad notificada en MEDRA"
-    * codigoMedraEnfPrevia from http://terminology.hl7.org/CodeSystem/mdr (required)
+    * codigoMedDRAEnfPrevia 0..1 SU Coding "Código del Antedente de la enfermedad notificada" "Enfermedad notificada en MedDRA"
+    //* codigoMedDRAEnfPrevia from http://terminology.hl7.org/CodeSystem/mdr (required)
     * otrosCodigosEnfPrevia 0..1 SU Coding "Otro Código de los antecedentes de enfermedad notificada" "Código SCT, CIE-X de la enfermedad notificada" 
     * otrosCodigosEnfPrevia from EnfermedadesPreviasCodificacionVS (required)
 
@@ -109,9 +109,9 @@ Description: "Modelo Lógico de Notificaciones de Evento Adverso generado eventu
   
   * datosESAVI 1..* BackboneElement "Datos del ESAVI generado y la relevancia de este" "Datos del ESAVI generado y la relevancia de este"
     * esaviReacciones 1..1 SU string "Eventos y reacciónes manifestados por el paciente para el ESAVI descrito" "Eventos y reacciónes manifestados por el paciente para el ESAVI descrito. en texto libre"
-    * esaviMedra 0..1 SU Coding "Código Medra de la reacción adversa generada por la vacuna" "Reacción Adversa en Código Medra" 
-    * esaviMedra from EsaviMedraVS (required)
-    * esaviOtroCodigo 0..1 SU Coding "Código no Medra de la reacción adversa generada por la vacuna" "Reacción Adversa en Código no Medra" 
+    * esaviMedDRA 0..1 SU Coding "Código MedDRA de la reacción adversa generada por la vacuna" "Reacción Adversa en Código MedDRA" 
+    * esaviMedDRA from EsaviMedDRAVS (required)
+    * esaviOtroCodigo 0..1 SU Coding "Código no MedDRA de la reacción adversa generada por la vacuna" "Reacción Adversa en Código no MedDRA" 
     * esaviOtroCodigo from EsaviOtroVS (example)
 
   * embarazoESAVI 0..1 BackboneElement "Datos relacionados con paciente embarazada al momento de generar ESAVI" "Datos relacionados con paciente embarazada al momento de generar ESAVI"
@@ -128,9 +128,9 @@ Description: "Modelo Lógico de Notificaciones de Evento Adverso generado eventu
     * complicacionDuranteEmbarazo 1..1 SU Coding "Descripción de la complicación" "Uso de codificación y glosa para describir la complicación al embarazo"
     * complicacionDuranteEmbarazo from ComplicacionEmbarazoVS (required)
     * complicacionEmbarazo 1..1 SU string "Descripción de la Complicación" "Descripción de la complicación en texto libre"
-    * complicacionEmbarazoMedra 0..1 SU Coding "Código Medra Confirmación Embarazo" "Código solo en Medra"
-    * complicacionEmbarazoMedra from ComplicacionEmbarazoMedraVS (required)
-    * complicacionEmbarazoOtro 0..1 SU string "Código No Medra Confirmación Embarazo" "Códigos que no sean  Medra"
+    * complicacionEmbarazoMedDRA 0..1 SU Coding "Código MedDRA Confirmación Embarazo" "Código solo en MedDRA"
+    * complicacionEmbarazoMedDRA from ComplicacionEmbarazoMedDRAVS (required)
+    * complicacionEmbarazoOtro 0..1 SU string "Código No MedDRA Confirmación Embarazo" "Códigos que no sean  MedDRA"
     * complicacionEmbarazoOtro from ComplicacionEmbarazoOtroVS (example)
 
   * desenlaceESAVI 1..1 BackboneElement "Determinación del estado de gravedad del ESAVI" "Determinación en base a una serie de categorías de la gravedad del ESAVI"
