@@ -432,7 +432,7 @@ Usage: #example
 
 /////////////////////////////
 * item[=].item[=].item[+].type = #choice
-* item[=].item[=].item[=].answerValueSet = "http://paho.org/esavi/ValueSet/EnfermedadesPreviasCodificacionVS"
+* item[=].item[=].item[=].answerValueSet = "http://paho.org/esavi/ValueSet/ECodigoMedDRAEnfPreviaVS"
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "codigoMedDRAEnfPrevia"
 * item[=].item[=].item[=].text = "Código MedDRA del antecedente médico"
@@ -1259,7 +1259,7 @@ Usage: #example
 * item[=].item[=].item[=].linkId = "clasificacioncausaESAVI"
 * item[=].item[=].item[=].text = "Descripción de la clasificación de causalidad del ESAVI"
 
-/////////////////////
+/////////////////////Causalidad AEFI
 * item[=].item[=].item[+].type = #choice
 * item[=].item[=].item[=].answerValueSet = "http://paho.org/esavi/ValueSet/ClasificacionDesenlaceWHOAEFIVS"
 * item[=].item[=].item[=].required = true
@@ -1270,6 +1270,27 @@ Usage: #example
 * item[=].item[=].item[=].enableWhen.operator = #=
 * item[=].item[=].item[=].enableWhen.answerCoding.code = #WHO-AEFI
 
+/////////////////////UMC
+* item[=].item[=].item[+].type = #choice
+* item[=].item[=].item[=].answerValueSet = "http://paho.org/esavi/ValueSet/ClasificacionDesenlaceWHOUMCVS"
+* item[=].item[=].item[=].required = true
+* item[=].item[=].item[=].linkId = "clasificacionDeCausalidadWHOUMC"
+* item[=].item[=].item[=].text = "Clasificación de causalidad según la metodología WHO UMC"
+
+* item[=].item[=].item[=].enableWhen.question = "sistemaClasfcausalidad"
+* item[=].item[=].item[=].enableWhen.operator = #=
+* item[=].item[=].item[=].enableWhen.answerCoding.code = #WHO-UMC
+
+/////////////////////UMC
+* item[=].item[=].item[+].type = #choice
+* item[=].item[=].item[=].answerValueSet = "http://paho.org/esavi/ValueSet/ClasificacionDesenlaceWHONaranjoVS"
+* item[=].item[=].item[=].required = true
+* item[=].item[=].item[=].linkId = "clasificacionDeCausalidadNaranjo"
+* item[=].item[=].item[=].text = "Clasificación de causalidad según la metodología Naranjo"
+
+* item[=].item[=].item[=].enableWhen.question = "sistemaClasfcausalidad"
+* item[=].item[=].item[=].enableWhen.operator = #=
+* item[=].item[=].item[=].enableWhen.answerCoding.code = #Naranjo
 
 
 //////////////Identificador vacuna OK

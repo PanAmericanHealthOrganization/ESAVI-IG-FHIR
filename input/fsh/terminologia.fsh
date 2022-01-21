@@ -301,9 +301,9 @@ Description: "Códigos de Sección para la Notificación"
 ValueSet: ComplicacionEmbarazoVS
 Title: "EsaviComplicacionEmbarazoVS"
 Description: "Conjunto de Valores para la Sección de Complicaciones Embarazo ESAVI"
-* codes from system ComplicacionEmbarazCS
+* codes from system ComplicacionEmbarazoCS
 
-CodeSystem: ComplicacionEmbarazCS
+CodeSystem: ComplicacionEmbarazoCS
 Title: "Códigos para Complicaciones de Embarazo"
 Description: "Códigos para las Complicaciones de Embarazo"
 * #01 "Del Embarazo"
@@ -342,10 +342,10 @@ Description: "Códigos para Direcciones según OPS"
 * #4 "Comuna 4"
 * #5 "Comuna 5"
 
-//ValueSet: CodigoMedDRAEnfPreviaVS
-//Title: "CodigoMedDRAEnfPreviaVS"
-//Description: "Conjunto de Valores para enfermedades previas (MedDRA)"
-//* include codes from system http://terminology.hl7.org/CodeSystem/mdr
+ValueSet: CodigoMedDRAEnfPreviaVS
+Title: "CodigoMedDRAEnfPreviaVS"
+Description: "Conjunto de Valores para enfermedades previas (MedDRA)"
+* include codes from system http://terminology.hl7.org/CodeSystem/mdr
 
 
 ValueSet: DosisVacunaVS
@@ -375,22 +375,22 @@ CodeSystem: SistemaClasfCausalidadCS
 Id: SistemaClasfCausalidadCS
 Title: "Método de clasificación de causalidad"
 Description:  "Método de clasificación de causalidad"
-* #WHOUMC "WHO-UMC"	
-* #WHOAEFI "WHO-AEFI"
+* #WHO-UMC "WHO-UMC"	
+* #WHO-AEFI "WHO-AEFI"
 * #Naranjo "Naranjo"
 * #otro "Otro siste de clasificacion de causalidad"
 
 
 ValueSet: ClasificacionDesenlaceWHOAEFIVS
 Id: ClasificacionDesenlaceWHOAEFIVS
-Title: "Método de clasificación de causalidad"
-Description:  "Método de clasificación de causalidad"
+Title: "Método de clasificación de causalidad WHO-AEFI"
+Description:  "Método de clasificación de causalidad WHO-AEFI"
 * include codes from system ClasificacionDesenlaceWHOAEFICS
 
 CodeSystem: ClasificacionDesenlaceWHOAEFICS
 Id: ClasificacionDesenlaceWHOAEFICS
 Title: "Método de clasificación de causalidad WHO-AEFI"
-Description:  "Método de clasificación de causalidad"
+Description:  "Método de clasificación de causalidad WHO-AEFI"
 * #A1 "Evento relacionado con la vacuna o cualquiera de sus componentes"	
 * #A2 "Evento relacionado con una desviacion de calidad del producto biologico o la vacuna"
 * #A3 "Evento relacionado con un error programatico"
@@ -399,3 +399,26 @@ Description:  "Método de clasificación de causalidad"
 * #B2 "Factores determinantes para la clasificación muestran tendencias conflictivas a favor y en contra de una asociacion causal con la vacunació"
 * #C "Causa Coincidente"
 * #NC "No clasificable"
+
+
+ValueSet: ClasificacionDesenlaceWHOUMCVS
+Id: ClasificacionDesenlaceWHOUMCVS
+Title: "Método de clasificación de causalidad WHO-UMC"
+Description:  "Método de clasificación de causalidad WHO-UMC"
+* include codes from system ClasificacionDesenlaceWHOUMCCS
+
+CodeSystem: ClasificacionDesenlaceWHOUMCCS
+Id: ClasificacionDesenlaceWHOUMCCS
+Title: "Método de clasificación de causalidad WHO-UMC"
+Description:  "Método de clasificación de causalidad WHO-UMC"
+
+ValueSet: ClasificacionDesenlaceWHONaranjoVS
+Id: ClasificacionDesenlaceWHONaranjoVS
+Title: "Método de clasificación de causalidad WHO-Naranjo"
+Description:  "Método de clasificación de causalidad WHO-Naranjo"
+* include codes from system ClasificacionDesenlaceWHONaranjoCS
+
+CodeSystem: ClasificacionDesenlaceWHONaranjoCS
+Id: ClasificacionDesenlaceWHONaranjoCS
+Title: "Método de clasificación de causalidad WHO-Naranjo"
+Description:  "Método de clasificación de causalidad WHO-Naranjo"
