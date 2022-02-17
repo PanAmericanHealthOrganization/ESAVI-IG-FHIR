@@ -287,7 +287,7 @@ Usage: #example
 * item[=].item[=].item[0].type = #string
 * item[=].item[=].item[=].required = true
 * item[=].item[=].item[=].linkId = "nombreOrganizacionNotificadora"
-* item[=].item[=].item[=].text = "Nombre Institución que Notifica"
+* item[=].item[=].item[=].text = "Nombre Institución que Notifica (centro que reporta el caso a nivel nacional)"
 
 * item[=].item[=].item[+].type = #choice
 * item[=].item[=].item[=].answerValueSet = "http://paho.org/esavi/ValueSet/DirOrgNotiVS"
@@ -311,12 +311,12 @@ Usage: #example
 /////////////////////////////////////////////////////////////////////////////////
 /////////////////////  Grupo fechas //////////////////////////////////
 * item[=].item[+].type = #group
-* item[=].item[=].required = true
+* item[=].item[=].required = false
 * item[=].item[=].linkId = "fechas"
-* item[=].item[=].text = "Fechas Administrativas"
+* item[=].item[=].text = "Fechas Administrativas (al menos una fecha es necesaria)"
 
 * item[=].item[=].item[0].type = #date
-* item[=].item[=].item[=].required = true
+* item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "fechaConsulta"
 * item[=].item[=].item[=].text = "Fecha de la primera consulta al servicio de salud por causa del ESAVI"
 * item[=].item[=].item[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/minValue"
@@ -325,23 +325,23 @@ Usage: #example
 
 
 * item[=].item[=].item[+].type = #date
-* item[=].item[=].item[=].required = true
+* item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "fechaNotificacion"
 * item[=].item[=].item[=].text = "Fecha en la que el sistema de vigilancia oficialmente se entera de la ocurrencia del evento."
 * item[=].item[=].item[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/minValue"
 * item[=].item[=].item[=].extension[=].valueDate = 2019-12-01
 
 * item[=].item[=].item[+].type = #date
-* item[=].item[=].item[=].required = true
+* item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "fechaLlenadoFicha"
-* item[=].item[=].item[=].text = "Fecha en la que el notificador finaliza el llenado de la ficha de notificación."
+* item[=].item[=].item[=].text = "Fecha en la que el notificador finaliza el llenado de la ficha de notificación (si la ficha es electrónica, es la misma que fechaNotificacion)"
 * item[=].item[=].item[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/minValue"
 * item[=].item[=].item[=].extension[=].valueDate = 2019-12-01
 
 * item[=].item[=].item[+].type = #date
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "fechaRepoNacional"
-* item[=].item[=].item[=].text = "Fecha registrada de llegada de la notificación a la base de datos del nivel regional."
+* item[=].item[=].item[=].text = "Fecha registrada de llegada de la notificación a la base de datos del nivel nacional (si la ficha es electrónica, es la misma que fechaNotificacion)"
 
 /////////////////////////////////////////////////////////////////////////////////
 /////////////////////  Grupo datosVacunadoCaso //////////////////////////////////
@@ -364,7 +364,7 @@ Usage: #example
 * item[=].item.item[=].text = "UUID que identifica el caso o notificación. Una persona puede tener más de una notificación."
 
 * item[=].item.item[+].type = #choice
-* item[=].item.item[=].answerValueSet = "http://paho.org/esavi/ValueSet/Iso3166-1-N"
+* item[=].item.item[=].answerValueSet = "http://paho.org/esavi/ValueSet/CodPaises"
 * item[=].item.item[=].required = true
 * item[=].item.item[=].linkId = "paisOrigen-Reg"
 * item[=].item.item[=].text = "País en donde se originó el Registro"
@@ -384,7 +384,7 @@ Usage: #example
 
 /////////////////////////////
 * item[=].item.item[+].type = #string
-* item[=].item.item[=].required = true
+* item[=].item.item[=].required = false
 * item[=].item.item[=].linkId = "nombreResidenciaHabitual"
 * item[=].item.item[=].text = "Nombre Nivel Geográfico Subnacional de la Residencia Habitual de la Persona afectada por el ESAVI"
 
@@ -428,11 +428,11 @@ Usage: #example
 * item[=].item[=].item[0].type = #string
 * item[=].item[=].item[=].required = true
 * item[=].item[=].item[=].linkId = "descripcionEnfPrevia"
-* item[=].item[=].item[=].text = " Descripción de los problemas de salud previos en la persona afectada por el ESAVI con énfasis en comorbilidades o enfermedades concomitantes al evento adverso, eventos previos similares y eventos médicos relevantes para el evento de salud actual."
+* item[=].item[=].item[=].text = "Descripción de los problemas de salud previos en la persona afectada por el ESAVI con énfasis en comorbilidades o enfermedades concomitantes al evento adverso, eventos previos similares y eventos médicos relevantes para el evento de salud actual (si la enfermedad está codificada, es la descripción correspondiente al código)."
 
 /////////////////////////////
 * item[=].item[=].item[+].type = #choice
-* item[=].item[=].item[=].answerValueSet = "http://paho.org/esavi/ValueSet/ECodigoMedDRAEnfPreviaVS"
+* item[=].item[=].item[=].answerValueSet = "http://paho.org/esavi/ValueSet/CodigoMedDRAEnfPreviaVS"
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "codigoMedDRAEnfPrevia"
 * item[=].item[=].item[=].text = "Código MedDRA del antecedente médico"
@@ -442,41 +442,41 @@ Usage: #example
 * item[=].item[=].item[=].answerValueSet = "http://paho.org/esavi/ValueSet/EnfermedadesPreviasCodificacionVS"
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "otrosCodigosEnfPrevia"
-* item[=].item[=].item[=].text = "Otro Código de los antecedentes de enfermedad notificada"
+* item[=].item[=].item[=].text = "Código CIE-10/CIE-11/Snomed del antecedente médico"
 
 /////////////////////////////////////////////////////////////////////////////////
 /////////////////////  Grupo antecedentesEventosAdversos //////////////////////////////////
 * item[=].item[+].type = #group
-* item[=].item[=].required = true
-* item[=].item[=].repeats = true
+* item[=].item[=].required = false
+//* item[=].item[=].repeats = true
 * item[=].item[=].linkId = "antecedentesEventosAdversos"
 * item[=].item[=].text = "Declaración de existencia de eventos adversos previos"
 
 /////////////////////////////
 * item[=].item[=].item[0].type = #choice
 * item[=].item[=].item[=].answerValueSet = "http://paho.org/esavi/ValueSet/RespuestaSiNoNosabeVS"
-* item[=].item[=].item[=].required = true
+* item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "antecedentesAdvSimilar"
 * item[=].item[=].item[=].text = "Antecedente de eventos adversos similares al actual"
 
 ////////////////////////////
 * item[=].item[=].item[+].type = #choice
 * item[=].item[=].item[=].answerValueSet = "http://paho.org/esavi/ValueSet/RespuestaSiNoNosabeVS"
-* item[=].item[=].item[=].required = true
+* item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "alergiaMedicamentos"
 * item[=].item[=].item[=].text = "Antecedente de reacciones alérgicas a medicamentos"
 
 //////////////////////////////////
 * item[=].item[=].item[+].type = #choice
 * item[=].item[=].item[=].answerValueSet = "http://paho.org/esavi/ValueSet/RespuestaSiNoNosabeVS"
-* item[=].item[=].item[=].required = true
+* item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "alergiaVacunas"
 * item[=].item[=].item[=].text = "Antecedente de reacciones alérgicas a otras vacunas"
 
 /////////////////////////////////////////////////////////////////////////////////
 /////////////////////  Grupo antecedentesSarsCov2 //////////////////////////////////
 * item[=].item[+].type = #group
-* item[=].item[=].required = true
+* item[=].item[=].required = false
 * item[=].item[=].repeats = true
 * item[=].item[=].linkId = "antecedentesSarsCov2"
 * item[=].item[=].text = "Antecedente de diagnóstico de infección por SARS-CoV-2"
@@ -487,14 +487,14 @@ Usage: #example
 * item[=].item[=].item[=].answerValueSet = "http://paho.org/esavi/ValueSet/RespuestaSiNoNosabeVS"
 * item[=].item[=].item[=].required = true
 * item[=].item[=].item[=].linkId = "diagnosticoprevioSarsCov2"
-* item[=].item[=].item[=].text = "Antecedente de diagnóstico de infección por SARS-CoV-2"
+* item[=].item[=].item[=].text = "Antecedente de diagnóstico de infección por SARS-CoV-2 (Si/No/No Sabe)"
 
 //////////////////////////////////
 * item[=].item[=].item[+].type = #choice
 * item[=].item[=].item[=].answerValueSet = "http://paho.org/esavi/ValueSet/RespuestaSiNoNosabeVS"
-* item[=].item[=].item[=].required = true
+* item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "asintomaticoSars"
-* item[=].item[=].item[=].text = "Covid-19 asintomatico?"
+* item[=].item[=].item[=].text = "Diagnóstico de Covid-19 sin síntomas (Si/No/No Sabe)"
 
 //////////////////////////////////
 * item[=].item[=].item[+].type = #dateTime
@@ -507,7 +507,7 @@ Usage: #example
 * item[=].item[=].item[=].answerValueSet = "http://paho.org/esavi/ValueSet/ModoConfirmacionInfeccionVS"
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "tipoConfirmacionCovid19"
-* item[=].item[=].item[=].text = "Tipo de confirmación de diagnóstico COVID.19"
+* item[=].item[=].item[=].text = "Tipo de confirmación de diagnóstico COVID-19"
 
 //////////////////////////////////
 * item[=].item[=].item[+].type = #date
@@ -537,7 +537,7 @@ Usage: #example
 * item[=].item[=].item[=].text = "Estaba embarazada al momento de la vacuna?"
 
 //////////////////////////////////
-* item[=].item[=].item[0].type = #boolean
+* item[=].item[=].item[+].type = #boolean
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "embarazadaMomentoESAVI"
 * item[=].item[=].item[=].text = "Estaba embarazada al momento del ESAVI?"
@@ -547,6 +547,7 @@ Usage: #example
 /////////////////////  Grupo antecedentesEmbarazo //////////////////////////////////
 * item[=].item[+].type = #group
 * item[=].item[=].required = false
+* item[=].item[=].repeats = true
 * item[=].item[=].linkId = "antecedentesEmbarazo"
 * item[=].item[=].text = "Datos relacionados con el estado de embarazo"
 
@@ -559,9 +560,9 @@ Usage: #example
 /////////////////////
 * item[=].item[=].item[0].type = #choice
 * item[=].item[=].item[=].answerValueSet = "http://paho.org/esavi/ValueSet/RespuestaSiNoNosabeVS"
-* item[=].item[=].item[=].required = true
+* item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "codigoEmbarazoDuranteVacuna"
-* item[=].item[=].item[=].text = "Código consulta sobre la condición de embarazo al vacunarse"
+* item[=].item[=].item[=].text = "Estado o condición de embarazo al momento de vacunarse (Si/No/No Sabe)"
 
 /////////////////////
 //* item[=].item[=].item[+].type = #choice
@@ -572,20 +573,20 @@ Usage: #example
 
 /////////////////////
 * item[=].item[=].item[+].type = #date
-* item[=].item[=].item[=].required = true
+* item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "fechaUltimaMenstruacion"
 * item[=].item[=].item[=].text = "Fecha de la última menstruación de la Paciente"
 
 /////////////////////
 * item[=].item[=].item[+].type = #date
-* item[=].item[=].item[=].required = true
+* item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "fechaParto"
-* item[=].item[=].item[=].text = "Fecha probable del parto"
+* item[=].item[=].item[=].text = "Fecha del parto, o fecha probable del parto (calculada)"
 
 /////////////////////
 * item[=].item[=].item[+].type = #choice
 * item[=].item[=].item[=].answerValueSet = "http://paho.org/esavi/ValueSet/RespuestaSiNoNosabeVS"
-* item[=].item[=].item[=].required = true
+* item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "codigoMonitoreoPosteriorVacuna"
 * item[=].item[=].item[=].text = "Código consulta sobre si se monitoreó paciente una vez vacunado"
 
@@ -606,7 +607,7 @@ Usage: #example
 * item[=].item[=].item[=].item[+].linkId = "codigoTipoComplicacion"
 * item[=].item[=].item[=].item[=].text = "Código tipo complicacion del embarazo"
 * item[=].item[=].item[=].item[=].type = #choice
-* item[=].item[=].item[=].item[=].answerValueSet = "http://paho.org/esavi/ValueSet/EsaviComplicacionEmbarazoVS"
+* item[=].item[=].item[=].item[=].answerValueSet = "http://paho.org/esavi/ValueSet/ComplicacionEmbarazoVS"
 * item[=].item[=].item[=].item[=].required = true
 
 /////////////////////
@@ -650,7 +651,7 @@ Usage: #example
 * item[=].item[=].item[0].type = #string
 * item[=].item[=].item[=].required = true
 * item[=].item[=].item[=].linkId = "NombreMedicamento"
-* item[=].item[=].item[=].text = "Nombre del medicamento consumido de manera concomitante con la vacuna o relevante para el ESAVI, en texto libre"
+* item[=].item[=].item[=].text = "Nombre del medicamento consumido de manera concomitante con la vacuna o relevante para el ESAVI, en texto libre (si está codificado, es la descripción del código)"
 
 ///////////////////// OK
 * item[=].item[=].item[+].type = #choice
@@ -746,7 +747,7 @@ Usage: #example
 
 ///////////////////// OK
 * item[=].item[=].item[+].type = #choice
-* item[=].item[=].item[=].answerValueSet = "http://paho.org/esavi/ValueSet/EsaviCodigoWhoVacunaVS"
+* item[=].item[=].item[=].answerValueSet = "http://paho.org/esavi/ValueSet/CodigoWhoVacunaVS"
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "codigoVacunaWHODrug"
 * item[=].item[=].item[=].text = "Código WHODrug de la vacuna"
@@ -754,7 +755,7 @@ Usage: #example
 /////////////////////////////////////////////////////////////////////////////////
 /////////////////////  Grupo codigoVacunaOtro //////////////////////////////////
 * item[=].item[=].item[+].type = #choice
-* item[=].item[=].item[=].answerValueSet = "http://paho.org/esavi/ValueSet/EsaviCodigoNoWhoVacunaVS"
+* item[=].item[=].item[=].answerValueSet = "http://paho.org/esavi/ValueSet/CodigoNoWhoVacunaVS"
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "codigoVacunaOtro"
 * item[=].item[=].item[=].text = "Código no WHODrug de la Vacuna"
@@ -767,7 +768,7 @@ Usage: #example
 
 /////////////////////
 * item[=].item[=].item[+].type = #choice
-* item[=].item[=].item[=].answerValueSet = "http://paho.org/esavi/ValueSet/EsaviCodigoWhoFabricanteVS"
+* item[=].item[=].item[=].answerValueSet = "http://paho.org/esavi/ValueSet/CodigoWhoFabricanteVS"
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "codigoFabricanteWHODrug"
 * item[=].item[=].item[=].text = "Código del fabricante o titular del registro sanitario"
@@ -928,8 +929,9 @@ Usage: #example
 /////////////////////  Grupo antecedentesEmbarazoESAVI //////////////////////////////////
 * item[=].item[+].type = #group
 * item[=].item[=].required = false
+* item[=].item[=].repeats = true
 * item[=].item[=].linkId = "antecedentesEmbarazoESAVI"
-* item[=].item[=].text = "Datos relacionados con el estado de embarazo durante ESAVI"
+* item[=].item[=].text = "Datos relacionados con el estado de embarazo (al menos una fecha es necesaria)"
 
 ///////////////////// Enable When
 * item[=].item[=].enableWhen.question = "embarazadaMomentoESAVI"
@@ -958,9 +960,9 @@ Usage: #example
 
 /////////////////////
 * item[=].item[=].item[+].type = #date
-* item[=].item[=].item[=].required = true
+* item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "fechaPartoESAVI"
-* item[=].item[=].item[=].text = "Fecha probable del parto"
+* item[=].item[=].item[=].text = "Fecha del parto, o fecha probable del parto (calculada)"
 
 ///////////////////// Enable When
 * item[=].item[=].item[=].enableWhen.question = "embarazadaMomentoVacuna"
@@ -991,7 +993,7 @@ Usage: #example
 * item[=].item[=].item[=].item[+].linkId = "codigoTipoComplicacionESAVI"
 * item[=].item[=].item[=].item[=].text = "Código tipo complicacion del embarazo durante el ESAVI"
 * item[=].item[=].item[=].item[=].type = #choice
-* item[=].item[=].item[=].item[=].answerValueSet = "http://paho.org/esavi/ValueSet/EsaviComplicacionEmbarazoVS"
+* item[=].item[=].item[=].item[=].answerValueSet = "http://paho.org/esavi/ValueSet/ComplicacionEmbarazoVS"
 * item[=].item[=].item[=].item[=].required = true
 
 /////////////////////
