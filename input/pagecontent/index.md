@@ -12,16 +12,16 @@ Esta guía está dividida en varias páginas que se muestran en la parte superio
 
 
 
-*   [Home](index.html): Provee la introducción acerca de esta guía.
+*   [Inicio](index.html): Provee la introducción acerca de esta guía.
 *   [Objetivos](objetivos.html): Describe los objetivos estratégicos y de interoperabilidad 
-*   [Actores](actores.html): Describen a los actores (sistemas) participantes en las operaciones
-*   [Operaciones](operaciones.html): Casos de uso y descripción de las operaciones disponibles
-*   [Artefactos](artifacts.html): Estas páginas proveen descripciones detalladas y definiciones formales para los objetos FHIR definidos en la guía.
-*   [Recomendaciones](recomendaciones.html): Esta página provee recomendaciones generales sobre cómo usar los perfiles y transacciones definidas en esta guía.
-*   [Terminología](terminologia.html): Describe el vocabulario externo utilizado  y las definiciones terminológicas locales.
-*   [Seguridad](seguridad.html): Explica cómo conectarse al Centro Regional de manera segura
-*   [Sandbox](sandbox.html): En esta sección se brinda una colección y documentación Postman que ejemplifica todas las operaciones descriptas en esta guía
+*   [Datos Generales](generalidades.html): Aspectos Generales respecto al proyecto y la Guía
+  *   [Actores y Casos de Uso](actores_CasosUso.html): Definición de los Casos de Uso
+  *   [Operaciones FHIR](operaciones.html): Operaciones Rest usadas para el proyecto
+*   [Artefactos](artifacts.html): Estas páginas proveen descripciones detalladas y definiciones formales para los objetos FHIR presentes en la guía.
+*   [Mapeos](descargas.html): Desarrollo de los Mapeos entre DIHS 2 y R3 con FHIR.
+*   [Seguridad](seguridad.html): Explica los formatos de seguridad para la conexión con el Centro Regional
 *   [Descargas](descargas.html): Agrupa las descargas disponibles: perfiles, paquete de validación, ejemplos, etc.
+
 
 ### Del modelo logico a la implementacion
 

@@ -21,12 +21,14 @@ publisher:
 # │  To use a provided ig-data/input/includes/menu.xml file, delete the "menu" property below.     │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
-  Home: index.html
+  Inicio: index.html
   Objetivos: objetivos.html
-  Actores: actores.html
-  Operaciones: operaciones.html
-  Artefactos: artifacts.html
-  Recomendaciones: recomendaciones.html
-  Terminologia: terminologia.html
+  Datos Generales: 
+    Generalidades: generalidades.html
+    Actores y Casos de Uso: actores_CasosUso.html
+    Operaciones FHIR: operaciones.html
+  Artefctos: artifacts.html
+  Mapeos: descargas.html
   Seguridad: seguridad.html
-  Descargas: descargas.html
+  Dscargas: descargas.html
+  
