@@ -23,10 +23,10 @@ Usage: #example
 * extension[=].extension[=].valueCode = #warning 
 
 * extension[=].extension[+].url = "human"
-* extension[=].extension[=].valueString = "Control de que la fecha de Consulta no sea menor que la de nacimiento" 
+* extension[=].extension[=].valueString = "Fecha de Consulta no sea menor que la de nacimiento" 
 
 * extension[=].extension[+].url = "expression"
-* extension[=].extension[=].valueString =  "item.where(linkId='datosNotificacionGeneral').item.where(linkId='fechas').item.where(linkId='fechaConsulta').answer.where(value >= item.where(linkId='datosNotificacionGeneral').item.where(linkId='datosPacienteCaso').item.where(linkId='datosPaciente').item.where(linkId='fechaNacimiento').answer).exists()"
+* extension[=].extension[=].valueString =  "item.where(linkId='notificacionGeneral').item.where(linkId='datosNotificacionGeneral').item.where(linkId='fechas').item.where(linkId='fechaConsulta').answer.where(value >= item.where(linkId='datosVacunadoCaso').item.where(linkId='datosPaciente').item.where(linkId='fechaNacimiento').answer).exists()"
 
 * extension[=].extension[+].url = "location"
 * extension[=].extension[=].valueString = "item.item.where(linkId='fechaConsulta').answer.value"
@@ -46,7 +46,7 @@ Usage: #example
 * extension[=].extension[=].valueString = "Control de que la fecha de Notificación no sea menor que la fecha de Consulta" 
 
 * extension[=].extension[+].url = "expression"
-* extension[=].extension[=].valueString =  "item.where(linkId='datosNotificacionGeneral').item.where(linkId='fechas').item.where(linkId='fechaNotificacion').answer.where(value >= item.where(linkId='datosNotificacionGeneral').item.where(linkId='fechas').item.where(linkId='fechaConsulta').answer).exists()"
+* extension[=].extension[=].valueString =  "item.where(linkId='notificacionGeneral').item.where(linkId='datosNotificacionGeneral').item.where(linkId='fechas').item.where(linkId='fechaNotificacion').answer.where(value >= item.where(linkId='notificacionGeneral').item.where(linkId='datosNotificacionGeneral').item.where(linkId='fechas').item.where(linkId='fechaConsulta').answer).exists()"
 
 * extension[=].extension[+].url = "location"
 * extension[=].extension[=].valueString = "item.item.where(linkId='fechaNotificacion').answer.value"
@@ -62,10 +62,10 @@ Usage: #example
 * extension[=].extension[=].valueCode = #warning 
 
 * extension[=].extension[+].url = "human"
-* extension[=].extension[=].valueString = "Control de que la fecha de noticiación no sea menor que la de nacimiento" 
+* extension[=].extension[=].valueString = "Control de que la fecha de notificción no sea menor que la de nacimiento" 
 
 * extension[=].extension[+].url = "expression"
-* extension[=].extension[=].valueString =  "item.where(linkId='datosNotificacionGeneral').item.where(linkId='fechas').item.where(linkId='fechaNotificacion').answer.where(value >= item.where(linkId='datosNotificacionGeneral').item.where(linkId='datosPacienteCaso').item.where(linkId='datosPaciente').item.where(linkId='fechaNacimiento').answer).exists()"
+* extension[=].extension[=].valueString =  "item.where(linkId='notificacionGeneral').item.where(linkId='datosNotificacionGeneral').item.where(linkId='fechas').item.where(linkId='fechaNotificacion').answer.where(value >= item.where(linkId='datosVacunadoCaso').item.where(linkId='datosPaciente').item.where(linkId='fechaNacimiento').answer).exists()"
 
 * extension[=].extension[+].url = "location"
 * extension[=].extension[=].valueString = "item.item.where(linkId='fechaNotificacion').answer.value"
@@ -84,7 +84,7 @@ Usage: #example
 * extension[=].extension[=].valueString = "Control de que la fecha de llenado de Ficha no sea menor que la fecha de Consulta" 
 
 * extension[=].extension[+].url = "expression"
-* extension[=].extension[=].valueString =  "item.where(linkId='datosNotificacionGeneral').item.where(linkId='fechas').item.where(linkId='fechaLlenadoFicha').answer.where(value >= item.where(linkId='datosNotificacionGeneral').item.where(linkId='fechas').item.where(linkId='fechaConsulta').answer).exists()"
+* extension[=].extension[=].valueString =  "item.where(linkId='notificacionGeneral').item.where(linkId='datosNotificacionGeneral').item.where(linkId='fechas').item.where(linkId='fechaLlenadoFicha').answer.where(value >= item.where(linkId='notificacionGeneral').item.where(linkId='datosNotificacionGeneral').item.where(linkId='fechas').item.where(linkId='fechaConsulta').answer).exists()"
 
 * extension[=].extension[+].url = "location"
 * extension[=].extension[=].valueString = "item.item.where(linkId='fechaLlenadoFicha').answer.value"
@@ -103,7 +103,7 @@ Usage: #example
 * extension[=].extension[=].valueString = "Control de que la fecha de llenado de Ficha no sea menor que la fecha de Notificación" 
 
 * extension[=].extension[+].url = "expression"
-* extension[=].extension[=].valueString =  "item.where(linkId='datosNotificacionGeneral').item.where(linkId='fechas').item.where(linkId='fechaLlenadoFicha').answer.where(value >= item.where(linkId='datosNotificacionGeneral').item.where(linkId='fechas').item.where(linkId='fechaNotificacion').answer).exists()"
+* extension[=].extension[=].valueString =  "item.where(linkId='notificacionGeneral').item.where(linkId='datosNotificacionGeneral').item.where(linkId='fechas').item.where(linkId='fechaLlenadoFicha').answer.where(value >= item.where(linkId='notificacionGeneral').item.where(linkId='datosNotificacionGeneral').item.where(linkId='fechas').item.where(linkId='fechaNotificacion').answer).exists()"
 
 * extension[=].extension[+].url = "location"
 * extension[=].extension[=].valueString = "item.item.where(linkId='fechaLlenadoFicha').answer.value"
@@ -124,13 +124,13 @@ Usage: #example
 * extension[=].extension[=].valueString = "Control de que la fecha de Llenado de Ficha no sea menor que la de nacimiento" 
 
 * extension[=].extension[+].url = "expression"
-* extension[=].extension[=].valueString =  "item.where(linkId='datosNotificacionGeneral').item.where(linkId='fechas').item.where(linkId='fechaLlenadoFicha').answer.where(value >= item.where(linkId='datosNotificacionGeneral').item.where(linkId='datosPacienteCaso').item.where(linkId='datosPaciente').item.where(linkId='fechaNacimiento').answer).exists()"
+* extension[=].extension[=].valueString =  "item.where(linkId='notificacionGeneral').item.where(linkId='datosNotificacionGeneral').item.where(linkId='fechas').item.where(linkId='fechaLlenadoFicha').answer.where(value >= item.where(linkId='datosVacunadoCaso').item.where(linkId='datosPaciente').item.where(linkId='fechaNacimiento').answer).exists()"
 
 * extension[=].extension[+].url = "location"
 * extension[=].extension[=].valueString = "item.item.where(linkId='fechaLlenadoFicha').answer.value"
 
 ///////////////////////*****************************/////////////////////////////
-//extension para respuesta condicionada de fecha para fechaAlmacenaRepNacional //
+//extension para respuesta condicionada de fecha para fechaAlmacenaRepNacional (JORGE)// 
 ///////////////////////*****************************/////////////////////////////
 
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-constraint" 
