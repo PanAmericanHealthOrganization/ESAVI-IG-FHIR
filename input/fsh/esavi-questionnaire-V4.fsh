@@ -34,9 +34,9 @@ Usage: #example
 * extension[=].extension[=].valueString = "item.item.where(linkId='fechaConsulta').answer.value"
 //  
 
-///////////////////////*****************************//////////////////////////
+
 /// extension para respuesta condicionada de fecha para fechaNotificacion ////
-///////////////////////*****************************//////////////////////////
+
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-constraint" 
 * extension[=].extension[0].url = "key"
 * extension[=].extension[=].valueId = "ExFechaNot"
@@ -53,9 +53,9 @@ Usage: #example
 * extension[=].extension[+].url = "location"
 * extension[=].extension[=].valueString = "item.item.where(linkId='fechaNotificacion').answer.value"
 // 
-///////////////////////*****************************//////////////////////////
+///////////////////////****************************
 ///// extension para respuesta condicionada de fechaNotificacion 2 ///////////
-///////////////////////*****************************//////////////////////////
+///////////////////////****************************
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-constraint" 
 * extension[=].extension[0].url = "key"
 * extension[=].extension[=].valueId = "ExFechaNot2"
@@ -72,9 +72,9 @@ Usage: #example
 * extension[=].extension[+].url = "location"
 * extension[=].extension[=].valueString = "item.item.where(linkId='fechaNotificacion').answer.value"
 
-///////////////////////*****************************//////////////////////////
+///////////////////////****************************
 /// extension para respuesta condicionada de fecha para fechaLlenadoFicha ////
-///////////////////////*****************************//////////////////////////
+///////////////////////***************************
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-constraint" 
 * extension[=].extension[0].url = "key"
 * extension[=].extension[=].valueId = "ExFechaLlenadoFicha"
@@ -91,9 +91,9 @@ Usage: #example
 * extension[=].extension[+].url = "location"
 * extension[=].extension[=].valueString = "item.item.where(linkId='fechaLlenadoFicha').answer.value"
  
-///////////////////////*****************************//////////////////////////
+///////////////////////****************************
 // extension para respuesta condicionada de fecha para fechaLlenadoFicha 2  //
-///////////////////////*****************************//////////////////////////
+///////////////////////****************************
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-constraint" 
 * extension[=].extension[0].url = "key"
 * extension[=].extension[=].valueId = "ExFechaLlenadoFicha2"
@@ -111,9 +111,9 @@ Usage: #example
 * extension[=].extension[=].valueString = "item.item.where(linkId='fechaLlenadoFicha').answer.value"
 
 
-///////////////////////*****************************//////////////////////////
+///////////////////////***************************
 /////// extension para respuesta condicionada de fechaLlenadoFicha 3  ////////
-///////////////////////*****************************//////////////////////////
+///////////////////////***************************
 
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-constraint" 
 * extension[=].extension[0].url = "key"
@@ -131,9 +131,9 @@ Usage: #example
 * extension[=].extension[+].url = "location"
 * extension[=].extension[=].valueString = "item.item.where(linkId='fechaLlenadoFicha').answer.value"
 
-///////////////////////*****************************/////////////////////////////
+///////////////////////***************************
 //extension para respuesta condicionada de fecha para fechaAlmacenaRepNacional (JORGE)// 
-///////////////////////*****************************/////////////////////////////
+///////////////////////***********************
 
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-constraint" 
 * extension[=].extension[0].url = "key"
@@ -151,9 +151,7 @@ Usage: #example
 * extension[=].extension[+].url = "location"
 * extension[=].extension[=].valueString = "item.item.where(linkId='fechaRepoNacional').answer.value"
 
-///////////////////////*****************************//////////////////////////
 // extension para respuesta condicionada de fecha para fechaLlenadoFicha OK ///
-///////////////////////*****************************//////////////////////////
 
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-constraint" 
 * extension[=].extension[0].url = "key"
@@ -172,9 +170,7 @@ Usage: #example
 * extension[=].extension[=].valueString = "item.item.where(linkId='fechaLlenadoFicha').answer.value"
  
 
-///////////////////////*****************************//////////////////////////
 // extension para respuesta condicionada de fecha para fechaSintomasCovid19 OK//
-///////////////////////*****************************//////////////////////////
 
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-constraint" 
 * extension[=].extension[0].url = "key"
@@ -193,9 +189,9 @@ Usage: #example
 * extension[=].extension[=].valueString = "item.item.where(linkId='fechaSintomasCovid19').answer.value"
  
 
-///////////////////////*****************************//////////////////////////
+
 // extension para respuesta condicionada de fecha para fechaTomaMuestraCovid19 OK
-///////////////////////*****************************////////////////////////// 
+ 
 
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-constraint" 
 * extension[=].extension[0].url = "key"
@@ -213,9 +209,7 @@ Usage: #example
 * extension[=].extension[+].url = "location"
 * extension[=].extension[=].valueString = "item.item.where(linkId='fechaTomaMuestraCovid19').answer.value"
  
-///////////////////////*****************************//////////////////////////
 // extension para respuesta condicionada de fecha para fechaTomaMuestraCovid2 OK
-///////////////////////*****************************//////////////////////////
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-constraint" 
 * extension[=].extension[0].url = "key"
 * extension[=].extension[=].valueId = "ExFechaTomaMuestraCovid192"
@@ -232,9 +226,7 @@ Usage: #example
 * extension[=].extension[+].url = "location"
 * extension[=].extension[=].valueString = "item.item.where(linkId='fechaTomaMuestraCovid19').answer.value"
 
-///////////////////////*****************************//////////////////////////
 /////// extension para respuesta condicionada de fecha para fechaPartoESAVI OK///////
-///////////////////////*****************************//////////////////////////
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-constraint" 
 * extension[=].extension[0].url = "key"
 * extension[=].extension[=].valueId = "ExFechaParto"
@@ -252,9 +244,7 @@ Usage: #example
 * extension[=].extension[=].valueString = "item.item.where(linkId='fechaPartoESAVI').answer.value"
  
 
-///////////////////////*****************************//////////////////////////
 /////// extension para respuesta condicionada de fecha para fechaParto OK ///////
-///////////////////////*****************************//////////////////////////
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-constraint" 
 * extension[=].extension[0].url = "key"
 * extension[=].extension[=].valueId = "ExFechaParto2"
