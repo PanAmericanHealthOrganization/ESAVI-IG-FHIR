@@ -515,21 +515,23 @@ Description:  "Clasificación de Desenlace Tras Sufrir ESAVI"
 * ^contact.telecom.system = #email
 * ^contact.telecom.value = ""
 * ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
+* #1 "Recuperado Completamente"
+* #2 "En recuperación"
+* #3 "No recuperado"
+* #4 "Recuperado con secuelas"
+* #5 "Muerte"
+* #0 "Desconocido"
+
+
+/*
 * #1 "Muy probable o cierta"
 * #2 "Probable"
 * #3 "Posible"
 * #4 "Improbable"
 * #5 "No relacionada"
 * #6 "No clasificable"
-
-/*
-* #1 "Recuperado"
-* #2 "En remisión / recuperación"
-* #3 "No recuperado"
-* #4 "Recuperado con secuelas"
-* #5 "Muerte"
-* #0 "Desconocido"
 */
+
 
 ValueSet: InvestigacionTipoVS
 Id: InvestigacionTipoVS
@@ -866,6 +868,7 @@ Description: "Códigos para Direcciones según PAHO"
 * ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
 * #BR_MG_31_13305 "Carangola (Municipio), Minas Gerais, Brazil"
 * #BR_MG_31_13404 "Caratinga (Municipio), Minas Gerais, Brazil"
+/*
 * #BR_MG_31_13503 "Carbonita (Municipio), Minas Gerais, Brazil"
 * #BR_MG_31_13602 "Careaçu (Municipio), Minas Gerais, Brazil"
 * #BR_MG_31_13701 "Carlos Chagas (Municipio), Minas Gerais, Brazil"
@@ -19763,3 +19766,5 @@ Description: "Códigos para Direcciones según PAHO"
 * #BR_MG_31_13008 "Caraí (Municipio), Minas Gerais, Brazil"
 * #BR_MG_31_13107 "Caranaíba (Municipio), Minas Gerais, Brazil"
 * #BR_MG_31_13206 "Carandaí (Municipio), Minas Gerais, Brazil"
+
+*/

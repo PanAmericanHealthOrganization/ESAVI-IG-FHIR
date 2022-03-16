@@ -10,7 +10,8 @@ version: 0.1.0
 fhirVersion: 4.0.1
 copyrightYear: 2021+
 releaseLabel: ci-build
-language: es-AR
+#language: es-AR
+jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
 publisher:
   name: ESAVI - 
   url: https://covid-19pharmacovigilance.paho.org/resources/updates-on-aefi
