@@ -16,6 +16,7 @@ Usage: #example
 //// extension para respuesta condicionada de fecha para fechaConsulta   /////
 ///////////////////////*****************************//////////////////////////
 
+/*
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-constraint" 
 * extension[=].extension[0].url = "key"
 * extension[=].extension[=].valueId = "ExFechaCon"
@@ -269,7 +270,7 @@ Usage: #example
 
 * extension[=].extension[+].url = "location"
 * extension[=].extension[=].valueString = "item.item.where(linkId='fechaParto').answer.value"
-
+*/
 
 ///////////////////////*****************************//////////////////////////
 // extension para respuesta condicionada de fecha para fechaAlmacenaRepOPS 
