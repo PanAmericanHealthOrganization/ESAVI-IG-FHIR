@@ -255,7 +255,7 @@ Usage: #example
 ///////////////////////*****************************//////////////////////////
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-constraint" 
 * extension[=].extension[0].url = "key"
-* extension[=].extension[=].valueId = "ExFechaParto"
+* extension[=].extension[=].valueId = "ExFechaParto2"
 
 * extension[=].extension[+].url = "severity"
 * extension[=].extension[=].valueCode = #warning 
@@ -577,15 +577,18 @@ Usage: #example
 ///////////////////// Enable When
 * item[=].item[=].enableWhen.question = "embarazadaMomentoVacuna"
 * item[=].item[=].enableWhen.operator = #=
-* item[=].item[=].enableWhen.answerCoding.code = #true
+* item[=].item[=].enableWhen.answerBoolean = true
 
 
-/////////////////////
+/////////////////////XXXX
+/*
 * item[=].item[=].item[0].type = #choice
 * item[=].item[=].item[=].answerValueSet = "http://paho.org/esavi/ValueSet/RespuestaSiNoNosabeVS"
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "codigoEmbarazoDuranteVacuna"
 * item[=].item[=].item[=].text = "Estado o condición de embarazo al momento de vacunarse (Si/No/No Sabe)"
+*/
+
 
 /////////////////////
 //* item[=].item[=].item[+].type = #choice
@@ -610,7 +613,7 @@ Usage: #example
 * item[=].item[=].item[+].type = #choice
 * item[=].item[=].item[=].answerValueSet = "http://paho.org/esavi/ValueSet/RespuestaSiNoNosabeVS"
 * item[=].item[=].item[=].required = false
-* item[=].item[=].item[=].linkId = "codigoMonitoreoPosteriorVacuna"
+* item[=].item[=].item[=].linkId = "codigoMonitoreoPosteriorVacunaESAVI"
 * item[=].item[=].item[=].text = "Código consulta sobre si se monitoreó paciente una vez vacunado"
 
 
@@ -621,10 +624,14 @@ Usage: #example
 * item[=].item[=].item[=].linkId = "complicacionesEmbarazo"
 * item[=].item[=].item[=].text = "Tipo de complicación del embarazo"
 
-///////////////////// Enable When
-* item[=].item[=].item[=].enableWhen.question = "embarazoDuranteVacuna"
+
+* item[=].item[=].item[=].enableWhen.question = "embarazadaMomentoVacuna"
 * item[=].item[=].item[=].enableWhen.operator = #=
-* item[=].item[=].item[=].enableWhen.answerCoding.code = #1
+* item[=].item[=].item[=].enableWhen.answerBoolean = true
+
+* item[=].item[=].item[=].enableWhen.question = "embarazadaMomentoESAVI"
+* item[=].item[=].item[=].enableWhen.operator = #=
+* item[=].item[=].item[=].enableWhen.answerBoolean = true
 
 //
 * item[=].item[=].item[=].item[+].linkId = "codigoTipoComplicacion"
@@ -919,7 +926,7 @@ Usage: #example
 * item[=].item[=].item[0].type = #string
 * item[=].item[=].item[=].required = true
 * item[=].item[=].item[=].linkId = "nombreESAVI"
-* item[=].item[=].item[=].text = "Nombre del ESAVI "
+* item[=].item[=].item[=].text = "Nombre del ESAVI"
 
 //////////////////////////////////
 * item[=].item[=].item[+].type = #choice
@@ -962,10 +969,13 @@ Usage: #example
 * item[=].item[=].linkId = "antecedentesEmbarazoESAVI"
 * item[=].item[=].text = "Datos relacionados con el estado de embarazo (al menos una fecha es necesaria)"
 
-///////////////////// Enable When
+* item[=].item[=].enableWhen.question = "embarazadaMomentoVacuna"
+* item[=].item[=].enableWhen.operator = #=
+* item[=].item[=].enableWhen.answerBoolean = true
+
 * item[=].item[=].enableWhen.question = "embarazadaMomentoESAVI"
 * item[=].item[=].enableWhen.operator = #=
-* item[=].item[=].enableWhen.answerCoding.code = #true
+* item[=].item[=].enableWhen.answerBoolean = true
 
 
 /////////////////////
@@ -984,9 +994,9 @@ Usage: #example
 ///////////////////// Enable When
 * item[=].item[=].item[=].enableWhen.question = "embarazadaMomentoVacuna"
 * item[=].item[=].item[=].enableWhen.operator = #=
-* item[=].item[=].item[=].enableWhen.answerCoding.code = #false
+* item[=].item[=].item[=].enableWhen.answerBoolean = true
 
-
+////XXXXXXXXXXXXXXXarriba abajo cambie true
 /////////////////////
 * item[=].item[=].item[+].type = #date
 * item[=].item[=].item[=].required = false
@@ -996,7 +1006,7 @@ Usage: #example
 ///////////////////// Enable When
 * item[=].item[=].item[=].enableWhen.question = "embarazadaMomentoVacuna"
 * item[=].item[=].item[=].enableWhen.operator = #=
-* item[=].item[=].item[=].enableWhen.answerCoding.code = #false
+* item[=].item[=].item[=].enableWhen.answerBoolean = true
 
 /////////////////////
 * item[=].item[=].item[+].type = #choice
@@ -1008,11 +1018,11 @@ Usage: #example
 ///////////////////// Enable When
 * item[=].item[=].item[=].enableWhen.question = "embarazadaMomentoVacuna"
 * item[=].item[=].item[=].enableWhen.operator = #=
-* item[=].item[=].item[=].enableWhen.answerCoding.code = #false
+* item[=].item[=].item[=].enableWhen.answerBoolean = false
 
 /////////////////////////////////////////////////////////////////////////////////
 /////////////////////  Grupo complicacionesEmbarazo //////////////////////////////////
-* item[=].item[=].item[0].type = #group
+* item[=].item[=].item[+].type = #group
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "complicacionesEmbarazoESAVI"
 * item[=].item[=].item[=].text = "Complicación del embarazo que se sospecha estuvo relacionada con la administración de la vacuna"
@@ -1113,13 +1123,12 @@ Usage: #example
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "gravAborto"
 * item[=].item[=].item[=].text = "Aborto"
-* item[=].item[=].item[=].enableWhen.question = "embarazoDuranteVacuna"
-* item[=].item[=].item[=].enableWhen.operator = #=
-* item[=].item[=].item[=].enableWhen.answerCoding.system = "http://paho.org/esavi/ValueSet/RespuestaSiNoNosabeVS"
-* item[=].item[=].item[=].enableWhen.answerCoding.code = #1
 
-//revisar****************************
-* item[=].item[=].item[=].enableWhen.question = "tipoGravedad"
+* item[=].item[=].item[=].enableWhen.question = "embarazadaMomentoVacuna"
+* item[=].item[=].item[=].enableWhen.operator = #=
+* item[=].item[=].item[=].enableWhen.answerBoolean = true
+
+* item[=].item[=].item[=].enableWhen.question = "embarazadaMomentoESAVI"
 * item[=].item[=].item[=].enableWhen.operator = #=
 * item[=].item[=].item[=].enableWhen.answerBoolean = true
 
@@ -1129,14 +1138,14 @@ Usage: #example
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "gravMuerteFetal"
 * item[=].item[=].item[=].text = "Muerte fetal"
-* item[=].item[=].item[=].enableWhen.question = "embarazoDuranteVacuna"
-* item[=].item[=].item[=].enableWhen.operator = #=
-* item[=].item[=].item[=].enableWhen.answerCoding.system = "http://paho.org/esavi/ValueSet/RespuestaSiNoNosabeVS"
-* item[=].item[=].item[=].enableWhen.answerCoding.code = #1
-* item[=].item[=].item[=].enableWhen.question = "tipoGravedad"
+
+* item[=].item[=].item[=].enableWhen.question = "embarazadaMomentoVacuna"
 * item[=].item[=].item[=].enableWhen.operator = #=
 * item[=].item[=].item[=].enableWhen.answerBoolean = true
 
+* item[=].item[=].item[=].enableWhen.question = "embarazadaMomentoESAVI"
+* item[=].item[=].item[=].enableWhen.operator = #=
+* item[=].item[=].item[=].enableWhen.answerBoolean = true
 
 
 /////////////////////
@@ -1178,14 +1187,10 @@ Usage: #example
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "fechaMuerte"
 * item[=].item[=].item[=].text = "Fecha de muerte producida por posible ESAVI"
-* item[=].item[=].item[=].enableWhen.question = "codDesenlaceESAVI"
-* item[=].item[=].item[=].enableWhen.operator = #=
-* item[=].item[=].item[=].enableWhen.answerCoding.code = #5
 
-* item[=].item[=].item[=].enableWhen.question = "tipoGravedad"
+* item[=].item[=].item[=].enableWhen.question = "gravMuerte"
 * item[=].item[=].item[=].enableWhen.operator = #=
 * item[=].item[=].item[=].enableWhen.answerBoolean = true
-
 
 /////////////////////
 * item[=].item[=].item[+].type = #boolean
@@ -1281,6 +1286,7 @@ Usage: #example
 ///////////////////// Enable When
 * item[=].item[=].item[=].enableWhen.question = "sistemaClasfcausalidad"
 * item[=].item[=].item[=].enableWhen.operator = #=
+* item[=].item[=].item[=].enableWhen.answerCoding.system = "http://paho.org/esavi/ValueSet/SistemaClasfCausalidadCS"
 * item[=].item[=].item[=].enableWhen.answerCoding.code = #otro
 
 
@@ -1299,6 +1305,7 @@ Usage: #example
 
 * item[=].item[=].item[=].enableWhen.question = "sistemaClasfcausalidad"
 * item[=].item[=].item[=].enableWhen.operator = #=
+* item[=].item[=].item[=].enableWhen.answerCoding.system = "http://paho.org/esavi/ValueSet/SistemaClasfCausalidadCS"
 * item[=].item[=].item[=].enableWhen.answerCoding.code = #WHO-AEFI
 
 /////////////////////UMC
@@ -1310,6 +1317,7 @@ Usage: #example
 
 * item[=].item[=].item[=].enableWhen.question = "sistemaClasfcausalidad"
 * item[=].item[=].item[=].enableWhen.operator = #=
+* item[=].item[=].item[=].enableWhen.answerCoding.system = "http://paho.org/esavi/ValueSet/SistemaClasfCausalidadCS"
 * item[=].item[=].item[=].enableWhen.answerCoding.code = #WHO-UMC
 
 /////////////////////UMC
@@ -1322,7 +1330,7 @@ Usage: #example
 * item[=].item[=].item[=].enableWhen.question = "sistemaClasfcausalidad"
 * item[=].item[=].item[=].enableWhen.operator = #=
 * item[=].item[=].item[=].enableWhen.answerCoding.code = #Naranjo
-
+* item[=].item[=].item[=].enableWhen.answerCoding.system = "http://paho.org/esavi/ValueSet/SistemaClasfCausalidadCS"
 
 //////////////Identificador vacuna OK
 * item[=].item[=].item[+].type = #integer
