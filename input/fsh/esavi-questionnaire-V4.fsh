@@ -2,7 +2,7 @@ Alias: $questionnaire-item-control = http://hl7.org/fhir/questionnaire-item-cont
 
 
 ///////////////////////Información instancia//////////////////////////
-Instance: EjemploQuestionnaireEsavi
+Instance: EjemploQuestionnaireEsavi 
 Title: "Ejemplo Cuestionario 4"
 Description: "Description con constraints"
 InstanceOf: Questionnaire
@@ -282,6 +282,12 @@ Usage: #example
 * extension[=].extension[+].url = "location"
 * extension[=].extension[=].valueString = "item.item.where(linkId='registroVacunaCovidOtras').answer.value"
 */
+* version = "0.85"
+* name = "OPSQuestionarioESAVI"
+* title = "Questionario para ESAVI de OPS"
+* status = #draft
+* date = "2022-03-17"
+* publisher = "Organización Panamericana de la Salud"
 
 
 /////////////////////////////////////////////////////////////////////////////////
@@ -1278,7 +1284,7 @@ Usage: #example
 ///////////////////// Enable When
 * item[=].item[=].item[=].enableWhen.question = "sistemaClasfcausalidad"
 * item[=].item[=].item[=].enableWhen.operator = #=
-* item[=].item[=].item[=].enableWhen.answerCoding.system = "http://paho.org/esavi/ValueSet/SistemaClasfCausalidadCS"
+* item[=].item[=].item[=].enableWhen.answerCoding.system = "http://paho.org/esavi/CodeSystem/SistemaClasfCausalidadCS"
 * item[=].item[=].item[=].enableWhen.answerCoding.code = #otro
 
 
