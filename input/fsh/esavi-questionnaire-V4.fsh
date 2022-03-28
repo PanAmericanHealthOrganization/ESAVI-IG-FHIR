@@ -608,11 +608,11 @@ Usage: #example
 * item[=].item[=].item[=].text = "Fecha del parto, o fecha probable del parto (calculada)"
 
 /////////////////////
-* item[=].item[=].item[+].type = #choice
-* item[=].item[=].item[=].answerValueSet = "http://paho.org/esavi/ValueSet/RespuestaSiNoNosabeVS"
-* item[=].item[=].item[=].required = false
-* item[=].item[=].item[=].linkId = "codigoMonitoreoPosteriorVacunaESAVI"
-* item[=].item[=].item[=].text = "Código consulta sobre si se monitoreó paciente una vez vacunado"
+//* item[=].item[=].item[+].type = #choice
+//* item[=].item[=].item[=].answerValueSet = "http://paho.org/esavi/ValueSet/RespuestaSiNoNosabeVS"
+//* item[=].item[=].item[=].required = false
+//* item[=].item[=].item[=].linkId = "codigoMonitoreoPosteriorVacunaESAVI"
+//* item[=].item[=].item[=].text = "Código consulta sobre si se monitoreó paciente una vez vacunado"
 
 
 /////////////////////////////////////////////////////////////////////////////////
@@ -697,9 +697,10 @@ Usage: #example
 
 
 //////////////////////////////////
-* item[=].item[=].item[+].type = #string
+* item[=].item[=].item[+].type = #choice
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "codigoMedicamento"
+* item[=].item[=].item[=].answerValueSet = "http://paho.org/esavi/ValueSet/CodigoMedicamentoVS"
 * item[=].item[=].item[=].text = "Código WHODrug/SCT/CIE-11/ATC del medicamento consumido por el paciente"
 
 //////////////////////////////////
@@ -894,7 +895,7 @@ Usage: #example
 
 /////////////////////
 * item[=].item[=].item[+].type = #date
-* item[=].item[=].item[=].required = true
+* item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "fechaReconstitucionVacuna"
 * item[=].item[=].item[=].text = "Fecha en la cual se reconstituyó la vacuna registrada"
 
@@ -1010,7 +1011,7 @@ Usage: #example
 * item[=].item[=].item[+].type = #choice
 * item[=].item[=].item[=].answerValueSet = "http://paho.org/esavi/ValueSet/RespuestaSiNoNosabeVS"
 * item[=].item[=].item[=].required = true
-* item[=].item[=].item[=].linkId = "codigoMonitoreoPosteriorVacuna"
+* item[=].item[=].item[=].linkId = "codigoMonitoreoPosteriorVacunaESAVI"
 * item[=].item[=].item[=].text = "Código consulta sobre si se monitoreó paciente una vez vacunado"
 
 ///////////////////// Enable When

@@ -387,6 +387,35 @@ Description:  "Códigos de Grupos Étnicos"
 * #6 "Zambo"
 * #0 "Otro"
 
+ValueSet: CodigoMedicamentoVS
+Id: CodigoMedicamentoVS
+Title: "Codigo Medicamento"
+Description:  "Codigo Medicamento"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2021-03-11T00:00:00-03:00"
+* ^contact.name = "OPS"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = ""
+* ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
+* include codes from system CodigoMedicamentoCS
+
+CodeSystem: CodigoMedicamentoCS
+Id: CodigoMedicamentoCS
+Title: "Codigo Medicamento"
+Description:  "Codigo Medicamento"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2021-03-11T00:00:00-03:00"
+* ^contact.name = "OPS"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = ""
+* ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
+* #1 "Uno" 
+* #2 "Dos"
+* #3 "Tres" 
+* #4 "Cuatro" 
+
 ValueSet: ModoVerificacionVacunaVS
 Id: ModoVerificacionVacunaVS
 Title: "Modos Verificación Vacuna Previa"
