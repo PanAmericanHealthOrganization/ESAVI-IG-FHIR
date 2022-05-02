@@ -143,8 +143,8 @@ Description: "Codificación Estandarizda del Nombre Comercial de Medicamento seg
 
 ValueSet: CodigoWhoVacunaVS
 Id: CodigoWhoVacunaVS
-Title: "Nombre Genérico Vacunas WHO"
-Description: "Codificación Estandarizda de Nomnbre Genérico de las Vacunas según WhoDrugs"
+Title: "Codigo WHODrug de la vacuna"
+Description: "Codificación Estandarizda del código de las Vacunas según WhoDrug"
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2021-03-11T00:00:00-03:00"
@@ -551,17 +551,6 @@ Description:  "Clasificación de Desenlace Tras Sufrir ESAVI"
 * #5 "Muerte"
 * #0 "Desconocido"
 
-
-/*
-* #1 "Muy probable o cierta"
-* #2 "Probable"
-* #3 "Posible"
-* #4 "Improbable"
-* #5 "No relacionada"
-* #6 "No clasificable"
-*/
-
-
 ValueSet: InvestigacionTipoVS
 Id: InvestigacionTipoVS
 Title: "Tipo de Investigación ESAVI"
@@ -648,7 +637,6 @@ Description: "Códigos para las Complicaciones de Embarazo"
 * #04 "Neonatal"
 * #05 "Anomalía Congénita"
 
-
 ValueSet: ProfesionalNotificadorVS
 Id: ProfesionalNotificadorVS
 Title: "Tipo de Profesional Notificador"
@@ -664,7 +652,7 @@ Description: "Códigos de Tipo de Notificadores de ESAVI para PAHO"
 * ^status = #active
 * ^date = "2022-02-02"
 * ^publisher = "PAHO - Pan American Health Organization"
-* include codes from system $ProfesionalNotificadorCS
+* include codes from system ProfesionalNotificadorCS
 
 CodeSystem: ProfesionalNotificadorCS
 Id: ProfesionalNotificadorCS
@@ -688,6 +676,7 @@ Description: "Códigos de Tipo de Notificadores de ESAVI para PAHO"
 * #3 "Otro Profesional de la Salud"
 * #4 "Abogado"
 * #5 "Usuario u otro profesional no sanitario"
+* #6 "No definido por el usuario"
 
 
 ValueSet: CodigoMedDRAEnfPreviaVS
@@ -864,11 +853,6 @@ Description:  "Método de clasificación de causalidad WHO-Naranjo"
 * #04 "Improbable"
 
 
-//ValueSet: DirOrgNotiVS
-//Title: "EsaviDirOrgNotiVS"
-///Description: "Conjunto de Valores para dirección según OPS"
-//* codes from system DirOrgNotiCS
-
 Alias: $DirOrgNotiCS = http://paho.org/esavi/CodeSystem/DirOrgNotiCS
 
 ValueSet: DirOrgNotiVS
@@ -897,6 +881,7 @@ Description: "Códigos para Direcciones según PAHO"
 * ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
 * #BR_MG_31_13305 "Carangola (Municipio), Minas Gerais, Brazil"
 * #BR_MG_31_13404 "Caratinga (Municipio), Minas Gerais, Brazil"
+
 /*
 * #BR_MG_31_13503 "Carbonita (Municipio), Minas Gerais, Brazil"
 * #BR_MG_31_13602 "Careaçu (Municipio), Minas Gerais, Brazil"

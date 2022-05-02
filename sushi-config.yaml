@@ -24,12 +24,13 @@ publisher:
 menu:
   Inicio: index.html
   Objetivos: objetivos.html
+  Alcance: alcance.html
+  Uso: uso_como_llenar_guia.html
+  Artefctos: artifacts.html
+  Mapeos: mapeos.html
+#  Seguridad: seguridad.html
+  Dscargas: descargas.html
   Datos Generales: 
     Generalidades: generalidades.html
     Actores y Casos de Uso: actores_CasosUso.html
     Operaciones FHIR: operaciones.html
-  Artefctos: artifacts.html
-  Mapeos: descargas.html
-  Seguridad: seguridad.html
-  Dscargas: descargas.html
-  

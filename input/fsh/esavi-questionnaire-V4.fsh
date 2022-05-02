@@ -641,22 +641,22 @@ Usage: #example
 /////////////////////
 * item[=].item[=].item[=].item[+].type = #string
 * item[=].item[=].item[=].item[=].required = true
-* item[=].item[=].item[=].item[=].linkId = "descripcionComplicacionEmbarazo"
+* item[=].item[=].item[=].item[=].linkId = "nombreComplicacionEmbarazo"
 * item[=].item[=].item[=].item[=].text = "Descripción de la Complicación"
 
 ////////////////////////////
 * item[=].item[=].item[=].item[+].type = #choice
 * item[=].item[=].item[=].item[=].answerValueSet = "http://paho.org/esavi/ValueSet/ComplicacionEmbarazoMedDRAVS"
 * item[=].item[=].item[=].item[=].required = false
-* item[=].item[=].item[=].item[=].linkId = "complicacionEmbarazoMedDRA"
+* item[=].item[=].item[=].item[=].linkId = "codigoMedDRAComplicacionEmbarazo"
 * item[=].item[=].item[=].item[=].text = "Código MedDRA de la complicación del embarazo"
 
 ////////////////////
 * item[=].item[=].item[=].item[+].type = #choice
 * item[=].item[=].item[=].item[=].answerValueSet = "http://paho.org/esavi/ValueSet/ComplicacionEmbarazoOtroVS"
 * item[=].item[=].item[=].item[=].required = false
-* item[=].item[=].item[=].item[=].linkId = "complicacionEmbarazoOtro"
-* item[=].item[=].item[=].item[=].text = "Código No MedDRA de la complicación del embarazo . Esto será discutido con equipo terminológico"
+* item[=].item[=].item[=].item[=].linkId = "otrosCodigosComplicacionEmbarazo"
+* item[=].item[=].item[=].item[=].text = "Código SNOMED-CT/CIE-10/CIE-11 de la complicación del embarazo"
 
 
 /////////////////////////////////////////////////////////////////////////////////
@@ -678,7 +678,7 @@ Usage: #example
 //////////////////////////////////
 * item[=].item[=].item[0].type = #string
 * item[=].item[=].item[=].required = true
-* item[=].item[=].item[=].linkId = "NombreMedicamento"
+* item[=].item[=].item[=].linkId = "nombreMedicamento"
 * item[=].item[=].item[=].text = "Nombre del medicamento consumido de manera concomitante con la vacuna o relevante para el ESAVI, en texto libre (si está codificado, es la descripción del código)"
 
 ///////////////////// OK
@@ -804,7 +804,7 @@ Usage: #example
 
 ///////////////////// dosis de vacuna con valor maximo y mínimo
 
-* item[=].item[=].item[+].type = #integer
+* item[=].item[=].item[+].type = #string
 //* item[=].item[=].item[=].answerValueSet = "http://paho.org/esavi/ValueSet/DosisVacunaVS"
 * item[=].item[=].item[=].required = true
 * item[=].item[=].item[=].linkId = "numeroDosisVacuna"
@@ -858,7 +858,7 @@ Usage: #example
 
 /////////////////////
 * item[=].item[=].item[+].type = #date
-* item[=].item[=].item[=].required = true
+* item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "fechaVacunacion"
 * item[=].item[=].item[=].text = "Fecha de vacunación"
 
@@ -1037,22 +1037,22 @@ Usage: #example
 /////////////////////
 * item[=].item[=].item[=].item[+].type = #string
 * item[=].item[=].item[=].item[=].required = true
-* item[=].item[=].item[=].item[=].linkId = "descripcionComplicacionEmbarazoESAVI"
+* item[=].item[=].item[=].item[=].linkId = "nombreComplicacionEmbarazoESAVI"
 * item[=].item[=].item[=].item[=].text = "Descripción de la Complicación durante el ESAVI"
 
 ////////////////////////////
 * item[=].item[=].item[=].item[+].type = #choice
 * item[=].item[=].item[=].item[=].answerValueSet = "http://paho.org/esavi/ValueSet/ComplicacionEmbarazoMedDRAVS"
 * item[=].item[=].item[=].item[=].required = false
-* item[=].item[=].item[=].item[=].linkId = "complicacionEmbarazoMedDRAESAVI"
+* item[=].item[=].item[=].item[=].linkId = "codigoMedDRAComplicacionEmbarazoESAVI"
 * item[=].item[=].item[=].item[=].text = "Código MedDRA de la complicación del embarazo durante el ESAVI"
 
 ////////////////////
 * item[=].item[=].item[=].item[+].type = #choice
 * item[=].item[=].item[=].item[=].answerValueSet = "http://paho.org/esavi/ValueSet/ComplicacionEmbarazoOtroVS"
 * item[=].item[=].item[=].item[=].required = false
-* item[=].item[=].item[=].item[=].linkId = "complicacionEmbarazoOtroESAVI"
-* item[=].item[=].item[=].item[=].text = "Código No MedDRA de la complicación del embarazo durante el ESAVI. Esto será discutido con equipo terminológico"
+* item[=].item[=].item[=].item[=].linkId = "otrosCodigosComplicacionEmbarazoESAVI"
+* item[=].item[=].item[=].item[=].text = "Código SNOMED-CT/CIE-10/CIE-11 de la complicación del embarazo"
 
 ///**********nuevo grupo copiado de arriba pa no equivocarnos********/
 
