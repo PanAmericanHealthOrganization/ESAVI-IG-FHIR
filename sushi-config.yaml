@@ -30,7 +30,7 @@ menu:
   Mapeos: mapeos.html
 #  Seguridad: seguridad.html
   Dscargas: descargas.html
-  Datos Generales: 
-    Generalidades: generalidades.html
-    Actores y Casos de Uso: actores_CasosUso.html
-    Operaciones FHIR: operaciones.html
+ #Datos Generales: 
+  #  Generalidades: generalidades.html
+  #  Actores y Casos de Uso: actores_CasosUso.html
+  #  Operaciones FHIR: operaciones.html
