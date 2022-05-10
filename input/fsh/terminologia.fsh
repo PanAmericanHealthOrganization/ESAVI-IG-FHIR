@@ -670,7 +670,7 @@ Description: "Códigos de Tipo de Notificadores de ESAVI para PAHO"
 * ^date = "2022-02-02"
 * ^publisher = "PAHO - Pan American Health Organization"
 * ^content = #complete
-* ^count = 5
+* ^count = 6
 * #1 "Médico"
 * #2 "Farmacéutico"
 * #3 "Otro Profesional de la Salud"
@@ -881,8 +881,6 @@ Description: "Códigos para Direcciones según PAHO"
 * ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
 * #BR_MG_31_13305 "Carangola (Municipio), Minas Gerais, Brazil"
 * #BR_MG_31_13404 "Caratinga (Municipio), Minas Gerais, Brazil"
-
-/*
 * #BR_MG_31_13503 "Carbonita (Municipio), Minas Gerais, Brazil"
 * #BR_MG_31_13602 "Careaçu (Municipio), Minas Gerais, Brazil"
 * #BR_MG_31_13701 "Carlos Chagas (Municipio), Minas Gerais, Brazil"
@@ -19780,5 +19778,3 @@ Description: "Códigos para Direcciones según PAHO"
 * #BR_MG_31_13008 "Caraí (Municipio), Minas Gerais, Brazil"
 * #BR_MG_31_13107 "Caranaíba (Municipio), Minas Gerais, Brazil"
 * #BR_MG_31_13206 "Carandaí (Municipio), Minas Gerais, Brazil"
-
-*/
