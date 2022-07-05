@@ -11,7 +11,9 @@ fhirVersion: 4.0.1
 copyrightYear: 2021+
 releaseLabel: ci-build
 #language: es-AR
-jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
+
+#jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
+jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001
 publisher:
   name: ESAVI - 
   url: https://covid-19pharmacovigilance.paho.org/resources/updates-on-aefi
@@ -26,10 +28,10 @@ menu:
   Objetivos: objetivos.html
   Alcance: alcance.html
   Uso: uso_como_llenar_guia.html
-  Artefctos: artifacts.html
+  Artefactos: artifacts.html
   Mapeos: mapeos.html
 #  Seguridad: seguridad.html
-  Dscargas: descargas.html
+  Descargas: descargas.html
  #Datos Generales: 
   #  Generalidades: generalidades.html
   #  Actores y Casos de Uso: actores_CasosUso.html

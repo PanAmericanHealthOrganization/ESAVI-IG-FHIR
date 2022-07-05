@@ -882,6 +882,16 @@ Description: "Códigos para Direcciones según PAHO"
 * #BR_MG_31_13305 "Carangola (Municipio), Minas Gerais, Brazil"
 * #BR_MG_31_13404 "Caratinga (Municipio), Minas Gerais, Brazil"
 * #BR_MG_31_13503 "Carbonita (Municipio), Minas Gerais, Brazil"
+* #MX_CX_09015 "Cuauhtémoc (Municipio), Ciudad de Mexico, Mexico"
+* #BR_SC_42_05407 "Florianópolis (Municipio), Santa Catarina, Brazil"
+* #PE_ICA_0201 "Chincha Alta (Distrito), Ica, Peru"
+* #PE_ICA_0211 "Tambo de Mora (Distrito), Ica, Peru"
+* #GT_GU_0101 "Guatemala (Municipio), Guatemala, Guatemala"
+* #GT_AV_1612 "Cahabón (Municipio), Alta Verapaz, Guatemala"
+* #BB_03 "Saint George, Barbados"
+* #KN_01 "Christ Church Nichola Town, Saint Kitts and Nevis"
+
+/*
 * #BR_MG_31_13602 "Careaçu (Municipio), Minas Gerais, Brazil"
 * #BR_MG_31_13701 "Carlos Chagas (Municipio), Minas Gerais, Brazil"
 * #BR_MG_31_13800 "Carmésia (Municipio), Minas Gerais, Brazil"
@@ -19778,3 +19788,5 @@ Description: "Códigos para Direcciones según PAHO"
 * #BR_MG_31_13008 "Caraí (Municipio), Minas Gerais, Brazil"
 * #BR_MG_31_13107 "Caranaíba (Municipio), Minas Gerais, Brazil"
 * #BR_MG_31_13206 "Carandaí (Municipio), Minas Gerais, Brazil"
+
+*/
