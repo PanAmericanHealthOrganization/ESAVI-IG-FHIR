@@ -1,4 +1,5 @@
-Instance: Ejemplo5
+Instance: Ejemplo5-Respondido
+Description: "Ejemplo de cuestionario Respondido 5"
 InstanceOf: ESAVIQuestionnaireResponse
 Usage: #example
 * meta.versionId = "1"
@@ -52,7 +53,7 @@ Usage: #example
 * item[=].item.item[=].answer.valueString = "231d0a32-c62f-4bdc-93a3-55710f4313ac"
 * item[=].item.item[+].linkId = "codigoResidenciaHabitual"
 * item[=].item.item[=].text = "Codigo Nivel Geográfico Subnacional de la Residencia Habitual de la Persona afectada por el ESAVI"
-* item[=].item.item[=].answer.valueCoding = http://paho.org/esavi/CodeSystem/DirOrgNotiCS#GT16 "Cahabón (Municipio), Alta Verapaz, Guatemala"
+* item[=].item.item[=].answer.valueCoding = http://paho.org/esavi/CodeSystem/DirOrgNotiCS#GT_AV_1612 "Cahabón (Municipio), Alta Verapaz, Guatemala"
 * item[=].item.item[+].linkId = "nombreResidenciaHabitual"
 * item[=].item.item[=].text = "Nombre Nivel Geográfico Subnacional de la Residencia Habitual de la Persona afectada por el ESAVI"
 * item[=].item.item[=].answer.valueString = "Guatemala"

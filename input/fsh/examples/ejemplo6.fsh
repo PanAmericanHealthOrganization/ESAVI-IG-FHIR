@@ -1,10 +1,11 @@
-Instance: Ejemplo6
+Instance: Ejemplo6-Respondido
+Description: "Ejemplo de cuestionario Respondido 6"
 InstanceOf: ESAVIQuestionnaireResponse
 Usage: #example
 * meta.versionId = "1"
 * meta.lastUpdated = "2022-03-31T14:42:43.825+00:00"
 * meta.source = "#g0FzWSQTv9vaXOb8"
-* questionnaire = "http://paho.org/esavi/Questionnaire/ejemploQuestionnaireEsavi4"
+//* questionnaire = "http://paho.org/esavi/Questionnaire/ejemploQuestionnaireEsavi4"
 * status = #completed
 * authored = "2022-03-10T10:20:00Z"
 * item[0].linkId = "datosNotificacionGeneral"
@@ -52,7 +53,7 @@ Usage: #example
 * item[=].item.item[=].answer.valueString = "1"
 * item[=].item.item[+].linkId = "codigoResidenciaHabitual"
 * item[=].item.item[=].text = "Codigo Nivel Geográfico Subnacional de la Residencia Habitual de la Persona afectada por el ESAVI"
-* item[=].item.item[=].answer.valueCoding = http://paho.org/esavi/CodeSystem/DirOrgNotiCS#BB-03 "Saint George, Barbados"
+* item[=].item.item[=].answer.valueCoding = http://paho.org/esavi/CodeSystem/DirOrgNotiCS#BB_03 "Saint George, Barbados"
 * item[=].item.item[+].linkId = "nombreResidenciaHabitual"
 * item[=].item.item[=].text = "Nombre Nivel Geográfico Subnacional de la Residencia Habitual de la Persona afectada por el ESAVI"
 * item[=].item.item[=].answer.valueString = "Christ Church"

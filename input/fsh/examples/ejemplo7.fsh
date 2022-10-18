@@ -1,4 +1,5 @@
-Instance: Ejemplo7
+Instance:  Ejemplo7-Respondido
+Description: "Ejemplo de cuestionario Respondido 7"
 InstanceOf: ESAVIQuestionnaireResponse
 Usage: #example
 * meta.versionId = "1"
@@ -16,7 +17,7 @@ Usage: #example
 * item[=].item[=].item[=].answer.valueString = "Saint Kitts"
 * item[=].item[=].item[+].linkId = "codigoDireccionOrganizacion"
 * item[=].item[=].item[=].text = "Código del Nivel Geográfico Subnacional de la Ubicación de la Institución que Notifica"
-* item[=].item[=].item[=].answer.valueCoding = http://paho.org/esavi/CodeSystem/DirOrgNotiCS#KN-01 "Christ Church Nichola Town, Saint Kitts and Nevis"
+* item[=].item[=].item[=].answer.valueCoding = http://paho.org/esavi/CodeSystem/DirOrgNotiCS#KN_01 "Christ Church Nichola Town, Saint Kitts and Nevis"
 * item[=].item[=].item[+].linkId = "nombreDireccionOrganizacion"
 * item[=].item[=].item[=].text = "Nombre del Nivel Geográfico Subnacional de la Ubicación de la Institución que Notifica"
 * item[=].item[=].item[=].answer.valueString = "Christ Church Nichola Town, Saint Kitts and Nevis"
@@ -52,7 +53,7 @@ Usage: #example
 * item[=].item.item[=].answer.valueString = "123"
 * item[=].item.item[+].linkId = "codigoResidenciaHabitual"
 * item[=].item.item[=].text = "Codigo Nivel Geográfico Subnacional de la Residencia Habitual de la Persona afectada por el ESAVI"
-* item[=].item.item[=].answer.valueCoding = http://paho.org/esavi/CodeSystem/DirOrgNotiCS#KN-01 "Christ Church Nichola Town, Saint Kitts and Nevis"
+* item[=].item.item[=].answer.valueCoding = http://paho.org/esavi/CodeSystem/DirOrgNotiCS#KN_01 "Christ Church Nichola Town, Saint Kitts and Nevis"
 * item[=].item.item[+].linkId = "nombreResidenciaHabitual"
 * item[=].item.item[=].text = "Nombre Nivel Geográfico Subnacional de la Residencia Habitual de la Persona afectada por el ESAVI"
 * item[=].item.item[=].answer.valueString = "Saint Kitts and Nevis"

@@ -1,4 +1,5 @@
-Instance: Ejemplo3
+Instance: Ejemplo3-Respondido
+Description: "Ejemplo de cuestionario Respondido 3"
 InstanceOf: ESAVIQuestionnaireResponse
 Usage: #example
 * meta.versionId = "1"
@@ -16,13 +17,13 @@ Usage: #example
 * item[=].item[=].item[=].answer.valueString = "Hospital ESSALUD René Toche Groppo"
 * item[=].item[=].item[+].linkId = "codigoDireccionOrganizacion"
 * item[=].item[=].item[=].text = "Código del Nivel Geográfico Subnacional de la Ubicación de la Institución que Notifica"
-* item[=].item[=].item[=].answer.valueCoding = http://paho.org/esavi/CodeSystem/DirOrgNotiCS#{{codigo_para_codigoDireccionOrganizacion}} "PE_ICA_0201"
+* item[=].item[=].item[=].answer.valueCoding = http://paho.org/esavi/CodeSystem/DirOrgNotiCS#PE_ICA_0201 "Chincha Alta (Distrito), Ica, Peru"
 * item[=].item[=].item[+].linkId = "nombreDireccionOrganizacion"
 * item[=].item[=].item[=].text = "Nombre del Nivel Geográfico Subnacional de la Ubicación de la Institución que Notifica"
 * item[=].item[=].item[=].answer.valueString = "Chincha alta"
 * item[=].item[=].item[+].linkId = "codigoProfesionNotificador"
 * item[=].item[=].item[=].text = "Codigo de la profesión del notificador"
-* item[=].item[=].item[=].answer.valueCoding = http://paho.org/esavi/CodeSystem/ProfesionalNotificadorCS#{{codigo_para_codigoProfesionNotificador}} "1"
+* item[=].item[=].item[=].answer.valueCoding = http://paho.org/esavi/CodeSystem/ProfesionalNotificadorCS#1 "Médico"
 * item[=].item[+].linkId = "fechas"
 * item[=].item[=].text = "Fechas Administrativas (al menos una fecha es necesaria)"
 * item[=].item[=].item[0].linkId = "fechaConsulta"
@@ -49,7 +50,7 @@ Usage: #example
 * item[=].item.item[=].answer.valueCoding = http://paho.org/esavi/CodeSystem/CodPaises#{{codigo_para_paisOrigen-Reg}} "PE"
 * item[=].item.item[+].linkId = "codigoResidenciaHabitual"
 * item[=].item.item[=].text = "Codigo Nivel Geográfico Subnacional de la Residencia Habitual de la Persona afectada por el ESAVI"
-* item[=].item.item[=].answer.valueCoding = http://paho.org/esavi/CodeSystem/DirOrgNotiCS#{{codigo_para_codigoResidenciaHabitual}} "PE_ICA_0201"
+* item[=].item.item[=].answer.valueCoding = http://paho.org/esavi/CodeSystem/DirOrgNotiCS#PE_ICA_0201 "Chincha Alta (Distrito), Ica, Peru"
 * item[=].item.item[+].linkId = "nombreResidenciaHabitual"
 * item[=].item.item[=].text = "Nombre Nivel Geográfico Subnacional de la Residencia Habitual de la Persona afectada por el ESAVI"
 * item[=].item.item[=].answer.valueString = "Chincha alta"
@@ -515,7 +516,7 @@ Usage: #example
 * item[=].item[=].text = "Desenlace ESAVI"
 * item[=].item[=].item[0].linkId = "codDesenlaceESAVI"
 * item[=].item[=].item[=].text = "Código Desenlace ESAVI"
-* item[=].item[=].item[=].answer.valueCoding = http://paho.org/esavi/CodeSystem/ClasificacionDesenlaceCS#{{codigo_para_codDesenlaceESAVI}} "{{descripcion_para_codDesenlaceESAVI}}"
+* item[=].item[=].item[=].answer.valueCoding = http://paho.org/esavi/CodeSystem/ClasificacionDesenlaceCS#1 "Recuperado Completamente"
 * item[=].item[=].item[+].linkId = "fechaNotificaMuerteFetal"
 * item[=].item[=].item[=].text = "Fecha en la cual se notifico la muerte del feto de paciente al registro nacional"
 * item[=].item[=].item[=].answer.valueDate = "2021-10-02"

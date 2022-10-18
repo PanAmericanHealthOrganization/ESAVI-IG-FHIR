@@ -4,7 +4,7 @@ Alias: $questionnaire-item-control = http://hl7.org/fhir/questionnaire-item-cont
 ///////////////////////Información instancia//////////////////////////
 Instance: EjemploQuestionnaireEsavi 
 Title: "Ejemplo Cuestionario 4"
-Description: "Description con constraints"
+Description: "Ejemplo de cuestionario para responder"
 InstanceOf: Questionnaire
 Usage: #example
 
