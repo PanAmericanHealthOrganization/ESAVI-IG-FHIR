@@ -1,0 +1,105 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "EventoAdversoVacunaCS",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://paho.org/esavi/CodeSystem/EventoAdversoVacunaCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"EventoAdversoVacunaCS-1\"> </a></td><td>Fiebre mayor a 38°C</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"EventoAdversoVacunaCS-2\"> </a></td><td>Dolor en el sitio de la inyección</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"EventoAdversoVacunaCS-3\"> </a></td><td>Eritema en el sitio de la inyección</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"EventoAdversoVacunaCS-4\"> </a></td><td>Inflamación en el sitio de la inyección</td></tr><tr><td style=\"white-space:nowrap\">5<a name=\"EventoAdversoVacunaCS-5\"> </a></td><td>Cefalea</td></tr><tr><td style=\"white-space:nowrap\">6<a name=\"EventoAdversoVacunaCS-6\"> </a></td><td>Convulsiones febriles</td></tr><tr><td style=\"white-space:nowrap\">7<a name=\"EventoAdversoVacunaCS-7\"> </a></td><td>Absceso</td></tr><tr><td style=\"white-space:nowrap\">8<a name=\"EventoAdversoVacunaCS-8\"> </a></td><td>Linfadenitis</td></tr><tr><td style=\"white-space:nowrap\">9<a name=\"EventoAdversoVacunaCS-9\"> </a></td><td>Encefalopatía</td></tr><tr><td style=\"white-space:nowrap\">10<a name=\"EventoAdversoVacunaCS-10\"> </a></td><td>Encefalitis</td></tr><tr><td style=\"white-space:nowrap\">11<a name=\"EventoAdversoVacunaCS-11\"> </a></td><td>Trombocitopenia</td></tr><tr><td style=\"white-space:nowrap\">12<a name=\"EventoAdversoVacunaCS-12\"> </a></td><td>Anafilaxis</td></tr><tr><td style=\"white-space:nowrap\">13<a name=\"EventoAdversoVacunaCS-13\"> </a></td><td>Síndrome de shock tóxico</td></tr><tr><td style=\"white-space:nowrap\">14<a name=\"EventoAdversoVacunaCS-14\"> </a></td><td>Sepsis</td></tr><tr><td style=\"white-space:nowrap\">0<a name=\"EventoAdversoVacunaCS-0\"> </a></td><td>Otro</td></tr></table></div>"
+  },
+  "url": "http://paho.org/esavi/CodeSystem/EventoAdversoVacunaCS",
+  "version": "0.1.0",
+  "name": "EventoAdversoVacunaCS",
+  "title": "Eventos Adversos",
+  "status": "active",
+  "date": "2021-03-11T00:00:00-03:00",
+  "publisher": "ESAVI -",
+  "contact": [
+    {
+      "name": "ESAVI -",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://covid-19pharmacovigilance.paho.org/resources/updates-on-aefi"
+        },
+        {
+          "system": "email",
+          "value": "rizzatodan@paho.org"
+        }
+      ]
+    }
+  ],
+  "description": "Códigos de Posibles Eventos Adversos a Vacuna",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "count": 15,
+  "concept": [
+    {
+      "code": "1",
+      "display": "Fiebre mayor a 38°C"
+    },
+    {
+      "code": "2",
+      "display": "Dolor en el sitio de la inyección"
+    },
+    {
+      "code": "3",
+      "display": "Eritema en el sitio de la inyección"
+    },
+    {
+      "code": "4",
+      "display": "Inflamación en el sitio de la inyección"
+    },
+    {
+      "code": "5",
+      "display": "Cefalea"
+    },
+    {
+      "code": "6",
+      "display": "Convulsiones febriles"
+    },
+    {
+      "code": "7",
+      "display": "Absceso"
+    },
+    {
+      "code": "8",
+      "display": "Linfadenitis"
+    },
+    {
+      "code": "9",
+      "display": "Encefalopatía"
+    },
+    {
+      "code": "10",
+      "display": "Encefalitis"
+    },
+    {
+      "code": "11",
+      "display": "Trombocitopenia"
+    },
+    {
+      "code": "12",
+      "display": "Anafilaxis"
+    },
+    {
+      "code": "13",
+      "display": "Síndrome de shock tóxico"
+    },
+    {
+      "code": "14",
+      "display": "Sepsis"
+    },
+    {
+      "code": "0",
+      "display": "Otro"
+    }
+  ]
+}

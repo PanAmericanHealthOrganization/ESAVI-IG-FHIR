@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="ComplicacionEmbarazoOtroVS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href="http://terminology.hl7.org/4.0.0/CodeSystem-icd10.html"><code>http://hl7.org/fhir/sid/icd-10</code></a></li><li>Include all codes defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a></li></ul></div>
+  </text>
+  <url value="http://paho.org/esavi/ValueSet/ComplicacionEmbarazoOtroVS"/>
+  <version value="0.1.0"/>
+  <name value="ComplicacionEmbarazoOtroVS"/>
+  <title value="Otros Códigos Complicaciones en Embarazo ESAVI "/>
+  <status value="active"/>
+  <date value="2021-03-11T00:00:00-03:00"/>
+  <publisher value="ESAVI -"/>
+  <contact>
+    <name value="ESAVI -"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://covid-19pharmacovigilance.paho.org/resources/updates-on-aefi"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="rizzatodan@paho.org"/>
+    </telecom>
+  </contact>
+  <description value="Codificacion Estandarizada de diagnóticos de complicaciones de embarazo mediante códigos Snomed y CIE-10"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10"/>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+    </include>
+  </compose>
+</ValueSet>

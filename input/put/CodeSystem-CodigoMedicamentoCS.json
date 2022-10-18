@@ -1,0 +1,61 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "CodigoMedicamentoCS",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://paho.org/esavi/CodeSystem/CodigoMedicamentoCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"CodigoMedicamentoCS-1\"> </a></td><td>Uno</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"CodigoMedicamentoCS-2\"> </a></td><td>Dos</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"CodigoMedicamentoCS-3\"> </a></td><td>Tres</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"CodigoMedicamentoCS-4\"> </a></td><td>Cuatro</td></tr></table></div>"
+  },
+  "url": "http://paho.org/esavi/CodeSystem/CodigoMedicamentoCS",
+  "version": "0.1.0",
+  "name": "CodigoMedicamentoCS",
+  "title": "Codigo Medicamento",
+  "status": "active",
+  "date": "2021-03-11T00:00:00-03:00",
+  "publisher": "ESAVI -",
+  "contact": [
+    {
+      "name": "ESAVI -",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://covid-19pharmacovigilance.paho.org/resources/updates-on-aefi"
+        },
+        {
+          "system": "email",
+          "value": "rizzatodan@paho.org"
+        }
+      ]
+    }
+  ],
+  "description": "Codigo Medicamento",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "count": 4,
+  "concept": [
+    {
+      "code": "1",
+      "display": "Uno"
+    },
+    {
+      "code": "2",
+      "display": "Dos"
+    },
+    {
+      "code": "3",
+      "display": "Tres"
+    },
+    {
+      "code": "4",
+      "display": "Cuatro"
+    }
+  ]
+}

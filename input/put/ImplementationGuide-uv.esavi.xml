@@ -1,0 +1,1156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="uv.esavi"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>ESAVI</h2><p>The official URL for this implementation guide is: </p><pre>http://paho.org/esavi/ImplementationGuide/uv.esavi</pre></div>
+  </text>
+  <url value="http://paho.org/esavi/ImplementationGuide/uv.esavi"/>
+  <version value="0.1.0"/>
+  <name value="ESAVI"/>
+  <status value="draft"/>
+  <date value="2022-09-19T00:01:02-03:00"/>
+  <publisher value="ESAVI -"/>
+  <contact>
+    <name value="ESAVI -"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://covid-19pharmacovigilance.paho.org/resources/updates-on-aefi"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="rizzatodan@paho.org"/>
+    </telecom>
+  </contact>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <packageId value="uv.esavi"/>
+  <license value="CC0-1.0"/>
+  <fhirVersion value="4.0.1"/>
+  <dependsOn id="hl7tx">
+    <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
+    <packageId value="hl7.terminology.r4"/>
+    <version value="4.0.0"/>
+  </dependsOn>
+  <definition>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="copyrightyear"/>
+      </extension>
+      <extension url="value">
+        <valueString value="2021+"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="releaselabel"/>
+      </extension>
+      <extension url="value">
+        <valueString value="ci-build"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-qa"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/qa"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-temp"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/pages"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-output"/>
+      </extension>
+      <extension url="value">
+        <valueString value="output"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-suppressed-warnings"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/ignoreWarnings.txt"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-history"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://paho.org/esavi/history.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="template-html"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="template-md"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page-md.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-contact"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-context"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-copyright"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-jurisdiction"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-license"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-publisher"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-version"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="active-tables"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ESAVIQuestionnaireResponse"/>
+      </reference>
+      <name value="Cuestionario"/>
+      <description value="Perfil con los elementos mínimos a considerar para generar la respuesta al cuestinario de ESAVI de la OPS"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ClasificacionDesenlaceVS"/>
+      </reference>
+      <name value="Desenlaces Tras ESAVI"/>
+      <description value="Clasificación de Desenlace Tras Sufrir ESAVI"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ClasificacionDesenlaceWHOAEFIVS"/>
+      </reference>
+      <name value="Clasificación de causalidad WHO-AEFI"/>
+      <description value="Método de clasificación de causalidad WHO-AEFI"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ClasificacionDesenlaceWHONaranjoVS"/>
+      </reference>
+      <name value="Clasificación de causalidad WHO-Naranjo"/>
+      <description value="Método de clasificación de causalidad WHO-Naranjo"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ClasificacionDesenlaceWHOUMCVS"/>
+      </reference>
+      <name value="Clasificación de causalidad WHO-UMC"/>
+      <description value="Método de clasificación de causalidad WHO-UMC"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/CodPaises"/>
+      </reference>
+      <name value="Códigos de Países"/>
+      <description value="Codigos definidos para la identificación de países segun norma ISO3166-N"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/CodigoMedDRAEnfPreviaVS"/>
+      </reference>
+      <name value="Enfermedades previas en un ESAVI-PAHO"/>
+      <description value="Describe las enfermedades previas en un ESAVI codificadas en MedDRA"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/CodigoMedicamentoVS"/>
+      </reference>
+      <name value="Codigo Medicamento"/>
+      <description value="Codigo Medicamento"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/CodigoNoWhoVacunaVS"/>
+      </reference>
+      <name value="Código no WHODrug de la Vacuna"/>
+      <description value="Código no WHODrug de la Vacuna"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/CodigoOtroVacunaVS"/>
+      </reference>
+      <name value="Nombre Genérico Vacunas Códigos no WHO"/>
+      <description value="Codificación Estandarizada de Nombre Genérico de las Vacunas según Snomed, ATC y CIE-10"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/CodigoWhoFabricanteVS"/>
+      </reference>
+      <name value="Fabricantes Vacuna"/>
+      <description value="Códigos Fabricantes Vacunas de WHO"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/CodigoWhoVacunaVS"/>
+      </reference>
+      <name value="Codigo WHODrug de la vacuna"/>
+      <description value="Codificación Estandarizda del código de las Vacunas según WhoDrug"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ComplicacionEmbarazoMedDRAVS"/>
+      </reference>
+      <name value="Códigos MEDRA Complicaciones en Embarazo ESAVI "/>
+      <description value="Codificacion Estandarizada de diagnóticos de complicaciones de embarazo mediante códigos MedDRA"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ComplicacionEmbarazoOtroVS"/>
+      </reference>
+      <name value="Otros Códigos Complicaciones en Embarazo ESAVI "/>
+      <description value="Codificacion Estandarizada de diagnóticos de complicaciones de embarazo mediante códigos Snomed y CIE-10"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ComplicacionEmbarazoVS"/>
+      </reference>
+      <name value="Complicaciones Embarazo"/>
+      <description value="Conjunto de Valores para la Sección de Complicaciones Embarazo ESAVI"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/DirOrgNotiVS"/>
+      </reference>
+      <name value="Códigos PAHO para Direcciones"/>
+      <description value="Conjunto de Valores para dirección según OPS"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/DosisVacunaVS"/>
+      </reference>
+      <name value="Dosis vacuna"/>
+      <description value="Indicador de que dosis se ha administrando"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/EnfermedadesPreviasCodificacionVS"/>
+      </reference>
+      <name value="Enfermedades previas en un ESAVI-PAHO"/>
+      <description value="Describe las enfermedades previas en un ESAVI codificadas en CIE10, CIE11 o SNOMED CT"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/EsaviMedDRAVS"/>
+      </reference>
+      <name value="Códigos MedDRA Evento Adverso"/>
+      <description value="Codificacion Estandarizada de Evento Adverso en MedDRA"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/EsaviOtroVS"/>
+      </reference>
+      <name value="Otros Códigos Evento Adverso"/>
+      <description value="Evento Adverso en otro sistema según Snomed, ATC y CIE-10"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/EventoAdversoVacunaVS"/>
+      </reference>
+      <name value="Eventos Adversos"/>
+      <description value="Códigos de Posibles Eventos Adversos a Vacuna"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/FormaFarmaceuticaVS"/>
+      </reference>
+      <name value="Identificación Formas Farmacéuticas"/>
+      <description value="Describe y lista las formas farmaceuticas de medicamentos para registro en ESAVI segun SNOMED CT"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/GrupoEtnicoVS"/>
+      </reference>
+      <name value="Grupos Étnicos"/>
+      <description value="Códigos de Grupos Étnicos"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/InvestigacionTipoVS"/>
+      </reference>
+      <name value="Tipo de Investigación ESAVI"/>
+      <description value="Tipo de Investigación Generada tras Reporte de ESAVI"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/MedicamentoGenericoVS"/>
+      </reference>
+      <name value="Nombre Genérico de Medicamentos"/>
+      <description value="Codificación Estandarizda del Nombre Genérico de Medicamento según ATC y CIE-10"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/MedicamentoOtroVS"/>
+      </reference>
+      <name value="Nombre Genérico Medicamento"/>
+      <description value="Nombre Genérico de Medicamento según Snomed"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ModoConfirmacionInfeccionVS"/>
+      </reference>
+      <name value="Modos Confirmación Infección COVID-19"/>
+      <description value="Modos de Confirmacion de Infección por COVID-19"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ModoVerificacionVacunaVS"/>
+      </reference>
+      <name value="Modos Verificación Vacuna Previa"/>
+      <description value="Modos de Verificacion de Vacuna o Esquema de Vacunación Completado"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/NombreComercialMedicamentoVS"/>
+      </reference>
+      <name value="Nombre Comercial Medicamento"/>
+      <description value="Codificación Estandarizda del Nombre Comercial de Medicamento según ATC"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/NombreComercialVacunaVS"/>
+      </reference>
+      <name value="Nombre Comercial Vacunas"/>
+      <description value="Codificación Estandarizda del Nombre Comercial Vacuna en ATC"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ProfesionalNotificadorVS"/>
+      </reference>
+      <name value="Tipo de Profesional Notificador"/>
+      <description value="Códigos de Tipo de Notificadores de ESAVI para PAHO"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/RespuestaSiNoNosabeVS"/>
+      </reference>
+      <name value="Respuestas Simples"/>
+      <description value="Códigos para capturar respuestas simples si/no/no sabe"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/RespuestaVerdaderoFalsoVS"/>
+      </reference>
+      <name value="Códigos Booleanos"/>
+      <description value="Códigos respuestas simples Verdadero/Falso"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/SeccionesNotificacionVS"/>
+      </reference>
+      <name value="Secciones Notificación EDAVI"/>
+      <description value="Conjunto de Valores para las Secciones de la Notificación"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/SistemaClasfCausalidadVS"/>
+      </reference>
+      <name value="Tipo de Método de clasificación de causalidad"/>
+      <description value="Códigos para Tipos Métodos de Clasificación de Causalidad"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/SistemasDeCodificacionVS"/>
+      </reference>
+      <name value="Sistemas De Codificacion"/>
+      <description value="Sistemas De Codificacion para Determinación de Códigos"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/SustanciaActivaVS"/>
+      </reference>
+      <name value="Sustancia Activa Medicamento"/>
+      <description value="Codificación Estandarizda de Sustancia Activa de Medicamento según Snomed, ATC y CIE-10"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ViaAdminMedicamentoVS"/>
+      </reference>
+      <name value="Vías de Administración de Medicamentos"/>
+      <description value="Describe y lista las vías de administración de medicamentos para registro en ESAVI segun SNOMED CT"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/ClasificacionDesenlaceCS"/>
+      </reference>
+      <name value="Desenlaces Tras ESAVI"/>
+      <description value="Clasificación de Desenlace Tras Sufrir ESAVI"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/ClasificacionDesenlaceWHOAEFICS"/>
+      </reference>
+      <name value="Clasificación de causalidad WHO-AEFI"/>
+      <description value="Método de clasificación de causalidad WHO-AEFI"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/ClasificacionDesenlaceWHONaranjoCS"/>
+      </reference>
+      <name value="Clasificación de causalidad WHO-Naranjo"/>
+      <description value="Método de clasificación de causalidad WHO-Naranjo"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/ClasificacionDesenlaceWHOUMCCS"/>
+      </reference>
+      <name value="Clasificación de causalidad WHO-UMC"/>
+      <description value="Método de clasificación de causalidad WHO-UMC"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/CodigoMedicamentoCS"/>
+      </reference>
+      <name value="Codigo Medicamento"/>
+      <description value="Codigo Medicamento"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/CodigoNoWhoVacunaCS"/>
+      </reference>
+      <name value="Código no WHODrug de la Vacuna"/>
+      <description value="Código no WHODrug de la Vacuna"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/CodigoWhoFabricanteCS"/>
+      </reference>
+      <name value="Fabricante   Vacuna"/>
+      <description value="Códigos Fabricantes Vacunas de WHO"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/ComplicacionEmbarazoCS"/>
+      </reference>
+      <name value="Complicaciones de Embarazo"/>
+      <description value="Códigos para las Complicaciones de Embarazo"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/DirOrgNotiCS"/>
+      </reference>
+      <name value="Códigos PAHO para Direcciones"/>
+      <description value="Códigos para Direcciones según PAHO"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/DosisVacunaCS"/>
+      </reference>
+      <name value="Dosis Vacuna"/>
+      <description value="Indicador de que dosis se ha administrando"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/EventoAdversoVacunaCS"/>
+      </reference>
+      <name value="Eventos Adversos"/>
+      <description value="Códigos de Posibles Eventos Adversos a Vacuna"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/GrupoEtnicoCS"/>
+      </reference>
+      <name value="Grupos Étnicos"/>
+      <description value="Códigos de Grupos Étnicos"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/InvestigacionTipoCS"/>
+      </reference>
+      <name value="Tipo de Investigación ESAVI"/>
+      <description value="Tipo de Investigación Generada tras Reporte de ESAVI"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/ModoConfirmacionInfeccionCS"/>
+      </reference>
+      <name value="Modo de Confirmación de la Infección"/>
+      <description value="Modos de Confirmacion de Infección por COVID-19"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/ModoVerificacionVacunaCS"/>
+      </reference>
+      <name value="Modo de Verificación de Vacunación Previa"/>
+      <description value="Modos de Verificacion de Vacuna o Esquema de Vacunación Completado"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/ProfesionalNotificadorCS"/>
+      </reference>
+      <name value="Tipo de Profesional Notificador"/>
+      <description value="Códigos de Tipo de Notificadores de ESAVI para PAHO"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/RespuestaSiNoNosabeCS"/>
+      </reference>
+      <name value="Respuestas Simples"/>
+      <description value="Códigos para capturar respuestas simples si/no/no sabe"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/RespuestaVerdaderoFalsoCS"/>
+      </reference>
+      <name value="Códigos Booleanos"/>
+      <description value="Códigos respuestas simples Verdadero/Falso"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/SeccionesNotificacionCS"/>
+      </reference>
+      <name value="Secciones Notificación ESAVI"/>
+      <description value="Conjunto de Valores para las Secciones de la Notificación"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/SistemaClasfCausalidadCS"/>
+      </reference>
+      <name value="Tipo de Método de clasificación de causalidad"/>
+      <description value="Códigos para Tipos de Métodos de Clasificación de Causalidad"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/SistemasDeCodificacionCS"/>
+      </reference>
+      <name value="Sistemas De Codificacion"/>
+      <description value="Sistemas De Codificacion para Determinación de Códigos"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/Ejemplo1"/>
+      </reference>
+      <name value="Ejemplo1"/>
+      <exampleCanonical value="http://paho.org/esavi/StructureDefinition/ESAVIQuestionnaireResponse"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/Ejemplo1-Respondido"/>
+      </reference>
+      <name value="Ejemplo1-Respondido"/>
+      <description value="Ejemplo de cuestionario Respondido 1"/>
+      <exampleCanonical value="http://paho.org/esavi/StructureDefinition/ESAVIQuestionnaireResponse"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/Ejemplo2"/>
+      </reference>
+      <name value="Ejemplo2"/>
+      <exampleCanonical value="http://paho.org/esavi/StructureDefinition/ESAVIQuestionnaireResponse"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/Ejemplo2-Respondido"/>
+      </reference>
+      <name value="Ejemplo2-Respondido"/>
+      <description value="Ejemplo de cuestionario Respondido 2"/>
+      <exampleCanonical value="http://paho.org/esavi/StructureDefinition/ESAVIQuestionnaireResponse"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/Ejemplo3"/>
+      </reference>
+      <name value="Ejemplo3"/>
+      <exampleCanonical value="http://paho.org/esavi/StructureDefinition/ESAVIQuestionnaireResponse"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/Ejemplo3-Respondido"/>
+      </reference>
+      <name value="Ejemplo3-Respondido"/>
+      <description value="Ejemplo de cuestionario Respondido 3"/>
+      <exampleCanonical value="http://paho.org/esavi/StructureDefinition/ESAVIQuestionnaireResponse"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/Ejemplo4"/>
+      </reference>
+      <name value="Ejemplo4"/>
+      <exampleCanonical value="http://paho.org/esavi/StructureDefinition/ESAVIQuestionnaireResponse"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/Ejemplo4-Respondido"/>
+      </reference>
+      <name value="Ejemplo4-Respondido"/>
+      <description value="Ejemplo de cuestionario Respondido 4"/>
+      <exampleCanonical value="http://paho.org/esavi/StructureDefinition/ESAVIQuestionnaireResponse"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/Ejemplo5"/>
+      </reference>
+      <name value="Ejemplo5"/>
+      <exampleCanonical value="http://paho.org/esavi/StructureDefinition/ESAVIQuestionnaireResponse"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/Ejemplo5-Respondido"/>
+      </reference>
+      <name value="Ejemplo5-Respondido"/>
+      <description value="Ejemplo de cuestionario Respondido 5"/>
+      <exampleCanonical value="http://paho.org/esavi/StructureDefinition/ESAVIQuestionnaireResponse"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/Ejemplo6"/>
+      </reference>
+      <name value="Ejemplo6"/>
+      <exampleCanonical value="http://paho.org/esavi/StructureDefinition/ESAVIQuestionnaireResponse"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/Ejemplo6-Respondido"/>
+      </reference>
+      <name value="Ejemplo6-Respondido"/>
+      <description value="Ejemplo de cuestionario Respondido 6"/>
+      <exampleCanonical value="http://paho.org/esavi/StructureDefinition/ESAVIQuestionnaireResponse"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/Ejemplo7"/>
+      </reference>
+      <name value="Ejemplo7"/>
+      <exampleCanonical value="http://paho.org/esavi/StructureDefinition/ESAVIQuestionnaireResponse"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/Ejemplo7-Respondido"/>
+      </reference>
+      <name value="Ejemplo7-Respondido"/>
+      <description value="Ejemplo de cuestionario Respondido 7"/>
+      <exampleCanonical value="http://paho.org/esavi/StructureDefinition/ESAVIQuestionnaireResponse"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/EjemploQuestionnaireEsavi"/>
+      </reference>
+      <name value="Ejemplo Cuestionario 4"/>
+      <description value="Ejemplo de cuestionario para responder"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <page>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+        <valueUrl value="toc.html"/>
+      </extension>
+      <nameUrl value="toc.html"/>
+      <title value="Table of Contents"/>
+      <generation value="html"/>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="index.html"/>
+        </extension>
+        <nameUrl value="index.html"/>
+        <title value="Home"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="actores_CasosUso.html"/>
+        </extension>
+        <nameUrl value="actores_CasosUso.html"/>
+        <title value="Actores Casos Uso"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="alcance.html"/>
+        </extension>
+        <nameUrl value="alcance.html"/>
+        <title value="Alcance"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="descargas.html"/>
+        </extension>
+        <nameUrl value="descargas.html"/>
+        <title value="Descargas"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="generalidades.html"/>
+        </extension>
+        <nameUrl value="generalidades.html"/>
+        <title value="Generalidades"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="Glosario.html"/>
+        </extension>
+        <nameUrl value="Glosario.html"/>
+        <title value="Glosario"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="mapeos.html"/>
+        </extension>
+        <nameUrl value="mapeos.html"/>
+        <title value="Mapeos"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="objetivos.html"/>
+        </extension>
+        <nameUrl value="objetivos.html"/>
+        <title value="Objetivos"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="operaciones.html"/>
+        </extension>
+        <nameUrl value="operaciones.html"/>
+        <title value="Operaciones"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="seguridad.html"/>
+        </extension>
+        <nameUrl value="seguridad.html"/>
+        <title value="Seguridad"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="uso_como_llenar_guia.html"/>
+        </extension>
+        <nameUrl value="uso_como_llenar_guia.html"/>
+        <title value="Uso Como Llenar Guia"/>
+        <generation value="markdown"/>
+      </page>
+    </page>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/capabilities"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/examples"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/extensions"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/models"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/operations"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/profiles"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/resources"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/vocabulary"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/maps"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/testing"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/history"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="fsh-generated/resources"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="template/config"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="input/images"/>
+    </parameter>
+    <parameter>
+      <code value="path-tx-cache"/>
+      <value value="input-cache/txcache"/>
+    </parameter>
+  </definition>
+</ImplementationGuide>

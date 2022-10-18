@@ -1,0 +1,70 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://paho.org/esavi/CodeSystem/SistemaClasfCausalidadCS> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "SistemaClasfCausalidadCS"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://paho.org/esavi/CodeSystem/SistemaClasfCausalidadCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">WHO-UMC<a name=\"SistemaClasfCausalidadCS-WHO-UMC\"> </a></td><td>WHO-UMC</td></tr><tr><td style=\"white-space:nowrap\">WHO-AEFI<a name=\"SistemaClasfCausalidadCS-WHO-AEFI\"> </a></td><td>WHO-AEFI</td></tr><tr><td style=\"white-space:nowrap\">Naranjo<a name=\"SistemaClasfCausalidadCS-Naranjo\"> </a></td><td>Naranjo</td></tr><tr><td style=\"white-space:nowrap\">otro<a name=\"SistemaClasfCausalidadCS-otro\"> </a></td><td>Otro sistema de clasificacion de causalidad</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "http://paho.org/esavi/CodeSystem/SistemaClasfCausalidadCS"];
+  fhir:CodeSystem.version [ fhir:value "0.1.0"];
+  fhir:CodeSystem.name [ fhir:value "SistemaClasfCausalidadCS"];
+  fhir:CodeSystem.title [ fhir:value "Tipo de Método de clasificación de causalidad"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.date [ fhir:value "2021-03-11T00:00:00-03:00"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "ESAVI -"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "ESAVI -" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://covid-19pharmacovigilance.paho.org/resources/updates-on-aefi" ]
+     ], [
+       fhir:index 1;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "rizzatodan@paho.org" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "Códigos para Tipos de Métodos de Clasificación de Causalidad"];
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
+       fhir:Coding.code [ fhir:value "001" ]
+     ]
+  ];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "4"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "WHO-UMC" ];
+     fhir:CodeSystem.concept.display [ fhir:value "WHO-UMC" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "WHO-AEFI" ];
+     fhir:CodeSystem.concept.display [ fhir:value "WHO-AEFI" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "Naranjo" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Naranjo" ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "otro" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Otro sistema de clasificacion de causalidad" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://paho.org/esavi/CodeSystem/SistemaClasfCausalidadCS.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
