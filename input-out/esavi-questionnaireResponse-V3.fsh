@@ -212,9 +212,7 @@ Usage: #example
 * item[=].item[=].item[=].text = "Fecha de vencimiento del diluyente de la vacuna"
 * item[=].item[=].item[=].answer.valueDate = "2021-12-29"
 
-* item[=].item[=].item[+].linkId = "fechaHoraReconstitucionVacuna"
-* item[=].item[=].item[=].text = "Fecha y Hora de Reconstrucción de la Vacuna"
-* item[=].item[=].item[=].answer.valueDateTime = "2021-12-09T15:48:25.439Z"
+
 
 /*
 * item[=].item[=].linkId = "registroVacunaCovidOtras"
@@ -249,9 +247,7 @@ Usage: #example
 * item[=].item[=].item[+].linkId = "fechaVencimientoDiluyente"
 * item[=].item[=].item[=].text = "Fecha de vencimiento del diluyente de la vacuna"
 * item[=].item[=].item[=].answer.valueDate = "2021-12-14"
-* item[=].item[=].item[+].linkId = "fechaHoraReconstitucionVacuna"
-* item[=].item[=].item[=].text = "Fecha y Hora de Reconstrucción de la Vacuna"
-* item[=].item[=].item[=].answer.valueDateTime = "2021-12-07T15:48:52.693Z"
+
 */
 /////////////////////------------------------------
 

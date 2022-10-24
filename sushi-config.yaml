@@ -15,10 +15,9 @@ releaseLabel: ci-build
 #jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
 jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001
 publisher:
-  name: ESAVI - 
+  name: ESAVI -
   url: https://covid-19pharmacovigilance.paho.org/resources/updates-on-aefi
-  email:  rizzatodan@paho.org
-
+  email: rizzatodan@paho.org
 
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
 # │  To use a provided ig-data/input/includes/menu.xml file, delete the "menu" property below.     │
@@ -30,9 +29,9 @@ menu:
   Uso: uso_como_llenar_guia.html
   Artefactos: artifacts.html
   Mapeos: mapeos.html
-#  Seguridad: seguridad.html
+  #  Seguridad: seguridad.html
   Descargas: descargas.html
- #Datos Generales: 
+  #Datos Generales:
   #  Generalidades: generalidades.html
   #  Actores y Casos de Uso: actores_CasosUso.html
   #  Operaciones FHIR: operaciones.html

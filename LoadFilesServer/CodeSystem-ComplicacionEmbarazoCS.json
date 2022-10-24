@@ -1,0 +1,65 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "ComplicacionEmbarazoCS",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://hapi.fhir.org/baseR/CodeSystem/ComplicacionEmbarazoCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">01<a name=\"ComplicacionEmbarazoCS-01\"> </a></td><td>Del Embarazo</td></tr><tr><td style=\"white-space:nowrap\">02<a name=\"ComplicacionEmbarazoCS-02\"> </a></td><td>Del Parto</td></tr><tr><td style=\"white-space:nowrap\">03<a name=\"ComplicacionEmbarazoCS-03\"> </a></td><td>Puerperio fetal</td></tr><tr><td style=\"white-space:nowrap\">04<a name=\"ComplicacionEmbarazoCS-04\"> </a></td><td>Neonatal</td></tr><tr><td style=\"white-space:nowrap\">05<a name=\"ComplicacionEmbarazoCS-05\"> </a></td><td>Anomalía Congénita</td></tr></table></div>"
+  },
+  "url": "http://hapi.fhir.org/baseR/CodeSystem/ComplicacionEmbarazoCS",
+  "version": "0.1.0",
+  "name": "ComplicacionEmbarazoCS",
+  "title": "Complicaciones de Embarazo",
+  "status": "active",
+  "date": "2021-03-11T00:00:00-03:00",
+  "publisher": "ESAVI -",
+  "contact": [
+    {
+      "name": "ESAVI -",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://covid-19pharmacovigilance.paho.org/resources/updates-on-aefi"
+        },
+        {
+          "system": "email",
+          "value": "rizzatodan@paho.org"
+        }
+      ]
+    }
+  ],
+  "description": "Códigos para las Complicaciones de Embarazo",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "count": 5,
+  "concept": [
+    {
+      "code": "01",
+      "display": "Del Embarazo"
+    },
+    {
+      "code": "02",
+      "display": "Del Parto"
+    },
+    {
+      "code": "03",
+      "display": "Puerperio fetal"
+    },
+    {
+      "code": "04",
+      "display": "Neonatal"
+    },
+    {
+      "code": "05",
+      "display": "Anomalía Congénita"
+    }
+  ]
+}

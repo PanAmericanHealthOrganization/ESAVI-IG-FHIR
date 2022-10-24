@@ -1,0 +1,48 @@
+{
+  "resourceType": "ValueSet",
+  "id": "NombreComercialMedicamentoVS",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"http://www.whocc.no/atc\"><code>http://www.whocc.no/atc</code></a></li></ul></div>"
+  },
+  "url": "http://hapi.fhir.org/baseR/ValueSet/NombreComercialMedicamentoVS",
+  "version": "0.1.0",
+  "name": "NombreComercialMEdicamentoVS",
+  "title": "Nombre Comercial Medicamento",
+  "status": "active",
+  "date": "2021-03-11T00:00:00-03:00",
+  "publisher": "ESAVI -",
+  "contact": [
+    {
+      "name": "ESAVI -",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://covid-19pharmacovigilance.paho.org/resources/updates-on-aefi"
+        },
+        {
+          "system": "email",
+          "value": "rizzatodan@paho.org"
+        }
+      ]
+    }
+  ],
+  "description": "Codificación Estandarizda del Nombre Comercial de Medicamento según ATC",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://www.whocc.no/atc"
+      }
+    ]
+  }
+}

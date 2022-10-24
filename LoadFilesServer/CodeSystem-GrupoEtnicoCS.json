@@ -1,0 +1,73 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "GrupoEtnicoCS",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://hapi.fhir.org/baseR/CodeSystem/GrupoEtnicoCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"GrupoEtnicoCS-1\"> </a></td><td>Mestizo</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"GrupoEtnicoCS-2\"> </a></td><td>Blanco</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"GrupoEtnicoCS-3\"> </a></td><td>Mulato</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"GrupoEtnicoCS-4\"> </a></td><td>Negro</td></tr><tr><td style=\"white-space:nowrap\">5<a name=\"GrupoEtnicoCS-5\"> </a></td><td>Amerindio</td></tr><tr><td style=\"white-space:nowrap\">6<a name=\"GrupoEtnicoCS-6\"> </a></td><td>Zambo</td></tr><tr><td style=\"white-space:nowrap\">0<a name=\"GrupoEtnicoCS-0\"> </a></td><td>Otro</td></tr></table></div>"
+  },
+  "url": "http://hapi.fhir.org/baseR/CodeSystem/GrupoEtnicoCS",
+  "version": "0.1.0",
+  "name": "GrupoEtnicoCS",
+  "title": "Grupos Étnicos",
+  "status": "active",
+  "date": "2021-03-11T00:00:00-03:00",
+  "publisher": "ESAVI -",
+  "contact": [
+    {
+      "name": "ESAVI -",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://covid-19pharmacovigilance.paho.org/resources/updates-on-aefi"
+        },
+        {
+          "system": "email",
+          "value": "rizzatodan@paho.org"
+        }
+      ]
+    }
+  ],
+  "description": "Códigos de Grupos Étnicos",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "count": 7,
+  "concept": [
+    {
+      "code": "1",
+      "display": "Mestizo"
+    },
+    {
+      "code": "2",
+      "display": "Blanco"
+    },
+    {
+      "code": "3",
+      "display": "Mulato"
+    },
+    {
+      "code": "4",
+      "display": "Negro"
+    },
+    {
+      "code": "5",
+      "display": "Amerindio"
+    },
+    {
+      "code": "6",
+      "display": "Zambo"
+    },
+    {
+      "code": "0",
+      "display": "Otro"
+    }
+  ]
+}

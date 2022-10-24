@@ -1,0 +1,609 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "id": "Ejemplo1-Respondido",
+  "questionnaire": "http://hapi.fhir.org/baseR4/Questionnaire/akk7",
+  "status": "completed",
+  "authored": "2022-03-10T10:20:00Z",
+  "item": [
+    {
+      "linkId": "datosNotificacionGeneral",
+      "text": "Datos Administrativos de la Notificación",
+      "item": [
+        {
+          "linkId": "datosNotificacion",
+          "text": "Datos de quién y donde se realiza la notificación",
+          "item": [
+            {
+              "linkId": "nombreOrganizacionNotificadora",
+              "text": "Nombre Institución que Notifica (centro que reporta el caso a nivel nacional)",
+              "answer": [
+                {
+                  "valueString": "Subdrector Epiemyp, responsable del Sistema de ESAVI-Hospital General de México"
+                }
+              ]
+            },
+            {
+              "linkId": "nombreDireccionOrganizacion",
+              "text": "Nombre del Nivel Geográfico Subnacional de la Ubicación de la Institución que Notifica",
+              "answer": [
+                {
+                  "valueString": "Cuauhtémoc (Municipio), Ciudad de Mexico, Mexico"
+                }
+              ]
+            },
+            {
+              "linkId": "codigoProfesionNotificador",
+              "text": "Codigo de la profesión del notificador",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "system": "http://paho.org/esavi/CodeSystem/ProfesionalNotificadorCS",
+                    "code": "5",
+                    "display": "Usuario u otro profesional no sanitario"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "linkId": "fechas",
+          "text": "Fechas Administrativas (al menos una fecha es necesaria)",
+          "item": [
+            {
+              "linkId": "fechaConsulta",
+              "text": "Fecha de la primera consulta al servicio de salud por causa del ESAVI",
+              "answer": [
+                {
+                  "valueDate": "2020-12-24"
+                }
+              ]
+            },
+            {
+              "linkId": "fechaNotificacion",
+              "text": "Fecha en la que el sistema de vigilancia oficialmente se entera de la ocurrencia del evento.",
+              "answer": [
+                {
+                  "valueDate": "2020-12-24"
+                }
+              ]
+            },
+            {
+              "linkId": "fechaLlenadoFicha",
+              "text": "Fecha en la que el notificador finaliza el llenado de la ficha de notificación (si la ficha es electrónica, es la misma que fechaNotificacion)",
+              "answer": [
+                {
+                  "valueDate": "2020-12-24"
+                }
+              ]
+            },
+            {
+              "linkId": "fechaRepoNacional",
+              "text": "Fecha registrada de llegada de la notificación a la base de datos del nivel nacional (si la ficha es electrónica, es la misma que fechaNotificacion)",
+              "answer": [
+                {
+                  "valueDate": "2020-12-25"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "datosVacunadoCaso",
+      "text": "Datos Demográficos de Vacunado que ha generado ESAVI",
+      "item": [
+        {
+          "linkId": "datosPaciente",
+          "text": "Datos del Vacunado",
+          "item": [
+            {
+              "linkId": "numeroCaso",
+              "text": "UUID que identifica el caso o notificación. Una persona puede tener más de una notificación.",
+              "answer": [
+                {
+                  "valueString": "f9a9a518-7b6f-472a-bf28-9aad7a8eeb22"
+                }
+              ]
+            },
+            {
+              "linkId": "paisOrigen-Reg",
+              "text": "País en donde se originó el Registro",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "system": "http://paho.org/esavi/CodeSystem/CodPaises",
+                    "code": "MX",
+                    "display": "Mexico"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "idPaciente",
+              "text": "UUID de identificación",
+              "answer": [
+                {
+                  "valueString": "5f9f5ae5-e821-412d-8b58-9834a7a439c0"
+                }
+              ]
+            },
+            {
+              "linkId": "nombreResidenciaHabitual",
+              "text": "Nombre Nivel Geográfico Subnacional de la Residencia Habitual de la Persona afectada por el ESAVI",
+              "answer": [
+                {
+                  "valueString": "Tlanepantla de Baz, México"
+                }
+              ]
+            },
+            {
+              "linkId": "sexoPaciente",
+              "text": "Sexo del vacunado.",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "system": "http://hl7.org/fhir/administrative-gender",
+                    "code": "male",
+                    "display": "Male"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "fechaNacimiento",
+              "text": "Fecha de nacimiento del vacunado",
+              "answer": [
+                {
+                  "valueDate": "1985-02-02"
+                }
+              ]
+            },
+            {
+              "linkId": "etnia",
+              "text": "Nombre de la etnia con la que se identifica el vacunado",
+              "answer": [
+                {
+                  "valueString": "indigena"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "antecedentesMedicos",
+      "text": "Antecedentes médicos identificados por el paciente",
+      "item": [
+        {
+          "linkId": "antecedentesEnfermedadesPrevias",
+          "text": "Antecedentes médicos reportados",
+          "item": [
+            {
+              "linkId": "descripcionEnfPrevia",
+              "text": "Descripción de los problemas de salud previos en la persona afectada por el ESAVI con énfasis en comorbilidades o enfermedades concomitantes al evento adverso, eventos previos similares y eventos médicos relevantes para el evento de salud actual (si la enfermedad está codificada, es la descripción correspondiente al código).",
+              "answer": [
+                {
+                  "valueString": "alergia a penicilina"
+                }
+              ]
+            },
+            {
+              "linkId": "codigoMedDRAEnfPrevia",
+              "text": "Código MedDRA del antecedente médico",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "system": "http://paho.org/esavi/CodeSystem/CodigoMedDRAEnfPreviaCS",
+                    "code": "10034292",
+                    "display": "alergia a penicilina"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "otrosCodigosEnfPrevia",
+              "text": "Código CIE-10/CIE-11/Snomed del antecedente médico",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "system": "http://paho.org/esavi/CodeSystem/EnfermedadesPreviasCodificacionCS",
+                    "code": "91936005",
+                    "display": "alergia a penicilina"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "linkId": "antecedentesEventosAdversos",
+          "text": "Declaración de existencia de eventos adversos previos",
+          "item": [
+            {
+              "linkId": "antecedentesAdvSimilar",
+              "text": "Antecedente de eventos adversos similares al actual",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "system": "http://paho.org/esavi/CodeSystem/RespuestaSiNoNosabeCS",
+                    "code": "1",
+                    "display": "Si"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "alergiaMedicamentos",
+              "text": "Antecedente de reacciones alérgicas a medicamentos",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "system": "http://paho.org/esavi/CodeSystem/RespuestaSiNoNosabeCS",
+                    "code": "1",
+                    "display": "Si"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "alergiaVacunas",
+              "text": "Antecedente de reacciones alérgicas a otras vacunas",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "system": "http://paho.org/esavi/CodeSystem/RespuestaSiNoNosabeCS",
+                    "code": "1",
+                    "display": "si"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "linkId": "antecedentesSarsCov2",
+          "text": "Antecedente de diagnóstico de infección por SARS-CoV-2",
+          "item": [
+            {
+              "linkId": "diagnosticoprevioSarsCov2",
+              "text": "Antecedente de diagnóstico de infección por SARS-CoV-2 (Si/No/No Sabe)",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "system": "http://paho.org/esavi/CodeSystem/RespuestaSiNoNosabeCS",
+                    "code": "2",
+                    "display": "No"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "linkId": "pacienteEmbarazada",
+          "text": "Estado de embarazo",
+          "item": [
+            {
+              "linkId": "embarazadaMomentoVacuna",
+              "text": "Estaba embarazada al momento de la vacuna?",
+              "answer": [
+                {
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "linkId": "embarazadaMomentoESAVI",
+              "text": "Estaba embarazada al momento del ESAVI?",
+              "answer": [
+                {
+                  "valueBoolean": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "antecedentesFarmacosVacunas",
+      "text": "Antecedentes Farmacológicos",
+      "item": [
+        {
+          "linkId": "datosVacunas",
+          "text": "Datos de las vacunas administradas",
+          "item": [
+            {
+              "linkId": "nombreVacuna",
+              "text": "Nombre de la vacuna administrada",
+              "answer": [
+                {
+                  "valueString": "BioNTech"
+                }
+              ]
+            },
+            {
+              "linkId": "identificadorVacuna",
+              "text": "Identificador correlativo de la vacuna",
+              "answer": [
+                {
+                  "valueInteger": 1212121
+                }
+              ]
+            },
+            {
+              "linkId": "nombreFabricante",
+              "text": "Nombre del fabricante o titular del registro sanitario",
+              "answer": [
+                {
+                  "valueString": "Pfizer/Biotech"
+                }
+              ]
+            },
+            {
+              "linkId": "numeroDosisVacuna",
+              "text": "Numero de la dosis",
+              "answer": [
+                {
+                  "valueString": "1"
+                }
+              ]
+            },
+            {
+              "linkId": "numeroLote",
+              "text": "Númer del Lote de la Vacuna administrada",
+              "answer": [
+                {
+                  "valueString": "EK42412"
+                }
+              ]
+            },
+            {
+              "linkId": "fechaVencimientoVacuna",
+              "text": "Fecha de Vencimiento de vacuna",
+              "answer": [
+                {
+                  "valueDate": "2021-01-04"
+                }
+              ]
+            },
+            {
+              "linkId": "numeroLoteDiluyente",
+              "text": "Numero del lote del diluyente de la vacuna",
+              "answer": [
+                {
+                  "valueString": "R20J17"
+                }
+              ]
+            },
+            {
+              "linkId": "fechaVencimientoDiluyente",
+              "text": "Fecha de vencimiento del diluyente de la vacuna",
+              "answer": [
+                {
+                  "valueDate": "2022-06-01"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "linkId": "datosVacunacion",
+          "text": "Datos relacionados con el proceso de vacunación",
+          "item": [
+            {
+              "linkId": "nombreVacunatorio",
+              "text": "Nombre del vacunatorio",
+              "answer": [
+                {
+                  "valueString": "Hospital General de México"
+                }
+              ]
+            },
+            {
+              "linkId": "fechaVacunacion",
+              "text": "Fecha de vacunación",
+              "answer": [
+                {
+                  "valueDate": "2020-12-24"
+                }
+              ]
+            },
+            {
+              "linkId": "nombreDireccionVacunatorio",
+              "text": "Dirección completa de la institución en la que se administró la vacuna",
+              "answer": [
+                {
+                  "valueString": "Dr. Balmis 148, Doctores, Cuauhtémoc, 06720 Ciudad de México, CDMX, México"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "registroESAVI",
+      "text": "Registro de ESAVI desarrollado por el vacunado",
+      "item": [
+        {
+          "linkId": "datosESAVI",
+          "text": "Información del ESAVI y de su clasificación según gravedad",
+          "item": [
+            {
+              "linkId": "nombreESAVI",
+              "text": "Nombre del ESAVI",
+              "answer": [
+                {
+                  "valueString": "anafilaxia"
+                }
+              ]
+            },
+            {
+              "linkId": "codigoESAVIMedDRA",
+              "text": "Código MedDRA del Evento Adverso notificado",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "system": "http://paho.org/esavi/CodeSystem/EsaviMedDRACS",
+                    "code": "10002218",
+                    "display": "anafilaxia"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "codigoESAVIOtro",
+              "text": "Código no MedDRA de la reacción adversa generada por la vacuna",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "system": "http://paho.org/esavi/CodeSystem/EsaviOtroCS",
+                    "code": "39579001",
+                    "display": "anafilaxia"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "fechaESAVI",
+              "text": "Fecha de inicio del ESAVI referido por el paciente o identificado por el médico",
+              "answer": [
+                {
+                  "valueDate": "2020-12-24"
+                }
+              ]
+            },
+            {
+              "linkId": "horaESAVI",
+              "text": "Hora de inicio del ESAVI referido por el paciente o identificado por el médico",
+              "answer": [
+                {
+                  "valueTime": "08:40:00"
+                }
+              ]
+            },
+            {
+              "linkId": "descripcionESAVI",
+              "text": "Descripción narrativa del ESAVI",
+              "answer": [
+                {
+                  "valueString": "anafilaxia post vacunación"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "linkId": "gravedadESAVI",
+          "text": "Determinación del estado de gravedad del ESAVI",
+          "item": [
+            {
+              "linkId": "tipoGravedad",
+              "text": "¿ESAVI Grave?",
+              "answer": [
+                {
+                  "valueBoolean": true
+                }
+              ]
+            },
+            {
+              "linkId": "gravMuerte",
+              "text": "Muerte",
+              "answer": [
+                {
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "linkId": "gravRiesgoVida",
+              "text": "Amenaza la vida al momento de la detección del ESAVI",
+              "answer": [
+                {
+                  "valueBoolean": true
+                }
+              ]
+            },
+            {
+              "linkId": "gravDiscapacidad",
+              "text": "Genera discapacidad severa o permanente al momento de la detección",
+              "answer": [
+                {
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "linkId": "gravHospitalizacion",
+              "text": "Hospitalización o prolongación de la misma",
+              "answer": [
+                {
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "linkId": "gravAnomaliaCongenita",
+              "text": "Anomalía congénita",
+              "answer": [
+                {
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "linkId": "gravAborto",
+              "text": "Aborto",
+              "answer": [
+                {
+                  "valueBoolean": true
+                }
+              ]
+            },
+            {
+              "linkId": "otrosEventosImportantes",
+              "text": "Otros Eventos considerados Médicamente Importantes",
+              "answer": [
+                {
+                  "valueBoolean": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "linkId": "desenlaceESAVI",
+          "text": "Desenlace ESAVI",
+          "item": [
+            {
+              "linkId": "codDesenlaceESAVI",
+              "text": "Código Desenlace ESAVI",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "system": "http://paho.org/esavi/CodeSystem/ClasificacionDesenlaceCS",
+                    "code": "1",
+                    "display": "Recuperado Completamente"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "fechaInicioInvestigacion",
+              "text": "Fecha en la cual se inicia investigación",
+              "answer": [
+                {
+                  "valueDate": "2020-12-25"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

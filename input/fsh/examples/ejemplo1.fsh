@@ -59,7 +59,7 @@ Usage: #example
 * item[=].item.item[=].answer.valueString = "Tlanepantla de Baz, México"
 * item[=].item.item[+].linkId = "sexoPaciente"
 * item[=].item.item[=].text = "Sexo del vacunado."
-* item[=].item.item[=].answer.valueCoding = http://hl7.org/fhir/CodeSystem/administrative-gender#Male "Male"
+* item[=].item.item[=].answer.valueCoding = http://hl7.org/fhir/administrative-gender#male "Male"
 * item[=].item.item[+].linkId = "fechaNacimiento"
 * item[=].item.item[=].text = "Fecha de nacimiento del vacunado"
 * item[=].item.item[=].answer.valueDate = "1985-02-02"
@@ -110,7 +110,7 @@ Usage: #example
 * item[=].item[=].item[=].answer.valueString = "Pfizer/Biotech"
 * item[=].item[=].item[+].linkId = "numeroDosisVacuna"
 * item[=].item[=].item[=].text = "Numero de la dosis"
-* item[=].item[=].item[=].answer.valueInteger = 1
+* item[=].item[=].item[=].answer.valueString = "1"
 * item[=].item[=].item[+].linkId = "numeroLote"
 * item[=].item[=].item[=].text = "Númer del Lote de la Vacuna administrada"
 * item[=].item[=].item[=].answer.valueString = "EK42412"
@@ -126,7 +126,7 @@ Usage: #example
 * item[=].item[+].linkId = "datosVacunacion"
 * item[=].item[=].text = "Datos relacionados con el proceso de vacunación"
 * item[=].item[=].item[0].linkId = "nombreVacunatorio"
-* item[=].item[=].item[=].text = "Nombre del vacunatorio según código OPS"
+* item[=].item[=].item[=].text = "Nombre del vacunatorio"
 * item[=].item[=].item[=].answer.valueString = "Hospital General de México"
 * item[=].item[=].item[+].linkId = "fechaVacunacion"
 * item[=].item[=].item[=].text = "Fecha de vacunación"
@@ -137,15 +137,13 @@ Usage: #example
 * item[=].item[=].item[+].linkId = "nombreDireccionVacunatorio"
 * item[=].item[=].item[=].text = "Dirección completa de la institución en la que se administró la vacuna"
 * item[=].item[=].item[=].answer.valueString = "Dr. Balmis 148, Doctores, Cuauhtémoc, 06720 Ciudad de México, CDMX, México"
-* item[=].item[=].item[+].linkId = "fechaHoraReconstitucionVacuna"
-* item[=].item[=].item[=].text = "Fecha y hora en la cual se reconstituyó la vacuna registrada"
-* item[=].item[=].item[=].answer.valueDateTime = "2020-12-24T08:30:00Z"
+
 * item[+].linkId = "registroESAVI"
 * item[=].text = "Registro de ESAVI desarrollado por el vacunado"
 * item[=].item[0].linkId = "datosESAVI"
 * item[=].item[=].text = "Información del ESAVI y de su clasificación según gravedad"
 * item[=].item[=].item[0].linkId = "nombreESAVI"
-* item[=].item[=].item[=].text = "Nombre del ESAVI "
+* item[=].item[=].item[=].text = "Nombre del ESAVI"
 * item[=].item[=].item[=].answer.valueString = "anafilaxia"
 * item[=].item[=].item[+].linkId = "codigoESAVIMedDRA"
 * item[=].item[=].item[=].text = "Código MedDRA del Evento Adverso notificado"
@@ -181,12 +179,6 @@ Usage: #example
 * item[=].item[=].item[=].answer.valueBoolean = false
 * item[=].item[=].item[+].linkId = "gravAnomaliaCongenita"
 * item[=].item[=].item[=].text = "Anomalía congénita"
-* item[=].item[=].item[=].answer.valueBoolean = false
-* item[=].item[=].item[+].linkId = "gravAborto"
-* item[=].item[=].item[=].text = "Aborto"
-* item[=].item[=].item[=].answer.valueBoolean = false
-* item[=].item[=].item[+].linkId = "gravMuerteFetal"
-* item[=].item[=].item[=].text = "Muerte fetal"
 * item[=].item[=].item[=].answer.valueBoolean = false
 * item[=].item[=].item[+].linkId = "otrosEventosImportantes"
 * item[=].item[=].item[=].text = "Otros Eventos considerados Médicamente Importantes"

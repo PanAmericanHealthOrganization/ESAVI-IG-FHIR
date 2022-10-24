@@ -1,0 +1,310 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "id": "Ejemplo1-Respondido",
+  "questionnaire": "http://hapi.fhir.org/baseR4/Questionnaire/ops20",
+  "status": "completed",
+  "authored": "2022-03-10T10:20:00Z",
+  "item": [
+    {
+      "linkId": "datosNotificacionGeneral",
+      "text": "Datos Administrativos de la Notificación",
+      "item": [
+        {
+          "linkId": "datosNotificacion",
+          "text": "Datos de quién y donde se realiza la notificación",
+          "item": [
+            {
+              "linkId": "nombreOrganizacionNotificadora",
+              "text": "Nombre Institución que Notifica (centro que reporta el caso a nivel nacional)",
+              "answer": [
+                {
+                  "valueString": "Hospital san juan"
+                }
+              ]
+            },
+            {
+              "linkId": "nombreDireccionOrganizacion",
+              "text": "Nombre del Nivel Geográfico Subnacional de la Ubicación de la Institución que Notifica",
+              "answer": [
+                {
+                  "valueString": "Lira 30"
+                }
+              ]
+            },
+            {
+              "linkId": "codigoProfesionNotificador",
+              "text": "Codigo de la profesión del notificador",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "system": "http://paho.org/esavi/CodeSystem/ProfesionalNotificadorCS",
+                    "code": "1",
+                    "display": "Médico"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "datosVacunadoCaso",
+      "text": "Datos Demográficos de Vacunado que ha generado ESAVI",
+      "item": [
+        {
+          "linkId": "datosPaciente",
+          "text": "Datos del Vacunado",
+          "item": [
+            {
+              "linkId": "numeroCaso",
+              "text": "UUID que identifica el caso o notificación. Una persona puede tener más de una notificación.",
+              "answer": [
+                {
+                  "valueString": "f9a9a518-7b6f-472a-bf28-9aad7a8eeb22"
+                }
+              ]
+            },
+            {
+              "linkId": "paisOrigen-Reg",
+              "text": "País en donde se originó el Registro",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "system": "http://paho.org/esavi/CodeSystem/CodPaises",
+                    "code": "MX",
+                    "display": "Mexico"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "idPaciente",
+              "text": "UUID de identificación",
+              "answer": [
+                {
+                  "valueString": "5f9f5ae5-e821-412d-8b58-9834a7a439c0"
+                }
+              ]
+            },
+            {
+              "linkId": "sexoPaciente",
+              "text": "Sexo del vacunado.",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "system": "http://hl7.org/fhir/administrative-gender",
+                    "code": "--WWW--",
+                    "display": "--WWW--"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "fechaNacimiento",
+              "text": "Fecha de nacimiento del vacunado",
+              "answer": [
+                {
+                  "valueDate": "1985-02-02"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "antecedentesFarmacosVacunas",
+      "text": "Antecedentes Farmacológicos",
+      "item": [
+        {
+          "linkId": "datosVacunas",
+          "text": "Datos de las vacunas administradas",
+          "item": [
+            {
+              "linkId": "nombreVacuna",
+              "text": "Nombre de la vacuna administrada",
+              "answer": [
+                {
+                  "valueString": "BioNTech"
+                }
+              ]
+            },
+            {
+              "linkId": "identificadorVacuna",
+              "text": "Identificador correlativo de la vacuna",
+              "answer": [
+                {
+                  "valueInteger": 1212121
+                }
+              ]
+            },
+            {
+              "linkId": "numeroDosisVacuna",
+              "text": "Numero de la dosis",
+              "answer": [
+                {
+                  "valueString": "1"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "linkId": "datosVacunacion",
+          "text": "Datos relacionados con el proceso de vacunación",
+          "item": [
+            {
+              "linkId": "nombreVacunatorio",
+              "text": "Nombre del vacunatorio",
+              "answer": [
+                {
+                  "valueString": "Hospital General de México"
+                }
+              ]
+            },
+            {
+              "linkId": "fechaVacunacion",
+              "text": "Fecha de vacunación",
+              "answer": [
+                {
+                  "valueDate": "2020-12-24"
+                }
+              ]
+            },
+            {
+              "linkId": "codigoDireccionVacunatorio",
+              "text": "Código del nivel geográfico subnacional de la ubicación de la institución de salud en la que se administró la vacuna",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "system": "http://paho.org/esavi/CodeSystem/DirOrgNotiCS",
+                    "code": "MX_CX_09015",
+                    "display": "Cuauhtémoc (Municipio), Ciudad de Mexico, Mexico"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "nombreDireccionVacunatorio",
+              "text": "Dirección completa de la institución en la que se administró la vacuna",
+              "answer": [
+                {
+                  "valueString": "Dr. Balmis 148, Doctores, Cuauhtémoc, 06720 Ciudad de México, CDMX, México"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "registroESAVI",
+      "text": "Registro de ESAVI desarrollado por el vacunado",
+      "item": [
+        {
+          "linkId": "datosESAVI",
+          "text": "Información del ESAVI y de su clasificación según gravedad",
+          "item": [
+            {
+              "linkId": "nombreESAVI",
+              "text": "Nombre del ESAVI",
+              "answer": [
+                {
+                  "valueString": "anafilaxia"
+                }
+              ]
+            },
+            {
+              "linkId": "codigoESAVIMedDRA",
+              "text": "Código MedDRA del Evento Adverso notificado",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "system": "http://paho.org/esavi/CodeSystem/EsaviMedDRACS",
+                    "code": "10002218",
+                    "display": "anafilaxia"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "codigoESAVIOtro",
+              "text": "Código no MedDRA de la reacción adversa generada por la vacuna",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "system": "http://paho.org/esavi/CodeSystem/EsaviOtroCS",
+                    "code": "39579001",
+                    "display": "anafilaxia"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "fechaESAVI",
+              "text": "Fecha de inicio del ESAVI referido por el paciente o identificado por el médico",
+              "answer": [
+                {
+                  "valueDate": "2020-12-24"
+                }
+              ]
+            },
+            {
+              "linkId": "horaESAVI",
+              "text": "Hora de inicio del ESAVI referido por el paciente o identificado por el médico",
+              "answer": [
+                {
+                  "valueTime": "08:40:00"
+                }
+              ]
+            },
+            {
+              "linkId": "descripcionESAVI",
+              "text": "Descripción narrativa del ESAVI",
+              "answer": [
+                {
+                  "valueString": "anafilaxia post vacunación"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "linkId": "gravedadESAVI",
+          "text": "Determinación del estado de gravedad del ESAVI",
+          "item": [
+            {
+              "linkId": "tipoGravedad",
+              "text": "¿ESAVI Grave?",
+              "answer": [
+                {
+                  "valueBoolean": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "linkId": "desenlaceESAVI",
+          "text": "Desenlace ESAVI",
+          "item": [
+            {
+              "linkId": "codDesenlaceESAVI",
+              "text": "Código Desenlace ESAVI",
+              "answer": [
+                {
+                  "valueCoding": {
+                    "system": "http://paho.org/esavi/CodeSystem/ClasificaciogghghnDesenlaceCS",
+                    "code": "1",
+                    "display": "Recuperado Completamente"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
