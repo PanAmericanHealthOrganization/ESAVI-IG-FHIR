@@ -199,6 +199,6 @@ Description: "Modelo Lógico de Notificaciones de Evento Adverso generado eventu
       * clasificacionDeCausalidadWHOUMC	1..1 code "Clasificación de causalidad según la metodología WHO UMC" "Códigos según WHO UMC"
       * clasificacionDeCausalidadWHOUMC from ClasificacionDesenlaceWHOUMCVS
       * clasificacionDeCausalidadNaranjo 1..1 code	"Clasificación de causalidad según la metodología WHO Naranjo" "Códigos según WHO Naranjo"
-      * clasificacionDeCausalidadNaranjo from ClasificacionDesenlaceWHONaranjoVS
+      * clasificacionDeCausalidadNaranjo from ClasificacionDesenlaceNaranjoVS
       * referenciaIdentificadorVacuna	1..1 integer "Identificador correlativo de la vacuna" "Referencia al valor del identificador interno de la vacuna"
       

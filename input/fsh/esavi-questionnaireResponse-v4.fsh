@@ -1364,7 +1364,7 @@ Usage: #example
 * item[=].item[=].item[=].answer.valueCoding = http://paho.org/esavi/CodeSystem/ClasificacionDesenlaceWHOUMCCS#01 "Definitivo"
 * item[=].item[=].item[+].linkId = "clasificacionDeCausalidadNaranjo"
 * item[=].item[=].item[=].text = "Clasificación de causalidad según la metodología Naranjo"
-* item[=].item[=].item[=].answer.valueCoding = http://paho.org/esavi/CodeSystem/ClasificacionDesenlaceWHONaranjoCS#01 "Definitivo"
+* item[=].item[=].item[=].answer.valueCoding = http://paho.org/esavi/CodeSystem/ClasificacionDesenlaceNaranjoCS#01 "Definitivo"
 * item[=].item[=].item[+].linkId = "referenciaIdentificadorVacuna"
 * item[=].item[=].item[=].text = "Identificador correlativo de la vacuna"
 * item[=].item[=].item[=].answer.valueInteger = 2
@@ -1528,7 +1528,7 @@ Usage: #example
 * item[=].item.item[=].item.item[=].item[=].item[=].item[=].item[=].answer.valueCoding = http://paho.org/esavi/CodeSystem/ClasificacionDesenlaceWHOUMCCS#02 "Probable"
 * item[=].item.item[=].item.item[=].item[=].item[=].item[=].item[+].linkId = "clasificacionDeCausalidadNaranjo"
 * item[=].item.item[=].item.item[=].item[=].item[=].item[=].item[=].text = "Clasificación de causalidad según la metodología Naranjo"
-* item[=].item.item[=].item.item[=].item[=].item[=].item[=].item[=].answer.valueCoding = http://paho.org/esavi/CodeSystem/ClasificacionDesenlaceWHONaranjoCS#02 "Probable"
+* item[=].item.item[=].item.item[=].item[=].item[=].item[=].item[=].answer.valueCoding = http://paho.org/esavi/CodeSystem/ClasificacionDesenlaceNaranjoCS#02 "Probable"
 * item[=].item.item[=].item.item[=].item[=].item[=].item[=].item[+].linkId = "referenciaIdentificadorVacuna"
 * item[=].item.item[=].item.item[=].item[=].item[=].item[=].item[=].text = "Identificador correlativo de la vacuna"
 * item[=].item.item[=].item.item[=].item[=].item[=].item[=].item[=].answer.valueInteger = 0
@@ -1677,7 +1677,7 @@ Usage: #example
 * item[=].item[=].item[=].answer.valueCoding = http://paho.org/esavi/CodeSystem/ClasificacionDesenlaceWHOUMCCS#06 "No evaluable / No clasificable"
 * item[=].item[=].item[+].linkId = "clasificacionDeCausalidadNaranjo"
 * item[=].item[=].item[=].text = "Clasificación de causalidad según la metodología Naranjo"
-* item[=].item[=].item[=].answer.valueCoding = http://paho.org/esavi/CodeSystem/ClasificacionDesenlaceWHONaranjoCS#03 "Posible"
+* item[=].item[=].item[=].answer.valueCoding = http://paho.org/esavi/CodeSystem/ClasificacionDesenlaceNaranjoCS#03 "Posible"
 * item[=].item[=].item[+].linkId = "referenciaIdentificadorVacuna"
 * item[=].item[=].item[=].text = "Identificador correlativo de la vacuna"
 * item[=].item[=].item[=].answer.valueInteger = 0

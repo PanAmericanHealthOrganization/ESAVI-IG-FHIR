@@ -1,10 +1,10 @@
 {
   "resourceType": "QuestionnaireResponse",
   "id": "Ejemplo1-Respondido",
-  "questionnaire": "http://hapi.fhir.org/baseR4/Questionnaire/ops20",
+  "questionnaire": "http://hapi.fhir.org/baseR4/Questionnaire/akk7",
   "status": "completed",
   "authored": "2022-03-10T10:20:00Z",
-  "item": [
+ "item": [
     {
       "linkId": "datosNotificacionGeneral",
       "text": "Datos Administrativos de la Notificación",
@@ -94,8 +94,8 @@
                 {
                   "valueCoding": {
                     "system": "http://hl7.org/fhir/administrative-gender",
-                    "code": "--WWW--",
-                    "display": "--WWW--"
+                    "code": "male",
+                    "display": "Male"
                   }
                 }
               ]

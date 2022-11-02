@@ -304,11 +304,16 @@ Usage: #example
 * item[=].item[=].linkId = "datosNotificacion"
 * item[=].item[=].text = "Datos de quién y donde se realiza la notificación"
 
+* item[=].item[=].item[0].type = #choice
+* item[=].item[=].item[=].answerValueSet = "http://paho.org/esavi/ValueSet/CodPaises"
+* item[=].item[=].item[=].required = true
+* item[=].item[=].item[=].linkId = "paisOrigen-Reg"
+* item[=].item[=].item[=].text = "País en donde se originó el Registro"
 
-* item[=].item[=].item[0].type = #string
+* item[=].item[=].item[+].type = #string
 * item[=].item[=].item[=].required = true
 * item[=].item[=].item[=].linkId = "nombreOrganizacionNotificadora"
-* item[=].item[=].item[=].text = "Nombre Institución que Notifica (centro que reporta el caso a nivel nacional)"
+* item[=].item[=].item[=].text = "Nombre de la institución del nivel local que realiza la notificación primaria."
 
 * item[=].item[=].item[+].type = #choice
 * item[=].item[=].item[=].answerValueSet = "http://paho.org/esavi/ValueSet/DirOrgNotiVS"
@@ -332,12 +337,12 @@ Usage: #example
 /////////////////////////////////////////////////////////////////////////////////
 /////////////////////  Grupo fechas //////////////////////////////////
 * item[=].item[+].type = #group
-* item[=].item[=].required = false
+* item[=].item[=].required = true
 * item[=].item[=].linkId = "fechas"
 * item[=].item[=].text = "Fechas Administrativas (al menos una fecha es necesaria)"
 
 * item[=].item[=].item[0].type = #date
-* item[=].item[=].item[=].required = false
+* item[=].item[=].item[=].required = true
 * item[=].item[=].item[=].linkId = "fechaConsulta"
 * item[=].item[=].item[=].text = "Fecha de la primera consulta al servicio de salud por causa del ESAVI"
 * item[=].item[=].item[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/minValue"
@@ -384,11 +389,7 @@ Usage: #example
 * item[=].item.item[=].linkId = "numeroCaso"
 * item[=].item.item[=].text = "UUID que identifica el caso o notificación. Una persona puede tener más de una notificación."
 
-* item[=].item.item[+].type = #choice
-* item[=].item.item[=].answerValueSet = "http://paho.org/esavi/ValueSet/CodPaises"
-* item[=].item.item[=].required = true
-* item[=].item.item[=].linkId = "paisOrigen-Reg"
-* item[=].item.item[=].text = "País en donde se originó el Registro"
+
 
 ////////////////////////////
 * item[=].item.item[+].type = #string
@@ -437,9 +438,16 @@ Usage: #example
 * item[=].linkId = "antecedentesMedicos"
 * item[=].text = "Antecedentes médicos identificados por el paciente"
 
+//////////////////////////////////
+* item[=].item[0].type = #boolean
+* item[=].item[=].required = false
+* item[=].item[=].linkId = "ensayoClinicoCovid19"
+* item[=].item[=].text = "Consulta si participó en algún ensayo clínico para COVID-19"
+
+
 /////////////////////////////////////////////////////////////////////////////////
 /////////////////////  Grupo antecedentesEnfermedadesPrevias //////////////////////////////////
-* item[=].item[0].type = #group
+* item[=].item[+].type = #group
 * item[=].item[=].required = false
 * item[=].item[=].repeats = true
 * item[=].item[=].linkId = "antecedentesEnfermedadesPrevias"
@@ -536,11 +544,7 @@ Usage: #example
 * item[=].item[=].item[=].linkId = "fechaTomaMuestraCovid19"
 * item[=].item[=].item[=].text = "Fecha en la cual se tomó la muestra para examen de COVID-19"
 
-//////////////////////////////////
-* item[=].item[=].item[+].type = #boolean
-* item[=].item[=].item[=].required = false
-* item[=].item[=].item[=].linkId = "ensayoClinicoCovid19"
-* item[=].item[=].item[=].text = "Consulta si participó en algún ensayo clínico para COVID-19"
+
 
 
 
@@ -570,7 +574,7 @@ Usage: #example
 * item[=].item[=].required = false
 * item[=].item[=].repeats = true
 * item[=].item[=].linkId = "antecedentesEmbarazo"
-* item[=].item[=].text = "Datos relacionados con el estado de embarazo"
+* item[=].item[=].text = "Historia obstétrica o de embarazo"
 
 ///////////////////// Enable When
 * item[=].item[=].enableWhen.question = "embarazadaMomentoVacuna"
@@ -672,7 +676,7 @@ Usage: #example
 * item[=].item[=].required = false
 * item[=].item[=].repeats = true
 * item[=].item[=].linkId = "medicamento"
-* item[=].item[=].text = "Antecedentes de medicamentos que el paciente consume al momento de generar ESAVI"
+* item[=].item[=].text = "Antecedentes de medicamentos que el paciente consume al momento del ESAVI"
 
 
 //////////////////////////////////
@@ -692,7 +696,7 @@ Usage: #example
 * item[=].item[=].item[+].type = #string
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "nombreNormalizadoMedicamento"
-* item[=].item[=].item[=].text = "Nombre normalizado del medicamento"
+* item[=].item[=].item[=].text = "Nombre del medicamento según lo reporta el notificador. Puede incluir nombre normalizado si el país no incluye un campo en el que se registre en texto libre el nombre del medicamento."
 
 
 
@@ -764,7 +768,7 @@ Usage: #example
 * item[=].item[=].item[+].type = #string
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "nombreNormalizadoVacuna"
-* item[=].item[=].item[=].text = "Nombre normalizado de la vacuna"
+* item[=].item[=].item[=].text = "Nombre de la vacuna según lo reporta el notificador. Puede incluir nombre normalizado si el país no incluye un campo en el que se registre en texto libre el nombre de la vacuna"
 
 
 //////////////nombreVacuuna OK
@@ -793,14 +797,14 @@ Usage: #example
 * item[=].item[=].item[+].type = #string
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "nombreFabricante"
-* item[=].item[=].item[=].text = "Nombre del fabricante o titular del registro sanitario"
+* item[=].item[=].item[=].text = "Nombre del fabricante o titular del registro sanitario según como lo haya registrado el notificador"
 
 /////////////////////
 * item[=].item[=].item[+].type = #choice
 * item[=].item[=].item[=].answerValueSet = "http://paho.org/esavi/ValueSet/CodigoWhoFabricanteVS"
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "codigoFabricanteWHODrug"
-* item[=].item[=].item[=].text = "Código del fabricante o titular del registro sanitario"
+* item[=].item[=].item[=].text = "Nombre del fabricante o titular del registro sanitario registrado en algún estándar farmacéutico del país. Si hay más de uno se prefiere WHO Drug."
 
 ///////////////////// dosis de vacuna con valor maximo y mínimo
 
@@ -910,7 +914,6 @@ Usage: #example
 /////////////////////  Grupo registroESAVI //////////////////////////////////
 * item[+].type = #group
 * item[=].required = true
-* item[=].repeats = true
 * item[=].linkId = "registroESAVI"
 * item[=].text = "Registro de ESAVI desarrollado por el vacunado"
 
@@ -918,6 +921,7 @@ Usage: #example
 /////////////////////  Grupo datosESAVI //////////////////////////////////
 * item[=].item[+].type = #group
 * item[=].item[=].required = true
+* item[=].item[=].repeats = true
 * item[=].item[=].linkId = "datosESAVI"
 * item[=].item[=].text = "Información del ESAVI y de su clasificación según gravedad"
 
@@ -1321,7 +1325,7 @@ Usage: #example
 
 /////////////////////UMC
 * item[=].item[=].item[+].type = #choice
-* item[=].item[=].item[=].answerValueSet = "http://paho.org/esavi/ValueSet/ClasificacionDesenlaceWHONaranjoVS"
+* item[=].item[=].item[=].answerValueSet = "http://paho.org/esavi/ValueSet/ClasificacionDesenlaceNaranjoVS"
 * item[=].item[=].item[=].required = true
 * item[=].item[=].item[=].linkId = "clasificacionDeCausalidadNaranjo"
 * item[=].item[=].item[=].text = "Clasificación de causalidad según la metodología Naranjo"
