@@ -1,0 +1,239 @@
+<QuestionnaireResponse xmlns:ns="http://hl7.org/fhir">
+  <id value="Ejemplo1-Respondido"/>
+  <questionnaire value="http://hapi.fhir.org/baseR4/Questionnaire/akk7"/>
+  <status value="completed"/>
+  <authored value="2022-03-10T10:20:00Z"/>
+  <item>
+    <linkId value="datosNotificacionGeneral"/>
+    <text value="Datos Administrativos de la Notificación"/>
+    <item>
+      <linkId value="datosNotificacion"/>
+      <text value="Datos de quién y donde se realiza la notificación"/>
+      <item>
+        <linkId value="nombreOrganizacionNotificadora"/>
+        <text value="Nombre Institución que Notifica (centro que reporta el caso a nivel nacional)"/>
+        <answer>
+          <valueString value="Hospital san juan"/>
+        </answer>
+      </item>
+      <item>
+        <linkId value="nombreDireccionOrganizacion"/>
+        <text value="Nombre del Nivel Geográfico Subnacional de la Ubicación de la Institución que Notifica"/>
+        <answer>
+          <valueString value="Lira 30"/>
+        </answer>
+      </item>
+      <item>
+        <linkId value="codigoProfesionNotificador"/>
+        <text value="Codigo de la profesión del notificador"/>
+        <answer>
+          <valueCoding>
+            <system value="http://paho.org/esavi/CodeSystem/ProfesionalNotificadorCS"/>
+            <code>1</code>
+            <display value="Médico"/>
+          </valueCoding>
+        </answer>
+      </item>
+    </item>
+  </item>
+  <item>
+    <linkId value="datosVacunadoCaso"/>
+    <text value="Datos Demográficos de Vacunado que ha generado ESAVI"/>
+    <item>
+      <linkId value="datosPaciente"/>
+      <text value="Datos del Vacunado"/>
+      <item>
+        <linkId value="numeroCaso"/>
+        <text value="UUID que identifica el caso o notificación. Una persona puede tener más de una notificación."/>
+        <answer>
+          <valueString value="f9a9a518-7b6f-472a-bf28-9aad7a8eeb22"/>
+        </answer>
+      </item>
+      <item>
+        <linkId value="paisOrigen-Reg"/>
+        <text value="País en donde se originó el Registro"/>
+        <answer>
+          <valueCoding>
+            <system value="http://paho.org/esavi/CodeSystem/CodPaises"/>
+            <code value="MX"/>
+            <display value="Mexico"/>
+          </valueCoding>
+        </answer>
+      </item>
+      <item>
+        <linkId value="idPaciente"/>
+        <text value="UUID de identificación"/>
+        <answer>
+          <valueString value="5f9f5ae5-e821-412d-8b58-9834a7a439c0"/>
+        </answer>
+      </item>
+      <item>
+        <linkId value="sexoPaciente"/>
+        <text value="Sexo del vacunado."/>
+        <answer>
+          <valueCoding>
+            <system value="http://hl7.org/fhir/administrative-gender"/>
+            <code value="male"/>
+            <display value="Male"/>
+          </valueCoding>
+        </answer>
+      </item>
+      <item>
+        <linkId value="fechaNacimiento"/>
+        <text value="Fecha de nacimiento del vacunado"/>
+        <answer>
+          <valueDate value="1985-02-02"/>
+        </answer>
+      </item>
+    </item>
+  </item>
+  <item>
+    <linkId value="antecedentesFarmacosVacunas"/>
+    <text value="Antecedentes Farmacológicos"/>
+    <item>
+      <linkId value="datosVacunas"/>
+      <text value="Datos de las vacunas administradas"/>
+      <item>
+        <linkId value="nombreVacuna"/>
+        <text value="Nombre de la vacuna administrada"/>
+        <answer>
+          <valueString value="BioNTech"/>
+        </answer>
+      </item>
+      <item>
+        <linkId value="identificadorVacuna"/>
+        <text value="Identificador correlativo de la vacuna"/>
+        <answer>
+          <valueInteger value="1212121"/>
+        </answer>
+      </item>
+      <item>
+        <linkId value="numeroDosisVacuna"/>
+        <text value="Numero de la dosis"/>
+        <answer>
+          <valueString value="1"/>
+        </answer>
+      </item>
+    </item>
+    <item>
+      <linkId value="datosVacunacion"/>
+      <text value="Datos relacionados con el proceso de vacunación"/>
+      <item>
+        <linkId value="nombreVacunatorio"/>
+        <text value="Nombre del vacunatorio"/>
+        <answer>
+          <valueString value="Hospital General de México"/>
+        </answer>
+      </item>
+      <item>
+        <linkId value="fechaVacunacion"/>
+        <text value="Fecha de vacunación"/>
+        <answer>
+          <valueDate value="2020-12-24"/>
+        </answer>
+      </item>
+      <item>
+        <linkId value="codigoDireccionVacunatorio"/>
+        <text value="Código del nivel geográfico subnacional de la ubicación de la institución de salud en la que se administró la vacuna"/>
+        <answer>
+          <valueCoding>
+            <system value="http://paho.org/esavi/CodeSystem/DirOrgNotiCS"/>
+            <code value="MX_CX_09015"/>
+            <display value="Cuauhtémoc (Municipio), Ciudad de Mexico, Mexico"/>
+          </valueCoding>
+        </answer>
+      </item>
+      <item>
+        <linkId value="nombreDireccionVacunatorio"/>
+        <text value="Dirección completa de la institución en la que se administró la vacuna"/>
+        <answer>
+          <valueString value="Dr. Balmis 148, Doctores, Cuauhtémoc, 06720 Ciudad de México, CDMX, México"/>
+        </answer>
+      </item>
+    </item>
+  </item>
+  <item>
+    <linkId value="registroESAVI"/>
+    <text value="Registro de ESAVI desarrollado por el vacunado"/>
+    <item>
+      <linkId value="datosESAVI"/>
+      <text value="Información del ESAVI y de su clasificación según gravedad"/>
+      <item>
+        <linkId value="nombreESAVI"/>
+        <text value="Nombre del ESAVI"/>
+        <answer>
+          <valueString value="anafilaxia"/>
+        </answer>
+      </item>
+      <item>
+        <linkId value="codigoESAVIMedDRA"/>
+        <text value="Código MedDRA del Evento Adverso notificado"/>
+        <answer>
+          <valueCoding>
+            <system value="http://paho.org/esavi/CodeSystem/EsaviMedDRACS"/>
+            <code value="10002218"/>
+            <display value="anafilaxia"/>
+          </valueCoding>
+        </answer>
+      </item>
+      <item>
+        <linkId value="codigoESAVIOtro"/>
+        <text value="Código no MedDRA de la reacción adversa generada por la vacuna"/>
+        <answer>
+          <valueCoding>
+            <system value="http://paho.org/esavi/CodeSystem/EsaviOtroCS"/>
+            <code value="39579001"/>
+            <display value="anafilaxia"/>
+          </valueCoding>
+        </answer>
+      </item>
+      <item>
+        <linkId value="fechaESAVI"/>
+        <text value="Fecha de inicio del ESAVI referido por el paciente o identificado por el médico"/>
+        <answer>
+          <valueDate value="2020-12-24"/>
+        </answer>
+      </item>
+      <item>
+        <linkId value="horaESAVI"/>
+        <text value="Hora de inicio del ESAVI referido por el paciente o identificado por el médico"/>
+        <answer>
+          <valueTime value="08:40:00"/>
+        </answer>
+      </item>
+      <item>
+        <linkId value="descripcionESAVI"/>
+        <text value="Descripción narrativa del ESAVI"/>
+        <answer>
+          <valueString value="anafilaxia post vacunación"/>
+        </answer>
+      </item>
+    </item>
+    <item>
+      <linkId value="gravedadESAVI"/>
+      <text value="Determinación del estado de gravedad del ESAVI"/>
+      <item>
+        <linkId value="tipoGravedad"/>
+        <text value="ESAVI Grave?"/>
+        <answer>
+          <valueBoolean value="true"/>
+        </answer>
+      </item>
+    </item>
+    <item>
+      <linkId value="desenlaceESAVI"/>
+      <text value="Desenlace ESAVI"/>
+      <item>
+        <linkId value="codDesenlaceESAVI"/>
+        <text value="Código Desenlace ESAVI"/>
+        <answer>
+          <valueCoding>
+            <system value="http://paho.org/esavi/CodeSystem/ClasificaciogghghnDesenlaceCS"/>
+            <code value="1"/>
+            <display value="Recuperado Completamente"/>
+          </valueCoding>
+        </answer>
+      </item>
+    </item>
+  </item>
+</QuestionnaireResponse> 

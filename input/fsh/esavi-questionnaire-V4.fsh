@@ -330,7 +330,7 @@ Usage: #example
 
 * item[=].item[=].item[+].type = #choice
 * item[=].item[=].item[=].answerValueSet = "http://paho.org/esavi/ValueSet/ProfesionalNotificadorVS"
-* item[=].item[=].item[=].required = true
+* item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "codigoProfesionNotificador"
 * item[=].item[=].item[=].text = "Codigo de la profesión del notificador"
 
@@ -582,23 +582,6 @@ Usage: #example
 * item[=].item[=].enableWhen.answerBoolean = true
 
 
-/////////////////////XXXX
-/*
-* item[=].item[=].item[0].type = #choice
-* item[=].item[=].item[=].answerValueSet = "http://paho.org/esavi/ValueSet/RespuestaSiNoNosabeVS"
-* item[=].item[=].item[=].required = false
-* item[=].item[=].item[=].linkId = "codigoEmbarazoDuranteVacuna"
-* item[=].item[=].item[=].text = "Estado o condición de embarazo al momento de vacunarse (Si/No/No Sabe)"
-*/
-
-
-/////////////////////
-//* item[=].item[=].item[+].type = #choice
-//* item[=].item[=].item[=].answerValueSet = "http://paho.org/esavi/ValueSet/RespuestaSiNoNosabeVS"
-//* item[=].item[=].item[=].required = true
-//* item[=].item[=].item[=].linkId = "codigoEmbarazoAlDesarrolloESAVI"
-//* item[=].item[=].item[=].text = "Código consulta sobre la condición de embarazo al desarrollar ESAVI"
-
 /////////////////////
 * item[=].item[=].item[+].type = #date
 * item[=].item[=].item[=].required = false
@@ -611,56 +594,8 @@ Usage: #example
 * item[=].item[=].item[=].linkId = "fechaParto"
 * item[=].item[=].item[=].text = "Fecha del parto, o fecha probable del parto (calculada)"
 
-/////////////////////
-//* item[=].item[=].item[+].type = #choice
-//* item[=].item[=].item[=].answerValueSet = "http://paho.org/esavi/ValueSet/RespuestaSiNoNosabeVS"
-//* item[=].item[=].item[=].required = false
-//* item[=].item[=].item[=].linkId = "codigoMonitoreoPosteriorVacunaESAVI"
-//* item[=].item[=].item[=].text = "Código consulta sobre si se monitoreó paciente una vez vacunado"
 
 
-/////////////////////////////////////////////////////////////////////////////////
-/////////////////////  Grupo complicacionesEmbarazo //////////////////////////////////
-* item[=].item[=].item[0].type = #group
-* item[=].item[=].item[=].required = false
-* item[=].item[=].item[=].linkId = "complicacionesEmbarazo"
-* item[=].item[=].item[=].text = "Tipo de complicación del embarazo"
-
-
-* item[=].item[=].item[=].enableWhen.question = "embarazadaMomentoVacuna"
-* item[=].item[=].item[=].enableWhen.operator = #=
-* item[=].item[=].item[=].enableWhen.answerBoolean = true
-
-* item[=].item[=].item[=].enableWhen.question = "embarazadaMomentoESAVI"
-* item[=].item[=].item[=].enableWhen.operator = #=
-* item[=].item[=].item[=].enableWhen.answerBoolean = true
-
-//
-* item[=].item[=].item[=].item[+].linkId = "codigoTipoComplicacion"
-* item[=].item[=].item[=].item[=].text = "Código tipo complicacion del embarazo"
-* item[=].item[=].item[=].item[=].type = #choice
-* item[=].item[=].item[=].item[=].answerValueSet = "http://paho.org/esavi/ValueSet/ComplicacionEmbarazoVS"
-* item[=].item[=].item[=].item[=].required = true
-
-/////////////////////
-* item[=].item[=].item[=].item[+].type = #string
-* item[=].item[=].item[=].item[=].required = true
-* item[=].item[=].item[=].item[=].linkId = "nombreComplicacionEmbarazo"
-* item[=].item[=].item[=].item[=].text = "Descripción de la Complicación"
-
-////////////////////////////
-* item[=].item[=].item[=].item[+].type = #choice
-* item[=].item[=].item[=].item[=].answerValueSet = "http://paho.org/esavi/ValueSet/ComplicacionEmbarazoMedDRAVS"
-* item[=].item[=].item[=].item[=].required = false
-* item[=].item[=].item[=].item[=].linkId = "codigoMedDRAComplicacionEmbarazo"
-* item[=].item[=].item[=].item[=].text = "Código MedDRA de la complicación del embarazo"
-
-////////////////////
-* item[=].item[=].item[=].item[+].type = #choice
-* item[=].item[=].item[=].item[=].answerValueSet = "http://paho.org/esavi/ValueSet/ComplicacionEmbarazoOtroVS"
-* item[=].item[=].item[=].item[=].required = false
-* item[=].item[=].item[=].item[=].linkId = "otrosCodigosComplicacionEmbarazo"
-* item[=].item[=].item[=].item[=].text = "Código SNOMED-CT/CIE-10/CIE-11 de la complicación del embarazo"
 
 
 /////////////////////////////////////////////////////////////////////////////////
