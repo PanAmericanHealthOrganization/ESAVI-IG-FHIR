@@ -572,7 +572,7 @@ Usage: #example
 /////////////////////  Grupo antecedentesEmbarazo //////////////////////////////////
 * item[=].item[+].type = #group
 * item[=].item[=].required = false
-* item[=].item[=].repeats = true
+* item[=].item[=].repeats = false
 * item[=].item[=].linkId = "antecedentesEmbarazo"
 * item[=].item[=].text = "Historia obstétrica o de embarazo"
 
@@ -594,7 +594,10 @@ Usage: #example
 * item[=].item[=].item[=].linkId = "fechaParto"
 * item[=].item[=].item[=].text = "Fecha del parto, o fecha probable del parto (calculada)"
 
-
+* item[=].item[=].item[+].type = #integer
+* item[=].item[=].item[=].required = false
+* item[=].item[=].item[=].linkId = "edadGestacional"
+* item[=].item[=].item[=].text = "Edad gestacional actual si cursa embarazo o al momento del parto del embrazo mas reciente"
 
 
 
@@ -743,7 +746,7 @@ Usage: #example
 
 ///////////////////// dosis de vacuna con valor maximo y mínimo
 
-* item[=].item[=].item[+].type = #string
+* item[=].item[=].item[+].type = #integer
 //* item[=].item[=].item[=].answerValueSet = "http://paho.org/esavi/ValueSet/DosisVacunaVS"
 * item[=].item[=].item[=].required = true
 * item[=].item[=].item[=].linkId = "numeroDosisVacuna"
