@@ -1,25 +1,21 @@
-### Actores en AEFI
+## Actores en AEFI
 
-#### Actor 1
+### Autoridad de salud pública local (remitente)
 Loren Ipsum
 
-##### Actor 2
+### Organización Panamericana de la Salud (repositorio)
 Loren Ipsum
 
-##### Actor 3
-Loren Ipsum
+## Casos de Uso
 
-##### Actor 4
-Loren Ipsum
-
-#### Caso de uso 1
+### Construcción y envío de ESAVI
 
 Dibujar diagrama de secuencias
 <br>
 
 Describir Diagrama de secuencias
 
-#### Caso de Uso 2
+### Consulta de ESAVI reportado por mi
 
 Dibujar diagrama de secuencias
 <br>

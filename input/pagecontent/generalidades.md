@@ -2,26 +2,21 @@
 <br>
 
 Esta sección describe definiciones, interpretaciones y requisitos importantes comunes a todos los actores del Core-CL, utilizados en esta guía. Los verbos de conformidad - **SHALL** *(Debe)*, **SHOULD** *(Debería Si Condición)*, **MAY** *(Podría)* - utilizados en esta guía se definen en las reglas de conformidad de FHIR.
-<br>
+
 ### Definiciones Para comprender la Guía
 
 Los perfiles contienen ciertos elementos que son importantes de comprender a la hora de usarlos para implementación
-<br>
 
 #### Vistas de los perfiles
-<br>
 
 Al revisar un perfil nos encontramos con la posibilidad de ver múltiples vistas de este.
 
 ##### Resumen de Texto
 
 Esta vista permite ver un resumen del Perfil como de que recurso proviene elementos *mandatorios*, *eliminados* y que deben ser *soportados*. Además, resume las *extensiones* y *slices* generados en el diseño.
-<br>
-<div align="center" >
-  <img  style="border: 1px solid; color: black;" src="Resumen.png"> 
-  <p>Visión Resumen de un Perfil</p>
-</div>
-<br>
+
+![Visión Resumen de un Perfil](../images/Resumen.jpg)
+
 
 ##### Vista Diferencial 
 
@@ -29,12 +24,8 @@ Esta vista permite observar todos aquellos elmentos de un recurso que han sido m
 
 *Por razon de lenguaje, toda traducción de la descripción de un elemento se considera un cambio y figura en esta vista.*
 
-<br>
-<div align="center" >
-  <img  style="border: 1px solid; color: black;" src="Diferencial.png"> 
-  <p>Vista Diferencial de un Perfil</p>
-</div>
-<br>
+![Visión Diferencial de un Perfil](../images/Diferencial.jpg)
+
 
 ##### Vista Snapshot 
 
@@ -42,23 +33,15 @@ En la vista de la **Snapshot Table**, todos los elementos obligatorios definidos
 
 
 
-<br>
-<div align="center" >
-  <img  style="border: 1px solid; color: black;" src="Snap.png"> 
-  <p>Vista Snapshot Table de un perfil</p>
-</div>
-<br>
+![Visión Snapshot de un Perfil](../images/Snap.jpg)
+
 
 ##### Vista Snapshot (Must Support) 
 
 En la vista **Snapshot Table (Must Support)**, todos los elementos presentados en la vista son obligatorios o deben ser compatibles con el perfil.
 
 
-<br>
-<div align="center" >
-  <img  style="border: 1px solid; color: black;" src="SnapMS.png"> 
-  <p>Vista Snapshot (Must Support) de un perfil</p>
-</div>
+![Visión Snapshot Must Support de un Perfil](../images/SnapMS.jpg)
 
 ### Definición del Conjunto Mínimo de Datos
 <br>
@@ -68,14 +51,11 @@ El CMD definido para cada recurso se deja caracterizado por la bandera **MS** qu
 La existencia de un elemento o ruta con **MS** no determina la obligatoriedad de que un recurso generado contenga el dato. Esto se define mediante la obligatoriedad del dato lo cual **DEBE** estar especificado en la cardinalidad
 <br>
 
-<div align="center" >
-  <img  style="border: 1px solid; color: black;" src="MS.png"> 
-  <p>Definición de elementos Must Support</p>
-</div>
+![Visión Must Support de un Perfil](../images/MS.jpg)
 
 
 ### Cardinalidad
-<br>
+
 
 La cardinalidad define dos aspectos de un elemento dentro de un perfil 
 
@@ -95,41 +75,29 @@ De esta forma nos encontramos con varias situaciones
 ~~~
 
 ### Bindings
-<br>
+
 
 La vinculación obligatoria a una definición de conjunto de valores significa que SE **DEBE** utilizar uno de los códigos del conjunto de valores especificado. En el caso de +CodeableConcept+, no es válido utilizar sólo texto, pero se permiten múltiples codificaciones (traducciones).
 
 La *vinculación extensible* a una definición de conjunto de valores significa que uno de los códigos del conjunto de valores especificado **SE DEBE USAR** si existe un concepto aplicable, pero si no existe un código adecuado en el conjunto de valores, se **PUEDE** proporcionar un código o códigos alternativos en su lugar. Para *CodeableConcept* se permiten múltiples codificaciones y esta regla se aplica a una de ellas. También en el caso de *CodeableConcept*, si sólo se dispone de texto, se puede utilizar sólo el texto.
 
-<br>
-
-<div align="center" >
-  <img  style="border: 1px solid; color: black;" src="binding.png"> 
-  <p>Definición de Vinculaciones en Códigos</p>
-</div>
-<br>
+![Visión binding de un Perfil](../images/binding.jpg)
 
 
 ### Ejemplos
 <br>
 
 La guía desarrolla una serie de ejemplos por perfil desarrollado. Este ejemplo muestra en código como un sistema hace uso de un perfil para generar un recurso. Estos ejemplos se acceden desde la página ejemplos o desde la lengüeta ejemplo de cada perfil
-<br>
-<div align="center" >
-  <img  style="border: 1px solid; color: black;" src="ejemplo.png"> 
-  <p>Acceso a Ejemplo desde perfil</p>
-</div>
-<br>
 
-<br>
+![Visión ejemplo de un Perfil](../images/ejemplo.jpg)
+
+
 Además cada ejemplo viene descrito en 4 formatos:
-<br>
 
 * Narrativa del ejemplo: Texto Legible
 * Código en JSON
 * Código en XML
 * Código en Representación TTL
-<br>
 
 ~~~
 {
