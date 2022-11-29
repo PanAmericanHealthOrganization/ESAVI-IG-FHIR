@@ -8,11 +8,11 @@ name: ESAVI
 status: draft
 version: 0.1.0
 fhirVersion: 4.0.1
+tittle: Guía de Implementación FHIR de ESAVI
 copyrightYear: 2021+
 releaseLabel: ci-build
 #language: es-AR
 
-#jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
 jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001
 publisher:
   name: ESAVI -
