@@ -1,9 +1,9 @@
-### Autorización/Autenticación
+## Autorización/Autenticación
 El centro regional implementa seguridad basada en oAuth2 con tokens, por lo cual la primera llamada de las aplicaciones autorizadas debe realizarse a la url que provee el token ([auth]).
 
 {%include diagrama_autenticacion.svg%} 
 
-### Registro de Aplicaciones
+## Registro de Aplicaciones
 
 Previo al uso del servicio de autenticación, la aplicación que realiza el pedido debe solicitar a los administradores del centro regional :
 
@@ -17,12 +17,12 @@ El Centro Regional asignará al cliente un identificador denominado client_id
 En tiempo de ejecución, el servicio debe obtener un token de acceso para poder acceder a la información. 
 Estos tokens de acceso pueden ser generados automáticamente, sin necesidad de intervención humana, con una expiración recomendada de 15 minutos.   
 
-### Generación del Token de Autenticación
+## Generación del Token de Autenticación
 
 [SecretWord] Palabra clave otorgada por el centro regional
 [urlAuth] URL de Autorización
 
-#### Paso 1: Generación de Token JWT
+### Paso 1: Generación de Token JWT
 
 La aplicación cliente debe generar un token JWT firmado con la palabra clave otorgada por la DNSIS con la siguiente información
 

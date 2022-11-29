@@ -1,9 +1,23 @@
 # Uso (Cómo llenar esta guía?)
 ## Nombres y códigos
 
-Para acompañar los diferentes estadios de madurez de los sistemas de información de los países de la región, la guía ha incluído campos que admiten distintos niveles de complejidad terminológica, desde texto libre hasta codificaciones especiales (con y sin licencia de uso)Pregunta: ¿es necesaria esta información?. Se espera que los países inicien el proceso de envío de datos transmitiendo la información con los mismos formatos y valores como se encuentran en sus sistemas de información. A medida que el proceso se fortalezca, estandarizando e incorporando terminologías internacionales, las mismas podrán agregarse a los reportes que se envían a OPS. Por ejemplo, si un país captura los nombres de las vacunas en texto libre podrá reportar este dato como un string en el campo "nombre de la vacuna", y en la medida que adopte codificaciones como WHODrug o CIE-11 podrá aportar un código en el campo correspondiente.
+Para acompañar los diferentes estadios de madurez de los sistemas de información de los países de la región, la guía ha incluído campos que admiten distintos niveles de complejidad terminológica, desde texto libre hasta codificaciones especiales (con y sin licencia de uso). 
+Se espera que los países inicien el proceso de envío de datos transmitiendo la información con los mismos formatos y valores como se encuentran en sus sistemas de información. A medida que el proceso se fortalezca, estandarizando e incorporando terminologías internacionales, las mismas podrán agregarse a los reportes que se envían a OPS. 
+Por ejemplo, si un país captura los nombres de las vacunas en texto libre podrá reportar este dato como un string en el campo "nombre de la vacuna", y en la medida que adopte codificaciones como WHODrug o CIE-11 podrá aportar un código en el campo correspondiente.
 
 Los campos llamados "nombre de…" admiten un valor de string y hacen referencia a una descripción literal, que puede ser texto libre o un texto normalizado proveniente de la descripción de una codificación. Los códigos admiten un choice con valuesets o codes, los cuales varían según el campo. Como en general los campos obligatorios son los nombres (string), en caso de usar una codificación se puede aplicar la descripción del código. Por ejemplo, si se desea enviar la información del codigoDireccionOrganizacion, según el value set se deberá poner el código correspondiente y en el campo nombreDireccionOrganizacion ingresar el nombre asociado al código.
+
+### Identificación de personas y casos
+
+La identificación unívoca de personas en las cuales se detectó un ESAVI es fundamental para poder gestionar adecuadamente los datos. 
+Sin embargo esta identificación debe ser anonimizada, es decir que no se pueda reconstruir los datos de manera de llegar a la persona real a através de la infomración vertida en un denuncia de un caso de ESAVI.
+Con ese objetivo, la identificacion de persoans en la guía se hace a través de un UUID (Universally Unique Identifier) de identificación del vacunado. 
+Se propone utilizar [UUID versión 5](https://www.uuidtools.com/uuid-versions-explained) para anonimizar el identificador nacional de la persona. 
+Asimísmo se utilizará la misma tecnología para identificar los casos ante la posibilidad que haya mas d eun caso por persona.
+
+### Sexo
+
+Se ustiliza el concepto de **sexo biológico** para sexoPaciente, no el género, no el sexo administrativo.
 
 ### Vacunas
 
@@ -28,7 +42,6 @@ Si bien en algunos casos son obligatorios, varios campos de fecha/hora (fecha de
 Sugerencia: Las fechas representadas en estos grupos se ingresan con el formato de tipo “date” yyyy-mm-dd. Para el campo “fechaSintomasCovid19”, la fecha desde tipo “DateTime” agregando el horario con el formato “año-mes-día-hora” (yyyy-mm-ddTHH:MM:SSZ).
 
 ## Nombres y Códigos de ubicación geográfica
-
 Las direcciones FHIR admiten un valor de string para la ubicación geográfica. La guía ESAVI requiere un valor codificado adicional, definiendo un value set para este propósito que se conforman con el código de país ISO 3166-1 alfa-2 (2 letras), el código de subdivisión ISO 3166-2 (2 letras y números), y un código propio para el municipio o departamento. El value set fue creado a partir del listado de ubicaciones geográficas utilizado en el área de Inmunizaciones de OPS. El código debe seleccionarse para que coincida con el contenido literal del nombre de la ubicación geográfica. En caso que exista alguna ubicación que no esté representada se puede pedir su adición a los administradores de la guía. Un ejemplo es:
 
 <style type="text/css">
