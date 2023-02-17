@@ -1,3 +1,0 @@
-### Cesar Champion
-
-* El Mejor

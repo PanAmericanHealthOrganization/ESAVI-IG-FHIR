@@ -55,7 +55,7 @@ Description: "Codificacion Estandarizada de diagnóticos de complicaciones de em
 * ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
 
 * include codes from system http://hl7.org/fhir/sid/icd-10
-* include codes from system SCTSpa
+* include codes from system $SCTSpa
 
 ValueSet: EsaviMedDRAVS
 Id: EsaviMedDRAVS
@@ -83,7 +83,7 @@ Description: "Evento Adverso en otro sistema según Snomed, ATC y CIE-10"
 * ^contact.telecom.system = #email
 * ^contact.telecom.value = ""
 * ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
-* include codes from system SCTSpa
+* include codes from system $SCTSpa
 * include codes from system ATC
 * include codes from system http://hl7.org/fhir/sid/icd-10
 
@@ -98,7 +98,7 @@ Description: "Codificación Estandarizda de Sustancia Activa de Medicamento seg�
 * ^contact.telecom.system = #email
 * ^contact.telecom.value = ""
 * ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
-* include codes from system SCTSpa
+* include codes from system $SCTSpa
 * include codes from system ATC
 * include codes from system http://hl7.org/fhir/sid/icd-10
 
@@ -127,7 +127,7 @@ Description: "Nombre Genérico de Medicamento según Snomed"
 * ^contact.telecom.system = #email
 * ^contact.telecom.value = ""
 * ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
-* include codes from system SCTSpa
+* include codes from system $SCTSpa
 
 
 ValueSet: NombreComercialMEdicamentoVS
@@ -168,7 +168,7 @@ Description: "Codificación Estandarizada de Nombre Genérico de las Vacunas seg
 * ^contact.telecom.system = #email
 * ^contact.telecom.value = ""
 * ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
-* include codes from system SCTSpa
+* include codes from system $SCTSpa
 * include codes from system ATC
 * include codes from system http://hl7.org/fhir/sid/icd-10
 
@@ -213,7 +213,7 @@ Description: "Describe las enfermedades previas en un ESAVI codificadas en CIE10
 * ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
 * include codes from system $ICD11mms
 * include codes from system $ICD10
-* include codes from system SCTSpa
+* include codes from system http://snomed.info/sct/449081005
 
 
 ValueSet: CodigoNoWhoVacunaVS
@@ -240,8 +240,8 @@ Description: "Código no WHODrug de la Vacuna"
 * ^contact.telecom.system = #email
 * ^contact.telecom.value = ""
 * ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
-* include codes from system $ICD11mms
-* include codes from system SCTSpa
+//* include codes from system $ICD11mms
+//* include codes from system $SCTSpa
 
 
 ValueSet: CodigoWhoFabricanteVS
@@ -414,10 +414,10 @@ Description:  "Codigo Medicamento"
 * ^contact.telecom.system = #email
 * ^contact.telecom.value = ""
 * ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
-* include codes from system SCTSpa
-* include codes from system ATC
-* include codes from system ICD11mms
-* include codes from system http://who-umc.org
+//* include codes from system $SCTSpa
+//* include codes from system ATC
+//* include codes from system ICD11mms
+//* include codes from system http://who-umc.org
 
 ValueSet: ModoVerificacionVacunaVS
 Id: ModoVerificacionVacunaVS

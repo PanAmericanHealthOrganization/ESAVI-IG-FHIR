@@ -1,0 +1,12 @@
+{
+  "url": "http://paho.org/esavi/ImplementationGuide/uv.esavi",
+  "name": "ESAVI",
+  "package-id": "uv.esavi",
+  "ig-ver": "0.1.0",
+  "date": "Mon, 19 Sep, 2022 00:01:02 -0300",
+  "errs": 0,
+  "warnings": 30,
+  "hints": 24,
+  "version": "4.0.1",
+  "tool": "5.0.0-ballot (3)"
+}

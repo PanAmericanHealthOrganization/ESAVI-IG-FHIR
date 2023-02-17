@@ -1,0 +1,215 @@
+﻿ESAVI : Validation Results
+=========================================
+
+err = 0, warn = 30, info = 24
+IG Publisher Version: 1.2.2
+Generated Mon Sep 19 00:04:57 CLST 2022. FHIR version 4.0.1 for uv.esavi#0.1.0 (canonical = http://paho.org/esavi)
+ Build Errors : 2 / 7 / 0
+ C:\Users\jmansilla\ownCloud\IGs\OPS-ESAVI\fsh-generated\resources\ImplementationGuide-uv.esavi : 0 / 2 / 1
+ C:\Users\jmansilla\ownCloud\IGs\OPS-ESAVI\fsh-generated\resources\codesystem-ClasificacionDesenlaceCS : 0 / 0 / 2
+ C:\Users\jmansilla\ownCloud\IGs\OPS-ESAVI\fsh-generated\resources\codesystem-ClasificacionDesenlaceWHOAEFICS : 0 / 0 / 2
+ C:\Users\jmansilla\ownCloud\IGs\OPS-ESAVI\fsh-generated\resources\codesystem-ClasificacionDesenlaceWHONaranjoCS : 0 / 0 / 2
+ C:\Users\jmansilla\ownCloud\IGs\OPS-ESAVI\fsh-generated\resources\codesystem-ClasificacionDesenlaceWHOUMCCS : 0 / 0 / 2
+ C:\Users\jmansilla\ownCloud\IGs\OPS-ESAVI\fsh-generated\resources\codesystem-CodigoMedicamentoCS : 0 / 0 / 2
+ C:\Users\jmansilla\ownCloud\IGs\OPS-ESAVI\fsh-generated\resources\codesystem-CodigoNoWhoVacunaCS : 0 / 0 / 2
+ C:\Users\jmansilla\ownCloud\IGs\OPS-ESAVI\fsh-generated\resources\codesystem-CodigoWhoFabricanteCS : 0 / 0 / 2
+ C:\Users\jmansilla\ownCloud\IGs\OPS-ESAVI\fsh-generated\resources\codesystem-ComplicacionEmbarazoCS : 0 / 0 / 2
+ C:\Users\jmansilla\ownCloud\IGs\OPS-ESAVI\fsh-generated\resources\codesystem-DirOrgNotiCS : 0 / 0 / 2
+ C:\Users\jmansilla\ownCloud\IGs\OPS-ESAVI\fsh-generated\resources\codesystem-DosisVacunaCS : 0 / 0 / 2
+ C:\Users\jmansilla\ownCloud\IGs\OPS-ESAVI\fsh-generated\resources\codesystem-EventoAdversoVacunaCS : 0 / 0 / 2
+ C:\Users\jmansilla\ownCloud\IGs\OPS-ESAVI\fsh-generated\resources\codesystem-GrupoEtnicoCS : 0 / 0 / 2
+ C:\Users\jmansilla\ownCloud\IGs\OPS-ESAVI\fsh-generated\resources\codesystem-InvestigacionTipoCS : 0 / 0 / 2
+ C:\Users\jmansilla\ownCloud\IGs\OPS-ESAVI\fsh-generated\resources\codesystem-ModoConfirmacionInfeccionCS : 0 / 0 / 2
+ C:\Users\jmansilla\ownCloud\IGs\OPS-ESAVI\fsh-generated\resources\codesystem-ModoVerificacionVacunaCS : 0 / 0 / 2
+ C:\Users\jmansilla\ownCloud\IGs\OPS-ESAVI\fsh-generated\resources\codesystem-ProfesionalNotificadorCS : 0 / 0 / 2
+ C:\Users\jmansilla\ownCloud\IGs\OPS-ESAVI\fsh-generated\resources\codesystem-RespuestaSiNoNosabeCS : 0 / 0 / 2
+ C:\Users\jmansilla\ownCloud\IGs\OPS-ESAVI\fsh-generated\resources\codesystem-RespuestaVerdaderoFalsoCS : 0 / 0 / 2
+ C:\Users\jmansilla\ownCloud\IGs\OPS-ESAVI\fsh-generated\resources\codesystem-SeccionesNotificacionCS : 0 / 0 / 2
+ C:\Users\jmansilla\ownCloud\IGs\OPS-ESAVI\fsh-generated\resources\codesystem-SistemaClasfCausalidadCS : 0 / 0 / 2
+ C:\Users\jmansilla\ownCloud\IGs\OPS-ESAVI\fsh-generated\resources\codesystem-SistemasDeCodificacionCS : 0 / 0 / 2
+ C:\Users\jmansilla\ownCloud\IGs\OPS-ESAVI\fsh-generated\resources\questionnaire-EjemploQuestionnaireEsavi : 0 / 0 / 4
+ C:\Users\jmansilla\ownCloud\IGs\OPS-ESAVI\fsh-generated\resources\questionnaireresponse-Ejemplo1 : 0 / 1 / 1
+ C:\Users\jmansilla\ownCloud\IGs\OPS-ESAVI\fsh-generated\resources\questionnaireresponse-Ejemplo1-Respondido : 0 / 1 / 1
+ C:\Users\jmansilla\ownCloud\IGs\OPS-ESAVI\fsh-generated\resources\questionnaireresponse-Ejemplo2 : 0 / 1 / 1
+ C:\Users\jmansilla\ownCloud\IGs\OPS-ESAVI\fsh-generated\resources\questionnaireresponse-Ejemplo2-Respondido : 0 / 1 / 1
+ C:\Users\jmansilla\ownCloud\IGs\OPS-ESAVI\fsh-generated\resources\questionnaireresponse-Ejemplo3 : 0 / 1 / 1
+ C:\Users\jmansilla\ownCloud\IGs\OPS-ESAVI\fsh-generated\resources\questionnaireresponse-Ejemplo3-Respondido : 0 / 1 / 1
+ C:\Users\jmansilla\ownCloud\IGs\OPS-ESAVI\fsh-generated\resources\questionnaireresponse-Ejemplo4 : 0 / 1 / 1
+ C:\Users\jmansilla\ownCloud\IGs\OPS-ESAVI\fsh-generated\resources\questionnaireresponse-Ejemplo4-Respondido : 0 / 1 / 1
+ C:\Users\jmansilla\ownCloud\IGs\OPS-ESAVI\fsh-generated\resources\questionnaireresponse-Ejemplo5 : 0 / 1 / 1
+ C:\Users\jmansilla\ownCloud\IGs\OPS-ESAVI\fsh-generated\resources\questionnaireresponse-Ejemplo5-Respondido : 0 / 1 / 1
+ C:\Users\jmansilla\ownCloud\IGs\OPS-ESAVI\fsh-generated\resources\questionnaireresponse-Ejemplo6 : 0 / 1 / 1
+ C:\Users\jmansilla\ownCloud\IGs\OPS-ESAVI\fsh-generated\resources\questionnaireresponse-Ejemplo6-Respondido : 0 / 1 / 1
+ C:\Users\jmansilla\ownCloud\IGs\OPS-ESAVI\fsh-generated\resources\questionnaireresponse-Ejemplo7 : 0 / 1 / 1
+ C:\Users\jmansilla\ownCloud\IGs\OPS-ESAVI\fsh-generated\resources\questionnaireresponse-Ejemplo7-Respondido : 0 / 1 / 1
+ C:\Users\jmansilla\ownCloud\IGs\OPS-ESAVI\fsh-generated\resources\structuredefinition-ESAVIQuestionnaireResponse : 0 / 0 / 1
+ C:\Users\jmansilla\ownCloud\IGs\OPS-ESAVI\fsh-generated\resources\valueset-ClasificacionDesenlaceVS : 0 / 0 / 1
+ C:\Users\jmansilla\ownCloud\IGs\OPS-ESAVI\fsh-generated\resources\valueset-ClasificacionDesenlaceWHOAEFIVS : 0 / 0 / 1
+ C:\Users\jmansilla\ownCloud\IGs\OPS-ESAVI\fsh-generated\resources\valueset-ClasificacionDesenlaceWHONaranjoVS : 0 / 0 / 1
+ C:\Users\jmansilla\ownCloud\IGs\OPS-ESAVI\fsh-generated\resources\valueset-ClasificacionDesenlaceWHOUMCVS : 0 / 0 / 1
+ C:\Users\jmansilla\ownCloud\IGs\OPS-ESAVI\fsh-generated\resources\valueset-CodPaises : 0 / 0 / 1
+ C:\Users\jmansilla\ownCloud\IGs\OPS-ESAVI\fsh-generated\resources\valueset-CodigoMedDRAEnfPreviaVS : 0 / 1 / 1
+ C:\Users\jmansilla\ownCloud\IGs\OPS-ESAVI\fsh-generated\resources\valueset-CodigoMedicamentoVS : 0 / 0 / 1
+ C:\Users\jmansilla\ownCloud\IGs\OPS-ESAVI\fsh-generated\resources\valueset-CodigoNoWhoVacunaVS : 0 / 0 / 1
+ C:\Users\jmansilla\ownCloud\IGs\OPS-ESAVI\fsh-generated\resources\valueset-CodigoOtroVacunaVS : 0 / 0 / 1
+ C:\Users\jmansilla\ownCloud\IGs\OPS-ESAVI\fsh-generated\resources\valueset-CodigoWhoFabricanteVS : 0 / 0 / 1
+ C:\Users\jmansilla\ownCloud\IGs\OPS-ESAVI\fsh-generated\resources\valueset-CodigoWhoVacunaVS : 0 / 1 / 1
+ C:\Users\jmansilla\ownCloud\IGs\OPS-ESAVI\fsh-generated\resources\valueset-ComplicacionEmbarazoMedDRAVS : 0 / 2 / 1
+ C:\Users\jmansilla\ownCloud\IGs\OPS-ESAVI\fsh-generated\resources\valueset-ComplicacionEmbarazoOtroVS : 0 / 1 / 1
+ C:\Users\jmansilla\ownCloud\IGs\OPS-ESAVI\fsh-generated\resources\valueset-ComplicacionEmbarazoVS : 0 / 0 / 1
+ C:\Users\jmansilla\ownCloud\IGs\OPS-ESAVI\fsh-generated\resources\valueset-DirOrgNotiVS : 0 / 0 / 1
+ C:\Users\jmansilla\ownCloud\IGs\OPS-ESAVI\fsh-generated\resources\valueset-DosisVacunaVS : 0 / 0 / 1
+ C:\Users\jmansilla\ownCloud\IGs\OPS-ESAVI\fsh-generated\resources\valueset-EnfermedadesPreviasCodificacionVS : 0 / 1 / 1
+ C:\Users\jmansilla\ownCloud\IGs\OPS-ESAVI\fsh-generated\resources\valueset-EsaviMedDRAVS : 0 / 1 / 1
+ C:\Users\jmansilla\ownCloud\IGs\OPS-ESAVI\fsh-generated\resources\valueset-EsaviOtroVS : 0 / 0 / 1
+ C:\Users\jmansilla\ownCloud\IGs\OPS-ESAVI\fsh-generated\resources\valueset-EventoAdversoVacunaVS : 0 / 0 / 1
+ C:\Users\jmansilla\ownCloud\IGs\OPS-ESAVI\fsh-generated\resources\valueset-FormaFarmaceuticaVS : 0 / 0 / 1
+ C:\Users\jmansilla\ownCloud\IGs\OPS-ESAVI\fsh-generated\resources\valueset-GrupoEtnicoVS : 0 / 0 / 1
+ C:\Users\jmansilla\ownCloud\IGs\OPS-ESAVI\fsh-generated\resources\valueset-InvestigacionTipoVS : 0 / 0 / 1
+ C:\Users\jmansilla\ownCloud\IGs\OPS-ESAVI\fsh-generated\resources\valueset-MedicamentoGenericoVS : 0 / 0 / 1
+ C:\Users\jmansilla\ownCloud\IGs\OPS-ESAVI\fsh-generated\resources\valueset-MedicamentoOtroVS : 0 / 0 / 1
+ C:\Users\jmansilla\ownCloud\IGs\OPS-ESAVI\fsh-generated\resources\valueset-ModoConfirmacionInfeccionVS : 0 / 0 / 1
+ C:\Users\jmansilla\ownCloud\IGs\OPS-ESAVI\fsh-generated\resources\valueset-ModoVerificacionVacunaVS : 0 / 0 / 1
+ C:\Users\jmansilla\ownCloud\IGs\OPS-ESAVI\fsh-generated\resources\valueset-NombreComercialMedicamentoVS : 0 / 0 / 1
+ C:\Users\jmansilla\ownCloud\IGs\OPS-ESAVI\fsh-generated\resources\valueset-NombreComercialVacunaVS : 0 / 0 / 1
+ C:\Users\jmansilla\ownCloud\IGs\OPS-ESAVI\fsh-generated\resources\valueset-ProfesionalNotificadorVS : 0 / 0 / 1
+ C:\Users\jmansilla\ownCloud\IGs\OPS-ESAVI\fsh-generated\resources\valueset-RespuestaSiNoNosabeVS : 0 / 0 / 1
+ C:\Users\jmansilla\ownCloud\IGs\OPS-ESAVI\fsh-generated\resources\valueset-RespuestaVerdaderoFalsoVS : 0 / 0 / 1
+ C:\Users\jmansilla\ownCloud\IGs\OPS-ESAVI\fsh-generated\resources\valueset-SeccionesNotificacionVS : 0 / 0 / 1
+ C:\Users\jmansilla\ownCloud\IGs\OPS-ESAVI\fsh-generated\resources\valueset-SistemaClasfCausalidadVS : 0 / 0 / 1
+ C:\Users\jmansilla\ownCloud\IGs\OPS-ESAVI\fsh-generated\resources\valueset-SistemasDeCodificacionVS : 0 / 0 / 1
+ C:\Users\jmansilla\ownCloud\IGs\OPS-ESAVI\fsh-generated\resources\valueset-SustanciaActivaVS : 0 / 0 / 1
+ C:\Users\jmansilla\ownCloud\IGs\OPS-ESAVI\fsh-generated\resources\valueset-ViaAdminMedicamentoVS : 0 / 0 / 1
+</table>
+== n/a ==
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource QuestionnaireResponse/Ejemplo1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource QuestionnaireResponse/Ejemplo2.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource QuestionnaireResponse/Ejemplo3.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource QuestionnaireResponse/Ejemplo4.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource QuestionnaireResponse/Ejemplo5.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource QuestionnaireResponse/Ejemplo6.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource QuestionnaireResponse/Ejemplo7.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: C:\Users\jmansilla\ownCloud\IGs\OPS-ESAVI\output\operaciones.html#/html/body/div/div/div/div/div/p/a at Line 154, column 5: The link 'informe_aefi.html' for "Informe AEFI" cannot be resolved
+ERROR: C:\Users\jmansilla\ownCloud\IGs\OPS-ESAVI\output\operaciones.html#/html/body/div/div/div/div/div/p/a at Line 158, column 5: The link 'terminologia.html' for "Consulta Terminologica" cannot be resolved
+== fsh-generated\resources\ImplementationGuide-uv.esavi.json ==
+WARNING: ImplementationGuide/uv.esavi: ImplementationGuide.definition.resource[12].name: value should not start or finish with whitespace 'Códigos...ESAVI '
+WARNING: ImplementationGuide/uv.esavi: ImplementationGuide.definition.resource[13].name: value should not start or finish with whitespace 'Otros...ESAVI '
+== fsh-generated\resources\CodeSystem-ClasificacionDesenlaceCS.json ==
+INFORMATION: CodeSystem/ClasificacionDesenlaceCS: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+== fsh-generated\resources\CodeSystem-ClasificacionDesenlaceWHOAEFICS.json ==
+INFORMATION: CodeSystem/ClasificacionDesenlaceWHOAEFICS: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+== fsh-generated\resources\CodeSystem-ClasificacionDesenlaceWHONaranjoCS.json ==
+INFORMATION: CodeSystem/ClasificacionDesenlaceWHONaranjoCS: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+== fsh-generated\resources\CodeSystem-ClasificacionDesenlaceWHOUMCCS.json ==
+INFORMATION: CodeSystem/ClasificacionDesenlaceWHOUMCCS: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+== fsh-generated\resources\CodeSystem-CodigoMedicamentoCS.json ==
+INFORMATION: CodeSystem/CodigoMedicamentoCS: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+== fsh-generated\resources\CodeSystem-CodigoNoWhoVacunaCS.json ==
+INFORMATION: CodeSystem/CodigoNoWhoVacunaCS: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+== fsh-generated\resources\CodeSystem-CodigoWhoFabricanteCS.json ==
+INFORMATION: CodeSystem/CodigoWhoFabricanteCS: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+== fsh-generated\resources\CodeSystem-ComplicacionEmbarazoCS.json ==
+INFORMATION: CodeSystem/ComplicacionEmbarazoCS: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+== fsh-generated\resources\CodeSystem-DirOrgNotiCS.json ==
+INFORMATION: CodeSystem/DirOrgNotiCS: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+== fsh-generated\resources\CodeSystem-DosisVacunaCS.json ==
+INFORMATION: CodeSystem/DosisVacunaCS: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+== fsh-generated\resources\CodeSystem-EventoAdversoVacunaCS.json ==
+INFORMATION: CodeSystem/EventoAdversoVacunaCS: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+== fsh-generated\resources\CodeSystem-GrupoEtnicoCS.json ==
+INFORMATION: CodeSystem/GrupoEtnicoCS: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+== fsh-generated\resources\CodeSystem-InvestigacionTipoCS.json ==
+INFORMATION: CodeSystem/InvestigacionTipoCS: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+== fsh-generated\resources\CodeSystem-ModoConfirmacionInfeccionCS.json ==
+INFORMATION: CodeSystem/ModoConfirmacionInfeccionCS: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+== fsh-generated\resources\CodeSystem-ModoVerificacionVacunaCS.json ==
+INFORMATION: CodeSystem/ModoVerificacionVacunaCS: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+== fsh-generated\resources\CodeSystem-ProfesionalNotificadorCS.json ==
+INFORMATION: CodeSystem/ProfesionalNotificadorCS: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+== fsh-generated\resources\CodeSystem-RespuestaSiNoNosabeCS.json ==
+INFORMATION: CodeSystem/RespuestaSiNoNosabeCS: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+== fsh-generated\resources\CodeSystem-RespuestaVerdaderoFalsoCS.json ==
+INFORMATION: CodeSystem/RespuestaVerdaderoFalsoCS: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+== fsh-generated\resources\CodeSystem-SeccionesNotificacionCS.json ==
+INFORMATION: CodeSystem/SeccionesNotificacionCS: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+== fsh-generated\resources\CodeSystem-SistemaClasfCausalidadCS.json ==
+INFORMATION: CodeSystem/SistemaClasfCausalidadCS: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+== fsh-generated\resources\CodeSystem-SistemasDeCodificacionCS.json ==
+INFORMATION: CodeSystem/SistemasDeCodificacionCS: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+== fsh-generated\resources\Questionnaire-EjemploQuestionnaireEsavi.json ==
+INFORMATION: Questionnaire/EjemploQuestionnaireEsavi: Questionnaire.item[4].item[4].item[4].enableWhen[0].answer.ofType(Coding): Code System URI 'http://paho.org/esavi/ValueSet/SistemaClasfCausalidadCS' is unknown so the code cannot be validated
+INFORMATION: Questionnaire/EjemploQuestionnaireEsavi: Questionnaire.item[4].item[4].item[5].enableWhen[0].answer.ofType(Coding): Code System URI 'http://paho.org/esavi/ValueSet/SistemaClasfCausalidadCS' is unknown so the code cannot be validated
+INFORMATION: Questionnaire/EjemploQuestionnaireEsavi: Questionnaire.item[4].item[4].item[6].enableWhen[0].answer.ofType(Coding): Code System URI 'http://paho.org/esavi/ValueSet/SistemaClasfCausalidadCS' is unknown so the code cannot be validated
+== fsh-generated\resources\QuestionnaireResponse-Ejemplo1.json ==
+WARNING: QuestionnaireResponse/Ejemplo1: QuestionnaireResponse: The questionnaire 'https://www.paho.org/es/temas/seguridad-vacunas/fhir/ig/esavi/ESAVI-Questionnaire' could not be resolved, so no validation can be performed against the base questionnaire
+== fsh-generated\resources\QuestionnaireResponse-Ejemplo1-Respondido.json ==
+WARNING: QuestionnaireResponse/Ejemplo1-Respondido: QuestionnaireResponse: The questionnaire 'https://www.paho.org/es/temas/seguridad-vacunas/fhir/ig/esavi/ESAVI-Questionnaire' could not be resolved, so no validation can be performed against the base questionnaire
+== fsh-generated\resources\QuestionnaireResponse-Ejemplo2.json ==
+WARNING: QuestionnaireResponse/Ejemplo2: QuestionnaireResponse: The questionnaire 'https://www.paho.org/es/temas/seguridad-vacunas/fhir/ig/esavi/ESAVI-Questionnaire' could not be resolved, so no validation can be performed against the base questionnaire
+== fsh-generated\resources\QuestionnaireResponse-Ejemplo2-Respondido.json ==
+WARNING: QuestionnaireResponse/Ejemplo2-Respondido: QuestionnaireResponse: The questionnaire 'https://www.paho.org/es/temas/seguridad-vacunas/fhir/ig/esavi/ESAVI-Questionnaire' could not be resolved, so no validation can be performed against the base questionnaire
+== fsh-generated\resources\QuestionnaireResponse-Ejemplo3.json ==
+WARNING: QuestionnaireResponse/Ejemplo3: QuestionnaireResponse: The questionnaire 'https://www.paho.org/es/temas/seguridad-vacunas/fhir/ig/esavi/ESAVI-Questionnaire' could not be resolved, so no validation can be performed against the base questionnaire
+== fsh-generated\resources\QuestionnaireResponse-Ejemplo3-Respondido.json ==
+WARNING: QuestionnaireResponse/Ejemplo3-Respondido: QuestionnaireResponse: The questionnaire 'https://www.paho.org/es/temas/seguridad-vacunas/fhir/ig/esavi/ESAVI-Questionnaire' could not be resolved, so no validation can be performed against the base questionnaire
+== fsh-generated\resources\QuestionnaireResponse-Ejemplo4.json ==
+WARNING: QuestionnaireResponse/Ejemplo4: QuestionnaireResponse: The questionnaire 'https://www.paho.org/es/temas/seguridad-vacunas/fhir/ig/esavi/ESAVI-Questionnaire' could not be resolved, so no validation can be performed against the base questionnaire
+== fsh-generated\resources\QuestionnaireResponse-Ejemplo4-Respondido.json ==
+WARNING: QuestionnaireResponse/Ejemplo4-Respondido: QuestionnaireResponse: The questionnaire 'https://www.paho.org/es/temas/seguridad-vacunas/fhir/ig/esavi/ESAVI-Questionnaire' could not be resolved, so no validation can be performed against the base questionnaire
+== fsh-generated\resources\QuestionnaireResponse-Ejemplo5.json ==
+WARNING: QuestionnaireResponse/Ejemplo5: QuestionnaireResponse: The questionnaire 'https://www.paho.org/es/temas/seguridad-vacunas/fhir/ig/esavi/ESAVI-Questionnaire' could not be resolved, so no validation can be performed against the base questionnaire
+== fsh-generated\resources\QuestionnaireResponse-Ejemplo5-Respondido.json ==
+WARNING: QuestionnaireResponse/Ejemplo5-Respondido: QuestionnaireResponse: The questionnaire 'https://www.paho.org/es/temas/seguridad-vacunas/fhir/ig/esavi/ESAVI-Questionnaire' could not be resolved, so no validation can be performed against the base questionnaire
+== fsh-generated\resources\QuestionnaireResponse-Ejemplo6.json ==
+WARNING: QuestionnaireResponse/Ejemplo6: QuestionnaireResponse: The questionnaire 'https://www.paho.org/es/temas/seguridad-vacunas/fhir/ig/esavi/ESAVI-Questionnaire' could not be resolved, so no validation can be performed against the base questionnaire
+== fsh-generated\resources\QuestionnaireResponse-Ejemplo6-Respondido.json ==
+WARNING: QuestionnaireResponse/Ejemplo6-Respondido: QuestionnaireResponse: The questionnaire 'https://www.paho.org/es/temas/seguridad-vacunas/fhir/ig/esavi/ESAVI-Questionnaire' could not be resolved, so no validation can be performed against the base questionnaire
+== fsh-generated\resources\QuestionnaireResponse-Ejemplo7.json ==
+WARNING: QuestionnaireResponse/Ejemplo7: QuestionnaireResponse: The questionnaire 'https://www.paho.org/es/temas/seguridad-vacunas/fhir/ig/esavi/ESAVI-Questionnaire' could not be resolved, so no validation can be performed against the base questionnaire
+== fsh-generated\resources\QuestionnaireResponse-Ejemplo7-Respondido.json ==
+WARNING: QuestionnaireResponse/Ejemplo7-Respondido: QuestionnaireResponse: The questionnaire 'https://www.paho.org/es/temas/seguridad-vacunas/fhir/ig/esavi/ESAVI-Questionnaire' could not be resolved, so no validation can be performed against the base questionnaire
+== fsh-generated\resources\StructureDefinition-ESAVIQuestionnaireResponse.json ==
+== fsh-generated\resources\ValueSet-ClasificacionDesenlaceVS.json ==
+== fsh-generated\resources\ValueSet-ClasificacionDesenlaceWHOAEFIVS.json ==
+== fsh-generated\resources\ValueSet-ClasificacionDesenlaceWHONaranjoVS.json ==
+== fsh-generated\resources\ValueSet-ClasificacionDesenlaceWHOUMCVS.json ==
+== fsh-generated\resources\ValueSet-CodPaises.json ==
+== fsh-generated\resources\ValueSet-CodigoMedDRAEnfPreviaVS.json ==
+WARNING: ValueSet.where(id = 'CodigoMedDRAEnfPreviaVS'): Error from server: Unable to provide support for code system https://tools.meddra.org
+== fsh-generated\resources\ValueSet-CodigoMedicamentoVS.json ==
+== fsh-generated\resources\ValueSet-CodigoNoWhoVacunaVS.json ==
+== fsh-generated\resources\ValueSet-CodigoOtroVacunaVS.json ==
+== fsh-generated\resources\ValueSet-CodigoWhoFabricanteVS.json ==
+== fsh-generated\resources\ValueSet-CodigoWhoVacunaVS.json ==
+WARNING: ValueSet.where(id = 'CodigoWhoVacunaVS'): Error from server: Unable to provide support for code system http://who-umc.org.
+== fsh-generated\resources\ValueSet-ComplicacionEmbarazoMedDRAVS.json ==
+WARNING: ValueSet/ComplicacionEmbarazoMedDRAVS: ValueSet.title: value should not start or finish with whitespace 'Códigos...ESAVI '
+WARNING: ValueSet.where(id = 'ComplicacionEmbarazoMedDRAVS'): Error from server: Unable to provide support for code system http://terminology.hl7.org/CodeSystem/mdr
+== fsh-generated\resources\ValueSet-ComplicacionEmbarazoOtroVS.json ==
+WARNING: ValueSet/ComplicacionEmbarazoOtroVS: ValueSet.title: value should not start or finish with whitespace 'Otros...ESAVI '
+== fsh-generated\resources\ValueSet-ComplicacionEmbarazoVS.json ==
+== fsh-generated\resources\ValueSet-DirOrgNotiVS.json ==
+== fsh-generated\resources\ValueSet-DosisVacunaVS.json ==
+== fsh-generated\resources\ValueSet-EnfermedadesPreviasCodificacionVS.json ==
+WARNING: ValueSet.where(id = 'EnfermedadesPreviasCodificacionVS'): Error from server: Unable to provide support for code system http://id.who.int/icd11/mms
+== fsh-generated\resources\ValueSet-EsaviMedDRAVS.json ==
+WARNING: ValueSet.where(id = 'EsaviMedDRAVS'): Error from server: Unable to provide support for code system http://terminology.hl7.org/CodeSystem/mdr
+== fsh-generated\resources\ValueSet-EsaviOtroVS.json ==
+== fsh-generated\resources\ValueSet-EventoAdversoVacunaVS.json ==
+== fsh-generated\resources\ValueSet-FormaFarmaceuticaVS.json ==
+== fsh-generated\resources\ValueSet-GrupoEtnicoVS.json ==
+== fsh-generated\resources\ValueSet-InvestigacionTipoVS.json ==
+== fsh-generated\resources\ValueSet-MedicamentoGenericoVS.json ==
+== fsh-generated\resources\ValueSet-MedicamentoOtroVS.json ==
+== fsh-generated\resources\ValueSet-ModoConfirmacionInfeccionVS.json ==
+== fsh-generated\resources\ValueSet-ModoVerificacionVacunaVS.json ==
+== fsh-generated\resources\ValueSet-NombreComercialMedicamentoVS.json ==
+== fsh-generated\resources\ValueSet-NombreComercialVacunaVS.json ==
+== fsh-generated\resources\ValueSet-ProfesionalNotificadorVS.json ==
+== fsh-generated\resources\ValueSet-RespuestaSiNoNosabeVS.json ==
+== fsh-generated\resources\ValueSet-RespuestaVerdaderoFalsoVS.json ==
+== fsh-generated\resources\ValueSet-SeccionesNotificacionVS.json ==
+== fsh-generated\resources\ValueSet-SistemaClasfCausalidadVS.json ==
+== fsh-generated\resources\ValueSet-SistemasDeCodificacionVS.json ==
+== fsh-generated\resources\ValueSet-SustanciaActivaVS.json ==
+== fsh-generated\resources\ValueSet-ViaAdminMedicamentoVS.json ==

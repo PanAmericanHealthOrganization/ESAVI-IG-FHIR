@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="RespuestaVerdaderoFalsoCS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system <code>http://paho.org/esavi/CodeSystem/RespuestaVerdaderoFalsoCS</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">1<a name="RespuestaVerdaderoFalsoCS-1"> </a></td><td>Verdadero</td></tr><tr><td style="white-space:nowrap">2<a name="RespuestaVerdaderoFalsoCS-2"> </a></td><td>Falso</td></tr></table></div>
+  </text>
+  <url value="http://paho.org/esavi/CodeSystem/RespuestaVerdaderoFalsoCS"/>
+  <version value="0.1.0"/>
+  <name value="RespuestaVerdaderoFalsoCS"/>
+  <title value="Códigos Booleanos"/>
+  <status value="active"/>
+  <date value="2021-03-11T00:00:00-03:00"/>
+  <publisher value="ESAVI -"/>
+  <contact>
+    <name value="ESAVI -"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://covid-19pharmacovigilance.paho.org/resources/updates-on-aefi"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="rizzatodan@paho.org"/>
+    </telecom>
+  </contact>
+  <description value="Códigos respuestas simples Verdadero/Falso"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <content value="complete"/>
+  <count value="2"/>
+  <concept>
+    <code value="1"/>
+    <display value="Verdadero"/>
+  </concept>
+  <concept>
+    <code value="2"/>
+    <display value="Falso"/>
+  </concept>
+</CodeSystem>

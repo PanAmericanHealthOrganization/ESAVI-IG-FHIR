@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="CodigoNoWhoVacunaCS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system <code>http://paho.org/esavi/CodeSystem/CodigoNoWhoVacunaCS</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td></tr></table></div>
+  </text>
+  <url value="http://paho.org/esavi/CodeSystem/CodigoNoWhoVacunaCS"/>
+  <version value="0.1.0"/>
+  <name value="CodigoNoWhoVacunaCS"/>
+  <title value="Código no WHODrug de la Vacuna"/>
+  <status value="active"/>
+  <date value="2021-03-11T00:00:00-03:00"/>
+  <publisher value="ESAVI -"/>
+  <contact>
+    <name value="ESAVI -"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://covid-19pharmacovigilance.paho.org/resources/updates-on-aefi"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="rizzatodan@paho.org"/>
+    </telecom>
+  </contact>
+  <description value="Código no WHODrug de la Vacuna"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <content value="complete"/>
+</CodeSystem>

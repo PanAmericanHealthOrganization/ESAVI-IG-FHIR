@@ -3,7 +3,7 @@
 # │  supported properties, see: https://fshschool.org/sushi/configuration/                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: uv.esavi
-canonical: http://paho.org/esavi
+canonical: https://paho.org/fhir/esavi
 name: ESAVI
 status: draft
 version: 0.1.0

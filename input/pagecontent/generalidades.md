@@ -15,7 +15,7 @@ Al revisar un perfil nos encontramos con la posibilidad de ver múltiples vistas
 
 Esta vista permite ver un resumen del Perfil como de que recurso proviene elementos *mandatorios*, *eliminados* y que deben ser *soportados*. Además, resume las *extensiones* y *slices* generados en el diseño.
 
-![Visión Resumen de un Perfil](../images/Resumen.jpg)
+![Visión Resumen de un Perfil](Resumen.jpg)
 
 
 ##### Vista Diferencial 
@@ -24,7 +24,7 @@ Esta vista permite observar todos aquellos elmentos de un recurso que han sido m
 
 *Por razon de lenguaje, toda traducción de la descripción de un elemento se considera un cambio y figura en esta vista.*
 
-![Visión Diferencial de un Perfil](../images/Diferencial.jpg)
+![Visión Diferencial de un Perfil](../images/MS.png)
 
 
 ##### Vista Snapshot 

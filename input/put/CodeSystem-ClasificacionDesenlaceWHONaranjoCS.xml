@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="ClasificacionDesenlaceWHONaranjoCS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system <code>http://paho.org/esavi/CodeSystem/ClasificacionDesenlaceWHONaranjoCS</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">01<a name="ClasificacionDesenlaceWHONaranjoCS-01"> </a></td><td>Definitivo</td></tr><tr><td style="white-space:nowrap">02<a name="ClasificacionDesenlaceWHONaranjoCS-02"> </a></td><td>Probable</td></tr><tr><td style="white-space:nowrap">03<a name="ClasificacionDesenlaceWHONaranjoCS-03"> </a></td><td>Posible</td></tr><tr><td style="white-space:nowrap">04<a name="ClasificacionDesenlaceWHONaranjoCS-04"> </a></td><td>Improbable</td></tr></table></div>
+  </text>
+  <url value="http://paho.org/esavi/CodeSystem/ClasificacionDesenlaceWHONaranjoCS"/>
+  <version value="0.1.0"/>
+  <name value="ClasificacionDesenlaceWHONaranjoCS"/>
+  <title value="Clasificación de causalidad WHO-Naranjo"/>
+  <status value="active"/>
+  <date value="2021-03-11T00:00:00-03:00"/>
+  <publisher value="ESAVI -"/>
+  <contact>
+    <name value="ESAVI -"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://covid-19pharmacovigilance.paho.org/resources/updates-on-aefi"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="rizzatodan@paho.org"/>
+    </telecom>
+  </contact>
+  <description value="Método de clasificación de causalidad WHO-Naranjo"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <content value="complete"/>
+  <count value="4"/>
+  <concept>
+    <code value="01"/>
+    <display value="Definitivo"/>
+  </concept>
+  <concept>
+    <code value="02"/>
+    <display value="Probable"/>
+  </concept>
+  <concept>
+    <code value="03"/>
+    <display value="Posible"/>
+  </concept>
+  <concept>
+    <code value="04"/>
+    <display value="Improbable"/>
+  </concept>
+</CodeSystem>

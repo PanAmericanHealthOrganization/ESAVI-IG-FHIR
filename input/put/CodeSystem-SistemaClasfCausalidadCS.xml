@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="SistemaClasfCausalidadCS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system <code>http://paho.org/esavi/CodeSystem/SistemaClasfCausalidadCS</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">WHO-UMC<a name="SistemaClasfCausalidadCS-WHO-UMC"> </a></td><td>WHO-UMC</td></tr><tr><td style="white-space:nowrap">WHO-AEFI<a name="SistemaClasfCausalidadCS-WHO-AEFI"> </a></td><td>WHO-AEFI</td></tr><tr><td style="white-space:nowrap">Naranjo<a name="SistemaClasfCausalidadCS-Naranjo"> </a></td><td>Naranjo</td></tr><tr><td style="white-space:nowrap">otro<a name="SistemaClasfCausalidadCS-otro"> </a></td><td>Otro sistema de clasificacion de causalidad</td></tr></table></div>
+  </text>
+  <url value="http://paho.org/esavi/CodeSystem/SistemaClasfCausalidadCS"/>
+  <version value="0.1.0"/>
+  <name value="SistemaClasfCausalidadCS"/>
+  <title value="Tipo de Método de clasificación de causalidad"/>
+  <status value="active"/>
+  <date value="2021-03-11T00:00:00-03:00"/>
+  <publisher value="ESAVI -"/>
+  <contact>
+    <name value="ESAVI -"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://covid-19pharmacovigilance.paho.org/resources/updates-on-aefi"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="rizzatodan@paho.org"/>
+    </telecom>
+  </contact>
+  <description value="Códigos para Tipos de Métodos de Clasificación de Causalidad"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <content value="complete"/>
+  <count value="4"/>
+  <concept>
+    <code value="WHO-UMC"/>
+    <display value="WHO-UMC"/>
+  </concept>
+  <concept>
+    <code value="WHO-AEFI"/>
+    <display value="WHO-AEFI"/>
+  </concept>
+  <concept>
+    <code value="Naranjo"/>
+    <display value="Naranjo"/>
+  </concept>
+  <concept>
+    <code value="otro"/>
+    <display value="Otro sistema de clasificacion de causalidad"/>
+  </concept>
+</CodeSystem>
