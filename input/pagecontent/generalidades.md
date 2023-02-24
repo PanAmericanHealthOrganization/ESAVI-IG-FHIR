@@ -15,7 +15,9 @@ Al revisar un perfil nos encontramos con la posibilidad de ver múltiples vistas
 
 Esta vista permite ver un resumen del Perfil como de que recurso proviene elementos *mandatorios*, *eliminados* y que deben ser *soportados*. Además, resume las *extensiones* y *slices* generados en el diseño.
 
-![Visión Resumen de un Perfil](Resumen.jpg)
+
+![Visión Resumen de un Perfil](Resumen.png)
+
 
 
 ##### Vista Diferencial 
@@ -24,7 +26,9 @@ Esta vista permite observar todos aquellos elmentos de un recurso que han sido m
 
 *Por razon de lenguaje, toda traducción de la descripción de un elemento se considera un cambio y figura en esta vista.*
 
-![Visión Diferencial de un Perfil](../images/MS.png)
+
+![Visión Diferencial de un Perfil](MS.png)
+
 
 
 ##### Vista Snapshot 
@@ -33,7 +37,7 @@ En la vista de la **Snapshot Table**, todos los elementos obligatorios definidos
 
 
 
-![Visión Snapshot de un Perfil](../images/Snap.jpg)
+![Visión Snapshot de un Perfil](Snap.png)
 
 
 ##### Vista Snapshot (Must Support) 
@@ -41,7 +45,7 @@ En la vista de la **Snapshot Table**, todos los elementos obligatorios definidos
 En la vista **Snapshot Table (Must Support)**, todos los elementos presentados en la vista son obligatorios o deben ser compatibles con el perfil.
 
 
-![Visión Snapshot Must Support de un Perfil](../images/SnapMS.jpg)
+![Visión Snapshot Must Support de un Perfil](SnapMS.png)
 
 ### Definición del Conjunto Mínimo de Datos
 <br>
@@ -51,7 +55,7 @@ El CMD definido para cada recurso se deja caracterizado por la bandera **MS** qu
 La existencia de un elemento o ruta con **MS** no determina la obligatoriedad de que un recurso generado contenga el dato. Esto se define mediante la obligatoriedad del dato lo cual **DEBE** estar especificado en la cardinalidad
 <br>
 
-![Visión Must Support de un Perfil](../images/MS.jpg)
+![Visión Must Support de un Perfil](MS.png)
 
 
 ### Cardinalidad
@@ -81,7 +85,7 @@ La vinculación obligatoria a una definición de conjunto de valores significa q
 
 La *vinculación extensible* a una definición de conjunto de valores significa que uno de los códigos del conjunto de valores especificado **SE DEBE USAR** si existe un concepto aplicable, pero si no existe un código adecuado en el conjunto de valores, se **PUEDE** proporcionar un código o códigos alternativos en su lugar. Para *CodeableConcept* se permiten múltiples codificaciones y esta regla se aplica a una de ellas. También en el caso de *CodeableConcept*, si sólo se dispone de texto, se puede utilizar sólo el texto.
 
-![Visión binding de un Perfil](../images/binding.jpg)
+![Visión binding de un Perfil](binding.png)
 
 
 ### Ejemplos
@@ -89,7 +93,7 @@ La *vinculación extensible* a una definición de conjunto de valores significa 
 
 La guía desarrolla una serie de ejemplos por perfil desarrollado. Este ejemplo muestra en código como un sistema hace uso de un perfil para generar un recurso. Estos ejemplos se acceden desde la página ejemplos o desde la lengüeta ejemplo de cada perfil
 
-![Visión ejemplo de un Perfil](../images/ejemplo.jpg)
+![Visión ejemplo de un Perfil](ejemplo.png)
 
 
 Además cada ejemplo viene descrito en 4 formatos:

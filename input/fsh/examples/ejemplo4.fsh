@@ -1,5 +1,5 @@
-Instance: Ejemplo4-Respondido
-Description: "Ejemplo de cuestionario Respondido 4"
+Instance: RespuestaCuestionarioESAVI4
+Description: "Respuesta Cuestionario ESAVI 4"
 InstanceOf: ESAVIQuestionnaireResponse
 Usage: #example
 * meta.versionId = "1"
