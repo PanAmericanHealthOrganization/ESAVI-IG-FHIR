@@ -699,38 +699,6 @@ Description: "Describe las enfermedades previas en un ESAVI codificadas en MedDR
 * ^publisher = "PAHO - Pan American Health Organization"
 * include codes from system $MedDRA
 
-
-ValueSet: DosisVacunaVS
-Id: DosisVacunaVS
-Title: "Dosis vacuna"
-Description:  "Indicador de que dosis se ha administrando"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2021-03-11T00:00:00-03:00"
-* ^contact.name = "OPS"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = ""
-* ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
-* include codes from system DosisVacunaCS
-
-CodeSystem: DosisVacunaCS
-Id: DosisVacunaCS
-Title: "Dosis Vacuna"
-Description:  "Indicador de que dosis se ha administrando"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2021-03-11T00:00:00-03:00"
-* ^contact.name = "OPS"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = ""
-* ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
-* #1 "Primera Dosis"	
-* #2 "Segunda Dosis"
-* #3 "Refuerzo"
-* #4 "Primer Refuerzo"
-* #5 "Segundo Refuerzo"
-
-
 ValueSet: SistemaClasfCausalidadVS
 Id: SistemaClasfCausalidadVS
 Title: "Tipo de Método de clasificación de causalidad"

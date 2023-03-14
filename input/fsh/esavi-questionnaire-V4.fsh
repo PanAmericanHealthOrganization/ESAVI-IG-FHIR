@@ -373,7 +373,7 @@ Usage: #example
 /////////////////////  Grupo datosVacunadoCaso //////////////////////////////////
 * item[+].type = #group
 * item[=].required = true
-* item[=].linkId = "datosVacunadoCaso"
+* item[=].linkId = "datosIdVacunado"
 * item[=].text = "Datos Demográficos de Vacunado que ha generado ESAVI"
 
 
@@ -395,7 +395,7 @@ Usage: #example
 * item[=].item.item[+].type = #string
 * item[=].item.item[=].required = true
 * item[=].item.item[=].linkId = "idPaciente"
-* item[=].item.item[=].text = "UUID de identificación"
+* item[=].item.item[=].text = "UUID de identificación de la persona vacunada/afectada por el ESAVI"
 
 /////////////////////////////
 * item[=].item.item[+].type = #choice
@@ -451,7 +451,7 @@ Usage: #example
 * item[=].item[=].required = false
 * item[=].item[=].repeats = true
 * item[=].item[=].linkId = "antecedentesEnfermedadesPrevias"
-* item[=].item[=].text = "Antecedentes médicos reportados" 
+* item[=].item[=].text = "Antecedentes enfermedades previas" 
 
 /////////////////////////
 * item[=].item[=].item[0].type = #string
@@ -471,7 +471,7 @@ Usage: #example
 * item[=].item[=].item[=].answerValueSet = "EnfermedadesPreviasCodificacionVS"
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "otrosCodigosEnfPrevia"
-* item[=].item[=].item[=].text = "Código CIE-10/CIE-11/Snomed del antecedente médico"
+* item[=].item[=].item[=].text = "Código CIE-10/CIE-11/SNOMED del antecedente médico"
 
 /////////////////////////////////////////////////////////////////////////////////
 /////////////////////  Grupo antecedentesEventosAdversos //////////////////////////////////
@@ -555,6 +555,11 @@ Usage: #example
 * item[=].item[=].linkId = "pacienteEmbarazada"
 * item[=].item[=].text = "Estado de embarazo"
 
+///////////////////// Enable When
+* item[=].item[=].enableWhen[0].question = "sexoPaciente"
+* item[=].item[=].enableWhen[=].operator = #=
+* item[=].item[=].enableWhen[=].answerCoding = #female
+
 //////////////////////////////////
 * item[=].item[=].item[0].type = #boolean
 * item[=].item[=].item[=].required = false
@@ -567,13 +572,49 @@ Usage: #example
 * item[=].item[=].item[=].linkId = "embarazadaMomentoESAVI"
 * item[=].item[=].item[=].text = "Estaba embarazada al momento del ESAVI?"
 
+//////////////////////////////////////MODIFICADO
+* item[=].item[=].item[+].type = #group
+* item[=].item[=].item[=].required = false
+* item[=].item[=].item[=].repeats = false
+* item[=].item[=].item[=].linkId = "pacienteEmbarazada2"
+* item[=].item[=].item[=].text = "Historia obstétrica o de embarazo"
+
+///////////////////// Enable When
+* item[=].item[=].item[=].enableBehavior = #any
+
+* item[=].item[=].item[=].enableWhen[0].question = "embarazadaMomentoVacuna"
+* item[=].item[=].item[=].enableWhen[=].operator = #=
+* item[=].item[=].item[=].enableWhen[=].answerBoolean = true
+
+* item[=].item[=].item[=].enableWhen[+].question = "embarazadaMomentoESAVI"
+* item[=].item[=].item[=].enableWhen[=].operator = #=
+* item[=].item[=].item[=].enableWhen[=].answerBoolean = true
 
 
+* item[=].item[=].item[=].item[+].type = #date
+* item[=].item[=].item[=].item[=].required = false
+* item[=].item[=].item[=].item[=].linkId = "fechaUltimaMenstruacion"
+* item[=].item[=].item[=].item[=].text = "Fecha de la última menstruación de la Paciente"
+
+/////////////////////
+* item[=].item[=].item[=].item[+].type = #date
+* item[=].item[=].item[=].item[=].required = false
+* item[=].item[=].item[=].item[=].linkId = "fechaProbableParto"
+* item[=].item[=].item[=].item[=].text = "Fecha del parto, o fecha probable del parto (calculada)"
+
+* item[=].item[=].item[=].item[+].type = #integer
+* item[=].item[=].item[=].item[=].required = false
+* item[=].item[=].item[=].item[=].linkId = "edadGestacional"
+* item[=].item[=].item[=].item[=].text = "Edad gestacional actual si cursa embarazo o al momento del parto del embrazo mas reciente"
+
+
+//SUBIR
 /////////////////////  Grupo antecedentesEmbarazo //////////////////////////////////
+/*
 * item[=].item[+].type = #group
 * item[=].item[=].required = false
 * item[=].item[=].repeats = false
-* item[=].item[=].linkId = "antecedentesEmbarazo"
+* item[=].item[=].linkId = "pacienteEmbarazada"
 * item[=].item[=].text = "Historia obstétrica o de embarazo"
 
 ///////////////////// Enable When
@@ -596,15 +637,24 @@ Usage: #example
 /////////////////////
 * item[=].item[=].item[+].type = #date
 * item[=].item[=].item[=].required = false
-* item[=].item[=].item[=].linkId = "fechaParto"
+* item[=].item[=].item[=].linkId = "fechaProbableParto"
 * item[=].item[=].item[=].text = "Fecha del parto, o fecha probable del parto (calculada)"
 
 * item[=].item[=].item[+].type = #integer
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "edadGestacional"
 * item[=].item[=].item[=].text = "Edad gestacional actual si cursa embarazo o al momento del parto del embrazo mas reciente"
+*/
+//SUBIR
 
 
+
+/////////////////////
+* item[=].item[=].item[+].type = #choice
+* item[=].item[=].item[=].answerValueSet = "RespuestaSiNoNosabeVS"
+* item[=].item[=].item[=].required = true
+* item[=].item[=].item[=].linkId = "codigoMonitoreoPosteriorVacuna"
+* item[=].item[=].item[=].text = "Código correspondiente a la respuesta a la consulta sobre si se monitoreó paciente una vez vacunada"
 
 /////////////////////////////////////////////////////////////////////////////////
 /////////////////////  Grupo antecedentesFarmacosVacunas //////////////////////////////////
@@ -755,13 +805,13 @@ Usage: #example
 //* item[=].item[=].item[=].answerValueSet = "DosisVacunaVS"
 * item[=].item[=].item[=].required = true
 * item[=].item[=].item[=].linkId = "numeroDosisVacuna"
-* item[=].item[=].item[=].text = "Numero de la dosis"
+* item[=].item[=].item[=].text = "Numero ordinal de la dosis administrada"
 
 /////////////////////
 * item[=].item[=].item[+].type = #string
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "numeroLote"
-* item[=].item[=].item[=].text = "Númer del Lote de la Vacuna administrada"
+* item[=].item[=].item[=].text = "Número del Lote de la Vacuna administrada"
 
 /////////////////////
 * item[=].item[=].item[+].type = #date
@@ -874,6 +924,11 @@ Usage: #example
 * item[=].item[=].item[=].linkId = "nombreESAVI"
 * item[=].item[=].item[=].text = "Nombre del ESAVI"
 
+* item[=].item[=].item[+].type = #integer
+* item[=].item[=].item[=].required = true
+* item[=].item[=].item[=].linkId = "IdentificadorESAVI"
+* item[=].item[=].item[=].text = "Identificador correlativo del ESAVI"
+
 //////////////////////////////////
 * item[=].item[=].item[+].type = #choice
 * item[=].item[=].item[=].answerValueSet = "EsaviMedDRAVS"
@@ -924,53 +979,11 @@ Usage: #example
 * item[=].item[=].enableWhen.answerBoolean = true
 
 
-/////////////////////
-* item[=].item[=].item[0].type = #choice
-* item[=].item[=].item[=].answerValueSet = "RespuestaSiNoNosabeVS"
-* item[=].item[=].item[=].required = true
-* item[=].item[=].item[=].linkId = "codigoEmbarazoDuranteESAVI"
-* item[=].item[=].item[=].text = "Código correspondiente a la respuesta a la consulta sobre la condición de embarazo al momento del ESAVI"
-
-/////////////////////
-* item[=].item[=].item[+].type = #date
-* item[=].item[=].item[=].required = true
-* item[=].item[=].item[=].linkId = "fechaUltimaMenstruacionESAVI"
-* item[=].item[=].item[=].text = "Fecha de la última menstruación de la Paciente"
-
-///////////////////// Enable When
-* item[=].item[=].item[=].enableWhen.question = "embarazadaMomentoVacuna"
-* item[=].item[=].item[=].enableWhen.operator = #=
-* item[=].item[=].item[=].enableWhen.answerBoolean = true
-
-////XXXXXXXXXXXXXXXarriba abajo cambie true
-/////////////////////
-* item[=].item[=].item[+].type = #date
-* item[=].item[=].item[=].required = false
-* item[=].item[=].item[=].linkId = "fechaPartoESAVI"
-* item[=].item[=].item[=].text = "Fecha del parto, o fecha probable del parto (calculada)"
-
-///////////////////// Enable When
-* item[=].item[=].item[=].enableWhen.question = "embarazadaMomentoVacuna"
-* item[=].item[=].item[=].enableWhen.operator = #=
-* item[=].item[=].item[=].enableWhen.answerBoolean = true
-
-/////////////////////
-* item[=].item[=].item[+].type = #choice
-* item[=].item[=].item[=].answerValueSet = "RespuestaSiNoNosabeVS"
-* item[=].item[=].item[=].required = true
-* item[=].item[=].item[=].linkId = "codigoMonitoreoPosteriorVacunaESAVI"
-* item[=].item[=].item[=].text = "Código correspondiente a la respuesta a la consulta sobre si se monitoreó paciente una vez vacunada"
-
-///////////////////// Enable When
-* item[=].item[=].item[=].enableWhen.question = "embarazadaMomentoVacuna"
-* item[=].item[=].item[=].enableWhen.operator = #=
-* item[=].item[=].item[=].enableWhen.answerBoolean = false
-
-/////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
 /////////////////////  Grupo complicacionesEmbarazo //////////////////////////////////
 
 * item[=].item[=].item[+].linkId = "codigoTipoComplicacionESAVI"
-* item[=].item[=].item[=].text = "Código tipo complicacion del embarazo"
+* item[=].item[=].item[=].text = "Código tipo complicacion del embarazo posterior a la administración de vacuna"
 * item[=].item[=].item[=].type = #choice
 * item[=].item[=].item[=].answerValueSet = "ComplicacionEmbarazoVS"
 * item[=].item[=].item[=].required = true
@@ -1132,7 +1145,8 @@ Usage: #example
 * item[=].item[=].item[=].enableWhen.answerBoolean = true
 
 /////////////////////
-* item[=].item[=].item[+].type = #boolean
+* item[=].item[=].item[+].type = #choice
+* item[=].item[=].item[=].answerValueSet = "RespuestaSiNoNosabeVS"
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "autopsia"
 * item[=].item[=].item[=].text = "Determinación si hubo o no Autopsia"
@@ -1163,7 +1177,8 @@ Usage: #example
 * item[=].item[=].item[=].enableWhen.answerBoolean = true
 
 ///////////////////// multiples condiciones
-* item[=].item[=].item[+].type = #boolean
+* item[=].item[=].item[+].type = #choice
+* item[=].item[=].item[=].answerValueSet = "RespuestaSiNoNosabeVS"
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "autopsiaFetal"
 * item[=].item[=].item[=].text = "Determinación si hubo o no Autopsia Fetal"
@@ -1276,3 +1291,13 @@ Usage: #example
 * item[=].item[=].item[=].required = true
 * item[=].item[=].item[=].linkId = "referenciaIdentificadorVacuna"
 * item[=].item[=].item[=].text = "Identificador correlativo de la vacuna"
+
+* item[=].item[=].item[+].type = #integer
+* item[=].item[=].item[=].required = true
+* item[=].item[=].item[=].linkId = "referenciaIdentificadorESAVI"
+* item[=].item[=].item[=].text = "Identificador correlativo del ESAVI"
+
+* item[=].item[=].item[+].type = #boolean
+* item[=].item[=].item[=].required = true
+* item[=].item[=].item[=].linkId = "embarazoDuranteESAVI"
+* item[=].item[=].item[=].text = "Indicador si ESAVI tiene relación con el embarazo"
