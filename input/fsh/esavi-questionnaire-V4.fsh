@@ -444,8 +444,8 @@ Usage: #example
 * item[=].item[0].type = #group
 * item[=].item[=].required = false
 * item[=].item[=].repeats = true
-* item[=].item[=].linkId = "antecedentesEnfermedadesPrevias"
-* item[=].item[=].text = "Antecedentes enfermedades previas" 
+* item[=].item[=].linkId = "ensayoClinico"
+* item[=].item[=].text = "ensayoClinico" 
 
 
 * item[=].item[=].item[0].type = #boolean
