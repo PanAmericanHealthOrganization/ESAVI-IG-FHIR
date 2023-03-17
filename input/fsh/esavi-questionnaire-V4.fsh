@@ -439,10 +439,19 @@ Usage: #example
 * item[=].text = "Antecedentes médicos identificados por el paciente"
 
 //////////////////////////////////
-* item[=].item[0].type = #boolean
+
+
+* item[=].item[0].type = #group
 * item[=].item[=].required = false
-* item[=].item[=].linkId = "ensayoClinicoCovid19"
-* item[=].item[=].text = "Consulta si participó en algún ensayo clínico para COVID-19"
+* item[=].item[=].repeats = true
+* item[=].item[=].linkId = "antecedentesEnfermedadesPrevias"
+* item[=].item[=].text = "Antecedentes enfermedades previas" 
+
+
+* item[=].item[=].item[0].type = #boolean
+* item[=].item[=].item[=].required = false
+* item[=].item[=].item[=].linkId = "ensayoClinicoCovid19"
+* item[=].item[=].item[=].text = "Consulta si participó en algún ensayo clínico para COVID-19"
 
 
 /////////////////////////////////////////////////////////////////////////////////
@@ -572,41 +581,51 @@ Usage: #example
 * item[=].item[=].item[=].linkId = "embarazadaMomentoESAVI"
 * item[=].item[=].item[=].text = "Estaba embarazada al momento del ESAVI?"
 
-//////////////////////////////////////MODIFICADO
-* item[=].item[=].item[+].type = #group
-* item[=].item[=].item[=].required = false
-* item[=].item[=].item[=].repeats = false
-* item[=].item[=].item[=].linkId = "pacienteEmbarazada2"
-* item[=].item[=].item[=].text = "Historia obstétrica o de embarazo"
+//////////////////////////////////
 
+
+
+
+* item[=].item[=].item[+].type = #date
+* item[=].item[=].item[=].required = false
+* item[=].item[=].item[=].linkId = "fechaUltimaMenstruacion"
+* item[=].item[=].item[=].text = "Fecha de la última menstruación de la Paciente"
 ///////////////////// Enable When
 * item[=].item[=].item[=].enableBehavior = #any
-
 * item[=].item[=].item[=].enableWhen[0].question = "embarazadaMomentoVacuna"
 * item[=].item[=].item[=].enableWhen[=].operator = #=
 * item[=].item[=].item[=].enableWhen[=].answerBoolean = true
+* item[=].item[=].item[=].enableWhen[+].question = "embarazadaMomentoESAVI"
+* item[=].item[=].item[=].enableWhen[=].operator = #=
+* item[=].item[=].item[=].enableWhen[=].answerBoolean = true
 
+/////////////
+* item[=].item[=].item[+].type = #date
+* item[=].item[=].item[=].required = false
+* item[=].item[=].item[=].linkId = "fechaProbableParto"
+* item[=].item[=].item[=].text = "Fecha del parto, o fecha probable del parto (calculada)"
+///////////////////// Enable When
+* item[=].item[=].item[=].enableBehavior = #any
+* item[=].item[=].item[=].enableWhen[0].question = "embarazadaMomentoVacuna"
+* item[=].item[=].item[=].enableWhen[=].operator = #=
+* item[=].item[=].item[=].enableWhen[=].answerBoolean = true
 * item[=].item[=].item[=].enableWhen[+].question = "embarazadaMomentoESAVI"
 * item[=].item[=].item[=].enableWhen[=].operator = #=
 * item[=].item[=].item[=].enableWhen[=].answerBoolean = true
 
 
-* item[=].item[=].item[=].item[+].type = #date
-* item[=].item[=].item[=].item[=].required = false
-* item[=].item[=].item[=].item[=].linkId = "fechaUltimaMenstruacion"
-* item[=].item[=].item[=].item[=].text = "Fecha de la última menstruación de la Paciente"
-
-/////////////////////
-* item[=].item[=].item[=].item[+].type = #date
-* item[=].item[=].item[=].item[=].required = false
-* item[=].item[=].item[=].item[=].linkId = "fechaProbableParto"
-* item[=].item[=].item[=].item[=].text = "Fecha del parto, o fecha probable del parto (calculada)"
-
-* item[=].item[=].item[=].item[+].type = #integer
-* item[=].item[=].item[=].item[=].required = false
-* item[=].item[=].item[=].item[=].linkId = "edadGestacional"
-* item[=].item[=].item[=].item[=].text = "Edad gestacional actual si cursa embarazo o al momento del parto del embrazo mas reciente"
-
+* item[=].item[=].item[+].type = #integer
+* item[=].item[=].item[=].required = false
+* item[=].item[=].item[=].linkId = "edadGestacional"
+* item[=].item[=].item[=].text = "Edad gestacional actual si cursa embarazo o al momento del parto del embrazo mas reciente"
+///////////////////// Enable When
+* item[=].item[=].item[=].enableBehavior = #any
+* item[=].item[=].item[=].enableWhen[0].question = "embarazadaMomentoVacuna"
+* item[=].item[=].item[=].enableWhen[=].operator = #=
+* item[=].item[=].item[=].enableWhen[=].answerBoolean = true
+* item[=].item[=].item[=].enableWhen[+].question = "embarazadaMomentoESAVI"
+* item[=].item[=].item[=].enableWhen[=].operator = #=
+* item[=].item[=].item[=].enableWhen[=].answerBoolean = true
 
 //SUBIR
 /////////////////////  Grupo antecedentesEmbarazo //////////////////////////////////
