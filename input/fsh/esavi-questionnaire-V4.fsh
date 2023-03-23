@@ -305,7 +305,7 @@ Usage: #example
 * item[=].item[=].text = "Datos de quién y donde se realiza la notificación"
 
 * item[=].item[=].item[0].type = #choice
-* item[=].item[=].item[=].answerValueSet = "CodPaises"
+* item[=].item[=].item[=].answerValueSet = "https://paho.org/fhir/esavi/ValueSet/CodPaises"
 * item[=].item[=].item[=].required = true
 * item[=].item[=].item[=].linkId = "paisOrigen-Reg"
 * item[=].item[=].item[=].text = "País en donde se originó el Registro"
@@ -316,7 +316,7 @@ Usage: #example
 * item[=].item[=].item[=].text = "Nombre de la institución del nivel local que realiza la notificación primaria."
 
 * item[=].item[=].item[+].type = #choice
-* item[=].item[=].item[=].answerValueSet = "DirOrgNotiVS"
+* item[=].item[=].item[=].answerValueSet = "https://paho.org/fhir/esavi/ValueSet/DirOrgNotiVS"
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "codigoDireccionOrganizacion"
 * item[=].item[=].item[=].text = "Código del Nivel Geográfico Subnacional de la Ubicación de la Institución que Notifica"
@@ -329,7 +329,7 @@ Usage: #example
 
 
 * item[=].item[=].item[+].type = #choice
-* item[=].item[=].item[=].answerValueSet = "ProfesionalNotificadorVS"
+* item[=].item[=].item[=].answerValueSet = "https://paho.org/fhir/esavi/ValueSet/ProfesionalNotificadorVS"
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "codigoProfesionNotificador"
 * item[=].item[=].item[=].text = "Codigo de la profesión del notificador"
@@ -399,7 +399,7 @@ Usage: #example
 
 /////////////////////////////
 * item[=].item.item[+].type = #choice
-* item[=].item.item[=].answerValueSet = "DirOrgNotiVS"
+* item[=].item.item[=].answerValueSet = "https://paho.org/fhir/esavi/ValueSet/DirOrgNotiVS"
 * item[=].item.item[=].required = false
 * item[=].item.item[=].linkId = "codigoResidenciaHabitual"
 * item[=].item.item[=].text = "Codigo Nivel Geográfico Subnacional de la Residencia Habitual de la Persona afectada por el ESAVI"
@@ -470,14 +470,14 @@ Usage: #example
 
 /////////////////////////////
 * item[=].item[=].item[+].type = #choice
-* item[=].item[=].item[=].answerValueSet = "CodigoMedDRAEnfPreviaVS"
+* item[=].item[=].item[=].answerValueSet = "https://paho.org/fhir/esavi/ValueSet/CodigoMedDRAEnfPreviaVS"
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "codigoMedDRAEnfPrevia"
 * item[=].item[=].item[=].text = "Código MedDRA del antecedente médico"
 
 /////////////////////////////////
 * item[=].item[=].item[+].type = #choice
-* item[=].item[=].item[=].answerValueSet = "EnfermedadesPreviasCodificacionVS"
+* item[=].item[=].item[=].answerValueSet = "https://paho.org/fhir/esavi/ValueSet/EnfermedadesPreviasCodificacionVS"
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "otrosCodigosEnfPrevia"
 * item[=].item[=].item[=].text = "Código CIE-10/CIE-11/SNOMED del antecedente médico"
@@ -492,21 +492,21 @@ Usage: #example
 
 /////////////////////////////
 * item[=].item[=].item[0].type = #choice
-* item[=].item[=].item[=].answerValueSet = "RespuestaSiNoNosabeVS"
+* item[=].item[=].item[=].answerValueSet = "https://paho.org/fhir/esavi/ValueSet/RespuestaSiNoNosabeVS"
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "antecedentesAdvSimilar"
 * item[=].item[=].item[=].text = "Antecedente de eventos adversos similares al actual"
 
 ////////////////////////////
 * item[=].item[=].item[+].type = #choice
-* item[=].item[=].item[=].answerValueSet = "RespuestaSiNoNosabeVS"
+* item[=].item[=].item[=].answerValueSet = "https://paho.org/fhir/esavi/ValueSet/RespuestaSiNoNosabeVS"
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "alergiaMedicamentos"
 * item[=].item[=].item[=].text = "Antecedente de reacciones alérgicas a medicamentos"
 
 //////////////////////////////////
 * item[=].item[=].item[+].type = #choice
-* item[=].item[=].item[=].answerValueSet = "RespuestaSiNoNosabeVS"
+* item[=].item[=].item[=].answerValueSet = "https://paho.org/fhir/esavi/ValueSet/RespuestaSiNoNosabeVS"
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "alergiaVacunas"
 * item[=].item[=].item[=].text = "Antecedente de reacciones alérgicas a otras vacunas"
@@ -522,14 +522,14 @@ Usage: #example
 
 //////////////////////////////////
 * item[=].item[=].item[0].type = #choice
-* item[=].item[=].item[=].answerValueSet = "RespuestaSiNoNosabeVS"
+* item[=].item[=].item[=].answerValueSet = "https://paho.org/fhir/esavi/ValueSet/RespuestaSiNoNosabeVS"
 * item[=].item[=].item[=].required = true
 * item[=].item[=].item[=].linkId = "diagnosticoprevioSarsCov2"
 * item[=].item[=].item[=].text = "Antecedente de diagnóstico de infección por SARS-CoV-2 (Si/No/No Sabe)"
 
 //////////////////////////////////
 * item[=].item[=].item[+].type = #choice
-* item[=].item[=].item[=].answerValueSet = "RespuestaSiNoNosabeVS"
+* item[=].item[=].item[=].answerValueSet = "https://paho.org/fhir/esavi/ValueSet/RespuestaSiNoNosabeVS"
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "asintomaticoSars"
 * item[=].item[=].item[=].text = "Diagnóstico de Covid-19 sin síntomas (Si/No/No Sabe)"
@@ -542,7 +542,7 @@ Usage: #example
 
 //////////////////////////////////
 * item[=].item[=].item[+].type = #choice
-* item[=].item[=].item[=].answerValueSet = "ModoConfirmacionInfeccionVS"
+* item[=].item[=].item[=].answerValueSet = "https://paho.org/fhir/esavi/ValueSet/ModoConfirmacionInfeccionVS"
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "tipoConfirmacionCovid19"
 * item[=].item[=].item[=].text = "Tipo de confirmación de diagnóstico COVID-19"
@@ -670,7 +670,7 @@ Usage: #example
 
 /////////////////////
 * item[=].item[=].item[+].type = #choice
-* item[=].item[=].item[=].answerValueSet = "RespuestaSiNoNosabeVS"
+* item[=].item[=].item[=].answerValueSet = "https://paho.org/fhir/esavi/ValueSet/RespuestaSiNoNosabeVS"
 * item[=].item[=].item[=].required = true
 * item[=].item[=].item[=].linkId = "codigoMonitoreoPosteriorVacuna"
 * item[=].item[=].item[=].text = "Código correspondiente a la respuesta a la consulta sobre si se monitoreó paciente una vez vacunada"
@@ -699,7 +699,7 @@ Usage: #example
 
 ///////////////////// OK
 * item[=].item[=].item[+].type = #choice
-* item[=].item[=].item[=].answerValueSet = "SistemasDeCodificacionVS"
+* item[=].item[=].item[=].answerValueSet = "https://paho.org/fhir/esavi/ValueSet/SistemasDeCodificacionVS"
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "sistemaDeCodificacionParaNombreNormalizadoMedicamento"
 * item[=].item[=].item[=].text = "Sistema de codificacion"
@@ -716,7 +716,7 @@ Usage: #example
 * item[=].item[=].item[+].type = #choice
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "codigoMedicamento"
-* item[=].item[=].item[=].answerValueSet = "CodigoMedicamentoVS"
+* item[=].item[=].item[=].answerValueSet = "https://paho.org/fhir/esavi/ValueSet/CodigoMedicamentoVS"
 * item[=].item[=].item[=].text = "Código WHODrug/SCT/CIE-11/ATC del medicamento consumido por el paciente"
 
 //////////////////////////////////
@@ -727,7 +727,7 @@ Usage: #example
 
 //////////////////////////////////
 * item[=].item[=].item[+].type = #choice
-* item[=].item[=].item[=].answerValueSet = "FormaFarmaceuticaVS"
+* item[=].item[=].item[=].answerValueSet = "https://paho.org/fhir/esavi/ValueSet/FormaFarmaceuticaVS"
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "codigoFormaFarmaceutica"
 * item[=].item[=].item[=].text = "Código de la forma farmaceutica del medicamento"
@@ -741,7 +741,7 @@ Usage: #example
 
 //////////////////////////////////
 * item[=].item[=].item[+].type = #choice
-* item[=].item[=].item[=].answerValueSet = "ViaAdminMedicamentoVS"
+* item[=].item[=].item[=].answerValueSet = "https://paho.org/fhir/esavi/ValueSet/ViaAdminMedicamentoVS"
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "codigoViaAdministracion"
 * item[=].item[=].item[=].text = "Código Via administración del medicamento"
@@ -771,7 +771,7 @@ Usage: #example
 
 ///////////////////// OK
 * item[=].item[=].item[+].type = #choice
-* item[=].item[=].item[=].answerValueSet = "SistemasDeCodificacionVS"
+* item[=].item[=].item[=].answerValueSet = "https://paho.org/fhir/esavi/ValueSet/SistemasDeCodificacionVS"
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "sistemaDeCodificacionParaNombreNormalizadoVacuna"
 * item[=].item[=].item[=].text = "Sistema de codificacion"
@@ -792,7 +792,7 @@ Usage: #example
 
 ///////////////////// OK
 * item[=].item[=].item[+].type = #choice
-* item[=].item[=].item[=].answerValueSet = "CodigoWhoVacunaVS"
+* item[=].item[=].item[=].answerValueSet = "https://paho.org/fhir/esavi/ValueSet/CodigoWhoVacunaVS"
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "codigoVacunaWHODrug"
 * item[=].item[=].item[=].text = "Código WHODrug de la vacuna"
@@ -800,7 +800,7 @@ Usage: #example
 /////////////////////////////////////////////////////////////////////////////////
 /////////////////////  Grupo codigoVacunaOtro //////////////////////////////////
 * item[=].item[=].item[+].type = #choice
-* item[=].item[=].item[=].answerValueSet = "CodigoNoWhoVacunaVS"
+* item[=].item[=].item[=].answerValueSet = "https://paho.org/fhir/esavi/ValueSet/CodigoNoWhoVacunaVS"
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "codigoVacunaOtro"
 * item[=].item[=].item[=].text = "Código no WHODrug de la Vacuna"
@@ -813,7 +813,7 @@ Usage: #example
 
 /////////////////////
 * item[=].item[=].item[+].type = #choice
-* item[=].item[=].item[=].answerValueSet = "CodigoWhoFabricanteVS"
+* item[=].item[=].item[=].answerValueSet = "https://paho.org/fhir/esavi/ValueSet/CodigoWhoFabricanteVS"
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "codigoFabricanteWHODrug"
 * item[=].item[=].item[=].text = "Nombre del fabricante o titular del registro sanitario registrado en algún estándar farmacéutico del país. Si hay más de uno se prefiere WHO Drug."
@@ -821,7 +821,7 @@ Usage: #example
 ///////////////////// dosis de vacuna con valor maximo y mínimo
 
 * item[=].item[=].item[+].type = #integer
-//* item[=].item[=].item[=].answerValueSet = "DosisVacunaVS"
+//* item[=].item[=].item[=].answerValueSet = "https://paho.org/fhir/esavi/ValueSet/DosisVacunaVS"
 * item[=].item[=].item[=].required = true
 * item[=].item[=].item[=].linkId = "numeroDosisVacuna"
 * item[=].item[=].item[=].text = "Numero ordinal de la dosis administrada"
@@ -886,7 +886,7 @@ Usage: #example
 
 
 * item[=].item[=].item[+].type = #choice
-* item[=].item[=].item[=].answerValueSet = "DirOrgNotiVS"
+* item[=].item[=].item[=].answerValueSet = "https://paho.org/fhir/esavi/ValueSet/DirOrgNotiVS"
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "codigoDireccionVacunatorio"
 * item[=].item[=].item[=].text = "Código del nivel geográfico subnacional de la ubicación de la institución de salud en la que se administró la vacuna"
@@ -898,7 +898,7 @@ Usage: #example
 
 /////////////////////
 * item[=].item[=].item[+].type = #choice
-* item[=].item[=].item[=].answerValueSet = "ModoVerificacionVacunaVS"
+* item[=].item[=].item[=].answerValueSet = "https://paho.org/fhir/esavi/ValueSet/ModoVerificacionVacunaVS"
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "codigoMecanismoVerificacion"
 * item[=].item[=].item[=].text = "Código del mecanismo de verificación de vacuna colocada"
@@ -950,14 +950,14 @@ Usage: #example
 
 //////////////////////////////////
 * item[=].item[=].item[+].type = #choice
-* item[=].item[=].item[=].answerValueSet = "EsaviMedDRAVS"
+* item[=].item[=].item[=].answerValueSet = "https://paho.org/fhir/esavi/ValueSet/EsaviMedDRAVS"
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "codigoESAVIMedDRA"
 * item[=].item[=].item[=].text = "Código MedDRA del Evento Adverso notificado"
 
 /////////////////
 * item[=].item[=].item[+].type = #choice
-* item[=].item[=].item[=].answerValueSet = "EsaviOtroVS"
+* item[=].item[=].item[=].answerValueSet = "https://paho.org/fhir/esavi/ValueSet/EsaviOtroVS"
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "codigoESAVIOtro"
 * item[=].item[=].item[=].text = "Código no MedDRA de la reacción adversa generada por la vacuna"
@@ -1004,7 +1004,7 @@ Usage: #example
 * item[=].item[=].item[+].linkId = "codigoTipoComplicacionESAVI"
 * item[=].item[=].item[=].text = "Código tipo complicacion del embarazo posterior a la administración de vacuna"
 * item[=].item[=].item[=].type = #choice
-* item[=].item[=].item[=].answerValueSet = "ComplicacionEmbarazoVS"
+* item[=].item[=].item[=].answerValueSet = "https://paho.org/fhir/esavi/ValueSet/ComplicacionEmbarazoVS"
 * item[=].item[=].item[=].required = true
 
 /////////////////////
@@ -1014,14 +1014,14 @@ Usage: #example
 * item[=].item[=].item[=].text = "Descripción de la Complicación"
 /////////////////////
 * item[=].item[=].item[+].type = #choice
-* item[=].item[=].item[=].answerValueSet = "ComplicacionEmbarazoMedDRAVS"
+* item[=].item[=].item[=].answerValueSet = "https://paho.org/fhir/esavi/ValueSet/ComplicacionEmbarazoMedDRAVS"
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "codigoMedDRAComplicacionEmbarazoESAVI"
 * item[=].item[=].item[=].text = "Código MedDRA de la complicación del embarazo"
 
 ////////////////////
 * item[=].item[=].item[+].type = #choice
-* item[=].item[=].item[=].answerValueSet = "ComplicacionEmbarazoOtroVS"
+* item[=].item[=].item[=].answerValueSet = "https://paho.org/fhir/esavi/ValueSet/ComplicacionEmbarazoOtroVS"
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "otrosCodigosComplicacionEmbarazoESAVI"
 * item[=].item[=].item[=].text = "Código SNOMED-CT/CIE-10/CIE-11 de la complicación del embarazo"
@@ -1148,7 +1148,7 @@ Usage: #example
 
 /////////////////////
 * item[=].item[=].item[0].type = #choice
-* item[=].item[=].item[=].answerValueSet = "ClasificacionDesenlaceVS"
+* item[=].item[=].item[=].answerValueSet = "https://paho.org/fhir/esavi/ValueSet/ClasificacionDesenlaceVS"
 * item[=].item[=].item[=].required = true
 * item[=].item[=].item[=].linkId = "codDesenlaceESAVI"
 * item[=].item[=].item[=].text = "Código Desenlace ESAVI"
@@ -1165,7 +1165,7 @@ Usage: #example
 
 /////////////////////
 * item[=].item[=].item[+].type = #choice
-* item[=].item[=].item[=].answerValueSet = "RespuestaSiNoNosabeVS"
+* item[=].item[=].item[=].answerValueSet = "https://paho.org/fhir/esavi/ValueSet/RespuestaSiNoNosabeVS"
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "autopsia"
 * item[=].item[=].item[=].text = "Determinación si hubo o no Autopsia"
@@ -1197,7 +1197,7 @@ Usage: #example
 
 ///////////////////// multiples condiciones
 * item[=].item[=].item[+].type = #choice
-* item[=].item[=].item[=].answerValueSet = "RespuestaSiNoNosabeVS"
+* item[=].item[=].item[=].answerValueSet = "https://paho.org/fhir/esavi/ValueSet/RespuestaSiNoNosabeVS"
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "autopsiaFetal"
 * item[=].item[=].item[=].text = "Determinación si hubo o no Autopsia Fetal"
@@ -1234,7 +1234,7 @@ Usage: #example
 
 /////////////////////  s
 //* item[=].item[=].item[+].type = #choice
-//* item[=].item[=].item[=].answerValueSet = "//EsaviClasificaciónCausalidad"
+//* item[=].item[=].item[=].answerValueSet = "https://paho.org/fhir/esavi/ValueSet/EsaviClasificaciónCausalidad"
 //* item[=].item[=].item[=].required = true
 //* item[=].item[=].item[=].linkId = "sistemaclasfcausalidadESAVI"
 //* item[=].item[=].item[=].text = "Método de clasificación de causalidad del ESAVI"
@@ -1242,7 +1242,7 @@ Usage: #example
 ////////////////*******************************
 ///////////////////// 
 * item[=].item[=].item[+].type = #choice
-* item[=].item[=].item[=].answerValueSet = "SistemaClasfCausalidadVS"
+* item[=].item[=].item[=].answerValueSet = "https://paho.org/fhir/esavi/ValueSet/SistemaClasfCausalidadVS"
 * item[=].item[=].item[=].required = true
 * item[=].item[=].item[=].linkId = "sistemaClasfcausalidad"
 * item[=].item[=].item[=].text = "Método de clasificación de causalidad"
@@ -1271,7 +1271,7 @@ Usage: #example
 
 /////////////////////Causalidad AEFI
 * item[=].item[=].item[+].type = #choice
-* item[=].item[=].item[=].answerValueSet = "ClasificacionDesenlaceWHOAEFIVS"
+* item[=].item[=].item[=].answerValueSet = "https://paho.org/fhir/esavi/ValueSet/ClasificacionDesenlaceWHOAEFIVS"
 * item[=].item[=].item[=].required = true
 * item[=].item[=].item[=].linkId = "clasificacionDeCausalidadWHOAEFI"
 * item[=].item[=].item[=].text = "Clasificación de causalidad según la metodología WHO AEFI"
@@ -1283,7 +1283,7 @@ Usage: #example
 
 /////////////////////UMC
 * item[=].item[=].item[+].type = #choice
-* item[=].item[=].item[=].answerValueSet = "ClasificacionDesenlaceWHOUMCVS"
+* item[=].item[=].item[=].answerValueSet = "https://paho.org/fhir/esavi/ValueSet/ClasificacionDesenlaceWHOUMCVS"
 * item[=].item[=].item[=].required = true
 * item[=].item[=].item[=].linkId = "clasificacionDeCausalidadWHOUMC"
 * item[=].item[=].item[=].text = "Clasificación de causalidad según la metodología WHO UMC"
@@ -1295,7 +1295,7 @@ Usage: #example
 
 /////////////////////UMC
 * item[=].item[=].item[+].type = #choice
-* item[=].item[=].item[=].answerValueSet = "ClasificacionDesenlaceNaranjoVS"
+* item[=].item[=].item[=].answerValueSet = "https://paho.org/fhir/esavi/ValueSet/ClasificacionDesenlaceNaranjoVS"
 * item[=].item[=].item[=].required = true
 * item[=].item[=].item[=].linkId = "clasificacionDeCausalidadNaranjo"
 * item[=].item[=].item[=].text = "Clasificación de causalidad según la metodología Naranjo"
