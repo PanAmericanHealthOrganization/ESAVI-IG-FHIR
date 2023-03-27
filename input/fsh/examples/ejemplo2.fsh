@@ -5,7 +5,7 @@ Usage: #example
 * meta.versionId = "1"
 * meta.lastUpdated = "2022-03-29T18:36:58.286+00:00"
 * meta.source = "#wSqGUzJhBLkG4WGh"
-* questionnaire = "https://www.paho.org/es/temas/seguridad-vacunas/fhir/ig/esavi/ESAVI-Questionnaire"
+* questionnaire = "https://paho.org/fhir/esavi/Questionnaire/CuestionarioESAVI"
 * status = #completed
 * authored = "2022-03-10T10:20:00Z"
 * item[0].linkId = "datosNotificacionGeneral"
