@@ -11,8 +11,10 @@ import urllib.parse
 
 
 parser = argparse.ArgumentParser()
-parser.add_argument("-p", "--pathtodefinitions", help="Ruta a Definiciones" ,required=True)
-parser.add_argument("-b", "--baseurl", help="Base Url del servidor FHIR", required=True)
+parser.add_argument("-p", "--pathtodefinitions",
+                    help="Ruta a Definiciones", required=True)
+parser.add_argument("-b", "--baseurl",
+                    help="Base Url del servidor FHIR", required=True)
 parser.add_argument("-o",
                     "--operation",
                     choices=['delete', 'create', 'verify'],
@@ -28,7 +30,8 @@ headers = {
 
 
 def cargador(path, base):
-    json_files = [pos_json for pos_json in os.listdir(path) if pos_json.endswith('.json')]
+    json_files = [pos_json for pos_json in os.listdir(
+        path) if pos_json.endswith('.json')]
     json_files.sort()
     for file in json_files:
         with open(path + '/' + file, encoding="utf8") as json_file:
@@ -45,7 +48,8 @@ def cargador(path, base):
 
 
 def eliminar(path, base):
-    json_files = [pos_json for pos_json in os.listdir(path) if pos_json.endswith('.json')]
+    json_files = [pos_json for pos_json in os.listdir(
+        path) if pos_json.endswith('.json')]
     json_files.sort()
     for file in json_files:
         with open(path + '/' + file, encoding="utf8") as json_file:
@@ -62,7 +66,8 @@ def eliminar(path, base):
 
 
 def verify(path, base):
-    json_files = [pos_json for pos_json in os.listdir(path) if pos_json.endswith('.json')]
+    json_files = [pos_json for pos_json in os.listdir(
+        path) if pos_json.endswith('.json')]
     json_files.sort()
     for file in json_files:
         with open(path + '/' + file, encoding="utf8") as json_file:

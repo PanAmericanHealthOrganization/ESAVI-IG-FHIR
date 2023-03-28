@@ -443,7 +443,7 @@ Usage: #example
 
 * item[=].item[0].type = #group
 * item[=].item[=].required = false
-* item[=].item[=].repeats = true
+* item[=].item[=].repeats = false
 * item[=].item[=].linkId = "ensayoClinico"
 * item[=].item[=].text = "ensayoClinico" 
 
