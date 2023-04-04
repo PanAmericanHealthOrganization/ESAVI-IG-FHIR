@@ -4,7 +4,8 @@ feedback:
     type: "googleform"   
     label: "Comentarios IG"   
     #formUrl: https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url
-    formUrl: https://docs.google.com/forms/d/e/1FAIpQLSeIfEFhhE_rCvqE9QiKjhHsKsjBX0vhzFzUvQCdRQlezEi_2Q/viewform?usp=pp_url
+    #formUrl: https://docs.google.com/forms/d/e/1FAIpQLSeIfEFhhE_rCvqE9QiKjhHsKsjBX0vhzFzUvQCdRQlezEi_2Q/viewform?usp=pp_url
+    formUrl: https://docs.google.com/forms/d/e/1FAIpQLSdlp9-wCnxYL3Sf823WdFWg7IX9r7ycJxUO8ys66fJrq2uEPw/viewform?usp=pp_url
     dashboard: 
       #url: https://github.com/worldhealthorganization/ddcc/projects/1
       url: https://github.com/PanAmericanHealthOrganization/OPS-ESAVI
@@ -16,3 +17,4 @@ feedback:
     #- fieldId: "247644557"
     - fieldId: "823462654"
       variableName: "sectionName"
+
