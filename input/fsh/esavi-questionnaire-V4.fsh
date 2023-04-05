@@ -1095,13 +1095,14 @@ Usage: #example
 * item[=].item[=].item[=].linkId = "gravAborto"
 * item[=].item[=].item[=].text = "Aborto"
 
-* item[=].item[=].item[=].enableWhen.question = "embarazadaMomentoVacuna"
-* item[=].item[=].item[=].enableWhen.operator = #=
-* item[=].item[=].item[=].enableWhen.answerBoolean = true
+* item[=].item[=].enableBehavior = #all
+* item[=].item[=].item[=].enableWhen[0].question = "embarazadaMomentoVacuna"
+* item[=].item[=].item[=].enableWhen[=].operator = #=
+* item[=].item[=].item[=].enableWhen[=].answerBoolean = true
 
-* item[=].item[=].item[=].enableWhen.question = "embarazadaMomentoESAVI"
-* item[=].item[=].item[=].enableWhen.operator = #=
-* item[=].item[=].item[=].enableWhen.answerBoolean = true
+* item[=].item[=].item[=].enableWhen[+].question = "embarazadaMomentoESAVI"
+* item[=].item[=].item[=].enableWhen[=].operator = #=
+* item[=].item[=].item[=].enableWhen[=].answerBoolean = true
 
 
 /////////////////////
@@ -1110,13 +1111,13 @@ Usage: #example
 * item[=].item[=].item[=].linkId = "gravMuerteFetal"
 * item[=].item[=].item[=].text = "Muerte fetal"
 
-* item[=].item[=].item[=].enableWhen.question = "embarazadaMomentoVacuna"
-* item[=].item[=].item[=].enableWhen.operator = #=
-* item[=].item[=].item[=].enableWhen.answerBoolean = true
+* item[=].item[=].item[=].enableWhen[0].question = "embarazadaMomentoVacuna"
+* item[=].item[=].item[=].enableWhen[=].operator = #=
+* item[=].item[=].item[=].enableWhen[=].answerBoolean = true
 
-* item[=].item[=].item[=].enableWhen.question = "embarazadaMomentoESAVI"
-* item[=].item[=].item[=].enableWhen.operator = #=
-* item[=].item[=].item[=].enableWhen.answerBoolean = true
+* item[=].item[=].item[=].enableWhen[+].question = "embarazadaMomentoESAVI"
+* item[=].item[=].item[=].enableWhen[=].operator = #=
+* item[=].item[=].item[=].enableWhen[=].answerBoolean = true
 
 
 /////////////////////
