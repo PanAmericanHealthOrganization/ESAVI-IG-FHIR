@@ -3,6 +3,8 @@ Alias: $ProfesionalNotificadorCS = http://paho.org/esavi/CodeSystem/ProfesionalN
 Alias: $MedDRA = http://terminology.hl7.org/CodeSystem/MDRSPA
 Alias: $ICD11mms = http://id.who.int/icd11/mms
 Alias: $ICD10 = http://hl7.org/fhir/sid/icd-10
+Alias: SCTSpa = http://snomed.info/sct/449081005
+Alias: ICD11mms = http://id.who.int/icd/entity
 
 ValueSet: ViaAdminMedicamentoVS
 Id: ViaAdminMedicamentoVS
@@ -40,7 +42,15 @@ ValueSet: ComplicacionEmbarazoMedDRAVS
 Id: ComplicacionEmbarazoMedDRAVS
 Title: "Códigos MEDDRA Complicaciones en Embarazo ESAVI "
 Description: "Codificacion Estandarizada de diagnóticos de complicaciones de embarazo mediante códigos MedDRA"
-* include codes from system http://terminology.hl7.org/CodeSystem/mdr
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2021-03-11T00:00:00-03:00"
+* ^contact.name = "OPS"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = ""
+* ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
+
+* include codes from system http://terminology.hl7.org/CodeSystem/MDRSPA
 
 ValueSet: ComplicacionEmbarazoOtroVS
 Id: ComplicacionEmbarazoOtroVS
@@ -139,7 +149,7 @@ Description: "Codificación Estandarizda del código de las Vacunas según WhoDr
 * ^contact.telecom.system = #email
 * ^contact.telecom.value = ""
 * ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
-* include codes from system http://who-umc.org. 
+* include codes from system http://who-umc.org
 
 
 ValueSet: CodigoOtroVacunaVS
@@ -200,7 +210,54 @@ Description: "Describe las enfermedades previas en un ESAVI codificadas en CIE10
 * include codes from system http://hl7.org/fhir/sid/icd-10
 * include codes from system http://snomed.info/sct where concept is-a  #391103005 "evento adverso posterior a tratamiento complementario (trastorno)"
 
+ValueSet: CodigoNoWhoVacunaVS //Oks con las vacunas de Covid, no usa mas Codesystem
+Id: CodigoNoWhoVacunaVS
+Title: "Código no WHODrug de la Vacuna"
+Description: "Código no WHODrug de la Vacuna"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2021-03-11T00:00:00-03:00"
+* ^contact.name = "OPS"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = ""
+* ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
+* ICD11mms#X68M6 "vacunas COVID-19"
+* ICD11mms#XM1AU2 "Sinopharm WIBP-CorV"
+* ICD11mms#XM1G90 "Covaxin"
+* ICD11mms#XM1NL1  "Vacunas contra COVID-19, virus inactivado"
+* ICD11mms#XM3DT5 "Vacuna COVID-19 Moderna"
+* ICD11mms#XM4YL8 "Vacuna contra COVID-19 AstraZeneca"
+* ICD11mms#XM5JC5 "Vacunas contra COVID-19, subunidad proteica del virus"
+* ICD11mms#XM5QM6 "Sputnik-Light"
+* ICD11mms#XM5ZJ4 "Gam-Covid-Vac"
+* ICD11mms#XM6AT1 "COVID-19 vaccine, DNA based"
+* ICD11mms#XM6QV1 "Vacuna contra COVID-19 Janssen"
+* ICD11mms#XM6SZ8  "EpiVacCorona"
+* ICD11mms#XM7HT3 "CoronaVac®"
+* ICD11mms#XM8NQ0 "Comirnaty®"
+* ICD11mms#XM97N6 "QazVac"
+* ICD11mms#XM97T2 "Covishield®"
+* ICD11mms#XM9QW8 "Vacunas contra COVID-19, vector viral no replicante"
+* SCTSpa#1157024006 "vacuna virus entero inactivado contra SARS-CoV-2"
+* SCTSpa#1187593009 "vacuna de plásmido de ADN de SARS-CoV-2 que codifica proteína de espiga"
+* SCTSpa#28531000087107 "vacuna contra COVID-19"
+* SCTSpa#31311000087104 "CoronaVac vacuna COVID-19 virus entero inactivado"
+* SCTSpa#31431000087100 "CONVIDECIA vacuna COVID-19 vector viral no replicante"
+* SCTSpa#33201000087108 "SINOPHARM - WIBP vacuna COVID-19 virus entero inactivado"
+* SCTSpa#33211000087105 "COVAXIN vacuna COVID-19 virus entero inactivado"
+* SCTSpa#33391000087109 "ABDALA vacuna COVID-19 proteína de espiga recombinante"
+* SCTSpa#33421000087101 "EpiVacCorona vacuna COVID-19 proteína de espiga recombinante"
+* SCTSpa#33451000087108 "QazCovid-in vacuna COVID-19 virus entero inactivado"
+* SCTSpa#424571000221103 "VAXZEVRIA vacuna COVID-19 vector viral no replicante"
+* SCTSpa#424581000221100 "COVISHIELD vacuna COVID-19 vector viral no replicante"
+* SCTSpa#424591000221102 "JANSSEN vacuna COVID-19 vector viral no replicante"
+* SCTSpa#424711000221100 "SPUTNIK V vacuna COVID-19 vector viral no replicante"
+* SCTSpa#424731000221108 "SPIKEVAX vacuna COVID-19 ARNm"
+* SCTSpa#424751000221104 "COMIRNATY vacuna COVID-19 ARNm"
+* SCTSpa#424821000221101 "SPUTNIK LIGTH vacuna COVID-19 vector viral no replicante"
 
+
+/*
 ValueSet: CodigoNoWhoVacunaVS
 Id: CodigoNoWhoVacunaVS
 Title: "Código no WHODrug de la Vacuna"
@@ -226,7 +283,7 @@ Description: "Código no WHODrug de la Vacuna"
 * ^contact.telecom.value = ""
 * ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
 //* #1 "SNOMED-CT"
-
+*/
 
 ValueSet: CodigoWhoFabricanteVS
 Id: CodigoWhoFabricanteVS
@@ -459,10 +516,14 @@ Description:  "Codigo Medicamento"
 * ^contact.telecom.system = #email
 * ^contact.telecom.value = ""
 * ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
-* #1 "Uno" 
-* #2 "Dos"
-* #3 "Tres" 
-* #4 "Cuatro" 
+* #68001016 "Levotiroxina"
+* #XM2WC1 "levotiroxina sódica"
+* #783639004 "levotiroxina sódica anhidra 100 microgramos por cada comprimido para administración oral"
+* #H03AA01 "levotiroxina sodica"
+* #1483501003 "Lantus"
+* #XM0K72 "Insulina de acción lenta"
+* #383491000221101 "LANTUS [INSULINA GLARGINA 100 U/ML] SOLUCION INYECTABLE, CARTUCHO de 3 ML"
+* #A10AE04 "insulina glargina"
 
 ValueSet: ModoVerificacionVacunaVS
 Id: ModoVerificacionVacunaVS
@@ -742,7 +803,7 @@ Description: "Describe las enfermedades previas en un ESAVI codificadas en MedDR
 * ^status = #active
 * ^date = "2022-02-02"
 * ^publisher = "PAHO - Pan American Health Organization"
-* include codes from system $MedDRA
+* include codes from system http://terminology.hl7.org/CodeSystem/MDRSPA
 
 
 ValueSet: DosisVacunaVS
@@ -901,8 +962,6 @@ Description:  "Método de clasificación de causalidad Naranjo"
 * #04 "Improbable"
 
 
-Alias: $DirOrgNotiCS = http://paho.org/esavi/CodeSystem/DirOrgNotiCS
-
 ValueSet: DirOrgNotiVS
 Id: DirOrgNotiVS
 Title: "Códigos PAHO para Direcciones"
@@ -914,7 +973,7 @@ Description: "Conjunto de Valores para dirección según OPS"
 * ^contact.telecom.system = #email
 * ^contact.telecom.value = ""
 * ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
-* include codes from system $DirOrgNotiCS
+* include codes from system DirOrgNotiCS
 
 
 CodeSystem: PTSctCS
@@ -1197,3 +1256,64 @@ Description: "Codificacion Estandarizada de Evento Adverso en MedDRA"
 * #10002218 "Anafilaxia"
 * #10016179 "Desmayo"
 
+CodeSystem: CodigoWhoVacunaCS
+Id: CodigoWhoVacunaCS
+Title: "Codigos WHODrug de la vacuna"
+Description: "Codificación Estandarizda del código de las Vacunas según WhoDrug"
+
+* ^meta.versionId = "2"
+* ^meta.lastUpdated = "2023-01-05T21:57:10.292+00:00"
+* ^meta.source = "#yyuCovUJiH7vKAgN"
+* ^url = "http://who-umc.org"
+* ^version = "1.00"
+* ^status = #active
+* ^experimental = false
+* ^date = "2019-03-20T00:00:00-04:00"
+* ^publisher = "WHO"
+* ^contact.name = "WHO"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 42
+
+* #15268682002	"ABDALA"
+* #15268603006	"ASTRAZENECA COVID-19 VACCINE"
+* #15268643003	"BBIBP-CORV"
+* #15268614003	"BBV152"
+* #15268603005	"CHADOX1 NCOV-19"
+* #15268682001	"CIGB 66"
+* #15268625005	"COMIRNATY"
+* #15268607005	"CONVIDECIA"
+* #15268644002	"CORONAVAC"
+* #15268614002	"COVAXIN [COVID-19 VACCINE INACT W.VIRION NIV-2020-770]"
+* #15268625004	"COVID-19 MRNA VACCINE BNT162B2"
+* #15268601001	"COVID-19 VACCINE"
+* #15268644003	"COVID-19 VACCINE (VERO CELL), INACTIVATED [COVID-19 VACCINE INACT (VERO) CZ02]"
+* #15268643005	"COVID-19 VACCINE (VERO CELL), INACTIVATED [COVID-19 VACCINE INACT (VERO) HB02]"
+* #15268663002	"COVID-19 VACCINE (VERO CELL), INACTIVATED [COVID-19 VACCINE INACT (VERO) WIV04]"
+* #15268622008	"COVID-19 VACCINE (VERO CELL), INACTIVATED [COVID-19 VACCINE INACT (VERO)]"
+* #15268658001	"COVID-19 VACCINE DNA"
+* #15268621001	"COVID-19 VACCINE INACT"
+* #15268640004	"COVID-19 VACCINE JANSSEN"
+* #15268604003	"COVID-19 VACCINE MODERNA"
+* #15268603004	"COVISHIELD"
+* #15268662002	"COVIVAC"
+* #15268642002	"EPIVACCORONA"
+* #15268619002	"GAM-COVID-VAC"
+* #15268643009	"HAYAT VAX"
+* #15268640003	"JANSSEN COVID-19 VACCINE"
+* #15268604002	"MODERNA COVID-19 VACCINE"
+* #15268625003	"PFIZER BIONTECH COVID-19 VACCINE"
+* #15268621002	"QAZCOVID-IN"
+* #15268601002	"SARS-COV-2 VACCINE"
+* #15268604008	"SPIKEVAX"
+* #15268619005	"SPUTNIK LIGHT"
+* #15268619004	"SPUTNIK V"
+* #15268625001	"TOZINAMERAN"
+* #15268603009	"VACUNA COVID-19 ASTRAZENECA"
+* #15268640005	"VACUNA COVID-19 JANSSEN"
+* #15268625007	"VACUNA COVID-19 PFIZER BIONTECH"
+* #15268625009	"VACUNA PFIZER-BIONTECH COVID-19"
+* #15268603007	"VAXZEVRIA"
+* #15268663004	"WIBP-CORV"
+* #68001016	"Levotiroxina"
+* #1483501003	"Lantus"
