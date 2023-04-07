@@ -1,1 +1,44 @@
-{"resourceType":"ValueSet","id":"EnfermedadesPreviasCodificacionVS","text":{"status":"generated","div":"<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <code>http://id.who.int/icd11/mms</code></li><li>Include all codes defined in <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-icd10.html\"><code>http://hl7.org/fhir/sid/icd-10</code></a></li><li>Include all codes defined in <code>http://snomed.info/sct/449081005</code></li></ul></div>"},"url":"https://paho.org/fhir/esavi/ValueSet/EnfermedadesPreviasCodificacionVS","version":"0.1.0","name":"EnfermedadesPreviasCodificacionVS","title":"Enfermedades previas en un ESAVI-PAHO","status":"active","date":"2021-03-11T00:00:00-03:00","publisher":"ESAVI -","contact":[{"name":"ESAVI -","telecom":[{"system":"url","value":"https://covid-19pharmacovigilance.paho.org/resources/updates-on-aefi"},{"system":"email","value":"rizzatodan@paho.org"}]}],"description":"Describe las enfermedades previas en un ESAVI codificadas en CIE10, CIE11 o SNOMED CT","jurisdiction":[{"coding":[{"system":"http://unstats.un.org/unsd/methods/m49/m49.htm","code":"001"}]}],"compose":{"include":[{"system":"http://id.who.int/icd11/mms"},{"system":"http://hl7.org/fhir/sid/icd-10"},{"system":"http://snomed.info/sct/449081005"}]}}
+{
+  "resourceType" : "ValueSet",
+  "id" : "EnfermedadesPreviasCodificacionVS",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"CodeSystem-ICD11.html\"><code>https://paho.org/fhir/esavi/CodeSystem/ICD11</code></a></li><li>Include all codes defined in <a href=\"CodeSystem-ICD10.html\"><code>https://paho.org/fhir/esavi/CodeSystem/ICD10</code></a></li><li>Include all codes defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a></li></ul></div>"
+  },
+  "url" : "https://paho.org/fhir/esavi/ValueSet/EnfermedadesPreviasCodificacionVS",
+  "version" : "0.1.0",
+  "name" : "EnfermedadesPreviasCodificacionVS",
+  "title" : "Enfermedades previas en un ESAVI-PAHO",
+  "status" : "active",
+  "date" : "2021-03-11T00:00:00-03:00",
+  "publisher" : "ESAVI -",
+  "contact" : [{
+    "name" : "ESAVI -",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://covid-19pharmacovigilance.paho.org/resources/updates-on-aefi"
+    },
+    {
+      "system" : "email",
+      "value" : "rizzatodan@paho.org"
+    }]
+  }],
+  "description" : "Describe las enfermedades previas en un ESAVI codificadas en CIE10, CIE11 o SNOMED CT",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://paho.org/fhir/esavi/CodeSystem/ICD11"
+    },
+    {
+      "system" : "https://paho.org/fhir/esavi/CodeSystem/ICD10"
+    },
+    {
+      "system" : "http://snomed.info/sct"
+    }]
+  }
+}

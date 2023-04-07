@@ -1,1 +1,47 @@
-{"resourceType":"CodeSystem","id":"RespuestaSiNoNosabeCS","text":{"status":"generated","div":"<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://paho.org/fhir/esavi/CodeSystem/RespuestaSiNoNosabeCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"RespuestaSiNoNosabeCS-1\"> </a></td><td>Si</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"RespuestaSiNoNosabeCS-2\"> </a></td><td>No</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"RespuestaSiNoNosabeCS-3\"> </a></td><td>No sabe</td></tr></table></div>"},"url":"https://paho.org/fhir/esavi/CodeSystem/RespuestaSiNoNosabeCS","version":"0.1.0","name":"RespuestaSiNoNosabeCS","title":"Respuestas Simples","status":"active","date":"2021-03-11T00:00:00-03:00","publisher":"ESAVI -","contact":[{"name":"ESAVI -","telecom":[{"system":"url","value":"https://covid-19pharmacovigilance.paho.org/resources/updates-on-aefi"},{"system":"email","value":"rizzatodan@paho.org"}]}],"description":"Códigos para capturar respuestas simples si/no/no sabe","jurisdiction":[{"coding":[{"system":"http://unstats.un.org/unsd/methods/m49/m49.htm","code":"001"}]}],"content":"complete","count":3,"concept":[{"code":"1","display":"Si"},{"code":"2","display":"No"},{"code":"3","display":"No sabe"}]}
+{
+  "resourceType" : "CodeSystem",
+  "id" : "RespuestaSiNoNosabeCS",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://paho.org/fhir/esavi/CodeSystem/RespuestaSiNoNosabeCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"RespuestaSiNoNosabeCS-1\"> </a></td><td>Si</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"RespuestaSiNoNosabeCS-2\"> </a></td><td>No</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"RespuestaSiNoNosabeCS-3\"> </a></td><td>No sabe</td></tr></table></div>"
+  },
+  "url" : "https://paho.org/fhir/esavi/CodeSystem/RespuestaSiNoNosabeCS",
+  "version" : "0.1.0",
+  "name" : "RespuestaSiNoNosabeCS",
+  "title" : "Respuestas Simples",
+  "status" : "active",
+  "date" : "2021-03-11T00:00:00-03:00",
+  "publisher" : "ESAVI -",
+  "contact" : [{
+    "name" : "ESAVI -",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://covid-19pharmacovigilance.paho.org/resources/updates-on-aefi"
+    },
+    {
+      "system" : "email",
+      "value" : "rizzatodan@paho.org"
+    }]
+  }],
+  "description" : "Códigos para capturar respuestas simples si/no/no sabe",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001"
+    }]
+  }],
+  "content" : "complete",
+  "count" : 3,
+  "concept" : [{
+    "code" : "1",
+    "display" : "Si"
+  },
+  {
+    "code" : "2",
+    "display" : "No"
+  },
+  {
+    "code" : "3",
+    "display" : "No sabe"
+  }]
+}

@@ -1,0 +1,639 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "CodigoWhoVacunaCS",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://paho.org/fhir/esavi/CodeSystem/CodigoWhoVacunaCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">15268609001<a name=\"CodigoWhoVacunaCS-15268609001\"> </a></td><td>ABDAVOMERAN</td></tr><tr><td style=\"white-space:nowrap\">15268609002<a name=\"CodigoWhoVacunaCS-15268609002\"> </a></td><td>BNT162B1</td></tr><tr><td style=\"white-space:nowrap\">15268672001<a name=\"CodigoWhoVacunaCS-15268672001\"> </a></td><td>ADCLD COV19</td></tr><tr><td style=\"white-space:nowrap\">15268630001<a name=\"CodigoWhoVacunaCS-15268630001\"> </a></td><td>ADIMRSC 2F</td></tr><tr><td style=\"white-space:nowrap\">15268615001<a name=\"CodigoWhoVacunaCS-15268615001\"> </a></td><td>AG0301-COVID19</td></tr><tr><td style=\"white-space:nowrap\">15268624001<a name=\"CodigoWhoVacunaCS-15268624001\"> </a></td><td>AG0302-COVID19</td></tr><tr><td style=\"white-space:nowrap\">15268616001<a name=\"CodigoWhoVacunaCS-15268616001\"> </a></td><td>ARCT 021</td></tr><tr><td style=\"white-space:nowrap\">15268680001<a name=\"CodigoWhoVacunaCS-15268680001\"> </a></td><td>AZD 2816</td></tr><tr><td style=\"white-space:nowrap\">15268602001<a name=\"CodigoWhoVacunaCS-15268602001\"> </a></td><td>BACTRL-SPIKE</td></tr><tr><td style=\"white-space:nowrap\">15268664001<a name=\"CodigoWhoVacunaCS-15268664001\"> </a></td><td>BBV154</td></tr><tr><td style=\"white-space:nowrap\">15268660001<a name=\"CodigoWhoVacunaCS-15268660001\"> </a></td><td>BNT162A1</td></tr><tr><td style=\"white-space:nowrap\">15268635001<a name=\"CodigoWhoVacunaCS-15268635001\"> </a></td><td>CDX 005</td></tr><tr><td style=\"white-space:nowrap\">15268682002<a name=\"CodigoWhoVacunaCS-15268682002\"> </a></td><td>ABDALA</td></tr><tr><td style=\"white-space:nowrap\">15268682001<a name=\"CodigoWhoVacunaCS-15268682001\"> </a></td><td>CIGB 66</td></tr><tr><td style=\"white-space:nowrap\">15268636001<a name=\"CodigoWhoVacunaCS-15268636001\"> </a></td><td>COH04S1</td></tr><tr><td style=\"white-space:nowrap\">15268601002<a name=\"CodigoWhoVacunaCS-15268601002\"> </a></td><td>SARS-COV-2 VACCINE</td></tr><tr><td style=\"white-space:nowrap\">15268658001<a name=\"CodigoWhoVacunaCS-15268658001\"> </a></td><td>COVID-19 VACCINE DNA</td></tr><tr><td style=\"white-space:nowrap\">15268621001<a name=\"CodigoWhoVacunaCS-15268621001\"> </a></td><td>COVID-19 VACCINE INACT</td></tr><tr><td style=\"white-space:nowrap\">15268621002<a name=\"CodigoWhoVacunaCS-15268621002\"> </a></td><td>QAZCOVID-IN</td></tr><tr><td style=\"white-space:nowrap\">15268622008<a name=\"CodigoWhoVacunaCS-15268622008\"> </a></td><td>COVID-19 VACCINE (VERO CELL), INACTIVATED [COVID-19 VACCINE INACT (VERO)]</td></tr><tr><td style=\"white-space:nowrap\">15268622001<a name=\"CodigoWhoVacunaCS-15268622001\"> </a></td><td>COVID-19 VACCINE INACT (VERO)</td></tr><tr><td style=\"white-space:nowrap\">15268678001<a name=\"CodigoWhoVacunaCS-15268678001\"> </a></td><td>COVID-19 VACCINE INACT (VERO) CQ01</td></tr><tr><td style=\"white-space:nowrap\">15268644002<a name=\"CodigoWhoVacunaCS-15268644002\"> </a></td><td>CORONAVAC</td></tr><tr><td style=\"white-space:nowrap\">15268644003<a name=\"CodigoWhoVacunaCS-15268644003\"> </a></td><td>COVID-19 VACCINE (VERO CELL), INACTIVATED [COVID-19 VACCINE INACT (VERO) CZ02]</td></tr><tr><td style=\"white-space:nowrap\">15268644001<a name=\"CodigoWhoVacunaCS-15268644001\"> </a></td><td>COVID-19 VACCINE INACT (VERO) CZ02</td></tr><tr><td style=\"white-space:nowrap\">15268644004<a name=\"CodigoWhoVacunaCS-15268644004\"> </a></td><td>VACINA ADSORVIDA COVID-19 (INATIVADA)</td></tr><tr><td style=\"white-space:nowrap\">15268644005<a name=\"CodigoWhoVacunaCS-15268644005\"> </a></td><td>VAKSIN COVID-19 BIO FARMA</td></tr><tr><td style=\"white-space:nowrap\">15268643003<a name=\"CodigoWhoVacunaCS-15268643003\"> </a></td><td>BBIBP-CORV</td></tr><tr><td style=\"white-space:nowrap\">15268643005<a name=\"CodigoWhoVacunaCS-15268643005\"> </a></td><td>COVID-19 VACCINE (VERO CELL), INACTIVATED [COVID-19 VACCINE INACT (VERO) HB02]</td></tr><tr><td style=\"white-space:nowrap\">15268643001<a name=\"CodigoWhoVacunaCS-15268643001\"> </a></td><td>COVID-19 VACCINE INACT (VERO) HB02</td></tr><tr><td style=\"white-space:nowrap\">15268643009<a name=\"CodigoWhoVacunaCS-15268643009\"> </a></td><td>HAYAT VAX</td></tr><tr><td style=\"white-space:nowrap\">15268643008<a name=\"CodigoWhoVacunaCS-15268643008\"> </a></td><td>SARS-COV-2 VACCINE (VERO CELL), INACTIVADA</td></tr><tr><td style=\"white-space:nowrap\">15268643006<a name=\"CodigoWhoVacunaCS-15268643006\"> </a></td><td>SARS-COV-2 VACCINE (VERO CELL), INACTIVATED</td></tr><tr><td style=\"white-space:nowrap\">15268643007<a name=\"CodigoWhoVacunaCS-15268643007\"> </a></td><td>VACUNA CONTRA EL SARS-COV-2 (VERO CELL), INACTIVADA</td></tr><tr><td style=\"white-space:nowrap\">15268643004<a name=\"CodigoWhoVacunaCS-15268643004\"> </a></td><td>ZHONG AI KE WEI</td></tr><tr><td style=\"white-space:nowrap\">15268663002<a name=\"CodigoWhoVacunaCS-15268663002\"> </a></td><td>COVID-19 VACCINE (VERO CELL), INACTIVATED [COVID-19 VACCINE INACT (VERO) WIV04]</td></tr><tr><td style=\"white-space:nowrap\">15268663001<a name=\"CodigoWhoVacunaCS-15268663001\"> </a></td><td>COVID-19 VACCINE INACT (VERO) WIV04</td></tr><tr><td style=\"white-space:nowrap\">15268663004<a name=\"CodigoWhoVacunaCS-15268663004\"> </a></td><td>WIBP-CORV</td></tr><tr><td style=\"white-space:nowrap\">15268663003<a name=\"CodigoWhoVacunaCS-15268663003\"> </a></td><td>ZHONG KANG KE WEI</td></tr><tr><td style=\"white-space:nowrap\">15268657001<a name=\"CodigoWhoVacunaCS-15268657001\"> </a></td><td>COVID-19 VACCINE INACT W.VIRION</td></tr><tr><td style=\"white-space:nowrap\">15268662001<a name=\"CodigoWhoVacunaCS-15268662001\"> </a></td><td>COVID-19 VACCINE INACT W.VIRION AYDAR-1</td></tr><tr><td style=\"white-space:nowrap\">15268662002<a name=\"CodigoWhoVacunaCS-15268662002\"> </a></td><td>COVIVAC</td></tr><tr><td style=\"white-space:nowrap\">15268614003<a name=\"CodigoWhoVacunaCS-15268614003\"> </a></td><td>BBV152</td></tr><tr><td style=\"white-space:nowrap\">15268614002<a name=\"CodigoWhoVacunaCS-15268614002\"> </a></td><td>COVAXIN [COVID-19 VACCINE INACT W.VIRION NIV-2020-770]</td></tr><tr><td style=\"white-space:nowrap\">15268614001<a name=\"CodigoWhoVacunaCS-15268614001\"> </a></td><td>COVID-19 VACCINE INACT W.VIRION NIV-2020-770</td></tr><tr><td style=\"white-space:nowrap\">15268650001<a name=\"CodigoWhoVacunaCS-15268650001\"> </a></td><td>COVID-19 VACCINE LIVE</td></tr><tr><td style=\"white-space:nowrap\">15268645001<a name=\"CodigoWhoVacunaCS-15268645001\"> </a></td><td>COVID-19 VACCINE MRNA</td></tr><tr><td style=\"white-space:nowrap\">15268673001<a name=\"CodigoWhoVacunaCS-15268673001\"> </a></td><td>COVID-19 VACCINE MRNA (ARCOV)</td></tr><tr><td style=\"white-space:nowrap\">15268647001<a name=\"CodigoWhoVacunaCS-15268647001\"> </a></td><td>COVID-19 VACCINE MRNA S</td></tr><tr><td style=\"white-space:nowrap\">15268652001<a name=\"CodigoWhoVacunaCS-15268652001\"> </a></td><td>COVID-19 VACCINE NRVV</td></tr><tr><td style=\"white-space:nowrap\">15268653001<a name=\"CodigoWhoVacunaCS-15268653001\"> </a></td><td>COVID-19 VACCINE NRVV AD</td></tr><tr><td style=\"white-space:nowrap\">15268603006<a name=\"CodigoWhoVacunaCS-15268603006\"> </a></td><td>ASTRAZENECA COVID-19 VACCINE</td></tr><tr><td style=\"white-space:nowrap\">15268603002<a name=\"CodigoWhoVacunaCS-15268603002\"> </a></td><td>AZD 1222</td></tr><tr><td style=\"white-space:nowrap\">15268603005<a name=\"CodigoWhoVacunaCS-15268603005\"> </a></td><td>CHADOX1 NCOV-19</td></tr><tr><td style=\"white-space:nowrap\">15268603003<a name=\"CodigoWhoVacunaCS-15268603003\"> </a></td><td>COVID-19 VACCINE ASTRAZENECA</td></tr><tr><td style=\"white-space:nowrap\">15268603001<a name=\"CodigoWhoVacunaCS-15268603001\"> </a></td><td>COVID-19 VACCINE NRVV AD (CHADOX1 NCOV-19)</td></tr><tr><td style=\"white-space:nowrap\">15268603004<a name=\"CodigoWhoVacunaCS-15268603004\"> </a></td><td>COVISHIELD</td></tr><tr><td style=\"white-space:nowrap\">15268603008<a name=\"CodigoWhoVacunaCS-15268603008\"> </a></td><td>KOREA ASTRAZENECA COVID-19 VACCINE</td></tr><tr><td style=\"white-space:nowrap\">15268603010<a name=\"CodigoWhoVacunaCS-15268603010\"> </a></td><td>VACINA COVID-19 (RECOMBINANTE)</td></tr><tr><td style=\"white-space:nowrap\">15268603009<a name=\"CodigoWhoVacunaCS-15268603009\"> </a></td><td>VACUNA COVID-19 ASTRAZENECA</td></tr><tr><td style=\"white-space:nowrap\">15268603007<a name=\"CodigoWhoVacunaCS-15268603007\"> </a></td><td>VAXZEVRIA</td></tr><tr><td style=\"white-space:nowrap\">15268654001<a name=\"CodigoWhoVacunaCS-15268654001\"> </a></td><td>COVID-19 VACCINE NRVV AD26</td></tr><tr><td style=\"white-space:nowrap\">15268619001<a name=\"CodigoWhoVacunaCS-15268619001\"> </a></td><td>COVID-19 VACCINE NRVV AD26 (GAM-COVID-VAC)</td></tr><tr><td style=\"white-space:nowrap\">15268619002<a name=\"CodigoWhoVacunaCS-15268619002\"> </a></td><td>GAM-COVID-VAC</td></tr><tr><td style=\"white-space:nowrap\">15268619005<a name=\"CodigoWhoVacunaCS-15268619005\"> </a></td><td>SPUTNIK LIGHT</td></tr><tr><td style=\"white-space:nowrap\">15268619004<a name=\"CodigoWhoVacunaCS-15268619004\"> </a></td><td>SPUTNIK V</td></tr><tr><td style=\"white-space:nowrap\">15268640004<a name=\"CodigoWhoVacunaCS-15268640004\"> </a></td><td>COVID-19 VACCINE JANSSEN</td></tr><tr><td style=\"white-space:nowrap\">15268640001<a name=\"CodigoWhoVacunaCS-15268640001\"> </a></td><td>COVID-19 VACCINE NRVV AD26 (JNJ 78436735)</td></tr><tr><td style=\"white-space:nowrap\">15268640003<a name=\"CodigoWhoVacunaCS-15268640003\"> </a></td><td>JANSSEN COVID-19 VACCINE</td></tr><tr><td style=\"white-space:nowrap\">15268640002<a name=\"CodigoWhoVacunaCS-15268640002\"> </a></td><td>JNJ 78436735</td></tr><tr><td style=\"white-space:nowrap\">15268640005<a name=\"CodigoWhoVacunaCS-15268640005\"> </a></td><td>VACUNA COVID-19 JANSSEN</td></tr><tr><td style=\"white-space:nowrap\">15268655001<a name=\"CodigoWhoVacunaCS-15268655001\"> </a></td><td>COVID-19 VACCINE NRVV AD5</td></tr><tr><td style=\"white-space:nowrap\">15268607002<a name=\"CodigoWhoVacunaCS-15268607002\"> </a></td><td>AD5-NCOV</td></tr><tr><td style=\"white-space:nowrap\">15268607005<a name=\"CodigoWhoVacunaCS-15268607005\"> </a></td><td>CONVIDECIA</td></tr><tr><td style=\"white-space:nowrap\">15268607001<a name=\"CodigoWhoVacunaCS-15268607001\"> </a></td><td>COVID-19 VACCINE NRVV AD5 (AD5-NCOV)</td></tr><tr><td style=\"white-space:nowrap\">15268607004<a name=\"CodigoWhoVacunaCS-15268607004\"> </a></td><td>KE WEI SHA</td></tr><tr><td style=\"white-space:nowrap\">15268607003<a name=\"CodigoWhoVacunaCS-15268607003\"> </a></td><td>RECOMBINANT COVID-19 VACCINE (ADENOVIRUS TYPE 5 VECTOR)</td></tr><tr><td style=\"white-space:nowrap\">15268620001<a name=\"CodigoWhoVacunaCS-15268620001\"> </a></td><td>COVID-19 VACCINE NRVV AD5 (GAM-COVID-VAC)</td></tr><tr><td style=\"white-space:nowrap\">15268620002<a name=\"CodigoWhoVacunaCS-15268620002\"> </a></td><td>GAM-COVID-VAC BOOSTER</td></tr><tr><td style=\"white-space:nowrap\">15268620004<a name=\"CodigoWhoVacunaCS-15268620004\"> </a></td><td>SPUTNIK V BOOST</td></tr><tr><td style=\"white-space:nowrap\">15268656001<a name=\"CodigoWhoVacunaCS-15268656001\"> </a></td><td>COVID-19 VACCINE NRVV MVA</td></tr><tr><td style=\"white-space:nowrap\">15268649001<a name=\"CodigoWhoVacunaCS-15268649001\"> </a></td><td>COVID-19 VACCINE PROT. SUBUNIT</td></tr><tr><td style=\"white-space:nowrap\">15268642001<a name=\"CodigoWhoVacunaCS-15268642001\"> </a></td><td>COVID-19 VACCINE PROT. SUBUNIT (EPIVACCORONA)</td></tr><tr><td style=\"white-space:nowrap\">15268642002<a name=\"CodigoWhoVacunaCS-15268642002\"> </a></td><td>EPIVACCORONA</td></tr><tr><td style=\"white-space:nowrap\">15268628001<a name=\"CodigoWhoVacunaCS-15268628001\"> </a></td><td>COVID-19 VACCINE PROT. SUBUNIT (ZF 2001)</td></tr><tr><td style=\"white-space:nowrap\">15268628005<a name=\"CodigoWhoVacunaCS-15268628005\"> </a></td><td>RECOMBINANT NOVEL CORONAVIRUS VACCINE (CHO CELL)</td></tr><tr><td style=\"white-space:nowrap\">15268628003<a name=\"CodigoWhoVacunaCS-15268628003\"> </a></td><td>ZF 2001</td></tr><tr><td style=\"white-space:nowrap\">15268628002<a name=\"CodigoWhoVacunaCS-15268628002\"> </a></td><td>ZF-UZ-VAC 2001</td></tr><tr><td style=\"white-space:nowrap\">15268628004<a name=\"CodigoWhoVacunaCS-15268628004\"> </a></td><td>ZHI KE WEI DE</td></tr><tr><td style=\"white-space:nowrap\">15268628006<a name=\"CodigoWhoVacunaCS-15268628006\"> </a></td><td>ZIFIVAX</td></tr><tr><td style=\"white-space:nowrap\">15268648001<a name=\"CodigoWhoVacunaCS-15268648001\"> </a></td><td>COVID-19 VACCINE RVV</td></tr><tr><td style=\"white-space:nowrap\">15268646001<a name=\"CodigoWhoVacunaCS-15268646001\"> </a></td><td>COVID-19 VACCINE SARNA</td></tr><tr><td style=\"white-space:nowrap\">15268651001<a name=\"CodigoWhoVacunaCS-15268651001\"> </a></td><td>COVID-19 VACCINE VLP</td></tr><tr><td style=\"white-space:nowrap\">15268670001<a name=\"CodigoWhoVacunaCS-15268670001\"> </a></td><td>DS 5670</td></tr><tr><td style=\"white-space:nowrap\">15268604003<a name=\"CodigoWhoVacunaCS-15268604003\"> </a></td><td>COVID-19 VACCINE MODERNA</td></tr><tr><td style=\"white-space:nowrap\">15268604007<a name=\"CodigoWhoVacunaCS-15268604007\"> </a></td><td>COVID-19 VACCINE MRNA (MRNA 1273)</td></tr><tr><td style=\"white-space:nowrap\">15268604006<a name=\"CodigoWhoVacunaCS-15268604006\"> </a></td><td>CX-024414</td></tr><tr><td style=\"white-space:nowrap\">15268604001<a name=\"CodigoWhoVacunaCS-15268604001\"> </a></td><td>ELASOMERAN</td></tr><tr><td style=\"white-space:nowrap\">15268604002<a name=\"CodigoWhoVacunaCS-15268604002\"> </a></td><td>MODERNA COVID-19 VACCINE</td></tr><tr><td style=\"white-space:nowrap\">15268604005<a name=\"CodigoWhoVacunaCS-15268604005\"> </a></td><td>MRNA 1273</td></tr><tr><td style=\"white-space:nowrap\">15268604008<a name=\"CodigoWhoVacunaCS-15268604008\"> </a></td><td>SPIKEVAX</td></tr><tr><td style=\"white-space:nowrap\">15268604004<a name=\"CodigoWhoVacunaCS-15268604004\"> </a></td><td>TAK 919</td></tr><tr><td style=\"white-space:nowrap\">15268674001<a name=\"CodigoWhoVacunaCS-15268674001\"> </a></td><td>EXG 5003</td></tr><tr><td style=\"white-space:nowrap\">15268681001<a name=\"CodigoWhoVacunaCS-15268681001\"> </a></td><td>FINLAY FR 2</td></tr><tr><td style=\"white-space:nowrap\">15268661002<a name=\"CodigoWhoVacunaCS-15268661002\"> </a></td><td>BNT162B3</td></tr><tr><td style=\"white-space:nowrap\">15268661001<a name=\"CodigoWhoVacunaCS-15268661001\"> </a></td><td>GANULAMERAN</td></tr><tr><td style=\"white-space:nowrap\">15268665001<a name=\"CodigoWhoVacunaCS-15268665001\"> </a></td><td>GBP 510</td></tr><tr><td style=\"white-space:nowrap\">15268610001<a name=\"CodigoWhoVacunaCS-15268610001\"> </a></td><td>GC 004</td></tr><tr><td style=\"white-space:nowrap\">15268638001<a name=\"CodigoWhoVacunaCS-15268638001\"> </a></td><td>GLS 5310</td></tr><tr><td style=\"white-space:nowrap\">15268623001<a name=\"CodigoWhoVacunaCS-15268623001\"> </a></td><td>GRAD-COV2</td></tr><tr><td style=\"white-space:nowrap\">15268675001<a name=\"CodigoWhoVacunaCS-15268675001\"> </a></td><td>GSK 4362620A</td></tr><tr><td style=\"white-space:nowrap\">15268613001<a name=\"CodigoWhoVacunaCS-15268613001\"> </a></td><td>GX 19</td></tr><tr><td style=\"white-space:nowrap\">15268639001<a name=\"CodigoWhoVacunaCS-15268639001\"> </a></td><td>GX 19N</td></tr><tr><td style=\"white-space:nowrap\">15268634001<a name=\"CodigoWhoVacunaCS-15268634001\"> </a></td><td>IIBR 100</td></tr><tr><td style=\"white-space:nowrap\">15268605001<a name=\"CodigoWhoVacunaCS-15268605001\"> </a></td><td>INO 4800</td></tr><tr><td style=\"white-space:nowrap\">15268666001<a name=\"CodigoWhoVacunaCS-15268666001\"> </a></td><td>MRNA 1283</td></tr><tr><td style=\"white-space:nowrap\">15268677001<a name=\"CodigoWhoVacunaCS-15268677001\"> </a></td><td>MRT 5500</td></tr><tr><td style=\"white-space:nowrap\">15268632001<a name=\"CodigoWhoVacunaCS-15268632001\"> </a></td><td>MT 2766</td></tr><tr><td style=\"white-space:nowrap\">15268618001<a name=\"CodigoWhoVacunaCS-15268618001\"> </a></td><td>MVC-COV1901</td></tr><tr><td style=\"white-space:nowrap\">15268679002<a name=\"CodigoWhoVacunaCS-15268679002\"> </a></td><td>BUTANVAC</td></tr><tr><td style=\"white-space:nowrap\">15268679001<a name=\"CodigoWhoVacunaCS-15268679001\"> </a></td><td>NDV HXP S</td></tr><tr><td style=\"white-space:nowrap\">15268611001<a name=\"CodigoWhoVacunaCS-15268611001\"> </a></td><td>NVX COV 2373</td></tr><tr><td style=\"white-space:nowrap\">15268611002<a name=\"CodigoWhoVacunaCS-15268611002\"> </a></td><td>TAK 019</td></tr><tr><td style=\"white-space:nowrap\">15268659002<a name=\"CodigoWhoVacunaCS-15268659002\"> </a></td><td>BNT162C2</td></tr><tr><td style=\"white-space:nowrap\">15268659001<a name=\"CodigoWhoVacunaCS-15268659001\"> </a></td><td>PIDACMERAN</td></tr><tr><td style=\"white-space:nowrap\">15268669001<a name=\"CodigoWhoVacunaCS-15268669001\"> </a></td><td>PTX COVID19 B</td></tr><tr><td style=\"white-space:nowrap\">15268676001<a name=\"CodigoWhoVacunaCS-15268676001\"> </a></td><td>S 268019</td></tr><tr><td style=\"white-space:nowrap\">15268641001<a name=\"CodigoWhoVacunaCS-15268641001\"> </a></td><td>SCB 2019</td></tr><tr><td style=\"white-space:nowrap\">15268667001<a name=\"CodigoWhoVacunaCS-15268667001\"> </a></td><td>SP 0253</td></tr><tr><td style=\"white-space:nowrap\">15268625002<a name=\"CodigoWhoVacunaCS-15268625002\"> </a></td><td>BNT162B2</td></tr><tr><td style=\"white-space:nowrap\">15268625005<a name=\"CodigoWhoVacunaCS-15268625005\"> </a></td><td>COMIRNATY</td></tr><tr><td style=\"white-space:nowrap\">15268625004<a name=\"CodigoWhoVacunaCS-15268625004\"> </a></td><td>COVID-19 MRNA VACCINE BNT162B2</td></tr><tr><td style=\"white-space:nowrap\">15268625006<a name=\"CodigoWhoVacunaCS-15268625006\"> </a></td><td>COVID-19 VACCINE MRNA (BNT162B2)</td></tr><tr><td style=\"white-space:nowrap\">15268625008<a name=\"CodigoWhoVacunaCS-15268625008\"> </a></td><td>PF 07302048</td></tr><tr><td style=\"white-space:nowrap\">15268625003<a name=\"CodigoWhoVacunaCS-15268625003\"> </a></td><td>PFIZER BIONTECH COVID-19 VACCINE</td></tr><tr><td style=\"white-space:nowrap\">15268625001<a name=\"CodigoWhoVacunaCS-15268625001\"> </a></td><td>TOZINAMERAN</td></tr><tr><td style=\"white-space:nowrap\">15268625007<a name=\"CodigoWhoVacunaCS-15268625007\"> </a></td><td>VACUNA COVID-19 PFIZER BIONTECH</td></tr><tr><td style=\"white-space:nowrap\">15268625009<a name=\"CodigoWhoVacunaCS-15268625009\"> </a></td><td>VACUNA PFIZER-BIONTECH COVID-19</td></tr><tr><td style=\"white-space:nowrap\">15268629001<a name=\"CodigoWhoVacunaCS-15268629001\"> </a></td><td>UB 612</td></tr><tr><td style=\"white-space:nowrap\">15268631001<a name=\"CodigoWhoVacunaCS-15268631001\"> </a></td><td>UQ CSL V451</td></tr><tr><td style=\"white-space:nowrap\">15268627001<a name=\"CodigoWhoVacunaCS-15268627001\"> </a></td><td>V 590</td></tr><tr><td style=\"white-space:nowrap\">15268617002<a name=\"CodigoWhoVacunaCS-15268617002\"> </a></td><td>TMV 083</td></tr><tr><td style=\"white-space:nowrap\">15268617001<a name=\"CodigoWhoVacunaCS-15268617001\"> </a></td><td>V 591</td></tr><tr><td style=\"white-space:nowrap\">15268668001<a name=\"CodigoWhoVacunaCS-15268668001\"> </a></td><td>VAX 001</td></tr><tr><td style=\"white-space:nowrap\">15268671001<a name=\"CodigoWhoVacunaCS-15268671001\"> </a></td><td>VBI 2902</td></tr><tr><td style=\"white-space:nowrap\">15268637001<a name=\"CodigoWhoVacunaCS-15268637001\"> </a></td><td>VLA 2001</td></tr><tr><td style=\"white-space:nowrap\">15268626001<a name=\"CodigoWhoVacunaCS-15268626001\"> </a></td><td>VXA COV2 1</td></tr><tr><td style=\"white-space:nowrap\">15268612003<a name=\"CodigoWhoVacunaCS-15268612003\"> </a></td><td>CV 07050101</td></tr><tr><td style=\"white-space:nowrap\">15268612002<a name=\"CodigoWhoVacunaCS-15268612002\"> </a></td><td>CVNCOV</td></tr><tr><td style=\"white-space:nowrap\">15268612001<a name=\"CodigoWhoVacunaCS-15268612001\"> </a></td><td>ZORECIMERAN</td></tr><tr><td style=\"white-space:nowrap\">15268633001<a name=\"CodigoWhoVacunaCS-15268633001\"> </a></td><td>ZYCOV-D</td></tr></table></div>"
+  },
+  "url" : "https://paho.org/fhir/esavi/CodeSystem/CodigoWhoVacunaCS",
+  "version" : "0.1.0",
+  "name" : "CodigoWhoVacunaCS",
+  "title" : "Example Vaccines WHO Drug",
+  "status" : "active",
+  "date" : "2021-03-11T00:00:00-03:00",
+  "publisher" : "ESAVI -",
+  "contact" : [{
+    "name" : "ESAVI -",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://covid-19pharmacovigilance.paho.org/resources/updates-on-aefi"
+    },
+    {
+      "system" : "email",
+      "value" : "rizzatodan@paho.org"
+    }]
+  }],
+  "description" : "This is a code system with some of the vaccines in WHO Drug",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001"
+    }]
+  }],
+  "content" : "complete",
+  "count" : 151,
+  "concept" : [{
+    "code" : "15268609001",
+    "display" : "ABDAVOMERAN"
+  },
+  {
+    "code" : "15268609002",
+    "display" : "BNT162B1"
+  },
+  {
+    "code" : "15268672001",
+    "display" : "ADCLD COV19"
+  },
+  {
+    "code" : "15268630001",
+    "display" : "ADIMRSC 2F"
+  },
+  {
+    "code" : "15268615001",
+    "display" : "AG0301-COVID19"
+  },
+  {
+    "code" : "15268624001",
+    "display" : "AG0302-COVID19"
+  },
+  {
+    "code" : "15268616001",
+    "display" : "ARCT 021"
+  },
+  {
+    "code" : "15268680001",
+    "display" : "AZD 2816"
+  },
+  {
+    "code" : "15268602001",
+    "display" : "BACTRL-SPIKE"
+  },
+  {
+    "code" : "15268664001",
+    "display" : "BBV154"
+  },
+  {
+    "code" : "15268660001",
+    "display" : "BNT162A1"
+  },
+  {
+    "code" : "15268635001",
+    "display" : "CDX 005"
+  },
+  {
+    "code" : "15268682002",
+    "display" : "ABDALA"
+  },
+  {
+    "code" : "15268682001",
+    "display" : "CIGB 66"
+  },
+  {
+    "code" : "15268636001",
+    "display" : "COH04S1"
+  },
+  {
+    "code" : "15268601002",
+    "display" : "SARS-COV-2 VACCINE"
+  },
+  {
+    "code" : "15268658001",
+    "display" : "COVID-19 VACCINE DNA"
+  },
+  {
+    "code" : "15268621001",
+    "display" : "COVID-19 VACCINE INACT"
+  },
+  {
+    "code" : "15268621002",
+    "display" : "QAZCOVID-IN"
+  },
+  {
+    "code" : "15268622008",
+    "display" : "COVID-19 VACCINE (VERO CELL), INACTIVATED [COVID-19 VACCINE INACT (VERO)]"
+  },
+  {
+    "code" : "15268622001",
+    "display" : "COVID-19 VACCINE INACT (VERO)"
+  },
+  {
+    "code" : "15268678001",
+    "display" : "COVID-19 VACCINE INACT (VERO) CQ01"
+  },
+  {
+    "code" : "15268644002",
+    "display" : "CORONAVAC"
+  },
+  {
+    "code" : "15268644003",
+    "display" : "COVID-19 VACCINE (VERO CELL), INACTIVATED [COVID-19 VACCINE INACT (VERO) CZ02]"
+  },
+  {
+    "code" : "15268644001",
+    "display" : "COVID-19 VACCINE INACT (VERO) CZ02"
+  },
+  {
+    "code" : "15268644004",
+    "display" : "VACINA ADSORVIDA COVID-19 (INATIVADA)"
+  },
+  {
+    "code" : "15268644005",
+    "display" : "VAKSIN COVID-19 BIO FARMA"
+  },
+  {
+    "code" : "15268643003",
+    "display" : "BBIBP-CORV"
+  },
+  {
+    "code" : "15268643005",
+    "display" : "COVID-19 VACCINE (VERO CELL), INACTIVATED [COVID-19 VACCINE INACT (VERO) HB02]"
+  },
+  {
+    "code" : "15268643001",
+    "display" : "COVID-19 VACCINE INACT (VERO) HB02"
+  },
+  {
+    "code" : "15268643009",
+    "display" : "HAYAT VAX"
+  },
+  {
+    "code" : "15268643008",
+    "display" : "SARS-COV-2 VACCINE (VERO CELL), INACTIVADA"
+  },
+  {
+    "code" : "15268643006",
+    "display" : "SARS-COV-2 VACCINE (VERO CELL), INACTIVATED"
+  },
+  {
+    "code" : "15268643007",
+    "display" : "VACUNA CONTRA EL SARS-COV-2 (VERO CELL), INACTIVADA"
+  },
+  {
+    "code" : "15268643004",
+    "display" : "ZHONG AI KE WEI"
+  },
+  {
+    "code" : "15268663002",
+    "display" : "COVID-19 VACCINE (VERO CELL), INACTIVATED [COVID-19 VACCINE INACT (VERO) WIV04]"
+  },
+  {
+    "code" : "15268663001",
+    "display" : "COVID-19 VACCINE INACT (VERO) WIV04"
+  },
+  {
+    "code" : "15268663004",
+    "display" : "WIBP-CORV"
+  },
+  {
+    "code" : "15268663003",
+    "display" : "ZHONG KANG KE WEI"
+  },
+  {
+    "code" : "15268657001",
+    "display" : "COVID-19 VACCINE INACT W.VIRION"
+  },
+  {
+    "code" : "15268662001",
+    "display" : "COVID-19 VACCINE INACT W.VIRION AYDAR-1"
+  },
+  {
+    "code" : "15268662002",
+    "display" : "COVIVAC"
+  },
+  {
+    "code" : "15268614003",
+    "display" : "BBV152"
+  },
+  {
+    "code" : "15268614002",
+    "display" : "COVAXIN [COVID-19 VACCINE INACT W.VIRION NIV-2020-770]"
+  },
+  {
+    "code" : "15268614001",
+    "display" : "COVID-19 VACCINE INACT W.VIRION NIV-2020-770"
+  },
+  {
+    "code" : "15268650001",
+    "display" : "COVID-19 VACCINE LIVE"
+  },
+  {
+    "code" : "15268645001",
+    "display" : "COVID-19 VACCINE MRNA"
+  },
+  {
+    "code" : "15268673001",
+    "display" : "COVID-19 VACCINE MRNA (ARCOV)"
+  },
+  {
+    "code" : "15268647001",
+    "display" : "COVID-19 VACCINE MRNA S"
+  },
+  {
+    "code" : "15268652001",
+    "display" : "COVID-19 VACCINE NRVV"
+  },
+  {
+    "code" : "15268653001",
+    "display" : "COVID-19 VACCINE NRVV AD"
+  },
+  {
+    "code" : "15268603006",
+    "display" : "ASTRAZENECA COVID-19 VACCINE"
+  },
+  {
+    "code" : "15268603002",
+    "display" : "AZD 1222"
+  },
+  {
+    "code" : "15268603005",
+    "display" : "CHADOX1 NCOV-19"
+  },
+  {
+    "code" : "15268603003",
+    "display" : "COVID-19 VACCINE ASTRAZENECA"
+  },
+  {
+    "code" : "15268603001",
+    "display" : "COVID-19 VACCINE NRVV AD (CHADOX1 NCOV-19)"
+  },
+  {
+    "code" : "15268603004",
+    "display" : "COVISHIELD"
+  },
+  {
+    "code" : "15268603008",
+    "display" : "KOREA ASTRAZENECA COVID-19 VACCINE"
+  },
+  {
+    "code" : "15268603010",
+    "display" : "VACINA COVID-19 (RECOMBINANTE)"
+  },
+  {
+    "code" : "15268603009",
+    "display" : "VACUNA COVID-19 ASTRAZENECA"
+  },
+  {
+    "code" : "15268603007",
+    "display" : "VAXZEVRIA"
+  },
+  {
+    "code" : "15268654001",
+    "display" : "COVID-19 VACCINE NRVV AD26"
+  },
+  {
+    "code" : "15268619001",
+    "display" : "COVID-19 VACCINE NRVV AD26 (GAM-COVID-VAC)"
+  },
+  {
+    "code" : "15268619002",
+    "display" : "GAM-COVID-VAC"
+  },
+  {
+    "code" : "15268619005",
+    "display" : "SPUTNIK LIGHT"
+  },
+  {
+    "code" : "15268619004",
+    "display" : "SPUTNIK V"
+  },
+  {
+    "code" : "15268640004",
+    "display" : "COVID-19 VACCINE JANSSEN"
+  },
+  {
+    "code" : "15268640001",
+    "display" : "COVID-19 VACCINE NRVV AD26 (JNJ 78436735)"
+  },
+  {
+    "code" : "15268640003",
+    "display" : "JANSSEN COVID-19 VACCINE"
+  },
+  {
+    "code" : "15268640002",
+    "display" : "JNJ 78436735"
+  },
+  {
+    "code" : "15268640005",
+    "display" : "VACUNA COVID-19 JANSSEN"
+  },
+  {
+    "code" : "15268655001",
+    "display" : "COVID-19 VACCINE NRVV AD5"
+  },
+  {
+    "code" : "15268607002",
+    "display" : "AD5-NCOV"
+  },
+  {
+    "code" : "15268607005",
+    "display" : "CONVIDECIA"
+  },
+  {
+    "code" : "15268607001",
+    "display" : "COVID-19 VACCINE NRVV AD5 (AD5-NCOV)"
+  },
+  {
+    "code" : "15268607004",
+    "display" : "KE WEI SHA"
+  },
+  {
+    "code" : "15268607003",
+    "display" : "RECOMBINANT COVID-19 VACCINE (ADENOVIRUS TYPE 5 VECTOR)"
+  },
+  {
+    "code" : "15268620001",
+    "display" : "COVID-19 VACCINE NRVV AD5 (GAM-COVID-VAC)"
+  },
+  {
+    "code" : "15268620002",
+    "display" : "GAM-COVID-VAC BOOSTER"
+  },
+  {
+    "code" : "15268620004",
+    "display" : "SPUTNIK V BOOST"
+  },
+  {
+    "code" : "15268656001",
+    "display" : "COVID-19 VACCINE NRVV MVA"
+  },
+  {
+    "code" : "15268649001",
+    "display" : "COVID-19 VACCINE PROT. SUBUNIT"
+  },
+  {
+    "code" : "15268642001",
+    "display" : "COVID-19 VACCINE PROT. SUBUNIT (EPIVACCORONA)"
+  },
+  {
+    "code" : "15268642002",
+    "display" : "EPIVACCORONA"
+  },
+  {
+    "code" : "15268628001",
+    "display" : "COVID-19 VACCINE PROT. SUBUNIT (ZF 2001)"
+  },
+  {
+    "code" : "15268628005",
+    "display" : "RECOMBINANT NOVEL CORONAVIRUS VACCINE (CHO CELL)"
+  },
+  {
+    "code" : "15268628003",
+    "display" : "ZF 2001"
+  },
+  {
+    "code" : "15268628002",
+    "display" : "ZF-UZ-VAC 2001"
+  },
+  {
+    "code" : "15268628004",
+    "display" : "ZHI KE WEI DE"
+  },
+  {
+    "code" : "15268628006",
+    "display" : "ZIFIVAX"
+  },
+  {
+    "code" : "15268648001",
+    "display" : "COVID-19 VACCINE RVV"
+  },
+  {
+    "code" : "15268646001",
+    "display" : "COVID-19 VACCINE SARNA"
+  },
+  {
+    "code" : "15268651001",
+    "display" : "COVID-19 VACCINE VLP"
+  },
+  {
+    "code" : "15268670001",
+    "display" : "DS 5670"
+  },
+  {
+    "code" : "15268604003",
+    "display" : "COVID-19 VACCINE MODERNA"
+  },
+  {
+    "code" : "15268604007",
+    "display" : "COVID-19 VACCINE MRNA (MRNA 1273)"
+  },
+  {
+    "code" : "15268604006",
+    "display" : "CX-024414"
+  },
+  {
+    "code" : "15268604001",
+    "display" : "ELASOMERAN"
+  },
+  {
+    "code" : "15268604002",
+    "display" : "MODERNA COVID-19 VACCINE"
+  },
+  {
+    "code" : "15268604005",
+    "display" : "MRNA 1273"
+  },
+  {
+    "code" : "15268604008",
+    "display" : "SPIKEVAX"
+  },
+  {
+    "code" : "15268604004",
+    "display" : "TAK 919"
+  },
+  {
+    "code" : "15268674001",
+    "display" : "EXG 5003"
+  },
+  {
+    "code" : "15268681001",
+    "display" : "FINLAY FR 2"
+  },
+  {
+    "code" : "15268661002",
+    "display" : "BNT162B3"
+  },
+  {
+    "code" : "15268661001",
+    "display" : "GANULAMERAN"
+  },
+  {
+    "code" : "15268665001",
+    "display" : "GBP 510"
+  },
+  {
+    "code" : "15268610001",
+    "display" : "GC 004"
+  },
+  {
+    "code" : "15268638001",
+    "display" : "GLS 5310"
+  },
+  {
+    "code" : "15268623001",
+    "display" : "GRAD-COV2"
+  },
+  {
+    "code" : "15268675001",
+    "display" : "GSK 4362620A"
+  },
+  {
+    "code" : "15268613001",
+    "display" : "GX 19"
+  },
+  {
+    "code" : "15268639001",
+    "display" : "GX 19N"
+  },
+  {
+    "code" : "15268634001",
+    "display" : "IIBR 100"
+  },
+  {
+    "code" : "15268605001",
+    "display" : "INO 4800"
+  },
+  {
+    "code" : "15268666001",
+    "display" : "MRNA 1283"
+  },
+  {
+    "code" : "15268677001",
+    "display" : "MRT 5500"
+  },
+  {
+    "code" : "15268632001",
+    "display" : "MT 2766"
+  },
+  {
+    "code" : "15268618001",
+    "display" : "MVC-COV1901"
+  },
+  {
+    "code" : "15268679002",
+    "display" : "BUTANVAC"
+  },
+  {
+    "code" : "15268679001",
+    "display" : "NDV HXP S"
+  },
+  {
+    "code" : "15268611001",
+    "display" : "NVX COV 2373"
+  },
+  {
+    "code" : "15268611002",
+    "display" : "TAK 019"
+  },
+  {
+    "code" : "15268659002",
+    "display" : "BNT162C2"
+  },
+  {
+    "code" : "15268659001",
+    "display" : "PIDACMERAN"
+  },
+  {
+    "code" : "15268669001",
+    "display" : "PTX COVID19 B"
+  },
+  {
+    "code" : "15268676001",
+    "display" : "S 268019"
+  },
+  {
+    "code" : "15268641001",
+    "display" : "SCB 2019"
+  },
+  {
+    "code" : "15268667001",
+    "display" : "SP 0253"
+  },
+  {
+    "code" : "15268625002",
+    "display" : "BNT162B2"
+  },
+  {
+    "code" : "15268625005",
+    "display" : "COMIRNATY"
+  },
+  {
+    "code" : "15268625004",
+    "display" : "COVID-19 MRNA VACCINE BNT162B2"
+  },
+  {
+    "code" : "15268625006",
+    "display" : "COVID-19 VACCINE MRNA (BNT162B2)"
+  },
+  {
+    "code" : "15268625008",
+    "display" : "PF 07302048"
+  },
+  {
+    "code" : "15268625003",
+    "display" : "PFIZER BIONTECH COVID-19 VACCINE"
+  },
+  {
+    "code" : "15268625001",
+    "display" : "TOZINAMERAN"
+  },
+  {
+    "code" : "15268625007",
+    "display" : "VACUNA COVID-19 PFIZER BIONTECH"
+  },
+  {
+    "code" : "15268625009",
+    "display" : "VACUNA PFIZER-BIONTECH COVID-19"
+  },
+  {
+    "code" : "15268629001",
+    "display" : "UB 612"
+  },
+  {
+    "code" : "15268631001",
+    "display" : "UQ CSL V451"
+  },
+  {
+    "code" : "15268627001",
+    "display" : "V 590"
+  },
+  {
+    "code" : "15268617002",
+    "display" : "TMV 083"
+  },
+  {
+    "code" : "15268617001",
+    "display" : "V 591"
+  },
+  {
+    "code" : "15268668001",
+    "display" : "VAX 001"
+  },
+  {
+    "code" : "15268671001",
+    "display" : "VBI 2902"
+  },
+  {
+    "code" : "15268637001",
+    "display" : "VLA 2001"
+  },
+  {
+    "code" : "15268626001",
+    "display" : "VXA COV2 1"
+  },
+  {
+    "code" : "15268612003",
+    "display" : "CV 07050101"
+  },
+  {
+    "code" : "15268612002",
+    "display" : "CVNCOV"
+  },
+  {
+    "code" : "15268612001",
+    "display" : "ZORECIMERAN"
+  },
+  {
+    "code" : "15268633001",
+    "display" : "ZYCOV-D"
+  }]
+}
