@@ -57,21 +57,6 @@ Description: "Codificacion Estandarizada de diagnóticos de complicaciones de em
 * include codes from system http://hl7.org/fhir/sid/icd-10
 * include codes from system http://snomed.info/sct
 
-ValueSet: EsaviMedDRAVS
-Id: EsaviMedDRAVS
-Title: "Códigos MedDRA Evento Adverso"
-Description: "Codificacion Estandarizada de Evento Adverso en MedDRA"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2021-03-11T00:00:00-03:00"
-* ^contact.name = "OPS"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = ""
-* ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
-
-* include codes from system http://terminology.hl7.org/CodeSystem/mdr
-
-
 ValueSet: EsaviOtroVS
 Id: EsaviOtroVS
 Title: "Otros Códigos Evento Adverso"
@@ -1185,10 +1170,11 @@ Description: "ICD11"
 * #AB70.2	"Otalgia"
 * #MC41	"Tinnitus"
 
-ValueSet: EsaviMedDRAVS //Oks y con TODOS los valores necesarios y algunos dummies
-Id: EsaviMedDRAVS
+CodeSystem: EsaviMedDRACS //Oks y con TODOS los valores necesarios y algunos dummies
+Id: EsaviMedDRACS
 Title: "Códigos MedDRA Evento Adverso"
 Description: "Codificacion Estandarizada de Evento Adverso en MedDRA"
+* ^url = "http://terminology.hl7.org/CodeSystem/MDRSPA"
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2021-03-11T00:00:00-03:00"
@@ -1196,17 +1182,18 @@ Description: "Codificacion Estandarizada de Evento Adverso en MedDRA"
 * ^contact.telecom.system = #email
 * ^contact.telecom.value = ""
 * ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
-* MedDRA#10021114 "Hipotiroidismo"
-* MedDRA#10029883 "Obesidad"
-* MedDRA#10067584 "Diabetes Melitus Tipo I"
-* MedDRA#10027649 "Aborto natural"
-* MedDRA#10022061 "Eritema en la zona de inyección"
-* MedDRA#10022058 "Edema en la zona de inyección"
-* MedDRA#10022086 "Dolor en la zona de inyección"
-* MedDRA#10016558 "Fiebre"
-* MedDRA#10004223 "Paralisis de Bell"
-* MedDRA#10014020 "Dolor de oídos"
-* MedDRA#10043882 "Acúfenos"
+* #10021114 "Hipotiroidismo"
+* #10029883 "Obesidad"
+* #10067584 "Diabetes Melitus Tipo I"
+* #10027649 "Aborto natural"
+* #10022061 "Eritema en la zona de inyección"
+* #10022058 "Edema en la zona de inyección"
+* #10022086 "Dolor en la zona de inyección"
+* #10016558 "Fiebre"
+* #10004223 "Paralisis de Bell"
+* #10014020 "Dolor de oídos"
+* #10043882 "Acúfenos"
 //Dummies
-* MedDRA#10002218 "Anafilaxia"
-* MedDRA#10016179 "Desmayo"
+* #10002218 "Anafilaxia"
+* #10016179 "Desmayo"
+
