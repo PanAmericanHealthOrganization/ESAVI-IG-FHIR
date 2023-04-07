@@ -1233,7 +1233,6 @@ CodeSystem: EsaviMedDRACS //Oks y con TODOS los valores necesarios y algunos dum
 Id: EsaviMedDRACS
 Title: "Códigos MedDRA Evento Adverso"
 Description: "Codificacion Estandarizada de Evento Adverso en MedDRA"
-* ^url = "http://terminology.hl7.org/CodeSystem/MDRSPA"
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2021-03-11T00:00:00-03:00"
