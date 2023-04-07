@@ -675,6 +675,12 @@ Usage: #example
 * item[=].item[=].item[=].linkId = "codigoMonitoreoPosteriorVacuna"
 * item[=].item[=].item[=].text = "Código correspondiente a la respuesta a la consulta sobre si se monitoreó paciente una vez vacunada"
 
+* item[=].item[=].item[=].enableWhen.question = "embarazadaMomentoVacuna"
+* item[=].item[=].item[=].enableWhen.operator = #=
+* item[=].item[=].item[=].enableWhen.answerBoolean = true
+
+
+
 /////////////////////////////////////////////////////////////////////////////////
 /////////////////////  Grupo antecedentesFarmacosVacunas //////////////////////////////////
 * item[+].type = #group

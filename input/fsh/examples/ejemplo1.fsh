@@ -1,11 +1,12 @@
-Instance: RespuestaCuestionarioESAVI1
-Description: "Respuesta Cuestionario ESAVI 1"
+Instance: Ejemplo1-Respondido
+Description: "Ejemplo de cuestionario Respondido 1"
 InstanceOf: ESAVIQuestionnaireResponse
 Usage: #example
 * meta.versionId = "1"
 * meta.lastUpdated = "2022-03-30T14:07:04.371+00:00"
 * meta.source = "#0Emc5iUG1akh56hk"
 //* questionnaire = "http://paho.org/esavi/Questionnaire/ejemploQuestionnaireEsavi4"
+* identifier.value = "f9a9a518-7b6f-472a-bf28-9aad7a8eeb22"
 * status = #completed
 * authored = "2022-03-10T10:20:00Z"
 * item[0].linkId = "datosNotificacionGeneral"
