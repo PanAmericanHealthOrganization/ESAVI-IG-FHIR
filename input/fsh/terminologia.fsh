@@ -1065,7 +1065,6 @@ Description: "Codificación Snomed reducido"
   * #738943003	"Gingival"
   * #738945005	"Intrauterine (intended site)"
   * #738946006	"Intravesical"
-
   * #738948007	"Nasal"
   * #738952007	"Ocular (intended site)"
   * #738956005	"Oral"
@@ -1090,7 +1089,7 @@ Description: "Codificación Snomed reducido"
   * #1230218002	"Periodontal"
   * #1231459002	"Extracorporeal (intended site)"
 
-  CodeSystem: ATCCS
+CodeSystem: ATCCS
 Id: ATCCS
 Title: "Códigos ATC medicamentos, vacunas"
 Description: "Códigos ATC medicamentos, vacunas"
@@ -1115,3 +1114,99 @@ Description: "Códigos ATC medicamentos, vacunas"
 * #J07BN03	"Vacuna COVID 19, virus inactivado"
 
 
+CodeSystem: ICD10
+Id: ICD10
+Title: "ICD-10"
+Description: "International Classification of Diseases revision 10 (ICD 10) - Spanish"
+* ^url = "http://hl7.org/fhir/sid/icd-10"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2021-03-11T00:00:00-03:00"
+* ^contact.name = "OPS"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = ""
+* ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
+* #E03.9	"Hipotiroidismo, no especificado"
+* #E66.9	"Obesidad, no especificada"
+* #E10.9	"Diabetes mellitus insulinodependiente, sin mención de complicación"
+* #O03.9	"Aborto espontáneo completo o no especificado, sin complicación"
+* #L53.9	"Afección eritematosa, no especificada"
+* #R60.0	"Edema localizado"
+* #R52	  "Dolor, no clasificado en otra parte"
+* #R50	  "Fiebre de otro origen y de origen desconocido"
+* #G51.0	"Paralisis de Bell"
+* #H92.0	"Otalgia"
+* #H93.1	"Tinnitus"
+
+CodeSystem: ICD11
+Id: ICD11
+Title: "ICD11"
+Description: "ICD11"
+* ^url = "http://id.who.int/icd11/mms"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2021-03-11T00:00:00-03:00"
+* ^contact.name = "OPS"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = ""
+* ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
+
+* #XM5JC5	"Vacunas contra COVID-19, subunidad proteica del virus"
+* #XM4YL8	"Vacuna contra COVID-19 AstraZeneca"
+* #XM8866	"BBIBP-CorV"
+* #XM1G90	"Covaxin"
+* #XM97T2	"Covishield®"
+* #XM9QW8	"Vacunas contra COVID-19, vector viral no replicante"
+* #XM7HT3	"CoronaVac®"
+* #XM8NQ0	"Comirnaty®"
+* #X68M6	"vacunas COVID-19"
+* #XM6AT1	"COVID-19 vaccine, DNA based"
+* #XM1NL1 	"Vacunas contra COVID-19, virus inactivado"
+* #XM6QV1	"Vacuna contra COVID-19 Janssen"
+* #XM3DT5	"Vacuna COVID-19 Moderna"
+* #XM85P5	"Covi-Vac"
+* #XM6SZ8 	"EpiVacCorona"
+* #XM5ZJ4	"Gam-Covid-Vac"
+* #XM9FQ7	"Hayat-Vax"
+* #XM97N6	"QazVac"
+* #XM5QM6	"Sputnik-Light"
+* #XM1AU2	"Sinopharm WIBP-CorV"
+* #XM2WC1	"levotiroxina sódica"
+* #XM0K72	"Insulina de acción lenta"
+* #5A00	"Hipotiroidismo"
+* #5B81	"Obesidad"
+* #5A10	"Diabetes mellitus tipo 1"
+* #JA00	"Aborto"
+* #ME64.0	"Eritema"
+* #MG29	"Edema"
+* #MG31.Y	"Otro(a)(s) dolor agudo especificado(a)(s)"
+* #MG26	"Fiebre de otro origen o de origen desconocido"
+* #8B88.0	"Parálisis de Bell"
+* #AB70.2	"Otalgia"
+* #MC41	"Tinnitus"
+
+ValueSet: EsaviMedDRAVS //Oks y con TODOS los valores necesarios y algunos dummies
+Id: EsaviMedDRAVS
+Title: "Códigos MedDRA Evento Adverso"
+Description: "Codificacion Estandarizada de Evento Adverso en MedDRA"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2021-03-11T00:00:00-03:00"
+* ^contact.name = "OPS"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = ""
+* ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
+* MedDRA#10021114 "Hipotiroidismo"
+* MedDRA#10029883 "Obesidad"
+* MedDRA#10067584 "Diabetes Melitus Tipo I"
+* MedDRA#10027649 "Aborto natural"
+* MedDRA#10022061 "Eritema en la zona de inyección"
+* MedDRA#10022058 "Edema en la zona de inyección"
+* MedDRA#10022086 "Dolor en la zona de inyección"
+* MedDRA#10016558 "Fiebre"
+* MedDRA#10004223 "Paralisis de Bell"
+* MedDRA#10014020 "Dolor de oídos"
+* MedDRA#10043882 "Acúfenos"
+//Dummies
+* MedDRA#10002218 "Anafilaxia"
+* MedDRA#10016179 "Desmayo"
