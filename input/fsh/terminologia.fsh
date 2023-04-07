@@ -50,7 +50,7 @@ Description: "Codificacion Estandarizada de diagnóticos de complicaciones de em
 * ^contact.telecom.value = ""
 * ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
 
-* include codes from system http://terminology.hl7.org/CodeSystem/MDRSPA
+* include codes from system EsaviMedDRACS
 
 ValueSet: ComplicacionEmbarazoOtroVS
 Id: ComplicacionEmbarazoOtroVS
@@ -803,7 +803,7 @@ Description: "Describe las enfermedades previas en un ESAVI codificadas en MedDR
 * ^status = #active
 * ^date = "2022-02-02"
 * ^publisher = "PAHO - Pan American Health Organization"
-* include codes from system http://terminology.hl7.org/CodeSystem/MDRSPA
+* include codes from system EsaviMedDRACS
 
 
 ValueSet: DosisVacunaVS
