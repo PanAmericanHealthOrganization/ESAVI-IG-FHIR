@@ -37,6 +37,19 @@ Description: "Codigos definidos para la identificación de países segun norma I
 * include codes from system urn:iso:std:iso:3166
 
 
+ValueSet: EsaviMedDRAVS
+Id: EsaviMedDRAVS
+Title: "Código MedDRA del Evento Adverso notificado"
+Description: "Código MedDRA del Evento Adverso notificado"
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2021-03-11T00:00:00-03:00"
+* ^contact.name = "OPS"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = ""
+* ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
+
+* include codes from system EsaviMedDRACS
 
 ValueSet: ComplicacionEmbarazoMedDRAVS
 Id: ComplicacionEmbarazoMedDRAVS
@@ -992,7 +1005,7 @@ Description: "Codificación Snomed reducido"
 * ^publisher = "Snomed-CT"
 * ^caseSensitive = true
 * ^content = #complete
-* ^count = 135
+* ^count = 136
 
 * #410942007 "fármaco o medicamento (sustancia)"
   * #424571000221103	"VAXZEVRIA vacuna COVID-19 vector viral no replicante"
@@ -1013,8 +1026,11 @@ Description: "Codificación Snomed reducido"
   * #33451000087108	"QazCovid-in vacuna COVID-19 virus entero inactivado"
   * #424821000221101	"SPUTNIK LIGTH vacuna COVID-19 vector viral no replicante"
   * #33201000087108	"SINOPHARM - WIBP vacuna COVID-19 virus entero inactivado"
+  
+* #105590001 "Sustancia"
   * #783639004	"levotiroxina sódica anhidra 100 microgramos por cada comprimido para administración oral"
   * #383491000221101	"LANTUS [INSULINA GLARGINA 100 U/ML] SOLUCION INYECTABLE, CARTUCHO de 3 ML"
+
 * #391103005 "evento adverso posterior a tratamiento complementario (trastorno)"  
   * #40930008	"hipotiroidismo"
   * #414916001 "obesidad"
@@ -1109,6 +1125,7 @@ Description: "Codificación Snomed reducido"
   * #738943003	"Gingival"
   * #738945005	"Intrauterine (intended site)"
   * #738946006	"Intravesical"
+
   * #738948007	"Nasal"
   * #738952007	"Ocular (intended site)"
   * #738956005	"Oral"
@@ -1150,12 +1167,17 @@ Description: "Códigos ATC medicamentos, vacunas"
 * ^content = #complete
 * ^count = 5
 
+* #J07 "Vacunas"
+  * #J07BN01	"Vacuna COVID 19, basada en ARNm"
+  * #J07BN	"Vacuna COVID 19"
+  * #J07BN04	"Vacuna COVID 19, subunidad proteica"
+  * #J07BN02	"Vacuna COVID 19, vector viral no replicante"
+  * #J07BN03	"Vacuna COVID 19, virus inactivado"
+* #A "Alimentary Track and Metabolism"
+  * #H03AA01	"levotiroxina sodica"
+  * #A10AE04	"insulina glargina"
 
-* #J07BN01	"Vacuna COVID 19, basada en ARNm"
-* #J07BN	"Vacuna COVID 19"
-* #J07BN04	"Vacuna COVID 19, subunidad proteica"
-* #J07BN02	"Vacuna COVID 19, vector viral no replicante"
-* #J07BN03	"Vacuna COVID 19, virus inactivado"
+
 
 
 CodeSystem: ICD10
@@ -1186,48 +1208,58 @@ CodeSystem: ICD11
 Id: ICD11
 Title: "ICD11"
 Description: "ICD11"
+* ^meta.versionId = "1"
+* ^meta.lastUpdated = "2023-01-05T21:57:10.292+00:00"
+* ^meta.source = "#yyuCovUJiH7vKAgN"
 * ^url = "http://id.who.int/icd11/mms"
-* ^version = "1.0.0"
+* ^version = "1.00"
 * ^status = #active
-* ^date = "2021-03-11T00:00:00-03:00"
-* ^contact.name = "OPS"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = ""
-* ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
+* ^experimental = false
+* ^date = "2019-03-20T00:00:00-04:00"
+* ^publisher = "CIE-11"
+* ^contact.name = "CIE-11"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 36
 
-* #XM5JC5	"Vacunas contra COVID-19, subunidad proteica del virus"
-* #XM4YL8	"Vacuna contra COVID-19 AstraZeneca"
-* #XM8866	"BBIBP-CorV"
-* #XM1G90	"Covaxin"
-* #XM97T2	"Covishield®"
-* #XM9QW8	"Vacunas contra COVID-19, vector viral no replicante"
-* #XM7HT3	"CoronaVac®"
-* #XM8NQ0	"Comirnaty®"
-* #X68M6	"vacunas COVID-19"
-* #XM6AT1	"COVID-19 vaccine, DNA based"
-* #XM1NL1 	"Vacunas contra COVID-19, virus inactivado"
-* #XM6QV1	"Vacuna contra COVID-19 Janssen"
-* #XM3DT5	"Vacuna COVID-19 Moderna"
-* #XM85P5	"Covi-Vac"
-* #XM6SZ8 	"EpiVacCorona"
-* #XM5ZJ4	"Gam-Covid-Vac"
-* #XM9FQ7	"Hayat-Vax"
-* #XM97N6	"QazVac"
-* #XM5QM6	"Sputnik-Light"
-* #XM1AU2	"Sinopharm WIBP-CorV"
-* #XM2WC1	"levotiroxina sódica"
-* #XM0K72	"Insulina de acción lenta"
-* #5A00	"Hipotiroidismo"
-* #5B81	"Obesidad"
-* #5A10	"Diabetes mellitus tipo 1"
-* #JA00	"Aborto"
-* #ME64.0	"Eritema"
-* #MG29	"Edema"
-* #MG31.Y	"Otro(a)(s) dolor agudo especificado(a)(s)"
-* #MG26	"Fiebre de otro origen o de origen desconocido"
-* #8B88.0	"Parálisis de Bell"
-* #AB70.2	"Otalgia"
-* #MC41	"Tinnitus"
+* #XM68M6 "Vacunas contra el COVID-19"
+  * #XM5JC5	"Vacunas contra COVID-19, subunidad proteica del virus"
+  * #XM4YL8	"Vacuna contra COVID-19 AstraZeneca"
+  * #XM8866	"BBIBP-CorV"
+  * #XM1G90	"Covaxin"
+  * #XM97T2	"Covishield®"
+  * #XM9QW8	"Vacunas contra COVID-19, vector viral no replicante"
+  * #XM7HT3	"CoronaVac®"
+  * #XM8NQ0	"Comirnaty®"
+  * #X68M6	"vacunas COVID-19"
+  * #XM6AT1	"COVID-19 vaccine, DNA based"
+  * #XM1NL1 	"Vacunas contra COVID-19, virus inactivado"
+  * #XM6QV1	"Vacuna contra COVID-19 Janssen"
+  * #XM3DT5	"Vacuna COVID-19 Moderna"
+  * #XM85P5	"Covi-Vac"
+  * #XM6SZ8 	"EpiVacCorona"
+  * #XM5ZJ4	"Gam-Covid-Vac"
+  * #XM9FQ7	"Hayat-Vax"
+  * #XM97N6	"QazVac"
+  * #XM5QM6	"Sputnik-Light"
+  * #XM1AU2	"Sinopharm WIBP-CorV"
+
+* #XM4843 "Fármacos Z" 
+  * #XM2WC1	"levotiroxina sódica"
+  * #XM0K72	"Insulina de acción lenta"
+
+* #XY0Y "Afección principal"
+  * #5A00	"Hipotiroidismo"
+  * #5B81	"Obesidad"
+  * #5A10	"Diabetes mellitus tipo 1"
+  * #JA00	"Aborto"
+  * #ME64.0	"Eritema"
+  * #MG29	"Edema"
+  * #MG31.Y	"Otro(a)(s) dolor agudo especificado(a)(s)"
+  * #MG26	"Fiebre de otro origen o de origen desconocido"
+  * #8B88.0	"Parálisis de Bell"
+  * #AB70.2	"Otalgia"
+  * #MC41	"Tinnitus"
 
 CodeSystem: EsaviMedDRACS //Oks y con TODOS los valores necesarios y algunos dummies
 Id: EsaviMedDRACS
@@ -1272,7 +1304,7 @@ Description: "Codificación Estandarizda del código de las Vacunas según WhoDr
 * ^contact.name = "WHO"
 * ^caseSensitive = true
 * ^content = #complete
-* ^count = 42
+* ^count = 43
 
 * #15268682002	"ABDALA"
 * #15268603006	"ASTRAZENECA COVID-19 VACCINE"
@@ -1314,5 +1346,7 @@ Description: "Codificación Estandarizda del código de las Vacunas según WhoDr
 * #15268625009	"VACUNA PFIZER-BIONTECH COVID-19"
 * #15268603007	"VAXZEVRIA"
 * #15268663004	"WIBP-CORV"
-* #68001016	"Levotiroxina"
-* #1483501003	"Lantus"
+
+* #C3 "Medicamentos"
+  * #68001016	"Levotiroxina"
+  * #1483501003	"Lantus"
