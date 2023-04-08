@@ -1,7 +1,7 @@
 Alias: $v2-0136 = http://terminology.hl7.org/ValueSet/v2-0136
 Alias: $ProfesionalNotificadorCS = http://paho.org/esavi/CodeSystem/ProfesionalNotificadorCS
 Alias: $MedDRA = http://terminology.hl7.org/CodeSystem/MDRSPA
-Alias: $ICD11mms = http://id.who.int/icd11/mms
+//Alias: $ICD11mms = http://id.who.int/icd11/mms
 Alias: $ICD10 = http://hl7.org/fhir/sid/icd-10
 Alias: SCTSpa = http://snomed.info/sct/449081005
 Alias: ICD11mms = http://id.who.int/icd/entity
@@ -92,7 +92,7 @@ Description: "Evento Adverso en otro sistema según Snomed, ATC y CIE-10"
 * ^contact.telecom.value = ""
 * ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
 * include codes from system http://snomed.info/sct where concept is-a #391103005 "evento adverso posterior a tratamiento complementario (trastorno)"
-* include codes from system ICD11CS  where concept is-a #XY0Y "Afección principal"
+* include codes from system ICD11mms  where concept is-a #XY0Y "Afección principal"
 * include codes from system http://hl7.org/fhir/sid/icd-10
 /*
 ValueSet: SustanciaActivaVS
@@ -122,7 +122,7 @@ Description: "Codificación Estandarizda del Nombre Genérico de Medicamento seg
 * ^contact.telecom.value = ""
 * ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
 * include codes from system ATCCS where concept is-a #A "Alimentary Track and Metabolism"
-* include codes from system ICD11CS where concept is-a #XM4843 "Fármacos Z" 
+* include codes from system ICD11mms where concept is-a #XM4843 "Fármacos Z" 
 * include codes from system PTSctCS where concept is-a #105590001 "Sustancia"
 * include codes from system CodigoWhoVacunaCS where concept is-a #C3 "Medicamentos"
 
@@ -180,7 +180,7 @@ Description: "Codificación Estandarizada de Nombre Genérico de las Vacunas seg
 * ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
 * include codes from system http://snomed.info/sct  where concept is-a #410942007 "fármaco o medicamento (sustancia)"
 * include codes from system ATCCS where concept is-a #J07 "Vacunas"
-* include codes from system ICD11CS where concept is-a #XM68M6 "Vacunas contra el COVID-19"
+* include codes from system ICD11mms where concept is-a #XM68M6 "Vacunas contra el COVID-19"
 
 ValueSet: NombreComercialVacunaVS
 Id: NombreComercialVacunaVS
@@ -1167,7 +1167,7 @@ Description: "Códigos ATC medicamentos, vacunas"
 * ^date = "2019-03-20T00:00:00-04:00"
 * ^caseSensitive = true
 * ^content = #complete
-* ^count = 5
+* ^count = 9
 
 * #J07 "Vacunas"
   * #J07BN01	"Vacuna COVID 19, basada en ARNm"

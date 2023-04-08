@@ -956,7 +956,7 @@ Usage: #example
 
 //////////////////////////////////
 * item[=].item[=].item[+].type = #choice
-* item[=].item[=].item[=].answerValueSet = EsaviMedDRAVS
+* item[=].item[=].item[=].answerValueSet = "https://paho.org/fhir/esavi/ValueSet/EsaviMedDRAVS"
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "codigoESAVIMedDRA"
 * item[=].item[=].item[=].text = "Código MedDRA del Evento Adverso notificado"
