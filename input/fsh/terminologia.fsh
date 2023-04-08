@@ -1,10 +1,10 @@
 Alias: $v2-0136 = http://terminology.hl7.org/ValueSet/v2-0136
 Alias: $ProfesionalNotificadorCS = http://paho.org/esavi/CodeSystem/ProfesionalNotificadorCS
 Alias: $MedDRA = http://terminology.hl7.org/CodeSystem/MDRSPA
-//Alias: $ICD11mms = http://id.who.int/icd11/mms
+Alias: ICD11mms = http://id.who.int/icd11/mms
 Alias: $ICD10 = http://hl7.org/fhir/sid/icd-10
 Alias: SCTSpa = http://snomed.info/sct/449081005
-Alias: ICD11mms = http://id.who.int/icd/entity
+//Alias: ICD11mms = http://id.who.int/icd/entity
 
 ValueSet: ViaAdminMedicamentoVS
 Id: ViaAdminMedicamentoVS
