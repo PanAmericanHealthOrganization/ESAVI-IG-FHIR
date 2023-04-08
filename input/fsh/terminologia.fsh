@@ -181,7 +181,7 @@ Description: "Codificación Estandarizada de Nombre Genérico de las Vacunas seg
 
 //* include codes from system http://snomed.info/sct where concept is-a  #410942007 "fármaco o medicamento (sustancia)"
 * include codes from system ATCCS where concept is-a #J07 "Vacunas"
-//* include codes from system ICD11mms where concept is-a #XM68M6 "Vacunas contra el COVID-19"
+* include codes from system ICD11mms where concept is-a #XM68M6 "Vacunas contra el COVID-19"
 
 ValueSet: NombreComercialVacunaVS
 Id: NombreComercialVacunaVS
