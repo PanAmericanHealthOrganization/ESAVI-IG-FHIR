@@ -178,8 +178,9 @@ Description: "Codificación Estandarizada de Nombre Genérico de las Vacunas seg
 * ^contact.telecom.system = #email
 * ^contact.telecom.value = ""
 * ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
-* include codes from system http://snomed.info/sct  where concept is-a #410942007 "fármaco o medicamento (sustancia)"
-* include codes from system ATCCS where concept is-a #J07 "Vacunas"
+
+* include codes from system http://snomed.info/sct where concept is-a  #410942007 "fármaco o medicamento (sustancia)"
+* include codes from system ATCCS //where concept is-a #J07 "Vacunas"
 * include codes from system ICD11mms where concept is-a #XM68M6 "Vacunas contra el COVID-19"
 
 ValueSet: NombreComercialVacunaVS
@@ -1160,7 +1161,6 @@ Description: "Códigos ATC medicamentos, vacunas"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2023-01-05T21:57:10.292+00:00"
 * ^meta.source = "#yyuCovUJiH7vKAgN"
-
 * ^version = "1.00"
 * ^status = #active
 * ^experimental = false
