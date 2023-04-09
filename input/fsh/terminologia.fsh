@@ -85,7 +85,7 @@ Description: "Codificacion Estandarizada de diagnóticos de complicaciones de em
 * ^contact.telecom.value = ""
 * ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
 
-* include codes from system ICD10 where concept is-a  #D01 "Problemas ESAVI"  
+* include codes from system ICD10 where concept is-a #ESAVI01 "Problemas ESAVI"  
 * include codes from system http://snomed.info/sct where concept is-a #391103005 "evento adverso posterior a tratamiento complementario (trastorno)"  
 
 ValueSet: EsaviOtroVS
@@ -1079,7 +1079,7 @@ Description: "International Classification of Diseases revision 10 (ICD 10) - Sp
 * ^contact.telecom.system = #email
 * ^contact.telecom.value = ""
 * ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
-* #D01 "Problemas ESAVI"  
+* #ESAVI01 "Problemas ESAVI"  
   * #E03.9	"Hipotiroidismo, no especificado"
   * #E66.9	"Obesidad, no especificada"
   * #E10.9	"Diabetes mellitus insulinodependiente, sin mención de complicación"
