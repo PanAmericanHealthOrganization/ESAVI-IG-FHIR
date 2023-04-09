@@ -85,7 +85,7 @@ Description: "Codificacion Estandarizada de diagnóticos de complicaciones de em
 * ^contact.telecom.value = ""
 * ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
 
-* include codes from system ICD10
+* include codes from system where concept is-a ICD10 #D01 "Problemas ESAVI"  
 * include codes from system http://snomed.info/sct where concept is-a #391103005 "evento adverso posterior a tratamiento complementario (trastorno)"  
 
 ValueSet: EsaviOtroVS
@@ -1079,17 +1079,18 @@ Description: "International Classification of Diseases revision 10 (ICD 10) - Sp
 * ^contact.telecom.system = #email
 * ^contact.telecom.value = ""
 * ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
-* #E03.9	"Hipotiroidismo, no especificado"
-* #E66.9	"Obesidad, no especificada"
-* #E10.9	"Diabetes mellitus insulinodependiente, sin mención de complicación"
-* #O03.9	"Aborto espontáneo completo o no especificado, sin complicación"
-* #L53.9	"Afección eritematosa, no especificada"
-* #R60.0	"Edema localizado"
-* #R52	  "Dolor, no clasificado en otra parte"
-* #R50	  "Fiebre de otro origen y de origen desconocido"
-* #G51.0	"Paralisis de Bell"
-* #H92.0	"Otalgia"
-* #H93.1	"Tinnitus"
+* #D01 "Problemas ESAVI"  
+  * #E03.9	"Hipotiroidismo, no especificado"
+  * #E66.9	"Obesidad, no especificada"
+  * #E10.9	"Diabetes mellitus insulinodependiente, sin mención de complicación"
+  * #O03.9	"Aborto espontáneo completo o no especificado, sin complicación"
+  * #L53.9	"Afección eritematosa, no especificada"
+  * #R60.0	"Edema localizado"
+  * #R52	  "Dolor, no clasificado en otra parte"
+  * #R50	  "Fiebre de otro origen y de origen desconocido"
+  * #G51.0	"Paralisis de Bell"
+  * #H92.0	"Otalgia"
+  * #H93.1	"Tinnitus"
 
 CodeSystem: ICD11
 Id: ICD11
