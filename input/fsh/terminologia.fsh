@@ -215,8 +215,8 @@ Description: "Código no WHODrug de la Vacuna"
 * SCTSpa#424751000221104 "COMIRNATY vacuna COVID-19 ARNm"
 * SCTSpa#424821000221101 "SPUTNIK LIGTH vacuna COVID-19 vector viral no replicante"
 */
-* include codes from system ICD11
-* include codes from system SCTSpa
+* include codes from system ICD11mms
+* include codes from system http://snomed.info/sct where concept is-a  #Alias: SCTSpa = http://snomed.info/sct/449081005
 
 
 /*
