@@ -85,7 +85,17 @@ Description: "Codificacion Estandarizada de diagnóticos de complicaciones de em
 * ^contact.telecom.value = ""
 * ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
 
-* include codes from system ICD10 where concept is-a #ESAVI01 "Problemas ESAVI"  
+* include codes from system ICD10 where concept is-a #E03.9	"Hipotiroidismo, no especificado"
+* include codes from system ICD10 where concept is-a #E66.9	"Obesidad, no especificada"
+* include codes from system ICD10 where concept is-a #E10.9	"Diabetes mellitus insulinodependiente, sin mención de complicación"
+* include codes from system ICD10 where concept is-a #O03.9	"Aborto espontáneo completo o no especificado, sin complicación"
+* include codes from system ICD10 where concept is-a #L53.9	"Afección eritematosa, no especificada"
+* include codes from system ICD10 where concept is-a #R60.0	"Edema localizado"
+* include codes from system ICD10 where concept is-a #R52	  "Dolor, no clasificado en otra parte"
+* include codes from system ICD10 where concept is-a #R50	  "Fiebre de otro origen y de origen desconocido"
+* include codes from system ICD10 where concept is-a #G51.0	"Paralisis de Bell"
+* include codes from system ICD10 where concept is-a #H92.0	"Otalgia"
+* include codes from system ICD10 where concept is-a #H93.1	"Tinnitus"
 * include codes from system http://snomed.info/sct where concept is-a #391103005 "evento adverso posterior a tratamiento complementario (trastorno)"  
 
 ValueSet: EsaviOtroVS
@@ -101,7 +111,17 @@ Description: "Evento Adverso en otro sistema según Snomed, ATC y CIE-10"
 * ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
 * include codes from system SCT where concept is-a #391103005 "evento adverso posterior a tratamiento complementario (trastorno)"
 * include codes from system ICD11mms where concept is-a #XY0Y "Afección principal"
-* include codes from system $ICD10
+* include codes from system ICD10 where concept is-a #E03.9	"Hipotiroidismo, no especificado"
+* include codes from system ICD10 where concept is-a #E66.9	"Obesidad, no especificada"
+* include codes from system ICD10 where concept is-a #E10.9	"Diabetes mellitus insulinodependiente, sin mención de complicación"
+* include codes from system ICD10 where concept is-a #O03.9	"Aborto espontáneo completo o no especificado, sin complicación"
+* include codes from system ICD10 where concept is-a #L53.9	"Afección eritematosa, no especificada"
+* include codes from system ICD10 where concept is-a #R60.0	"Edema localizado"
+* include codes from system ICD10 where concept is-a #R52	  "Dolor, no clasificado en otra parte"
+* include codes from system ICD10 where concept is-a #R50	  "Fiebre de otro origen y de origen desconocido"
+* include codes from system ICD10 where concept is-a #G51.0	"Paralisis de Bell"
+* include codes from system ICD10 where concept is-a #H92.0	"Otalgia"
+* include codes from system ICD10 where concept is-a #H93.1	"Tinnitus"
 /*
 ValueSet: SustanciaActivaVS
 Id: SustanciaActivaVS
@@ -164,7 +184,17 @@ Description: "Describe las enfermedades previas en un ESAVI codificadas en CIE10
 * ^contact.telecom.value = ""
 * ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
 * include codes from system http://id.who.int/icd11/mms where concept is-a  #XY0Y "Afección principal"
-* include codes from system http://hl7.org/fhir/sid/icd-10
+* include codes from system ICD10 where concept is-a #E03.9	"Hipotiroidismo, no especificado"
+* include codes from system ICD10 where concept is-a #E66.9	"Obesidad, no especificada"
+* include codes from system ICD10 where concept is-a #E10.9	"Diabetes mellitus insulinodependiente, sin mención de complicación"
+* include codes from system ICD10 where concept is-a #O03.9	"Aborto espontáneo completo o no especificado, sin complicación"
+* include codes from system ICD10 where concept is-a #L53.9	"Afección eritematosa, no especificada"
+* include codes from system ICD10 where concept is-a #R60.0	"Edema localizado"
+* include codes from system ICD10 where concept is-a #R52	  "Dolor, no clasificado en otra parte"
+* include codes from system ICD10 where concept is-a #R50	  "Fiebre de otro origen y de origen desconocido"
+* include codes from system ICD10 where concept is-a #G51.0	"Paralisis de Bell"
+* include codes from system ICD10 where concept is-a #H92.0	"Otalgia"
+* include codes from system ICD10 where concept is-a #H93.1	"Tinnitus"
 * include codes from system http://snomed.info/sct where concept is-a  #391103005 "evento adverso posterior a tratamiento complementario (trastorno)"
 
 
@@ -179,75 +209,9 @@ Description: "Código no WHODrug de la Vacuna"
 * ^contact.telecom.system = #email
 * ^contact.telecom.value = ""
 * ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
-/*
-* ICD11mms#X68M6 "vacunas COVID-19"
-* ICD11mms#XM1AU2 "Sinopharm WIBP-CorV"
-* ICD11mms#XM1G90 "Covaxin"
-* ICD11mms#XM1NL1  "Vacunas contra COVID-19, virus inactivado"
-* ICD11mms#XM3DT5 "Vacuna COVID-19 Moderna"
-* ICD11mms#XM4YL8 "Vacuna contra COVID-19 AstraZeneca"
-* ICD11mms#XM5JC5 "Vacunas contra COVID-19, subunidad proteica del virus"
-* ICD11mms#XM5QM6 "Sputnik-Light"
-* ICD11mms#XM5ZJ4 "Gam-Covid-Vac"
-* ICD11mms#XM6AT1 "COVID-19 vaccine, DNA based"
-* ICD11mms#XM6QV1 "Vacuna contra COVID-19 Janssen"
-* ICD11mms#XM6SZ8  "EpiVacCorona"
-* ICD11mms#XM7HT3 "CoronaVac®"
-* ICD11mms#XM8NQ0 "Comirnaty®"
-* ICD11mms#XM97N6 "QazVac"
-* ICD11mms#XM97T2 "Covishield®"
-* ICD11mms#XM9QW8 "Vacunas contra COVID-19, vector viral no replicante"
-* SCTSpa#1157024006 "vacuna virus entero inactivado contra SARS-CoV-2"
-* SCTSpa#1187593009 "vacuna de plásmido de ADN de SARS-CoV-2 que codifica proteína de espiga"
-* SCTSpa#28531000087107 "vacuna contra COVID-19"
-* SCTSpa#31311000087104 "CoronaVac vacuna COVID-19 virus entero inactivado"
-* SCTSpa#31431000087100 "CONVIDECIA vacuna COVID-19 vector viral no replicante"
-* SCTSpa#33201000087108 "SINOPHARM - WIBP vacuna COVID-19 virus entero inactivado"
-* SCTSpa#33211000087105 "COVAXIN vacuna COVID-19 virus entero inactivado"
-* SCTSpa#33391000087109 "ABDALA vacuna COVID-19 proteína de espiga recombinante"
-* SCTSpa#33421000087101 "EpiVacCorona vacuna COVID-19 proteína de espiga recombinante"
-* SCTSpa#33451000087108 "QazCovid-in vacuna COVID-19 virus entero inactivado"
-* SCTSpa#424571000221103 "VAXZEVRIA vacuna COVID-19 vector viral no replicante"
-* SCTSpa#424581000221100 "COVISHIELD vacuna COVID-19 vector viral no replicante"
-* SCTSpa#424591000221102 "JANSSEN vacuna COVID-19 vector viral no replicante"
-* SCTSpa#424711000221100 "SPUTNIK V vacuna COVID-19 vector viral no replicante"
-* SCTSpa#424731000221108 "SPIKEVAX vacuna COVID-19 ARNm"
-* SCTSpa#424751000221104 "COMIRNATY vacuna COVID-19 ARNm"
-* SCTSpa#424821000221101 "SPUTNIK LIGTH vacuna COVID-19 vector viral no replicante"
-*/
 * include codes from system ICD11mms
 * include codes from system http://snomed.info/sct where concept is-a #410942007 "fármaco o medicamento (sustancia)"
-* include codes from system ATCCS where concept is-a #J07 "Vacunas"
-
-
-
-/*
-ValueSet: CodigoNoWhoVacunaVS
-Id: CodigoNoWhoVacunaVS
-Title: "Código no WHODrug de la Vacuna"
-Description: "Código no WHODrug de la Vacuna"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2021-03-11T00:00:00-03:00"
-* ^contact.name = "OPS"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = ""
-* ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
-* include codes from system CodigoNoWhoVacunaCS
-
-CodeSystem: CodigoNoWhoVacunaCS
-Id: CodigoNoWhoVacunaCS
-Title: "Código no WHODrug de la Vacuna"
-Description: "Código no WHODrug de la Vacuna"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2021-03-11T00:00:00-03:00"
-* ^contact.name = "OPS"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = ""
-* ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
-//* #1 "SNOMED-CT"
-*/
+* include codes from system ATCCS
 
 ValueSet: CodigoWhoFabricanteVS
 Id: CodigoWhoFabricanteVS
@@ -444,7 +408,7 @@ Description:  "Codigo Medicamento"
 * ^contact.telecom.value = ""
 * ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
 * include codes from system SCT where concept is-a #105590001
-* include codes from system ATCCS where concept is-a #A "Alimentary Track and Metabolism"
+* include codes from system ATCCS
 * include codes from system ICD11mms where concept is-a #XM4843
 
 /*
@@ -1079,18 +1043,17 @@ Description: "International Classification of Diseases revision 10 (ICD 10) - Sp
 * ^contact.telecom.system = #email
 * ^contact.telecom.value = ""
 * ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
-* #ESAVI01 "Problemas ESAVI"  
-  * #E03.9	"Hipotiroidismo, no especificado"
-  * #E66.9	"Obesidad, no especificada"
-  * #E10.9	"Diabetes mellitus insulinodependiente, sin mención de complicación"
-  * #O03.9	"Aborto espontáneo completo o no especificado, sin complicación"
-  * #L53.9	"Afección eritematosa, no especificada"
-  * #R60.0	"Edema localizado"
-  * #R52	  "Dolor, no clasificado en otra parte"
-  * #R50	  "Fiebre de otro origen y de origen desconocido"
-  * #G51.0	"Paralisis de Bell"
-  * #H92.0	"Otalgia"
-  * #H93.1	"Tinnitus"
+* #E03.9	"Hipotiroidismo, no especificado"
+* #E66.9	"Obesidad, no especificada"
+* #E10.9	"Diabetes mellitus insulinodependiente, sin mención de complicación"
+* #O03.9	"Aborto espontáneo completo o no especificado, sin complicación"
+* #L53.9	"Afección eritematosa, no especificada"
+* #R60.0	"Edema localizado"
+* #R52	  "Dolor, no clasificado en otra parte"
+* #R50	  "Fiebre de otro origen y de origen desconocido"
+* #G51.0	"Paralisis de Bell"
+* #H92.0	"Otalgia"
+* #H93.1	"Tinnitus"
 
 CodeSystem: ICD11
 Id: ICD11
