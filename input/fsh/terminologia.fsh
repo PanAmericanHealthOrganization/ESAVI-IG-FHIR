@@ -414,8 +414,8 @@ Description:  "Codigo Medicamento"
 * ^contact.telecom.value = ""
 * ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
 * include codes from system SCT where concept is-a #105590001
-* include codes from system ATCCS where concept is-a#H03AA01	"levotiroxina sodica"
-* include codes from system ATCCS where concept is-a#A10AE04	"insulina glargina"
+* include codes from system ATCCS where concept is-a #H03AA01	"levotiroxina sodica"
+* include codes from system ATCCS where concept is-a #A10AE04	"insulina glargina"
 * include codes from system ICD11mms where concept is-a #XM4843
 
 /*
