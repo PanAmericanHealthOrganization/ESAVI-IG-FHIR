@@ -179,6 +179,7 @@ Description: "Código no WHODrug de la Vacuna"
 * ^contact.telecom.system = #email
 * ^contact.telecom.value = ""
 * ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
+/*
 * ICD11mms#X68M6 "vacunas COVID-19"
 * ICD11mms#XM1AU2 "Sinopharm WIBP-CorV"
 * ICD11mms#XM1G90 "Covaxin"
@@ -213,6 +214,9 @@ Description: "Código no WHODrug de la Vacuna"
 * SCTSpa#424731000221108 "SPIKEVAX vacuna COVID-19 ARNm"
 * SCTSpa#424751000221104 "COMIRNATY vacuna COVID-19 ARNm"
 * SCTSpa#424821000221101 "SPUTNIK LIGTH vacuna COVID-19 vector viral no replicante"
+*/
+* include codes from system ICD11
+* include codes from system SCTSpa
 
 
 /*
