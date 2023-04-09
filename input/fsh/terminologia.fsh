@@ -211,7 +211,13 @@ Description: "Código no WHODrug de la Vacuna"
 * ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
 * include codes from system ICD11mms
 * include codes from system http://snomed.info/sct where concept is-a #410942007 "fármaco o medicamento (sustancia)"
-* include codes from system ATCCS
+* include codes from system ATCCS where concept is-a #J07BN01	"Vacuna COVID 19, basada en ARNm"
+* include codes from system ATCCS where concept is-a #J07BN	"Vacuna COVID 19"
+* include codes from system ATCCS where concept is-a #J07BN04	"Vacuna COVID 19, subunidad proteica"
+* include codes from system ATCCS where concept is-a #J07BN02	"Vacuna COVID 19, vector viral no replicante"
+* include codes from system ATCCS where concept is-a #J07BN03	"Vacuna COVID 19, virus inactivado"
+
+
 
 ValueSet: CodigoWhoFabricanteVS
 Id: CodigoWhoFabricanteVS
@@ -408,7 +414,8 @@ Description:  "Codigo Medicamento"
 * ^contact.telecom.value = ""
 * ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
 * include codes from system SCT where concept is-a #105590001
-* include codes from system ATCCS
+* include codes from system ATCCS where concept is-a#H03AA01	"levotiroxina sodica"
+* include codes from system ATCCS where concept is-a#A10AE04	"insulina glargina"
 * include codes from system ICD11mms where concept is-a #XM4843
 
 /*
