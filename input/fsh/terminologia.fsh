@@ -217,6 +217,8 @@ Description: "Código no WHODrug de la Vacuna"
 */
 * include codes from system ICD11mms
 * include codes from system http://snomed.info/sct where concept is-a #410942007 "fármaco o medicamento (sustancia)"
+* include codes from system ATCCS where concept is-a #J07 "Vacunas"
+
 
 
 /*
