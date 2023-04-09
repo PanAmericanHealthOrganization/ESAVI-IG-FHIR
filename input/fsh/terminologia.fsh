@@ -5,6 +5,14 @@ Alias: ICD11mms = http://id.who.int/icd11/mms
 Alias: $ICD10 = http://hl7.org/fhir/sid/icd-10
 Alias: SCTSpa = http://snomed.info/sct/449081005
 //Alias: ICD11mms = http://id.who.int/icd/entity
+Alias:   SCT = http://snomed.info/sct
+Alias:   LOINC = http://loinc.org
+//Alias:   ATCCS = http://www.whocc.no/atc
+Alias:   m49.htm = http://unstats.un.org/unsd/methods/m49/m49.htm
+RuleSet: RuleSetMeta
+* ^version = "0.5.0"
+* ^status = #draft
+
 
 ValueSet: ViaAdminMedicamentoVS
 Id: ViaAdminMedicamentoVS
@@ -91,9 +99,9 @@ Description: "Evento Adverso en otro sistema según Snomed, ATC y CIE-10"
 * ^contact.telecom.system = #email
 * ^contact.telecom.value = ""
 * ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
-* include codes from system http://snomed.info/sct where concept is-a #391103005 "evento adverso posterior a tratamiento complementario (trastorno)"
-* include codes from system ICD11mms  where concept is-a #XY0Y "Afección principal"
-* include codes from system http://hl7.org/fhir/sid/icd-10
+* include codes from system SCT where concept is-a #391103005 "evento adverso posterior a tratamiento complementario (trastorno)"
+* include codes from system ICD11mms where concept is-a #XY0Y "Afección principal"
+* include codes from system $ICD10
 /*
 ValueSet: SustanciaActivaVS
 Id: SustanciaActivaVS
@@ -110,48 +118,10 @@ Description: "Codificación Estandarizda de Sustancia Activa de Medicamento seg�
 * include codes from system ATC
 * include codes from system http://hl7.org/fhir/sid/icd-10
 */
-ValueSet: MedicamentoGenericoVS
-Id: MedicamentoGenericoVS
-Title: "Nombre Genérico de Medicamentos"
-Description: "Codificación Estandarizda del Nombre Genérico de Medicamento según ATC y CIE-10"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2021-03-11T00:00:00-03:00"
-* ^contact.name = "OPS"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = ""
-* ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
-* include codes from system ATCCS where concept is-a #A "Alimentary Track and Metabolism"
-* include codes from system ICD11mms where concept is-a #XM4843 "Fármacos Z" 
-* include codes from system PTSctCS where concept is-a #105590001 "Sustancia"
-* include codes from system CodigoWhoVacunaCS where concept is-a #C3 "Medicamentos"
-
-ValueSet: MedicamentoOtroVS
-Id: MedicamentoOtroVS
-Title: "Nombre Genérico Medicamento"
-Description: "Nombre Genérico de Medicamento según Snomed"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2021-03-11T00:00:00-03:00"
-* ^contact.name = "OPS"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = ""
-* ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
-* include codes from system http://snomed.info/sct where concept is-a #410942007 "fármaco o medicamento (sustancia)"
 
 
-ValueSet: NombreComercialMEdicamentoVS
-Id: NombreComercialMedicamentoVS
-Title: "Nombre Comercial Medicamento"
-Description: "Codificación Estandarizda del Nombre Comercial de Medicamento según ATC"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2021-03-11T00:00:00-03:00"
-* ^contact.name = "OPS"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = ""
-* ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
-* include codes from system ATCCS
+
+
 
 ValueSet: CodigoWhoVacunaVS
 Id: CodigoWhoVacunaVS
@@ -167,34 +137,6 @@ Description: "Codificación Estandarizda del código de las Vacunas según WhoDr
 * include codes from system http://who-umc.org
 
 
-ValueSet: CodigoOtroVacunaVS
-Id: CodigoOtroVacunaVS
-Title: "Nombre Genérico Vacunas Códigos no WHO"
-Description: "Codificación Estandarizada de Nombre Genérico de las Vacunas según Snomed, ATC y CIE-10"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2021-03-11T00:00:00-03:00"
-* ^contact.name = "OPS"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = ""
-* ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
-
-* include codes from system http://snomed.info/sct where concept is-a  #410942007 "fármaco o medicamento (sustancia)"
-* include codes from system ATCCS where concept is-a #J07 "Vacunas"
-* include codes from system ICD11mms where concept is-a #XM68M6 "Vacunas contra el COVID-19"
-
-ValueSet: NombreComercialVacunaVS
-Id: NombreComercialVacunaVS
-Title: "Nombre Comercial Vacunas"
-Description: "Codificación Estandarizda del Nombre Comercial Vacuna en ATC"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2021-03-11T00:00:00-03:00"
-* ^contact.name = "OPS"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = ""
-* ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
-* include codes from system ATCCS where concept is-a #J07 "Vacunas"
 
 
 ValueSet: FormaFarmaceuticaVS
@@ -447,32 +389,8 @@ Description:  "Códigos para capturar respuestas simples si/no/no sabe"
 * #2 "No"
 * #3 "No sabe"
 
-ValueSet: RespuestaVerdaderoFalsoVS
-Id: RespuestaVerdaderoFalsoVS
-Title: "Códigos Booleanos"
-Description: "Códigos respuestas simples Verdadero/Falso"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2021-03-11T00:00:00-03:00"
-* ^contact.name = "OPS"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = ""
-* ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
-* include codes from system RespuestaVerdaderoFalsoCS
 
-CodeSystem: RespuestaVerdaderoFalsoCS
-Id: RespuestaVerdaderoFalsoCS
-Title: "Códigos Booleanos"
-Description:  "Códigos respuestas simples Verdadero/Falso"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2021-03-11T00:00:00-03:00"
-* ^contact.name = "OPS"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = ""
-* ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
-* #1 "Verdadero"
-* #2 "Falso"
+
 /*
 ValueSet: GrupoEtnicoVS
 Id: GrupoEtnicoVS
@@ -519,8 +437,11 @@ Description:  "Codigo Medicamento"
 * ^contact.telecom.system = #email
 * ^contact.telecom.value = ""
 * ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
-* include codes from system CodigoMedicamentoCS
+* include codes from system SCT where concept is-a #105590001
+* include codes from system ATCCS where concept is-a #A
+* include codes from system ICD11mms where concept is-a #XM4843
 
+/*
 CodeSystem: CodigoMedicamentoCS
 Id: CodigoMedicamentoCS
 Title: "Codigo Medicamento"
@@ -540,6 +461,8 @@ Description:  "Codigo Medicamento"
 * #XM0K72 "Insulina de acción lenta"
 * #383491000221101 "LANTUS [INSULINA GLARGINA 100 U/ML] SOLUCION INYECTABLE, CARTUCHO de 3 ML"
 * #A10AE04 "insulina glargina"
+*/
+
 
 ValueSet: ModoVerificacionVacunaVS
 Id: ModoVerificacionVacunaVS
@@ -676,25 +599,9 @@ Description:  "Clasificación de Desenlace Tras Sufrir ESAVI"
 * #5 "Muerte"
 * #0 "Desconocido"
 
-ValueSet: InvestigacionTipoVS
-Id: InvestigacionTipoVS
-Title: "Tipo de Investigación ESAVI"
-Description:  "Tipo de Investigación Generada tras Reporte de ESAVI"
-* include codes from system InvestigacionTipoCS
 
-CodeSystem: InvestigacionTipoCS
-Id: InvestigacionTipoCS
-Title: "Tipo de Investigación ESAVI"
-Description:  "Tipo de Investigación Generada tras Reporte de ESAVI"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2021-03-11T00:00:00-03:00"
-* ^contact.name = "OPS"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = ""
-* ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
-* #1 "Concisa"
-* #2 "Completa"
+
+
 /*
 ValueSet: SeccionesNotificacionVS
 Id: SeccionesNotificacionVS
@@ -822,35 +729,7 @@ Description: "Describe las enfermedades previas en un ESAVI codificadas en MedDR
 * include codes from system EsaviMedDRACS
 
 
-ValueSet: DosisVacunaVS
-Id: DosisVacunaVS
-Title: "Dosis vacuna"
-Description:  "Indicador de que dosis se ha administrando"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2021-03-11T00:00:00-03:00"
-* ^contact.name = "OPS"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = ""
-* ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
-* include codes from system DosisVacunaCS
 
-CodeSystem: DosisVacunaCS
-Id: DosisVacunaCS
-Title: "Dosis Vacuna"
-Description:  "Indicador de que dosis se ha administrando"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2021-03-11T00:00:00-03:00"
-* ^contact.name = "OPS"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = ""
-* ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
-* #1 "Primera Dosis"	
-* #2 "Segunda Dosis"
-* #3 "Refuerzo"
-* #4 "Primer Refuerzo"
-* #5 "Segundo Refuerzo"
 
 
 ValueSet: SistemaClasfCausalidadVS
@@ -1157,7 +1036,7 @@ CodeSystem: ATCCS
 Id: ATCCS
 Title: "Códigos ATC medicamentos, vacunas"
 Description: "Códigos ATC medicamentos, vacunas"
-
+* ^url = "http://www.whocc.no/atc"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2023-01-05T21:57:10.292+00:00"
 * ^meta.source = "#yyuCovUJiH7vKAgN"
