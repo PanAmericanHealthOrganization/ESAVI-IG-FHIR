@@ -18,8 +18,7 @@ Description:    "Perfil con los elementos mínimos a considerar para generar la 
 * questionnaire ^short = "Recurso Cuestionario al cual las respuestas hacen referencia"
 * questionnaire ^definition = "El cuestionario ESAVI se define como ejemplo en esta guía. Debe ser referenciado"
 * questionnaire ^comment = "Deb contener la URL Canónica del Questionario "
-* questionnaire = "https://www.paho.org/es/temas/seguridad-vacunas/fhir/ig/esavi/ESAVI-Questionnaire"
-
+* questionnaire = "https://paho.org/fhir/esavi/Questionnaire/CuestionarioESAVI"
  
 * status MS
 * status ^short = "Estado en el cual se encuentra la respuesta."
