@@ -209,8 +209,8 @@ Description: "Código no WHODrug de la Vacuna"
 * ^contact.telecom.system = #email
 * ^contact.telecom.value = ""
 * ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
-* include codes from system ICD11mms
-* include codes from system http://snomed.info/sct where concept is-a #410942007 "fármaco o medicamento (sustancia)"
+//* include codes from system ICD11mms
+//* include codes from system http://snomed.info/sct where concept is-a #410942007 "fármaco o medicamento (sustancia)"
 * include codes from system ATCCS where concept is-a #J07BN01	"Vacuna COVID 19, basada en ARNm"
 * include codes from system ATCCS where concept is-a #J07BN	"Vacuna COVID 19"
 * include codes from system ATCCS where concept is-a #J07BN04	"Vacuna COVID 19, subunidad proteica"
