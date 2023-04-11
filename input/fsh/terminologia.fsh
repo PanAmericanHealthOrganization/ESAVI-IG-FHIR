@@ -1021,7 +1021,7 @@ CodeSystem: ATCCSVacunas
 Id: ATCCSVacunas
 Title: "Códigos ATC vacunas"
 Description: "Códigos ATC vacunas"
- ^url = "http://www.whocc.no/atc"
+* ^url = "http://www.whocc.no/atc"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2023-01-05T21:57:10.292+00:00"
 * ^meta.source = "#yyuCovUJiH7vKAgN"
