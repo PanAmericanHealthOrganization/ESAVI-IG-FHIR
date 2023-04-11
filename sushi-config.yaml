@@ -6,7 +6,7 @@ id: uv.esavi
 canonical: https://paho.org/fhir/esavi
 name: ESAVI
 status: draft
-version: 0.1.22
+version: 0.1.23
 fhirVersion: 4.0.1
 tittle: Guía de Implementación FHIR de ESAVI
 copyrightYear: 2021+
