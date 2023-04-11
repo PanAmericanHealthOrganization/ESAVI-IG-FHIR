@@ -214,7 +214,7 @@ Description: "Código no WHODrug de la Vacuna"
 //* include codes from system ATCCS where concept is-a #J07BN	"Vacuna COVID 19"
 //* include codes from system ATCCS where concept is-a #J07BN04	"Vacuna COVID 19, subunidad proteica"
 //* include codes from system ATCCS where concept is-a #J07BN02	"Vacuna COVID 19, vector viral no replicante"
-* include codes from system ATCCS where concept is-a #J07BN03	"Vacuna COVID 19, virus inactivado"
+* include codes from system ATCCSVacunas where concept is-a #J07BN03	"Vacuna COVID 19, virus inactivado"
 * include codes from system ICD11mms
 * include codes from system http://snomed.info/sct where concept is-a #410942007 "fármaco o medicamento (sustancia)"
 
@@ -421,8 +421,8 @@ Description:  "Codigo Medicamento"
 * ^contact.telecom.value = ""
 * ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
 * include codes from system SCT where concept is-a #105590001
-* include codes from system ATCCS where concept is-a #H03AA01	"levotiroxina sodica"
-* include codes from system ATCCS where concept is-a #A10AE04	"insulina glargina"
+* include codes from system ATCCSMedicamentos where concept is-a #H03AA01	"levotiroxina sodica"
+* include codes from system ATCCSMedicamentos where concept is-a #A10AE04	"insulina glargina"
 * include codes from system ICD11mms where concept is-a #XM4843
 
 
@@ -1017,10 +1017,10 @@ Description: "Codificación Snomed reducido"
   * #1230218002	"Periodontal"
   * #1231459002	"Extracorporeal (intended site)"
 
-CodeSystem: ATCCS
-Id: ATCCS
-Title: "Códigos ATC medicamentos, vacunas"
-Description: "Códigos ATC medicamentos, vacunas"
+CodeSystem: ATCCSVacunas
+Id: ATCCSVacunas
+Title: "Códigos ATC vacunas"
+Description: "Códigos ATC vacunas"
 * ^url = "http://www.whocc.no/atc"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2023-01-05T21:57:10.292+00:00"
@@ -1031,18 +1031,33 @@ Description: "Códigos ATC medicamentos, vacunas"
 * ^date = "2019-03-20T00:00:00-04:00"
 * ^caseSensitive = true
 * ^content = #complete
-* ^count = 9
+* ^count = 5
 
-* #J07 "Vacunas"
-  * #J07BN01	"Vacuna COVID 19, basada en ARNm"
-  * #J07BN	"Vacuna COVID 19"
-  * #J07BN04	"Vacuna COVID 19, subunidad proteica"
-  * #J07BN02	"Vacuna COVID 19, vector viral no replicante"
-  * #J07BN03	"Vacuna COVID 19, virus inactivado"
-* #A "Alimentary Track and Metabolism"
-  * #H03AA01	"levotiroxina sodica"
-  * #A10AE04	"insulina glargina"
+* #J07BN01 "Vacuna COVID 19, basada en ARNm"
+* #J07BN "Vacuna COVID 19"
+* #J07BN04 "Vacuna COVID 19, subunidad proteica"
+* #J07BN02 "Vacuna COVID 19, vector viral no replicante"
+* #J07BN03 "Vacuna COVID 19, virus inactivado"
 
+
+CodeSystem: ATCCSMedicamentos
+Id: ATCCSMedicamentos
+Title: "Códigos ATC medicamentos"
+Description: "Códigos ATC medicamentos"
+* ^url = "http://www.whocc.no/atc"
+* ^meta.versionId = "1"
+* ^meta.lastUpdated = "2023-01-05T21:57:10.292+00:00"
+* ^meta.source = "#yyuCovUJiH7vKAgN"
+* ^version = "1.00"
+* ^status = #active
+* ^experimental = false
+* ^date = "2019-03-20T00:00:00-04:00"
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 2
+
+* #H03AA01 "levotiroxina sodica"
+* #A10AE04 "insulina glargina"
 
 
 
