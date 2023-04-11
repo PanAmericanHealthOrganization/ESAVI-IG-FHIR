@@ -214,7 +214,7 @@ Description: "Código no WHODrug de la Vacuna"
 //* include codes from system ATCCS where concept is-a #J07BN	"Vacuna COVID 19"
 //* include codes from system ATCCS where concept is-a #J07BN04	"Vacuna COVID 19, subunidad proteica"
 //* include codes from system ATCCS where concept is-a #J07BN02	"Vacuna COVID 19, vector viral no replicante"
-* include codes from system ATCCSVacunas where concept is-a #J07BN03	"Vacuna COVID 19, virus inactivado"
+* include codes from system ATCCSVacunas
 * include codes from system ICD11mms
 * include codes from system http://snomed.info/sct where concept is-a #410942007 "fármaco o medicamento (sustancia)"
 
@@ -1021,7 +1021,7 @@ CodeSystem: ATCCSVacunas
 Id: ATCCSVacunas
 Title: "Códigos ATC vacunas"
 Description: "Códigos ATC vacunas"
-* ^url = "http://www.whocc.no/atc"
+// ^url = "http://www.whocc.no/atc"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2023-01-05T21:57:10.292+00:00"
 * ^meta.source = "#yyuCovUJiH7vKAgN"
