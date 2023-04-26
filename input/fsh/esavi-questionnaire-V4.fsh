@@ -1254,10 +1254,6 @@ Usage: #example
 * item[=].item[=].item[=].linkId = "sistemaClasfcausalidad"
 * item[=].item[=].item[=].text = "Método de clasificación de causalidad"
 
-
-
-
-
 /////////////////////ddd
 * item[=].item[=].item[+].type = #string
 * item[=].item[=].item[=].required = false
@@ -1285,7 +1281,7 @@ Usage: #example
 
 * item[=].item[=].item[=].enableWhen.question = "sistemaClasfcausalidad"
 * item[=].item[=].item[=].enableWhen.operator = #=
-* item[=].item[=].item[=].enableWhen.answerCoding.system = "SistemaClasfCausalidadCS"
+* item[=].item[=].item[=].enableWhen.answerCoding.system = "http://paho.org/esavi/CodeSystem/SistemaClasfCausalidadCS"
 * item[=].item[=].item[=].enableWhen.answerCoding.code = #WHO-AEFI
 
 /////////////////////UMC
@@ -1297,7 +1293,7 @@ Usage: #example
 
 * item[=].item[=].item[=].enableWhen.question = "sistemaClasfcausalidad"
 * item[=].item[=].item[=].enableWhen.operator = #=
-* item[=].item[=].item[=].enableWhen.answerCoding.system = "SistemaClasfCausalidadCS"
+* item[=].item[=].item[=].enableWhen.answerCoding.system = "http://paho.org/esavi/CodeSystem/SistemaClasfCausalidadCS"
 * item[=].item[=].item[=].enableWhen.answerCoding.code = #WHO-UMC
 
 /////////////////////UMC
