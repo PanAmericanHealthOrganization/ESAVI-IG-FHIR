@@ -1,4 +1,4 @@
-CodeSystem: WHODrug_PMID
+CodeSystem: WHODrugPMID
 Title: "WHODrug PMID"
 Description: "WHODrug completo con nombres genericos y comerciales en inglés mayormente codificados por PMID"
 * ^meta.versionId = "1"
@@ -80755,7 +80755,7 @@ Description: "WHODrug completo con nombres genericos y comerciales en inglés ma
   * #3380170 "Hemovirtus"
 * #3421077 "Cinnamomum verum;Cymbopogon citratus;Mentha x piperita"
   * #3420981 "Gax off"
-  * #3421051 "Freshly gax "off""
+  * #3421051 "Freshly gax off"
 * #3420746 "Levocetirizine dihydrochloride;Montelukast sodium"
   * #3420273 "Misdapre rac"
   * #3420328 "Levolukast"
@@ -81750,7 +81750,7 @@ Description: "WHODrug completo con nombres genericos y comerciales en inglés ma
   * #3383517 "Neolon D"
   * #3383622 "Londerm N"
   * #3383744 "Kenacomb"
-  * #4402545 "Omcilon a "m""
+  * #4402545 "Omcilon a m"
   * #4626880 "Oncileg"
   * #5146277 "Mud"
   * #5154477 "Triancinolona acetonida + sulfato de neomicina + gramicidina + nistatina"
