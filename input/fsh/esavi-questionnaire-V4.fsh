@@ -603,7 +603,7 @@ Usage: #example
 * item[=].item[=].item[+].type = #date
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "fechaProbableParto"
-* item[=].item[=].item[=].text = "Fecha del parto, o fecha probable del parto (calculada)"
+* item[=].item[=].item[=].text = "Fecha del parto, o fecha probable del parto (calculada o indicada por la persona afectada por el ESAVI)"
 ///////////////////// Enable When
 * item[=].item[=].item[=].enableBehavior = #any
 * item[=].item[=].item[=].enableWhen[0].question = "embarazadaMomentoVacuna"
@@ -793,7 +793,7 @@ Usage: #example
 * item[=].item[=].item[+].type = #integer
 * item[=].item[=].item[=].required = true
 * item[=].item[=].item[=].linkId = "identificadorVacuna"
-* item[=].item[=].item[=].text = "Identificador correlativo de la vacuna"
+* item[=].item[=].item[=].text = "Identificador correlativo de la vacuna útil para referirse a la vacuna registrada en otras secciones de la guía."
 
 
 ///////////////////// OK
@@ -952,7 +952,7 @@ Usage: #example
 * item[=].item[=].item[+].type = #integer
 * item[=].item[=].item[=].required = true
 * item[=].item[=].item[=].linkId = "IdentificadorESAVI"
-* item[=].item[=].item[=].text = "Identificador correlativo del ESAVI"
+* item[=].item[=].item[=].text = "Identificador correlativo del ESAVI útil para referirse al evento registrado en otras secciones de la guía"
 
 //////////////////////////////////
 * item[=].item[=].item[+].type = #choice
@@ -966,7 +966,7 @@ Usage: #example
 * item[=].item[=].item[=].answerValueSet = "https://paho.org/fhir/esavi/ValueSet/EsaviOtroVS"
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "codigoESAVIOtro"
-* item[=].item[=].item[=].text = "Código no MedDRA de la reacción adversa generada por la vacuna"
+* item[=].item[=].item[=].text = "Código no MedDRA del evento adverso ocurrido posterior a la vacunación"
 
 /////////////////////
 * item[=].item[=].item[+].type = #date
@@ -993,7 +993,9 @@ Usage: #example
 * item[=].item[=].required = false
 * item[=].item[=].repeats = true
 * item[=].item[=].linkId = "ESAVIDuranteEmbarazo"
-* item[=].item[=].text = "Datos relacionados con el estado de embarazo (al menos una fecha es necesaria)"
+* item[=].item[=].text = "Datos relacionados con condiciones médicas ocurridas durante el embarazo en el que se recibió la vacuna y/o ocurrió el ESAVI."
+
+
 
 * item[=].item[=].enableWhen.question = "embarazadaMomentoVacuna"
 * item[=].item[=].enableWhen.operator = #=
@@ -1320,6 +1322,6 @@ Usage: #example
 * item[=].item[=].item[=].text = "Identificador correlativo del ESAVI"
 
 * item[=].item[=].item[+].type = #boolean
-* item[=].item[=].item[=].required = true
+* item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "embarazoDuranteESAVI"
-* item[=].item[=].item[=].text = "Indicador si ESAVI tiene relación con el embarazo"
+* item[=].item[=].item[=].text = "Indicador si complicación materna o fetal son las que se reportan como ESAVI."
