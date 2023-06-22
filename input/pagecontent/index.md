@@ -26,7 +26,7 @@ Esta guía está dividida en varias secciones que se muestran en la barra de men
 - [Descargas](http://ops.hl7chile.cl/site/descargas.html): Agrupa las descargas disponibles como perfiles, paquete de validación, ejemplos, etc.
 
 ## Del modelo lógico a la implementación
-El modelo lógico está basado en las recomendaciones del [Manual Regional de Vigilancia de ESAVI](https://iris.paho.org/handle/10665.2/55384) para el reporte individual de casos, donde cada estado miembro informa hacia el Sistema Regional de Vacunación Segura de la OPS. Como paso previo se estructuró un Diccionario de Datos para Notificación de ESAVI ES en formato tabular. Este modelo lógico se encuentra mapeado a un recurso [Questionnaire] (http://ops.hl7chile.cl/site/StructureDefinition-ESAVIQuestionnaireResponse.html) ACTUALIZAR CON VERSION DEFINITIVA
+El modelo lógico está basado en las recomendaciones del [Manual Regional de Vigilancia de ESAVI](https://iris.paho.org/handle/10665.2/55384) para el reporte individual de casos, donde cada estado miembro informa hacia el Sistema Regional de Vacunación Segura de la OPS. Como paso previo se estructuró un Diccionario de Datos para Notificación de ESAVI ES en formato tabular. Este modelo lógico se encuentra mapeado a un recurso [Questionnaire] (https://build.fhir.org/ig/PanAmericanHealthOrganization/OPS-ESAVI/StructureDefinition-ESAVIQuestionnaireResponse.html) 
 
 ## Requerimientos de Conformidad
 
@@ -34,7 +34,7 @@ Los requerimientos de conformidad describen las expectativas sobre la funcionali
 
 # Definiciones
 ## ESAVI 
-Se denomina ESAVI (Eventos Supuestamente Atribuibles a Vacunación o Inmunización, también conocidos como Eventos Adversos Posteriores a Vacunación, EAPV, o Adverse Event Following Immunization, AEFI en inglés) como cualquier situación de salud (signo, hallazgo anormal de laboratorio, síntoma o enfermedad) desfavorable y no intencionada que ocurra luego de la vacunación o inmunización y que no necesariamente tiene una relación causal con el proceso de vacunación o con la vacuna. (pregunta: se referencia bibliograficamente? si es asi, se utilizan notas al pie? o se referencia entre paréntesis [1])
+Se denomina ESAVI (Eventos Supuestamente Atribuibles a Vacunación o Inmunización, también conocidos como Eventos Adversos Posteriores a Vacunación, EAPV, o Adverse Event Following Immunization, AEFI en inglés) como cualquier situación de salud (signo, hallazgo anormal de laboratorio, síntoma o enfermedad) desfavorable y no intencionada que ocurra luego de la vacunación o inmunización y que no necesariamente tiene una relación causal con el proceso de vacunación o con la vacuna. 
 
 La vigilancia de ESAVI es uno de los elementos más importantes para garantizar que las vacunas sean seguras y que se administren de manera segura. Las reacciones graves posteriores a la inmunización son muy poco frecuentes, por lo que su detección exige agrupar datos de ESAVI de múltiples países en bases de datos regionales y/o globales.
 Durante la pandemia de COVID-19, el proceso de detección y reporte de datos de seguridad de vacunas ha resultado ser un desafío, especialmente en las Américas.
@@ -47,21 +47,5 @@ Uno de los desafíos más importantes es la estandarización tanto de las bases 
 Según la encuesta de sistemas de información realizada por OPS en 2020, el 83% de los países de la región NO tenían sistemas de información lo suficientemente maduros para la vigilancia de ESAVI. Un grupo de países basaba la vigilancia en formularios en papel, y los agregaba en planillas de cálculo. En otros se encontraron sistemas con datos fragmentados en múltiples instituciones nacionales y una ausencia en la implementación de estándares para el registro preciso de las vacunas involucradas y de los eventos adversos asociados.
 La estrategia de la OPS se basó en apoyar a los países según su nivel de desarrollo, buscando fortalecer progresivamente sus capacidades y promoviendo una estrategia de digitalización de todas las actividades de la vigilancia. Esto incluye promover la adopción nacional de sistemas como DHIS2 (District Health Information System 2), un software open-source que fue adaptado para permitir el seguimiento de casos de ESAVI.
 
-*E2B XML y beneficios y limitaciones de su uso. Complementariedad de FHIR*
-
 ## Racionalidad del uso de FHIR en ESAVI
 En este contexto, surge la propuesta de adoptar FHIR (Fast Healthcare Interoperability Resources), el estándar abierto de intercambio de datos en salud creado por HL7 Internacional. Países como Estados Unidos, Canadá, Argentina, Brasil, Chile, entre otros, ya se encuentran utilizándolo como estándar de intercambio de datos en salud pública. La Organización Mundial de la Salud promueve FHIR como estándar para estructurar los certificados digitales de vacunación contra la COVID-19, entre otros casos de uso.
-
-## Pendiente
-
-*Justificación del uso de FHIR en este caso de uso. Impacto potencial. Agrega variables que no están codificadas en E2B.(Ver ppt)*
-
-*Cada uno de los elementos de la guía (artefactos) pueden ser reutilizados: LinkId, Valuesets, CodeSystems, Extensiones, ...*
-
-*El perfil QuestionnaireResponse de ESAVI puede extenderse (sumando items faltantes) para crear guías locales que permitan su uso interno a nivel de cada país.*
-
-*Externalidades/beneficios secundarios para otros casos de uso/actores. (adopción de estándares semánticos, sintácticos) 
-"Si tengo FHIR puedo tener E2B?" 
-Si ud quiere E2B tiene que llenar estos campos como mínimo (texto aparte).*
-
-*Business case de FHIR en Salud*
