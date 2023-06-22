@@ -1,7 +1,7 @@
 ### Aspectos a Considerar
 <br>
 
-Esta sección describe definiciones, interpretaciones y requisitos importantes comunes a todos los actores del Core-CL, utilizados en esta guía. Los verbos de conformidad - **SHALL** *(Debe)*, **SHOULD** *(Debería Si Condición)*, **MAY** *(Podría)* - utilizados en esta guía se definen en las reglas de conformidad de FHIR.
+Esta sección describe definiciones, interpretaciones y requisitos importantes comunes a todos los actores del la guía de implementación ESAVI de OPS, utilizados en esta guía. Los verbos de conformidad - **SHALL** *(Debe)*, **SHOULD** *(Debería Si Condición)*, **MAY** *(Podría)* - utilizados en esta guía se definen en las reglas de conformidad de FHIR.
 
 ### Definiciones Para comprender la Guía
 

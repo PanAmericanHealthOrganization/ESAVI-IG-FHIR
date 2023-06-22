@@ -13,7 +13,7 @@ La identificación unívoca de personas en las cuales se detectó un ESAVI es fu
 Sin embargo esta identificación debe ser anonimizada, es decir que no se pueda reconstruir los datos de manera de llegar a la persona real a através de la infomración vertida en un denuncia de un caso de ESAVI.
 Con ese objetivo, la identificacion de persoans en la guía se hace a través de un UUID (Universally Unique Identifier) de identificación del vacunado. 
 Se propone utilizar [UUID versión 5](https://www.uuidtools.com/uuid-versions-explained) para anonimizar el identificador nacional de la persona. 
-Asimísmo se utilizará la misma tecnología para identificar los casos ante la posibilidad que haya mas d eun caso por persona.
+Asimísmo se utilizará la misma tecnología para identificar los casos ante la posibilidad que haya mas de un caso por persona.
 
 ### Sexo
 
@@ -34,7 +34,6 @@ Cada ESAVI puede ser representado en diferentes campos, admitiendo desde descrip
 Cada antecedente médico puede ser representado en diferentes campos, admitiendo desde descripciones literales hasta codificaciones complejas. Como mínimo se debe completar el campo nombre del antecedente, que es obligatorio, admite un valor string y hace referencia a una descripción literal (texto libre). Como alternativa ideal se propone incluir el código MedDRA del antecedente médico, campo que admite una codificación (LLT) del estándar MedDRA, limitado a quienes tienen acceso a la licencia. Para aquellos países que usan sistemas que permiten compartir el texto normalizado del antecedente médico pero no el código, se han incluído otros campos para elegir la codificación utilizada (choice) y el nombre normalizado del antecedente como un string. Para aquellos países que usan otros estándares de codificación de antecedentes médicos diferentes a MedDRA (por ejemplo, CIE-10, CIE-11, SNOMED CT) existe un campo opcional que admite un código, especificando el code system correspondiente.
 
 ### Medicamentos
-
 Cada medicamento puede ser informado en diferentes campos, admitiendo desde descripciones literales hasta codificaciones complejas. Como mínimo se debe completar el campo nombre del medicamento. El mismo es obligatorio, admite un valor string y hace referencia a una descripción literal (texto libre). Como alternativa ideal se propone incluir el código WHODrug del medicamento, campo que admite una codificación (drug code) del estándar WHODrug, limitado a quienes tienen acceso a la licencia. Para aquellos países que usan sistemas que permiten compartir el texto normalizado del medicamento pero no el código, se han incluído otros campos para elegir la codificación utilizada (choice) y/o el nombre normalizado del medicamento como un string. Para aquellos países que usan otros estándares de codificación de medicamentos diferentes a WHODrug (por ejemplo, CIE-11, SNOMED CT, ATC) existe un campo opcional que admite un código, especificando el code system correspondiente.
 
 ## Fechas y horas parciales
@@ -86,8 +85,6 @@ La condición “Embarazo” se informa en los campos de Antecedentes y ESAVI. Y
 ### Estado de embarazo
 
 El tiempo de gestación es un dato importante para la evaluación de los ESAVI. Para tal motivo, es fundamental ingresar la fecha de la última menstruación para calcular el tiempo de gestación al momento del ESAVI. El campo “ fechaUltimaMenstruacionESAVI” , es obligatorio si se ha aclarado que la paciente se encontraba embarazada en el campo codigoEmbarazoDuranteESAVI.
-
-Cuando? … fechas. cuando se puede asignar o inferir cada una.
 
 ### Complicaciones del embarazo
 
