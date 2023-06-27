@@ -1,20 +1,21 @@
-Alias: $v2-0136 = http://terminology.hl7.org/ValueSet/v2-0136
-Alias: $ProfesionalNotificadorCS = http://paho.org/esavi/CodeSystem/ProfesionalNotificadorCS
-Alias: $MedDRA = http://terminology.hl7.org/CodeSystem/MDRSPA
+
+//Alias: $v2-0136 = http://terminology.hl7.org/ValueSet/v2-0136
+//Alias: $ProfesionalNotificadorCS = http://paho.org/esavi/CodeSystem/ProfesionalNotificadorCS
+//Alias: $MedDRA = http://terminology.hl7.org/CodeSystem/MDRSPA //Se define MedDRACS en archivo aparte
 Alias: ICD11mms = http://id.who.int/icd11/mms
-Alias: $ICD10 = http://hl7.org/fhir/sid/icd-10
+Alias: ICD10 = http://hl7.org/fhir/sid/icd-10
 Alias: SCTSpa = http://snomed.info/sct/449081005
 //Alias: ICD11mms = http://id.who.int/icd/entity
 Alias:   SCT = http://snomed.info/sct
-Alias:   LOINC = http://loinc.org
-//Alias:   ATCCS = http://www.whocc.no/atc
-Alias:   m49.htm = http://unstats.un.org/unsd/methods/m49/m49.htm
+//Alias:   LOINC = http://loinc.org
+Alias:   ATCCS = http://www.whocc.no/atc
+//Alias:   m49.htm = http://unstats.un.org/unsd/methods/m49/m49.htm
 RuleSet: RuleSetMeta
 * ^version = "0.5.0"
 * ^status = #draft
 
 
-ValueSet: ViaAdminMedicamentoVS
+ValueSet: ViaAdminMedicamentoVS //revisado OKs CS externo LinkID: codigoViaAdministracion
 Id: ViaAdminMedicamentoVS
 Title: "Vías de Administración de Medicamentos"
 Description: "Describe y lista las vías de administración de medicamentos para registro en ESAVI segun SNOMED CT"
@@ -28,9 +29,7 @@ Description: "Describe y lista las vías de administración de medicamentos para
 * include codes from system http://snomed.info/sct where concept is-a #736479009 "sitio de administración previsto de forma farmacéutica (sitio de administración previsto)"
 //* include codes from system http://snomed.info/sct
 
-
- 
-ValueSet: CodPaises
+ValueSet: CodPaises //revisado. CS externo ISO 3166, LinkID: paisOrigen-Reg
 Id: CodPaises
 Title: "Códigos de Países"
 Description: "Codigos definidos para la identificación de países segun norma ISO3166-N"
@@ -45,7 +44,7 @@ Description: "Codigos definidos para la identificación de países segun norma I
 * include codes from system urn:iso:std:iso:3166
 
 
-ValueSet: EsaviMedDRAVS
+ValueSet: EsaviMedDRAVS //revisado OKs CS interno con ejemplos pendiente eterno completo LinkID: codigoESAVIMedDRA 
 Id: EsaviMedDRAVS
 Title: "Código MedDRA del Evento Adverso notificado"
 Description: "Código MedDRA del Evento Adverso notificado"
@@ -56,10 +55,9 @@ Description: "Código MedDRA del Evento Adverso notificado"
 * ^contact.telecom.system = #email
 * ^contact.telecom.value = ""
 * ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
+* include codes from system MedDRACS
 
-* include codes from system EsaviMedDRACS
-
-ValueSet: ComplicacionEmbarazoMedDRAVS
+ValueSet: ComplicacionEmbarazoMedDRAVS //revisado OKs CS interno definido aparte, completo en el servidor LinkID: odigoMedDRAComplicacionEmbarazoESAVI
 Id: ComplicacionEmbarazoMedDRAVS
 Title: "Códigos MEDDRA Complicaciones en Embarazo ESAVI "
 Description: "Codificacion Estandarizada de diagnóticos de complicaciones de embarazo mediante códigos MedDRA"
@@ -70,10 +68,9 @@ Description: "Codificacion Estandarizada de diagnóticos de complicaciones de em
 * ^contact.telecom.system = #email
 * ^contact.telecom.value = ""
 * ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
+* include codes from system MedDRACS
 
-* include codes from system EsaviMedDRACS
-
-ValueSet: ComplicacionEmbarazoOtroVS
+ValueSet: ComplicacionEmbarazoOtroVS //revisado OKS CS externo LinkID: otrosCodigosComplicacionEmbarazoESAVI
 Id: ComplicacionEmbarazoOtroVS
 Title: "Otros Códigos Complicaciones en Embarazo ESAVI "
 Description: "Codificacion Estandarizada de diagnóticos de complicaciones de embarazo mediante códigos Snomed y CIE-10"
@@ -84,7 +81,6 @@ Description: "Codificacion Estandarizada de diagnóticos de complicaciones de em
 * ^contact.telecom.system = #email
 * ^contact.telecom.value = ""
 * ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
-
 * include codes from system ICD10 where concept is-a #E03.9	"Hipotiroidismo, no especificado"
 * include codes from system ICD10 where concept is-a #E66.9	"Obesidad, no especificada"
 * include codes from system ICD10 where concept is-a #E10.9	"Diabetes mellitus insulinodependiente, sin mención de complicación"
@@ -98,7 +94,7 @@ Description: "Codificacion Estandarizada de diagnóticos de complicaciones de em
 * include codes from system ICD10 where concept is-a #H93.1	"Tinnitus"
 * include codes from system http://snomed.info/sct where concept is-a #391103005 "evento adverso posterior a tratamiento complementario (trastorno)"  
 
-ValueSet: EsaviOtroVS
+ValueSet: EsaviOtroVS //revisado OKs CS externo. LinkID: codigoESAVIOtro
 Id: EsaviOtroVS
 Title: "Otros Códigos Evento Adverso"
 Description: "Evento Adverso en otro sistema según Snomed, ATC y CIE-10"
@@ -139,11 +135,7 @@ Description: "Codificación Estandarizda de Sustancia Activa de Medicamento seg�
 * include codes from system http://hl7.org/fhir/sid/icd-10
 */
 
-
-
-
-
-ValueSet: CodigoWhoVacunaVS
+ValueSet: CodigoWhoVacunaVS //revisado y modificado. LinkID:codigoVacunaWHODrug  
 Id: CodigoWhoVacunaVS
 Title: "Codigo WHODrug de la vacuna"
 Description: "Codificación Estandarizda del código de las Vacunas según WhoDrug"
@@ -154,12 +146,11 @@ Description: "Codificación Estandarizda del código de las Vacunas según WhoDr
 * ^contact.telecom.system = #email
 * ^contact.telecom.value = ""
 * ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
-* include codes from system http://who-umc.org where concept is-a #C1 "Vacunas"
+//* include codes from system CodigoWhoVacunaCS //Acotado a Vacunas COVID
+* include codes from system WHODrugPMID 
+* include codes from system WHODrugDC
 
-
-
-
-ValueSet: FormaFarmaceuticaVS
+ValueSet: FormaFarmaceuticaVS //revisado OKs CS externo LinkID: codigoFormaFarmaceutica
 Id: FormaFarmaceuticaVS
 Title: "Identificación Formas Farmacéuticas"
 Description: "Describe y lista las formas farmaceuticas de medicamentos para registro en ESAVI segun SNOMED CT"
@@ -172,7 +163,7 @@ Description: "Describe y lista las formas farmaceuticas de medicamentos para reg
 * ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
 * include codes from system http://snomed.info/sct where concept is-a #736478001 "forma farmacéutica básica (forma farmacéutica básica)"
 
-ValueSet: EnfermedadesPreviasCodificacionVS
+ValueSet: EnfermedadesPreviasCodificacionVS //revisado CS externos CIE11, SCT y CIE10, LinkID:otrosCodigosEnfPrevia
 Id: EnfermedadesPreviasCodificacionVS
 Title: "Enfermedades previas en un ESAVI-PAHO"
 Description: "Describe las enfermedades previas en un ESAVI codificadas en CIE10, CIE11 o SNOMED CT"
@@ -183,7 +174,7 @@ Description: "Describe las enfermedades previas en un ESAVI codificadas en CIE10
 * ^contact.telecom.system = #email
 * ^contact.telecom.value = ""
 * ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
-* include codes from system http://id.who.int/icd11/mms where concept is-a  #XY0Y "Afección principal"
+* include codes from system ICD11mms where concept is-a  #XY0Y "Afección principal"
 * include codes from system ICD10 where concept is-a #E03.9	"Hipotiroidismo, no especificado"
 * include codes from system ICD10 where concept is-a #E66.9	"Obesidad, no especificada"
 * include codes from system ICD10 where concept is-a #E10.9	"Diabetes mellitus insulinodependiente, sin mención de complicación"
@@ -211,22 +202,14 @@ Description: "Código no WHODrug de la Vacuna"
 * ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
 
 //* include codes from system ATCCS where concept is-a #J07BN01	"Vacuna COVID 19, basada en ARNm"
-* include codes from system ATCCSVacunas where concept is-a #J07BN	"Vacuna COVID 19"
+* include codes from system ATCCS where concept is-a #J07BN	"Vacuna COVID 19"
 //* include codes from system ATCCS where concept is-a #J07BN04	"Vacuna COVID 19, subunidad proteica"
 //* include codes from system ATCCS where concept is-a #J07BN02	"Vacuna COVID 19, vector viral no replicante"
 //* include codes from system http://www.whocc.no/atc
 * include codes from system ICD11mms
 * include codes from system http://snomed.info/sct where concept is-a #410942007 "fármaco o medicamento (sustancia)"
 
-
-
-
-
-
-
-
-
-ValueSet: CodigoWhoFabricanteVS
+ValueSet: CodigoWhoFabricanteVS //Oks revisado, CS interno a continuación Link ID:codigoFabricanteWHODrug 
 Id: CodigoWhoFabricanteVS
 Title: "Fabricantes Vacuna"
 Description: "Códigos Fabricantes Vacunas de WHO"
@@ -239,7 +222,7 @@ Description: "Códigos Fabricantes Vacunas de WHO"
 * ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
 * include codes from system CodigoWhoFabricanteCS
 
-CodeSystem: CodigoWhoFabricanteCS
+CodeSystem: CodigoWhoFabricanteCS //oks revisado
 Id: CodigoWhoFabricanteCS
 Title: "Fabricante   Vacuna"
 Description: "Códigos Fabricantes Vacunas de WHO"
@@ -313,7 +296,7 @@ Description: "Códigos Fabricantes Vacunas de WHO"
 * #BUMS	"Baqiyatallah University of Medical Sciences"
 
 
-ValueSet: SistemasDeCodificacionVS
+ValueSet: SistemasDeCodificacionVS //revisado CM interno a continuación, LinkID: sistemaDeCodificacionParaNombreNormalizadoVacuna, sistemaDeCodificacionParaNombreNormalizadoMedicamento
 Id: SistemasDeCodificacionVS
 Title: "Sistemas De Codificacion"
 Description: "Sistemas De Codificacion para Determinación de Códigos"
@@ -326,7 +309,7 @@ Description: "Sistemas De Codificacion para Determinación de Códigos"
 * ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
 * include codes from system SistemasDeCodificacionCS
 
-CodeSystem: SistemasDeCodificacionCS
+CodeSystem: SistemasDeCodificacionCS //revisado OKs
 Id: SistemasDeCodificacionCS
 Title: "Sistemas De Codificacion"
 Description: "Sistemas De Codificacion para Determinación de Códigos"
@@ -344,7 +327,7 @@ Description: "Sistemas De Codificacion para Determinación de Códigos"
 * #4 "CIE-11"
 //* #6 "MedDRA"
 
-ValueSet: RespuestaSiNoNosabeVS
+ValueSet: RespuestaSiNoNosabeVS //revisado CS interno a continuacion
 Id: RespuestaSiNoNosabeVS
 Title: "Respuestas Simples"
 Description: "Códigos para capturar respuestas simples si/no/no sabe"
@@ -357,7 +340,7 @@ Description: "Códigos para capturar respuestas simples si/no/no sabe"
 * ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
 * include codes from system RespuestaSiNoNosabeCS
 
-CodeSystem: RespuestaSiNoNosabeCS
+CodeSystem: RespuestaSiNoNosabeCS //revisado
 Id: RespuestaSiNoNosabeCS
 Title: "Respuestas Simples"
 Description:  "Códigos para capturar respuestas simples si/no/no sabe"
@@ -371,8 +354,6 @@ Description:  "Códigos para capturar respuestas simples si/no/no sabe"
 * #1 "Si"
 * #2 "No"
 * #3 "No sabe"
-
-
 
 /*
 ValueSet: GrupoEtnicoVS
@@ -409,7 +390,7 @@ Description:  "Códigos de Grupos Étnicos"
 * #0 "Otro"
 */
 
-ValueSet: CodigoMedicamentoVS
+ValueSet: CodigoMedicamentoVS //revisado OKs CS externo, LinkIDs: codigoMedicamento
 Id: CodigoMedicamentoVS
 Title: "Codigo Medicamento"
 Description:  "Codigo Medicamento"
@@ -421,35 +402,10 @@ Description:  "Codigo Medicamento"
 * ^contact.telecom.value = ""
 * ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
 * include codes from system SCT where concept is-a #105590001
-* include codes from system ATCCSMedicamentos 
-//* include codes from system ATCCSMedicamentos where concept is-a #A10AE04	"insulina glargina"
+* include codes from system ATCCS 
 * include codes from system ICD11mms where concept is-a #XM4843
 
-
-/*
-CodeSystem: CodigoMedicamentoCS
-Id: CodigoMedicamentoCS
-Title: "Codigo Medicamento"
-Description:  "Codigo Medicamento"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2021-03-11T00:00:00-03:00"
-* ^contact.name = "OPS"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = ""
-* ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
-* #68001016 "Levotiroxina"
-* #XM2WC1 "levotiroxina sódica"
-* #783639004 "levotiroxina sódica anhidra 100 microgramos por cada comprimido para administración oral"
-* #H03AA01 "levotiroxina sodica"
-* #1483501003 "Lantus"
-* #XM0K72 "Insulina de acción lenta"
-* #383491000221101 "LANTUS [INSULINA GLARGINA 100 U/ML] SOLUCION INYECTABLE, CARTUCHO de 3 ML"
-* #A10AE04 "insulina glargina"
-*/
-
-
-ValueSet: ModoVerificacionVacunaVS
+ValueSet: ModoVerificacionVacunaVS //revisado Oks CS interno a continuacion Link ID: codigoMecanismoVerificacion 
 Id: ModoVerificacionVacunaVS
 Title: "Modos Verificación Vacuna Previa"
 Description:  "Modos de Verificacion de Vacuna o Esquema de Vacunación Completado"
@@ -462,7 +418,7 @@ Description:  "Modos de Verificacion de Vacuna o Esquema de Vacunación Completa
 * ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
 * include codes from system ModoVerificacionVacunaCS
 
-CodeSystem: ModoVerificacionVacunaCS
+CodeSystem: ModoVerificacionVacunaCS //revisado Oks
 Id: ModoVerificacionVacunaCS
 Title: "Modo de Verificación de Vacunación Previa"
 Description:  "Modos de Verificacion de Vacuna o Esquema de Vacunación Completado"
@@ -480,7 +436,7 @@ Description:  "Modos de Verificacion de Vacuna o Esquema de Vacunación Completa
 * #5 "No se sabe" 
 * #O "Otro"
 
-ValueSet: ModoConfirmacionInfeccionVS
+ValueSet: ModoConfirmacionInfeccionVS //revisado CS interno a continuacion, LinkID: tipoConfirmacionCovid19
 Id: ModoConfirmacionInfeccionVS
 Title: "Modos Confirmación Infección COVID-19"
 Description: "Modos de Confirmacion de Infección por COVID-19"
@@ -493,7 +449,7 @@ Description: "Modos de Confirmacion de Infección por COVID-19"
 * ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
 * include codes from system ModoConfirmacionInfeccionCS
 
-CodeSystem: ModoConfirmacionInfeccionCS
+CodeSystem: ModoConfirmacionInfeccionCS //revisado OKs
 Id: ModoConfirmacionInfeccionCS
 Title: "Modo de Confirmación de la Infección"
 Description: "Modos de Confirmacion de Infección por COVID-19"
@@ -510,50 +466,7 @@ Description: "Modos de Confirmacion de Infección por COVID-19"
 * #4 "Por aislamiento viral" 
 * #5 "Otra"
 
-/*
-ValueSet: EventoAdversoVacunaVS
-Id: EventoAdversoVacunaVS
-Title: "Eventos Adversos"
-Description:  "Códigos de Posibles Eventos Adversos a Vacuna"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2021-03-11T00:00:00-03:00"
-* ^contact.name = "OPS"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = ""
-* ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
-* include codes from system EventoAdversoVacunaCS
-
-CodeSystem: EventoAdversoVacunaCS
-Id: EventoAdversoVacunaCS
-Title: "Eventos Adversos"
-Description:  "Códigos de Posibles Eventos Adversos a Vacuna"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2021-03-11T00:00:00-03:00"
-* ^contact.name = "OPS"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = ""
-* ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
-* #1 "Fiebre mayor a 38°C"	
-* #2 "Dolor en el sitio de la inyección"
-* #3 "Eritema en el sitio de la inyección"
-* #4 "Inflamación en el sitio de la inyección"	
-* #5 "Cefalea"
-* #6 "Convulsiones febriles"
-* #7 "Absceso"
-* #8 "Linfadenitis"
-* #9 "Encefalopatía"
-* #10 "Encefalitis"
-* #11 "Trombocitopenia"
-* #12 "Anafilaxis"	
-* #13 "Síndrome de shock tóxico"
-* #14 "Sepsis"
-* #0 "Otro" 
-*/
-
-
-ValueSet: ClasificacionDesenlaceVS
+ValueSet: ClasificacionDesenlaceVS //revisado OKS CS interno a continuacion LinkID: codDesenlaceESAVI
 Id: ClasificacionDesenlaceVS
 Title: "Desenlaces Tras ESAVI"
 Description:  "Clasificación de Desenlace Tras Sufrir ESAVI"
@@ -566,7 +479,7 @@ Description:  "Clasificación de Desenlace Tras Sufrir ESAVI"
 * ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
 * include codes from system ClasificacionDesenlaceCS
 
-CodeSystem: ClasificacionDesenlaceCS
+CodeSystem: ClasificacionDesenlaceCS //revisqado OKs
 Id: ClasificacionDesenlaceCS
 Title: "Desenlaces Tras ESAVI"
 Description:  "Clasificación de Desenlace Tras Sufrir ESAVI"
@@ -584,47 +497,7 @@ Description:  "Clasificación de Desenlace Tras Sufrir ESAVI"
 * #5 "Muerte"
 * #0 "Desconocido"
 
-
-
-
-/*
-ValueSet: SeccionesNotificacionVS
-Id: SeccionesNotificacionVS
-Title: "Secciones Notificación EDAVI"
-Description: "Conjunto de Valores para las Secciones de la Notificación"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2021-03-11T00:00:00-03:00"
-* ^contact.name = "OPS"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = ""
-* ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
-* codes from system SeccionesNotificacionCS
-
-CodeSystem: SeccionesNotificacionCS
-Id: SeccionesNotificacionCS
-Title: "Secciones Notificación ESAVI"
-Description: "Conjunto de Valores para las Secciones de la Notificación"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2021-03-11T00:00:00-03:00"
-* ^contact.name = "OPS"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = ""
-* ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
-* #s_IdentificacionPersonaAfectada
-* #s_PersonaNotificadora
-* #s_AntecedentesPersonaVacunada
-* #s_ParticipacionEnsayoClinico
-* #s_DetallesEmbarazo
-* #s_AdministracionVacuna
-* #s_VacunacionPrevia
-* #s_EventoAdverso
-* #s_GravedadEventoAdverso
-* #s_Desenlace
-* #s_Conclusiones
-*/
-ValueSet: ComplicacionEmbarazoVS
+ValueSet: ComplicacionEmbarazoVS //revisado OKs CS interno a continuación LinkID: codigoTipoComplicacionESAVI
 Id: ComplicacionEmbarazoVS
 Title: "Complicaciones Embarazo"
 Description: "Conjunto de Valores para la Sección de Complicaciones Embarazo ESAVI"
@@ -637,7 +510,7 @@ Description: "Conjunto de Valores para la Sección de Complicaciones Embarazo ES
 * ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
 * codes from system ComplicacionEmbarazoCS
 
-CodeSystem: ComplicacionEmbarazoCS
+CodeSystem: ComplicacionEmbarazoCS //revisado OKs
 Id: ComplicacionEmbarazoCS
 Title: "Complicaciones de Embarazo"
 Description: "Códigos para las Complicaciones de Embarazo"
@@ -654,7 +527,7 @@ Description: "Códigos para las Complicaciones de Embarazo"
 * #04 "Neonatal"
 * #05 "Anomalía Congénita"
 
-ValueSet: ProfesionalNotificadorVS
+ValueSet: ProfesionalNotificadorVS //revisado CS interno a continuación, LinkID: codigoProfesionNotificador
 Id: ProfesionalNotificadorVS
 Title: "Tipo de Profesional Notificador"
 Description: "Códigos de Tipo de Notificadores de ESAVI para PAHO"
@@ -671,7 +544,7 @@ Description: "Códigos de Tipo de Notificadores de ESAVI para PAHO"
 * ^publisher = "PAHO - Pan American Health Organization"
 * include codes from system ProfesionalNotificadorCS
 
-CodeSystem: ProfesionalNotificadorCS
+CodeSystem: ProfesionalNotificadorCS //revisado
 Id: ProfesionalNotificadorCS
 Title: "Tipo de Profesional Notificador"
 Description: "Códigos de Tipo de Notificadores de ESAVI para PAHO"
@@ -696,7 +569,7 @@ Description: "Códigos de Tipo de Notificadores de ESAVI para PAHO"
 * #6 "No definido por el usuario"
 
 
-ValueSet: CodigoMedDRAEnfPreviaVS
+ValueSet: CodigoMedDRAEnfPreviaVS //revisado CS interno MedDRACS oks, LinkID:codigoMedDRAEnfPrevia
 Id: CodigoMedDRAEnfPreviaVS
 Title: "Códigos de MedDRA para representar enfermedades previas en un ESAVI-PAHO"
 Description: "Describe las enfermedades previas en un ESAVI codificadas en MedDRA"
@@ -711,13 +584,9 @@ Description: "Describe las enfermedades previas en un ESAVI codificadas en MedDR
 * ^status = #active
 * ^date = "2022-02-02"
 * ^publisher = "PAHO - Pan American Health Organization"
-* include codes from system EsaviMedDRACS
+* include codes from system MedDRACS
 
-
-
-
-
-ValueSet: SistemaClasfCausalidadVS
+ValueSet: SistemaClasfCausalidadVS //revisado OKs CS interno a continuación LinkID: sistemaClasfcausalidad
 Id: SistemaClasfCausalidadVS
 Title: "Tipo de Método de clasificación de causalidad"
 Description:  "Códigos para Tipos Métodos de Clasificación de Causalidad"
@@ -730,7 +599,7 @@ Description:  "Códigos para Tipos Métodos de Clasificación de Causalidad"
 * ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
 * include codes from system SistemaClasfCausalidadCS
 
-CodeSystem: SistemaClasfCausalidadCS
+CodeSystem: SistemaClasfCausalidadCS //revisado OKs
 Id: SistemaClasfCausalidadCS
 Title: "Tipo de Método de clasificación de causalidad"
 Description:  "Códigos para Tipos de Métodos de Clasificación de Causalidad"
@@ -747,7 +616,7 @@ Description:  "Códigos para Tipos de Métodos de Clasificación de Causalidad"
 * #otro "Otro sistema de clasificacion de causalidad"
 
 
-ValueSet: ClasificacionDesenlaceWHOAEFIVS
+ValueSet: ClasificacionDesenlaceWHOAEFIVS //revisado OKs CS interno a continuación LinkID: clasificacionDeCausalidadWHOAEFI
 Id: ClasificacionDesenlaceWHOAEFIVS
 Title: "Clasificación de causalidad WHO-AEFI"
 Description:  "Método de clasificación de causalidad WHO-AEFI"
@@ -760,7 +629,7 @@ Description:  "Método de clasificación de causalidad WHO-AEFI"
 * ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
 * include codes from system ClasificacionDesenlaceWHOAEFICS
 
-CodeSystem: ClasificacionDesenlaceWHOAEFICS
+CodeSystem: ClasificacionDesenlaceWHOAEFICS //revisado OKs
 Id: ClasificacionDesenlaceWHOAEFICS
 Title: "Clasificación de causalidad WHO-AEFI"
 Description:  "Método de clasificación de causalidad WHO-AEFI"
@@ -781,7 +650,7 @@ Description:  "Método de clasificación de causalidad WHO-AEFI"
 * #NC "No clasificable"
 
 
-ValueSet: ClasificacionDesenlaceWHOUMCVS
+ValueSet: ClasificacionDesenlaceWHOUMCVS //revisado OKs CS interno a continuación LinkID: clasificacionDeCausalidadWHOUMC
 Id: ClasificacionDesenlaceWHOUMCVS
 Title: "Clasificación de causalidad WHO-UMC"
 Description:  "Método de clasificación de causalidad WHO-UMC"
@@ -794,7 +663,7 @@ Description:  "Método de clasificación de causalidad WHO-UMC"
 * ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
 * include codes from system ClasificacionDesenlaceWHOUMCCS
 
-CodeSystem: ClasificacionDesenlaceWHOUMCCS
+CodeSystem: ClasificacionDesenlaceWHOUMCCS //revisado OKs
 Id: ClasificacionDesenlaceWHOUMCCS
 Title: "Clasificación de causalidad WHO-UMC"
 Description:  "Método de clasificación de causalidad WHO-UMC"
@@ -812,7 +681,7 @@ Description:  "Método de clasificación de causalidad WHO-UMC"
 * #05 "Condicional / No clasificado"
 * #06 "No evaluable / No clasificable"
 
-ValueSet: ClasificacionDesenlaceNaranjoVS
+ValueSet: ClasificacionDesenlaceNaranjoVS //revisado OKs CS interno a continuación LinkID: clasificacionDeCausalidadNaranjo
 Id: ClasificacionDesenlaceNaranjoVS
 Title: "Clasificación de causalidad Naranjo"
 Description:  "Método de clasificación de causalidad Naranjo"
@@ -825,7 +694,7 @@ Description:  "Método de clasificación de causalidad Naranjo"
 * ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
 * include codes from system ClasificacionDesenlaceNaranjoCS
 
-CodeSystem: ClasificacionDesenlaceNaranjoCS
+CodeSystem: ClasificacionDesenlaceNaranjoCS //revisado OKs
 Id: ClasificacionDesenlaceNaranjoCS
 Title: "Clasificación de causalidad Naranjo"
 Description:  "Método de clasificación de causalidad Naranjo"
@@ -842,7 +711,7 @@ Description:  "Método de clasificación de causalidad Naranjo"
 * #04 "Improbable"
 
 
-ValueSet: DirOrgNotiVS
+ValueSet: DirOrgNotiVS //revisado. CS interno completo en Servidor, ejemplo en local, LinkID: codigoDireccionOrganizacion, codigoResidenciaHabitual, codigoDireccionVacunatorio
 Id: DirOrgNotiVS
 Title: "Códigos PAHO para Direcciones"
 Description: "Conjunto de Valores para dirección según OPS"
@@ -855,380 +724,371 @@ Description: "Conjunto de Valores para dirección según OPS"
 * ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
 * include codes from system DirOrgNotiCS
 
+// CodeSystem: PTSctCS
+// Id: PTSctCS
+// Title: "Códigos Snomed Reducido"
+// Description: "Codificación Snomed reducido"
 
-CodeSystem: PTSctCS
-Id: PTSctCS
-Title: "Códigos Snomed Reducido"
-Description: "Codificación Snomed reducido"
+// * ^meta.versionId = "1"
+// * ^meta.lastUpdated = "2023-01-05T21:57:10.292+00:00"
+// * ^meta.source = "#yyuCovUJiH7vKAgN"
+// * ^url = "http://snomed.info/sct"
+// * ^version = "1.00"
+// * ^status = #active
+// * ^experimental = false
+// * ^date = "2019-03-20T00:00:00-04:00"
+// * ^publisher = "Snomed-CT"
+// * ^caseSensitive = true
+// * ^content = #complete
+// * ^count = 136
 
-* ^meta.versionId = "1"
-* ^meta.lastUpdated = "2023-01-05T21:57:10.292+00:00"
-* ^meta.source = "#yyuCovUJiH7vKAgN"
-* ^url = "http://snomed.info/sct"
-* ^version = "1.00"
-* ^status = #active
-* ^experimental = false
-* ^date = "2019-03-20T00:00:00-04:00"
-* ^publisher = "Snomed-CT"
-* ^caseSensitive = true
-* ^content = #complete
-* ^count = 136
-
-* #410942007 "fármaco o medicamento (sustancia)"
-  * #424571000221103	"VAXZEVRIA vacuna COVID-19 vector viral no replicante"
-  * #31301000087101	"SINOPHARM - BIBP vacuna COVID-19 virus entero inactivado"
-  * #33391000087109	"ABDALA vacuna COVID-19 proteína de espiga recombinante"
-  * #31431000087100	"CONVIDECIA vacuna COVID-19 vector viral no replicante"
-  * #31311000087104	"CoronaVac vacuna COVID-19 virus entero inactivado"
-  * #33211000087105	"COVAXIN vacuna COVID-19 virus entero inactivado"
-  * #424751000221104	"COMIRNATY vacuna COVID-19 ARNm"
-  * #28531000087107	"vacuna contra COVID-19"
-  * #1187593009	"vacuna de plásmido de ADN de SARS-CoV-2 que codifica proteína de espiga"
-  * #1157024006	"vacuna virus entero inactivado contra SARS-CoV-2"
-  * #424591000221102	"JANSSEN vacuna COVID-19 vector viral no replicante"
-  * #424731000221108	"SPIKEVAX vacuna COVID-19 ARNm"
-  * #424581000221100	"COVISHIELD vacuna COVID-19 vector viral no replicante"
-  * #33421000087101	"EpiVacCorona vacuna COVID-19 proteína de espiga recombinante"
-  * #424711000221100	"SPUTNIK V vacuna COVID-19 vector viral no replicante"
-  * #33451000087108	"QazCovid-in vacuna COVID-19 virus entero inactivado"
-  * #424821000221101	"SPUTNIK LIGTH vacuna COVID-19 vector viral no replicante"
-  * #33201000087108	"SINOPHARM - WIBP vacuna COVID-19 virus entero inactivado"
+// * #410942007 "fármaco o medicamento (sustancia)"
+//   * #424571000221103	"VAXZEVRIA vacuna COVID-19 vector viral no replicante"
+//   * #31301000087101	"SINOPHARM - BIBP vacuna COVID-19 virus entero inactivado"
+//   * #33391000087109	"ABDALA vacuna COVID-19 proteína de espiga recombinante"
+//   * #31431000087100	"CONVIDECIA vacuna COVID-19 vector viral no replicante"
+//   * #31311000087104	"CoronaVac vacuna COVID-19 virus entero inactivado"
+//   * #33211000087105	"COVAXIN vacuna COVID-19 virus entero inactivado"
+//   * #424751000221104	"COMIRNATY vacuna COVID-19 ARNm"
+//   * #28531000087107	"vacuna contra COVID-19"
+//   * #1187593009	"vacuna de plásmido de ADN de SARS-CoV-2 que codifica proteína de espiga"
+//   * #1157024006	"vacuna virus entero inactivado contra SARS-CoV-2"
+//   * #424591000221102	"JANSSEN vacuna COVID-19 vector viral no replicante"
+//   * #424731000221108	"SPIKEVAX vacuna COVID-19 ARNm"
+//   * #424581000221100	"COVISHIELD vacuna COVID-19 vector viral no replicante"
+//   * #33421000087101	"EpiVacCorona vacuna COVID-19 proteína de espiga recombinante"
+//   * #424711000221100	"SPUTNIK V vacuna COVID-19 vector viral no replicante"
+//   * #33451000087108	"QazCovid-in vacuna COVID-19 virus entero inactivado"
+//   * #424821000221101	"SPUTNIK LIGTH vacuna COVID-19 vector viral no replicante"
+//   * #33201000087108	"SINOPHARM - WIBP vacuna COVID-19 virus entero inactivado"
   
-* #105590001 "Sustancia"
-  * #783639004	"levotiroxina sódica anhidra 100 microgramos por cada comprimido para administración oral"
-  * #383491000221101	"LANTUS [INSULINA GLARGINA 100 U/ML] SOLUCION INYECTABLE, CARTUCHO de 3 ML"
+// * #105590001 "Sustancia"
+//   * #783639004	"levotiroxina sódica anhidra 100 microgramos por cada comprimido para administración oral"
+//   * #383491000221101	"LANTUS [INSULINA GLARGINA 100 U/ML] SOLUCION INYECTABLE, CARTUCHO de 3 ML"
 
-* #391103005 "evento adverso posterior a tratamiento complementario (trastorno)"  
-  * #40930008	"hipotiroidismo"
-  * #414916001 "obesidad"
-  * #46635009	"Diabetes Melitus Tipo I"
-  * #17369002	"Aborto espontáneo"
-  * #213338000 "eritema en sitio de inyección"
-  * #95392007	"edema en el sitio de inyecion"
-  * #95388000	"Dolor en el sitio de inyección"
-  * #386661006 "fiebre"
-  * #193093009 "parálisis de Bell"
-  * #1010234007	"otalgia derecha"
-  * #60862001	"acúfenos"
+// * #391103005 "evento adverso posterior a tratamiento complementario (trastorno)"  
+//   * #40930008	"hipotiroidismo"
+//   * #414916001 "obesidad"
+//   * #46635009	"Diabetes Melitus Tipo I"
+//   * #17369002	"Aborto espontáneo"
+//   * #213338000 "eritema en sitio de inyección"
+//   * #95392007	"edema en el sitio de inyecion"
+//   * #95388000	"Dolor en el sitio de inyección"
+//   * #386661006 "fiebre"
+//   * #193093009 "parálisis de Bell"
+//   * #1010234007	"otalgia derecha"
+//   * #60862001	"acúfenos"
 
-* #736479009 "(Dose form intended site (intended site))"
-  * #46992007	"Pill"
-  * #385043007	"Granules"
-  * #385048003	"Cachet"
-  * #385049006	"Capsule"
-  * #385050006	"Hard capsule"
-  * #385051005	"Soft capsule"
-  * #385055001	"Tablet"
-  * #385057009	"Film-coated tablet"
-  * #385064006	"Pillule"
-  * #385087003	"Lozenge"
-  * #385099005	"Cream"
-  * #385100002	"Gel"
-  * #385101003	"Ointment"
-  * #385115001	"Collodion"
-  * #385117009	"Poultice"
-  * #385174007	"Pessary"
-  * #385194003	"Suppository"
-  * #385286003	"Implant"
-  * #420243009	"Tampon (basic dose form)"
-  * #420275007	"Semi-solid dose form"
-  * #420460001	"Film"
-  * #420699003	"Liquid dose form"
-  * #420768007	"Pellet"
-  * #421079001	"Pastille"
-  * #421131006	"Gaseous dose form"
-  * #421166008	"Foam"
-  * #421288004	"Sponge"
-  * #421378002	"Solid dose form"
-  * #421532009	"Insert"
-  * #421890007	"Oil"
-  * #422186009	"Tincture"
-  * #422259002	"Spirit"
-  * #426210003	"Gum"
-  * #429885007	"Bar"
-  * #738997003	"Elixir"
-  * #738998008	"Emulsion"
-  * #739000003	"Lotion (basic dose form)"
-  * #739001004	"Lyophilisate"
-  * #739002006	"Paste"
-  * #739003001	"Patch (basic dose form)"
-  * #739005008	"Powder (basic dose form)"
-  * #739006009	"Solution"
-  * #739007000	"Stick (basic dose form)"
-  * #739008005	"Suspension"
-  * #739009002	"Syrup"
-  * #739010007	"Tape (basic dose form)"
-  * #758679000	"Strip"
-  * #761876003	"Lyophilized powder (basic dose form)"
-  * #761877007	"Effervescent tablet"
-  * #761897002	"Effervescent granules (basic dose form)"
-  * #762948008	"Effervescent powder (basic dose form)"
-  * #763824009	"Gas"
-  * #764771001	"Ring"
-  * #770102009	"Pressurized solution (basic dose form)"
-  * #770103004	"Pressurized suspension (basic dose form)"
-  * #782888008	"Pressurized emulsion (basic dose form)"
+// * #736479009 "(Dose form intended site (intended site))"
+//   * #46992007	"Pill"
+//   * #385043007	"Granules"
+//   * #385048003	"Cachet"
+//   * #385049006	"Capsule"
+//   * #385050006	"Hard capsule"
+//   * #385051005	"Soft capsule"
+//   * #385055001	"Tablet"
+//   * #385057009	"Film-coated tablet"
+//   * #385064006	"Pillule"
+//   * #385087003	"Lozenge"
+//   * #385099005	"Cream"
+//   * #385100002	"Gel"
+//   * #385101003	"Ointment"
+//   * #385115001	"Collodion"
+//   * #385117009	"Poultice"
+//   * #385174007	"Pessary"
+//   * #385194003	"Suppository"
+//   * #385286003	"Implant"
+//   * #420243009	"Tampon (basic dose form)"
+//   * #420275007	"Semi-solid dose form"
+//   * #420460001	"Film"
+//   * #420699003	"Liquid dose form"
+//   * #420768007	"Pellet"
+//   * #421079001	"Pastille"
+//   * #421131006	"Gaseous dose form"
+//   * #421166008	"Foam"
+//   * #421288004	"Sponge"
+//   * #421378002	"Solid dose form"
+//   * #421532009	"Insert"
+//   * #421890007	"Oil"
+//   * #422186009	"Tincture"
+//   * #422259002	"Spirit"
+//   * #426210003	"Gum"
+//   * #429885007	"Bar"
+//   * #738997003	"Elixir"
+//   * #738998008	"Emulsion"
+//   * #739000003	"Lotion (basic dose form)"
+//   * #739001004	"Lyophilisate"
+//   * #739002006	"Paste"
+//   * #739003001	"Patch (basic dose form)"
+//   * #739005008	"Powder (basic dose form)"
+//   * #739006009	"Solution"
+//   * #739007000	"Stick (basic dose form)"
+//   * #739008005	"Suspension"
+//   * #739009002	"Syrup"
+//   * #739010007	"Tape (basic dose form)"
+//   * #758679000	"Strip"
+//   * #761876003	"Lyophilized powder (basic dose form)"
+//   * #761877007	"Effervescent tablet"
+//   * #761897002	"Effervescent granules (basic dose form)"
+//   * #762948008	"Effervescent powder (basic dose form)"
+//   * #763824009	"Gas"
+//   * #764771001	"Ring"
+//   * #770102009	"Pressurized solution (basic dose form)"
+//   * #770103004	"Pressurized suspension (basic dose form)"
+//   * #782888008	"Pressurized emulsion (basic dose form)"
 
-* #736478001 "forma farmacéutica básica (forma farmacéutica básica)"
-  * #1230183009	"Dispersion"
-  * #1230206006	"Compressed lozenge"
-  * #1230217007	"Molded lozenge (basic dose form)"
-  * #1230223002	"Lacquer (basic dose form)"
-  * #1230326008	"Compressed gas"
-  * #1230327004	"Cryogenic gas"
-  * #1230328009	"Liquified gas (basic dose form)"
-  * #1230334002	"Coated capsule (basic dose form)"
-  * #1230387002	"Coated granules (basic dose form)"
-  * #1230388007	"Coated tablet"
-  * #1231321009	"Cement (basic dose form)"
-  * #1231568003	"System"
-  * #1231710002	"Pure liquid (basic dose form)"
-  * #1231762000	"Impregnated material (basic dose form)"
-  //* #736479009	"Dose form intended site (intended site)"
-  * #738904002	"Cutaneous (intended site)"
-  * #738906000	"Dental"
-  * #738908004	"Endocervical (intended site)"
-  * #738910002	"Gastroenteral (intended site)"
-  * #738943003	"Gingival"
-  * #738945005	"Intrauterine (intended site)"
-  * #738946006	"Intravesical"
+// * #736478001 "forma farmacéutica básica (forma farmacéutica básica)"
+//   * #1230183009	"Dispersion"
+//   * #1230206006	"Compressed lozenge"
+//   * #1230217007	"Molded lozenge (basic dose form)"
+//   * #1230223002	"Lacquer (basic dose form)"
+//   * #1230326008	"Compressed gas"
+//   * #1230327004	"Cryogenic gas"
+//   * #1230328009	"Liquified gas (basic dose form)"
+//   * #1230334002	"Coated capsule (basic dose form)"
+//   * #1230387002	"Coated granules (basic dose form)"
+//   * #1230388007	"Coated tablet"
+//   * #1231321009	"Cement (basic dose form)"
+//   * #1231568003	"System"
+//   * #1231710002	"Pure liquid (basic dose form)"
+//   * #1231762000	"Impregnated material (basic dose form)"
+//   //* #736479009	"Dose form intended site (intended site)"
+//   * #738904002	"Cutaneous (intended site)"
+//   * #738906000	"Dental"
+//   * #738908004	"Endocervical (intended site)"
+//   * #738910002	"Gastroenteral (intended site)"
+//   * #738943003	"Gingival"
+//   * #738945005	"Intrauterine (intended site)"
+//   * #738946006	"Intravesical"
 
-  * #738948007	"Nasal"
-  * #738952007	"Ocular (intended site)"
-  * #738956005	"Oral"
-  * #738982001	"Oromucosal"
-  * #738983006	"Otic"
-  * #738984000	"Parenteral (intended site)"
-  * #738985004	"Pulmonary (intended site)"
-  * #738986003	"Rectal (intended site)"
-  * #738987007	"Transdermal (intended site)"
-  * #738988002	"Urethral"
-  * #738989005	"Vaginal"
-  * #761829007	"Sublingual (intended site)"
-  * #762070008	"Intraocular (intended site)"
-  * #763825005	"Buccal"
-  * #764295003	"Subcutaneous (intended site)"
-  * #764376008	"Enteral (intended site)"
-  * #764786007	"Oropharyngeal (intended site)"
-  * #770101002	"Endotracheopulmonary (intended site)"
-  * #783351009	"Intraperitoneal"
-  * #785909009	"Intralesional (intended site)"
-  * #840615007	"Intraarticular"
-  * #1230218002	"Periodontal"
-  * #1231459002	"Extracorporeal (intended site)"
+//   * #738948007	"Nasal"
+//   * #738952007	"Ocular (intended site)"
+//   * #738956005	"Oral"
+//   * #738982001	"Oromucosal"
+//   * #738983006	"Otic"
+//   * #738984000	"Parenteral (intended site)"
+//   * #738985004	"Pulmonary (intended site)"
+//   * #738986003	"Rectal (intended site)"
+//   * #738987007	"Transdermal (intended site)"
+//   * #738988002	"Urethral"
+//   * #738989005	"Vaginal"
+//   * #761829007	"Sublingual (intended site)"
+//   * #762070008	"Intraocular (intended site)"
+//   * #763825005	"Buccal"
+//   * #764295003	"Subcutaneous (intended site)"
+//   * #764376008	"Enteral (intended site)"
+//   * #764786007	"Oropharyngeal (intended site)"
+//   * #770101002	"Endotracheopulmonary (intended site)"
+//   * #783351009	"Intraperitoneal"
+//   * #785909009	"Intralesional (intended site)"
+//   * #840615007	"Intraarticular"
+//   * #1230218002	"Periodontal"
+//   * #1231459002	"Extracorporeal (intended site)"
 
-CodeSystem: ATCCSVacunas
-Id: ATCCSVacunas
-Title: "Códigos ATC vacunas"
-Description: "Códigos ATC vacunas"
-//* ^url = "http://www.whocc.no/atc"
-* ^meta.versionId = "1"
-* ^meta.lastUpdated = "2023-01-05T21:57:10.292+00:00"
-* ^meta.source = "#yyuCovUJiH7vKAgN"
-* ^version = "1.00"
-* ^status = #active
-* ^experimental = false
-* ^date = "2019-03-20T00:00:00-04:00"
-* ^caseSensitive = true
-* ^content = #complete
-* ^count = 5
+// CodeSystem: ATCCSVacunas
+// Id: ATCCSVacunas
+// Title: "Códigos ATC vacunas"
+// Description: "Códigos ATC vacunas"
+// //* ^url = "http://www.whocc.no/atc"
+// * ^meta.versionId = "1"
+// * ^meta.lastUpdated = "2023-01-05T21:57:10.292+00:00"
+// * ^meta.source = "#yyuCovUJiH7vKAgN"
+// * ^version = "1.00"
+// * ^status = #active
+// * ^experimental = false
+// * ^date = "2019-03-20T00:00:00-04:00"
+// * ^caseSensitive = true
+// * ^content = #complete
+// * ^count = 5
 
-* #J07BN "Vacuna COVID 19"
-  * #J07BN01 "Vacuna COVID 19, basada en ARNm"
-  * #J07BN04 "Vacuna COVID 19, subunidad proteica"
-  * #J07BN02 "Vacuna COVID 19, vector viral no replicante"
-  * #J07BN03 "Vacuna COVID 19, virus inactivado"
-
-
-CodeSystem: ATCCSMedicamentos
-Id: ATCCSMedicamentos
-Title: "Códigos ATC medicamentos"
-Description: "Códigos ATC medicamentos"
-//* ^url = "http://www.whocc.no/atc"
-* ^meta.versionId = "1"
-* ^meta.lastUpdated = "2023-01-05T21:57:10.292+00:00"
-* ^meta.source = "#yyuCovUJiH7vKAgN"
-* ^version = "1.00"
-* ^status = #active
-* ^experimental = false
-* ^date = "2019-03-20T00:00:00-04:00"
-* ^caseSensitive = true
-* ^content = #complete
-* ^count = 2
-
-* #H03AA01 "levotiroxina sodica"
-* #A10AE04 "insulina glargina"
+// * #J07BN "Vacuna COVID 19"
+//   * #J07BN01 "Vacuna COVID 19, basada en ARNm"
+//   * #J07BN04 "Vacuna COVID 19, subunidad proteica"
+//   * #J07BN02 "Vacuna COVID 19, vector viral no replicante"
+//   * #J07BN03 "Vacuna COVID 19, virus inactivado"
 
 
+// CodeSystem: ATCCSMedicamentos
+// Id: ATCCSMedicamentos
+// Title: "Códigos ATC medicamentos"
+// Description: "Códigos ATC medicamentos"
+// //* ^url = "http://www.whocc.no/atc"
+// * ^meta.versionId = "1"
+// * ^meta.lastUpdated = "2023-01-05T21:57:10.292+00:00"
+// * ^meta.source = "#yyuCovUJiH7vKAgN"
+// * ^version = "1.00"
+// * ^status = #active
+// * ^experimental = false
+// * ^date = "2019-03-20T00:00:00-04:00"
+// * ^caseSensitive = true
+// * ^content = #complete
+// * ^count = 2
 
-CodeSystem: ICD10
-Id: ICD10
-Title: "ICD-10"
-Description: "International Classification of Diseases revision 10 (ICD 10) - Spanish"
-* ^url = "http://hl7.org/fhir/sid/icd-10"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2021-03-11T00:00:00-03:00"
-* ^contact.name = "OPS"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = ""
-* ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
-* #E03.9	"Hipotiroidismo, no especificado"
-* #E66.9	"Obesidad, no especificada"
-* #E10.9	"Diabetes mellitus insulinodependiente, sin mención de complicación"
-* #O03.9	"Aborto espontáneo completo o no especificado, sin complicación"
-* #L53.9	"Afección eritematosa, no especificada"
-* #R60.0	"Edema localizado"
-* #R52	  "Dolor, no clasificado en otra parte"
-* #R50	  "Fiebre de otro origen y de origen desconocido"
-* #G51.0	"Paralisis de Bell"
-* #H92.0	"Otalgia"
-* #H93.1	"Tinnitus"
+// * #H03AA01 "levotiroxina sodica"
+// * #A10AE04 "insulina glargina"
 
-CodeSystem: ICD11
-Id: ICD11
-Title: "ICD11"
-Description: "ICD11"
-* ^meta.versionId = "1"
-* ^meta.lastUpdated = "2023-01-05T21:57:10.292+00:00"
-* ^meta.source = "#yyuCovUJiH7vKAgN"
-* ^url = "http://id.who.int/icd11/mms"
-* ^version = "1.00"
-* ^status = #active
-* ^experimental = false
-* ^date = "2019-03-20T00:00:00-04:00"
-* ^publisher = "CIE-11"
-* ^contact.name = "CIE-11"
-* ^caseSensitive = true
-* ^content = #complete
-* ^count = 36
+// CodeSystem: ICD10
+// Id: ICD10
+// Title: "ICD-10"
+// Description: "International Classification of Diseases revision 10 (ICD 10) - Spanish"
+// * ^url = "http://hl7.org/fhir/sid/icd-10"
+// * ^version = "1.0.0"
+// * ^status = #active
+// * ^date = "2021-03-11T00:00:00-03:00"
+// * ^contact.name = "OPS"
+// * ^contact.telecom.system = #email
+// * ^contact.telecom.value = ""
+// * ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
+// * #E03.9	"Hipotiroidismo, no especificado"
+// * #E66.9	"Obesidad, no especificada"
+// * #E10.9	"Diabetes mellitus insulinodependiente, sin mención de complicación"
+// * #O03.9	"Aborto espontáneo completo o no especificado, sin complicación"
+// * #L53.9	"Afección eritematosa, no especificada"
+// * #R60.0	"Edema localizado"
+// * #R52	  "Dolor, no clasificado en otra parte"
+// * #R50	  "Fiebre de otro origen y de origen desconocido"
+// * #G51.0	"Paralisis de Bell"
+// * #H92.0	"Otalgia"
+// * #H93.1	"Tinnitus"
 
-* #XM68M6 "Vacunas contra el COVID-19"
-  * #XM5JC5	"Vacunas contra COVID-19, subunidad proteica del virus"
-  * #XM4YL8	"Vacuna contra COVID-19 AstraZeneca"
-  * #XM8866	"BBIBP-CorV"
-  * #XM1G90	"Covaxin"
-  * #XM97T2	"Covishield®"
-  * #XM9QW8	"Vacunas contra COVID-19, vector viral no replicante"
-  * #XM7HT3	"CoronaVac®"
-  * #XM8NQ0	"Comirnaty®"
-  * #X68M6	"vacunas COVID-19"
-  * #XM6AT1	"COVID-19 vaccine, DNA based"
-  * #XM1NL1 	"Vacunas contra COVID-19, virus inactivado"
-  * #XM6QV1	"Vacuna contra COVID-19 Janssen"
-  * #XM3DT5	"Vacuna COVID-19 Moderna"
-  * #XM85P5	"Covi-Vac"
-  * #XM6SZ8 	"EpiVacCorona"
-  * #XM5ZJ4	"Gam-Covid-Vac"
-  * #XM9FQ7	"Hayat-Vax"
-  * #XM97N6	"QazVac"
-  * #XM5QM6	"Sputnik-Light"
-  * #XM1AU2	"Sinopharm WIBP-CorV"
+// CodeSystem: ICD11
+// Id: ICD11
+// Title: "ICD11"
+// Description: "ICD11"
+// * ^meta.versionId = "1"
+// * ^meta.lastUpdated = "2023-01-05T21:57:10.292+00:00"
+// * ^meta.source = "#yyuCovUJiH7vKAgN"
+// * ^url = "http://id.who.int/icd11/mms"
+// * ^version = "1.00"
+// * ^status = #active
+// * ^experimental = false
+// * ^date = "2019-03-20T00:00:00-04:00"
+// * ^publisher = "CIE-11"
+// * ^contact.name = "CIE-11"
+// * ^caseSensitive = true
+// * ^content = #complete
+// * ^count = 36
 
-* #XM4843 "Fármacos Z" 
-  * #XM2WC1	"levotiroxina sódica"
-  * #XM0K72	"Insulina de acción lenta"
+// * #XM68M6 "Vacunas contra el COVID-19"
+//   * #XM5JC5	"Vacunas contra COVID-19, subunidad proteica del virus"
+//   * #XM4YL8	"Vacuna contra COVID-19 AstraZeneca"
+//   * #XM8866	"BBIBP-CorV"
+//   * #XM1G90	"Covaxin"
+//   * #XM97T2	"Covishield®"
+//   * #XM9QW8	"Vacunas contra COVID-19, vector viral no replicante"
+//   * #XM7HT3	"CoronaVac®"
+//   * #XM8NQ0	"Comirnaty®"
+//   * #X68M6	"vacunas COVID-19"
+//   * #XM6AT1	"COVID-19 vaccine, DNA based"
+//   * #XM1NL1 	"Vacunas contra COVID-19, virus inactivado"
+//   * #XM6QV1	"Vacuna contra COVID-19 Janssen"
+//   * #XM3DT5	"Vacuna COVID-19 Moderna"
+//   * #XM85P5	"Covi-Vac"
+//   * #XM6SZ8 	"EpiVacCorona"
+//   * #XM5ZJ4	"Gam-Covid-Vac"
+//   * #XM9FQ7	"Hayat-Vax"
+//   * #XM97N6	"QazVac"
+//   * #XM5QM6	"Sputnik-Light"
+//   * #XM1AU2	"Sinopharm WIBP-CorV"
 
-* #XY0Y "Afección principal"
-  * #5A00	"Hipotiroidismo"
-  * #5B81	"Obesidad"
-  * #5A10	"Diabetes mellitus tipo 1"
-  * #JA00	"Aborto"
-  * #ME64.0	"Eritema"
-  * #MG29	"Edema"
-  * #MG31.Y	"Otro(a)(s) dolor agudo especificado(a)(s)"
-  * #MG26	"Fiebre de otro origen o de origen desconocido"
-  * #8B88.0	"Parálisis de Bell"
-  * #AB70.2	"Otalgia"
-  * #MC41	"Tinnitus"
+// * #XM4843 "Fármacos Z" 
+//   * #XM2WC1	"levotiroxina sódica"
+//   * #XM0K72	"Insulina de acción lenta"
 
-CodeSystem: EsaviMedDRACS //Oks y con TODOS los valores necesarios y algunos dummies
-Id: EsaviMedDRACS
-Title: "Códigos MedDRA Evento Adverso"
-Description: "Codificacion Estandarizada de Evento Adverso en MedDRA"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2021-03-11T00:00:00-03:00"
-* ^contact.name = "OPS"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = ""
-* ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
-* #10021114 "Hipotiroidismo"
-* #10029883 "Obesidad"
-* #10067584 "Diabetes Melitus Tipo I"
-* #10027649 "Aborto natural"
-* #10022061 "Eritema en la zona de inyección"
-* #10022058 "Edema en la zona de inyección"
-* #10022086 "Dolor en la zona de inyección"
-* #10016558 "Fiebre"
-* #10004223 "Paralisis de Bell"
-* #10014020 "Dolor de oídos"
-* #10043882 "Acúfenos"
-//Dummies
-* #10002218 "Anafilaxia"
-* #10016179 "Desmayo"
+// * #XY0Y "Afección principal"
+//   * #5A00	"Hipotiroidismo"
+//   * #5B81	"Obesidad"
+//   * #5A10	"Diabetes mellitus tipo 1"
+//   * #JA00	"Aborto"
+//   * #ME64.0	"Eritema"
+//   * #MG29	"Edema"
+//   * #MG31.Y	"Otro(a)(s) dolor agudo especificado(a)(s)"
+//   * #MG26	"Fiebre de otro origen o de origen desconocido"
+//   * #8B88.0	"Parálisis de Bell"
+//   * #AB70.2	"Otalgia"
+//   * #MC41	"Tinnitus"
 
-CodeSystem: CodigoWhoVacunaCS
-Id: CodigoWhoVacunaCS
-Title: "Codigos WHODrug de la vacuna"
-Description: "Codificación Estandarizda del código de las Vacunas según WhoDrug"
+// CodeSystem: EsaviMedDRACS //Ahora MedDRACS en archivo aparte
+// Id: EsaviMedDRACS
+// Title: "Códigos MedDRA Evento Adverso"
+// Description: "Codificacion Estandarizada de Evento Adverso en MedDRA"
+// * ^version = "1.0.0"
+// * ^status = #active
+// * ^date = "2021-03-11T00:00:00-03:00"
+// * ^contact.name = "OPS"
+// * ^contact.telecom.system = #email
+// * ^contact.telecom.value = ""
+// * ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
+// * #10021114 "Hipotiroidismo"
+// * #10029883 "Obesidad"
+// * #10067584 "Diabetes Melitus Tipo I"
+// * #10027649 "Aborto natural"
+// * #10022061 "Eritema en la zona de inyección"
+// * #10022058 "Edema en la zona de inyección"
+// * #10022086 "Dolor en la zona de inyección"
+// * #10016558 "Fiebre"
+// * #10004223 "Paralisis de Bell"
+// * #10014020 "Dolor de oídos"
+// * #10043882 "Acúfenos"
+// //Dummies
+// * #10002218 "Anafilaxia"
+// * #10016179 "Desmayo"
 
-* ^meta.versionId = "2"
-* ^meta.lastUpdated = "2023-01-05T21:57:10.292+00:00"
-* ^meta.source = "#yyuCovUJiH7vKAgN"
-* ^url = "http://who-umc.org"
-* ^version = "1.00"
-* ^status = #active
-* ^experimental = false
-* ^date = "2019-03-20T00:00:00-04:00"
-* ^publisher = "WHO"
-* ^contact.name = "WHO"
-* ^caseSensitive = true
-* ^content = #complete
-* ^count = 44
+// CodeSystem: CodigoWhoVacunaCS //revisado Oks, solo vacunas COVID
+// Id: CodigoWhoVacunaCS
+// Title: "Codigos WHODrug de la vacuna"
+// Description: "Codificación Estandarizda del código de las Vacunas según WhoDrug"
 
-* #C1 "Vacunas"
-  * #15268682002	"ABDALA"
-  * #15268603006	"ASTRAZENECA COVID-19 VACCINE"
-  * #15268643003	"BBIBP-CORV"
-  * #15268614003	"BBV152"
-  * #15268603005	"CHADOX1 NCOV-19"
-  * #15268682001	"CIGB 66"
-  * #15268625005	"COMIRNATY"
-  * #15268607005	"CONVIDECIA"
-  * #15268644002	"CORONAVAC"
-  * #15268614002	"COVAXIN [COVID-19 VACCINE INACT W.VIRION NIV-2020-770]"
-  * #15268625004	"COVID-19 MRNA VACCINE BNT162B2"
-  * #15268601001	"COVID-19 VACCINE"
-  * #15268644003	"COVID-19 VACCINE (VERO CELL), INACTIVATED [COVID-19 VACCINE INACT (VERO) CZ02]"
-  * #15268643005	"COVID-19 VACCINE (VERO CELL), INACTIVATED [COVID-19 VACCINE INACT (VERO) HB02]"
-  * #15268663002	"COVID-19 VACCINE (VERO CELL), INACTIVATED [COVID-19 VACCINE INACT (VERO) WIV04]"
-  * #15268622008	"COVID-19 VACCINE (VERO CELL), INACTIVATED [COVID-19 VACCINE INACT (VERO)]"
-  * #15268658001	"COVID-19 VACCINE DNA"
-  * #15268621001	"COVID-19 VACCINE INACT"
-  * #15268640004	"COVID-19 VACCINE JANSSEN"
-  * #15268604003	"COVID-19 VACCINE MODERNA"
-  * #15268603004	"COVISHIELD"
-  * #15268662002	"COVIVAC"
-  * #15268642002	"EPIVACCORONA"
-  * #15268619002	"GAM-COVID-VAC"
-  * #15268643009	"HAYAT VAX"
-  * #15268640003	"JANSSEN COVID-19 VACCINE"
-  * #15268604002	"MODERNA COVID-19 VACCINE"
-  * #15268625003	"PFIZER BIONTECH COVID-19 VACCINE"
-  * #15268621002	"QAZCOVID-IN"
-  * #15268601002	"SARS-COV-2 VACCINE"
-  * #15268604008	"SPIKEVAX"
-  * #15268619005	"SPUTNIK LIGHT"
-  * #15268619004	"SPUTNIK V"
-  * #15268625001	"TOZINAMERAN"
-  * #15268603009	"VACUNA COVID-19 ASTRAZENECA"
-  * #15268640005	"VACUNA COVID-19 JANSSEN"
-  * #15268625007	"VACUNA COVID-19 PFIZER BIONTECH"
-  * #15268625009	"VACUNA PFIZER-BIONTECH COVID-19"
-  * #15268603007	"VAXZEVRIA"
-  * #15268663004	"WIBP-CORV"
-
-* #C3 "Medicamentos"
-  * #68001016	"Levotiroxina"
-  * #1483501003	"Lantus"
+// * ^meta.versionId = "2"
+// * ^meta.lastUpdated = "2023-01-05T21:57:10.292+00:00"
+// * ^meta.source = "#yyuCovUJiH7vKAgN"
+// * ^url = "http://who-umc.org"
+// * ^version = "1.00"
+// * ^status = #active
+// * ^experimental = false
+// * ^date = "2019-03-20T00:00:00-04:00"
+// * ^publisher = "WHO"
+// * ^contact.name = "WHO"
+// * ^caseSensitive = true
+// * ^content = #complete
+// * ^count = 44
+// * #15268682002	"ABDALA"
+// * #15268603006	"ASTRAZENECA COVID-19 VACCINE"
+// * #15268643003	"BBIBP-CORV"
+// * #15268614003	"BBV152"
+// * #15268603005	"CHADOX1 NCOV-19"
+// * #15268682001	"CIGB 66"
+// * #15268625005	"COMIRNATY"
+// * #15268607005	"CONVIDECIA"
+// * #15268644002	"CORONAVAC"
+// * #15268614002	"COVAXIN [COVID-19 VACCINE INACT W.VIRION NIV-2020-770]"
+// * #15268625004	"COVID-19 MRNA VACCINE BNT162B2"
+// * #15268601001	"COVID-19 VACCINE"
+// * #15268644003	"COVID-19 VACCINE (VERO CELL), INACTIVATED [COVID-19 VACCINE INACT (VERO) CZ02]"
+// * #15268643005	"COVID-19 VACCINE (VERO CELL), INACTIVATED [COVID-19 VACCINE INACT (VERO) HB02]"
+// * #15268663002	"COVID-19 VACCINE (VERO CELL), INACTIVATED [COVID-19 VACCINE INACT (VERO) WIV04]"
+// * #15268622008	"COVID-19 VACCINE (VERO CELL), INACTIVATED [COVID-19 VACCINE INACT (VERO)]"
+// * #15268658001	"COVID-19 VACCINE DNA"
+// * #15268621001	"COVID-19 VACCINE INACT"
+// * #15268640004	"COVID-19 VACCINE JANSSEN"
+// * #15268604003	"COVID-19 VACCINE MODERNA"
+// * #15268603004	"COVISHIELD"
+// * #15268662002	"COVIVAC"
+// * #15268642002	"EPIVACCORONA"
+// * #15268619002	"GAM-COVID-VAC"
+// * #15268643009	"HAYAT VAX"
+// * #15268640003	"JANSSEN COVID-19 VACCINE"
+// * #15268604002	"MODERNA COVID-19 VACCINE"
+// * #15268625003	"PFIZER BIONTECH COVID-19 VACCINE"
+// * #15268621002	"QAZCOVID-IN"
+// * #15268601002	"SARS-COV-2 VACCINE"
+// * #15268604008	"SPIKEVAX"
+// * #15268619005	"SPUTNIK LIGHT"
+// * #15268619004	"SPUTNIK V"
+// * #15268625001	"TOZINAMERAN"
+// * #15268603009	"VACUNA COVID-19 ASTRAZENECA"
+// * #15268640005	"VACUNA COVID-19 JANSSEN"
+// * #15268625007	"VACUNA COVID-19 PFIZER BIONTECH"
+// * #15268625009	"VACUNA PFIZER-BIONTECH COVID-19"
+// * #15268603007	"VAXZEVRIA"
+// * #15268663004	"WIBP-CORV"
