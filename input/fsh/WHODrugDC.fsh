@@ -1,6 +1,6 @@
 CodeSystem: WHODrugDC
 Title: "WHODrug DrugCode"
-Description: "WHODrug completo con nombres genericos y comerciales en inglés mayormente codificados por drugcode"
+Description: "Fragmento de WHODrug completo con nombres genéricos y comerciales en inglés mayormente codificados por drugcode"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2023-05-25T13:22:48.124+00:00"
 * ^status = #active

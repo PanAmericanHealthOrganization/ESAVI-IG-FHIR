@@ -1,5 +1,5 @@
 CodeSystem: MedDRACS
-Title: "MedDra en español"
+Title: "Fragmento de MedDRA en español"
 Description: "Códigos MedDRA con descripción en español"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2023-06-27T13:22:48.124+00:00"
