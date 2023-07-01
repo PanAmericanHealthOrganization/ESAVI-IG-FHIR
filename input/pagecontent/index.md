@@ -14,16 +14,16 @@ Estos perfiles son la base para futuras guías de implementación y fueron produ
 ## Cómo leer esta guía
 
 Esta guía está dividida en varias secciones que se muestran en la barra de menú ubicada en la parte superior de la página
-- [Inicio](http://ops.hl7chile.cl/site/index.html): Provee la introducción acerca de esta guía.
-- [Objetivos](http://ops.hl7chile.cl/site/objetivos.html): Describe los objetivos estratégicos y de interoperabilidad
-- [Datos Generales](http://ops.hl7chile.cl/site/generalidades.html): Aspectos Generales respecto al proyecto y la Guía
-- [Actores y Casos de Uso](http://ops.hl7chile.cl/site/actores_CasosUso.html): Definición de los Casos de Uso.
-- [Operaciones FHIR](http://ops.hl7chile.cl/site/operaciones.html): Operaciones Rest usadas para el proyecto.
-- [Artefactos](http://ops.hl7chile.cl/site/artifacts.html): Estas páginas proveen descripciones detalladas y definiciones formales para los objetos FHIR presentes en la guía.    
-- [Mapeos](http://ops.hl7chile.cl/site/descargas.html): Desarrollo de los Mapeos entre DHIS2 y E2B XML(R3) con FHIR.
-- [Uso](http://ops.hl7chile.cl/site/uso_como_llenar_esta_guia.html): Explica las interpretaciones e intenciones de la semántica de los recursos.
-- [Seguridad](http://ops.hl7chile.cl/site/seguridad.html): Explica los formatos de seguridad para la conexión con el Sistema Regional.    
-- [Descargas](http://ops.hl7chile.cl/site/descargas.html): Agrupa las descargas disponibles como perfiles, paquete de validación, ejemplos, etc.
+- [Inicio](index.html): Provee la introducción acerca de esta guía.
+- [Objetivos](objetivos.html): Describe los objetivos estratégicos y de interoperabilidad
+- [Datos Generales](generalidades.html): Aspectos Generales respecto al proyecto y la Guía
+- [Actores y Casos de Uso](actores_CasosUso.html): Definición de los Casos de Uso.
+- [Operaciones FHIR](operaciones.html): Operaciones Rest usadas para el proyecto.
+- [Artefactos](artifacts.html): Estas páginas proveen descripciones detalladas y definiciones formales para los objetos FHIR presentes en la guía.    
+- [Mapeos](descargas.html): Desarrollo de los Mapeos entre DHIS2 y E2B XML(R3) con FHIR.
+- [Uso](uso_como_llenar_esta_guia.html): Explica las interpretaciones e intenciones de la semántica de los recursos.
+- [Seguridad](seguridad.html): Explica los formatos de seguridad para la conexión con el Sistema Regional.    
+- [Descargas](descargas.html): Agrupa las descargas disponibles como perfiles, paquete de validación, ejemplos, etc.
 
 ## Del modelo lógico a la implementación
 El modelo lógico está basado en las recomendaciones del [Manual Regional de Vigilancia de ESAVI](https://iris.paho.org/handle/10665.2/55384) para el reporte individual de casos, donde cada estado miembro informa hacia el Sistema Regional de Vacunación Segura de la OPS. Como paso previo se estructuró un Diccionario de Datos para Notificación de ESAVI ES en formato tabular. Este modelo lógico se encuentra mapeado a un recurso [Questionnaire] (https://build.fhir.org/ig/PanAmericanHealthOrganization/OPS-ESAVI/StructureDefinition-ESAVIQuestionnaireResponse.html) 
