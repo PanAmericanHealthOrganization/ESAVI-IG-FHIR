@@ -6,7 +6,7 @@ id: uv.esavi
 canonical: https://paho.org/fhir/esavi
 name: ESAVI
 status: draft
-version: 0.1.37
+version: 0.1.38
 fhirVersion: 4.0.1
 title: Guía de Implementación FHIR de ESAVI
 copyrightYear: 2021+
@@ -22,6 +22,7 @@ publisher:
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
 # │  To use a provided ig-data/input/includes/menu.xml file, delete the "menu" property below.     │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+
 menu:
   Inicio: index.html
   Objetivos: objetivos.html
@@ -31,6 +32,7 @@ menu:
   Artefactos: artifacts.html
   Mapeos: mapeos.html
   #  Seguridad: seguridad.html
+  Terminologias: terminologias.html
   Descargas: descargas.html
   Generalidades: generalidades.html
   Consideraciones: consideraciones.html
