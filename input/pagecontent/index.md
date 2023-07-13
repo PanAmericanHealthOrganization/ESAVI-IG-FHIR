@@ -1,6 +1,3 @@
-# Nueva Direccion de la G
-[https://build.fhir.org/ig/PanAmericanHealthOrganization/ESAVI-IG-FHIR/](https://build.fhir.org/ig/PanAmericanHealthOrganization/ESAVI-IG-FHIR)
-
 # Introducción
 La Guía de Implementación FHIR de ESAVI (IG) brinda orientación sobre el uso de los recursos FHIR como mecanismo para compartir datos sobre Eventos Supuestamente Atribuibles a Vacunación e Inmunización (ESAVI) entre cada estado miembro de la región de las Américas hacia la Organización Panamericana de la Salud (OPS).
 
