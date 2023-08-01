@@ -24,4 +24,4 @@ jobs:
       run: pip install -r src/requirements.txt
       
     - name: Run unittests
-      run: python -m test.authentication_unittest
+      run: python -m src.test.authentication_unittest
