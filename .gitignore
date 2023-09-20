@@ -3,3 +3,5 @@ temp/
 template/
 fsh-generated/
 output/
+
+.DS_Store
