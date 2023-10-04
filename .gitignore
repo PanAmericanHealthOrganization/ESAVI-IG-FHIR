@@ -3,3 +3,8 @@ temp/
 template/
 fsh-generated/
 output/
+.DS_Store
+xxxx/
+src/
+input-out/
+local-template/

@@ -40,7 +40,6 @@ Description: "Codigos definidos para la identificación de países segun norma I
 * ^contact.telecom.system = #email
 * ^contact.telecom.value = ""
 * ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
-
 * include codes from system urn:iso:std:iso:3166
 
 

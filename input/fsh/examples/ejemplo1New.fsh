@@ -1,5 +1,5 @@
 Alias: $DirOrgNotiCS = https://paho.org/fhir/esavi/CodeSystem/DirOrgNotiCS
-Alias: $ProfesionalNotificadorCS = https://paho.org/fhir/esavi/CodeSystem/ProfesionalNotificadorCS
+Alias: $ProfesionalNotificadorVS = https://paho.org/fhir/esavi/CodeSystem/ProfesionalNotificadorVS
 Alias: $CodPaises = http://paho.org/esavi/CodeSystem/CodPaises
 Alias: $administrative-gender = http://hl7.org/fhir/administrative-gender
 Alias: $EnfermedadesPreviasCodificacionCS = http://paho.org/esavi/CodeSystem/EnfermedadesPreviasCodificacionCS
@@ -28,7 +28,7 @@ Usage: #example
 * item[=].item[=].item[+].linkId = "nombreDireccionOrganizacion"
 * item[=].item[=].item[=].answer.valueString = "Amatán (Municipio), Chiapas, Mexico"
 * item[=].item[=].item[+].linkId = "codigoProfesionNotificador"
-* item[=].item[=].item[=].answer.valueCoding = $ProfesionalNotificadorCS#5 "Usuario o otro profesional no sanitario"
+* item[=].item[=].item[=].answer.valueCoding = $ProfesionalNotificadorVS#5 "Usuario o otro profesional no sanitario"
 * item[=].item[+].linkId = "fechas"
 * item[=].item[=].text = "Fechas Administrativas (al menos una fecha es necesaria)"
 * item[=].item[=].item[0].linkId = "fechaConsulta"
@@ -84,7 +84,7 @@ Usage: #example
 * item[=].item[=].item[=].item[+].linkId = "identificadorVacuna"
 * item[=].item[=].item[=].item[=].answer.valueInteger = 121
 * item[=].item[=].item[=].item[+].linkId = "nombreFabricante"
-* item[=].item[=].item[=].item[=].answer.valueStrimg = "Pfizer BioNTech"
+* item[=].item[=].item[=].item[=].answer.valueString = "Pfizer BioNTech"
 * item[=].item[=].item[=].item[+].linkId = "numeroDosisVacuna"
 * item[=].item[=].item[=].item[=].text = "Numero ordinal de la dosis administrada"
 * item[=].item[=].item[=].item[=].answer.valueInteger = 1

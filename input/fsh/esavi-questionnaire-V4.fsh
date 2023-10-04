@@ -864,17 +864,10 @@ Usage: #example
 * item[=].item[=].item[=].linkId = "fechaVencimientoDiluyente"
 * item[=].item[=].item[=].text = "Fecha de vencimiento del diluyente de la vacuna"
 
+////  Grupo datosVacunacion /////////
 
-/////////////////////////////////////////////////////////////////////////////////
-/////////////////////  Grupo datosVacunacion //////////////////////////////////
-* item[=].item[+].type = #group
-* item[=].item[=].required = true
-* item[=].item[=].linkId = "datosVacunacion"
-* item[=].item[=].text = "Datos relacionados con el proceso de vacunación"
-
-/////////////////////
-* item[=].item[=].item[0].type = #string
-* item[=].item[=].item[=].required = true
+* item[=].item[=].item[+].type = #string
+* item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "nombreVacunatorio"
 * item[=].item[=].item[=].text = "Nombre del vacunatorio"
 
@@ -898,7 +891,7 @@ Usage: #example
 * item[=].item[=].item[=].text = "Código del nivel geográfico subnacional de la ubicación de la institución de salud en la que se administró la vacuna"
 
 * item[=].item[=].item[+].type = #string
-* item[=].item[=].item[=].required = true
+* item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "nombreDireccionVacunatorio"
 * item[=].item[=].item[=].text = "Dirección completa de la institución en la que se administró la vacuna"
 
