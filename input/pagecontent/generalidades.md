@@ -1,4 +1,5 @@
 ### Aspectos a Considerar
+
 <br>
 
 Esta sección describe definiciones, interpretaciones y requisitos importantes comunes a todos los actores del la guía de implementación ESAVI de OPS, utilizados en esta guía. Los verbos de conformidad - **SHALL** *(Debe)*, **SHOULD** *(Debería Si Condición)*, **MAY** *(Podría)* - utilizados en esta guía se definen en las reglas de conformidad de FHIR.
@@ -15,39 +16,34 @@ Al revisar un perfil nos encontramos con la posibilidad de ver múltiples vistas
 
 Esta vista permite ver un resumen del Perfil como de que recurso proviene elementos *mandatorios*, *eliminados* y que deben ser *soportados*. Además, resume las *extensiones* y *slices* generados en el diseño.
 
+<p> <img src="./Resumen.png" alt="Visión Resumen de un Perfil"/> </p>
+<br clear="all"/>
 
-![Visión Resumen de un Perfil](Resumen.png)
+##### Vista Diferencial
 
-
-
-##### Vista Diferencial 
-
-Esta vista permite observar todos aquellos elmentos de un recurso que han sido modificadas o adecuadas para la realidad local. Esto incluye cambios como cardinalidad, explicaciones, MS o cualquier otro. Los elementos que se han mantenido tal cual en el recurso madre no figuran en esta vista. 
+Esta vista permite observar todos aquellos elmentos de un recurso que han sido modificadas o adecuadas para la realidad local. Esto incluye cambios como cardinalidad, explicaciones, MS o cualquier otro. Los elementos que se han mantenido tal cual en el recurso madre no figuran en esta vista.
 
 *Por razon de lenguaje, toda traducción de la descripción de un elemento se considera un cambio y figura en esta vista.*
 
+<p> <img src="./MS.png" alt="Visión diferencial de un perfil"/> </p>
+<br clear="all"/>
 
-![Visión Diferencial de un Perfil](MS.png)
+##### Vista Snapshot
 
+En la vista de la **Snapshot Table**, todos los elementos obligatorios definidos para el perfil, y cualquier elemento obligatorio o que deba ser apoyado heredado de un perfil base, están marcados con una **S**.
 
+<p> <img src="./Snap.png" alt="Visión Snapshot de un Perfil"/> </p>
+<br clear="all"/>
 
-##### Vista Snapshot 
-
-En la vista de la **Snapshot Table**, todos los elementos obligatorios definidos para el perfil, y cualquier elemento obligatorio o que deba ser apoyado heredado de un perfil base, están marcados con una **S**. 
-
-
-
-![Visión Snapshot de un Perfil](Snap.png)
-
-
-##### Vista Snapshot (Must Support) 
+##### Vista Snapshot (Must Support)
 
 En la vista **Snapshot Table (Must Support)**, todos los elementos presentados en la vista son obligatorios o deben ser compatibles con el perfil.
 
-
-![Visión Snapshot Must Support de un Perfil](SnapMS.png)
+<p> <img src="./SnapMS.png" alt="Visión Snapshot Must Support de un perfil"/> </p>
+<br clear="all"/>
 
 ### Definición del Conjunto Mínimo de Datos
+
 <br>
 
 El CMD definido para cada recurso se deja caracterizado por la bandera **MS** que significa *Must Support*. Este indicador determina que el sistema que recibe ese elemento de un recurso **DEBE** soportar el poder procesarlo y almacenarlo.
@@ -55,13 +51,12 @@ El CMD definido para cada recurso se deja caracterizado por la bandera **MS** qu
 La existencia de un elemento o ruta con **MS** no determina la obligatoriedad de que un recurso generado contenga el dato. Esto se define mediante la obligatoriedad del dato lo cual **DEBE** estar especificado en la cardinalidad
 <br>
 
-![Visión Must Support de un Perfil](MS.png)
-
+<p> <img src="./MS.png" alt="Visión Must Support de un perfil"/> </p>
+<br clear="all"/>
 
 ### Cardinalidad
 
-
-La cardinalidad define dos aspectos de un elemento dentro de un perfil 
+La cardinalidad define dos aspectos de un elemento dentro de un perfil
 
 * Cantidad de veces que un elemento se **Puede** repetir.
 * La minima cantidad de veces que un elemento **Debe** ser decrito al generar un recurso
@@ -80,21 +75,19 @@ De esta forma nos encontramos con varias situaciones
 
 ### Bindings
 
-
 La vinculación obligatoria a una definición de conjunto de valores significa que SE **DEBE** utilizar uno de los códigos del conjunto de valores especificado. En el caso de +CodeableConcept+, no es válido utilizar sólo texto, pero se permiten múltiples codificaciones (traducciones).
 
 La *vinculación extensible* a una definición de conjunto de valores significa que uno de los códigos del conjunto de valores especificado **SE DEBE USAR** si existe un concepto aplicable, pero si no existe un código adecuado en el conjunto de valores, se **PUEDE** proporcionar un código o códigos alternativos en su lugar. Para *CodeableConcept* se permiten múltiples codificaciones y esta regla se aplica a una de ellas. También en el caso de *CodeableConcept*, si sólo se dispone de texto, se puede utilizar sólo el texto.
 
-![Visión binding de un Perfil](binding.png)
-
+<p> <img src="./binding.png" alt="Visión binding de un perfil"/> </p>
+<br clear="all"/>
 
 ### Ejemplos
-<br>
 
 La guía desarrolla una serie de ejemplos por perfil desarrollado. Este ejemplo muestra en código como un sistema hace uso de un perfil para generar un recurso. Estos ejemplos se acceden desde la página ejemplos o desde la lengüeta ejemplo de cada perfil
 
-![Visión ejemplo de un Perfil](ejemplo.png)
-
+<p> <img src="./ejemplo.png" alt="Visión ejemplo de un perfil"/> </p>
+<br clear="all"/>
 
 Además cada ejemplo viene descrito en 4 formatos:
 
