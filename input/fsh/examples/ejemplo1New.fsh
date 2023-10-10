@@ -20,7 +20,7 @@ Usage: #example
 * item[0].linkId = "datosNotificacionGeneral"
 * item[=].item[0].linkId = "datosNotificacion"
 * item[=].item[=].item[0].linkId = "paisOrigen-Reg"
-* item[=].item[=].item[=].answer.valueCoding = urn:iso:std:iso:3166#MX "México"
+* item[=].item[=].item[=].answer.valueCoding = urn:iso:std:iso:3166#MX "Mexico"
 * item[=].item[=].item[+].linkId = "nombreOrganizacionNotificadora"
 * item[=].item[=].item[=].answer.valueString = "Subdrector Epiemyp, responsable del Sistema de ESAVI-Hospital General de México"
 * item[=].item[=].item[+].linkId = "codigoDireccionOrganizacion"
@@ -83,8 +83,8 @@ Usage: #example
 * item[=].item[=].item[=].item[=].answer.valueString = "BioNTech"
 * item[=].item[=].item[=].item[+].linkId = "identificadorVacuna"
 * item[=].item[=].item[=].item[=].answer.valueInteger = 121
-* item[=].item[=].item[=].item[+].linkId = "nombreFabricante"
-* item[=].item[=].item[=].item[=].answer.valueStrimg = "Pfizer BioNTech"
+//* item[=].item[=].item[=].item[+].linkId = "nombreFabricante"
+//* item[=].item[=].item[=].item[=].answer.valueStrimg = "Pfizer BioNTech"
 * item[=].item[=].item[=].item[+].linkId = "numeroDosisVacuna"
 * item[=].item[=].item[=].item[=].text = "Numero ordinal de la dosis administrada"
 * item[=].item[=].item[=].item[=].answer.valueInteger = 1
