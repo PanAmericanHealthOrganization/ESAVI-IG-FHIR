@@ -4,3 +4,5 @@ template/
 fsh-generated/
 output/
 .DS_Store
+input/.DS_Store
+input/fsh/.DS_Store
