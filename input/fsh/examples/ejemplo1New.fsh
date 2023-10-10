@@ -84,8 +84,8 @@ Usage: #example
 * item[=].item[=].item[=].item[+].linkId = "identificadorVacuna"
 * item[=].item[=].item[=].item[=].answer.valueInteger = 121
 * item[=].item[=].item[=].item[+].linkId = "nombreFabricante"
-* item[=].item[=].item[=].item[=].answer.valueStrimg = "Pfizer BioNTech"
-* item[=].item[=].item[=].item[+].linkId = "numeroDosisVacuna"
+//* item[=].item[=].item[=].item[=].answer.valueStrimg = "Pfizer BioNTech"
+//* item[=].item[=].item[=].item[+].linkId = "numeroDosisVacuna"
 * item[=].item[=].item[=].item[=].text = "Numero ordinal de la dosis administrada"
 * item[=].item[=].item[=].item[=].answer.valueInteger = 1
 * item[=].item[=].item[=].item[+].linkId = "numeroLote"
