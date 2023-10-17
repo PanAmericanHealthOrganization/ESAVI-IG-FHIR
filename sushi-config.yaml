@@ -34,6 +34,8 @@ pages:
     title: Como llenar la Guía
   actores_CasosUso.md:
     title: Actores y Casos de Uso
+  artifacts.html:
+    title: Artefactos
   mapeos.md:
     title:  Mapeos
   terminologias.md:
