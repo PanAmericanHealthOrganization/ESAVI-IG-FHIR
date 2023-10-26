@@ -1,6 +1,5 @@
 Alias: $questionnaire-item-control = http://hl7.org/fhir/questionnaire-item-control
 
-
 ///////////////////////Información instancia//////////////////////////
 Instance: CuestionarioESAVI 
 Title: "Cuestionario ESAVI"
@@ -1096,7 +1095,7 @@ Usage: #example
 * item[=].item[=].item[=].linkId = "gravAborto"
 * item[=].item[=].item[=].text = "Aborto"
 
-* item[=].item[=].enableBehavior = #all
+* item[=].item[=].item[=].enableBehavior = #any
 * item[=].item[=].item[=].enableWhen[0].question = "embarazadaMomentoVacuna"
 * item[=].item[=].item[=].enableWhen[=].operator = #=
 * item[=].item[=].item[=].enableWhen[=].answerBoolean = true
@@ -1106,12 +1105,14 @@ Usage: #example
 * item[=].item[=].item[=].enableWhen[=].answerBoolean = true
 
 
+
 /////////////////////
 * item[=].item[=].item[+].type = #boolean
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "gravMuerteFetal"
 * item[=].item[=].item[=].text = "Muerte fetal"
 
+* item[=].item[=].item[=].enableBehavior = #any
 * item[=].item[=].item[=].enableWhen[0].question = "embarazadaMomentoVacuna"
 * item[=].item[=].item[=].enableWhen[=].operator = #=
 * item[=].item[=].item[=].enableWhen[=].answerBoolean = true
@@ -1301,7 +1302,7 @@ Usage: #example
 * item[=].item[=].item[=].enableWhen.question = "sistemaClasfcausalidad"
 * item[=].item[=].item[=].enableWhen.operator = #=
 * item[=].item[=].item[=].enableWhen.answerCoding.code = #Naranjo
-* item[=].item[=].item[=].enableWhen.answerCoding.system = "SistemaClasfCausalidadCS"
+* item[=].item[=].item[=].enableWhen.answerCoding.system = "http://paho.org/esavi/CodeSystem/SistemaClasfCausalidadCS"
 
 //////////////Identificador vacuna OK
 * item[=].item[=].item[+].type = #integer

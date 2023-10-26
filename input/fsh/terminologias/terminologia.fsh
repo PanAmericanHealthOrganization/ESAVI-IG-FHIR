@@ -1,7 +1,7 @@
 
 //Alias: $v2-0136 = http://terminology.hl7.org/ValueSet/v2-0136
 //Alias: $ProfesionalNotificadorCS = http://paho.org/esavi/CodeSystem/ProfesionalNotificadorCS
-//Alias: $MedDRA = http://terminology.hl7.org/CodeSystem/MDRSPA //Se define MedDRACS en archivo aparte
+Alias: $MedDRA = https://www.meddra.org //Se define MedDRACS en archivo aparte
 Alias: ICD11mms = http://id.who.int/icd11/mms
 Alias: ICD10 = http://hl7.org/fhir/sid/icd-10
 Alias: SCTSpa = http://snomed.info/sct/449081005
@@ -54,7 +54,7 @@ Description: "Código MedDRA del Evento Adverso notificado"
 * ^contact.telecom.system = #email
 * ^contact.telecom.value = ""
 * ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
-* include codes from system MedDRACS
+* include codes from system MedDRA
 
 ValueSet: ComplicacionEmbarazoMedDRAVS //revisado OKs CS interno definido aparte, completo en el servidor LinkID: odigoMedDRAComplicacionEmbarazoESAVI
 Id: ComplicacionEmbarazoMedDRAVS
@@ -67,7 +67,7 @@ Description: "Codificacion Estandarizada de diagnóticos de complicaciones de em
 * ^contact.telecom.system = #email
 * ^contact.telecom.value = ""
 * ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
-* include codes from system MedDRACS
+* include codes from system MedDRA
 
 ValueSet: ComplicacionEmbarazoOtroVS //revisado OKS CS externo LinkID: otrosCodigosComplicacionEmbarazoESAVI
 Id: ComplicacionEmbarazoOtroVS
@@ -583,7 +583,7 @@ Description: "Describe las enfermedades previas en un ESAVI codificadas en MedDR
 * ^status = #active
 * ^date = "2022-02-02"
 * ^publisher = "PAHO - Pan American Health Organization"
-* include codes from system MedDRACS
+* include codes from system MedDRA
 
 ValueSet: SistemaClasfCausalidadVS //revisado OKs CS interno a continuación LinkID: sistemaClasfcausalidad
 Id: SistemaClasfCausalidadVS
