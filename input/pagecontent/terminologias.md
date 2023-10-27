@@ -1,5 +1,3 @@
-# Terminologías externas
-
 Esta página proporciona detalles sobre las terminologías utilizadas en la guía ESAVI FHIR de OPS, pero que son propiedad y están regidas por otras organizaciones externas a HL7.
 
 Los implementadores y evaluadores que utilicen o hagan referencia a cualquiera de estos code systems para cualquier artefacto de contenido terminológico en una especificación HL7 **deberán** cumplir con los requisitos de licencia específicos para la terminología relevante. Las licencias de terminología **deberán** obtenerse del propietario del sistema de códigos para cada sistema de códigos y/u otro artefacto específico utilizado. Es responsabilidad exclusiva de cada organización que implemente o pruebe cualquier especificación HL7 para garantizar que sus implementaciones cumplan con los requisitos de licencia de cada terminología externa utilizada.
@@ -7,7 +5,7 @@ Los implementadores y evaluadores que utilicen o hagan referencia a cualquiera d
 Más información sobre [Terminologías externas](https://confluence.hl7.org/display/TA/External+Terminologies+-+Information)
 
 
-## WHODrug
+### WHODrug
 
 WHODrug es una base de datos estándar de referencia internacional sobre medicamentos, desarrollada y mantenida por el Centro de Monitoreo de Uppsala (UMC). WHODrug facilita el registro, análisis e intercambio de información sobre medicamentos, principalmente  para registrar y analizar datos de seguridad y eficacia de medicamentos en ensayos clínicos, estudios postcomercialización y actividades de farmacovigilancia. WHODrug proporciona una terminología uniforme y estructurada para describir los ingredientes activos de los medicamentos, sus formas farmacéuticas, rutas de administración y otras características relevantes. Esta herramienta facilita el intercambio de información entre diferentes organizaciones y países, mejorando la calidad de los datos y la comparabilidad de los resultados.
 
@@ -38,7 +36,7 @@ Más info en:
 [https://who-umc.org/whodrug/whodrug-global/implementing-whodrug/](https://who-umc.org/whodrug/whodrug-global/implementing-whodrug/) 
 
 
-## MedDRA
+### MedDRA
 
 MedDRA es una terminología médica internacional estandarizada multilingüe que se puede utilizar para la comunicación reglamentaria y la evaluación de datos relacionados con medicamentos para uso humano. MedDRA está diseñado para su uso en el registro, la documentación y el seguimiento de la seguridad de los medicamentos en todas las fases del ciclo de desarrollo (es decir, desde los ensayos clínicos hasta la vigilancia posterior a la comercialización).
 
@@ -59,7 +57,7 @@ Más información en:
 Canonical URI: [https://terminology.hl7.org/CodeSystem-mdr.html](https://terminology.hl7.org/CodeSystem-mdr.html) o [https://www.meddra.org](https://www.meddra.org/) ??
 
 
-## ICD 11
+### ICD 11
 
 La Clasificación Internacional de Enfermedades y Problemas de Salud Relacionados (CIE, o ICD en inglés) en su versión 11, es una herramienta para registrar, informar y agrupar condiciones y factores que influyen en la salud. Contiene categorías para enfermedades, condiciones relacionadas con la salud y causas externas de enfermedad o muerte. El propósito de la CIE es permitir el registro, análisis, interpretación y comparación sistemáticos de los datos de mortalidad y morbilidad recopilados en diferentes países o áreas y en diferentes momentos. La CIE se utiliza para traducir diagnósticos de enfermedades y otros problemas de salud en un código alfanumérico, que permite el almacenamiento, la recuperación y el análisis de los datos. La CIE se ha convertido en la clasificación diagnóstica estándar internacional para todos los fines epidemiológicos generales y de gestión de la salud. Estos incluyen el análisis de la situación general de salud de los grupos de población, el seguimiento de la incidencia y prevalencia de enfermedades y otros problemas de salud en relación con otras variables, como las características y circunstancias de los individuos afectados. ICD también es adecuado para estudios de aspectos financieros de un sistema de salud, como la facturación o la asignación de recursos. Incluye códigos para medicamentos y vacunas, independientemente de su autorización por parte de la OMS.
 
@@ -70,7 +68,7 @@ Foundation Canonical URL:  [http://id.who.int/icd/entity](http://id.who.int/icd/
 Mortality and Morbidity Statistics (MMS) Canonical URL: [http://id.who.int/icd/release/11/mms](http://id.who.int/icd/release/11/mms) (Updated 20210524)
 
 
-## ICD 10
+### ICD 10
 
 La Clasificación Internacional de Enfermedades en su versión 10 es un sistema de categorías mutuamente excluyentes a las cuales se asignan enfermedades, lesiones y motivos de consulta de acuerdo con criterios previamente establecidos. La clasificación abarca todo el rango de enfermedades existentes en la terminología médica (nomenclatura internacional de enfermedades).
 
@@ -85,7 +83,7 @@ Más info en:
 Canonical URI: [http://hl7.org/fhir/sid/icd-10](http://hl7.org/fhir/sid/icd-10) 
 
 
-## SNOMED CT
+### SNOMED CT
 
 SNOMED CT es una terminología básica de atención médica clínica que contiene conceptos con significados únicos y definiciones basadas en lógica formal organizadas en jerarquías.
 
@@ -104,7 +102,7 @@ Más info en:
 Canonical URI:  [http://snomed.info/sct](http://snomed.info/sct) 
 
 
-## ATC
+### ATC
 
 La Clasificación Anatómica Terapéutica Química (ATC) es una clasificación jerárquica de 5 niveles de principios activos utilizados en medicamentos. Está diseñado para servir como una herramienta para el seguimiento de la utilización de medicamentos y la investigación con el fin de mejorar la calidad del uso de medicamentos. Un componente de esto es la presentación y comparación de estadísticas de consumo de drogas a nivel internacional y otros. El sistema tiene catorce grupos anatómicos/farmacológicos principales o 1ros niveles. Cada grupo principal de ATC se divide en 2.º nivel, que pueden ser grupos farmacológicos o terapéuticos. Los niveles 3 y 4 son subgrupos químicos, farmacológicos o terapéuticos y el nivel 5 es la sustancia química. Los niveles 2, 3 y 4 se utilizan a menudo para identificar subgrupos farmacológicos cuando se considera más apropiado que los subgrupos terapéuticos o químicos.
 
@@ -112,5 +110,4 @@ Más info en: [https://confluence.hl7.org/display/TA/Anatomical+Therapeutic+Chem
 
 [https://terminology.hl7.org/CodeSystem-v3-WC.html](https://terminology.hl7.org/CodeSystem-v3-WC.html) 
 
-Canonical URI: [http://www.whocc.no/atc](http://www.whocc.no/atc) 
-
+Canonical URI: [http://www.whocc.no/atc](http://www.whocc.no/atc)
