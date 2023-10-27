@@ -1,5 +1,9 @@
 Alias: $DirOrgNotiCS = https://paho.org/fhir/esavi/CodeSystem/DirOrgNotiCS
+<<<<<<< HEAD
+Alias: $ProfesionalNotificadorVS = https://paho.org/fhir/esavi/CodeSystem/ProfesionalNotificadorVS
+=======
 Alias: $ProfesionalNotificadorCS = https://paho.org/fhir/esavi/CodeSystem/ProfesionalNotificadorCS
+>>>>>>> 3973bd19bdfdb0516c4967c37053745726c10aed
 Alias: $CodPaises = http://paho.org/esavi/CodeSystem/CodPaises
 Alias: $administrative-gender = http://hl7.org/fhir/administrative-gender
 Alias: $EnfermedadesPreviasCodificacionCS = http://paho.org/esavi/CodeSystem/EnfermedadesPreviasCodificacionCS
@@ -20,7 +24,11 @@ Usage: #example
 * item[0].linkId = "datosNotificacionGeneral"
 * item[=].item[0].linkId = "datosNotificacion"
 * item[=].item[=].item[0].linkId = "paisOrigen-Reg"
+<<<<<<< HEAD
+* item[=].item[=].item[=].answer.valueCoding = $CodPaises#MX "México"
+=======
 * item[=].item[=].item[=].answer.valueCoding = urn:iso:std:iso:3166#MX "Mexico"
+>>>>>>> 3973bd19bdfdb0516c4967c37053745726c10aed
 * item[=].item[=].item[+].linkId = "nombreOrganizacionNotificadora"
 * item[=].item[=].item[=].answer.valueString = "Subdrector Epiemyp, responsable del Sistema de ESAVI-Hospital General de México"
 * item[=].item[=].item[+].linkId = "codigoDireccionOrganizacion"
@@ -28,7 +36,11 @@ Usage: #example
 * item[=].item[=].item[+].linkId = "nombreDireccionOrganizacion"
 * item[=].item[=].item[=].answer.valueString = "Amatán (Municipio), Chiapas, Mexico"
 * item[=].item[=].item[+].linkId = "codigoProfesionNotificador"
+<<<<<<< HEAD
+* item[=].item[=].item[=].answer.valueCoding = $ProfesionalNotificadorVS#5 "Usuario o otro profesional no sanitario"
+=======
 * item[=].item[=].item[=].answer.valueCoding = $ProfesionalNotificadorCS#5 "Usuario o otro profesional no sanitario"
+>>>>>>> 3973bd19bdfdb0516c4967c37053745726c10aed
 * item[=].item[+].linkId = "fechas"
 * item[=].item[=].text = "Fechas Administrativas (al menos una fecha es necesaria)"
 * item[=].item[=].item[0].linkId = "fechaConsulta"
@@ -40,6 +52,23 @@ Usage: #example
 * item[=].item[=].item[+].linkId = "fechaRepoNacional"
 * item[=].item[=].item[=].answer.valueDate = "2020-12-25"
 * item[+].linkId = "datosIdVacunado"
+<<<<<<< HEAD
+* item[=].item[0].linkId = "datosPaciente"
+* item[=].item[=].item[0].linkId = "numeroCaso"
+* item[=].item[=].item[=].answer.valueString = "f9a9a518-7b6f-472a-bf28-9aad7a8eeb22"
+* item[=].item[=].item[+].linkId = "idPaciente"
+* item[=].item[=].item[=].answer.valueString = "5f9f5ae5-e821-412d-8b58-9834a7a439c0"
+* item[=].item[=].item[+].linkId = "codigoResidenciaHabitual"
+* item[=].item[=].item[=].answer.valueCoding = $DirOrgNotiCS#MX_CS_07005 "Amatán (Municipio), Chiapas, Mexico"
+* item[=].item[=].item[+].linkId = "nombreResidenciaHabitual"
+* item[=].item[=].item[=].answer.valueString = "Amatán (Municipio), Chiapas, Mexico"
+* item[=].item[=].item[+].linkId = "sexoPaciente"
+* item[=].item[=].item[=].answer.valueCoding = $administrative-gender#male "Male"
+* item[=].item[=].item[+].linkId = "fechaNacimiento"
+* item[=].item[=].item[=].answer.valueDate = "1985-02-02"
+* item[=].item[=].item[+].linkId = "etnia"
+* item[=].item[=].item[=].answer.valueString = "Indígena"
+=======
 * item[=].item.linkId = "datosPaciente"
 * item[=].item.item[0].linkId = "numeroCaso"
 * item[=].item.item[=].answer.valueString = "f9a9a518-7b6f-472a-bf28-9aad7a8eeb22"
@@ -57,6 +86,7 @@ Usage: #example
 * item[=].item.item[=].answer.valueDate = "1985-02-02"
 * item[=].item.item[+].linkId = "etnia"
 * item[=].item.item[=].answer.valueString = "Indígena"
+>>>>>>> 3973bd19bdfdb0516c4967c37053745726c10aed
 * item[+].linkId = "antecedentesMedicos"
 * item[=].text = "Antecedentes médicos identificados por el paciente"
 * item[=].item[0].linkId = "antecedentesEnfermedadesPrevias"
@@ -76,6 +106,74 @@ Usage: #example
 * item[=].item[+].linkId = "antecedentesSarsCov2"
 * item[=].item[=].item.linkId = "diagnosticoprevioSarsCov2"
 * item[=].item[=].item.answer.valueCoding = $RespuestaSiNoNosabeCS#2 "No"
+<<<<<<< HEAD
+* item[+].linkId = "antecedentesFarmacosVacunas"
+* item[=].item[0].linkId = "datosVacunas"
+* item[=].item[=].text = "Datos de las vacunas administradas"
+* item[=].item[=].item[0].linkId = "nombreVacuna"
+* item[=].item[=].item[=].answer.valueString = "BioNTech"
+* item[=].item[=].item[+].linkId = "identificadorVacuna"
+* item[=].item[=].item[=].answer.valueInteger = 121
+* item[=].item[=].item[+].linkId = "nombreFabricante"
+* item[=].item[=].item[=].answer.valueString = "Pfizer BioNTech"
+* item[=].item[=].item[+].linkId = "numeroDosisVacuna"
+* item[=].item[=].item[=].text = "Numero ordinal de la dosis administrada"
+* item[=].item[=].item[=].answer.valueInteger = 1
+* item[=].item[=].item[+].linkId = "numeroLote"
+* item[=].item[=].item[=].text = "Número del Lote de la Vacuna administrada"
+* item[=].item[=].item[=].answer.valueString = "EK42412"
+* item[=].item[=].item[+].linkId = "fechaVencimientoVacuna"
+* item[=].item[=].item[=].answer.valueDate = "2021-01-04"
+* item[=].item[=].item[+].linkId = "numeroLoteDiluyente"
+* item[=].item[=].item[=].answer.valueString = "R20J17"
+* item[=].item[=].item[+].linkId = "fechaVencimientoDiluyente"
+* item[=].item[=].item[=].answer.valueDate = "2022-06-01"
+* item[=].item[=].item[+].linkId = "nombreVacunatorio"
+* item[=].item[=].item[=].answer.valueString = "Hospital General de México"
+* item[=].item[=].item[+].linkId = "fechaVacunacion"
+* item[=].item[=].item[=].answer.valueDate = "2020-12-24"
+* item[=].item[=].item[+].linkId = "codigoDireccionVacunatorio"
+* item[=].item[=].item[=].answer.valueCoding = $DirOrgNotiCS#MX_CS_07005 "Amatán (Municipio), Chiapas, Mexico"
+* item[=].item[=].item[+].linkId = "nombreDireccionVacunatorio"
+* item[=].item[=].item[=].answer.valueString = "Dr. Balmis 148, Doctores, Cuauhtémoc, 06720 Ciudad de México, CDMX, México"
+* item[+].linkId = "registroESAVI"
+* item[=].item[0].linkId = "datosESAVI"
+* item[=].item[=].item[0].linkId = "nombreESAVI"
+* item[=].item[=].item[=].text = "Nombre del ESAVI"
+* item[=].item[=].item[=].answer.valueString = "Anafilaxia"
+* item[=].item[=].item[+].linkId = "IdentificadorESAVI"
+* item[=].item[=].item[=].answer.valueInteger = 1
+* item[=].item[=].item[+].linkId = "codigoESAVIMedDRA"
+* item[=].item[=].item[=].answer.valueCoding = $EsaviMedDRACS#10002218 "anafilaxia"
+* item[=].item[=].item[+].linkId = "codigoESAVIOtro"
+* item[=].item[=].item[=].answer.valueCoding = $EsaviOtroCS#39579001 "anafilaxia"
+* item[=].item[=].item[+].linkId = "fechaESAVI"
+* item[=].item[=].item[=].answer.valueDate = "2020-12-24"
+* item[=].item[=].item[+].linkId = "horaESAVI"
+* item[=].item[=].item[=].answer.valueTime = "08:40:00"
+* item[=].item[=].item[+].linkId = "descripcionESAVI"
+* item[=].item[=].item[=].answer.valueString = "Anafilaxia post vacunación."
+* item[=].item[+].linkId = "gravedadESAVI"
+* item[=].item[=].item[0].linkId = "tipoGravedad"
+* item[=].item[=].item[=].answer.valueBoolean = true
+* item[=].item[=].item[+].linkId = "gravMuerte"
+* item[=].item[=].item[=].answer.valueBoolean = false
+* item[=].item[=].item[+].linkId = "gravRiesgoVida"
+* item[=].item[=].item[=].answer.valueBoolean = true
+* item[=].item[=].item[+].linkId = "gravDiscapacidad"
+* item[=].item[=].item[=].answer.valueBoolean = false
+* item[=].item[=].item[+].linkId = "gravHospitalizacion"
+* item[=].item[=].item[=].answer.valueBoolean = false
+* item[=].item[=].item[+].linkId = "gravAnomaliaCongenita"
+* item[=].item[=].item[=].answer.valueBoolean = false
+* item[=].item[=].item[+].linkId = "otrosEventosImportantes"
+* item[=].item[=].item[=].answer.valueBoolean = false
+* item[=].item[+].linkId = "desenlaceESAVI"
+* item[=].item[=].item[0].linkId = "codDesenlaceESAVI"
+* item[=].item[=].item[=].answer.valueCoding = $ClasificacionDesenlaceCS#1 "Recuperado Completamente"
+* item[=].item[=].item[+].linkId = "fechaInicioInvestigacion"
+* item[=].item[=].item[=].answer.valueDate = "2020-12-25"
+=======
 * item[=].item[+].linkId = "antecedentesFarmacosVacunas"
 * item[=].item[=].item[0].linkId = "datosVacunas"
 * item[=].item[=].item[=].text = "Datos de las vacunas administradas"
@@ -143,3 +241,4 @@ Usage: #example
 * item[=].item[=].item[=].item[=].answer.valueCoding = $ClasificacionDesenlaceCS#1 "Recuperado Completamente"
 * item[=].item[=].item[=].item[+].linkId = "fechaInicioInvestigacion"
 * item[=].item[=].item[=].item[=].answer.valueDate = "2020-12-25"
+>>>>>>> 3973bd19bdfdb0516c4967c37053745726c10aed

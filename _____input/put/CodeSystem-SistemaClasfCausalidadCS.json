@@ -1,0 +1,61 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "SistemaClasfCausalidadCS",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://paho.org/esavi/CodeSystem/SistemaClasfCausalidadCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">WHO-UMC<a name=\"SistemaClasfCausalidadCS-WHO-UMC\"> </a></td><td>WHO-UMC</td></tr><tr><td style=\"white-space:nowrap\">WHO-AEFI<a name=\"SistemaClasfCausalidadCS-WHO-AEFI\"> </a></td><td>WHO-AEFI</td></tr><tr><td style=\"white-space:nowrap\">Naranjo<a name=\"SistemaClasfCausalidadCS-Naranjo\"> </a></td><td>Naranjo</td></tr><tr><td style=\"white-space:nowrap\">otro<a name=\"SistemaClasfCausalidadCS-otro\"> </a></td><td>Otro sistema de clasificacion de causalidad</td></tr></table></div>"
+  },
+  "url": "http://paho.org/esavi/CodeSystem/SistemaClasfCausalidadCS",
+  "version": "0.1.0",
+  "name": "SistemaClasfCausalidadCS",
+  "title": "Tipo de Método de clasificación de causalidad",
+  "status": "active",
+  "date": "2021-03-11T00:00:00-03:00",
+  "publisher": "ESAVI -",
+  "contact": [
+    {
+      "name": "ESAVI -",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://covid-19pharmacovigilance.paho.org/resources/updates-on-aefi"
+        },
+        {
+          "system": "email",
+          "value": "rizzatodan@paho.org"
+        }
+      ]
+    }
+  ],
+  "description": "Códigos para Tipos de Métodos de Clasificación de Causalidad",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "count": 4,
+  "concept": [
+    {
+      "code": "WHO-UMC",
+      "display": "WHO-UMC"
+    },
+    {
+      "code": "WHO-AEFI",
+      "display": "WHO-AEFI"
+    },
+    {
+      "code": "Naranjo",
+      "display": "Naranjo"
+    },
+    {
+      "code": "otro",
+      "display": "Otro sistema de clasificacion de causalidad"
+    }
+  ]
+}

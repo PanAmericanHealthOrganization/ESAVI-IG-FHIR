@@ -1,0 +1,87 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://paho.org/esavi/CodeSystem/SeccionesNotificacionCS> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "SeccionesNotificacionCS"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://paho.org/esavi/CodeSystem/SeccionesNotificacionCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr><tr><td style=\"white-space:nowrap\">s_IdentificacionPersonaAfectada<a name=\"SeccionesNotificacionCS-s_IdentificacionPersonaAfectada\"> </a></td></tr><tr><td style=\"white-space:nowrap\">s_PersonaNotificadora<a name=\"SeccionesNotificacionCS-s_PersonaNotificadora\"> </a></td></tr><tr><td style=\"white-space:nowrap\">s_AntecedentesPersonaVacunada<a name=\"SeccionesNotificacionCS-s_AntecedentesPersonaVacunada\"> </a></td></tr><tr><td style=\"white-space:nowrap\">s_ParticipacionEnsayoClinico<a name=\"SeccionesNotificacionCS-s_ParticipacionEnsayoClinico\"> </a></td></tr><tr><td style=\"white-space:nowrap\">s_DetallesEmbarazo<a name=\"SeccionesNotificacionCS-s_DetallesEmbarazo\"> </a></td></tr><tr><td style=\"white-space:nowrap\">s_AdministracionVacuna<a name=\"SeccionesNotificacionCS-s_AdministracionVacuna\"> </a></td></tr><tr><td style=\"white-space:nowrap\">s_VacunacionPrevia<a name=\"SeccionesNotificacionCS-s_VacunacionPrevia\"> </a></td></tr><tr><td style=\"white-space:nowrap\">s_EventoAdverso<a name=\"SeccionesNotificacionCS-s_EventoAdverso\"> </a></td></tr><tr><td style=\"white-space:nowrap\">s_GravedadEventoAdverso<a name=\"SeccionesNotificacionCS-s_GravedadEventoAdverso\"> </a></td></tr><tr><td style=\"white-space:nowrap\">s_Desenlace<a name=\"SeccionesNotificacionCS-s_Desenlace\"> </a></td></tr><tr><td style=\"white-space:nowrap\">s_Conclusiones<a name=\"SeccionesNotificacionCS-s_Conclusiones\"> </a></td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "http://paho.org/esavi/CodeSystem/SeccionesNotificacionCS"];
+  fhir:CodeSystem.version [ fhir:value "0.1.0"];
+  fhir:CodeSystem.name [ fhir:value "SeccionesNotificacionCS"];
+  fhir:CodeSystem.title [ fhir:value "Secciones Notificación ESAVI"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.date [ fhir:value "2021-03-11T00:00:00-03:00"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "ESAVI -"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "ESAVI -" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://covid-19pharmacovigilance.paho.org/resources/updates-on-aefi" ]
+     ], [
+       fhir:index 1;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "rizzatodan@paho.org" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "Conjunto de Valores para las Secciones de la Notificación"];
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
+       fhir:Coding.code [ fhir:value "001" ]
+     ]
+  ];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "11"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "s_IdentificacionPersonaAfectada" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "s_PersonaNotificadora" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "s_AntecedentesPersonaVacunada" ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "s_ParticipacionEnsayoClinico" ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "s_DetallesEmbarazo" ]
+  ], [
+     fhir:index 5;
+     fhir:CodeSystem.concept.code [ fhir:value "s_AdministracionVacuna" ]
+  ], [
+     fhir:index 6;
+     fhir:CodeSystem.concept.code [ fhir:value "s_VacunacionPrevia" ]
+  ], [
+     fhir:index 7;
+     fhir:CodeSystem.concept.code [ fhir:value "s_EventoAdverso" ]
+  ], [
+     fhir:index 8;
+     fhir:CodeSystem.concept.code [ fhir:value "s_GravedadEventoAdverso" ]
+  ], [
+     fhir:index 9;
+     fhir:CodeSystem.concept.code [ fhir:value "s_Desenlace" ]
+  ], [
+     fhir:index 10;
+     fhir:CodeSystem.concept.code [ fhir:value "s_Conclusiones" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://paho.org/esavi/CodeSystem/SeccionesNotificacionCS.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

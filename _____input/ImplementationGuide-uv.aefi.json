@@ -1,0 +1,530 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "uv.aefi",
+  "language": "es-AR",
+  "url": "http://covid-19pharmacovigilance.paho.org/resources/ImplementationGuide/uv.aefi",
+  "version": "0.5.0",
+  "name": "AEFI",
+  "status": "draft",
+  "publisher": "PAHO",
+  "contact": [
+    {
+      "name": "PAHO",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://covid-19pharmacovigilance.paho.org"
+        },
+        {
+          "system": "email",
+          "value": "privadadngiss@msal.gov.ar"
+        }
+      ]
+    }
+  ],
+  "packageId": "uv.aefi",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "definition": {
+    "resource": [
+      {
+        "reference": {
+          "reference": "CodeSystem/GrupoEtnicoCS"
+        },
+        "name": "Conjunto de Valores para Grupo Etnico",
+        "description": "Conjunto de Valores para Grupo Etnico",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/ModoVerificacionVacunaCS"
+        },
+        "name": "Modo de Verificacion de Vacuna",
+        "description": "Modo de Verificacion de Vacuna",
+        "exampleBoolean": false
+      }
+      ,
+      {
+        "reference": {
+          "reference": "CodeSystem/EventoAdversoVacunaCS"
+        },
+        "name": "Tipo de Evento Adverso de Vacuna",
+        "description": "Tipo de Evento de Adverso de Vacuna",
+        "exampleBoolean": false
+      }
+      ,
+      {
+        "reference": {
+          "reference": "CodeSystem/ClasificacionDesenlaceCS"
+        },
+        "name": "Codigo de Clasificacion de Desenlace",
+        "description": "Codigo de Clasificacion de Desenlace",
+        "exampleBoolean": false
+      }
+      ,
+      {
+        "reference": {
+          "reference": "CodeSystem/InvestigacionTipoCS"
+        },
+        "name": "Tipo de Investigación Requerida",
+        "description": "Tipo de Investigación Requerida",
+        "exampleBoolean": false
+      
+      }
+      ,
+      {
+        "reference": {
+          "reference": "ValueSet/ModoVerificacionVacunaVS"
+        },
+        "name": "Conjunto de Valores para Modo de Verificacion de Vacuna",
+        "description": "Conjunto de Valores para Modo de Verificacion de Vacuna",
+        "exampleBoolean": false
+      }
+      ,
+      {
+        "reference": {
+          "reference": "CodeSystem/ModoConfirmacionInfeccionCS"
+        },
+        "name": "Códigos para Modo de Confirmación de Infección",
+        "description": "Códigos para Modo de Confirmación de Infección",
+        "exampleBoolean": false
+      }
+      ,
+      {
+        "reference": {
+          "reference": "ValueSet/EventoAdversoVacunaVS"
+        },
+        "name": "Conjunto de Valores para Tipo de Evento Adverso",
+        "description": "Conjunto de Valores para Tipo de Evento Adverso",
+        "exampleBoolean": false
+      }
+      ,
+      {
+        "reference": {
+          "reference": "ValueSet/EventoAdversoCodificacionVS"
+        },
+        "name": "Conjunto de Valores para Codificacion Estandarizada de Evento Adverso",
+        "description": "Conjunto de Valores para Codificacion Estandarizada de Evento Adverso",
+        "exampleBoolean": false
+      }
+      ,
+      {
+        "reference": {
+          "reference": "ValueSet/ClasificacionDesenlaceVS"
+        },
+        "name": "Conjunto de Valores para Clasificacion de Desenlace",
+        "description": "Conjunto de Valores para Clasificacion de Desenlace",
+        "exampleBoolean": false
+      }
+      ,
+      {
+        "reference": {
+          "reference": "ValueSet/InvestigacionTipoVS"
+        },
+        "name": "Conjunto de Valores para Tipo de Investigación",
+        "description": "Conjunto de Valores para Tipo de Investigación",
+        "exampleBoolean": false
+      }
+      ,
+      {
+        "reference": {
+          "reference": "CodeSystem/RespuestaVerdaderoFalsoCS"
+        },
+        "name": "Conjunto de Valores Verdadero/Falso para Cuestionarios",
+        "description":  "Conjunto de Valores Verdadero/Falso para Cuestionarios",
+        "exampleBoolean": false
+      }
+      ,
+      {
+        "reference": {
+          "reference": "CodeSystem/RespuestaSiNoNosabeCS"
+        },
+        "name": "Conjunto de Valores Si / No / No Sabe para Cuestionarios",
+        "description": "Conjunto de Valores Si / No / No Sabe para Cuestionarios",
+        "exampleBoolean": false
+      }
+      ,
+
+      {
+        "reference": {
+          "reference": "CodeSystem/ComplicacionEmbarazCS"
+        },
+        "name": "Códigos para Complicaciones de Embarazo",
+        "description": "Códigos para las Complicaciones de Embarazo",
+        "exampleBoolean": false
+      }
+      ,
+
+      {
+        "reference": {
+          "reference": "CodeSystem/ProfNotificadorCS"
+        },
+        "name": "Códigos para Profesional Notificador",
+        "description": "Códigos para Discriminar la Profesión del Notificador",
+        "exampleBoolean": false
+      }
+      ,
+
+      {
+        "reference": {
+          "reference": "CodeSystem/DirOrgNotiCS"
+        },
+        "name": "Códigos para Direcciones",
+        "description": "Códigos para Direcciones según OPS",
+        "exampleBoolean": false
+      }
+      ,
+
+      {
+        "reference": {
+          "reference": "ValueSet/RespuestaSiNoNosabeVS"
+        },
+        "name": "Conjunto de Valores Si / No / No Sabe para Cuestionarios",
+        "description": "Conjunto de Valores Si / No / No Sabe para Cuestionarios",
+        "exampleBoolean": false
+      }
+      ,
+      {
+        "reference": {
+          "reference": "ValueSet/GrupoEtnicoVS"
+        },
+        "name": "Conjunto de Valores Validos para Grupo Etnico",
+        "description": "Conjunto de Valores Validos para Grupo Etnico",
+        "exampleBoolean": false
+      }
+      ,
+      {
+        "reference": {
+          "reference": "ValueSet/RespuestaVerdaderoFalsoVS"
+        },
+        "name": "Conjunto de Valores Validos para Verdadero/Falso",
+        "description": "Conjunto de Valores Validos para Verdadero/Falso",
+        "exampleBoolean": false
+      }
+      
+      ,
+      {
+        "reference": {
+          "reference": "ValueSet/ModoConfirmacionInfeccionVS"
+        },
+        "name": "Conjunto de Valores Validos para Modo Confirmacion de Infeccion",
+        "description": "Conjunto de Valores Validos para Modo Confirmacion de Infeccion",
+        "exampleBoolean": false
+      }
+      ,
+      
+      {
+        "reference": {
+          "reference": "ValueSet/DirOrgNotiVS"
+        },
+        "name": "Conjunto de valores de Dirección",
+        "description": "Conjunto de Valores para dirección según OPS",
+        "exampleBoolean": false
+      }
+      ,
+
+      {
+        "reference": {
+          "reference": "ValueSet/EnfermedadesPreviasCodificacionVS"
+        },
+        "name": "Conjunto de valores Para Enfermedades Previas",
+        "description": "Conjunto de Valores Para Enfermedades Previas",
+        "exampleBoolean": false
+      }
+      ,
+
+      {
+        "reference": {
+          "reference": "ValueSet/SustanciaActivaVS"
+        },
+        "name": "Conjunto de valores de Sustancias Activas de Medicamento",
+        "description": "Conjunto de valores de Sustancias Activas de MedicamentoS",
+        "exampleBoolean": false
+      }
+      ,
+
+      {
+        "reference": {
+          "reference": "ValueSet/MedicamentoGenericoVS"
+        },
+        "name": "Nombres Medicamentos Genéricos",
+        "description": "Conjunto de Valores para Nombres Medicamentos Genéricos",
+        "exampleBoolean": false
+      }
+      ,
+     
+      
+     
+
+      {
+        "reference": {
+          "reference": "ValueSet/ViaAdministracionMedicamentoVS"
+        },
+        "name": "Códigos Vias de Administración de Medicamentos",
+        "description": "Conjunto de Valores para Vias de Administración de Medicamentos",
+        "exampleBoolean": false
+      }
+      ,
+
+      {
+        "reference": {
+          "reference": "ValueSet/ComplicacionEmbarazoVS"
+        },
+        "name": "Valores para Complicaciones Embarazo ",
+        "description": "Conjunto de Valores para Complicaciones Embarazo",
+        "exampleBoolean": false
+      }
+      ,
+
+      {
+        "reference": {
+          "reference": "ValueSet/DiagComplicacionEmbarazoVS"
+        },
+        "name": "Diagnósticos Complicaciones Embarazo",
+        "description": "Conjunto de Valores para Diagnósticos Complicaciones Embarazo",
+        "exampleBoolean": false
+      }
+      ,
+
+      
+
+      {
+        "reference": {
+          "reference": "ValueSet/NombreComercialVacunaVS"
+        },
+        "name": "Nombre Comercial de Vacunas",
+        "description": "Conjunto de Valores para Nombre Comercial de Vacunas",
+        "exampleBoolean": false
+      }
+      ,
+
+      {
+        "reference": {
+          "reference": "ValueSet/ProfNotificadorVS"
+        },
+        "name": "Códigos Profesionales Notificadoes",
+        "description": "Conjunto de Valores para Profesionales Notificadoes",
+        "exampleBoolean": false
+      }
+      ,
+
+      
+        
+
+      {
+        "reference": {
+          "reference": "ValueSet/NombreComercialMedicamentoVS"
+        },
+        "name": "Nombres Comerciales de Medicamentos",
+        "description": "Conjunto de Valores para Nombres Comerciales de Medicamentos",
+        "exampleBoolean": false
+      }
+      ,
+
+      {
+        "reference": {
+          "reference": "ValueSet/FormaFarmaceuticaVS"
+        },
+        "name": "Forma Farmacéutica",
+        "description": "Conjunto de Valores para dirección según OPS",
+        "exampleBoolean": false
+      }
+      ,
+
+      
+      
+      {
+        "reference": {
+          "reference": "ValueSet/NombGenericoVacunaVS"
+        },
+        "name": "Conjunto de valores de Dirección",
+        "description": "Conjunto de Valores para dirección según OPS",
+        "exampleBoolean": false
+      }
+      ,
+
+     
+
+      {
+        "reference": {
+          "reference": "StructureDefinition/esavi-response-antecedentes"
+        },
+        "name": "Antecedentes Persona Vacunada",
+        "description": "Perfil de Persona Vacunada",
+        "exampleBoolean": false
+      }
+      ,
+      {
+        "reference": {
+          "reference": "StructureDefinition/Practitioner-esavi"
+        },
+        "name": "Persona Notificadora",
+        "description": "Perfil de Persona Notificadora",
+        "exampleBoolean": false
+      }
+      ,
+      {
+        "reference": {
+          "reference": "StructureDefinition/Patient-esavi"
+        },
+        "name": "Paciente AEFI",
+        "description": "Perfil de Paciente AEFI",
+        "exampleBoolean": false
+      }
+      ,
+      {
+        "reference": {
+          "reference": "StructureDefinition/Composition-esavi"
+        },
+        "name": "Documento para Notificación ESAVI",
+        "description": "Perfil de Documento para Notificación ESAVI",
+        "exampleBoolean": false
+      }
+      ,
+      {
+        "reference": {
+          "reference": "StructureDefinition/NotificacionESAVI"
+        },
+        "name": "Modelo Logico de Notificacion ESAVI",
+        "description": "Modelo Logico de Notificacion ESAVI",
+        "exampleBoolean": false
+      }
+      ,
+
+      {
+        "reference": {
+          "reference": "StructureDefinition/NotificacionESAVIOPS"
+        },
+        "name": "Modelo Lógico Notificación ESAVI Para OPS",
+        "description": "Modelo Lógico de Notificaciones de Evento Adverso generado eventualmente por vacuna por Covid-19, para ESAVI-Notificación_ESAVI_OPS"
+        ,
+        "exampleBoolean": false
+      }
+      ,
+      
+      
+      {
+        "reference": {
+          "reference": "Composition/NotificacionESAVIEjemplo"
+        },
+        "name": "Ejemplo de Reporte de Notificación ESAVI",
+        "description": "Ejemplo de Reporte de Notificación ESAVI",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Patient/PersonaAfectadaEjemplo"
+        },
+        "name": "Ejemplo de Persona Afectada ESAVI",
+        "description": "Ejemplo de Persona Afectada ESAVI",
+        "exampleBoolean": true
+      }
+      ,
+      {
+        "reference": {
+          "reference": "Practitioner/PersonaNotificadoraEjemplo"
+        },
+        "name": "Ejemplo de Persona Notificadora ESAVI",
+        "description": "Ejemplo de Persona Notificadora ESAVI",
+        "exampleBoolean": true
+      }
+      ,
+      {
+        "reference": {
+          "reference": "QuestionnaireResponse/RespuestaAntecedentesEjemplo"
+        },
+        "name": "Ejemplo de Respuestas a Seccion de Antecedentes de Persona Vacunada",
+        "description": "Ejemplo de Respuestas a Seccion de Antecedentes de Persona Vacunada",
+        "exampleBoolean": true
+      },
+      
+      
+      {
+        "reference": {
+          "reference": "Questionnaire/EsaviCuestionarioCompleto"
+        },
+        "name": "Ejemplo de Definicion de Cuestionario ESAVI",
+        "description":  "Ejemplo de Definicion de Cuestionario ESAVI",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "QuestionnaireResponse/EsaviRespuestaCompleta"
+        },
+        "name": "Ejemplo de Respuesta Completa a Cuestionario",
+        "description": "Ejemplo de Respuesta Completa a Cuestionario",
+        "exampleBoolean": true
+      }
+    ],
+    "page": {
+      "nameUrl": "toc.html",
+      "title": "Table of Contents",
+      "generation": "html",
+      "page": [
+        {
+          "nameUrl": "index.html",
+          "title": "Home",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "objetivos.html",
+          "title": "Objetivos",
+          "generation": "markdown"
+        },
+        
+        
+        {
+          "nameUrl": "actores.html",
+          "title": "Actores",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "informe_aefi.html",
+          "title": "Informe AEFI",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "recomendaciones.html",
+          "title": "Recomendaciones",
+          "generation": "markdown"
+        },
+       {
+          "nameUrl": "descargas.html",
+          "title": "Descargas",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "operaciones.html",
+          "title": "Operaciones",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "sandbox.html",
+          "title": "Sandbox",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "seguridad.html",
+          "title": "Seguridad",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "terminologia.html",
+          "title": "Terminologia",
+          "generation": "markdown"
+        }
+      ]
+    },
+    "parameter": [
+      {
+        "code": "copyrightyear",
+        "value": "2021+"
+      },
+      {
+        "code": "releaselabel",
+        "value": "ci-build"
+      }
+    ]
+  }
+}

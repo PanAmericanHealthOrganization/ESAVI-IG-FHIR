@@ -1,0 +1,13 @@
+@startuml
+skinparam defaultFontName Arial
+
+title Autenticación 
+hide footbox
+participant "CLI" as Sender
+participant "AUT" as Receiver
+group Solicitud de Autenticacion
+"Sender" --> "Receiver" : POST [auth] body:AuthenticationRequest
+"Receiver" -> "Sender" : response body: AuthenticationResponse
+end
+
+@enduml
