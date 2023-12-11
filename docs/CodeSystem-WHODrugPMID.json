@@ -1,0 +1,615 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "WHODrugPMID",
+  "meta" : {
+    "versionId" : "1",
+    "lastUpdated" : "2023-05-25T13:22:48.124+00:00"
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This  code system <code>https://paho.org/fhir/esavi/CodeSystem/WHODrugPMID</code> provides <b>a fragment</b> that includes following codes in an undefined heirarchy:</p><table class=\"codes\"><tr><td><b>Lvl</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>1</td><td style=\"white-space:nowrap\">1<a name=\"WHODrugPMID-1\"> </a></td><td>Methyldopa</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a066969<a name=\"WHODrugPMID-66969\"> </a></td><td>Aldomet</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a083864<a name=\"WHODrugPMID-83864\"> </a></td><td>Alfametildopa</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a083867<a name=\"WHODrugPMID-83867\"> </a></td><td>Almedop</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a066368<a name=\"WHODrugPMID-66368\"> </a></td><td>Cardin</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a066854<a name=\"WHODrugPMID-66854\"> </a></td><td>Methyldopum</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a0282216<a name=\"WHODrugPMID-282216\"> </a></td><td>Prodop</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a0291006<a name=\"WHODrugPMID-291006\"> </a></td><td>Hipermessel</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a0452532<a name=\"WHODrugPMID-452532\"> </a></td><td>Tensioval</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a0453189<a name=\"WHODrugPMID-453189\"> </a></td><td>Cardiodopa</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a0454237<a name=\"WHODrugPMID-454237\"> </a></td><td>Metildopa</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a0454370<a name=\"WHODrugPMID-454370\"> </a></td><td>Etildopanan</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a0454437<a name=\"WHODrugPMID-454437\"> </a></td><td>Aldotensin</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a0456598<a name=\"WHODrugPMID-456598\"> </a></td><td>Angimet</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a0456823<a name=\"WHODrugPMID-456823\"> </a></td><td>Metilcord</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a0457357<a name=\"WHODrugPMID-457357\"> </a></td><td>Metilprod</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a0459175<a name=\"WHODrugPMID-459175\"> </a></td><td>Pressomet</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a0460094<a name=\"WHODrugPMID-460094\"> </a></td><td>Metilpress</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a0460710<a name=\"WHODrugPMID-460710\"> </a></td><td>Ductomet</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a0460844<a name=\"WHODrugPMID-460844\"> </a></td><td>Tildomet</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a0460938<a name=\"WHODrugPMID-460938\"> </a></td><td>Kindomet</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a0461190<a name=\"WHODrugPMID-461190\"> </a></td><td>Dometil</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a0461358<a name=\"WHODrugPMID-461358\"> </a></td><td>Dopametil</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a0461598<a name=\"WHODrugPMID-461598\"> </a></td><td>Aldoless</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a0463071<a name=\"WHODrugPMID-463071\"> </a></td><td>Aldotil</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a0463422<a name=\"WHODrugPMID-463422\"> </a></td><td>Medpress</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a0464558<a name=\"WHODrugPMID-464558\"> </a></td><td>Gendomet</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a0465007<a name=\"WHODrugPMID-465007\"> </a></td><td>Metilvita</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a0465180<a name=\"WHODrugPMID-465180\"> </a></td><td>Dimipress</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a0474904<a name=\"WHODrugPMID-474904\"> </a></td><td>Dopatral</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a0479017<a name=\"WHODrugPMID-479017\"> </a></td><td>Dopagrand</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a0565692<a name=\"WHODrugPMID-565692\"> </a></td><td>Dopasan</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a0565893<a name=\"WHODrugPMID-565893\"> </a></td><td>Tensodopa</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a0589386<a name=\"WHODrugPMID-589386\"> </a></td><td>Aldopa</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a0688969<a name=\"WHODrugPMID-688969\"> </a></td><td>Coradopa</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a0848371<a name=\"WHODrugPMID-848371\"> </a></td><td>Tremesal</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a01555693<a name=\"WHODrugPMID-1555693\"> </a></td><td>Metildopamek</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a02232395<a name=\"WHODrugPMID-2232395\"> </a></td><td>Toparal</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a02542934<a name=\"WHODrugPMID-2542934\"> </a></td><td>Hipermet</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a02571293<a name=\"WHODrugPMID-2571293\"> </a></td><td>Metildopa ethical</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a02771093<a name=\"WHODrugPMID-2771093\"> </a></td><td>Alpha-methyldopa</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a02771094<a name=\"WHODrugPMID-2771094\"> </a></td><td>Methyldopum anhydricum</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a02982030<a name=\"WHODrugPMID-2982030\"> </a></td><td>Metildopa icu-vita</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a03108212<a name=\"WHODrugPMID-3108212\"> </a></td><td>Venopressin</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a04531656<a name=\"WHODrugPMID-4531656\"> </a></td><td>Furp metildopa</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a04534230<a name=\"WHODrugPMID-4534230\"> </a></td><td>Lfm metildopa</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a04748993<a name=\"WHODrugPMID-4748993\"> </a></td><td>Alfametildopa dutriec</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a04812155<a name=\"WHODrugPMID-4812155\"> </a></td><td>Dopa pres</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a04830401<a name=\"WHODrugPMID-4830401\"> </a></td><td>Alfametildopa vivele</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a04830725<a name=\"WHODrugPMID-4830725\"> </a></td><td>Alfametildopa phi</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a04837396<a name=\"WHODrugPMID-4837396\"> </a></td><td>Alfametildopa heisecke</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a04840706<a name=\"WHODrugPMID-4840706\"> </a></td><td>Aditol</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a04841814<a name=\"WHODrugPMID-4841814\"> </a></td><td>Alfametildopa dallas</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a04859966<a name=\"WHODrugPMID-4859966\"> </a></td><td>Alfametildopa avanova</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a04903605<a name=\"WHODrugPMID-4903605\"> </a></td><td>Dopabrit</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a05306398<a name=\"WHODrugPMID-5306398\"> </a></td><td>Aldoperten</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">44<a name=\"WHODrugPMID-44\"> </a></td><td>Orciprenaline sulfate</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a062586<a name=\"WHODrugPMID-62586\"> </a></td><td>Alupent</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a083868<a name=\"WHODrugPMID-83868\"> </a></td><td>Metaprel</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a048<a name=\"WHODrugPMID-48\"> </a></td><td>Metaproterenol sulfate</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a0373465<a name=\"WHODrugPMID-373465\"> </a></td><td>Metaproterenol</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a01780006<a name=\"WHODrugPMID-1780006\"> </a></td><td>Metaproternol sulfate</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a01824511<a name=\"WHODrugPMID-1824511\"> </a></td><td>Orciprenalina</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a02771095<a name=\"WHODrugPMID-2771095\"> </a></td><td>Orciprenalini sulfas</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a04953601<a name=\"WHODrugPMID-4953601\"> </a></td><td>Orlin</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">52<a name=\"WHODrugPMID-52\"> </a></td><td>Aminosalicylic acid</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a054<a name=\"WHODrugPMID-54\"> </a></td><td>Pas</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a058<a name=\"WHODrugPMID-58\"> </a></td><td>Para-aminosalicylic acid</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a059<a name=\"WHODrugPMID-59\"> </a></td><td>Aminosalylum</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a0206588<a name=\"WHODrugPMID-206588\"> </a></td><td>Paser</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a02771097<a name=\"WHODrugPMID-2771097\"> </a></td><td>4-aminosalicylic acid</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">73<a name=\"WHODrugPMID-73\"> </a></td><td>Aminosalicylate sodium</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a076<a name=\"WHODrugPMID-76\"> </a></td><td>Sodium pas</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a0618431<a name=\"WHODrugPMID-618431\"> </a></td><td>Monopas</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a0619051<a name=\"WHODrugPMID-619051\"> </a></td><td>Pas</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a01767977<a name=\"WHODrugPMID-1767977\"> </a></td><td>Sodium aminosalicylate</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a02771098<a name=\"WHODrugPMID-2771098\"> </a></td><td>Aminosalicylic acid sodium</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a04030232<a name=\"WHODrugPMID-4030232\"> </a></td><td>Med pass</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">4572033<a name=\"WHODrugPMID-4572033\"> </a></td><td>COVID-19 vaccine NRVV Ad (ChAdOx1 nCoV-19)</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a04639965<a name=\"WHODrugPMID-4639965\"> </a></td><td>AZD 1222</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a04785107<a name=\"WHODrugPMID-4785107\"> </a></td><td>COVID-19 vaccine AstraZeneca</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a04792744<a name=\"WHODrugPMID-4792744\"> </a></td><td>Covishield</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a04799556<a name=\"WHODrugPMID-4799556\"> </a></td><td>ChAdOx1 nCoV-19</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a04849215<a name=\"WHODrugPMID-4849215\"> </a></td><td>Vaxzevria</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a04869166<a name=\"WHODrugPMID-4869166\"> </a></td><td>Vacuna COVID-19 AstraZeneca</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a04883313<a name=\"WHODrugPMID-4883313\"> </a></td><td>Vacina COVID-19 (recombinante)</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a04940363<a name=\"WHODrugPMID-4940363\"> </a></td><td>COVID-19 vacuna AstraZeneca</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">4572037<a name=\"WHODrugPMID-4572037\"> </a></td><td>Elasomeran</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a04782591<a name=\"WHODrugPMID-4782591\"> </a></td><td>Moderna COVID-19 vaccine</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a04786081<a name=\"WHODrugPMID-4786081\"> </a></td><td>COVID-19 vaccine Moderna</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a04796448<a name=\"WHODrugPMID-4796448\"> </a></td><td>TAK 919</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a04799510<a name=\"WHODrugPMID-4799510\"> </a></td><td>MRNA 1273</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a04800509<a name=\"WHODrugPMID-4800509\"> </a></td><td>CX-024414</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a04906646<a name=\"WHODrugPMID-4906646\"> </a></td><td>COVID-19 vaccine mRNA (mRNA 1273)</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a04908319<a name=\"WHODrugPMID-4908319\"> </a></td><td>Spikevax</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">4573986<a name=\"WHODrugPMID-4573986\"> </a></td><td>COVID-19 vaccine NRVV Ad5 (Ad5-nCoV)</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a04805049<a name=\"WHODrugPMID-4805049\"> </a></td><td>Ad5-nCoV</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a04824392<a name=\"WHODrugPMID-4824392\"> </a></td><td>Convidecia</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">4668104<a name=\"WHODrugPMID-4668104\"> </a></td><td>COVID-19 vaccine inact w.virion NIV-2020-770</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a04792763<a name=\"WHODrugPMID-4792763\"> </a></td><td>Covaxin</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a04799546<a name=\"WHODrugPMID-4799546\"> </a></td><td>BBV152</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">4679007<a name=\"WHODrugPMID-4679007\"> </a></td><td>COVID-19 vaccine prot. subunit (MVC-COV1901)</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a04947359<a name=\"WHODrugPMID-4947359\"> </a></td><td>Mvc covid-19 vaccine</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a04947376<a name=\"WHODrugPMID-4947376\"> </a></td><td>MVC-COV1901</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">4682366<a name=\"WHODrugPMID-4682366\"> </a></td><td>COVID-19 vaccine NRVV Ad5 (Gam-Covid-Vac)</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a04682374<a name=\"WHODrugPMID-4682374\"> </a></td><td>Gam-COVID-Vac component 2</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a04810801<a name=\"WHODrugPMID-4810801\"> </a></td><td>Sputnik V component 2</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">4780788<a name=\"WHODrugPMID-4780788\"> </a></td><td>Tozinameran</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a04780789<a name=\"WHODrugPMID-4780789\"> </a></td><td>BNT162b2</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a04782534<a name=\"WHODrugPMID-4782534\"> </a></td><td>Pfizer BioNTech COVID-19 vaccine</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a04783379<a name=\"WHODrugPMID-4783379\"> </a></td><td>Comirnaty</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a04799499<a name=\"WHODrugPMID-4799499\"> </a></td><td>COVID-19 vaccine mRNA (BNT162b2)</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a04805604<a name=\"WHODrugPMID-4805604\"> </a></td><td>Vacuna COVID-19 Pfizer BioNTech</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a04863089<a name=\"WHODrugPMID-4863089\"> </a></td><td>PF 07305885</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a04884974<a name=\"WHODrugPMID-4884974\"> </a></td><td>Vacuna Pfizer-BioNTech COVID-19</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">4796216<a name=\"WHODrugPMID-4796216\"> </a></td><td>COVID-19 vaccine prot. subunit (ZF 2001)</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a04865237<a name=\"WHODrugPMID-4865237\"> </a></td><td>ZF 2001</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a04915141<a name=\"WHODrugPMID-4915141\"> </a></td><td>Zifivax</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">4797499<a name=\"WHODrugPMID-4797499\"> </a></td><td>COVID-19 vaccine NRVV Ad26 (JNJ 78436735)</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a04816541<a name=\"WHODrugPMID-4816541\"> </a></td><td>JNJ 78436735</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a04822995<a name=\"WHODrugPMID-4822995\"> </a></td><td>Janssen COVID-19 vaccine</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a04833339<a name=\"WHODrugPMID-4833339\"> </a></td><td>COVID-19 vaccine Janssen</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a04852631<a name=\"WHODrugPMID-4852631\"> </a></td><td>Vacuna COVID-19 Janssen</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a05083749<a name=\"WHODrugPMID-5083749\"> </a></td><td>Vacina COVID-19 (recombinante)</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">4799619<a name=\"WHODrugPMID-4799619\"> </a></td><td>COVID-19 vaccine inact (Vero) HB02</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a04799624<a name=\"WHODrugPMID-4799624\"> </a></td><td>BBIBP-CorV</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a04799993<a name=\"WHODrugPMID-4799993\"> </a></td><td>COVID-19 vaccine (vero cell), inactivated</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a04819189<a name=\"WHODrugPMID-4819189\"> </a></td><td>Vacuna contra el SARS-COV-2 (Vero Cell), Inactivada</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a04894086<a name=\"WHODrugPMID-4894086\"> </a></td><td>Hayat vax</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a04940345<a name=\"WHODrugPMID-4940345\"> </a></td><td>Vacuna SARS-CoV-2 (celulas vero) inactivada</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a05049676<a name=\"WHODrugPMID-5049676\"> </a></td><td>COVID-19 vaccine inact (Vero) 19nCoV-CDC-Tan-HB02</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">4799625<a name=\"WHODrugPMID-4799625\"> </a></td><td>COVID-19 vaccine inact (Vero) CZ02</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a04799626<a name=\"WHODrugPMID-4799626\"> </a></td><td>CoronaVac</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a04886022<a name=\"WHODrugPMID-4886022\"> </a></td><td>Vacina adsorvida COVID-19 (inativada)</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">4919020<a name=\"WHODrugPMID-4919020\"> </a></td><td>COVID-19 vaccine prot. subunit (CIGB 66)</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a04919028<a name=\"WHODrugPMID-4919028\"> </a></td><td>Abdala</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a05128541<a name=\"WHODrugPMID-5128541\"> </a></td><td>CIGB 66</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">5025645<a name=\"WHODrugPMID-5025645\"> </a></td><td>COVID-19 vaccine NRVV Ad26 (Gam-Covid-Vac);COVID-19 vaccine NRVV Ad5 (Gam-Covid-Vac)</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a05025649<a name=\"WHODrugPMID-5025649\"> </a></td><td>Sputnik V</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a05025668<a name=\"WHODrugPMID-5025668\"> </a></td><td>Gam-COVID-Vac</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">5256759<a name=\"WHODrugPMID-5256759\"> </a></td><td>Famtozinameran;Tozinameran</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a05314523<a name=\"WHODrugPMID-5314523\"> </a></td><td>Comirnaty bivalente BA.4/BA.5</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">5256893<a name=\"WHODrugPMID-5256893\"> </a></td><td>Riltozinameran;Tozinameran</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">\u00a0\u00a05314511<a name=\"WHODrugPMID-5314511\"> </a></td><td>Comirnaty bivalente BA.1</td></tr></table></div>"
+  },
+  "url" : "https://paho.org/fhir/esavi/CodeSystem/WHODrugPMID",
+  "version" : "0.1.3409",
+  "name" : "WHODrugPMID",
+  "title" : "WHODrug PMID",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2023-05-25T00:00:00-04:00",
+  "publisher" : "ESAVI -",
+  "contact" : [{
+    "name" : "ESAVI -",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://covid-19pharmacovigilance.paho.org/resources/updates-on-aefi"
+    },
+    {
+      "system" : "email",
+      "value" : "rizzatodan@paho.org"
+    }]
+  }],
+  "description" : "Fragmento de WHODrug completo con nombres genericos y comerciales en inglés mayormente codificados por PMID",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001"
+    }]
+  }],
+  "content" : "fragment",
+  "concept" : [{
+    "code" : "1",
+    "display" : "Methyldopa",
+    "concept" : [{
+      "code" : "66969",
+      "display" : "Aldomet"
+    },
+    {
+      "code" : "83864",
+      "display" : "Alfametildopa"
+    },
+    {
+      "code" : "83867",
+      "display" : "Almedop"
+    },
+    {
+      "code" : "66368",
+      "display" : "Cardin"
+    },
+    {
+      "code" : "66854",
+      "display" : "Methyldopum"
+    },
+    {
+      "code" : "282216",
+      "display" : "Prodop"
+    },
+    {
+      "code" : "291006",
+      "display" : "Hipermessel"
+    },
+    {
+      "code" : "452532",
+      "display" : "Tensioval"
+    },
+    {
+      "code" : "453189",
+      "display" : "Cardiodopa"
+    },
+    {
+      "code" : "454237",
+      "display" : "Metildopa"
+    },
+    {
+      "code" : "454370",
+      "display" : "Etildopanan"
+    },
+    {
+      "code" : "454437",
+      "display" : "Aldotensin"
+    },
+    {
+      "code" : "456598",
+      "display" : "Angimet"
+    },
+    {
+      "code" : "456823",
+      "display" : "Metilcord"
+    },
+    {
+      "code" : "457357",
+      "display" : "Metilprod"
+    },
+    {
+      "code" : "459175",
+      "display" : "Pressomet"
+    },
+    {
+      "code" : "460094",
+      "display" : "Metilpress"
+    },
+    {
+      "code" : "460710",
+      "display" : "Ductomet"
+    },
+    {
+      "code" : "460844",
+      "display" : "Tildomet"
+    },
+    {
+      "code" : "460938",
+      "display" : "Kindomet"
+    },
+    {
+      "code" : "461190",
+      "display" : "Dometil"
+    },
+    {
+      "code" : "461358",
+      "display" : "Dopametil"
+    },
+    {
+      "code" : "461598",
+      "display" : "Aldoless"
+    },
+    {
+      "code" : "463071",
+      "display" : "Aldotil"
+    },
+    {
+      "code" : "463422",
+      "display" : "Medpress"
+    },
+    {
+      "code" : "464558",
+      "display" : "Gendomet"
+    },
+    {
+      "code" : "465007",
+      "display" : "Metilvita"
+    },
+    {
+      "code" : "465180",
+      "display" : "Dimipress"
+    },
+    {
+      "code" : "474904",
+      "display" : "Dopatral"
+    },
+    {
+      "code" : "479017",
+      "display" : "Dopagrand"
+    },
+    {
+      "code" : "565692",
+      "display" : "Dopasan"
+    },
+    {
+      "code" : "565893",
+      "display" : "Tensodopa"
+    },
+    {
+      "code" : "589386",
+      "display" : "Aldopa"
+    },
+    {
+      "code" : "688969",
+      "display" : "Coradopa"
+    },
+    {
+      "code" : "848371",
+      "display" : "Tremesal"
+    },
+    {
+      "code" : "1555693",
+      "display" : "Metildopamek"
+    },
+    {
+      "code" : "2232395",
+      "display" : "Toparal"
+    },
+    {
+      "code" : "2542934",
+      "display" : "Hipermet"
+    },
+    {
+      "code" : "2571293",
+      "display" : "Metildopa ethical"
+    },
+    {
+      "code" : "2771093",
+      "display" : "Alpha-methyldopa"
+    },
+    {
+      "code" : "2771094",
+      "display" : "Methyldopum anhydricum"
+    },
+    {
+      "code" : "2982030",
+      "display" : "Metildopa icu-vita"
+    },
+    {
+      "code" : "3108212",
+      "display" : "Venopressin"
+    },
+    {
+      "code" : "4531656",
+      "display" : "Furp metildopa"
+    },
+    {
+      "code" : "4534230",
+      "display" : "Lfm metildopa"
+    },
+    {
+      "code" : "4748993",
+      "display" : "Alfametildopa dutriec"
+    },
+    {
+      "code" : "4812155",
+      "display" : "Dopa pres"
+    },
+    {
+      "code" : "4830401",
+      "display" : "Alfametildopa vivele"
+    },
+    {
+      "code" : "4830725",
+      "display" : "Alfametildopa phi"
+    },
+    {
+      "code" : "4837396",
+      "display" : "Alfametildopa heisecke"
+    },
+    {
+      "code" : "4840706",
+      "display" : "Aditol"
+    },
+    {
+      "code" : "4841814",
+      "display" : "Alfametildopa dallas"
+    },
+    {
+      "code" : "4859966",
+      "display" : "Alfametildopa avanova"
+    },
+    {
+      "code" : "4903605",
+      "display" : "Dopabrit"
+    },
+    {
+      "code" : "5306398",
+      "display" : "Aldoperten"
+    }]
+  },
+  {
+    "code" : "44",
+    "display" : "Orciprenaline sulfate",
+    "concept" : [{
+      "code" : "62586",
+      "display" : "Alupent"
+    },
+    {
+      "code" : "83868",
+      "display" : "Metaprel"
+    },
+    {
+      "code" : "48",
+      "display" : "Metaproterenol sulfate"
+    },
+    {
+      "code" : "373465",
+      "display" : "Metaproterenol"
+    },
+    {
+      "code" : "1780006",
+      "display" : "Metaproternol sulfate"
+    },
+    {
+      "code" : "1824511",
+      "display" : "Orciprenalina"
+    },
+    {
+      "code" : "2771095",
+      "display" : "Orciprenalini sulfas"
+    },
+    {
+      "code" : "4953601",
+      "display" : "Orlin"
+    }]
+  },
+  {
+    "code" : "52",
+    "display" : "Aminosalicylic acid",
+    "concept" : [{
+      "code" : "54",
+      "display" : "Pas"
+    },
+    {
+      "code" : "58",
+      "display" : "Para-aminosalicylic acid"
+    },
+    {
+      "code" : "59",
+      "display" : "Aminosalylum"
+    },
+    {
+      "code" : "206588",
+      "display" : "Paser"
+    },
+    {
+      "code" : "2771097",
+      "display" : "4-aminosalicylic acid"
+    }]
+  },
+  {
+    "code" : "73",
+    "display" : "Aminosalicylate sodium",
+    "concept" : [{
+      "code" : "76",
+      "display" : "Sodium pas"
+    },
+    {
+      "code" : "618431",
+      "display" : "Monopas"
+    },
+    {
+      "code" : "619051",
+      "display" : "Pas"
+    },
+    {
+      "code" : "1767977",
+      "display" : "Sodium aminosalicylate"
+    },
+    {
+      "code" : "2771098",
+      "display" : "Aminosalicylic acid sodium"
+    },
+    {
+      "code" : "4030232",
+      "display" : "Med pass"
+    }]
+  },
+  {
+    "code" : "4572033",
+    "display" : "COVID-19 vaccine NRVV Ad (ChAdOx1 nCoV-19)",
+    "concept" : [{
+      "code" : "4639965",
+      "display" : "AZD 1222"
+    },
+    {
+      "code" : "4785107",
+      "display" : "COVID-19 vaccine AstraZeneca"
+    },
+    {
+      "code" : "4792744",
+      "display" : "Covishield"
+    },
+    {
+      "code" : "4799556",
+      "display" : "ChAdOx1 nCoV-19"
+    },
+    {
+      "code" : "4849215",
+      "display" : "Vaxzevria"
+    },
+    {
+      "code" : "4869166",
+      "display" : "Vacuna COVID-19 AstraZeneca"
+    },
+    {
+      "code" : "4883313",
+      "display" : "Vacina COVID-19 (recombinante)"
+    },
+    {
+      "code" : "4940363",
+      "display" : "COVID-19 vacuna AstraZeneca"
+    }]
+  },
+  {
+    "code" : "4572037",
+    "display" : "Elasomeran",
+    "concept" : [{
+      "code" : "4782591",
+      "display" : "Moderna COVID-19 vaccine"
+    },
+    {
+      "code" : "4786081",
+      "display" : "COVID-19 vaccine Moderna"
+    },
+    {
+      "code" : "4796448",
+      "display" : "TAK 919"
+    },
+    {
+      "code" : "4799510",
+      "display" : "MRNA 1273"
+    },
+    {
+      "code" : "4800509",
+      "display" : "CX-024414"
+    },
+    {
+      "code" : "4906646",
+      "display" : "COVID-19 vaccine mRNA (mRNA 1273)"
+    },
+    {
+      "code" : "4908319",
+      "display" : "Spikevax"
+    }]
+  },
+  {
+    "code" : "4573986",
+    "display" : "COVID-19 vaccine NRVV Ad5 (Ad5-nCoV)",
+    "concept" : [{
+      "code" : "4805049",
+      "display" : "Ad5-nCoV"
+    },
+    {
+      "code" : "4824392",
+      "display" : "Convidecia"
+    }]
+  },
+  {
+    "code" : "4668104",
+    "display" : "COVID-19 vaccine inact w.virion NIV-2020-770",
+    "concept" : [{
+      "code" : "4792763",
+      "display" : "Covaxin"
+    },
+    {
+      "code" : "4799546",
+      "display" : "BBV152"
+    }]
+  },
+  {
+    "code" : "4679007",
+    "display" : "COVID-19 vaccine prot. subunit (MVC-COV1901)",
+    "concept" : [{
+      "code" : "4947359",
+      "display" : "Mvc covid-19 vaccine"
+    },
+    {
+      "code" : "4947376",
+      "display" : "MVC-COV1901"
+    }]
+  },
+  {
+    "code" : "4682366",
+    "display" : "COVID-19 vaccine NRVV Ad5 (Gam-Covid-Vac)",
+    "concept" : [{
+      "code" : "4682374",
+      "display" : "Gam-COVID-Vac component 2"
+    },
+    {
+      "code" : "4810801",
+      "display" : "Sputnik V component 2"
+    }]
+  },
+  {
+    "code" : "4780788",
+    "display" : "Tozinameran",
+    "concept" : [{
+      "code" : "4780789",
+      "display" : "BNT162b2"
+    },
+    {
+      "code" : "4782534",
+      "display" : "Pfizer BioNTech COVID-19 vaccine"
+    },
+    {
+      "code" : "4783379",
+      "display" : "Comirnaty"
+    },
+    {
+      "code" : "4799499",
+      "display" : "COVID-19 vaccine mRNA (BNT162b2)"
+    },
+    {
+      "code" : "4805604",
+      "display" : "Vacuna COVID-19 Pfizer BioNTech"
+    },
+    {
+      "code" : "4863089",
+      "display" : "PF 07305885"
+    },
+    {
+      "code" : "4884974",
+      "display" : "Vacuna Pfizer-BioNTech COVID-19"
+    }]
+  },
+  {
+    "code" : "4796216",
+    "display" : "COVID-19 vaccine prot. subunit (ZF 2001)",
+    "concept" : [{
+      "code" : "4865237",
+      "display" : "ZF 2001"
+    },
+    {
+      "code" : "4915141",
+      "display" : "Zifivax"
+    }]
+  },
+  {
+    "code" : "4797499",
+    "display" : "COVID-19 vaccine NRVV Ad26 (JNJ 78436735)",
+    "concept" : [{
+      "code" : "4816541",
+      "display" : "JNJ 78436735"
+    },
+    {
+      "code" : "4822995",
+      "display" : "Janssen COVID-19 vaccine"
+    },
+    {
+      "code" : "4833339",
+      "display" : "COVID-19 vaccine Janssen"
+    },
+    {
+      "code" : "4852631",
+      "display" : "Vacuna COVID-19 Janssen"
+    },
+    {
+      "code" : "5083749",
+      "display" : "Vacina COVID-19 (recombinante)"
+    }]
+  },
+  {
+    "code" : "4799619",
+    "display" : "COVID-19 vaccine inact (Vero) HB02",
+    "concept" : [{
+      "code" : "4799624",
+      "display" : "BBIBP-CorV"
+    },
+    {
+      "code" : "4799993",
+      "display" : "COVID-19 vaccine (vero cell), inactivated"
+    },
+    {
+      "code" : "4819189",
+      "display" : "Vacuna contra el SARS-COV-2 (Vero Cell), Inactivada"
+    },
+    {
+      "code" : "4894086",
+      "display" : "Hayat vax"
+    },
+    {
+      "code" : "4940345",
+      "display" : "Vacuna SARS-CoV-2 (celulas vero) inactivada"
+    },
+    {
+      "code" : "5049676",
+      "display" : "COVID-19 vaccine inact (Vero) 19nCoV-CDC-Tan-HB02"
+    }]
+  },
+  {
+    "code" : "4799625",
+    "display" : "COVID-19 vaccine inact (Vero) CZ02",
+    "concept" : [{
+      "code" : "4799626",
+      "display" : "CoronaVac"
+    },
+    {
+      "code" : "4886022",
+      "display" : "Vacina adsorvida COVID-19 (inativada)"
+    }]
+  },
+  {
+    "code" : "4919020",
+    "display" : "COVID-19 vaccine prot. subunit (CIGB 66)",
+    "concept" : [{
+      "code" : "4919028",
+      "display" : "Abdala"
+    },
+    {
+      "code" : "5128541",
+      "display" : "CIGB 66"
+    }]
+  },
+  {
+    "code" : "5025645",
+    "display" : "COVID-19 vaccine NRVV Ad26 (Gam-Covid-Vac);COVID-19 vaccine NRVV Ad5 (Gam-Covid-Vac)",
+    "concept" : [{
+      "code" : "5025649",
+      "display" : "Sputnik V"
+    },
+    {
+      "code" : "5025668",
+      "display" : "Gam-COVID-Vac"
+    }]
+  },
+  {
+    "code" : "5256759",
+    "display" : "Famtozinameran;Tozinameran",
+    "concept" : [{
+      "code" : "5314523",
+      "display" : "Comirnaty bivalente BA.4/BA.5"
+    }]
+  },
+  {
+    "code" : "5256893",
+    "display" : "Riltozinameran;Tozinameran",
+    "concept" : [{
+      "code" : "5314511",
+      "display" : "Comirnaty bivalente BA.1"
+    }]
+  }]
+}

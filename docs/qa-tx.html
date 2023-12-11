@@ -1,0 +1,498 @@
+<html><head><title>Terminology Server Log</title></head><body><h2>Terminology Server Log</h2><pre>
+
+</pre><hr/>
+<a name="l1"> </a><h3>1</h3>
+<pre>
+Request: 
+
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept-Charset: UTF-8
+Accept: application/fhir+json
+Content-Type: application/fhir+json;charset=UTF-8
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://paho.org/esavi/CodeSystem/SistemaClasfCausalidadCS","code":"otro"}},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"0bfb9e6d-6bc4-4fa7-aff5-7fb6bc5b0d1e"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
+
+
+Response: 
+
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:599
+content-type:application/fhir+json
+date:Mon, 04 Dec 2023 15:02:38 GMT
+last-modified:Mon, 04 Dec 2023 15:02:38 GMT
+pragma:no-cache
+server:nginx
+x-request-id:50-376963
+
+{"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "x-caused-by-unknown-system","valueCanonical" : "http://paho.org/esavi/CodeSystem/SistemaClasfCausalidadCS"},{"name" : "message","valueString" : "The CodeSystem http://paho.org/esavi/CodeSystem/SistemaClasfCausalidadCS is unknown"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"text" : "The CodeSystem http://paho.org/esavi/CodeSystem/SistemaClasfCausalidadCS is unknown"},"location" : ["Coding.system"]}]}}]}
+
+</pre><hr/>
+<a name="l2"> </a><h3>2</h3>
+<pre>
+Request: 
+
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept-Charset: UTF-8
+Accept: application/fhir+json
+Content-Type: application/fhir+json;charset=UTF-8
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"https://paho.org/fhir/esavi/CodeSystem/EsaviMedDRACS","code":"10016179"}},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"0bfb9e6d-6bc4-4fa7-aff5-7fb6bc5b0d1e"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
+
+
+Response: 
+
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:584
+content-type:application/fhir+json
+date:Mon, 04 Dec 2023 15:02:38 GMT
+last-modified:Mon, 04 Dec 2023 15:02:38 GMT
+pragma:no-cache
+server:nginx
+x-request-id:50-376965
+
+{"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "x-caused-by-unknown-system","valueCanonical" : "https://paho.org/fhir/esavi/CodeSystem/EsaviMedDRACS"},{"name" : "message","valueString" : "The CodeSystem https://paho.org/fhir/esavi/CodeSystem/EsaviMedDRACS is unknown"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"text" : "The CodeSystem https://paho.org/fhir/esavi/CodeSystem/EsaviMedDRACS is unknown"},"location" : ["Coding.system"]}]}}]}
+
+</pre><hr/>
+<a name="l3"> </a><h3>3</h3>
+<pre>
+Request: 
+
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept-Charset: UTF-8
+Accept: application/fhir+json
+Content-Type: application/fhir+json;charset=UTF-8
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://id.who.int/icd11/mms","code":"XM4843"}},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"0bfb9e6d-6bc4-4fa7-aff5-7fb6bc5b0d1e"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
+
+
+Response: 
+
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:509
+content-type:application/fhir+json
+date:Mon, 04 Dec 2023 15:02:39 GMT
+last-modified:Mon, 04 Dec 2023 15:02:39 GMT
+pragma:no-cache
+server:nginx
+x-request-id:50-376969
+
+{"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "x-caused-by-unknown-system","valueCanonical" : "http://id.who.int/icd11/mms"},{"name" : "message","valueString" : "The CodeSystem http://id.who.int/icd11/mms is unknown"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"text" : "The CodeSystem http://id.who.int/icd11/mms is unknown"},"location" : ["Coding.system"]}]}}]}
+
+</pre><hr/>
+<a name="l4"> </a><h3>4</h3>
+<pre>
+Request: 
+
+POST http://tx.fhir.org/r4/ValueSet/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept-Charset: UTF-8
+Accept: application/fhir+json
+Content-Type: application/fhir+json;charset=UTF-8
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://paho.org/esavi/CodeSystem/CodPaises","code":"MX","display":"México"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"valueSet","resource":{"resourceType":"ValueSet","id":"CodPaises","text":{"status":"generated","div":"<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-ISO3166Part1.html\"><code>urn:iso:std:iso:3166</code></a></li></ul></div>"},"url":"https://paho.org/fhir/esavi/ValueSet/CodPaises","version":"0.1.3409","name":"CodPaises","title":"Códigos de Países","status":"active","date":"2021-03-11T00:00:00-03:00","publisher":"ESAVI -","contact":[{"name":"ESAVI -","telecom":[{"system":"url","value":"https://covid-19pharmacovigilance.paho.org/resources/updates-on-aefi"},{"system":"email","value":"rizzatodan@paho.org"}]}],"description":"Codigos definidos para la identificación de países segun norma ISO3166-N","jurisdiction":[{"coding":[{"system":"http://unstats.un.org/unsd/methods/m49/m49.htm","code":"001"}]}],"compose":{"include":[{"system":"urn:iso:std:iso:3166"}]}}},{"name":"cache-id","valueId":"0bfb9e6d-6bc4-4fa7-aff5-7fb6bc5b0d1e"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
+
+
+Response: 
+
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:952
+content-type:application/fhir+json
+date:Mon, 04 Dec 2023 15:02:41 GMT
+last-modified:Mon, 04 Dec 2023 15:02:41 GMT
+pragma:no-cache
+server:nginx
+x-request-id:50-376972
+
+{"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "x-caused-by-unknown-system","valueCanonical" : "http://paho.org/esavi/CodeSystem/CodPaises"},{"name" : "message","valueString" : "The CodeSystem http://paho.org/esavi/CodeSystem/CodPaises is unknown; The provided code 'http://paho.org/esavi/CodeSystem/CodPaises#MX' is not in the value set 'https://paho.org/fhir/esavi/ValueSet/CodPaises|0.1.3409'"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"text" : "The CodeSystem http://paho.org/esavi/CodeSystem/CodPaises is unknown"},"location" : ["Coding.system"]},{"severity" : "error","code" : "code-invalid","details" : {"text" : "The provided code 'http://paho.org/esavi/CodeSystem/CodPaises#MX' is not in the value set 'https://paho.org/fhir/esavi/ValueSet/CodPaises|0.1.3409'"},"location" : ["Coding.code"]}]}}]}
+
+</pre><hr/>
+<a name="l5"> </a><h3>5</h3>
+<pre>
+Request: 
+
+POST http://tx.fhir.org/r4/ValueSet/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept-Charset: UTF-8
+Accept: application/fhir+json
+Content-Type: application/fhir+json;charset=UTF-8
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"https://paho.org/fhir/esavi/CodeSystem/ProfesionalNotificadorVS","code":"5","display":"Usuario o otro profesional no sanitario"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"valueSet","resource":{"resourceType":"ValueSet","id":"ProfesionalNotificadorVS","text":{"status":"generated","div":"<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-ProfesionalNotificadorCS.html\"><code>https://paho.org/fhir/esavi/CodeSystem/ProfesionalNotificadorCS</code></a></li></ul></div>"},"url":"https://paho.org/fhir/esavi/ValueSet/ProfesionalNotificadorVS","version":"0.1.3409","name":"ProfesionalNotificadorVS","title":"Tipo de Profesional Notificador","status":"active","date":"2022-02-02","publisher":"ESAVI -","contact":[{"name":"ESAVI -","telecom":[{"system":"url","value":"https://covid-19pharmacovigilance.paho.org/resources/updates-on-aefi"},{"system":"email","value":"rizzatodan@paho.org"}]}],"description":"Códigos de Tipo de Notificadores de ESAVI para PAHO","jurisdiction":[{"coding":[{"system":"http://unstats.un.org/unsd/methods/m49/m49.htm","code":"001"}]}],"compose":{"include":[{"system":"https://paho.org/fhir/esavi/CodeSystem/ProfesionalNotificadorCS"}]}}},{"name":"tx-resource","resource":{"resourceType":"CodeSystem","id":"ProfesionalNotificadorCS","text":{"status":"generated","div":"<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This  code system <code>https://paho.org/fhir/esavi/CodeSystem/ProfesionalNotificadorCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"ProfesionalNotificadorCS-1\"> </a></td><td>Médico</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"ProfesionalNotificadorCS-2\"> </a></td><td>Farmacéutico</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"ProfesionalNotificadorCS-3\"> </a></td><td>Otro Profesional de la Salud</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"ProfesionalNotificadorCS-4\"> </a></td><td>Abogado</td></tr><tr><td style=\"white-space:nowrap\">5<a name=\"ProfesionalNotificadorCS-5\"> </a></td><td>Usuario u otro profesional no sanitario</td></tr><tr><td style=\"white-space:nowrap\">6<a name=\"ProfesionalNotificadorCS-6\"> </a></td><td>No definido por el usuario</td></tr></table></div>"},"url":"https://paho.org/fhir/esavi/CodeSystem/ProfesionalNotificadorCS","version":"0.1.3409","name":"ProfesionalNotificadorCS","title":"Tipo de Profesional Notificador","status":"active","date":"2022-02-02","publisher":"ESAVI -","contact":[{"name":"ESAVI -","telecom":[{"system":"url","value":"https://covid-19pharmacovigilance.paho.org/resources/updates-on-aefi"},{"system":"email","value":"rizzatodan@paho.org"}]}],"description":"Códigos de Tipo de Notificadores de ESAVI para PAHO","jurisdiction":[{"coding":[{"system":"http://unstats.un.org/unsd/methods/m49/m49.htm","code":"001"}]}],"content":"complete","count":6,"concept":[{"code":"1","display":"Médico"},{"code":"2","display":"Farmacéutico"},{"code":"3","display":"Otro Profesional de la Salud"},{"code":"4","display":"Abogado"},{"code":"5","display":"Usuario u otro profesional no sanitario"},{"code":"6","display":"No definido por el usuario"}]}},{"name":"cache-id","valueId":"0bfb9e6d-6bc4-4fa7-aff5-7fb6bc5b0d1e"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
+
+
+Response: 
+
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:1085
+content-type:application/fhir+json
+date:Mon, 04 Dec 2023 15:02:41 GMT
+last-modified:Mon, 04 Dec 2023 15:02:41 GMT
+pragma:no-cache
+server:nginx
+x-request-id:50-376975
+
+{"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "x-caused-by-unknown-system","valueCanonical" : "https://paho.org/fhir/esavi/CodeSystem/ProfesionalNotificadorVS"},{"name" : "message","valueString" : "The CodeSystem https://paho.org/fhir/esavi/CodeSystem/ProfesionalNotificadorVS is unknown; The provided code 'https://paho.org/fhir/esavi/CodeSystem/ProfesionalNotificadorVS#5' is not in the value set 'https://paho.org/fhir/esavi/ValueSet/ProfesionalNotificadorVS|0.1.3409'"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"text" : "The CodeSystem https://paho.org/fhir/esavi/CodeSystem/ProfesionalNotificadorVS is unknown"},"location" : ["Coding.system"]},{"severity" : "error","code" : "code-invalid","details" : {"text" : "The provided code 'https://paho.org/fhir/esavi/CodeSystem/ProfesionalNotificadorVS#5' is not in the value set 'https://paho.org/fhir/esavi/ValueSet/ProfesionalNotificadorVS|0.1.3409'"},"location" : ["Coding.code"]}]}}]}
+
+</pre><hr/>
+<a name="l6"> </a><h3>6</h3>
+<pre>
+Request: 
+
+POST http://tx.fhir.org/r4/ValueSet/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept-Charset: UTF-8
+Accept: application/fhir+json
+Content-Type: application/fhir+json;charset=UTF-8
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://paho.org/esavi/CodeSystem/CodigoMedDRAEnfPreviaCS","code":"10034292","display":"alergia a penicilina"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"valueSet","resource":{"resourceType":"ValueSet","id":"CodigoMedDRAEnfPreviaVS","text":{"status":"generated","div":"<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-mdr.html\"><code>https://www.meddra.org</code></a></li></ul></div>"},"url":"https://paho.org/fhir/esavi/ValueSet/CodigoMedDRAEnfPreviaVS","version":"0.1.3409","name":"CodigoMedDRAEnfPreviaVS","title":"Códigos de MedDRA para representar enfermedades previas en un ESAVI-PAHO","status":"active","date":"2022-02-02","publisher":"ESAVI -","contact":[{"name":"ESAVI -","telecom":[{"system":"url","value":"https://covid-19pharmacovigilance.paho.org/resources/updates-on-aefi"},{"system":"email","value":"rizzatodan@paho.org"}]}],"description":"Describe las enfermedades previas en un ESAVI codificadas en MedDRA","jurisdiction":[{"coding":[{"system":"http://unstats.un.org/unsd/methods/m49/m49.htm","code":"001"}]}],"compose":{"include":[{"system":"https://www.meddra.org"}]}}},{"name":"cache-id","valueId":"0bfb9e6d-6bc4-4fa7-aff5-7fb6bc5b0d1e"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
+
+
+Response: 
+
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:1062
+content-type:application/fhir+json
+date:Mon, 04 Dec 2023 15:02:41 GMT
+last-modified:Mon, 04 Dec 2023 15:02:41 GMT
+pragma:no-cache
+server:nginx
+x-request-id:50-376977
+
+{"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "x-caused-by-unknown-system","valueCanonical" : "http://paho.org/esavi/CodeSystem/CodigoMedDRAEnfPreviaCS"},{"name" : "message","valueString" : "The CodeSystem http://paho.org/esavi/CodeSystem/CodigoMedDRAEnfPreviaCS is unknown; The provided code 'http://paho.org/esavi/CodeSystem/CodigoMedDRAEnfPreviaCS#10034292' is not in the value set 'https://paho.org/fhir/esavi/ValueSet/CodigoMedDRAEnfPreviaVS|0.1.3409'"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"text" : "The CodeSystem http://paho.org/esavi/CodeSystem/CodigoMedDRAEnfPreviaCS is unknown"},"location" : ["Coding.system"]},{"severity" : "error","code" : "code-invalid","details" : {"text" : "The provided code 'http://paho.org/esavi/CodeSystem/CodigoMedDRAEnfPreviaCS#10034292' is not in the value set 'https://paho.org/fhir/esavi/ValueSet/CodigoMedDRAEnfPreviaVS|0.1.3409'"},"location" : ["Coding.code"]}]}}]}
+
+</pre><hr/>
+<a name="l7"> </a><h3>7</h3>
+<pre>
+Request: 
+
+POST http://tx.fhir.org/r4/ValueSet/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept-Charset: UTF-8
+Accept: application/fhir+json
+Content-Type: application/fhir+json;charset=UTF-8
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://paho.org/esavi/CodeSystem/EnfermedadesPreviasCodificacionCS","code":"91936005","display":"alergia a penicilina"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"valueSet","resource":{"resourceType":"ValueSet","id":"EnfermedadesPreviasCodificacionVS","text":{"status":"generated","div":"<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from <code>http://id.who.int/icd11/mms</code> where concept  is-a  XY0Y</li><li>Include codes from <a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-icd10.html\"><code>http://hl7.org/fhir/sid/icd-10</code></a> where concept  is-a  E03.9 (null)</li><li>Include codes from <a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-icd10.html\"><code>http://hl7.org/fhir/sid/icd-10</code></a> where concept  is-a  E66.9 (null)</li><li>Include codes from <a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-icd10.html\"><code>http://hl7.org/fhir/sid/icd-10</code></a> where concept  is-a  E10.9 (null)</li><li>Include codes from <a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-icd10.html\"><code>http://hl7.org/fhir/sid/icd-10</code></a> where concept  is-a  O03.9 (null)</li><li>Include codes from <a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-icd10.html\"><code>http://hl7.org/fhir/sid/icd-10</code></a> where concept  is-a  L53.9 (null)</li><li>Include codes from <a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-icd10.html\"><code>http://hl7.org/fhir/sid/icd-10</code></a> where concept  is-a  R60.0 (null)</li><li>Include codes from <a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-icd10.html\"><code>http://hl7.org/fhir/sid/icd-10</code></a> where concept  is-a  R52 (null)</li><li>Include codes from <a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-icd10.html\"><code>http://hl7.org/fhir/sid/icd-10</code></a> where concept  is-a  R50 (null)</li><li>Include codes from <a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-icd10.html\"><code>http://hl7.org/fhir/sid/icd-10</code></a> where concept  is-a  G51.0 (null)</li><li>Include codes from <a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-icd10.html\"><code>http://hl7.org/fhir/sid/icd-10</code></a> where concept  is-a  H92.0 (null)</li><li>Include codes from <a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-icd10.html\"><code>http://hl7.org/fhir/sid/icd-10</code></a> where concept  is-a  H93.1 (null)</li><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  391103005 (null)</li></ul></div>"},"url":"https://paho.org/fhir/esavi/ValueSet/EnfermedadesPreviasCodificacionVS","version":"0.1.3409","name":"EnfermedadesPreviasCodificacionVS","title":"Enfermedades previas en un ESAVI-PAHO","status":"active","date":"2021-03-11T00:00:00-03:00","publisher":"ESAVI -","contact":[{"name":"ESAVI -","telecom":[{"system":"url","value":"https://covid-19pharmacovigilance.paho.org/resources/updates-on-aefi"},{"system":"email","value":"rizzatodan@paho.org"}]}],"description":"Describe las enfermedades previas en un ESAVI codificadas en CIE10, CIE11 o SNOMED CT","jurisdiction":[{"coding":[{"system":"http://unstats.un.org/unsd/methods/m49/m49.htm","code":"001"}]}],"compose":{"include":[{"system":"http://id.who.int/icd11/mms","filter":[{"property":"concept","op":"is-a","value":"XY0Y"}]},{"system":"http://hl7.org/fhir/sid/icd-10","filter":[{"property":"concept","op":"is-a","value":"E03.9"}]},{"system":"http://hl7.org/fhir/sid/icd-10","filter":[{"property":"concept","op":"is-a","value":"E66.9"}]},{"system":"http://hl7.org/fhir/sid/icd-10","filter":[{"property":"concept","op":"is-a","value":"E10.9"}]},{"system":"http://hl7.org/fhir/sid/icd-10","filter":[{"property":"concept","op":"is-a","value":"O03.9"}]},{"system":"http://hl7.org/fhir/sid/icd-10","filter":[{"property":"concept","op":"is-a","value":"L53.9"}]},{"system":"http://hl7.org/fhir/sid/icd-10","filter":[{"property":"concept","op":"is-a","value":"R60.0"}]},{"system":"http://hl7.org/fhir/sid/icd-10","filter":[{"property":"concept","op":"is-a","value":"R52"}]},{"system":"http://hl7.org/fhir/sid/icd-10","filter":[{"property":"concept","op":"is-a","value":"R50"}]},{"system":"http://hl7.org/fhir/sid/icd-10","filter":[{"property":"concept","op":"is-a","value":"G51.0"}]},{"system":"http://hl7.org/fhir/sid/icd-10","filter":[{"property":"concept","op":"is-a","value":"H92.0"}]},{"system":"http://hl7.org/fhir/sid/icd-10","filter":[{"property":"concept","op":"is-a","value":"H93.1"}]},{"system":"http://snomed.info/sct","filter":[{"property":"concept","op":"is-a","value":"391103005"}]}]}}},{"name":"cache-id","valueId":"0bfb9e6d-6bc4-4fa7-aff5-7fb6bc5b0d1e"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
+
+
+Response: 
+
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:1132
+content-type:application/fhir+json
+date:Mon, 04 Dec 2023 15:02:42 GMT
+last-modified:Mon, 04 Dec 2023 15:02:42 GMT
+pragma:no-cache
+server:nginx
+x-request-id:50-376978
+
+{"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "x-caused-by-unknown-system","valueCanonical" : "http://paho.org/esavi/CodeSystem/EnfermedadesPreviasCodificacionCS"},{"name" : "message","valueString" : "The CodeSystem http://paho.org/esavi/CodeSystem/EnfermedadesPreviasCodificacionCS is unknown; The provided code 'http://paho.org/esavi/CodeSystem/EnfermedadesPreviasCodificacionCS#91936005' is not in the value set 'https://paho.org/fhir/esavi/ValueSet/EnfermedadesPreviasCodificacionVS|0.1.3409'"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"text" : "The CodeSystem http://paho.org/esavi/CodeSystem/EnfermedadesPreviasCodificacionCS is unknown"},"location" : ["Coding.system"]},{"severity" : "error","code" : "code-invalid","details" : {"text" : "The provided code 'http://paho.org/esavi/CodeSystem/EnfermedadesPreviasCodificacionCS#91936005' is not in the value set 'https://paho.org/fhir/esavi/ValueSet/EnfermedadesPreviasCodificacionVS|0.1.3409'"},"location" : ["Coding.code"]}]}}]}
+
+</pre><hr/>
+<a name="l8"> </a><h3>8</h3>
+<pre>
+Request: 
+
+POST http://tx.fhir.org/r4/ValueSet/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept-Charset: UTF-8
+Accept: application/fhir+json
+Content-Type: application/fhir+json;charset=UTF-8
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://paho.org/esavi/CodeSystem/EsaviOtroCS","code":"39579001","display":"anafilaxia"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"valueSet","resource":{"resourceType":"ValueSet","id":"EsaviOtroVS","text":{"status":"generated","div":"<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  391103005 (null)</li><li>Include codes from <code>http://id.who.int/icd11/mms</code> where concept  is-a  XY0Y</li><li>Include codes from <a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-icd10.html\"><code>http://hl7.org/fhir/sid/icd-10</code></a> where concept  is-a  E03.9 (null)</li><li>Include codes from <a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-icd10.html\"><code>http://hl7.org/fhir/sid/icd-10</code></a> where concept  is-a  E66.9 (null)</li><li>Include codes from <a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-icd10.html\"><code>http://hl7.org/fhir/sid/icd-10</code></a> where concept  is-a  E10.9 (null)</li><li>Include codes from <a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-icd10.html\"><code>http://hl7.org/fhir/sid/icd-10</code></a> where concept  is-a  O03.9 (null)</li><li>Include codes from <a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-icd10.html\"><code>http://hl7.org/fhir/sid/icd-10</code></a> where concept  is-a  L53.9 (null)</li><li>Include codes from <a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-icd10.html\"><code>http://hl7.org/fhir/sid/icd-10</code></a> where concept  is-a  R60.0 (null)</li><li>Include codes from <a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-icd10.html\"><code>http://hl7.org/fhir/sid/icd-10</code></a> where concept  is-a  R52 (null)</li><li>Include codes from <a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-icd10.html\"><code>http://hl7.org/fhir/sid/icd-10</code></a> where concept  is-a  R50 (null)</li><li>Include codes from <a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-icd10.html\"><code>http://hl7.org/fhir/sid/icd-10</code></a> where concept  is-a  G51.0 (null)</li><li>Include codes from <a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-icd10.html\"><code>http://hl7.org/fhir/sid/icd-10</code></a> where concept  is-a  H92.0 (null)</li><li>Include codes from <a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-icd10.html\"><code>http://hl7.org/fhir/sid/icd-10</code></a> where concept  is-a  H93.1 (null)</li></ul></div>"},"url":"https://paho.org/fhir/esavi/ValueSet/EsaviOtroVS","version":"0.1.3409","name":"EsaviOtroVS","title":"Otros Códigos Evento Adverso","status":"active","date":"2021-03-11T00:00:00-03:00","publisher":"ESAVI -","contact":[{"name":"ESAVI -","telecom":[{"system":"url","value":"https://covid-19pharmacovigilance.paho.org/resources/updates-on-aefi"},{"system":"email","value":"rizzatodan@paho.org"}]}],"description":"Evento Adverso en otro sistema según Snomed, ATC y CIE-10","jurisdiction":[{"coding":[{"system":"http://unstats.un.org/unsd/methods/m49/m49.htm","code":"001"}]}],"compose":{"include":[{"system":"http://snomed.info/sct","filter":[{"property":"concept","op":"is-a","value":"391103005"}]},{"system":"http://id.who.int/icd11/mms","filter":[{"property":"concept","op":"is-a","value":"XY0Y"}]},{"system":"http://hl7.org/fhir/sid/icd-10","filter":[{"property":"concept","op":"is-a","value":"E03.9"}]},{"system":"http://hl7.org/fhir/sid/icd-10","filter":[{"property":"concept","op":"is-a","value":"E66.9"}]},{"system":"http://hl7.org/fhir/sid/icd-10","filter":[{"property":"concept","op":"is-a","value":"E10.9"}]},{"system":"http://hl7.org/fhir/sid/icd-10","filter":[{"property":"concept","op":"is-a","value":"O03.9"}]},{"system":"http://hl7.org/fhir/sid/icd-10","filter":[{"property":"concept","op":"is-a","value":"L53.9"}]},{"system":"http://hl7.org/fhir/sid/icd-10","filter":[{"property":"concept","op":"is-a","value":"R60.0"}]},{"system":"http://hl7.org/fhir/sid/icd-10","filter":[{"property":"concept","op":"is-a","value":"R52"}]},{"system":"http://hl7.org/fhir/sid/icd-10","filter":[{"property":"concept","op":"is-a","value":"R50"}]},{"system":"http://hl7.org/fhir/sid/icd-10","filter":[{"property":"concept","op":"is-a","value":"G51.0"}]},{"system":"http://hl7.org/fhir/sid/icd-10","filter":[{"property":"concept","op":"is-a","value":"H92.0"}]},{"system":"http://hl7.org/fhir/sid/icd-10","filter":[{"property":"concept","op":"is-a","value":"H93.1"}]}]}}},{"name":"cache-id","valueId":"0bfb9e6d-6bc4-4fa7-aff5-7fb6bc5b0d1e"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
+
+
+Response: 
+
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:978
+content-type:application/fhir+json
+date:Mon, 04 Dec 2023 15:02:42 GMT
+last-modified:Mon, 04 Dec 2023 15:02:42 GMT
+pragma:no-cache
+server:nginx
+x-request-id:50-376982
+
+{"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "x-caused-by-unknown-system","valueCanonical" : "http://paho.org/esavi/CodeSystem/EsaviOtroCS"},{"name" : "message","valueString" : "The CodeSystem http://paho.org/esavi/CodeSystem/EsaviOtroCS is unknown; The provided code 'http://paho.org/esavi/CodeSystem/EsaviOtroCS#39579001' is not in the value set 'https://paho.org/fhir/esavi/ValueSet/EsaviOtroVS|0.1.3409'"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"text" : "The CodeSystem http://paho.org/esavi/CodeSystem/EsaviOtroCS is unknown"},"location" : ["Coding.system"]},{"severity" : "error","code" : "code-invalid","details" : {"text" : "The provided code 'http://paho.org/esavi/CodeSystem/EsaviOtroCS#39579001' is not in the value set 'https://paho.org/fhir/esavi/ValueSet/EsaviOtroVS|0.1.3409'"},"location" : ["Coding.code"]}]}}]}
+
+--- 1 -----------------
+Request: 
+
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept-Charset: UTF-8
+Accept: application/fhir+json
+Content-Type: application/fhir+json;charset=UTF-8
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://paho.org/esavi/CodeSystem/SistemaClasfCausalidadCS","code":"otro"}},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"0bfb9e6d-6bc4-4fa7-aff5-7fb6bc5b0d1e"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
+
+
+Response: 
+
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:599
+content-type:application/fhir+json
+date:Mon, 04 Dec 2023 15:02:38 GMT
+last-modified:Mon, 04 Dec 2023 15:02:38 GMT
+pragma:no-cache
+server:nginx
+x-request-id:50-376963
+
+{"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "x-caused-by-unknown-system","valueCanonical" : "http://paho.org/esavi/CodeSystem/SistemaClasfCausalidadCS"},{"name" : "message","valueString" : "The CodeSystem http://paho.org/esavi/CodeSystem/SistemaClasfCausalidadCS is unknown"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"text" : "The CodeSystem http://paho.org/esavi/CodeSystem/SistemaClasfCausalidadCS is unknown"},"location" : ["Coding.system"]}]}}]}
+
+--- 2 -----------------
+Request: 
+
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept-Charset: UTF-8
+Accept: application/fhir+json
+Content-Type: application/fhir+json;charset=UTF-8
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"https://paho.org/fhir/esavi/CodeSystem/EsaviMedDRACS","code":"10016179"}},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"0bfb9e6d-6bc4-4fa7-aff5-7fb6bc5b0d1e"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
+
+
+Response: 
+
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:584
+content-type:application/fhir+json
+date:Mon, 04 Dec 2023 15:02:38 GMT
+last-modified:Mon, 04 Dec 2023 15:02:38 GMT
+pragma:no-cache
+server:nginx
+x-request-id:50-376965
+
+{"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "x-caused-by-unknown-system","valueCanonical" : "https://paho.org/fhir/esavi/CodeSystem/EsaviMedDRACS"},{"name" : "message","valueString" : "The CodeSystem https://paho.org/fhir/esavi/CodeSystem/EsaviMedDRACS is unknown"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"text" : "The CodeSystem https://paho.org/fhir/esavi/CodeSystem/EsaviMedDRACS is unknown"},"location" : ["Coding.system"]}]}}]}
+
+--- 3 -----------------
+Request: 
+
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept-Charset: UTF-8
+Accept: application/fhir+json
+Content-Type: application/fhir+json;charset=UTF-8
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://id.who.int/icd11/mms","code":"XM4843"}},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"0bfb9e6d-6bc4-4fa7-aff5-7fb6bc5b0d1e"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
+
+
+Response: 
+
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:509
+content-type:application/fhir+json
+date:Mon, 04 Dec 2023 15:02:39 GMT
+last-modified:Mon, 04 Dec 2023 15:02:39 GMT
+pragma:no-cache
+server:nginx
+x-request-id:50-376969
+
+{"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "x-caused-by-unknown-system","valueCanonical" : "http://id.who.int/icd11/mms"},{"name" : "message","valueString" : "The CodeSystem http://id.who.int/icd11/mms is unknown"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"text" : "The CodeSystem http://id.who.int/icd11/mms is unknown"},"location" : ["Coding.system"]}]}}]}
+
+--- 4 -----------------
+Request: 
+
+POST http://tx.fhir.org/r4/ValueSet/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept-Charset: UTF-8
+Accept: application/fhir+json
+Content-Type: application/fhir+json;charset=UTF-8
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://paho.org/esavi/CodeSystem/CodPaises","code":"MX","display":"México"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"valueSet","resource":{"resourceType":"ValueSet","id":"CodPaises","text":{"status":"generated","div":"<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-ISO3166Part1.html\"><code>urn:iso:std:iso:3166</code></a></li></ul></div>"},"url":"https://paho.org/fhir/esavi/ValueSet/CodPaises","version":"0.1.3409","name":"CodPaises","title":"Códigos de Países","status":"active","date":"2021-03-11T00:00:00-03:00","publisher":"ESAVI -","contact":[{"name":"ESAVI -","telecom":[{"system":"url","value":"https://covid-19pharmacovigilance.paho.org/resources/updates-on-aefi"},{"system":"email","value":"rizzatodan@paho.org"}]}],"description":"Codigos definidos para la identificación de países segun norma ISO3166-N","jurisdiction":[{"coding":[{"system":"http://unstats.un.org/unsd/methods/m49/m49.htm","code":"001"}]}],"compose":{"include":[{"system":"urn:iso:std:iso:3166"}]}}},{"name":"cache-id","valueId":"0bfb9e6d-6bc4-4fa7-aff5-7fb6bc5b0d1e"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
+
+
+Response: 
+
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:952
+content-type:application/fhir+json
+date:Mon, 04 Dec 2023 15:02:41 GMT
+last-modified:Mon, 04 Dec 2023 15:02:41 GMT
+pragma:no-cache
+server:nginx
+x-request-id:50-376972
+
+{"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "x-caused-by-unknown-system","valueCanonical" : "http://paho.org/esavi/CodeSystem/CodPaises"},{"name" : "message","valueString" : "The CodeSystem http://paho.org/esavi/CodeSystem/CodPaises is unknown; The provided code 'http://paho.org/esavi/CodeSystem/CodPaises#MX' is not in the value set 'https://paho.org/fhir/esavi/ValueSet/CodPaises|0.1.3409'"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"text" : "The CodeSystem http://paho.org/esavi/CodeSystem/CodPaises is unknown"},"location" : ["Coding.system"]},{"severity" : "error","code" : "code-invalid","details" : {"text" : "The provided code 'http://paho.org/esavi/CodeSystem/CodPaises#MX' is not in the value set 'https://paho.org/fhir/esavi/ValueSet/CodPaises|0.1.3409'"},"location" : ["Coding.code"]}]}}]}
+
+--- 5 -----------------
+Request: 
+
+POST http://tx.fhir.org/r4/ValueSet/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept-Charset: UTF-8
+Accept: application/fhir+json
+Content-Type: application/fhir+json;charset=UTF-8
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"https://paho.org/fhir/esavi/CodeSystem/ProfesionalNotificadorVS","code":"5","display":"Usuario o otro profesional no sanitario"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"valueSet","resource":{"resourceType":"ValueSet","id":"ProfesionalNotificadorVS","text":{"status":"generated","div":"<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-ProfesionalNotificadorCS.html\"><code>https://paho.org/fhir/esavi/CodeSystem/ProfesionalNotificadorCS</code></a></li></ul></div>"},"url":"https://paho.org/fhir/esavi/ValueSet/ProfesionalNotificadorVS","version":"0.1.3409","name":"ProfesionalNotificadorVS","title":"Tipo de Profesional Notificador","status":"active","date":"2022-02-02","publisher":"ESAVI -","contact":[{"name":"ESAVI -","telecom":[{"system":"url","value":"https://covid-19pharmacovigilance.paho.org/resources/updates-on-aefi"},{"system":"email","value":"rizzatodan@paho.org"}]}],"description":"Códigos de Tipo de Notificadores de ESAVI para PAHO","jurisdiction":[{"coding":[{"system":"http://unstats.un.org/unsd/methods/m49/m49.htm","code":"001"}]}],"compose":{"include":[{"system":"https://paho.org/fhir/esavi/CodeSystem/ProfesionalNotificadorCS"}]}}},{"name":"tx-resource","resource":{"resourceType":"CodeSystem","id":"ProfesionalNotificadorCS","text":{"status":"generated","div":"<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This  code system <code>https://paho.org/fhir/esavi/CodeSystem/ProfesionalNotificadorCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"ProfesionalNotificadorCS-1\"> </a></td><td>Médico</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"ProfesionalNotificadorCS-2\"> </a></td><td>Farmacéutico</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"ProfesionalNotificadorCS-3\"> </a></td><td>Otro Profesional de la Salud</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"ProfesionalNotificadorCS-4\"> </a></td><td>Abogado</td></tr><tr><td style=\"white-space:nowrap\">5<a name=\"ProfesionalNotificadorCS-5\"> </a></td><td>Usuario u otro profesional no sanitario</td></tr><tr><td style=\"white-space:nowrap\">6<a name=\"ProfesionalNotificadorCS-6\"> </a></td><td>No definido por el usuario</td></tr></table></div>"},"url":"https://paho.org/fhir/esavi/CodeSystem/ProfesionalNotificadorCS","version":"0.1.3409","name":"ProfesionalNotificadorCS","title":"Tipo de Profesional Notificador","status":"active","date":"2022-02-02","publisher":"ESAVI -","contact":[{"name":"ESAVI -","telecom":[{"system":"url","value":"https://covid-19pharmacovigilance.paho.org/resources/updates-on-aefi"},{"system":"email","value":"rizzatodan@paho.org"}]}],"description":"Códigos de Tipo de Notificadores de ESAVI para PAHO","jurisdiction":[{"coding":[{"system":"http://unstats.un.org/unsd/methods/m49/m49.htm","code":"001"}]}],"content":"complete","count":6,"concept":[{"code":"1","display":"Médico"},{"code":"2","display":"Farmacéutico"},{"code":"3","display":"Otro Profesional de la Salud"},{"code":"4","display":"Abogado"},{"code":"5","display":"Usuario u otro profesional no sanitario"},{"code":"6","display":"No definido por el usuario"}]}},{"name":"cache-id","valueId":"0bfb9e6d-6bc4-4fa7-aff5-7fb6bc5b0d1e"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
+
+
+Response: 
+
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:1085
+content-type:application/fhir+json
+date:Mon, 04 Dec 2023 15:02:41 GMT
+last-modified:Mon, 04 Dec 2023 15:02:41 GMT
+pragma:no-cache
+server:nginx
+x-request-id:50-376975
+
+{"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "x-caused-by-unknown-system","valueCanonical" : "https://paho.org/fhir/esavi/CodeSystem/ProfesionalNotificadorVS"},{"name" : "message","valueString" : "The CodeSystem https://paho.org/fhir/esavi/CodeSystem/ProfesionalNotificadorVS is unknown; The provided code 'https://paho.org/fhir/esavi/CodeSystem/ProfesionalNotificadorVS#5' is not in the value set 'https://paho.org/fhir/esavi/ValueSet/ProfesionalNotificadorVS|0.1.3409'"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"text" : "The CodeSystem https://paho.org/fhir/esavi/CodeSystem/ProfesionalNotificadorVS is unknown"},"location" : ["Coding.system"]},{"severity" : "error","code" : "code-invalid","details" : {"text" : "The provided code 'https://paho.org/fhir/esavi/CodeSystem/ProfesionalNotificadorVS#5' is not in the value set 'https://paho.org/fhir/esavi/ValueSet/ProfesionalNotificadorVS|0.1.3409'"},"location" : ["Coding.code"]}]}}]}
+
+--- 6 -----------------
+Request: 
+
+POST http://tx.fhir.org/r4/ValueSet/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept-Charset: UTF-8
+Accept: application/fhir+json
+Content-Type: application/fhir+json;charset=UTF-8
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://paho.org/esavi/CodeSystem/CodigoMedDRAEnfPreviaCS","code":"10034292","display":"alergia a penicilina"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"valueSet","resource":{"resourceType":"ValueSet","id":"CodigoMedDRAEnfPreviaVS","text":{"status":"generated","div":"<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-mdr.html\"><code>https://www.meddra.org</code></a></li></ul></div>"},"url":"https://paho.org/fhir/esavi/ValueSet/CodigoMedDRAEnfPreviaVS","version":"0.1.3409","name":"CodigoMedDRAEnfPreviaVS","title":"Códigos de MedDRA para representar enfermedades previas en un ESAVI-PAHO","status":"active","date":"2022-02-02","publisher":"ESAVI -","contact":[{"name":"ESAVI -","telecom":[{"system":"url","value":"https://covid-19pharmacovigilance.paho.org/resources/updates-on-aefi"},{"system":"email","value":"rizzatodan@paho.org"}]}],"description":"Describe las enfermedades previas en un ESAVI codificadas en MedDRA","jurisdiction":[{"coding":[{"system":"http://unstats.un.org/unsd/methods/m49/m49.htm","code":"001"}]}],"compose":{"include":[{"system":"https://www.meddra.org"}]}}},{"name":"cache-id","valueId":"0bfb9e6d-6bc4-4fa7-aff5-7fb6bc5b0d1e"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
+
+
+Response: 
+
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:1062
+content-type:application/fhir+json
+date:Mon, 04 Dec 2023 15:02:41 GMT
+last-modified:Mon, 04 Dec 2023 15:02:41 GMT
+pragma:no-cache
+server:nginx
+x-request-id:50-376977
+
+{"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "x-caused-by-unknown-system","valueCanonical" : "http://paho.org/esavi/CodeSystem/CodigoMedDRAEnfPreviaCS"},{"name" : "message","valueString" : "The CodeSystem http://paho.org/esavi/CodeSystem/CodigoMedDRAEnfPreviaCS is unknown; The provided code 'http://paho.org/esavi/CodeSystem/CodigoMedDRAEnfPreviaCS#10034292' is not in the value set 'https://paho.org/fhir/esavi/ValueSet/CodigoMedDRAEnfPreviaVS|0.1.3409'"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"text" : "The CodeSystem http://paho.org/esavi/CodeSystem/CodigoMedDRAEnfPreviaCS is unknown"},"location" : ["Coding.system"]},{"severity" : "error","code" : "code-invalid","details" : {"text" : "The provided code 'http://paho.org/esavi/CodeSystem/CodigoMedDRAEnfPreviaCS#10034292' is not in the value set 'https://paho.org/fhir/esavi/ValueSet/CodigoMedDRAEnfPreviaVS|0.1.3409'"},"location" : ["Coding.code"]}]}}]}
+
+--- 7 -----------------
+Request: 
+
+POST http://tx.fhir.org/r4/ValueSet/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept-Charset: UTF-8
+Accept: application/fhir+json
+Content-Type: application/fhir+json;charset=UTF-8
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://paho.org/esavi/CodeSystem/EnfermedadesPreviasCodificacionCS","code":"91936005","display":"alergia a penicilina"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"valueSet","resource":{"resourceType":"ValueSet","id":"EnfermedadesPreviasCodificacionVS","text":{"status":"generated","div":"<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from <code>http://id.who.int/icd11/mms</code> where concept  is-a  XY0Y</li><li>Include codes from <a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-icd10.html\"><code>http://hl7.org/fhir/sid/icd-10</code></a> where concept  is-a  E03.9 (null)</li><li>Include codes from <a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-icd10.html\"><code>http://hl7.org/fhir/sid/icd-10</code></a> where concept  is-a  E66.9 (null)</li><li>Include codes from <a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-icd10.html\"><code>http://hl7.org/fhir/sid/icd-10</code></a> where concept  is-a  E10.9 (null)</li><li>Include codes from <a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-icd10.html\"><code>http://hl7.org/fhir/sid/icd-10</code></a> where concept  is-a  O03.9 (null)</li><li>Include codes from <a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-icd10.html\"><code>http://hl7.org/fhir/sid/icd-10</code></a> where concept  is-a  L53.9 (null)</li><li>Include codes from <a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-icd10.html\"><code>http://hl7.org/fhir/sid/icd-10</code></a> where concept  is-a  R60.0 (null)</li><li>Include codes from <a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-icd10.html\"><code>http://hl7.org/fhir/sid/icd-10</code></a> where concept  is-a  R52 (null)</li><li>Include codes from <a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-icd10.html\"><code>http://hl7.org/fhir/sid/icd-10</code></a> where concept  is-a  R50 (null)</li><li>Include codes from <a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-icd10.html\"><code>http://hl7.org/fhir/sid/icd-10</code></a> where concept  is-a  G51.0 (null)</li><li>Include codes from <a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-icd10.html\"><code>http://hl7.org/fhir/sid/icd-10</code></a> where concept  is-a  H92.0 (null)</li><li>Include codes from <a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-icd10.html\"><code>http://hl7.org/fhir/sid/icd-10</code></a> where concept  is-a  H93.1 (null)</li><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  391103005 (null)</li></ul></div>"},"url":"https://paho.org/fhir/esavi/ValueSet/EnfermedadesPreviasCodificacionVS","version":"0.1.3409","name":"EnfermedadesPreviasCodificacionVS","title":"Enfermedades previas en un ESAVI-PAHO","status":"active","date":"2021-03-11T00:00:00-03:00","publisher":"ESAVI -","contact":[{"name":"ESAVI -","telecom":[{"system":"url","value":"https://covid-19pharmacovigilance.paho.org/resources/updates-on-aefi"},{"system":"email","value":"rizzatodan@paho.org"}]}],"description":"Describe las enfermedades previas en un ESAVI codificadas en CIE10, CIE11 o SNOMED CT","jurisdiction":[{"coding":[{"system":"http://unstats.un.org/unsd/methods/m49/m49.htm","code":"001"}]}],"compose":{"include":[{"system":"http://id.who.int/icd11/mms","filter":[{"property":"concept","op":"is-a","value":"XY0Y"}]},{"system":"http://hl7.org/fhir/sid/icd-10","filter":[{"property":"concept","op":"is-a","value":"E03.9"}]},{"system":"http://hl7.org/fhir/sid/icd-10","filter":[{"property":"concept","op":"is-a","value":"E66.9"}]},{"system":"http://hl7.org/fhir/sid/icd-10","filter":[{"property":"concept","op":"is-a","value":"E10.9"}]},{"system":"http://hl7.org/fhir/sid/icd-10","filter":[{"property":"concept","op":"is-a","value":"O03.9"}]},{"system":"http://hl7.org/fhir/sid/icd-10","filter":[{"property":"concept","op":"is-a","value":"L53.9"}]},{"system":"http://hl7.org/fhir/sid/icd-10","filter":[{"property":"concept","op":"is-a","value":"R60.0"}]},{"system":"http://hl7.org/fhir/sid/icd-10","filter":[{"property":"concept","op":"is-a","value":"R52"}]},{"system":"http://hl7.org/fhir/sid/icd-10","filter":[{"property":"concept","op":"is-a","value":"R50"}]},{"system":"http://hl7.org/fhir/sid/icd-10","filter":[{"property":"concept","op":"is-a","value":"G51.0"}]},{"system":"http://hl7.org/fhir/sid/icd-10","filter":[{"property":"concept","op":"is-a","value":"H92.0"}]},{"system":"http://hl7.org/fhir/sid/icd-10","filter":[{"property":"concept","op":"is-a","value":"H93.1"}]},{"system":"http://snomed.info/sct","filter":[{"property":"concept","op":"is-a","value":"391103005"}]}]}}},{"name":"cache-id","valueId":"0bfb9e6d-6bc4-4fa7-aff5-7fb6bc5b0d1e"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
+
+
+Response: 
+
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:1132
+content-type:application/fhir+json
+date:Mon, 04 Dec 2023 15:02:42 GMT
+last-modified:Mon, 04 Dec 2023 15:02:42 GMT
+pragma:no-cache
+server:nginx
+x-request-id:50-376978
+
+{"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "x-caused-by-unknown-system","valueCanonical" : "http://paho.org/esavi/CodeSystem/EnfermedadesPreviasCodificacionCS"},{"name" : "message","valueString" : "The CodeSystem http://paho.org/esavi/CodeSystem/EnfermedadesPreviasCodificacionCS is unknown; The provided code 'http://paho.org/esavi/CodeSystem/EnfermedadesPreviasCodificacionCS#91936005' is not in the value set 'https://paho.org/fhir/esavi/ValueSet/EnfermedadesPreviasCodificacionVS|0.1.3409'"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"text" : "The CodeSystem http://paho.org/esavi/CodeSystem/EnfermedadesPreviasCodificacionCS is unknown"},"location" : ["Coding.system"]},{"severity" : "error","code" : "code-invalid","details" : {"text" : "The provided code 'http://paho.org/esavi/CodeSystem/EnfermedadesPreviasCodificacionCS#91936005' is not in the value set 'https://paho.org/fhir/esavi/ValueSet/EnfermedadesPreviasCodificacionVS|0.1.3409'"},"location" : ["Coding.code"]}]}}]}
+
+--- 8 -----------------
+Request: 
+
+POST http://tx.fhir.org/r4/ValueSet/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept-Charset: UTF-8
+Accept: application/fhir+json
+Content-Type: application/fhir+json;charset=UTF-8
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://paho.org/esavi/CodeSystem/EsaviOtroCS","code":"39579001","display":"anafilaxia"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"valueSet","resource":{"resourceType":"ValueSet","id":"EsaviOtroVS","text":{"status":"generated","div":"<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  391103005 (null)</li><li>Include codes from <code>http://id.who.int/icd11/mms</code> where concept  is-a  XY0Y</li><li>Include codes from <a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-icd10.html\"><code>http://hl7.org/fhir/sid/icd-10</code></a> where concept  is-a  E03.9 (null)</li><li>Include codes from <a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-icd10.html\"><code>http://hl7.org/fhir/sid/icd-10</code></a> where concept  is-a  E66.9 (null)</li><li>Include codes from <a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-icd10.html\"><code>http://hl7.org/fhir/sid/icd-10</code></a> where concept  is-a  E10.9 (null)</li><li>Include codes from <a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-icd10.html\"><code>http://hl7.org/fhir/sid/icd-10</code></a> where concept  is-a  O03.9 (null)</li><li>Include codes from <a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-icd10.html\"><code>http://hl7.org/fhir/sid/icd-10</code></a> where concept  is-a  L53.9 (null)</li><li>Include codes from <a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-icd10.html\"><code>http://hl7.org/fhir/sid/icd-10</code></a> where concept  is-a  R60.0 (null)</li><li>Include codes from <a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-icd10.html\"><code>http://hl7.org/fhir/sid/icd-10</code></a> where concept  is-a  R52 (null)</li><li>Include codes from <a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-icd10.html\"><code>http://hl7.org/fhir/sid/icd-10</code></a> where concept  is-a  R50 (null)</li><li>Include codes from <a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-icd10.html\"><code>http://hl7.org/fhir/sid/icd-10</code></a> where concept  is-a  G51.0 (null)</li><li>Include codes from <a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-icd10.html\"><code>http://hl7.org/fhir/sid/icd-10</code></a> where concept  is-a  H92.0 (null)</li><li>Include codes from <a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-icd10.html\"><code>http://hl7.org/fhir/sid/icd-10</code></a> where concept  is-a  H93.1 (null)</li></ul></div>"},"url":"https://paho.org/fhir/esavi/ValueSet/EsaviOtroVS","version":"0.1.3409","name":"EsaviOtroVS","title":"Otros Códigos Evento Adverso","status":"active","date":"2021-03-11T00:00:00-03:00","publisher":"ESAVI -","contact":[{"name":"ESAVI -","telecom":[{"system":"url","value":"https://covid-19pharmacovigilance.paho.org/resources/updates-on-aefi"},{"system":"email","value":"rizzatodan@paho.org"}]}],"description":"Evento Adverso en otro sistema según Snomed, ATC y CIE-10","jurisdiction":[{"coding":[{"system":"http://unstats.un.org/unsd/methods/m49/m49.htm","code":"001"}]}],"compose":{"include":[{"system":"http://snomed.info/sct","filter":[{"property":"concept","op":"is-a","value":"391103005"}]},{"system":"http://id.who.int/icd11/mms","filter":[{"property":"concept","op":"is-a","value":"XY0Y"}]},{"system":"http://hl7.org/fhir/sid/icd-10","filter":[{"property":"concept","op":"is-a","value":"E03.9"}]},{"system":"http://hl7.org/fhir/sid/icd-10","filter":[{"property":"concept","op":"is-a","value":"E66.9"}]},{"system":"http://hl7.org/fhir/sid/icd-10","filter":[{"property":"concept","op":"is-a","value":"E10.9"}]},{"system":"http://hl7.org/fhir/sid/icd-10","filter":[{"property":"concept","op":"is-a","value":"O03.9"}]},{"system":"http://hl7.org/fhir/sid/icd-10","filter":[{"property":"concept","op":"is-a","value":"L53.9"}]},{"system":"http://hl7.org/fhir/sid/icd-10","filter":[{"property":"concept","op":"is-a","value":"R60.0"}]},{"system":"http://hl7.org/fhir/sid/icd-10","filter":[{"property":"concept","op":"is-a","value":"R52"}]},{"system":"http://hl7.org/fhir/sid/icd-10","filter":[{"property":"concept","op":"is-a","value":"R50"}]},{"system":"http://hl7.org/fhir/sid/icd-10","filter":[{"property":"concept","op":"is-a","value":"G51.0"}]},{"system":"http://hl7.org/fhir/sid/icd-10","filter":[{"property":"concept","op":"is-a","value":"H92.0"}]},{"system":"http://hl7.org/fhir/sid/icd-10","filter":[{"property":"concept","op":"is-a","value":"H93.1"}]}]}}},{"name":"cache-id","valueId":"0bfb9e6d-6bc4-4fa7-aff5-7fb6bc5b0d1e"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
+
+
+Response: 
+
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:978
+content-type:application/fhir+json
+date:Mon, 04 Dec 2023 15:02:42 GMT
+last-modified:Mon, 04 Dec 2023 15:02:42 GMT
+pragma:no-cache
+server:nginx
+x-request-id:50-376982
+
+{"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "x-caused-by-unknown-system","valueCanonical" : "http://paho.org/esavi/CodeSystem/EsaviOtroCS"},{"name" : "message","valueString" : "The CodeSystem http://paho.org/esavi/CodeSystem/EsaviOtroCS is unknown; The provided code 'http://paho.org/esavi/CodeSystem/EsaviOtroCS#39579001' is not in the value set 'https://paho.org/fhir/esavi/ValueSet/EsaviOtroVS|0.1.3409'"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"text" : "The CodeSystem http://paho.org/esavi/CodeSystem/EsaviOtroCS is unknown"},"location" : ["Coding.system"]},{"severity" : "error","code" : "code-invalid","details" : {"text" : "The provided code 'http://paho.org/esavi/CodeSystem/EsaviOtroCS#39579001' is not in the value set 'https://paho.org/fhir/esavi/ValueSet/EsaviOtroVS|0.1.3409'"},"location" : ["Coding.code"]}]}}]}
+</pre></head></html>

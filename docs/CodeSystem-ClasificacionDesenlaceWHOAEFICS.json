@@ -1,0 +1,67 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "ClasificacionDesenlaceWHOAEFICS",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This  code system <code>https://paho.org/fhir/esavi/CodeSystem/ClasificacionDesenlaceWHOAEFICS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">A1<a name=\"ClasificacionDesenlaceWHOAEFICS-A1\"> </a></td><td>Evento relacionado con la vacuna o cualquiera de sus componentes</td></tr><tr><td style=\"white-space:nowrap\">A2<a name=\"ClasificacionDesenlaceWHOAEFICS-A2\"> </a></td><td>Evento relacionado con una desviacion de calidad del producto biologico o la vacuna</td></tr><tr><td style=\"white-space:nowrap\">A3<a name=\"ClasificacionDesenlaceWHOAEFICS-A3\"> </a></td><td>Evento relacionado con un error programatico</td></tr><tr><td style=\"white-space:nowrap\">A4<a name=\"ClasificacionDesenlaceWHOAEFICS-A4\"> </a></td><td>Evento por estres que tuvo lugar inmediatemente antes, durante o inmediatamente despues del proceso de vacunacion</td></tr><tr><td style=\"white-space:nowrap\">B1<a name=\"ClasificacionDesenlaceWHOAEFICS-B1\"> </a></td><td>La relacion temporal es congruente, pero no hay evidencia definitiva suficiente sobre una relacion causal con la vacuna (puede ser un evento recientemente asociadoa  la vacuna [señal])</td></tr><tr><td style=\"white-space:nowrap\">B2<a name=\"ClasificacionDesenlaceWHOAEFICS-B2\"> </a></td><td>Factores determinantes para la clasificación muestran tendencias conflictivas a favor y en contra de una asociacion causal con la vacunació</td></tr><tr><td style=\"white-space:nowrap\">C<a name=\"ClasificacionDesenlaceWHOAEFICS-C\"> </a></td><td>Causa Coincidente</td></tr><tr><td style=\"white-space:nowrap\">NC<a name=\"ClasificacionDesenlaceWHOAEFICS-NC\"> </a></td><td>No clasificable</td></tr></table></div>"
+  },
+  "url" : "https://paho.org/fhir/esavi/CodeSystem/ClasificacionDesenlaceWHOAEFICS",
+  "version" : "0.1.3409",
+  "name" : "ClasificacionDesenlaceWHOAEFICS",
+  "title" : "Clasificación de causalidad WHO-AEFI",
+  "status" : "active",
+  "date" : "2021-03-11T00:00:00-03:00",
+  "publisher" : "ESAVI -",
+  "contact" : [{
+    "name" : "ESAVI -",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://covid-19pharmacovigilance.paho.org/resources/updates-on-aefi"
+    },
+    {
+      "system" : "email",
+      "value" : "rizzatodan@paho.org"
+    }]
+  }],
+  "description" : "Método de clasificación de causalidad WHO-AEFI",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001"
+    }]
+  }],
+  "content" : "complete",
+  "count" : 8,
+  "concept" : [{
+    "code" : "A1",
+    "display" : "Evento relacionado con la vacuna o cualquiera de sus componentes"
+  },
+  {
+    "code" : "A2",
+    "display" : "Evento relacionado con una desviacion de calidad del producto biologico o la vacuna"
+  },
+  {
+    "code" : "A3",
+    "display" : "Evento relacionado con un error programatico"
+  },
+  {
+    "code" : "A4",
+    "display" : "Evento por estres que tuvo lugar inmediatemente antes, durante o inmediatamente despues del proceso de vacunacion"
+  },
+  {
+    "code" : "B1",
+    "display" : "La relacion temporal es congruente, pero no hay evidencia definitiva suficiente sobre una relacion causal con la vacuna (puede ser un evento recientemente asociadoa  la vacuna [señal])"
+  },
+  {
+    "code" : "B2",
+    "display" : "Factores determinantes para la clasificación muestran tendencias conflictivas a favor y en contra de una asociacion causal con la vacunació"
+  },
+  {
+    "code" : "C",
+    "display" : "Causa Coincidente"
+  },
+  {
+    "code" : "NC",
+    "display" : "No clasificable"
+  }]
+}

@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Terminologias - Guía de Implementación FHIR de ESAVI v0.1.3409</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"8"}
+    h3,h4,h5,h6{--heading-prefix:"8"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Guía de Implementación FHIR de ESAVI</span>
+            <br/>
+            <span style="display:inline-block;">0.1.3409 - ci-build
+
+
+
+  <img alt="International flag" src="assets/images/001.svg" height="16" title="International"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Inicio</a>
+  </li>
+  <li>
+    <a href="objetivos.html">Objetivos</a>
+  </li>
+  <li>
+    <a href="alcance.html">Alcance</a>
+  </li>
+  <li>
+    <a href="uso.html">Uso</a>
+  </li>
+  <li>
+    <a href="actores_CasosUso.html">Actores y Casos de Uso</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artefactos</a>
+  </li>
+  <li>
+    <a href="mapeos.html">Mapeos</a>
+  </li>
+  <li>
+    <a href="terminologias.html">Terminologias</a>
+  </li>
+  <li>
+    <a href="descargas.html">Descargas</a>
+  </li>
+  <li>
+    <a href="generalidades.html">Generalidades</a>
+  </li>
+  <li>
+    <a href="consideraciones.html">Consideraciones</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Terminologias</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Guía de Implementación FHIR de ESAVI - Local Development build (v0.1.3409) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://paho.org/fhir/esavi/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Terminologias</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#whodrug" id="markdown-toc-whodrug">WHODrug</a></li>
+  <li><a href="#meddra" id="markdown-toc-meddra">MedDRA</a></li>
+  <li><a href="#icd-11" id="markdown-toc-icd-11">ICD 11</a></li>
+  <li><a href="#icd-10" id="markdown-toc-icd-10">ICD 10</a></li>
+  <li><a href="#snomed-ct" id="markdown-toc-snomed-ct">SNOMED CT</a></li>
+  <li><a href="#atc" id="markdown-toc-atc">ATC</a></li>
+</ul>
+
+</div>
+<p>Esta página proporciona detalles sobre las terminologías utilizadas en la guía ESAVI FHIR de OPS, pero que son propiedad y están regidas por otras organizaciones externas a HL7.</p>
+
+<p>Los implementadores y evaluadores que utilicen o hagan referencia a cualquiera de estos code systems para cualquier artefacto de contenido terminológico en una especificación HL7 <strong>deberán</strong> cumplir con los requisitos de licencia específicos para la terminología relevante. Las licencias de terminología <strong>deberán</strong> obtenerse del propietario del sistema de códigos para cada sistema de códigos y/u otro artefacto específico utilizado. Es responsabilidad exclusiva de cada organización que implemente o pruebe cualquier especificación HL7 para garantizar que sus implementaciones cumplan con los requisitos de licencia de cada terminología externa utilizada.</p>
+
+<p>Más información sobre <a href="https://confluence.hl7.org/display/TA/External+Terminologies+-+Information">Terminologías externas</a></p>
+
+<h3 id="whodrug">WHODrug</h3>
+
+<p>WHODrug es una base de datos estándar de referencia internacional sobre medicamentos, desarrollada y mantenida por el Centro de Monitoreo de Uppsala (UMC). WHODrug facilita el registro, análisis e intercambio de información sobre medicamentos, principalmente  para registrar y analizar datos de seguridad y eficacia de medicamentos en ensayos clínicos, estudios postcomercialización y actividades de farmacovigilancia. WHODrug proporciona una terminología uniforme y estructurada para describir los ingredientes activos de los medicamentos, sus formas farmacéuticas, rutas de administración y otras características relevantes. Esta herramienta facilita el intercambio de información entre diferentes organizaciones y países, mejorando la calidad de los datos y la comparabilidad de los resultados.</p>
+
+<p>WHODrug incluye diferentes identificadores dentro de su estructura. Para la presente guía ESAVI FHIR se puede incluir alguno de los siguientes, haciendo referencia a los codesystems correspondientes:</p>
+
+<ol>
+  <li><strong>Drug Code:</strong> el Código de Medicamento identifica de forma única el nombre de una droga y su(s) sustancia(s) activa(s), o un término general. Es una agregación del Número de Registro de Medicamento (DrugRecNo), el Número de Secuencia 1 (Seq1) y el Número de Secuencia 2 (Seq2). Al estar formado por tres códigos tiene significado per se y puede ser utilizado para diferenciar o agrupar medicamentos por distintos criterios. Posee un Drug name asociado, que puede ser usado como descripción.</li>
+  <li><strong>Medicinal Product Identifier (MPID) o identificador del producto medicinal</strong>, es un número de serie sin significado intrínseco que identifica de forma única una combinación específica de los siguientes datos:
+    <ol>
+      <li>Nombre del medicamento (Drug name)</li>
+      <li>Especificador de nombre (Name Specifier)</li>
+      <li>Sustancia activa (Active substance)</li>
+      <li>País de ventas (Country of sales)</li>
+      <li>Titular de la autorización de comercialización (Marketing authorisation holder)</li>
+      <li>Forma farmacéutica (Pharmaceutical form)</li>
+      <li>Concentración (Strength)</li>
+    </ol>
+  </li>
+</ol>
+
+<p>Como WHODrug no tiene fachada FHIR oficial, se brindan las siguientes URI para cada codesystem:</p>
+
+<p>Drug Code URI: XXX</p>
+
+<p>MPID URI: XXX</p>
+
+<p>URI retirado: <a href="http://terminology.hl7.org/CodeSystem/W1-W2">http://terminology.hl7.org/CodeSystem/W1-W2</a></p>
+
+<p>Más info en:</p>
+
+<p><a href="http://build.fhir.org/ig/HL7/UTG/CodeSystem-W1-W2.html">http://build.fhir.org/ig/HL7/UTG/CodeSystem-W1-W2.html</a> (retirado)</p>
+
+<p><a href="https://who-umc.org/whodrug/whodrug-global/implementing-whodrug/">https://who-umc.org/whodrug/whodrug-global/implementing-whodrug/</a></p>
+
+<h3 id="meddra">MedDRA</h3>
+
+<p>MedDRA es una terminología médica internacional estandarizada multilingüe que se puede utilizar para la comunicación reglamentaria y la evaluación de datos relacionados con medicamentos para uso humano. MedDRA está diseñado para su uso en el registro, la documentación y el seguimiento de la seguridad de los medicamentos en todas las fases del ciclo de desarrollo (es decir, desde los ensayos clínicos hasta la vigilancia posterior a la comercialización).</p>
+
+<p>MedDRA está estructurado como una jerarquía de cinco niveles. Las clases de órganos del sistema (SOC) son los términos más amplios (p. ej., trastornos cardíacos, investigaciones). El nivel más bajo de la terminología es el nivel Término de nivel más bajo (LLT). Hay 26 SOC y más de 60 000 LLT.</p>
+
+<p>MedDRA fue desarrollado como una iniciativa de ICH y es mantenido y distribuido por la Organización de Servicios de Apoyo y Mantenimiento de MedDRA (MSSO).</p>
+
+<p>Versiones: las versiones se publican dos veces al año y se identifican con 2 números separados por un punto decimal (por ejemplo, 7.0, 7.1, 8.0 y 8.1). Las versiones .0 pueden contener cambios en la jerarquía. Las versiones .1 solo contendrán adiciones, movimientos y modificaciones de términos de concepto médico (Términos preferidos, PT) y términos de nivel de codificación (Términos de nivel más bajo, LLT).</p>
+
+<p>Conceptos: los conceptos se representan mediante un código MedDRA y un nombre de término MedDRA. El código MedDRA es un código numérico de ocho dígitos. Los códigos MedDRA son únicos y nunca se reutilizan. El nombre del término MedDRA es un campo alfanumérico de 100 caracteres que se utiliza para describir el concepto o término.</p>
+
+<p>Más información en:</p>
+
+<p><a href="https://confluence.hl7.org/display/TA/MedDRA">https://confluence.hl7.org/display/TA/MedDRA</a></p>
+
+<p><a href="https://terminology.hl7.org/CodeSystem-mdr.html">https://terminology.hl7.org/CodeSystem-mdr.html</a></p>
+
+<p>Canonical URI: <a href="https://terminology.hl7.org/CodeSystem-mdr.html">https://terminology.hl7.org/CodeSystem-mdr.html</a> o <a href="https://www.meddra.org/">https://www.meddra.org</a> ??</p>
+
+<h3 id="icd-11">ICD 11</h3>
+
+<p>La Clasificación Internacional de Enfermedades y Problemas de Salud Relacionados (CIE, o ICD en inglés) en su versión 11, es una herramienta para registrar, informar y agrupar condiciones y factores que influyen en la salud. Contiene categorías para enfermedades, condiciones relacionadas con la salud y causas externas de enfermedad o muerte. El propósito de la CIE es permitir el registro, análisis, interpretación y comparación sistemáticos de los datos de mortalidad y morbilidad recopilados en diferentes países o áreas y en diferentes momentos. La CIE se utiliza para traducir diagnósticos de enfermedades y otros problemas de salud en un código alfanumérico, que permite el almacenamiento, la recuperación y el análisis de los datos. La CIE se ha convertido en la clasificación diagnóstica estándar internacional para todos los fines epidemiológicos generales y de gestión de la salud. Estos incluyen el análisis de la situación general de salud de los grupos de población, el seguimiento de la incidencia y prevalencia de enfermedades y otros problemas de salud en relación con otras variables, como las características y circunstancias de los individuos afectados. ICD también es adecuado para estudios de aspectos financieros de un sistema de salud, como la facturación o la asignación de recursos. Incluye códigos para medicamentos y vacunas, independientemente de su autorización por parte de la OMS.</p>
+
+<p>Más info en: <a href="https://confluence.hl7.org/pages/viewpage.action?pageId=97481986">https://confluence.hl7.org/pages/viewpage.action?pageId=97481986</a></p>
+
+<p>Foundation Canonical URL:  <a href="http://id.who.int/icd/entity">http://id.who.int/icd/entity</a></p>
+
+<p>Mortality and Morbidity Statistics (MMS) Canonical URL: <a href="http://id.who.int/icd/release/11/mms">http://id.who.int/icd/release/11/mms</a> (Updated 20210524)</p>
+
+<h3 id="icd-10">ICD 10</h3>
+
+<p>La Clasificación Internacional de Enfermedades en su versión 10 es un sistema de categorías mutuamente excluyentes a las cuales se asignan enfermedades, lesiones y motivos de consulta de acuerdo con criterios previamente establecidos. La clasificación abarca todo el rango de enfermedades existentes en la terminología médica (nomenclatura internacional de enfermedades).</p>
+
+<p>No incluye medicamentos.</p>
+
+<p>Más info en:</p>
+
+<p><a href="https://terminology.hl7.org/ICD.html">https://terminology.hl7.org/ICD.html</a></p>
+
+<p><a href="https://terminology.hl7.org/CodeSystem-icd10.html">https://terminology.hl7.org/CodeSystem-icd10.html</a></p>
+
+<p>Canonical URI: <a href="http://hl7.org/fhir/sid/icd-10">http://hl7.org/fhir/sid/icd-10</a></p>
+
+<h3 id="snomed-ct">SNOMED CT</h3>
+
+<p>SNOMED CT es una terminología básica de atención médica clínica que contiene conceptos con significados únicos y definiciones basadas en lógica formal organizadas en jerarquías.</p>
+
+<p>La edición internacional incluye el contenido fundamental de SNOMED CT del cual todos los demás módulos de SNOMED CT deben tener dependencias.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>SNOMED International identifica actualmente el</td>
+      <td>módulo central de SNOMED CT (concepto central de metadatos)</td>
+      <td>como módulo de enfoque para la edición internacional. Sólo el</td>
+      <td>módulo de componentes del modelo SNOMED CT</td>
+      <td>se especifica actualmente como una dependencia.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>La Edición Internacional puede complementarse con extensiones, mantenidas y distribuidas por Miembros y Afiliados, para cumplir con requisitos adicionales nacionales, locales y organizacionales.</p>
+
+<p>Más info en:</p>
+
+<p><a href="https://confluence.hl7.org/display/TA/SNOMED+CT+International+Edition">https://confluence.hl7.org/display/TA/SNOMED+CT+International+Edition</a></p>
+
+<p><a href="https://terminology.hl7.org/SNOMEDCT.html">https://terminology.hl7.org/SNOMEDCT.html</a></p>
+
+<p>Canonical URI:  <a href="http://snomed.info/sct">http://snomed.info/sct</a></p>
+
+<h3 id="atc">ATC</h3>
+
+<p>La Clasificación Anatómica Terapéutica Química (ATC) es una clasificación jerárquica de 5 niveles de principios activos utilizados en medicamentos. Está diseñado para servir como una herramienta para el seguimiento de la utilización de medicamentos y la investigación con el fin de mejorar la calidad del uso de medicamentos. Un componente de esto es la presentación y comparación de estadísticas de consumo de drogas a nivel internacional y otros. El sistema tiene catorce grupos anatómicos/farmacológicos principales o 1ros niveles. Cada grupo principal de ATC se divide en 2.º nivel, que pueden ser grupos farmacológicos o terapéuticos. Los niveles 3 y 4 son subgrupos químicos, farmacológicos o terapéuticos y el nivel 5 es la sustancia química. Los niveles 2, 3 y 4 se utilizan a menudo para identificar subgrupos farmacológicos cuando se considera más apropiado que los subgrupos terapéuticos o químicos.</p>
+
+<p>Más info en: <a href="https://confluence.hl7.org/display/TA/Anatomical+Therapeutic+Chemical+%28ATC%29+Classification">https://confluence.hl7.org/display/TA/Anatomical+Therapeutic+Chemical+%28ATC%29+Classification</a></p>
+
+<p><a href="https://terminology.hl7.org/CodeSystem-v3-WC.html">https://terminology.hl7.org/CodeSystem-v3-WC.html</a></p>
+
+<p>Canonical URI: <a href="http://www.whocc.no/atc">http://www.whocc.no/atc</a></p>
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://covid-19pharmacovigilance.paho.org/resources/updates-on-aefi">ESAVI -</a>.  Package uv.esavi#0.1.3409 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Dec 4, 2023 12:02-0300">2023-12-04</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                  | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://github.com/PanAmericanHealthOrganization/OPS-ESAVI">Issues</a>
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+  
+    
+    <script type="text/javascript">
+     /* <![CDATA[ */
+        $(':header[id]').each(function() { // apply this to each heading
+          var id = $(this).attr('id');
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSdlp9-wCnxYL3Sf823WdFWg7IX9r7ycJxUO8ys66fJrq2uEPw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Comentarios IG';  // The feedback label is a string
+            
+
+            
+              var parameterFieldId = '';
+              var parameterVariableName = '';
+              var parameterValue = '';
+              parameterFieldId = 'entry.'+parseInt(1894621411).toString(); // the parameter fields is parsed as an integer, i presume this means no code can be injected there.
+              parameterVariableName = 'pageTitle';
+
+              switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
+                default:
+                    console.log("Parameter value not supported");
+                    break;
+                  case "pageTitle":
+                    parameterValue = encodeURIComponent($(document).attr('title'));
+                    break;
+                  case "sectionId":
+                    parameterValue = id;
+                    break;
+                  case "sectionName":
+                    parameterValue = document.getElementById(id).textContent;
+                    break;
+              }
+/* <![CDATA[ */
+              feedbackurl = feedbackurl + '&';
+              feedbackurl = feedbackurl + parameterFieldId + '=' + parameterValue;
+/* ]]> */
+            
+              var parameterFieldId = '';
+              var parameterVariableName = '';
+              var parameterValue = '';
+              parameterFieldId = 'entry.'+parseInt(823462654).toString(); // the parameter fields is parsed as an integer, i presume this means no code can be injected there.
+              parameterVariableName = 'sectionName';
+
+              switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
+                default:
+                    console.log("Parameter value not supported");
+                    break;
+                  case "pageTitle":
+                    parameterValue = encodeURIComponent($(document).attr('title'));
+                    break;
+                  case "sectionId":
+                    parameterValue = id;
+                    break;
+                  case "sectionName":
+                    parameterValue = document.getElementById(id).textContent;
+                    break;
+              }
+/* <![CDATA[ */
+              feedbackurl = feedbackurl + '&';
+              feedbackurl = feedbackurl + parameterFieldId + '=' + parameterValue;
+/* ]]> */
+            
+            
+          if (id) { //To make sure the element has an id
+            $(this).append(function () {
+              return $('<a/>', {
+                id,
+                href: feedbackurl,
+                text: feedbacklabel+' ' ,
+                class: 'feedback',
+                target: '_blank',
+                onclick: 'window.open('+feedbackurl+',\'newwindow\',\'width=300,height=250\');return false;'
+        
+              });
+            });
+          }
+        }) 
+/* ]]> */
+      </script>  
+    
+  
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

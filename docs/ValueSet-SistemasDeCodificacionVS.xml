@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="SistemasDeCodificacionVS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-SistemasDeCodificacionCS.html"><code>https://paho.org/fhir/esavi/CodeSystem/SistemasDeCodificacionCS</code></a></li></ul></div>
+  </text>
+  <url value="https://paho.org/fhir/esavi/ValueSet/SistemasDeCodificacionVS"/>
+  <version value="0.1.3409"/>
+  <name value="SistemasDeCodificacionVS"/>
+  <title value="Sistemas De Codificacion"/>
+  <status value="active"/>
+  <date value="2021-03-11T00:00:00-03:00"/>
+  <publisher value="ESAVI -"/>
+  <contact>
+    <name value="ESAVI -"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://covid-19pharmacovigilance.paho.org/resources/updates-on-aefi"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="rizzatodan@paho.org"/>
+    </telecom>
+  </contact>
+  <description value="Sistemas De Codificacion para Determinación de Códigos"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://paho.org/fhir/esavi/CodeSystem/SistemasDeCodificacionCS"/>
+    </include>
+  </compose>
+</ValueSet>

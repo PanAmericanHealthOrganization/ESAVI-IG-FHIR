@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="ClasificacionDesenlaceCS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This  code system <code>https://paho.org/fhir/esavi/CodeSystem/ClasificacionDesenlaceCS</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">1<a name="ClasificacionDesenlaceCS-1"> </a></td><td>Recuperado Completamente</td></tr><tr><td style="white-space:nowrap">2<a name="ClasificacionDesenlaceCS-2"> </a></td><td>En recuperación</td></tr><tr><td style="white-space:nowrap">3<a name="ClasificacionDesenlaceCS-3"> </a></td><td>No recuperado</td></tr><tr><td style="white-space:nowrap">4<a name="ClasificacionDesenlaceCS-4"> </a></td><td>Recuperado con secuelas</td></tr><tr><td style="white-space:nowrap">5<a name="ClasificacionDesenlaceCS-5"> </a></td><td>Muerte</td></tr><tr><td style="white-space:nowrap">0<a name="ClasificacionDesenlaceCS-0"> </a></td><td>Desconocido</td></tr></table></div>
+  </text>
+  <url value="https://paho.org/fhir/esavi/CodeSystem/ClasificacionDesenlaceCS"/>
+  <version value="0.1.3409"/>
+  <name value="ClasificacionDesenlaceCS"/>
+  <title value="Desenlaces Tras ESAVI"/>
+  <status value="active"/>
+  <date value="2021-03-11T00:00:00-03:00"/>
+  <publisher value="ESAVI -"/>
+  <contact>
+    <name value="ESAVI -"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://covid-19pharmacovigilance.paho.org/resources/updates-on-aefi"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="rizzatodan@paho.org"/>
+    </telecom>
+  </contact>
+  <description value="Clasificación de Desenlace Tras Sufrir ESAVI"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <content value="complete"/>
+  <count value="6"/>
+  <concept>
+    <code value="1"/>
+    <display value="Recuperado Completamente"/>
+  </concept>
+  <concept>
+    <code value="2"/>
+    <display value="En recuperación"/>
+  </concept>
+  <concept>
+    <code value="3"/>
+    <display value="No recuperado"/>
+  </concept>
+  <concept>
+    <code value="4"/>
+    <display value="Recuperado con secuelas"/>
+  </concept>
+  <concept>
+    <code value="5"/>
+    <display value="Muerte"/>
+  </concept>
+  <concept>
+    <code value="0"/>
+    <display value="Desconocido"/>
+  </concept>
+</CodeSystem>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="RespuestaSiNoNosabeVS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-RespuestaSiNoNosabeCS.html"><code>https://paho.org/fhir/esavi/CodeSystem/RespuestaSiNoNosabeCS</code></a></li></ul></div>
+  </text>
+  <url value="https://paho.org/fhir/esavi/ValueSet/RespuestaSiNoNosabeVS"/>
+  <version value="0.1.3409"/>
+  <name value="RespuestaSiNoNosabeVS"/>
+  <title value="Respuestas Simples"/>
+  <status value="active"/>
+  <date value="2021-03-11T00:00:00-03:00"/>
+  <publisher value="ESAVI -"/>
+  <contact>
+    <name value="ESAVI -"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://covid-19pharmacovigilance.paho.org/resources/updates-on-aefi"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="rizzatodan@paho.org"/>
+    </telecom>
+  </contact>
+  <description value="Códigos para capturar respuestas simples si/no/no sabe"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://paho.org/fhir/esavi/CodeSystem/RespuestaSiNoNosabeCS"/>
+    </include>
+  </compose>
+</ValueSet>

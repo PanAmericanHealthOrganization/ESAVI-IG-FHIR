@@ -1,0 +1,301 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://hl7.org/fhir/administrative-gender",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "AdministrativeGender",
+      "title" : "AdministrativeGender",
+      "description" : "The gender of a person used for administrative purposes.",
+      "oids" : ["2.16.840.1.113883.4.642.4.2"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-administrative-gender.html" : "AdministrativeGender"
+    },
+    {
+      "url" : "http://hl7.org/fhir/identifier-use",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "IdentifierUse",
+      "title" : "IdentifierUse",
+      "description" : "Identifies the purpose for this identifier, if known .",
+      "oids" : ["2.16.840.1.113883.4.642.4.58"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-identifier-use.html" : "IdentifierUse"
+    },
+    {
+      "url" : "http://hl7.org/fhir/questionnaire-answers-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "QuestionnaireResponseStatus",
+      "title" : "QuestionnaireResponseStatus",
+      "description" : "Lifecycle status of the questionnaire response.",
+      "oids" : ["2.16.840.1.113883.4.642.4.448"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-questionnaire-answers-status.html" : "QuestionnaireResponseStatus"
+    },
+    {
+      "url" : "http://hl7.org/fhir/sid/icd-10",
+      "version" : "2.1.1",
+      "status" : "retired",
+      "name" : "Icd10",
+      "title" : "ICD-10",
+      "description" : "International Classification of Diseases revision 10 (ICD 10)",
+      "oids" : ["2.16.840.1.113883.6.3"],
+      "uses" : {
+      },
+      "ValueSet-EnfermedadesPreviasCodificacionVS.html" : "Enfermedades previas en un ESAVI-PAHO",
+      "ValueSet-ComplicacionEmbarazoOtroVS.html" : "Otros Códigos Complicaciones en Embarazo ESAVI ",
+      "ValueSet-EsaviOtroVS.html" : "Otros Códigos Evento Adverso"
+    },
+    {
+      "url" : "http://snomed.info/sct",
+      "version" : null,
+      "status" : "active",
+      "name" : "SNOMED_CT",
+      "title" : "SNOMED CT (all versions)",
+      "description" : "SNOMED CT is the most comprehensive and precise clinical health terminology product in the world, owned and distributed around the world by The International Health Terminology Standards Development Organisation (IHTSDO).",
+      "oids" : ["2.16.840.1.113883.6.96"],
+      "uses" : {
+      },
+      "ValueSet-FormaFarmaceuticaVS.html" : "Identificación Formas Farmacéuticas",
+      "http://hl7.org/fhir/R4/valueset-questionnaire-answers.html" : "Questionnaire Answer Codes",
+      "ValueSet-ViaAdminMedicamentoVS.html" : "Vías de Administración de Medicamentos",
+      "ValueSet-EnfermedadesPreviasCodificacionVS.html" : "Enfermedades previas en un ESAVI-PAHO",
+      "ValueSet-ComplicacionEmbarazoOtroVS.html" : "Otros Códigos Complicaciones en Embarazo ESAVI ",
+      "ValueSet-EsaviOtroVS.html" : "Otros Códigos Evento Adverso",
+      "ValueSet-CodigoMedicamentoVS.html" : "Codigo Medicamento",
+      "ValueSet-CodigoNoWhoVacunaVS.html" : "Código no WHODrug de la Vacuna"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "IdentifierType",
+      "title" : "identifierType",
+      "description" : "HL7-defined code system of concepts specifying type of identifier. Used in HL7 Version 2.x messaging data types CX, PLN, PPN, XCN and XON.",
+      "oids" : ["2.16.840.1.113883.18.108"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-identifier-type.html" : "IdentifierType"
+    },
+    {
+      "url" : "http://www.whocc.no/atc",
+      "version" : "2.0.1",
+      "status" : "active",
+      "name" : "WC",
+      "title" : "WHO ATC",
+      "description" : "WHO ATC",
+      "oids" : ["2.16.840.1.113883.6.73"],
+      "uses" : {
+      },
+      "ValueSet-CodigoMedicamentoVS.html" : "Codigo Medicamento",
+      "ValueSet-CodigoNoWhoVacunaVS.html" : "Código no WHODrug de la Vacuna"
+    },
+    {
+      "url" : "https://paho.org/fhir/esavi/CodeSystem/ClasificacionDesenlaceCS",
+      "version" : "0.1.3409",
+      "status" : "active",
+      "name" : "ClasificacionDesenlaceCS",
+      "title" : "Desenlaces Tras ESAVI",
+      "description" : "Clasificación de Desenlace Tras Sufrir ESAVI",
+      "uses" : {
+      },
+      "ValueSet-ClasificacionDesenlaceVS.html" : "Desenlaces Tras ESAVI"
+    },
+    {
+      "url" : "https://paho.org/fhir/esavi/CodeSystem/ClasificacionDesenlaceNaranjoCS",
+      "version" : "0.1.3409",
+      "status" : "active",
+      "name" : "ClasificacionDesenlaceNaranjoCS",
+      "title" : "Clasificación de causalidad Naranjo",
+      "description" : "Método de clasificación de causalidad Naranjo",
+      "uses" : {
+      },
+      "ValueSet-ClasificacionDesenlaceNaranjoVS.html" : "Clasificación de causalidad Naranjo"
+    },
+    {
+      "url" : "https://paho.org/fhir/esavi/CodeSystem/ClasificacionDesenlaceWHOAEFICS",
+      "version" : "0.1.3409",
+      "status" : "active",
+      "name" : "ClasificacionDesenlaceWHOAEFICS",
+      "title" : "Clasificación de causalidad WHO-AEFI",
+      "description" : "Método de clasificación de causalidad WHO-AEFI",
+      "uses" : {
+      },
+      "ValueSet-ClasificacionDesenlaceWHOAEFIVS.html" : "Clasificación de causalidad WHO-AEFI"
+    },
+    {
+      "url" : "https://paho.org/fhir/esavi/CodeSystem/ClasificacionDesenlaceWHOUMCCS",
+      "version" : "0.1.3409",
+      "status" : "active",
+      "name" : "ClasificacionDesenlaceWHOUMCCS",
+      "title" : "Clasificación de causalidad WHO-UMC",
+      "description" : "Método de clasificación de causalidad WHO-UMC",
+      "uses" : {
+      },
+      "ValueSet-ClasificacionDesenlaceWHOUMCVS.html" : "Clasificación de causalidad WHO-UMC"
+    },
+    {
+      "url" : "https://paho.org/fhir/esavi/CodeSystem/CodigoWhoFabricanteCS",
+      "version" : "0.1.3409",
+      "status" : "active",
+      "name" : "CodigoWhoFabricanteCS",
+      "title" : "Fabricante   Vacuna",
+      "description" : "Códigos Fabricantes Vacunas de WHO",
+      "uses" : {
+      },
+      "ValueSet-CodigoWhoFabricanteVS.html" : "Fabricantes Vacuna"
+    },
+    {
+      "url" : "https://paho.org/fhir/esavi/CodeSystem/ComplicacionEmbarazoCS",
+      "version" : "0.1.3409",
+      "status" : "active",
+      "name" : "ComplicacionEmbarazoCS",
+      "title" : "Complicaciones de Embarazo",
+      "description" : "Códigos para las Complicaciones de Embarazo",
+      "uses" : {
+      },
+      "ValueSet-ComplicacionEmbarazoVS.html" : "Complicaciones Embarazo"
+    },
+    {
+      "url" : "https://paho.org/fhir/esavi/CodeSystem/DirOrgNotiCS",
+      "version" : "0.1.3409",
+      "status" : "active",
+      "name" : "DirOrgNotiCS",
+      "title" : "Códigos PAHO para Direcciones",
+      "description" : "Códigos para Direcciones según PAHO",
+      "uses" : {
+      },
+      "ValueSet-DirOrgNotiVS.html" : "Códigos PAHO para Direcciones"
+    },
+    {
+      "url" : "https://paho.org/fhir/esavi/CodeSystem/ModoConfirmacionInfeccionCS",
+      "version" : "0.1.3409",
+      "status" : "active",
+      "name" : "ModoConfirmacionInfeccionCS",
+      "title" : "Modo de Confirmación de la Infección",
+      "description" : "Modos de Confirmacion de Infección por COVID-19",
+      "uses" : {
+      },
+      "ValueSet-ModoConfirmacionInfeccionVS.html" : "Modos Confirmación Infección COVID-19"
+    },
+    {
+      "url" : "https://paho.org/fhir/esavi/CodeSystem/ModoVerificacionVacunaCS",
+      "version" : "0.1.3409",
+      "status" : "active",
+      "name" : "ModoVerificacionVacunaCS",
+      "title" : "Modo de Verificación de Vacunación Previa",
+      "description" : "Modos de Verificacion de Vacuna o Esquema de Vacunación Completado",
+      "uses" : {
+      },
+      "ValueSet-ModoVerificacionVacunaVS.html" : "Modos Verificación Vacuna Previa"
+    },
+    {
+      "url" : "https://paho.org/fhir/esavi/CodeSystem/ProfesionalNotificadorCS",
+      "version" : "0.1.3409",
+      "status" : "active",
+      "name" : "ProfesionalNotificadorCS",
+      "title" : "Tipo de Profesional Notificador",
+      "description" : "Códigos de Tipo de Notificadores de ESAVI para PAHO",
+      "uses" : {
+      },
+      "ValueSet-ProfesionalNotificadorVS.html" : "Tipo de Profesional Notificador"
+    },
+    {
+      "url" : "https://paho.org/fhir/esavi/CodeSystem/RespuestaSiNoNosabeCS",
+      "version" : "0.1.3409",
+      "status" : "active",
+      "name" : "RespuestaSiNoNosabeCS",
+      "title" : "Respuestas Simples",
+      "description" : "Códigos para capturar respuestas simples si/no/no sabe",
+      "uses" : {
+      },
+      "ValueSet-RespuestaSiNoNosabeVS.html" : "Respuestas Simples"
+    },
+    {
+      "url" : "https://paho.org/fhir/esavi/CodeSystem/SistemaClasfCausalidadCS",
+      "version" : "0.1.3409",
+      "status" : "active",
+      "name" : "SistemaClasfCausalidadCS",
+      "title" : "Tipo de Método de clasificación de causalidad",
+      "description" : "Códigos para Tipos de Métodos de Clasificación de Causalidad",
+      "uses" : {
+      },
+      "ValueSet-SistemaClasfCausalidadVS.html" : "Tipo de Método de clasificación de causalidad"
+    },
+    {
+      "url" : "https://paho.org/fhir/esavi/CodeSystem/SistemasDeCodificacionCS",
+      "version" : "0.1.3409",
+      "status" : "active",
+      "name" : "SistemasDeCodificacionCS",
+      "title" : "Sistemas De Codificacion",
+      "description" : "Sistemas De Codificacion para Determinación de Códigos",
+      "uses" : {
+      },
+      "ValueSet-SistemasDeCodificacionVS.html" : "Sistemas De Codificacion"
+    },
+    {
+      "url" : "https://paho.org/fhir/esavi/CodeSystem/WHODrugDC",
+      "version" : "0.1.3409",
+      "status" : "active",
+      "name" : "WHODrugDC",
+      "title" : "WHODrug DrugCode",
+      "description" : "Fragmento de WHODrug completo con nombres genéricos y comerciales en inglés mayormente codificados por drugcode",
+      "uses" : {
+      },
+      "ValueSet-CodigoWhoVacunaVS.html" : "Codigo WHODrug de la vacuna"
+    },
+    {
+      "url" : "https://paho.org/fhir/esavi/CodeSystem/WHODrugPMID",
+      "version" : "0.1.3409",
+      "status" : "active",
+      "name" : "WHODrugPMID",
+      "title" : "WHODrug PMID",
+      "description" : "Fragmento de WHODrug completo con nombres genericos y comerciales en inglés mayormente codificados por PMID",
+      "uses" : {
+      },
+      "ValueSet-CodigoWhoVacunaVS.html" : "Codigo WHODrug de la vacuna"
+    },
+    {
+      "url" : "https://www.meddra.org",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "MedDRA",
+      "title" : "Medical Dictionary for Regulatory Activities",
+      "description" : "MedDRA is a multilingual standardised international medical terminology which can be used for regulatory communication and evaluation of data pertaining to medicinal products for human use.  MedDRA is designed for use in the registration, documentation and safety monitoring of medicinal products through all phases of the development cycle (i.e., from clinical trials to post-marketing surveillance).#13;\n\r\nMedDRA is structured as a five level hierarchy. System Organ Classes (SOCs) are the broadest terms (e.g., Cardiac disorders, Investigations). The lowest level of the terminology is the Lowest Level Term (LLT) level.",
+      "oids" : ["2.16.840.1.113883.6.163"],
+      "uses" : {
+      },
+      "ValueSet-EsaviMedDRAVS.html" : "Código MedDRA del Evento Adverso notificado",
+      "ValueSet-CodigoMedDRAEnfPreviaVS.html" : "Códigos de MedDRA para representar enfermedades previas en un ESAVI-PAHO",
+      "ValueSet-ComplicacionEmbarazoMedDRAVS.html" : "Códigos MEDDRA Complicaciones en Embarazo ESAVI "
+    },
+    {
+      "url" : "urn:ietf:bcp:47",
+      "version" : "2.0.1",
+      "status" : "active",
+      "name" : "Ietf3066",
+      "title" : "Tags for the Identification of Languages",
+      "description" : "Older value from OID registry.  Superceded; see recommendations in BCP-47.",
+      "oids" : ["2.16.840.1.113883.6.121"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-languages.html" : "Common Languages"
+    },
+    {
+      "url" : "urn:iso:std:iso:3166",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "ISO3166Part1",
+      "title" : "ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code",
+      "description" : "ISO 3166-1 establishes codes that represent the current names of countries, dependencies, and other areas of particular geopolitical interest, on the basis of country names obtained from the United Nations.",
+      "oids" : ["1.0.3166.1"],
+      "uses" : {
+      },
+      "ValueSet-CodPaises.html" : "Códigos de Países"
+    }
+  ]
+}

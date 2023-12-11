@@ -1,0 +1,54 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "CodigoMedicamentoVS",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  105590001 (null)</li><li>Include all codes defined in <a href=\"http://www.whocc.no/atc\"><code>http://www.whocc.no/atc</code></a></li><li>Include codes from <code>http://id.who.int/icd11/mms</code> where concept  is-a  XM4843</li></ul></div>"
+  },
+  "url" : "https://paho.org/fhir/esavi/ValueSet/CodigoMedicamentoVS",
+  "version" : "0.1.3409",
+  "name" : "CodigoMedicamentoVS",
+  "title" : "Codigo Medicamento",
+  "status" : "active",
+  "date" : "2021-03-11T00:00:00-03:00",
+  "publisher" : "ESAVI -",
+  "contact" : [{
+    "name" : "ESAVI -",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://covid-19pharmacovigilance.paho.org/resources/updates-on-aefi"
+    },
+    {
+      "system" : "email",
+      "value" : "rizzatodan@paho.org"
+    }]
+  }],
+  "description" : "Codigo Medicamento",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "105590001"
+      }]
+    },
+    {
+      "system" : "http://www.whocc.no/atc"
+    },
+    {
+      "system" : "http://id.who.int/icd11/mms",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "XM4843"
+      }]
+    }]
+  }
+}

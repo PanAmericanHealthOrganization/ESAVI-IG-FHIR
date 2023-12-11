@@ -1,0 +1,56 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://paho.org/fhir/esavi/CodeSystem/SistemasDeCodificacionCS> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "SistemasDeCodificacionCS"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This  code system <code>https://paho.org/fhir/esavi/CodeSystem/SistemasDeCodificacionCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"SistemasDeCodificacionCS-1\"> </a></td><td>SNOMED-CT</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"SistemasDeCodificacionCS-2\"> </a></td><td>WHODrug</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"SistemasDeCodificacionCS-3\"> </a></td><td>ATC</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"SistemasDeCodificacionCS-4\"> </a></td><td>CIE-11</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://paho.org/fhir/esavi/CodeSystem/SistemasDeCodificacionCS"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.3409"] ; # 
+  fhir:name [ fhir:v "SistemasDeCodificacionCS"] ; # 
+  fhir:title [ fhir:v "Sistemas De Codificacion"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2021-03-11T00:00:00-03:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "ESAVI -"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "ESAVI -" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://covid-19pharmacovigilance.paho.org/resources/updates-on-aefi" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rizzatodan@paho.org" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Sistemas De Codificacion para Determinación de Códigos"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "001" ]
+     ] )
+  ] ) ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "4"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "1" ] ;
+     fhir:display [ fhir:v "SNOMED-CT" ]
+  ] [
+     fhir:code [ fhir:v "2" ] ;
+     fhir:display [ fhir:v "WHODrug" ]
+  ] [
+     fhir:code [ fhir:v "3" ] ;
+     fhir:display [ fhir:v "ATC" ]
+  ] [
+     fhir:code [ fhir:v "4" ] ;
+     fhir:display [ fhir:v "CIE-11" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+
