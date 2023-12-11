@@ -140,3 +140,4 @@ Usage: #example
 * item[=].item[=].item[=].answer.valueCoding = $ClasificacionDesenlaceCS#1 "Recuperado Completamente"
 * item[=].item[=].item[+].linkId = "fechaInicioInvestigacion"
 * item[=].item[=].item[=].answer.valueDate = "2020-12-25"
+
