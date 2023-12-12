@@ -1,11 +1,11 @@
 Alias: $DirOrgNotiCS = https://paho.org/fhir/esavi/CodeSystem/DirOrgNotiCS
 Alias: $ProfesionalNotificadorVS = https://paho.org/fhir/esavi/CodeSystem/ProfesionalNotificadorVS
-Alias: $CodPaises = http://paho.org/esavi/CodeSystem/CodPaises
-Alias: $administrative-gender = http://hl7.org/fhir/administrative-gender
-Alias: $EnfermedadesPreviasCodificacionCS = http://paho.org/esavi/CodeSystem/EnfermedadesPreviasCodificacionCS
+Alias: $CodPaises = https://paho.org/esavi/CodeSystem/CodPaisesCS
+Alias: $administrative-gender = https://hl7.org/fhir/administrative-gender
+Alias: $EnfermedadesPreviasCodificacionCS = https://paho.org/esavi/CodeSystem/EnfermedadesPreviasCodificacionCS
 Alias: $RespuestaSiNoNosabeCS = https://paho.org/fhir/esavi/CodeSystem/RespuestaSiNoNosabeCS
 Alias: $EsaviMedDRACS = https://paho.org/fhir/esavi/CodeSystem/EsaviMedDRACS
-Alias: $EsaviOtroCS = http://paho.org/esavi/CodeSystem/EsaviOtroCS
+Alias: $EsaviOtroCS = https://paho.org/esavi/CodeSystem/EsaviOtroCS
 Alias: $ClasificacionDesenlaceCS = https://paho.org/fhir/esavi/CodeSystem/ClasificacionDesenlaceCS
 
 Instance: ejUnoNuevo
