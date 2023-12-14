@@ -1,18 +1,17 @@
 # Guías De Implementación ESAVI FHIR
 
-Estas son las guías de implmentaciónb de notificación de ESAVI a la Organización Panamericana de la Salud en formato FHIR
+Estas son las guías de implmentación de notificaciones de ESAVI a la Organización Panamericana de la Salud en formato FHIR.
 
-
-Publicación
+## Publicación
 Esta Guía de implementación se publica en las siguientes ubicaciones::
 
-Continuous Build: [https://build.fhir.org/ig/PanAmericanHealthOrganization/ESAVI-IG-FHIR/)](https://build.fhir.org/ig/PanAmericanHealthOrganization/ESAVI-IG-FHIR/)
-URL Canonica / permanente (IG "estable"): [https://panamericanhealthorganization.github.io/ESAVI-IG-FHIR/](https://panamericanhealthorganization.github.io/ESAVI-IG-FHIR/)
+### Continuous Build: [https://build.fhir.org/ig/PanAmericanHealthOrganization/ESAVI-IG-FHIR/)](https://build.fhir.org/ig/PanAmericanHealthOrganization/ESAVI-IG-FHIR/)
+### URL Canonica / permanente (IG "estable"): [https://panamericanhealthorganization.github.io/ESAVI-IG-FHIR/](https://panamericanhealthorganization.github.io/ESAVI-IG-FHIR/)
 
-Issues
+## Issues
 Los problemas y solicitudes de cambio se gestionan aquí:
 
-Issues: [https://github.com/PanAmericanHealthOrganization/ESAVI-IG-FHIR/issues](https://github.com/PanAmericanHealthOrganization/ESAVI-IG-FHIR/issues)
+### Issues: [https://github.com/PanAmericanHealthOrganization/ESAVI-IG-FHIR/issues](https://github.com/PanAmericanHealthOrganization/ESAVI-IG-FHIR/issues)
 
 | Branch | Status |
 |:------:|:------:|
