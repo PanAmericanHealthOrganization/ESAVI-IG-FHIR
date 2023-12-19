@@ -13,7 +13,7 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This  code system <code>https://paho.org/fhir/esavi/CodeSystem/ClasificacionDesenlaceCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"ClasificacionDesenlaceCS-1\"> </a></td><td>Recuperado Completamente</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"ClasificacionDesenlaceCS-2\"> </a></td><td>En recuperación</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"ClasificacionDesenlaceCS-3\"> </a></td><td>No recuperado</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"ClasificacionDesenlaceCS-4\"> </a></td><td>Recuperado con secuelas</td></tr><tr><td style=\"white-space:nowrap\">5<a name=\"ClasificacionDesenlaceCS-5\"> </a></td><td>Muerte</td></tr><tr><td style=\"white-space:nowrap\">0<a name=\"ClasificacionDesenlaceCS-0\"> </a></td><td>Desconocido</td></tr></table></div>"
   ] ; # 
   fhir:url [ fhir:v "https://paho.org/fhir/esavi/CodeSystem/ClasificacionDesenlaceCS"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "0.1.3409"] ; # 
+  fhir:version [ fhir:v "0.1.41"] ; # 
   fhir:name [ fhir:v "ClasificacionDesenlaceCS"] ; # 
   fhir:title [ fhir:v "Desenlaces Tras ESAVI"] ; # 
   fhir:status [ fhir:v "active"] ; # 

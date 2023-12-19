@@ -6,7 +6,7 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This  code system <code>https://paho.org/fhir/esavi/CodeSystem/RespuestaSiNoNosabeCS</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">1<a name="RespuestaSiNoNosabeCS-1"> </a></td><td>Si</td></tr><tr><td style="white-space:nowrap">2<a name="RespuestaSiNoNosabeCS-2"> </a></td><td>No</td></tr><tr><td style="white-space:nowrap">3<a name="RespuestaSiNoNosabeCS-3"> </a></td><td>No sabe</td></tr></table></div>
   </text>
   <url value="https://paho.org/fhir/esavi/CodeSystem/RespuestaSiNoNosabeCS"/>
-  <version value="0.1.3409"/>
+  <version value="0.1.41"/>
   <name value="RespuestaSiNoNosabeCS"/>
   <title value="Respuestas Simples"/>
   <status value="active"/>

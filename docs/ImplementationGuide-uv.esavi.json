@@ -6,11 +6,11 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ESAVI</h2><p>The official URL for this implementation guide is: </p><pre>https://paho.org/fhir/esavi/ImplementationGuide/uv.esavi</pre></div>"
   },
   "url" : "https://paho.org/fhir/esavi/ImplementationGuide/uv.esavi",
-  "version" : "0.1.3409",
+  "version" : "0.1.41",
   "name" : "ESAVI",
   "title" : "Guía de Implementación FHIR de ESAVI",
   "status" : "draft",
-  "date" : "2023-12-04T12:02:37-03:00",
+  "date" : "2023-12-19T16:49:38-03:00",
   "publisher" : "ESAVI -",
   "contact" : [{
     "name" : "ESAVI -",
@@ -853,9 +853,22 @@
         "valueString" : "QuestionnaireResponse"
       }],
       "reference" : {
-        "reference" : "QuestionnaireResponse/ejemploJMansilla"
+        "reference" : "QuestionnaireResponse/ejDosNuevo"
       },
-      "name" : "ejemploJMansilla",
+      "name" : "ejDosNuevo",
+      "description" : "Ejemplo de cuestionario Respondido 2",
+      "exampleCanonical" : "https://paho.org/fhir/esavi/StructureDefinition/ESAVIQuestionnaireResponse"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "QuestionnaireResponse"
+      }],
+      "reference" : {
+        "reference" : "QuestionnaireResponse/ejTresNuevo"
+      },
+      "name" : "ejTresNuevo",
+      "description" : "Ejemplo de cuestionario Respondido 3",
       "exampleCanonical" : "https://paho.org/fhir/esavi/StructureDefinition/ESAVIQuestionnaireResponse"
     },
     {

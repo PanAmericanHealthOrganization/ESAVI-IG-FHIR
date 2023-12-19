@@ -3,10 +3,10 @@
   "id" : "CodigoNoWhoVacunaVS",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from <a href=\"http://www.whocc.no/atc\"><code>http://www.whocc.no/atc</code></a> where concept  is-a  J07BN</li><li>Include all codes defined in <code>http://id.who.int/icd11/mms</code></li><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  410942007 (null)</li></ul></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from <a href=\"http://www.whocc.no/atc\"><code>http://www.whocc.no/atc</code></a> where concept  is-a  J07BN</li><li>Include all codes defined in <code>http://id.who.int/icd11/mms</code></li><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  410942007</li></ul></div>"
   },
   "url" : "https://paho.org/fhir/esavi/ValueSet/CodigoNoWhoVacunaVS",
-  "version" : "0.1.3409",
+  "version" : "0.1.41",
   "name" : "CodigoNoWhoVacunaVS",
   "title" : "Código no WHODrug de la Vacuna",
   "status" : "active",

@@ -6,7 +6,7 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"CodeSystem-WHODrugPMID.html\"><code>https://paho.org/fhir/esavi/CodeSystem/WHODrugPMID</code></a></li><li>Include all codes defined in <a href=\"CodeSystem-WHODrugDC.html\"><code>https://paho.org/fhir/esavi/CodeSystem/WHODrugDC</code></a></li></ul></div>"
   },
   "url" : "https://paho.org/fhir/esavi/ValueSet/CodigoWhoVacunaVS",
-  "version" : "0.1.3409",
+  "version" : "0.1.41",
   "name" : "CodigoWhoVacunaVS",
   "title" : "Codigo WHODrug de la vacuna",
   "status" : "active",

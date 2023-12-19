@@ -6,7 +6,7 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-ModoConfirmacionInfeccionCS.html"><code>https://paho.org/fhir/esavi/CodeSystem/ModoConfirmacionInfeccionCS</code></a></li></ul></div>
   </text>
   <url value="https://paho.org/fhir/esavi/ValueSet/ModoConfirmacionInfeccionVS"/>
-  <version value="0.1.3409"/>
+  <version value="0.1.41"/>
   <name value="ModoConfirmacionInfeccionVS"/>
   <title value="Modos Confirmación Infección COVID-19"/>
   <status value="active"/>

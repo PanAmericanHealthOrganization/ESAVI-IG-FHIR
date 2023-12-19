@@ -13,11 +13,11 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ESAVI</h2><p>The official URL for this implementation guide is: </p><pre>https://paho.org/fhir/esavi/ImplementationGuide/uv.esavi</pre></div>"
   ] ; # 
   fhir:url [ fhir:v "https://paho.org/fhir/esavi/ImplementationGuide/uv.esavi"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "0.1.3409"] ; # 
+  fhir:version [ fhir:v "0.1.41"] ; # 
   fhir:name [ fhir:v "ESAVI"] ; # 
   fhir:title [ fhir:v "Guía de Implementación FHIR de ESAVI"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-12-04T12:02:37-03:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-12-19T16:49:38-03:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ESAVI -"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ESAVI -" ] ;
@@ -764,10 +764,26 @@
          fhir:value [ fhir:v "QuestionnaireResponse" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://paho.org/fhir/esavi/QuestionnaireResponse/ejemploJMansilla> ;
-         fhir:reference [ fhir:v "QuestionnaireResponse/ejemploJMansilla" ]
+         fhir:link <https://paho.org/fhir/esavi/QuestionnaireResponse/ejDosNuevo> ;
+         fhir:reference [ fhir:v "QuestionnaireResponse/ejDosNuevo" ]
        ] ;
-       fhir:name [ fhir:v "ejemploJMansilla" ] ;
+       fhir:name [ fhir:v "ejDosNuevo" ] ;
+       fhir:description [ fhir:v "Ejemplo de cuestionario Respondido 2" ] ;
+       fhir:example [
+         fhir:v "https://paho.org/fhir/esavi/StructureDefinition/ESAVIQuestionnaireResponse"^^xsd:anyURI ;
+         fhir:link <https://paho.org/fhir/esavi/StructureDefinition/ESAVIQuestionnaireResponse>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "QuestionnaireResponse" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://paho.org/fhir/esavi/QuestionnaireResponse/ejTresNuevo> ;
+         fhir:reference [ fhir:v "QuestionnaireResponse/ejTresNuevo" ]
+       ] ;
+       fhir:name [ fhir:v "ejTresNuevo" ] ;
+       fhir:description [ fhir:v "Ejemplo de cuestionario Respondido 3" ] ;
        fhir:example [
          fhir:v "https://paho.org/fhir/esavi/StructureDefinition/ESAVIQuestionnaireResponse"^^xsd:anyURI ;
          fhir:link <https://paho.org/fhir/esavi/StructureDefinition/ESAVIQuestionnaireResponse>
