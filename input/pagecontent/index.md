@@ -21,7 +21,7 @@ Esta guía está dividida en varias secciones que se muestran en la barra de men
 - [Operaciones FHIR](operaciones.html): Operaciones Rest usadas para el proyecto.
 - [Artefactos](artifacts.html): Estas páginas proveen descripciones detalladas y definiciones formales para los objetos FHIR presentes en la guía.    
 - [Mapeos](descargas.html): Desarrollo de los Mapeos entre DHIS2 y E2B XML(R3) con FHIR.
-- [Uso](uso_como_llenar_esta_guia.html): Explica las interpretaciones e intenciones de la semántica de los recursos.
+- [Uso](uso.html): Explica las interpretaciones e intenciones de la semántica de los recursos.
 - [Seguridad](seguridad.html): Explica los formatos de seguridad para la conexión con el Sistema Regional.    
 - [Descargas](descargas.html): Agrupa las descargas disponibles como perfiles, paquete de validación, ejemplos, etc.
 

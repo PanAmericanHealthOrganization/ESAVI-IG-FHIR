@@ -46,8 +46,10 @@ pages:
     title: Generalidades
   consideraciones.md:
     title: Consideraciones
-
-
+  operaciones.md:
+    title: Operaciones
+  seguridad.md:
+    title: Seguridad
 
 menu:
   Inicio: index.html
