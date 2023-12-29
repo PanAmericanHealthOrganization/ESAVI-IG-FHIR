@@ -304,7 +304,7 @@ Usage: #example
 * item[=].item[=].text = "Datos de quién y donde se realiza la notificación"
 
 * item[=].item[=].item[0].type = #choice
-* item[=].item[=].item[=].answerValueSet = "https://paho.org/fhir/esavi/ValueSet/CodPaises"
+* item[=].item[=].item[=].answerValueSet = "https://paho.org/fhir/esavi/ValueSet/codPaises"
 * item[=].item[=].item[=].required = true
 * item[=].item[=].item[=].linkId = "paisOrigen-Reg"
 * item[=].item[=].item[=].text = "País en donde se originó el Registro"
