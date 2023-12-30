@@ -1,13 +1,3 @@
-Alias: $DirOrgNotiCS = https://paho.org/fhir/esavi/CodeSystem/DirOrgNotiCS
-//Alias: $ProfesionalNotificadorCS = http://paho.org/fhir/esavi/CodeSystem/ProfesionalNotificadorCS
-//Alias: $CodPaises = https://paho.org/fhir/esavi/CodeSystem/CodPaisesCS
-Alias: $administrative-gender = http://hl7.org/fhir/administrative-gender
-//Alias: $EnfermedadesPreviasCodificacionCS = https://paho.org/fhir/esavi/CodeSystem/EnfermedadesPreviasCodificacionCS
-Alias: $RespuestaSiNoNosabeCS = https://paho.org/fhir/esavi/CodeSystem/RespuestaSiNoNosabeCS
-//Alias: $EsaviMedDRACS = https://paho.org/fhir/esavi/CodeSystem/EsaviMedDRACS
-//Alias: $EsaviOtroCS = https://paho.org/fhir/esavi/CodeSystem/EsaviOtroCS
-Alias: $ClasificacionDesenlaceCS = https://paho.org/fhir/esavi/CodeSystem/ClasificacionDesenlaceCS
-
 Instance: ejUnoNuevo
 InstanceOf: QuestionnaireResponse
 Usage: #example

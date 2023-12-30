@@ -1,30 +1,8 @@
-//Alias: $v2-0136 = http://terminology.hl7.org/ValueSet/v2-0136
-//Alias: $ProfesionalNotificadorCS = http://paho.org/esavi/CodeSystem/ProfesionalNotificadorCS
-Alias: MedDRA = https://www.meddra.org //Se define MedDRACS en archivo aparte extensivamente para test. https://terminology.hl7.org/CodeSystem-mdr.html
-Alias: ICD11mms = http://id.who.int/icd11/mms
-Alias: ICD10 = http://hl7.org/fhir/sid/icd-10
-//Alias: SCTAr = http://snomed.info/sct/11000221109
-//Alias: ICD11mms = http://id.who.int/icd/entity
-Alias:   SCT = http://snomed.info/sct
-//Alias:   LOINC = http://loinc.org
-Alias:   ATCCS = http://www.whocc.no/atc
-//Alias:   m49.htm = http://unstats.un.org/unsd/methods/m49/m49.htm
-RuleSet: RuleSetMeta
-* ^version = "0.7.0"
-* ^status = #draft
-
-
 ValueSet: ViaAdminMedicamentoVS //revisado OKs CS externo LinkID: codigoViaAdministracion
 Id: ViaAdminMedicamentoVS
 Title: "Vías de Administración de Medicamentos"
 Description: "Describe y lista las vías de administración de medicamentos para registro en ESAVI segun SNOMED CT"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2021-03-11T00:00:00-03:00"
-* ^contact.name = "OPS"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = ""
-* ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
+* insert RuleSetVS
 * include codes from system SCT where concept is-a #736479009 "sitio de administración previsto de forma farmacéutica (sitio de administración previsto)"
 //* include codes from system http://snomed.info/sct
 
@@ -33,13 +11,7 @@ ValueSet: CodPaises //revisado. CS externo ISO 3166, LinkID: paisOrigen-Reg ----
 Id: codPaises
 Title: "Códigos de Países"
 Description: "Codigos definidos para la identificación de países segun norma ISO3166-N"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2021-03-11T00:00:00-03:00"
-* ^contact.name = "OPS"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = ""
-* ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
+* insert RuleSetVS
 * include codes from system CodPaisesCS
 //* include codes from system urn:iso:std:iso:3166
 
@@ -302,39 +274,21 @@ ValueSet: EsaviMedDRAVS //revisado OKs CS interno con ejemplos pendiente eterno 
 Id: EsaviMedDRAVS
 Title: "Código MedDRA del Evento Adverso notificado"
 Description: "Código MedDRA del Evento Adverso notificado"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2021-03-11T00:00:00-03:00"
-* ^contact.name = "OPS"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = ""
-* ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
+* insert RuleSetVS
 * include codes from system MedDRA
 
 ValueSet: ComplicacionEmbarazoMedDRAVS //revisado OKs CS interno definido aparte, completo en el servidor LinkID: odigoMedDRAComplicacionEmbarazoESAVI
 Id: ComplicacionEmbarazoMedDRAVS
-Title: "Códigos MEDDRA Complicaciones en Embarazo ESAVI "
+Title: "Códigos MEDDRA Complicaciones en Embarazo ESAVI"
 Description: "Codificacion Estandarizada de diagnóticos de complicaciones de embarazo mediante códigos MedDRA"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2021-03-11T00:00:00-03:00"
-* ^contact.name = "OPS"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = ""
-* ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
+* insert RuleSetVS
 * include codes from system MedDRA
 
 ValueSet: ComplicacionEmbarazoOtroVS //revisado OKS CS externo LinkID: otrosCodigosComplicacionEmbarazoESAVI
 Id: ComplicacionEmbarazoOtroVS
-Title: "Otros Códigos Complicaciones en Embarazo ESAVI "
+Title: "Otros Códigos Complicaciones en Embarazo ESAVI"
 Description: "Codificacion Estandarizada de diagnóticos de complicaciones de embarazo mediante códigos Snomed y CIE-10"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2021-03-11T00:00:00-03:00"
-* ^contact.name = "OPS"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = ""
-* ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
+* insert RuleSetVS
 * include codes from system ICD10 where concept is-a #E03.9	"Hipotiroidismo, no especificado"
 * include codes from system ICD10 where concept is-a #E66.9	"Obesidad, no especificada"
 * include codes from system ICD10 where concept is-a #E10.9	"Diabetes mellitus insulinodependiente, sin mención de complicación"
@@ -346,20 +300,14 @@ Description: "Codificacion Estandarizada de diagnóticos de complicaciones de em
 * include codes from system ICD10 where concept is-a #G51.0	"Paralisis de Bell"
 * include codes from system ICD10 where concept is-a #H92.0	"Otalgia"
 * include codes from system ICD10 where concept is-a #H93.1	"Tinnitus"
-* include codes from system SCT where concept is-a #391103005 "evento adverso posterior a tratamiento complementario (trastorno)"  
+* include codes from system SCT where concept is-a #281647001 "Reacción adversa (trastorno)"  
 
 
 ValueSet: EsaviOtroVS //revisado OKs CS externo. LinkID: codigoESAVIOtro
 Id: EsaviOtroVS
 Title: "Otros Códigos Evento Adverso"
 Description: "Evento Adverso en otro sistema según Snomed y CIE-10"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2021-03-11T00:00:00-03:00"
-* ^contact.name = "OPS"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = ""
-* ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
+* insert RuleSetVS
 * include codes from system SCT where concept is-a #281647001 "Reacción adversa"
 //* include codes from system ICD11mms where concept is-a #XY0Y "Afección principal"
 * include codes from system ICD10 where concept is-a #E03.9	"Hipotiroidismo, no especificado"
@@ -378,13 +326,8 @@ ValueSet: CodigoWhoVacunaVS //revisado y modificado. LinkID:codigoVacunaWHODrug
 Id: CodigoWhoVacunaVS
 Title: "Codigo WHODrug de la vacuna"
 Description: "Codificación Estandarizda del código de las Vacunas según WhoDrug"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2021-03-11T00:00:00-03:00"
-* ^contact.name = "OPS"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = ""
-* ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
+* insert RuleSetVS
+
 //* include codes from system CodigoWhoVacunaCS //Acotado a Vacunas COVID
 * include codes from system WHODrugPMID 
 * include codes from system WHODrugDC
@@ -393,27 +336,17 @@ ValueSet: FormaFarmaceuticaVS //revisado OKs CS externo LinkID: codigoFormaFarma
 Id: FormaFarmaceuticaVS
 Title: "Identificación Formas Farmacéuticas"
 Description: "Describe y lista las formas farmaceuticas de medicamentos para registro en ESAVI segun SNOMED CT"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2021-03-11T00:00:00-03:00"
-* ^contact.name = "OPS"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = ""
-* ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
+* insert RuleSetVS
+
 * include codes from system SCT where concept is-a #736478001 "forma farmacéutica básica (forma farmacéutica básica)"
 
 ValueSet: EnfermedadesPreviasCodificacionVS //revisado CS externos CIE11, SCT y CIE10, LinkID:otrosCodigosEnfPrevia
 Id: EnfermedadesPreviasCodificacionVS
 Title: "Enfermedades previas en un ESAVI-PAHO"
 Description: "Describe las enfermedades previas en un ESAVI codificadas en CIE10, CIE11 o SNOMED CT"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2021-03-11T00:00:00-03:00"
-* ^contact.name = "OPS"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = ""
-* ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
-* include codes from system ICD11mms where concept is-a  #XY0Y "Afección principal"
+* insert RuleSetVS
+
+//* include codes from system ICD11mms where concept is-a  #XY0Y "Afección principal" //NO expande!!!!
 * include codes from system ICD10 where concept is-a #E03.9	"Hipotiroidismo, no especificado"
 * include codes from system ICD10 where concept is-a #E66.9	"Obesidad, no especificada"
 * include codes from system ICD10 where concept is-a #E10.9	"Diabetes mellitus insulinodependiente, sin mención de complicación"
@@ -432,46 +365,24 @@ ValueSet: CodigoNoWhoVacunaVS //Oks con las vacunas de Covid, no usa mas Codesys
 Id: CodigoNoWhoVacunaVS
 Title: "Código no WHODrug de la Vacuna"
 Description: "Código no WHODrug de la Vacuna"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2021-03-11T00:00:00-03:00"
-* ^contact.name = "OPS"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = ""
-* ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
-
-//* include codes from system ATCCS where concept is-a #J07BN01	"Vacuna COVID 19, basada en ARNm"
-* include codes from system ATCCS where concept is-a #J07BN	"Vacuna COVID 19"
-//* include codes from system ATCCS where concept is-a #J07BN04	"Vacuna COVID 19, subunidad proteica"
-//* include codes from system ATCCS where concept is-a #J07BN02	"Vacuna COVID 19, vector viral no replicante"
-//* include codes from system http://www.whocc.no/atc
-* include codes from system ICD11mms
+* insert RuleSetVS
+//* include codes from system ATCCS where concept is-a #J07BN	"Vacuna COVID 19" //NO expande!
+//* include codes from system ICD11mms //NO expande!!
 * include codes from system http://snomed.info/sct where concept is-a #410942007 "fármaco o medicamento (sustancia)"
 
 ValueSet: CodigoWhoFabricanteVS //Oks revisado, CS interno a continuación Link ID:codigoFabricanteWHODrug 
 Id: CodigoWhoFabricanteVS
 Title: "Fabricantes Vacuna"
 Description: "Códigos Fabricantes Vacunas de WHO"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2021-03-11T00:00:00-03:00"
-* ^contact.name = "OPS"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = ""
-* ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
+* insert RuleSetVS
+
 * include codes from system CodigoWhoFabricanteCS
 
 CodeSystem: CodigoWhoFabricanteCS //oks revisado
 Id: CodigoWhoFabricanteCS
 Title: "Fabricante   Vacuna"
 Description: "Códigos Fabricantes Vacunas de WHO"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2021-03-11T00:00:00-03:00"
-* ^contact.name = "OPS"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = ""
-* ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
+* insert RuleSetVS
 //* #1 "SNOMED-CT"
 
 * #INP	"Inovio Pharmaceuticals"
@@ -539,26 +450,14 @@ ValueSet: SistemasDeCodificacionVS //revisado CM interno a continuación, LinkID
 Id: SistemasDeCodificacionVS
 Title: "Sistemas De Codificacion"
 Description: "Sistemas De Codificacion para Determinación de Códigos"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2021-03-11T00:00:00-03:00"
-* ^contact.name = "OPS"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = ""
-* ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
+* insert RuleSetVS
 * include codes from system SistemasDeCodificacionCS
 
 CodeSystem: SistemasDeCodificacionCS //revisado OKs
 Id: SistemasDeCodificacionCS
 Title: "Sistemas De Codificacion"
 Description: "Sistemas De Codificacion para Determinación de Códigos"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2021-03-11T00:00:00-03:00"
-* ^contact.name = "OPS"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = ""
-* ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
+* insert RuleSetVS
 * #1 "SNOMED-CT"
 * #2 "WHODrug"
 * #3 "ATC"
@@ -570,13 +469,7 @@ ValueSet: RespuestaSiNoNosabeVS //revisado CS interno a continuacion
 Id: RespuestaSiNoNosabeVS
 Title: "Respuestas Simples"
 Description: "Códigos para capturar respuestas simples si/no/no sabe"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2021-03-11T00:00:00-03:00"
-* ^contact.name = "OPS"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = ""
-* ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
+* insert RuleSetVS
 * include codes from system RespuestaSiNoNosabeCS
 
 CodeSystem: RespuestaSiNoNosabeCS //revisado
@@ -599,28 +492,16 @@ ValueSet: CodigoMedicamentoVS //revisado OKs CS externo, LinkIDs: codigoMedicame
 Id: CodigoMedicamentoVS
 Title: "Codigo Medicamento"
 Description:  "Codigo Medicamento"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2021-03-11T00:00:00-03:00"
-* ^contact.name = "OPS"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = ""
-* ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
+* insert RuleSetVS
 * include codes from system SCT where concept is-a #105590001
-* include codes from system ATCCS 
-* include codes from system ICD11mms where concept is-a #XM4843
+//* include codes from system ATCCS //NO expande
+//* include codes from system ICD11mms where concept is-a #XM4843 //No expande!!!
 
 ValueSet: ModoVerificacionVacunaVS //revisado Oks CS interno a continuacion Link ID: codigoMecanismoVerificacion 
 Id: ModoVerificacionVacunaVS
 Title: "Modos Verificación Vacuna Previa"
 Description:  "Modos de Verificacion de Vacuna o Esquema de Vacunación Completado"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2021-03-11T00:00:00-03:00"
-* ^contact.name = "OPS"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = ""
-* ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
+* insert RuleSetVS
 * include codes from system ModoVerificacionVacunaCS
 
 CodeSystem: ModoVerificacionVacunaCS //revisado Oks
@@ -645,13 +526,8 @@ ValueSet: ModoConfirmacionInfeccionVS //revisado CS interno a continuacion, Link
 Id: ModoConfirmacionInfeccionVS
 Title: "Modos Confirmación Infección COVID-19"
 Description: "Modos de Confirmacion de Infección por COVID-19"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2021-03-11T00:00:00-03:00"
-* ^contact.name = "OPS"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = ""
-* ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
+* insert RuleSetVS
+
 * include codes from system ModoConfirmacionInfeccionCS
 
 CodeSystem: ModoConfirmacionInfeccionCS //revisado OKs
@@ -675,13 +551,8 @@ ValueSet: ClasificacionDesenlaceVS //revisado OKS CS interno a continuacion Link
 Id: ClasificacionDesenlaceVS
 Title: "Desenlaces Tras ESAVI"
 Description:  "Clasificación de Desenlace Tras Sufrir ESAVI"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2021-03-11T00:00:00-03:00"
-* ^contact.name = "OPS"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = ""
-* ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
+* insert RuleSetVS
+
 * include codes from system ClasificacionDesenlaceCS
 
 CodeSystem: ClasificacionDesenlaceCS //revisqado OKs
@@ -706,13 +577,7 @@ ValueSet: ComplicacionEmbarazoVS //revisado OKs CS interno a continuación LinkI
 Id: ComplicacionEmbarazoVS
 Title: "Complicaciones Embarazo"
 Description: "Conjunto de Valores para la Sección de Complicaciones Embarazo ESAVI"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2021-03-11T00:00:00-03:00"
-* ^contact.name = "OPS"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = ""
-* ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
+* insert RuleSetVS
 * codes from system ComplicacionEmbarazoCS
 
 CodeSystem: ComplicacionEmbarazoCS //revisado OKs
@@ -736,17 +601,7 @@ ValueSet: ProfesionalNotificadorVS //revisado CS interno a continuación, LinkID
 Id: ProfesionalNotificadorVS
 Title: "Tipo de Profesional Notificador"
 Description: "Códigos de Tipo de Notificadores de ESAVI para PAHO"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2021-03-11T00:00:00-03:00"
-* ^contact.name = "OPS"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = ""
-* ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2022-02-02"
-* ^publisher = "PAHO - Pan American Health Organization"
+* insert RuleSetVS
 * include codes from system ProfesionalNotificadorCS
 
 CodeSystem: ProfesionalNotificadorCS //revisado
@@ -789,19 +644,14 @@ Description: "Describe las enfermedades previas en un ESAVI codificadas en MedDR
 * ^status = #active
 * ^date = "2022-02-02"
 * ^publisher = "PAHO - Pan American Health Organization"
+* ^experimental = false
 * include codes from system MedDRA
 
 ValueSet: SistemaClasfCausalidadVS //revisado OKs CS interno a continuación LinkID: sistemaClasfcausalidad
 Id: SistemaClasfCausalidadVS
 Title: "Tipo de Método de clasificación de causalidad"
 Description:  "Códigos para Tipos Métodos de Clasificación de Causalidad"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2021-03-11T00:00:00-03:00"
-* ^contact.name = "OPS"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = ""
-* ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
+* insert RuleSetVS
 * include codes from system SistemaClasfCausalidadCS
 
 CodeSystem: SistemaClasfCausalidadCS //revisado OKs
@@ -825,13 +675,7 @@ ValueSet: ClasificacionDesenlaceWHOAEFIVS //revisado OKs CS interno a continuaci
 Id: ClasificacionDesenlaceWHOAEFIVS
 Title: "Clasificación de causalidad WHO-AEFI"
 Description:  "Método de clasificación de causalidad WHO-AEFI"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2021-03-11T00:00:00-03:00"
-* ^contact.name = "OPS"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = ""
-* ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
+* insert RuleSetVS
 * include codes from system ClasificacionDesenlaceWHOAEFICS
 
 CodeSystem: ClasificacionDesenlaceWHOAEFICS //revisado OKs
@@ -859,13 +703,7 @@ ValueSet: ClasificacionDesenlaceWHOUMCVS //revisado OKs CS interno a continuaci�
 Id: ClasificacionDesenlaceWHOUMCVS
 Title: "Clasificación de causalidad WHO-UMC"
 Description:  "Método de clasificación de causalidad WHO-UMC"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2021-03-11T00:00:00-03:00"
-* ^contact.name = "OPS"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = ""
-* ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
+* insert RuleSetVS
 * include codes from system ClasificacionDesenlaceWHOUMCCS
 
 CodeSystem: ClasificacionDesenlaceWHOUMCCS //revisado OKs
@@ -890,13 +728,7 @@ ValueSet: ClasificacionDesenlaceNaranjoVS //revisado OKs CS interno a continuaci
 Id: ClasificacionDesenlaceNaranjoVS
 Title: "Clasificación de causalidad Naranjo"
 Description:  "Método de clasificación de causalidad Naranjo"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2021-03-11T00:00:00-03:00"
-* ^contact.name = "OPS"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = ""
-* ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
+* insert RuleSetVS
 * include codes from system ClasificacionDesenlaceNaranjoCS
 
 CodeSystem: ClasificacionDesenlaceNaranjoCS //revisado OKs
@@ -920,13 +752,7 @@ ValueSet: DirOrgNotiVS //revisado. CS interno completo en Servidor, ejemplo en l
 Id: DirOrgNotiVS
 Title: "Códigos PAHO para Direcciones"
 Description: "Conjunto de Valores para dirección según OPS"
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2021-03-11T00:00:00-03:00"
-* ^contact.name = "OPS"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = ""
-* ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
+* insert RuleSetVS
 * include codes from system DirOrgNotiCS
 
 // CodeSystem: PTSctCS
