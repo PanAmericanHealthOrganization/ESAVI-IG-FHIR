@@ -9,6 +9,7 @@ Description: "Fragmento de WHODrug completo con nombres genericos y comerciales 
 * ^publisher = "UMC"
 * ^contact.name = "WHO"
 * ^content = #fragment
+* ^caseSensitive = false
 * #1 "Methyldopa"
   * #66969 "Aldomet"
   * #83864 "Alfametildopa"
