@@ -29,6 +29,36 @@ Description: "Describe y lista las vías de administración de medicamentos para
 * include codes from system http://snomed.info/sct where concept is-a #736479009 "sitio de administración previsto de forma farmacéutica (sitio de administración previsto)"
 //* include codes from system http://snomed.info/sct
 
+ValueSet: VSCodPaisesLoca
+Id: VSCodPaisesLoca
+Title: "CodPaisesLoca"
+Description: "CodPaisesLoca"
+* ^experimental = false
+* ^version = "0.1"
+* ^status = #active
+* ^date = "2023-01-15"
+* ^contact.name = "MINSAL CHILE"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "minsal@minsal.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* codes from system CSCodPaisesLoca
+
+CodeSystem: CSCodPaisesLoca
+Id: CSCodPaisesLoca
+Title: "CodPaisesLoca"
+Description: "CodPaisesLoca"
+* ^experimental = false
+* ^caseSensitive = true
+* ^version = "0.9"
+* ^status = #active
+* ^date = "2023-01-15"
+* ^contact.name = "MINSAL CHILE"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "minsal@minsal.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+
 ValueSet: CodPaises //revisado. CS externo ISO 3166, LinkID: paisOrigen-Reg
 Id: CodPaises
 Title: "Códigos de Países"
@@ -58,7 +88,7 @@ Description: "Código MedDRA del Evento Adverso notificado"
 
 ValueSet: ComplicacionEmbarazoMedDRAVS //revisado OKs CS interno definido aparte, completo en el servidor LinkID: odigoMedDRAComplicacionEmbarazoESAVI
 Id: ComplicacionEmbarazoMedDRAVS
-Title: "Códigos MEDDRA Complicaciones en Embarazo ESAVI "
+Title: "Códigos MEDDRA Complicaciones en Embarazo ESAVI"
 Description: "Codificacion Estandarizada de diagnóticos de complicaciones de embarazo mediante códigos MedDRA"
 * ^version = "1.0.0"
 * ^status = #active
@@ -71,7 +101,7 @@ Description: "Codificacion Estandarizada de diagnóticos de complicaciones de em
 
 ValueSet: ComplicacionEmbarazoOtroVS //revisado OKS CS externo LinkID: otrosCodigosComplicacionEmbarazoESAVI
 Id: ComplicacionEmbarazoOtroVS
-Title: "Otros Códigos Complicaciones en Embarazo ESAVI "
+Title: "Otros Códigos Complicaciones en Embarazo ESAVI"
 Description: "Codificacion Estandarizada de diagnóticos de complicaciones de embarazo mediante códigos Snomed y CIE-10"
 * ^version = "1.0.0"
 * ^status = #active
@@ -225,6 +255,8 @@ CodeSystem: CodigoWhoFabricanteCS //oks revisado
 Id: CodigoWhoFabricanteCS
 Title: "Fabricante   Vacuna"
 Description: "Códigos Fabricantes Vacunas de WHO"
+* ^caseSensitive = true
+* ^experimental = false
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2021-03-11T00:00:00-03:00"
@@ -312,6 +344,8 @@ CodeSystem: SistemasDeCodificacionCS //revisado OKs
 Id: SistemasDeCodificacionCS
 Title: "Sistemas De Codificacion"
 Description: "Sistemas De Codificacion para Determinación de Códigos"
+* ^caseSensitive = true
+* ^experimental = false
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2021-03-11T00:00:00-03:00"
@@ -343,6 +377,8 @@ CodeSystem: RespuestaSiNoNosabeCS //revisado
 Id: RespuestaSiNoNosabeCS
 Title: "Respuestas Simples"
 Description:  "Códigos para capturar respuestas simples si/no/no sabe"
+* ^caseSensitive = true
+* ^experimental = false
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2021-03-11T00:00:00-03:00"
@@ -421,6 +457,8 @@ CodeSystem: ModoVerificacionVacunaCS //revisado Oks
 Id: ModoVerificacionVacunaCS
 Title: "Modo de Verificación de Vacunación Previa"
 Description:  "Modos de Verificacion de Vacuna o Esquema de Vacunación Completado"
+* ^caseSensitive = true
+* ^experimental = false
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2021-03-11T00:00:00-03:00"
@@ -452,6 +490,8 @@ CodeSystem: ModoConfirmacionInfeccionCS //revisado OKs
 Id: ModoConfirmacionInfeccionCS
 Title: "Modo de Confirmación de la Infección"
 Description: "Modos de Confirmacion de Infección por COVID-19"
+* ^caseSensitive = true
+* ^experimental = false
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2021-03-11T00:00:00-03:00"
@@ -482,6 +522,8 @@ CodeSystem: ClasificacionDesenlaceCS //revisqado OKs
 Id: ClasificacionDesenlaceCS
 Title: "Desenlaces Tras ESAVI"
 Description:  "Clasificación de Desenlace Tras Sufrir ESAVI"
+* ^caseSensitive = true
+* ^experimental = false
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2021-03-11T00:00:00-03:00"
@@ -513,6 +555,8 @@ CodeSystem: ComplicacionEmbarazoCS //revisado OKs
 Id: ComplicacionEmbarazoCS
 Title: "Complicaciones de Embarazo"
 Description: "Códigos para las Complicaciones de Embarazo"
+* ^caseSensitive = true
+* ^experimental = false
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2021-03-11T00:00:00-03:00"
@@ -547,6 +591,8 @@ CodeSystem: ProfesionalNotificadorCS //revisado
 Id: ProfesionalNotificadorCS
 Title: "Tipo de Profesional Notificador"
 Description: "Códigos de Tipo de Notificadores de ESAVI para PAHO"
+* ^caseSensitive = true
+* ^experimental = false
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2021-03-11T00:00:00-03:00"
@@ -602,6 +648,8 @@ CodeSystem: SistemaClasfCausalidadCS //revisado OKs
 Id: SistemaClasfCausalidadCS
 Title: "Tipo de Método de clasificación de causalidad"
 Description:  "Códigos para Tipos de Métodos de Clasificación de Causalidad"
+* ^caseSensitive = true
+* ^experimental = false
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2021-03-11T00:00:00-03:00"
@@ -632,6 +680,8 @@ CodeSystem: ClasificacionDesenlaceWHOAEFICS //revisado OKs
 Id: ClasificacionDesenlaceWHOAEFICS
 Title: "Clasificación de causalidad WHO-AEFI"
 Description:  "Método de clasificación de causalidad WHO-AEFI"
+* ^caseSensitive = true
+* ^experimental = false
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2021-03-11T00:00:00-03:00"
@@ -666,6 +716,8 @@ CodeSystem: ClasificacionDesenlaceWHOUMCCS //revisado OKs
 Id: ClasificacionDesenlaceWHOUMCCS
 Title: "Clasificación de causalidad WHO-UMC"
 Description:  "Método de clasificación de causalidad WHO-UMC"
+* ^caseSensitive = true
+* ^experimental = false
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2021-03-11T00:00:00-03:00"
@@ -697,6 +749,8 @@ CodeSystem: ClasificacionDesenlaceNaranjoCS //revisado OKs
 Id: ClasificacionDesenlaceNaranjoCS
 Title: "Clasificación de causalidad Naranjo"
 Description:  "Método de clasificación de causalidad Naranjo"
+* ^caseSensitive = true
+* ^experimental = false
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2021-03-11T00:00:00-03:00"
@@ -734,7 +788,6 @@ Description: "Conjunto de Valores para dirección según OPS"
 // * ^url = "http://snomed.info/sct"
 // * ^version = "1.00"
 // * ^status = #active
-// * ^experimental = false
 // * ^date = "2019-03-20T00:00:00-04:00"
 // * ^publisher = "Snomed-CT"
 // * ^caseSensitive = true
@@ -894,7 +947,7 @@ Description: "Conjunto de Valores para dirección según OPS"
 // * ^meta.source = "#yyuCovUJiH7vKAgN"
 // * ^version = "1.00"
 // * ^status = #active
-// * ^experimental = false
+
 // * ^date = "2019-03-20T00:00:00-04:00"
 // * ^caseSensitive = true
 // * ^content = #complete
@@ -917,7 +970,7 @@ Description: "Conjunto de Valores para dirección según OPS"
 // * ^meta.source = "#yyuCovUJiH7vKAgN"
 // * ^version = "1.00"
 // * ^status = #active
-// * ^experimental = false
+
 // * ^date = "2019-03-20T00:00:00-04:00"
 // * ^caseSensitive = true
 // * ^content = #complete
@@ -960,7 +1013,6 @@ Description: "Conjunto de Valores para dirección según OPS"
 // * ^url = "http://id.who.int/icd11/mms"
 // * ^version = "1.00"
 // * ^status = #active
-// * ^experimental = false
 // * ^date = "2019-03-20T00:00:00-04:00"
 // * ^publisher = "CIE-11"
 // * ^contact.name = "CIE-11"
@@ -1044,7 +1096,6 @@ Description: "Conjunto de Valores para dirección según OPS"
 // * ^url = "http://who-umc.org"
 // * ^version = "1.00"
 // * ^status = #active
-// * ^experimental = false
 // * ^date = "2019-03-20T00:00:00-04:00"
 // * ^publisher = "WHO"
 // * ^contact.name = "WHO"

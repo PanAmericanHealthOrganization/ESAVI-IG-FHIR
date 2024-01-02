@@ -1,13 +1,20 @@
 CodeSystem: WHODrugDC
 Title: "WHODrug DrugCode"
 Description: "Fragmento de WHODrug completo con nombres genéricos y comerciales en inglés mayormente codificados por drugcode"
+* ^caseSensitive = true
+* ^experimental = false
+* ^status = #active
+* ^date = "2023-05-25T00:00:00-04:00"
+* ^contact.name = "WHO"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = ""
+* ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
+
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2023-05-25T13:22:48.124+00:00"
-* ^status = #active
-* ^experimental = true
-* ^date = "2023-05-25T00:00:00-04:00"
+
+
 * ^publisher = "UMC"
-* ^contact.name = "WHO"
 * ^content = #fragment
 * #00000101001 "Methyldopa"
   * #00000101002 "Aldomet"

@@ -58,7 +58,7 @@ Description: "Código MedDRA del Evento Adverso notificado"
 
 ValueSet: ComplicacionEmbarazoMedDRAVS //revisado OKs CS interno definido aparte, completo en el servidor LinkID: odigoMedDRAComplicacionEmbarazoESAVI
 Id: ComplicacionEmbarazoMedDRAVS
-Title: "Códigos MEDDRA Complicaciones en Embarazo ESAVI "
+Title: "Códigos MEDDRA Complicaciones en Embarazo ESAVI"
 Description: "Codificacion Estandarizada de diagnóticos de complicaciones de embarazo mediante códigos MedDRA"
 * ^version = "1.0.0"
 * ^status = #active

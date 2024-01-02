@@ -3,6 +3,8 @@ Id: DirOrgNotiCS
 Title: "Códigos PAHO para Direcciones"
 Description: "Códigos para Direcciones según PAHO"
 * ^version = "1.0.0"
+* ^experimental = true
+* ^caseSensitive = true
 * ^status = #active
 * ^date = "2021-03-11T00:00:00-03:00"
 * ^contact.name = "OPS"
