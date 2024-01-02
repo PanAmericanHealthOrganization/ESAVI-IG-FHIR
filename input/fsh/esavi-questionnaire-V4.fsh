@@ -304,7 +304,7 @@ Usage: #example
 * item[=].item[=].text = "Datos de quién y donde se realiza la notificación"
 
 * item[=].item[=].item[0].type = #choice
-* item[=].item[=].item[=].answerValueSet = "https://paho.org/fhir/esavi/ValueSet/CodPaises"
+* item[=].item[=].item[=].answerValueSet = "https://paho.org/fhir/esavi/ValueSet/codPaises"
 * item[=].item[=].item[=].required = true
 * item[=].item[=].item[=].linkId = "paisOrigen-Reg"
 * item[=].item[=].item[=].text = "País en donde se originó el Registro"
@@ -566,7 +566,7 @@ Usage: #example
 ///////////////////// Enable When
 * item[=].item[=].enableWhen[0].question = "sexoPaciente"
 * item[=].item[=].enableWhen[=].operator = #=
-* item[=].item[=].enableWhen[=].answerCoding = #female
+* item[=].item[=].enableWhen[=].answerCoding = $administrative-gender#female
 
 //////////////////////////////////
 * item[=].item[=].item[0].type = #boolean
@@ -1245,7 +1245,7 @@ Usage: #example
 ////////////////*******************************
 ///////////////////// 
 * item[=].item[=].item[+].type = #choice
-* item[=].item[=].item[=].answerValueSet = "https://paho.org/fhir/esavi/ValueSet/SistemaClasfCausalidadVS"
+* item[=].item[=].item[=].answerValueSet = Canonical(SistemaClasfCausalidadVS)
 * item[=].item[=].item[=].required = true
 * item[=].item[=].item[=].linkId = "sistemaClasfcausalidad"
 * item[=].item[=].item[=].text = "Método de clasificación de causalidad"
@@ -1258,7 +1258,7 @@ Usage: #example
 ///////////////////// Enable When
 * item[=].item[=].item[=].enableWhen.question = "sistemaClasfcausalidad"
 * item[=].item[=].item[=].enableWhen.operator = #=
-* item[=].item[=].item[=].enableWhen.answerCoding.system = "http://paho.org/esavi/CodeSystem/SistemaClasfCausalidadCS"
+* item[=].item[=].item[=].enableWhen.answerCoding.system = Canonical(SistemaClasfCausalidadCS)
 * item[=].item[=].item[=].enableWhen.answerCoding.code = #otro
 
 
@@ -1277,7 +1277,7 @@ Usage: #example
 
 * item[=].item[=].item[=].enableWhen.question = "sistemaClasfcausalidad"
 * item[=].item[=].item[=].enableWhen.operator = #=
-* item[=].item[=].item[=].enableWhen.answerCoding.system = "http://paho.org/esavi/CodeSystem/SistemaClasfCausalidadCS"
+* item[=].item[=].item[=].enableWhen.answerCoding.system = Canonical(SistemaClasfCausalidadCS)
 * item[=].item[=].item[=].enableWhen.answerCoding.code = #WHO-AEFI
 
 /////////////////////UMC
@@ -1289,7 +1289,7 @@ Usage: #example
 
 * item[=].item[=].item[=].enableWhen.question = "sistemaClasfcausalidad"
 * item[=].item[=].item[=].enableWhen.operator = #=
-* item[=].item[=].item[=].enableWhen.answerCoding.system = "http://paho.org/esavi/CodeSystem/SistemaClasfCausalidadCS"
+* item[=].item[=].item[=].enableWhen.answerCoding.system = Canonical(SistemaClasfCausalidadCS)
 * item[=].item[=].item[=].enableWhen.answerCoding.code = #WHO-UMC
 
 /////////////////////UMC
@@ -1302,7 +1302,7 @@ Usage: #example
 * item[=].item[=].item[=].enableWhen.question = "sistemaClasfcausalidad"
 * item[=].item[=].item[=].enableWhen.operator = #=
 * item[=].item[=].item[=].enableWhen.answerCoding.code = #Naranjo
-* item[=].item[=].item[=].enableWhen.answerCoding.system = "http://paho.org/esavi/CodeSystem/SistemaClasfCausalidadCS"
+* item[=].item[=].item[=].enableWhen.answerCoding.system = Canonical(SistemaClasfCausalidadCS)
 
 //////////////Identificador vacuna OK
 * item[=].item[=].item[+].type = #integer

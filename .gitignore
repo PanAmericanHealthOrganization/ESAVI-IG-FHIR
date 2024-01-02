@@ -3,13 +3,11 @@ temp/
 template/
 fsh-generated/
 output/
+node_modules/
 .DS_Store
-<<<<<<< HEAD
 xxxx/
 src/
 input-out/
 local-template/
-=======
 input/.DS_Store
 input/fsh/.DS_Store
->>>>>>> 3973bd19bdfdb0516c4967c37053745726c10aed

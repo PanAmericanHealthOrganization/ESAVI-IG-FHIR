@@ -2,15 +2,8 @@ CodeSystem: DirOrgNotiCS
 Id: DirOrgNotiCS
 Title: "Códigos PAHO para Direcciones"
 Description: "Códigos para Direcciones según PAHO"
-* ^version = "1.0.0"
-* ^experimental = true
-* ^caseSensitive = true
-* ^status = #active
-* ^date = "2021-03-11T00:00:00-03:00"
-* ^contact.name = "OPS"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = ""
-* ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
+* insert RuleSetCS
+
 * #AR_B_06126 "Campana (Partido), Buenos Aires, Argentina"
 * #AR_B_06134 "Cañuelas (Partido), Buenos Aires, Argentina"
 * #AR_B_06140 "Capitán Sarmiento (Partido), Buenos Aires, Argentina"
