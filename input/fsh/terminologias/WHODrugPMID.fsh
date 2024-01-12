@@ -14,6 +14,7 @@ Description: "Fragmento de WHODrug completo con nombres genericos y comerciales 
 * ^contact.name = "WHO"
 * ^content = #fragment
 * ^caseSensitive = false
+* ^hierarchyMeaning = #is-a
 * #1 "Methyldopa"
   * #66969 "Aldomet"
   * #83864 "Alfametildopa"

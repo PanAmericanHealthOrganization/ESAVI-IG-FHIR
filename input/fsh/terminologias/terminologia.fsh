@@ -301,7 +301,7 @@ Description: "Codificacion Estandarizada de diagnóticos de complicaciones de em
 * include codes from system ICD10 where concept is-a #G51.0	"Paralisis de Bell"
 * include codes from system ICD10 where concept is-a #H92.0	"Otalgia"
 * include codes from system ICD10 where concept is-a #H93.1	"Tinnitus"
-* include codes from system SCT where concept is-a #281647001 "Reacción adversa (trastorno)"  
+* include codes from system SCT where concept is-a #118185001 "Hallazgo relacionado al embarazo"  
 
 
 ValueSet: EsaviOtroVS //revisado OKs CS externo. LinkID: codigoESAVIOtro
@@ -309,9 +309,9 @@ Id: EsaviOtroVS
 Title: "Otros Códigos Evento Adverso"
 Description: "Evento Adverso en otro sistema según Snomed y CIE-10"
 * insert RuleSetVS
-* include codes from system SCT where concept is-a #281647001 "Reacción adversa"
+* include codes from system SCT where concept is-a #404684003 "Hallazgo Clínico"
 //* include codes from system ICD11mms where concept is-a #XY0Y "Afección principal"
-* include codes from system ICD10 where concept is-a #E03.9	"Hipotiroidismo, no especificado"
+/** include codes from system ICD10 where concept is-a #E03.9	"Hipotiroidismo, no especificado"
 * include codes from system ICD10 where concept is-a #E66.9	"Obesidad, no especificada"
 * include codes from system ICD10 where concept is-a #E10.9	"Diabetes mellitus insulinodependiente, sin mención de complicación"
 * include codes from system ICD10 where concept is-a #O03.9	"Aborto espontáneo completo o no especificado, sin complicación"
@@ -321,7 +321,7 @@ Description: "Evento Adverso en otro sistema según Snomed y CIE-10"
 * include codes from system ICD10 where concept is-a #R50	"Fiebre de otro origen y de origen desconocido"
 * include codes from system ICD10 where concept is-a #G51.0	"Paralisis de Bell"
 * include codes from system ICD10 where concept is-a #H92.0	"Otalgia"
-* include codes from system ICD10 where concept is-a #H93.1	"Tinnitus"
+* include codes from system ICD10 where concept is-a #H93.1	"Tinnitus"*/
 
 ValueSet: CodigoWhoVacunaVS //revisado y modificado. LinkID:codigoVacunaWHODrug  
 Id: CodigoWhoVacunaVS
@@ -489,7 +489,7 @@ Id: CodigoMedicamentoVS
 Title: "Codigo Medicamento"
 Description:  "Codigo Medicamento"
 * insert RuleSetVS
-* include codes from system SCT where concept is-a #105590001
+* include codes from system SCT where concept is-a #105590001 "Sustancia"
 //* include codes from system ATCCS //NO expande
 //* include codes from system ICD11mms where concept is-a #XM4843 //No expande!!!
 

@@ -1,5 +1,6 @@
 Instance: ejUnoNuevo
 InstanceOf: QuestionnaireResponse
+Description: "Ejemplo de cuestionario Respondido 1"
 Usage: #example
 * status = #completed
 * authored = "2023-04-12T19:09:52.678Z"
@@ -56,7 +57,6 @@ Usage: #example
 //* item[=].item[=].item[=].answer.valueCoding.system = Canonical(MedDRA)
 * item[=].item[=].item[=].answer.valueCoding.code = #10034292 "alergia a penicilina"
 * item[=].item[=].item[+].linkId = "otrosCodigosEnfPrevia"
-//No hay CS!!!!
 * item[=].item[=].item[=].answer.valueCoding.system = Canonical(SCT)
 * item[=].item[=].item[=].answer.valueCoding.code = #91936005 "alergia a penicilina"
 * item[=].item[+].linkId = "antecedentesEventosAdversos"

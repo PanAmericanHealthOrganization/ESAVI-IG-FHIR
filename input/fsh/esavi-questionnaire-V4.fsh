@@ -955,7 +955,7 @@ Usage: #example
 
 /////////////////
 * item[=].item[=].item[+].type = #choice
-* item[=].item[=].item[=].answerValueSet = "https://paho.org/fhir/esavi/ValueSet/EsaviOtroVS"
+* item[=].item[=].item[=].answerValueSet = Canonical(EsaviOtroVS) //"https://paho.org/fhir/esavi/ValueSet/EsaviOtroVS"
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "codigoESAVIOtro"
 * item[=].item[=].item[=].text = "Código no MedDRA del evento adverso ocurrido posterior a la vacunación"

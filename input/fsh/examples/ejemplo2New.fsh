@@ -1,12 +1,12 @@
-Alias: $DirOrgNotiCS = https://paho.org/fhir/esavi/CodeSystem/DirOrgNotiCS
-Alias: $ProfesionalNotificadorVS = https://paho.org/fhir/esavi/CodeSystem/ProfesionalNotificadorVS
-Alias: $CodPaises = https://paho.org/esavi/CodeSystem/CodPaisesCS
-Alias: $administrative-gender = https://hl7.org/fhir/administrative-gender
-Alias: $EnfermedadesPreviasCodificacionCS = https://paho.org/esavi/CodeSystem/EnfermedadesPreviasCodificacionCS
-Alias: $RespuestaSiNoNosabeCS = https://paho.org/fhir/esavi/CodeSystem/RespuestaSiNoNosabeCS
-Alias: $EsaviMedDRACS = https://paho.org/fhir/esavi/CodeSystem/EsaviMedDRACS
-Alias: $EsaviOtroCS = https://paho.org/esavi/CodeSystem/EsaviOtroCS
-Alias: $ClasificacionDesenlaceCS = https://paho.org/fhir/esavi/CodeSystem/ClasificacionDesenlaceCS
+// Alias: $DirOrgNotiCS = https://paho.org/fhir/esavi/CodeSystem/DirOrgNotiCS
+// Alias: $ProfesionalNotificadorVS = https://paho.org/fhir/esavi/CodeSystem/ProfesionalNotificadorVS
+// Alias: $CodPaises = https://paho.org/esavi/CodeSystem/CodPaisesCS
+// Alias: $administrative-gender = https://hl7.org/fhir/administrative-gender
+// Alias: $EnfermedadesPreviasCodificacionCS = https://paho.org/esavi/CodeSystem/EnfermedadesPreviasCodificacionCS
+// Alias: $RespuestaSiNoNosabeCS = https://paho.org/fhir/esavi/CodeSystem/RespuestaSiNoNosabeCS
+// Alias: $EsaviMedDRACS = https://paho.org/fhir/esavi/CodeSystem/EsaviMedDRACS
+// Alias: $EsaviOtroCS = https://paho.org/esavi/CodeSystem/EsaviOtroCS
+// Alias: $ClasificacionDesenlaceCS = https://paho.org/fhir/esavi/CodeSystem/ClasificacionDesenlaceCS
 
 Instance: ejDosNuevo
 Description: "Ejemplo de cuestionario Respondido 2"
@@ -18,19 +18,22 @@ Usage: #example
 * identifier.system = "http://ops.org/esavi/BR"
 * identifier.value = "15500393456"
 * meta.profile = "https://paho.org/fhir/esavi/StructureDefinition/ESAVIQuestionnaireResponse"
-
 * item[0].linkId = "datosNotificacionGeneral"
 * item[=].item[0].linkId = "datosNotificacion"
 * item[=].item[=].item[0].linkId = "paisOrigen-Reg"
-* item[=].item[=].item[=].answer.valueCoding = $CodPaises#BRA "Brasil"
+* item[=].item[=].item[=].answer.valueCoding.system = Canonical(codPaisesCS)
+* item[=].item[=].item[=].answer.valueCoding.code = #BRA "Brasil"
+//* item[=].item[=].item[=].answer.valueCoding = $CodPaises
 * item[=].item[=].item[+].linkId = "nombreOrganizacionNotificadora"
 * item[=].item[=].item[=].answer.valueString = "Ministerio da Saude"
 * item[=].item[=].item[+].linkId = "codigoDireccionOrganizacion"
-* item[=].item[=].item[=].answer.valueCoding = http://paho.org/esavi/CodeSystem/DirOrgNotiCS#BR_AL_27_05705 "Olho d'Água das Flores (Municipio), Alagoas, Brazil"
+* item[=].item[=].item[=].answer.valueCoding = $DirOrgNotiCS#BR_AL_27_05705 "Olho d'Água das Flores (Municipio), Alagoas, Brazil"
 * item[=].item[=].item[+].linkId = "nombreDireccionOrganizacion"
 * item[=].item[=].item[=].answer.valueString = "Florianópolis"
 * item[=].item[=].item[+].linkId = "codigoProfesionNotificador"
-* item[=].item[=].item[=].answer.valueCoding = http://paho.org/esavi/CodeSystem/ProfesionalNotificadorCS#3 "Otro Profesional de la Salud"
+* item[=].item[=].item[=].answer.valueCoding.system = Canonical(ProfesionalNotificadorCS) 
+* item[=].item[=].item[=].answer.valueCoding.code = #3 "Otro Profesional de la Salud"
+//* item[=].item[=].item[=].answer.valueCoding = http://paho.org/esavi/CodeSystem/ProfesionalNotificadorCS#3 "Otro Profesional de la Salud"
 * item[=].item[+].linkId = "fechas"
 * item[=].item[=].item[0].linkId = "fechaConsulta"
 * item[=].item[=].item[=].answer.valueDate = "2021-07-01"
@@ -43,7 +46,7 @@ Usage: #example
 * item[=].item.item[+].linkId = "idPaciente"
 * item[=].item.item[=].answer.valueString = "f309923b7f5b8512eb70fa8361decfb1"
 * item[=].item.item[+].linkId = "codigoResidenciaHabitual"
-* item[=].item.item[=].answer.valueCoding = http://paho.org/esavi/CodeSystem/DirOrgNotiCS#BR_AL_27_05705 "Olho d'Água das Flores (Municipio), Alagoas, Brazil"
+* item[=].item.item[=].answer.valueCoding = $DirOrgNotiCS#BR_AL_27_05705 "Olho d'Água das Flores (Municipio), Alagoas, Brazil"
 * item[=].item.item[+].linkId = "nombreResidenciaHabitual"
 * item[=].item.item[=].answer.valueString = "Florianópolis"
 * item[=].item.item[+].linkId = "sexoPaciente"
@@ -69,7 +72,7 @@ Usage: #example
 * item[=].item[=].item[+].linkId = "fechaVacunacion"
 * item[=].item[=].item[=].answer.valueDate = "2021-06-25"
 * item[=].item[=].item[+].linkId = "codigoDireccionVacunatorio"
-* item[=].item[=].item[=].answer.valueCoding = http://paho.org/esavi/CodeSystem/DirOrgNotiCS#BR_AL_27_05705 "Olho d'Água das Flores (Municipio), Alagoas, Brazil"
+* item[=].item[=].item[=].answer.valueCoding = $DirOrgNotiCS#BR_AL_27_05705 "Olho d'Água das Flores (Municipio), Alagoas, Brazil"
 * item[=].item[=].item[+].linkId = "nombreDireccionVacunatorio"
 * item[=].item[=].item[=].answer.valueString = "direccion genérica"
 * item[+].linkId = "registroESAVI"
@@ -79,7 +82,8 @@ Usage: #example
 * item[=].item[=].item[+].linkId = "IdentificadorESAVI"
 * item[=].item[=].item[=].answer.valueInteger = 1
 * item[=].item[=].item[+].linkId = "codigoESAVIMedDRA"
-* item[=].item[=].item[=].answer.valueCoding = http://paho.org/esavi/CodeSystem/EsaviMedDRACS#10024922 "trastorno de las plaquetas"
+* item[=].item[=].item[=].answer.valueCoding.system = Canonical(MedDRA)
+* item[=].item[=].item[=].answer.valueCoding.code = #10024922 "trastorno de las plaquetas"
 * item[=].item[=].item[+].linkId = "fechaESAVI"
 * item[=].item[=].item[=].answer.valueDate = "2021-07-21"
 * item[=].item[=].item[+].linkId = "descripcionESAVI"
@@ -90,7 +94,8 @@ Usage: #example
 * item[=].item[=].item[+].linkId = "IdentificadorESAVI"
 * item[=].item[=].item[=].answer.valueInteger = 2
 * item[=].item[=].item[+].linkId = "codigoESAVIMedDRA"
-* item[=].item[=].item[=].answer.valueCoding = http://paho.org/esavi/CodeSystem/EsaviMedDRACS#10005604 "Hematuria"
+* item[=].item[=].item[=].answer.valueCoding.system = Canonical(MedDRA)
+* item[=].item[=].item[=].answer.valueCoding.code = #10005604 "Hematuria"
 * item[=].item[=].item[+].linkId = "fechaESAVI"
 * item[=].item[=].item[=].answer.valueDate = "2021-07-21"
 * item[=].item[=].item[+].linkId = "descripcionESAVI"
@@ -101,7 +106,8 @@ Usage: #example
 * item[=].item[=].item[+].linkId = "IdentificadorESAVI"
 * item[=].item[=].item[=].answer.valueInteger = 3
 * item[=].item[=].item[+].linkId = "codigoESAVIMedDRA"
-* item[=].item[=].item[=].answer.valueCoding = http://paho.org/esavi/CodeSystem/EsaviMedDRACS#10014080 "Equimosis"
+* item[=].item[=].item[=].answer.valueCoding.system = Canonical(MedDRA)
+* item[=].item[=].item[=].answer.valueCoding.code = #10014080 "Equimosis"
 * item[=].item[=].item[+].linkId = "fechaESAVI"
 * item[=].item[=].item[=].answer.valueDate = "2021-07-21"
 * item[=].item[=].item[+].linkId = "descripcionESAVI"
@@ -112,7 +118,8 @@ Usage: #example
 * item[=].item[=].item[+].linkId = "IdentificadorESAVI"
 * item[=].item[=].item[=].answer.valueInteger = 4
 * item[=].item[=].item[+].linkId = "codigoESAVIMedDRA"
-* item[=].item[=].item[=].answer.valueCoding = http://paho.org/esavi/CodeSystem/EsaviMedDRACS#10018292 "gingivitis"
+* item[=].item[=].item[=].answer.valueCoding.system = Canonical(MedDRA)
+* item[=].item[=].item[=].answer.valueCoding.code = #10018292 "gingivitis"
 * item[=].item[=].item[+].linkId = "fechaESAVI"
 * item[=].item[=].item[=].answer.valueDate = "2021-07-20"
 * item[=].item[=].item[+].linkId = "descripcionESAVI"
@@ -134,7 +141,8 @@ Usage: #example
 * item[=].item[=].item[=].answer.valueBoolean = false
 * item[=].item[+].linkId = "desenlaceESAVI"
 * item[=].item[=].item[0].linkId = "codDesenlaceESAVI"
-* item[=].item[=].item[=].answer.valueCoding = http://paho.org/esavi/CodeSystem/ClasificacionDesenlaceCS#2 "En recuperación"
+* item[=].item[=].item[=].answer.valueCoding.system = Canonical(ClasificacionDesenlaceCS)
+* item[=].item[=].item[=].answer.valueCoding.code = #2 "En recuperación"
 * item[=].item[=].item[+].linkId = "comentarios"
 * item[=].item[=].item[=].answer.valueString = "Paciente relata alergia a chocolate e ingeriu. Diz que 2 colegas do trabalho apresentaram os mesmos sintomas petéquias hj 20/07"
 * item[=].item[=].item[+].linkId = "fechaInicioInvestigacion"
