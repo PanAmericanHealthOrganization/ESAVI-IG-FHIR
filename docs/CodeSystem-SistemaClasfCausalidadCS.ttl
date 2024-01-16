@@ -10,13 +10,14 @@
   fhir:id [ fhir:v "SistemaClasfCausalidadCS"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This  code system <code>https://paho.org/fhir/esavi/CodeSystem/SistemaClasfCausalidadCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">WHO-UMC<a name=\"SistemaClasfCausalidadCS-WHO-UMC\"> </a></td><td>WHO-UMC</td></tr><tr><td style=\"white-space:nowrap\">WHO-AEFI<a name=\"SistemaClasfCausalidadCS-WHO-AEFI\"> </a></td><td>WHO-AEFI</td></tr><tr><td style=\"white-space:nowrap\">Naranjo<a name=\"SistemaClasfCausalidadCS-Naranjo\"> </a></td><td>Naranjo</td></tr><tr><td style=\"white-space:nowrap\">otro<a name=\"SistemaClasfCausalidadCS-otro\"> </a></td><td>Otro sistema de clasificacion de causalidad</td></tr></table></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-insensitive code system <code>https://paho.org/fhir/esavi/CodeSystem/SistemaClasfCausalidadCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">WHO-UMC<a name=\"SistemaClasfCausalidadCS-WHO-UMC\"> </a></td><td>WHO-UMC</td></tr><tr><td style=\"white-space:nowrap\">WHO-AEFI<a name=\"SistemaClasfCausalidadCS-WHO-AEFI\"> </a></td><td>WHO-AEFI</td></tr><tr><td style=\"white-space:nowrap\">Naranjo<a name=\"SistemaClasfCausalidadCS-Naranjo\"> </a></td><td>Naranjo</td></tr><tr><td style=\"white-space:nowrap\">otro<a name=\"SistemaClasfCausalidadCS-otro\"> </a></td><td>Otro sistema de clasificacion de causalidad</td></tr></table></div>"
   ] ; # 
   fhir:url [ fhir:v "https://paho.org/fhir/esavi/CodeSystem/SistemaClasfCausalidadCS"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "0.1.41"] ; # 
+  fhir:version [ fhir:v "0.1.42"] ; # 
   fhir:name [ fhir:v "SistemaClasfCausalidadCS"] ; # 
   fhir:title [ fhir:v "Tipo de Método de clasificación de causalidad"] ; # 
   fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
   fhir:date [ fhir:v "2021-03-11T00:00:00-03:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ESAVI -"] ; # 
   fhir:contact ( [
@@ -36,6 +37,7 @@
        fhir:code [ fhir:v "001" ]
      ] )
   ] ) ; # 
+  fhir:caseSensitive [ fhir:v "false"^^xsd:boolean] ; # 
   fhir:content [ fhir:v "complete"] ; # 
   fhir:count [ fhir:v "4"^^xsd:nonNegativeInteger] ; # 
   fhir:concept ( [

@@ -6,11 +6,12 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-ProfesionalNotificadorCS.html"><code>https://paho.org/fhir/esavi/CodeSystem/ProfesionalNotificadorCS</code></a></li></ul></div>
   </text>
   <url value="https://paho.org/fhir/esavi/ValueSet/ProfesionalNotificadorVS"/>
-  <version value="0.1.41"/>
+  <version value="0.1.42"/>
   <name value="ProfesionalNotificadorVS"/>
   <title value="Tipo de Profesional Notificador"/>
   <status value="active"/>
-  <date value="2022-02-02"/>
+  <experimental value="false"/>
+  <date value="2021-03-11T00:00:00-03:00"/>
   <publisher value="ESAVI -"/>
   <contact>
     <name value="ESAVI -"/>

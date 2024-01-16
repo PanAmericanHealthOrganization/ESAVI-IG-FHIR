@@ -1,15 +1,16 @@
 {
   "resourceType" : "ValueSet",
-  "id" : "CodPaises",
+  "id" : "codPaises",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-ISO3166Part1.html\"><code>urn:iso:std:iso:3166</code></a></li></ul></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-codPaisesCS.html\"><code>https://paho.org/fhir/esavi/CodeSystem/codPaisesCS</code></a></li></ul></div>"
   },
-  "url" : "https://paho.org/fhir/esavi/ValueSet/CodPaises",
-  "version" : "0.1.41",
+  "url" : "https://paho.org/fhir/esavi/ValueSet/codPaises",
+  "version" : "0.1.42",
   "name" : "CodPaises",
   "title" : "Códigos de Países",
   "status" : "active",
+  "experimental" : false,
   "date" : "2021-03-11T00:00:00-03:00",
   "publisher" : "ESAVI -",
   "contact" : [{
@@ -32,7 +33,7 @@
   }],
   "compose" : {
     "include" : [{
-      "system" : "urn:iso:std:iso:3166"
+      "system" : "https://paho.org/fhir/esavi/CodeSystem/codPaisesCS"
     }]
   }
 }

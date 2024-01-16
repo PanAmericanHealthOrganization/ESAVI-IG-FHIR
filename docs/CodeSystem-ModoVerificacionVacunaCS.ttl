@@ -10,13 +10,14 @@
   fhir:id [ fhir:v "ModoVerificacionVacunaCS"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This  code system <code>https://paho.org/fhir/esavi/CodeSystem/ModoVerificacionVacunaCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"ModoVerificacionVacunaCS-1\"> </a></td><td>Carnet/Registro físico</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"ModoVerificacionVacunaCS-2\"> </a></td><td>Carnet/Registro electrónico</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"ModoVerificacionVacunaCS-3\"> </a></td><td>Declaración verbal</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"ModoVerificacionVacunaCS-4\"> </a></td><td>Historia clínica corroborada con carnet</td></tr><tr><td style=\"white-space:nowrap\">5<a name=\"ModoVerificacionVacunaCS-5\"> </a></td><td>No se sabe</td></tr><tr><td style=\"white-space:nowrap\">O<a name=\"ModoVerificacionVacunaCS-O\"> </a></td><td>Otro</td></tr></table></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-insensitive code system <code>https://paho.org/fhir/esavi/CodeSystem/ModoVerificacionVacunaCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"ModoVerificacionVacunaCS-1\"> </a></td><td>Carnet/Registro físico</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"ModoVerificacionVacunaCS-2\"> </a></td><td>Carnet/Registro electrónico</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"ModoVerificacionVacunaCS-3\"> </a></td><td>Declaración verbal</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"ModoVerificacionVacunaCS-4\"> </a></td><td>Historia clínica corroborada con carnet</td></tr><tr><td style=\"white-space:nowrap\">5<a name=\"ModoVerificacionVacunaCS-5\"> </a></td><td>No se sabe</td></tr><tr><td style=\"white-space:nowrap\">O<a name=\"ModoVerificacionVacunaCS-O\"> </a></td><td>Otro</td></tr></table></div>"
   ] ; # 
   fhir:url [ fhir:v "https://paho.org/fhir/esavi/CodeSystem/ModoVerificacionVacunaCS"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "0.1.41"] ; # 
+  fhir:version [ fhir:v "0.1.42"] ; # 
   fhir:name [ fhir:v "ModoVerificacionVacunaCS"] ; # 
   fhir:title [ fhir:v "Modo de Verificación de Vacunación Previa"] ; # 
   fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
   fhir:date [ fhir:v "2021-03-11T00:00:00-03:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ESAVI -"] ; # 
   fhir:contact ( [
@@ -36,6 +37,7 @@
        fhir:code [ fhir:v "001" ]
      ] )
   ] ) ; # 
+  fhir:caseSensitive [ fhir:v "false"^^xsd:boolean] ; # 
   fhir:content [ fhir:v "complete"] ; # 
   fhir:count [ fhir:v "6"^^xsd:nonNegativeInteger] ; # 
   fhir:concept ( [

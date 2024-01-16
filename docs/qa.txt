@@ -1,260 +1,105 @@
 ﻿ESAVI : Validation Results
 =========================================
 
-err = 0, warn = 135, info = 21
-IG Publisher Version: 1.5.8
-Generated Tue Dec 19 16:50:20 CLST 2023. FHIR version 4.0.1 for uv.esavi#0.1.41 (canonical = https://paho.org/fhir/esavi)
- Build Errors : 3 / 5 / 0
- /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/CodeSystem-ClasificacionDesenlaceCS : 0 / 2 / 2
- /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/CodeSystem-ClasificacionDesenlaceNaranjoCS : 0 / 2 / 2
- /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/CodeSystem-ClasificacionDesenlaceWHOAEFICS : 0 / 2 / 2
- /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/CodeSystem-ClasificacionDesenlaceWHOUMCCS : 0 / 2 / 2
- /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/CodeSystem-CodigoWhoFabricanteCS : 0 / 2 / 2
- /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/CodeSystem-ComplicacionEmbarazoCS : 0 / 2 / 2
- /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/CodeSystem-DirOrgNotiCS : 0 / 2 / 2
- /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/CodeSystem-ModoConfirmacionInfeccionCS : 0 / 2 / 2
- /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/CodeSystem-ModoVerificacionVacunaCS : 0 / 2 / 2
- /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/CodeSystem-ProfesionalNotificadorCS : 0 / 2 / 2
- /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/CodeSystem-RespuestaSiNoNosabeCS : 0 / 2 / 2
- /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/CodeSystem-SistemaClasfCausalidadCS : 0 / 2 / 2
- /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/CodeSystem-SistemasDeCodificacionCS : 0 / 2 / 2
- /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/CodeSystem-WHODrugDC : 0 / 1 / 3
- /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/CodeSystem-WHODrugPMID : 0 / 1 / 3
- /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/ImplementationGuide-uv.esavi : 0 / 2 / 1
- /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/Questionnaire-CuestionarioESAVI : 0 / 1 / 5
- /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/QuestionnaireResponse-ejDosNuevo : 0 / 10 / 1
- /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/QuestionnaireResponse-ejTresNuevo : 0 / 48 / 1
- /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/QuestionnaireResponse-ejUnoNuevo : 0 / 7 / 1
+err = 0, warn = 2, info = 0
+IG Publisher Version: 1.5.11
+Generated Tue Jan 16 11:38:08 CLST 2024. FHIR version 4.0.1 for uv.esavi#0.1.42 (canonical = https://paho.org/fhir/esavi)
+ Build Errors : 0 / 0 / 0
+ /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/CodeSystem-ClasificacionDesenlaceCS : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/CodeSystem-ClasificacionDesenlaceNaranjoCS : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/CodeSystem-ClasificacionDesenlaceWHOAEFICS : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/CodeSystem-ClasificacionDesenlaceWHOUMCCS : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/CodeSystem-CodigoWhoFabricanteCS : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/CodeSystem-ComplicacionEmbarazoCS : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/CodeSystem-DirOrgNotiCS : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/CodeSystem-ModoConfirmacionInfeccionCS : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/CodeSystem-ModoVerificacionVacunaCS : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/CodeSystem-ProfesionalNotificadorCS : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/CodeSystem-RespuestaSiNoNosabeCS : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/CodeSystem-SistemaClasfCausalidadCS : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/CodeSystem-SistemasDeCodificacionCS : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/CodeSystem-WHODrugDC : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/CodeSystem-WHODrugPMID : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/CodeSystem-codPaisesCS : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/ImplementationGuide-uv.esavi : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/Questionnaire-CuestionarioESAVI : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/QuestionnaireResponse-ejDosNuevo : 0 / 4 / 1
+ /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/QuestionnaireResponse-ejTresNuevo : 0 / 19 / 1
+ /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/QuestionnaireResponse-ejUnoNuevo : 0 / 2 / 1
  /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/StructureDefinition-ESAVIQuestionnaireResponse : 0 / 0 / 1
- /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/ValueSet-ClasificacionDesenlaceNaranjoVS : 0 / 1 / 1
- /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/ValueSet-ClasificacionDesenlaceVS : 0 / 1 / 1
- /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/ValueSet-ClasificacionDesenlaceWHOAEFIVS : 0 / 1 / 1
- /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/ValueSet-ClasificacionDesenlaceWHOUMCVS : 0 / 1 / 1
- /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/ValueSet-CodPaises : 0 / 1 / 1
- /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/ValueSet-CodigoMedDRAEnfPreviaVS : 0 / 2 / 1
- /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/ValueSet-CodigoMedicamentoVS : 0 / 2 / 1
- /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/ValueSet-CodigoNoWhoVacunaVS : 0 / 2 / 1
- /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/ValueSet-CodigoWhoFabricanteVS : 0 / 1 / 1
- /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/ValueSet-CodigoWhoVacunaVS : 0 / 1 / 1
- /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/ValueSet-ComplicacionEmbarazoMedDRAVS : 0 / 3 / 1
- /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/ValueSet-ComplicacionEmbarazoOtroVS : 0 / 2 / 1
- /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/ValueSet-ComplicacionEmbarazoVS : 0 / 1 / 1
- /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/ValueSet-DirOrgNotiVS : 0 / 1 / 1
- /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/ValueSet-EnfermedadesPreviasCodificacionVS : 0 / 2 / 1
- /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/ValueSet-EsaviMedDRAVS : 0 / 2 / 1
- /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/ValueSet-EsaviOtroVS : 0 / 2 / 1
- /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/ValueSet-FormaFarmaceuticaVS : 0 / 1 / 1
- /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/ValueSet-ModoConfirmacionInfeccionVS : 0 / 1 / 1
- /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/ValueSet-ModoVerificacionVacunaVS : 0 / 1 / 1
- /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/ValueSet-ProfesionalNotificadorVS : 0 / 1 / 1
- /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/ValueSet-RespuestaSiNoNosabeVS : 0 / 1 / 1
- /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/ValueSet-SistemaClasfCausalidadVS : 0 / 1 / 1
- /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/ValueSet-SistemasDeCodificacionVS : 0 / 1 / 1
- /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/ValueSet-ViaAdminMedicamentoVS : 0 / 1 / 1
+ /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/ValueSet-ClasificacionDesenlaceNaranjoVS : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/ValueSet-ClasificacionDesenlaceVS : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/ValueSet-ClasificacionDesenlaceWHOAEFIVS : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/ValueSet-ClasificacionDesenlaceWHOUMCVS : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/ValueSet-CodigoMedDRAEnfPreviaVS : 0 / 1 / 1
+ /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/ValueSet-CodigoMedicamentoVS : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/ValueSet-CodigoNoWhoVacunaVS : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/ValueSet-CodigoWhoFabricanteVS : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/ValueSet-CodigoWhoVacunaVS : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/ValueSet-ComplicacionEmbarazoMedDRAVS : 0 / 1 / 1
+ /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/ValueSet-ComplicacionEmbarazoOtroVS : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/ValueSet-ComplicacionEmbarazoVS : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/ValueSet-DirOrgNotiVS : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/ValueSet-EnfermedadesPreviasCodificacionVS : 0 / 1 / 1
+ /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/ValueSet-EsaviMedDRAVS : 0 / 1 / 1
+ /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/ValueSet-EsaviOtroVS : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/ValueSet-FormaFarmaceuticaVS : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/ValueSet-ModoConfirmacionInfeccionVS : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/ValueSet-ModoVerificacionVacunaVS : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/ValueSet-ProfesionalNotificadorVS : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/ValueSet-RespuestaSiNoNosabeVS : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/ValueSet-SistemaClasfCausalidadVS : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/ValueSet-SistemasDeCodificacionVS : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/ValueSet-ViaAdminMedicamentoVS : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/ValueSet-codPaises : 0 / 0 / 1
 </table>
 == n/a ==
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource QuestionnaireResponse/ejUnoNuevo.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: /Users/jorgemansilla/IGs/OPS-ESAVI/output/index.html#/html/body/div/div/div/div/div/ul/li/a at Line 236, column 8: The link 'operaciones.html' for "Operaciones FHIR" cannot be resolved
-ERROR: /Users/jorgemansilla/IGs/OPS-ESAVI/output/index.html#/html/body/div/div/div/div/div/ul/li/a at Line 239, column 8: The link 'uso_como_llenar_esta_guia.html' for "Uso" cannot be resolved
-ERROR: /Users/jorgemansilla/IGs/OPS-ESAVI/output/index.html#/html/body/div/div/div/div/div/ul/li/a at Line 240, column 8: The link 'seguridad.html' for "Seguridad" cannot be resolved
-WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
-WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
-WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
-WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
 == fsh-generated/resources/CodeSystem-ClasificacionDesenlaceCS.json ==
-INFORMATION: CodeSystem/ClasificacionDesenlaceCS: CodeSystem: Los CodeSystems no definidos por HL7 DEBERIAN tener un valor  definido para el elemento caseSensitive para que los usuarios conozcan el estado y significado del sistema de codificación claramente
-WARNING: CodeSystem/ClasificacionDesenlaceCS: CodeSystem: El perfil ShareableValueSet dice que el elemento experimental es obligatorio, pero no está presente. Los conjuntos de valores publicados DEBERIAN conformar al perfil ShareableValueSet
-WARNING: CodeSystem/ClasificacionDesenlaceCS: CodeSystem: El perfil ShareableValueSet dice que el elemento caseSensitive es obligatorio, pero no está presente. Los conjuntos de valores publicados DEBERIAN conformar al perfil ShareableValueSet
 == fsh-generated/resources/CodeSystem-ClasificacionDesenlaceNaranjoCS.json ==
-INFORMATION: CodeSystem/ClasificacionDesenlaceNaranjoCS: CodeSystem: Los CodeSystems no definidos por HL7 DEBERIAN tener un valor  definido para el elemento caseSensitive para que los usuarios conozcan el estado y significado del sistema de codificación claramente
-WARNING: CodeSystem/ClasificacionDesenlaceNaranjoCS: CodeSystem: El perfil ShareableValueSet dice que el elemento experimental es obligatorio, pero no está presente. Los conjuntos de valores publicados DEBERIAN conformar al perfil ShareableValueSet
-WARNING: CodeSystem/ClasificacionDesenlaceNaranjoCS: CodeSystem: El perfil ShareableValueSet dice que el elemento caseSensitive es obligatorio, pero no está presente. Los conjuntos de valores publicados DEBERIAN conformar al perfil ShareableValueSet
 == fsh-generated/resources/CodeSystem-ClasificacionDesenlaceWHOAEFICS.json ==
-INFORMATION: CodeSystem/ClasificacionDesenlaceWHOAEFICS: CodeSystem: Los CodeSystems no definidos por HL7 DEBERIAN tener un valor  definido para el elemento caseSensitive para que los usuarios conozcan el estado y significado del sistema de codificación claramente
-WARNING: CodeSystem/ClasificacionDesenlaceWHOAEFICS: CodeSystem: El perfil ShareableValueSet dice que el elemento experimental es obligatorio, pero no está presente. Los conjuntos de valores publicados DEBERIAN conformar al perfil ShareableValueSet
-WARNING: CodeSystem/ClasificacionDesenlaceWHOAEFICS: CodeSystem: El perfil ShareableValueSet dice que el elemento caseSensitive es obligatorio, pero no está presente. Los conjuntos de valores publicados DEBERIAN conformar al perfil ShareableValueSet
 == fsh-generated/resources/CodeSystem-ClasificacionDesenlaceWHOUMCCS.json ==
-INFORMATION: CodeSystem/ClasificacionDesenlaceWHOUMCCS: CodeSystem: Los CodeSystems no definidos por HL7 DEBERIAN tener un valor  definido para el elemento caseSensitive para que los usuarios conozcan el estado y significado del sistema de codificación claramente
-WARNING: CodeSystem/ClasificacionDesenlaceWHOUMCCS: CodeSystem: El perfil ShareableValueSet dice que el elemento experimental es obligatorio, pero no está presente. Los conjuntos de valores publicados DEBERIAN conformar al perfil ShareableValueSet
-WARNING: CodeSystem/ClasificacionDesenlaceWHOUMCCS: CodeSystem: El perfil ShareableValueSet dice que el elemento caseSensitive es obligatorio, pero no está presente. Los conjuntos de valores publicados DEBERIAN conformar al perfil ShareableValueSet
 == fsh-generated/resources/CodeSystem-CodigoWhoFabricanteCS.json ==
-INFORMATION: CodeSystem/CodigoWhoFabricanteCS: CodeSystem: Los CodeSystems no definidos por HL7 DEBERIAN tener un valor  definido para el elemento caseSensitive para que los usuarios conozcan el estado y significado del sistema de codificación claramente
-WARNING: CodeSystem/CodigoWhoFabricanteCS: CodeSystem: El perfil ShareableValueSet dice que el elemento experimental es obligatorio, pero no está presente. Los conjuntos de valores publicados DEBERIAN conformar al perfil ShareableValueSet
-WARNING: CodeSystem/CodigoWhoFabricanteCS: CodeSystem: El perfil ShareableValueSet dice que el elemento caseSensitive es obligatorio, pero no está presente. Los conjuntos de valores publicados DEBERIAN conformar al perfil ShareableValueSet
 == fsh-generated/resources/CodeSystem-ComplicacionEmbarazoCS.json ==
-INFORMATION: CodeSystem/ComplicacionEmbarazoCS: CodeSystem: Los CodeSystems no definidos por HL7 DEBERIAN tener un valor  definido para el elemento caseSensitive para que los usuarios conozcan el estado y significado del sistema de codificación claramente
-WARNING: CodeSystem/ComplicacionEmbarazoCS: CodeSystem: El perfil ShareableValueSet dice que el elemento experimental es obligatorio, pero no está presente. Los conjuntos de valores publicados DEBERIAN conformar al perfil ShareableValueSet
-WARNING: CodeSystem/ComplicacionEmbarazoCS: CodeSystem: El perfil ShareableValueSet dice que el elemento caseSensitive es obligatorio, pero no está presente. Los conjuntos de valores publicados DEBERIAN conformar al perfil ShareableValueSet
 == fsh-generated/resources/CodeSystem-DirOrgNotiCS.json ==
-INFORMATION: CodeSystem/DirOrgNotiCS: CodeSystem: Los CodeSystems no definidos por HL7 DEBERIAN tener un valor  definido para el elemento caseSensitive para que los usuarios conozcan el estado y significado del sistema de codificación claramente
-WARNING: CodeSystem/DirOrgNotiCS: CodeSystem: El perfil ShareableValueSet dice que el elemento experimental es obligatorio, pero no está presente. Los conjuntos de valores publicados DEBERIAN conformar al perfil ShareableValueSet
-WARNING: CodeSystem/DirOrgNotiCS: CodeSystem: El perfil ShareableValueSet dice que el elemento caseSensitive es obligatorio, pero no está presente. Los conjuntos de valores publicados DEBERIAN conformar al perfil ShareableValueSet
 == fsh-generated/resources/CodeSystem-ModoConfirmacionInfeccionCS.json ==
-INFORMATION: CodeSystem/ModoConfirmacionInfeccionCS: CodeSystem: Los CodeSystems no definidos por HL7 DEBERIAN tener un valor  definido para el elemento caseSensitive para que los usuarios conozcan el estado y significado del sistema de codificación claramente
-WARNING: CodeSystem/ModoConfirmacionInfeccionCS: CodeSystem: El perfil ShareableValueSet dice que el elemento experimental es obligatorio, pero no está presente. Los conjuntos de valores publicados DEBERIAN conformar al perfil ShareableValueSet
-WARNING: CodeSystem/ModoConfirmacionInfeccionCS: CodeSystem: El perfil ShareableValueSet dice que el elemento caseSensitive es obligatorio, pero no está presente. Los conjuntos de valores publicados DEBERIAN conformar al perfil ShareableValueSet
 == fsh-generated/resources/CodeSystem-ModoVerificacionVacunaCS.json ==
-INFORMATION: CodeSystem/ModoVerificacionVacunaCS: CodeSystem: Los CodeSystems no definidos por HL7 DEBERIAN tener un valor  definido para el elemento caseSensitive para que los usuarios conozcan el estado y significado del sistema de codificación claramente
-WARNING: CodeSystem/ModoVerificacionVacunaCS: CodeSystem: El perfil ShareableValueSet dice que el elemento experimental es obligatorio, pero no está presente. Los conjuntos de valores publicados DEBERIAN conformar al perfil ShareableValueSet
-WARNING: CodeSystem/ModoVerificacionVacunaCS: CodeSystem: El perfil ShareableValueSet dice que el elemento caseSensitive es obligatorio, pero no está presente. Los conjuntos de valores publicados DEBERIAN conformar al perfil ShareableValueSet
 == fsh-generated/resources/CodeSystem-ProfesionalNotificadorCS.json ==
-INFORMATION: CodeSystem/ProfesionalNotificadorCS: CodeSystem: Los CodeSystems no definidos por HL7 DEBERIAN tener un valor  definido para el elemento caseSensitive para que los usuarios conozcan el estado y significado del sistema de codificación claramente
-WARNING: CodeSystem/ProfesionalNotificadorCS: CodeSystem: El perfil ShareableValueSet dice que el elemento experimental es obligatorio, pero no está presente. Los conjuntos de valores publicados DEBERIAN conformar al perfil ShareableValueSet
-WARNING: CodeSystem/ProfesionalNotificadorCS: CodeSystem: El perfil ShareableValueSet dice que el elemento caseSensitive es obligatorio, pero no está presente. Los conjuntos de valores publicados DEBERIAN conformar al perfil ShareableValueSet
 == fsh-generated/resources/CodeSystem-RespuestaSiNoNosabeCS.json ==
-INFORMATION: CodeSystem/RespuestaSiNoNosabeCS: CodeSystem: Los CodeSystems no definidos por HL7 DEBERIAN tener un valor  definido para el elemento caseSensitive para que los usuarios conozcan el estado y significado del sistema de codificación claramente
-WARNING: CodeSystem/RespuestaSiNoNosabeCS: CodeSystem: El perfil ShareableValueSet dice que el elemento experimental es obligatorio, pero no está presente. Los conjuntos de valores publicados DEBERIAN conformar al perfil ShareableValueSet
-WARNING: CodeSystem/RespuestaSiNoNosabeCS: CodeSystem: El perfil ShareableValueSet dice que el elemento caseSensitive es obligatorio, pero no está presente. Los conjuntos de valores publicados DEBERIAN conformar al perfil ShareableValueSet
 == fsh-generated/resources/CodeSystem-SistemaClasfCausalidadCS.json ==
-INFORMATION: CodeSystem/SistemaClasfCausalidadCS: CodeSystem: Los CodeSystems no definidos por HL7 DEBERIAN tener un valor  definido para el elemento caseSensitive para que los usuarios conozcan el estado y significado del sistema de codificación claramente
-WARNING: CodeSystem/SistemaClasfCausalidadCS: CodeSystem: El perfil ShareableValueSet dice que el elemento experimental es obligatorio, pero no está presente. Los conjuntos de valores publicados DEBERIAN conformar al perfil ShareableValueSet
-WARNING: CodeSystem/SistemaClasfCausalidadCS: CodeSystem: El perfil ShareableValueSet dice que el elemento caseSensitive es obligatorio, pero no está presente. Los conjuntos de valores publicados DEBERIAN conformar al perfil ShareableValueSet
 == fsh-generated/resources/CodeSystem-SistemasDeCodificacionCS.json ==
-INFORMATION: CodeSystem/SistemasDeCodificacionCS: CodeSystem: Los CodeSystems no definidos por HL7 DEBERIAN tener un valor  definido para el elemento caseSensitive para que los usuarios conozcan el estado y significado del sistema de codificación claramente
-WARNING: CodeSystem/SistemasDeCodificacionCS: CodeSystem: El perfil ShareableValueSet dice que el elemento experimental es obligatorio, pero no está presente. Los conjuntos de valores publicados DEBERIAN conformar al perfil ShareableValueSet
-WARNING: CodeSystem/SistemasDeCodificacionCS: CodeSystem: El perfil ShareableValueSet dice que el elemento caseSensitive es obligatorio, pero no está presente. Los conjuntos de valores publicados DEBERIAN conformar al perfil ShareableValueSet
 == fsh-generated/resources/CodeSystem-WHODrugDC.json ==
-INFORMATION: CodeSystem/WHODrugDC: CodeSystem: Los CodeSystems no definidos por HL7 DEBERIAN tener un valor  definido para el elemento caseSensitive para que los usuarios conozcan el estado y significado del sistema de codificación claramente
-INFORMATION: CodeSystem/WHODrugDC: CodeSystem: Los CodeSystems no definidos por HL7 DEBERIAN tener un valor  definido para el elemento hierarchyMeaning para que los usuarios conozcan el estado y significado del sistema de codificación claramente
-WARNING: CodeSystem/WHODrugDC: CodeSystem: El perfil ShareableValueSet dice que el elemento caseSensitive es obligatorio, pero no está presente. Los conjuntos de valores publicados DEBERIAN conformar al perfil ShareableValueSet
 == fsh-generated/resources/CodeSystem-WHODrugPMID.json ==
-INFORMATION: CodeSystem/WHODrugPMID: CodeSystem: Los CodeSystems no definidos por HL7 DEBERIAN tener un valor  definido para el elemento caseSensitive para que los usuarios conozcan el estado y significado del sistema de codificación claramente
-INFORMATION: CodeSystem/WHODrugPMID: CodeSystem: Los CodeSystems no definidos por HL7 DEBERIAN tener un valor  definido para el elemento hierarchyMeaning para que los usuarios conozcan el estado y significado del sistema de codificación claramente
-WARNING: CodeSystem/WHODrugPMID: CodeSystem: El perfil ShareableValueSet dice que el elemento caseSensitive es obligatorio, pero no está presente. Los conjuntos de valores publicados DEBERIAN conformar al perfil ShareableValueSet
+== fsh-generated/resources/CodeSystem-codPaisesCS.json ==
 == fsh-generated/resources/ImplementationGuide-uv.esavi.json ==
-WARNING: ImplementationGuide/uv.esavi: ImplementationGuide.definition.resource[15].name: el valor no puede empezar o terminar con espacios en blanco 'Códigos MEDDRA Complicaciones en Embarazo ESAVI '
-WARNING: ImplementationGuide/uv.esavi: ImplementationGuide.definition.resource[31].name: el valor no puede empezar o terminar con espacios en blanco 'Otros Códigos Complicaciones en Embarazo ESAVI '
 == fsh-generated/resources/Questionnaire-CuestionarioESAVI.json ==
-WARNING: Questionnaire/CuestionarioESAVI: Questionnaire.item[2].item[4].enableWhen[0].answer.ofType(Coding): Un código sin sistema no tiene un significado definido. El elemento system debe estar presente
-INFORMATION: Questionnaire/CuestionarioESAVI: Questionnaire.item[4].item[4].item[2].enableWhen[0].answer.ofType(Coding): El URI para el Code System 'http://paho.org/esavi/CodeSystem/SistemaClasfCausalidadCS' es desconocido asi que el código no puede ser validado
-INFORMATION: Questionnaire/CuestionarioESAVI: Questionnaire.item[4].item[4].item[4].enableWhen[0].answer.ofType(Coding): El URI para el Code System 'http://paho.org/esavi/CodeSystem/SistemaClasfCausalidadCS' es desconocido asi que el código no puede ser validado
-INFORMATION: Questionnaire/CuestionarioESAVI: Questionnaire.item[4].item[4].item[5].enableWhen[0].answer.ofType(Coding): El URI para el Code System 'http://paho.org/esavi/CodeSystem/SistemaClasfCausalidadCS' es desconocido asi que el código no puede ser validado
-INFORMATION: Questionnaire/CuestionarioESAVI: Questionnaire.item[4].item[4].item[6].enableWhen[0].answer.ofType(Coding): El URI para el Code System 'http://paho.org/esavi/CodeSystem/SistemaClasfCausalidadCS' es desconocido asi que el código no puede ser validado
 == fsh-generated/resources/QuestionnaireResponse-ejDosNuevo.json ==
-WARNING: QuestionnaireResponse/ejDosNuevo: QuestionnaireResponse.item[0].item[0].item[0].answer[0]: The code provided BRA cannot be validated in the options value set (Códigos de Países) in the questionnaire because the system https://paho.org/esavi/CodeSystem/CodPaisesCS could not be found
-WARNING: QuestionnaireResponse/ejDosNuevo: QuestionnaireResponse.item[0].item[0].item[2].answer[0]: The code provided BR_AL_27_05705 cannot be validated in the options value set (Códigos PAHO para Direcciones) in the questionnaire because the system http://paho.org/esavi/CodeSystem/DirOrgNotiCS could not be found
-WARNING: QuestionnaireResponse/ejDosNuevo: QuestionnaireResponse.item[0].item[0].item[4].answer[0]: The code provided 3 cannot be validated in the options value set (Tipo de Profesional Notificador) in the questionnaire because the system http://paho.org/esavi/CodeSystem/ProfesionalNotificadorCS could not be found
-WARNING: QuestionnaireResponse/ejDosNuevo: QuestionnaireResponse.item[1].item[0].item[2].answer[0]: The code provided BR_AL_27_05705 cannot be validated in the options value set (Códigos PAHO para Direcciones) in the questionnaire because the system http://paho.org/esavi/CodeSystem/DirOrgNotiCS could not be found
-WARNING: QuestionnaireResponse/ejDosNuevo: QuestionnaireResponse.item[2].item[0].item[7].answer[0]: The code provided BR_AL_27_05705 cannot be validated in the options value set (Códigos PAHO para Direcciones) in the questionnaire because the system http://paho.org/esavi/CodeSystem/DirOrgNotiCS could not be found
-WARNING: QuestionnaireResponse/ejDosNuevo: QuestionnaireResponse.item[3].item[0].item[2].answer[0]: The code provided 10024922 cannot be validated in the options value set (Código MedDRA del Evento Adverso notificado) in the questionnaire because the system http://paho.org/esavi/CodeSystem/EsaviMedDRACS could not be found
-WARNING: QuestionnaireResponse/ejDosNuevo: QuestionnaireResponse.item[3].item[1].item[2].answer[0]: The code provided 10005604 cannot be validated in the options value set (Código MedDRA del Evento Adverso notificado) in the questionnaire because the system http://paho.org/esavi/CodeSystem/EsaviMedDRACS could not be found
-WARNING: QuestionnaireResponse/ejDosNuevo: QuestionnaireResponse.item[3].item[2].item[2].answer[0]: The code provided 10014080 cannot be validated in the options value set (Código MedDRA del Evento Adverso notificado) in the questionnaire because the system http://paho.org/esavi/CodeSystem/EsaviMedDRACS could not be found
-WARNING: QuestionnaireResponse/ejDosNuevo: QuestionnaireResponse.item[3].item[3].item[2].answer[0]: The code provided 10018292 cannot be validated in the options value set (Código MedDRA del Evento Adverso notificado) in the questionnaire because the system http://paho.org/esavi/CodeSystem/EsaviMedDRACS could not be found
-WARNING: QuestionnaireResponse/ejDosNuevo: QuestionnaireResponse.item[3].item[5].item[0].answer[0]: The code provided 2 cannot be validated in the options value set (Desenlaces Tras ESAVI) in the questionnaire because the system http://paho.org/esavi/CodeSystem/ClasificacionDesenlaceCS could not be found
 == fsh-generated/resources/QuestionnaireResponse-ejTresNuevo.json ==
-WARNING: QuestionnaireResponse/ejTresNuevo: QuestionnaireResponse.item[0].item[0].item[0].answer[0]: The code provided PER cannot be validated in the options value set (Códigos de Países) in the questionnaire because the system https://paho.org/esavi/CodeSystem/CodPaisesCS could not be found
-WARNING: QuestionnaireResponse/ejTresNuevo: QuestionnaireResponse.item[0].item[0].item[2].answer[0]: The code provided PE_ICA_0201 cannot be validated in the options value set (Códigos PAHO para Direcciones) in the questionnaire because the system https://paho.org/esavi/CodeSystem/DirOrgNotiCS could not be found
-WARNING: QuestionnaireResponse/ejTresNuevo: QuestionnaireResponse.item[0].item[0].item[4].answer[0]: The code provided 1 cannot be validated in the options value set (Tipo de Profesional Notificador) in the questionnaire because the system https://paho.org/esavi/CodeSystem/ProfesionalNotificadorCS could not be found
-WARNING: QuestionnaireResponse/ejTresNuevo: QuestionnaireResponse.item[1].item[0].item[2].answer[0]: The code provided PE_ICA_0201 cannot be validated in the options value set (Códigos PAHO para Direcciones) in the questionnaire because the system https://paho.org/esavi/CodeSystem/DirOrgNotiCS could not be found
-WARNING: QuestionnaireResponse/ejTresNuevo: QuestionnaireResponse.item[1].item[0].item[4].answer[0]: The code provided female cannot be validated in the options value set (AdministrativeGender) in the questionnaire because the system https://hl7.org/fhir/administrative-gender could not be found
-WARNING: QuestionnaireResponse/ejTresNuevo: QuestionnaireResponse.item[2].item[0].item[0].answer[0]: The code provided 2 cannot be validated in the options value set (Respuestas Simples) in the questionnaire because the system https://paho.org/esavi/CodeSystem/RespuestaSiNoNosabeCS could not be found
-WARNING: QuestionnaireResponse/ejTresNuevo: QuestionnaireResponse.item[3].item[0].item[7].answer[0]: The code provided PE_ICA_0211 cannot be validated in the options value set (Códigos PAHO para Direcciones) in the questionnaire because the system https://paho.org/esavi/CodeSystem/DirOrgNotiCS could not be found
-WARNING: QuestionnaireResponse/ejTresNuevo: QuestionnaireResponse.item[3].item[0].item[8].answer[0]: The code provided 5 cannot be validated in the options value set (Modos Verificación Vacuna Previa) in the questionnaire because the system https://paho.org/esavi/CodeSystem/ModoVerificacionVacunaCS could not be found
-WARNING: QuestionnaireResponse/ejTresNuevo: QuestionnaireResponse.item[4].item[0].item[2].answer[0]: The code provided 10022044 cannot be validated in the options value set (Código MedDRA del Evento Adverso notificado) in the questionnaire because the system https://paho.org/esavi/CodeSystem/EsaviMedDRACS could not be found
-WARNING: QuestionnaireResponse/ejTresNuevo: QuestionnaireResponse.item[4].item[0].item[3].answer[0]: The code provided 95382004 cannot be validated in the options value set (Otros Códigos Evento Adverso) in the questionnaire because the system https://paho.org/esavi/CodeSystem/EsaviOtroCS could not be found
-WARNING: QuestionnaireResponse/ejTresNuevo: QuestionnaireResponse.item[4].item[1].item[2].answer[0]: The code provided 10025188 cannot be validated in the options value set (Código MedDRA del Evento Adverso notificado) in the questionnaire because the system https://paho.org/esavi/CodeSystem/EsaviMedDRACS could not be found
-WARNING: QuestionnaireResponse/ejTresNuevo: QuestionnaireResponse.item[4].item[1].item[3].answer[0]: The code provided 48573006 cannot be validated in the options value set (Otros Códigos Evento Adverso) in the questionnaire because the system https://paho.org/esavi/CodeSystem/EsaviOtroCS could not be found
-WARNING: QuestionnaireResponse/ejTresNuevo: QuestionnaireResponse.item[4].item[2].item[2].answer[0]: The code provided 10025188 cannot be validated in the options value set (Código MedDRA del Evento Adverso notificado) in the questionnaire because the system https://paho.org/esavi/CodeSystem/EsaviMedDRACS could not be found
-WARNING: QuestionnaireResponse/ejTresNuevo: QuestionnaireResponse.item[4].item[2].item[3].answer[0]: The code provided 48573006 cannot be validated in the options value set (Otros Códigos Evento Adverso) in the questionnaire because the system https://paho.org/esavi/CodeSystem/EsaviOtroCS could not be found
-WARNING: QuestionnaireResponse/ejTresNuevo: QuestionnaireResponse.item[4].item[3].item[2].answer[0]: The code provided 10061623 cannot be validated in the options value set (Código MedDRA del Evento Adverso notificado) in the questionnaire because the system https://paho.org/esavi/CodeSystem/EsaviMedDRACS could not be found
-WARNING: QuestionnaireResponse/ejTresNuevo: QuestionnaireResponse.item[4].item[3].item[3].answer[0]: The code provided 62014003 cannot be validated in the options value set (Otros Códigos Evento Adverso) in the questionnaire because the system https://paho.org/esavi/CodeSystem/EsaviOtroCS could not be found
-WARNING: QuestionnaireResponse/ejTresNuevo: QuestionnaireResponse.item[4].item[4].item[2].answer[0]: The code provided 10043169 cannot be validated in the options value set (Código MedDRA del Evento Adverso notificado) in the questionnaire because the system https://paho.org/esavi/CodeSystem/EsaviMedDRACS could not be found
-WARNING: QuestionnaireResponse/ejTresNuevo: QuestionnaireResponse.item[4].item[4].item[3].answer[0]: The code provided 271951008 cannot be validated in the options value set (Otros Códigos Evento Adverso) in the questionnaire because the system https://paho.org/esavi/CodeSystem/EsaviOtroCS could not be found
-WARNING: QuestionnaireResponse/ejTresNuevo: QuestionnaireResponse.item[4].item[5].item[2].answer[0]: The code provided 10039906 cannot be validated in the options value set (Código MedDRA del Evento Adverso notificado) in the questionnaire because the system https://paho.org/esavi/CodeSystem/EsaviMedDRACS could not be found
-WARNING: QuestionnaireResponse/ejTresNuevo: QuestionnaireResponse.item[4].item[5].item[3].answer[0]: The code provided 91175000 cannot be validated in the options value set (Otros Códigos Evento Adverso) in the questionnaire because the system https://paho.org/esavi/CodeSystem/EsaviOtroCS could not be found
-WARNING: QuestionnaireResponse/ejTresNuevo: QuestionnaireResponse.item[4].item[6].item[2].answer[0]: The code provided 10043169 cannot be validated in the options value set (Código MedDRA del Evento Adverso notificado) in the questionnaire because the system https://paho.org/esavi/CodeSystem/EsaviMedDRACS could not be found
-WARNING: QuestionnaireResponse/ejTresNuevo: QuestionnaireResponse.item[4].item[6].item[3].answer[0]: The code provided 271951008 cannot be validated in the options value set (Otros Códigos Evento Adverso) in the questionnaire because the system https://paho.org/esavi/CodeSystem/EsaviOtroCS could not be found
-WARNING: QuestionnaireResponse/ejTresNuevo: QuestionnaireResponse.item[4].item[7].item[2].answer[0]: The code provided 312952004 cannot be validated in the options value set (Otros Códigos Evento Adverso) in the questionnaire because the system https://paho.org/esavi/CodeSystem/EsaviOtroCS could not be found
-WARNING: QuestionnaireResponse/ejTresNuevo: QuestionnaireResponse.item[4].item[8].item[2].answer[0]: The code provided 10043561 cannot be validated in the options value set (Código MedDRA del Evento Adverso notificado) in the questionnaire because the system https://paho.org/esavi/CodeSystem/EsaviMedDRACS could not be found
-WARNING: QuestionnaireResponse/ejTresNuevo: QuestionnaireResponse.item[4].item[8].item[3].answer[0]: The code provided 302873008 cannot be validated in the options value set (Otros Códigos Evento Adverso) in the questionnaire because the system https://paho.org/esavi/CodeSystem/EsaviOtroCS could not be found
-WARNING: QuestionnaireResponse/ejTresNuevo: QuestionnaireResponse.item[4].item[9].item[2].answer[0]: The code provided 10042777 cannot be validated in the options value set (Código MedDRA del Evento Adverso notificado) in the questionnaire because the system https://paho.org/esavi/CodeSystem/EsaviMedDRACS could not be found
-WARNING: QuestionnaireResponse/ejTresNuevo: QuestionnaireResponse.item[4].item[9].item[3].answer[0]: The code provided 398665005 cannot be validated in the options value set (Otros Códigos Evento Adverso) in the questionnaire because the system https://paho.org/esavi/CodeSystem/EsaviOtroCS could not be found
-WARNING: QuestionnaireResponse/ejTresNuevo: QuestionnaireResponse.item[4].item[10].item[2].answer[0]: The code provided 10033799 cannot be validated in the options value set (Código MedDRA del Evento Adverso notificado) in the questionnaire because the system https://paho.org/esavi/CodeSystem/EsaviMedDRACS could not be found
-WARNING: QuestionnaireResponse/ejTresNuevo: QuestionnaireResponse.item[4].item[10].item[3].answer[0]: The code provided 44695005 cannot be validated in the options value set (Otros Códigos Evento Adverso) in the questionnaire because the system https://paho.org/esavi/CodeSystem/EsaviOtroCS could not be found
-WARNING: QuestionnaireResponse/ejTresNuevo: QuestionnaireResponse.item[4].item[11].item[2].answer[0]: The code provided 10019660 cannot be validated in the options value set (Código MedDRA del Evento Adverso notificado) in the questionnaire because the system https://paho.org/esavi/CodeSystem/EsaviMedDRACS could not be found
-WARNING: QuestionnaireResponse/ejTresNuevo: QuestionnaireResponse.item[4].item[11].item[3].answer[0]: The code provided 13920009 cannot be validated in the options value set (Otros Códigos Evento Adverso) in the questionnaire because the system https://paho.org/esavi/CodeSystem/EsaviOtroCS could not be found
-WARNING: QuestionnaireResponse/ejTresNuevo: QuestionnaireResponse.item[4].item[12].item[2].answer[0]: The code provided 10014581 cannot be validated in the options value set (Código MedDRA del Evento Adverso notificado) in the questionnaire because the system https://paho.org/esavi/CodeSystem/EsaviMedDRACS could not be found
-WARNING: QuestionnaireResponse/ejTresNuevo: QuestionnaireResponse.item[4].item[12].item[3].answer[0]: The code provided 45170000 cannot be validated in the options value set (Otros Códigos Evento Adverso) in the questionnaire because the system https://paho.org/esavi/CodeSystem/EsaviOtroCS could not be found
-WARNING: QuestionnaireResponse/ejTresNuevo: QuestionnaireResponse.item[4].item[13].item[2].answer[0]: The code provided 10027199 cannot be validated in the options value set (Código MedDRA del Evento Adverso notificado) in the questionnaire because the system https://paho.org/esavi/CodeSystem/EsaviMedDRACS could not be found
-WARNING: QuestionnaireResponse/ejTresNuevo: QuestionnaireResponse.item[4].item[13].item[3].answer[0]: The code provided 7180009 cannot be validated in the options value set (Otros Códigos Evento Adverso) in the questionnaire because the system https://paho.org/esavi/CodeSystem/EsaviOtroCS could not be found
-WARNING: QuestionnaireResponse/ejTresNuevo: QuestionnaireResponse.item[4].item[14].item[2].answer[0]: The code provided 10031252 cannot be validated in the options value set (Código MedDRA del Evento Adverso notificado) in the questionnaire because the system https://paho.org/esavi/CodeSystem/EsaviMedDRACS could not be found
-WARNING: QuestionnaireResponse/ejTresNuevo: QuestionnaireResponse.item[4].item[14].item[3].answer[0]: The code provided 60168000 cannot be validated in the options value set (Otros Códigos Evento Adverso) in the questionnaire because the system https://paho.org/esavi/CodeSystem/EsaviOtroCS could not be found
-WARNING: QuestionnaireResponse/ejTresNuevo: QuestionnaireResponse.item[4].item[15].item[2].answer[0]: The code provided 10023222 cannot be validated in the options value set (Código MedDRA del Evento Adverso notificado) in the questionnaire because the system https://paho.org/esavi/CodeSystem/EsaviMedDRACS could not be found
-WARNING: QuestionnaireResponse/ejTresNuevo: QuestionnaireResponse.item[4].item[15].item[3].answer[0]: The code provided 57676002 cannot be validated in the options value set (Otros Códigos Evento Adverso) in the questionnaire because the system https://paho.org/esavi/CodeSystem/EsaviOtroCS could not be found
-WARNING: QuestionnaireResponse/ejTresNuevo: QuestionnaireResponse.item[4].item[16].item[2].answer[0]: The code provided 10040047 cannot be validated in the options value set (Código MedDRA del Evento Adverso notificado) in the questionnaire because the system https://paho.org/esavi/CodeSystem/EsaviMedDRACS could not be found
-WARNING: QuestionnaireResponse/ejTresNuevo: QuestionnaireResponse.item[4].item[16].item[3].answer[0]: The code provided 91302008 cannot be validated in the options value set (Otros Códigos Evento Adverso) in the questionnaire because the system https://paho.org/esavi/CodeSystem/EsaviOtroCS could not be found
-WARNING: QuestionnaireResponse/ejTresNuevo: QuestionnaireResponse.item[4].item[17].item[2].answer[0]: The code provided 10044248 cannot be validated in the options value set (Código MedDRA del Evento Adverso notificado) in the questionnaire because the system https://paho.org/esavi/CodeSystem/EsaviMedDRACS could not be found
-WARNING: QuestionnaireResponse/ejTresNuevo: QuestionnaireResponse.item[4].item[17].item[3].answer[0]: The code provided 18504008 cannot be validated in the options value set (Otros Códigos Evento Adverso) in the questionnaire because the system https://paho.org/esavi/CodeSystem/EsaviOtroCS could not be found
-WARNING: QuestionnaireResponse/ejTresNuevo: QuestionnaireResponse.item[4].item[18].item[2].answer[0]: The code provided 10027649 cannot be validated in the options value set (Código MedDRA del Evento Adverso notificado) in the questionnaire because the system https://paho.org/esavi/CodeSystem/EsaviMedDRACS could not be found
-WARNING: QuestionnaireResponse/ejTresNuevo: QuestionnaireResponse.item[4].item[18].item[3].answer[0]: The code provided 17369002 cannot be validated in the options value set (Otros Códigos Evento Adverso) in the questionnaire because the system https://paho.org/esavi/CodeSystem/EsaviOtroCS could not be found
-WARNING: QuestionnaireResponse/ejTresNuevo: QuestionnaireResponse.item[4].item[19].item[0].answer[0]: The code provided 01 cannot be validated in the options value set (Complicaciones Embarazo) in the questionnaire because the system https://paho.org/esavi/CodeSystem/ComplicacionEmbarazoCS could not be found
-WARNING: QuestionnaireResponse/ejTresNuevo: QuestionnaireResponse.item[4].item[19].item[2].answer[0]: The code provided 17369002 cannot be validated in the options value set (Códigos MEDDRA Complicaciones en Embarazo ESAVI ) in the questionnaire because the system https://paho.org/esavi/CodeSystem/ComplicacionEmbarazoMedDRACS could not be found
-WARNING: QuestionnaireResponse/ejTresNuevo: QuestionnaireResponse.item[4].item[21].item[0].answer[0]: The code provided 1 cannot be validated in the options value set (Desenlaces Tras ESAVI) in the questionnaire because the system https://paho.org/esavi/CodeSystem/ClasificacionDesenlaceCS could not be found
 == fsh-generated/resources/QuestionnaireResponse-ejUnoNuevo.json ==
-WARNING: QuestionnaireResponse/ejUnoNuevo: QuestionnaireResponse.item[0].item[0].item[0].answer[0]: The code provided MX cannot be validated in the options value set (Códigos de Países) in the questionnaire because the system https://paho.org/esavi/CodeSystem/CodPaisesCS could not be found
-WARNING: QuestionnaireResponse/ejUnoNuevo: QuestionnaireResponse.item[0].item[0].item[4].answer[0]: The code provided 5 cannot be validated in the options value set (Tipo de Profesional Notificador) in the questionnaire because the system https://paho.org/fhir/esavi/CodeSystem/ProfesionalNotificadorVS could not be found
-WARNING: QuestionnaireResponse/ejUnoNuevo: QuestionnaireResponse.item[1].item[0].item[4].answer[0]: The code provided male cannot be validated in the options value set (AdministrativeGender) in the questionnaire because the system https://hl7.org/fhir/administrative-gender could not be found
-WARNING: QuestionnaireResponse/ejUnoNuevo: QuestionnaireResponse.item[2].item[0].item[1].answer[0]: The code provided 10034292 cannot be validated in the options value set (Códigos de MedDRA para representar enfermedades previas en un ESAVI-PAHO) in the questionnaire because the system http://paho.org/esavi/CodeSystem/CodigoMedDRAEnfPreviaCS could not be found
-WARNING: QuestionnaireResponse/ejUnoNuevo: QuestionnaireResponse.item[2].item[0].item[2].answer[0]: The code provided 91936005 cannot be validated in the options value set (Enfermedades previas en un ESAVI-PAHO) in the questionnaire because the system https://paho.org/esavi/CodeSystem/EnfermedadesPreviasCodificacionCS could not be found
-WARNING: QuestionnaireResponse/ejUnoNuevo: QuestionnaireResponse.item[4].item[0].item[2].answer[0]: The code provided 10002218 cannot be validated in the options value set (Código MedDRA del Evento Adverso notificado) in the questionnaire because the system https://paho.org/fhir/esavi/CodeSystem/EsaviMedDRACS could not be found
-WARNING: QuestionnaireResponse/ejUnoNuevo: QuestionnaireResponse.item[4].item[0].item[3].answer[0]: The code provided 39579001 cannot be validated in the options value set (Otros Códigos Evento Adverso) in the questionnaire because the system https://paho.org/esavi/CodeSystem/EsaviOtroCS could not be found
+WARNING: QuestionnaireResponse/ejUnoNuevo: QuestionnaireResponse.item[4].item[0].item[2].answer[0]: The code provided 10002218 cannot be validated in the options value set (Código MedDRA del Evento Adverso notificado) in the questionnaire because the system https://paho.org/fhir/esavi/ValueSet/EsaviMedDRAVS could not be found
 == fsh-generated/resources/StructureDefinition-ESAVIQuestionnaireResponse.json ==
 == fsh-generated/resources/ValueSet-ClasificacionDesenlaceNaranjoVS.json ==
-WARNING: ValueSet/ClasificacionDesenlaceNaranjoVS: ValueSet: El perfil ShareableValueSet dice que el elemento experimental es obligatorio, pero no está presente. Los conjuntos de valores publicados DEBERIAN conformar al perfil ShareableValueSet
 == fsh-generated/resources/ValueSet-ClasificacionDesenlaceVS.json ==
-WARNING: ValueSet/ClasificacionDesenlaceVS: ValueSet: El perfil ShareableValueSet dice que el elemento experimental es obligatorio, pero no está presente. Los conjuntos de valores publicados DEBERIAN conformar al perfil ShareableValueSet
 == fsh-generated/resources/ValueSet-ClasificacionDesenlaceWHOAEFIVS.json ==
-WARNING: ValueSet/ClasificacionDesenlaceWHOAEFIVS: ValueSet: El perfil ShareableValueSet dice que el elemento experimental es obligatorio, pero no está presente. Los conjuntos de valores publicados DEBERIAN conformar al perfil ShareableValueSet
 == fsh-generated/resources/ValueSet-ClasificacionDesenlaceWHOUMCVS.json ==
-WARNING: ValueSet/ClasificacionDesenlaceWHOUMCVS: ValueSet: El perfil ShareableValueSet dice que el elemento experimental es obligatorio, pero no está presente. Los conjuntos de valores publicados DEBERIAN conformar al perfil ShareableValueSet
-== fsh-generated/resources/ValueSet-CodPaises.json ==
-WARNING: ValueSet/CodPaises: ValueSet: El perfil ShareableValueSet dice que el elemento experimental es obligatorio, pero no está presente. Los conjuntos de valores publicados DEBERIAN conformar al perfil ShareableValueSet
 == fsh-generated/resources/ValueSet-CodigoMedDRAEnfPreviaVS.json ==
-WARNING: ValueSet/CodigoMedDRAEnfPreviaVS: ValueSet: El perfil ShareableValueSet dice que el elemento experimental es obligatorio, pero no está presente. Los conjuntos de valores publicados DEBERIAN conformar al perfil ShareableValueSet
-WARNING: ValueSet.where(id = 'CodigoMedDRAEnfPreviaVS'): Error from http://tx.fhir.org/r4: Unable to provide support for code system https://www.meddra.org
 == fsh-generated/resources/ValueSet-CodigoMedicamentoVS.json ==
-WARNING: ValueSet/CodigoMedicamentoVS: ValueSet: El perfil ShareableValueSet dice que el elemento experimental es obligatorio, pero no está presente. Los conjuntos de valores publicados DEBERIAN conformar al perfil ShareableValueSet
-WARNING: ValueSet.where(id = 'CodigoMedicamentoVS'): The value set https://paho.org/fhir/esavi/ValueSet/CodigoMedicamentoVS has too many codes to display (>1000) (and Error from http://tx.fhir.org/r4: Unable to provide support for code system http://id.who.int/icd11/mms)
 == fsh-generated/resources/ValueSet-CodigoNoWhoVacunaVS.json ==
-WARNING: ValueSet/CodigoNoWhoVacunaVS: ValueSet: El perfil ShareableValueSet dice que el elemento experimental es obligatorio, pero no está presente. Los conjuntos de valores publicados DEBERIAN conformar al perfil ShareableValueSet
-WARNING: ValueSet.where(id = 'CodigoNoWhoVacunaVS'): Error from http://tx.fhir.org/r4: Unable to provide support for code system http://id.who.int/icd11/mms
 == fsh-generated/resources/ValueSet-CodigoWhoFabricanteVS.json ==
-WARNING: ValueSet/CodigoWhoFabricanteVS: ValueSet: El perfil ShareableValueSet dice que el elemento experimental es obligatorio, pero no está presente. Los conjuntos de valores publicados DEBERIAN conformar al perfil ShareableValueSet
 == fsh-generated/resources/ValueSet-CodigoWhoVacunaVS.json ==
-WARNING: ValueSet/CodigoWhoVacunaVS: ValueSet: El perfil ShareableValueSet dice que el elemento experimental es obligatorio, pero no está presente. Los conjuntos de valores publicados DEBERIAN conformar al perfil ShareableValueSet
 == fsh-generated/resources/ValueSet-ComplicacionEmbarazoMedDRAVS.json ==
-WARNING: ValueSet/ComplicacionEmbarazoMedDRAVS: ValueSet.title: el valor no puede empezar o terminar con espacios en blanco 'Códigos MEDDRA Complicaciones en Embarazo ESAVI '
-WARNING: ValueSet/ComplicacionEmbarazoMedDRAVS: ValueSet: El perfil ShareableValueSet dice que el elemento experimental es obligatorio, pero no está presente. Los conjuntos de valores publicados DEBERIAN conformar al perfil ShareableValueSet
-WARNING: ValueSet.where(id = 'ComplicacionEmbarazoMedDRAVS'): Error from http://tx.fhir.org/r4: Unable to provide support for code system https://www.meddra.org
 == fsh-generated/resources/ValueSet-ComplicacionEmbarazoOtroVS.json ==
-WARNING: ValueSet/ComplicacionEmbarazoOtroVS: ValueSet.title: el valor no puede empezar o terminar con espacios en blanco 'Otros Códigos Complicaciones en Embarazo ESAVI '
-WARNING: ValueSet/ComplicacionEmbarazoOtroVS: ValueSet: El perfil ShareableValueSet dice que el elemento experimental es obligatorio, pero no está presente. Los conjuntos de valores publicados DEBERIAN conformar al perfil ShareableValueSet
 == fsh-generated/resources/ValueSet-ComplicacionEmbarazoVS.json ==
-WARNING: ValueSet/ComplicacionEmbarazoVS: ValueSet: El perfil ShareableValueSet dice que el elemento experimental es obligatorio, pero no está presente. Los conjuntos de valores publicados DEBERIAN conformar al perfil ShareableValueSet
 == fsh-generated/resources/ValueSet-DirOrgNotiVS.json ==
-WARNING: ValueSet/DirOrgNotiVS: ValueSet: El perfil ShareableValueSet dice que el elemento experimental es obligatorio, pero no está presente. Los conjuntos de valores publicados DEBERIAN conformar al perfil ShareableValueSet
 == fsh-generated/resources/ValueSet-EnfermedadesPreviasCodificacionVS.json ==
-WARNING: ValueSet/EnfermedadesPreviasCodificacionVS: ValueSet: El perfil ShareableValueSet dice que el elemento experimental es obligatorio, pero no está presente. Los conjuntos de valores publicados DEBERIAN conformar al perfil ShareableValueSet
 WARNING: ValueSet.where(id = 'EnfermedadesPreviasCodificacionVS'): Error from http://tx.fhir.org/r4: Unable to provide support for code system http://id.who.int/icd11/mms
 == fsh-generated/resources/ValueSet-EsaviMedDRAVS.json ==
-WARNING: ValueSet/EsaviMedDRAVS: ValueSet: El perfil ShareableValueSet dice que el elemento experimental es obligatorio, pero no está presente. Los conjuntos de valores publicados DEBERIAN conformar al perfil ShareableValueSet
-WARNING: ValueSet.where(id = 'EsaviMedDRAVS'): Error from http://tx.fhir.org/r4: Unable to provide support for code system https://www.meddra.org
 == fsh-generated/resources/ValueSet-EsaviOtroVS.json ==
-WARNING: ValueSet/EsaviOtroVS: ValueSet: El perfil ShareableValueSet dice que el elemento experimental es obligatorio, pero no está presente. Los conjuntos de valores publicados DEBERIAN conformar al perfil ShareableValueSet
-WARNING: ValueSet.where(id = 'EsaviOtroVS'): Error from http://tx.fhir.org/r4: Unable to provide support for code system http://id.who.int/icd11/mms
 == fsh-generated/resources/ValueSet-FormaFarmaceuticaVS.json ==
-WARNING: ValueSet/FormaFarmaceuticaVS: ValueSet: El perfil ShareableValueSet dice que el elemento experimental es obligatorio, pero no está presente. Los conjuntos de valores publicados DEBERIAN conformar al perfil ShareableValueSet
 == fsh-generated/resources/ValueSet-ModoConfirmacionInfeccionVS.json ==
-WARNING: ValueSet/ModoConfirmacionInfeccionVS: ValueSet: El perfil ShareableValueSet dice que el elemento experimental es obligatorio, pero no está presente. Los conjuntos de valores publicados DEBERIAN conformar al perfil ShareableValueSet
 == fsh-generated/resources/ValueSet-ModoVerificacionVacunaVS.json ==
-WARNING: ValueSet/ModoVerificacionVacunaVS: ValueSet: El perfil ShareableValueSet dice que el elemento experimental es obligatorio, pero no está presente. Los conjuntos de valores publicados DEBERIAN conformar al perfil ShareableValueSet
 == fsh-generated/resources/ValueSet-ProfesionalNotificadorVS.json ==
-WARNING: ValueSet/ProfesionalNotificadorVS: ValueSet: El perfil ShareableValueSet dice que el elemento experimental es obligatorio, pero no está presente. Los conjuntos de valores publicados DEBERIAN conformar al perfil ShareableValueSet
 == fsh-generated/resources/ValueSet-RespuestaSiNoNosabeVS.json ==
-WARNING: ValueSet/RespuestaSiNoNosabeVS: ValueSet: El perfil ShareableValueSet dice que el elemento experimental es obligatorio, pero no está presente. Los conjuntos de valores publicados DEBERIAN conformar al perfil ShareableValueSet
 == fsh-generated/resources/ValueSet-SistemaClasfCausalidadVS.json ==
-WARNING: ValueSet/SistemaClasfCausalidadVS: ValueSet: El perfil ShareableValueSet dice que el elemento experimental es obligatorio, pero no está presente. Los conjuntos de valores publicados DEBERIAN conformar al perfil ShareableValueSet
 == fsh-generated/resources/ValueSet-SistemasDeCodificacionVS.json ==
-WARNING: ValueSet/SistemasDeCodificacionVS: ValueSet: El perfil ShareableValueSet dice que el elemento experimental es obligatorio, pero no está presente. Los conjuntos de valores publicados DEBERIAN conformar al perfil ShareableValueSet
 == fsh-generated/resources/ValueSet-ViaAdminMedicamentoVS.json ==
-WARNING: ValueSet/ViaAdminMedicamentoVS: ValueSet: El perfil ShareableValueSet dice que el elemento experimental es obligatorio, pero no está presente. Los conjuntos de valores publicados DEBERIAN conformar al perfil ShareableValueSet
+== fsh-generated/resources/ValueSet-codPaises.json ==

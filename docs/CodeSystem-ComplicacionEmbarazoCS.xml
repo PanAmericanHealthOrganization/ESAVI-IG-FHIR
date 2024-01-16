@@ -3,13 +3,14 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="ComplicacionEmbarazoCS"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This  code system <code>https://paho.org/fhir/esavi/CodeSystem/ComplicacionEmbarazoCS</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">01<a name="ComplicacionEmbarazoCS-01"> </a></td><td>Del Embarazo</td></tr><tr><td style="white-space:nowrap">02<a name="ComplicacionEmbarazoCS-02"> </a></td><td>Del Parto</td></tr><tr><td style="white-space:nowrap">03<a name="ComplicacionEmbarazoCS-03"> </a></td><td>Puerperio fetal</td></tr><tr><td style="white-space:nowrap">04<a name="ComplicacionEmbarazoCS-04"> </a></td><td>Neonatal</td></tr><tr><td style="white-space:nowrap">05<a name="ComplicacionEmbarazoCS-05"> </a></td><td>Anomalía Congénita</td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This case-insensitive code system <code>https://paho.org/fhir/esavi/CodeSystem/ComplicacionEmbarazoCS</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">01<a name="ComplicacionEmbarazoCS-01"> </a></td><td>Del Embarazo</td></tr><tr><td style="white-space:nowrap">02<a name="ComplicacionEmbarazoCS-02"> </a></td><td>Del Parto</td></tr><tr><td style="white-space:nowrap">03<a name="ComplicacionEmbarazoCS-03"> </a></td><td>Puerperio fetal</td></tr><tr><td style="white-space:nowrap">04<a name="ComplicacionEmbarazoCS-04"> </a></td><td>Neonatal</td></tr><tr><td style="white-space:nowrap">05<a name="ComplicacionEmbarazoCS-05"> </a></td><td>Anomalía Congénita</td></tr></table></div>
   </text>
   <url value="https://paho.org/fhir/esavi/CodeSystem/ComplicacionEmbarazoCS"/>
-  <version value="0.1.41"/>
+  <version value="0.1.42"/>
   <name value="ComplicacionEmbarazoCS"/>
   <title value="Complicaciones de Embarazo"/>
   <status value="active"/>
+  <experimental value="false"/>
   <date value="2021-03-11T00:00:00-03:00"/>
   <publisher value="ESAVI -"/>
   <contact>
@@ -30,6 +31,7 @@
       <code value="001"/>
     </coding>
   </jurisdiction>
+  <caseSensitive value="false"/>
   <content value="complete"/>
   <count value="5"/>
   <concept>

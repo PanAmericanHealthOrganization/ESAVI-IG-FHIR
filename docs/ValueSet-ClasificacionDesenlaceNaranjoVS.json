@@ -6,10 +6,11 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-ClasificacionDesenlaceNaranjoCS.html\"><code>https://paho.org/fhir/esavi/CodeSystem/ClasificacionDesenlaceNaranjoCS</code></a></li></ul></div>"
   },
   "url" : "https://paho.org/fhir/esavi/ValueSet/ClasificacionDesenlaceNaranjoVS",
-  "version" : "0.1.41",
+  "version" : "0.1.42",
   "name" : "ClasificacionDesenlaceNaranjoVS",
   "title" : "Clasificación de causalidad Naranjo",
   "status" : "active",
+  "experimental" : false,
   "date" : "2021-03-11T00:00:00-03:00",
   "publisher" : "ESAVI -",
   "contact" : [{

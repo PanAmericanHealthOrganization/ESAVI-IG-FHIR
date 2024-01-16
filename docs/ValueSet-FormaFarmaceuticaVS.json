@@ -3,13 +3,14 @@
   "id" : "FormaFarmaceuticaVS",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  736478001</li></ul></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  736478001 (Basic dose form (basic dose form))</li></ul></div>"
   },
   "url" : "https://paho.org/fhir/esavi/ValueSet/FormaFarmaceuticaVS",
-  "version" : "0.1.41",
+  "version" : "0.1.42",
   "name" : "FormaFarmaceuticaVS",
   "title" : "Identificación Formas Farmacéuticas",
   "status" : "active",
+  "experimental" : false,
   "date" : "2021-03-11T00:00:00-03:00",
   "publisher" : "ESAVI -",
   "contact" : [{

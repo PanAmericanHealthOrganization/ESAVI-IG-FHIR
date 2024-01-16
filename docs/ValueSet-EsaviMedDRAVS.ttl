@@ -13,10 +13,11 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-mdr.html\"><code>https://www.meddra.org</code></a></li></ul></div>"
   ] ; # 
   fhir:url [ fhir:v "https://paho.org/fhir/esavi/ValueSet/EsaviMedDRAVS"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "0.1.41"] ; # 
+  fhir:version [ fhir:v "0.1.42"] ; # 
   fhir:name [ fhir:v "EsaviMedDRAVS"] ; # 
   fhir:title [ fhir:v "Código MedDRA del Evento Adverso notificado"] ; # 
   fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
   fhir:date [ fhir:v "2021-03-11T00:00:00-03:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ESAVI -"] ; # 
   fhir:contact ( [

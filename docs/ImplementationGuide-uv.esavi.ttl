@@ -13,11 +13,11 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ESAVI</h2><p>The official URL for this implementation guide is: </p><pre>https://paho.org/fhir/esavi/ImplementationGuide/uv.esavi</pre></div>"
   ] ; # 
   fhir:url [ fhir:v "https://paho.org/fhir/esavi/ImplementationGuide/uv.esavi"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "0.1.41"] ; # 
+  fhir:version [ fhir:v "0.1.42"] ; # 
   fhir:name [ fhir:v "ESAVI"] ; # 
   fhir:title [ fhir:v "Guía de Implementación FHIR de ESAVI"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-12-19T16:49:38-03:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-01-16T11:37:21-03:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ESAVI -"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ESAVI -" ] ;
@@ -291,7 +291,7 @@
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
      ] [
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "hl7.fhir.uv.tools#current" ]
+       fhir:value [ fhir:v "hl7.fhir.uv.tools#0.1.0" ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
@@ -689,11 +689,23 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://paho.org/fhir/esavi/CodeSystem/codPaisesCS> ;
+         fhir:reference [ fhir:v "CodeSystem/codPaisesCS" ]
+       ] ;
+       fhir:name [ fhir:v "Códigos de Paises" ] ;
+       fhir:description [ fhir:v "Codigos definidos para la identificación de países segun norma ISO3166-3" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://paho.org/fhir/esavi/ValueSet/CodPaises> ;
-         fhir:reference [ fhir:v "ValueSet/CodPaises" ]
+         fhir:link <https://paho.org/fhir/esavi/ValueSet/codPaises> ;
+         fhir:reference [ fhir:v "ValueSet/codPaises" ]
        ] ;
        fhir:name [ fhir:v "Códigos de Países" ] ;
        fhir:description [ fhir:v "Codigos definidos para la identificación de países segun norma ISO3166-N" ] ;
@@ -707,7 +719,7 @@
          fhir:link <https://paho.org/fhir/esavi/ValueSet/ComplicacionEmbarazoMedDRAVS> ;
          fhir:reference [ fhir:v "ValueSet/ComplicacionEmbarazoMedDRAVS" ]
        ] ;
-       fhir:name [ fhir:v "Códigos MEDDRA Complicaciones en Embarazo ESAVI " ] ;
+       fhir:name [ fhir:v "Códigos MEDDRA Complicaciones en Embarazo ESAVI" ] ;
        fhir:description [ fhir:v "Codificacion Estandarizada de diagnóticos de complicaciones de embarazo mediante códigos MedDRA" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
@@ -798,6 +810,7 @@
          fhir:reference [ fhir:v "QuestionnaireResponse/ejUnoNuevo" ]
        ] ;
        fhir:name [ fhir:v "ejUnoNuevo" ] ;
+       fhir:description [ fhir:v "Ejemplo de cuestionario Respondido 1" ] ;
        fhir:example [
          fhir:v "https://paho.org/fhir/esavi/StructureDefinition/ESAVIQuestionnaireResponse"^^xsd:anyURI ;
          fhir:link <https://paho.org/fhir/esavi/StructureDefinition/ESAVIQuestionnaireResponse>
@@ -907,7 +920,7 @@
          fhir:link <https://paho.org/fhir/esavi/ValueSet/ComplicacionEmbarazoOtroVS> ;
          fhir:reference [ fhir:v "ValueSet/ComplicacionEmbarazoOtroVS" ]
        ] ;
-       fhir:name [ fhir:v "Otros Códigos Complicaciones en Embarazo ESAVI " ] ;
+       fhir:name [ fhir:v "Otros Códigos Complicaciones en Embarazo ESAVI" ] ;
        fhir:description [ fhir:v "Codificacion Estandarizada de diagnóticos de complicaciones de embarazo mediante códigos Snomed y CIE-10" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
@@ -920,7 +933,7 @@
          fhir:reference [ fhir:v "ValueSet/EsaviOtroVS" ]
        ] ;
        fhir:name [ fhir:v "Otros Códigos Evento Adverso" ] ;
-       fhir:description [ fhir:v "Evento Adverso en otro sistema según Snomed, ATC y CIE-10" ] ;
+       fhir:description [ fhir:v "Evento Adverso en otro sistema según Snomed y CIE-10" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1162,6 +1175,22 @@
          ] ) ;
          fhir:name [ fhir:v "consideraciones.html"^^xsd:anyURI ] ;
          fhir:title [ fhir:v "Consideraciones" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "operaciones.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "operaciones.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Operaciones" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "seguridad.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "seguridad.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Seguridad" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] )
      ] ;

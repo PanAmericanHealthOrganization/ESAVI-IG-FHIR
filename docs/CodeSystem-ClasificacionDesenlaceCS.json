@@ -3,13 +3,14 @@
   "id" : "ClasificacionDesenlaceCS",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This  code system <code>https://paho.org/fhir/esavi/CodeSystem/ClasificacionDesenlaceCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"ClasificacionDesenlaceCS-1\"> </a></td><td>Recuperado Completamente</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"ClasificacionDesenlaceCS-2\"> </a></td><td>En recuperación</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"ClasificacionDesenlaceCS-3\"> </a></td><td>No recuperado</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"ClasificacionDesenlaceCS-4\"> </a></td><td>Recuperado con secuelas</td></tr><tr><td style=\"white-space:nowrap\">5<a name=\"ClasificacionDesenlaceCS-5\"> </a></td><td>Muerte</td></tr><tr><td style=\"white-space:nowrap\">0<a name=\"ClasificacionDesenlaceCS-0\"> </a></td><td>Desconocido</td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-insensitive code system <code>https://paho.org/fhir/esavi/CodeSystem/ClasificacionDesenlaceCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"ClasificacionDesenlaceCS-1\"> </a></td><td>Recuperado Completamente</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"ClasificacionDesenlaceCS-2\"> </a></td><td>En recuperación</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"ClasificacionDesenlaceCS-3\"> </a></td><td>No recuperado</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"ClasificacionDesenlaceCS-4\"> </a></td><td>Recuperado con secuelas</td></tr><tr><td style=\"white-space:nowrap\">5<a name=\"ClasificacionDesenlaceCS-5\"> </a></td><td>Muerte</td></tr><tr><td style=\"white-space:nowrap\">0<a name=\"ClasificacionDesenlaceCS-0\"> </a></td><td>Desconocido</td></tr></table></div>"
   },
   "url" : "https://paho.org/fhir/esavi/CodeSystem/ClasificacionDesenlaceCS",
-  "version" : "0.1.41",
+  "version" : "0.1.42",
   "name" : "ClasificacionDesenlaceCS",
   "title" : "Desenlaces Tras ESAVI",
   "status" : "active",
+  "experimental" : false,
   "date" : "2021-03-11T00:00:00-03:00",
   "publisher" : "ESAVI -",
   "contact" : [{
@@ -30,6 +31,7 @@
       "code" : "001"
     }]
   }],
+  "caseSensitive" : false,
   "content" : "complete",
   "count" : 6,
   "concept" : [{

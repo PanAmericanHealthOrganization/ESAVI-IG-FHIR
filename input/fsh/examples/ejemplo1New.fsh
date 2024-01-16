@@ -54,7 +54,7 @@ Usage: #example
 * item[=].item[=].item[0].linkId = "descripcionEnfPrevia"
 * item[=].item[=].item[=].answer.valueString = "Alergia a Penicilina"
 * item[=].item[=].item[+].linkId = "codigoMedDRAEnfPrevia"
-//* item[=].item[=].item[=].answer.valueCoding.system = Canonical(MedDRA)
+* item[=].item[=].item[=].answer.valueCoding.system = Canonical(MedDRA)
 * item[=].item[=].item[=].answer.valueCoding.code = #10034292 "alergia a penicilina"
 * item[=].item[=].item[+].linkId = "otrosCodigosEnfPrevia"
 * item[=].item[=].item[=].answer.valueCoding.system = Canonical(SCT)
@@ -106,7 +106,7 @@ Usage: #example
 * item[=].item[=].item[+].linkId = "IdentificadorESAVI"
 * item[=].item[=].item[=].answer.valueInteger = 1
 * item[=].item[=].item[+].linkId = "codigoESAVIMedDRA"
-//* item[=].item[=].item[=].answer.valueCoding.system = Canonical(EsaviMedDRAVS)
+* item[=].item[=].item[=].answer.valueCoding.system = Canonical(EsaviMedDRAVS)
 * item[=].item[=].item[=].answer.valueCoding.code = #10002218 "anafilaxia"
 * item[=].item[=].item[+].linkId = "codigoESAVIOtro"
 * item[=].item[=].item[=].answer.valueCoding.system = Canonical(SCT)

@@ -3,13 +3,14 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="ModoConfirmacionInfeccionCS"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This  code system <code>https://paho.org/fhir/esavi/CodeSystem/ModoConfirmacionInfeccionCS</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">1<a name="ModoConfirmacionInfeccionCS-1"> </a></td><td>Por criterio clínico epidemiológico</td></tr><tr><td style="white-space:nowrap">2<a name="ModoConfirmacionInfeccionCS-2"> </a></td><td>por inmunoensayo</td></tr><tr><td style="white-space:nowrap">3<a name="ModoConfirmacionInfeccionCS-3"> </a></td><td>Por pruebas moleculares</td></tr><tr><td style="white-space:nowrap">4<a name="ModoConfirmacionInfeccionCS-4"> </a></td><td>Por aislamiento viral</td></tr><tr><td style="white-space:nowrap">5<a name="ModoConfirmacionInfeccionCS-5"> </a></td><td>Otra</td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This case-insensitive code system <code>https://paho.org/fhir/esavi/CodeSystem/ModoConfirmacionInfeccionCS</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">1<a name="ModoConfirmacionInfeccionCS-1"> </a></td><td>Por criterio clínico epidemiológico</td></tr><tr><td style="white-space:nowrap">2<a name="ModoConfirmacionInfeccionCS-2"> </a></td><td>por inmunoensayo</td></tr><tr><td style="white-space:nowrap">3<a name="ModoConfirmacionInfeccionCS-3"> </a></td><td>Por pruebas moleculares</td></tr><tr><td style="white-space:nowrap">4<a name="ModoConfirmacionInfeccionCS-4"> </a></td><td>Por aislamiento viral</td></tr><tr><td style="white-space:nowrap">5<a name="ModoConfirmacionInfeccionCS-5"> </a></td><td>Otra</td></tr></table></div>
   </text>
   <url value="https://paho.org/fhir/esavi/CodeSystem/ModoConfirmacionInfeccionCS"/>
-  <version value="0.1.41"/>
+  <version value="0.1.42"/>
   <name value="ModoConfirmacionInfeccionCS"/>
   <title value="Modo de Confirmación de la Infección"/>
   <status value="active"/>
+  <experimental value="false"/>
   <date value="2021-03-11T00:00:00-03:00"/>
   <publisher value="ESAVI -"/>
   <contact>
@@ -30,6 +31,7 @@
       <code value="001"/>
     </coding>
   </jurisdiction>
+  <caseSensitive value="false"/>
   <content value="complete"/>
   <count value="5"/>
   <concept>

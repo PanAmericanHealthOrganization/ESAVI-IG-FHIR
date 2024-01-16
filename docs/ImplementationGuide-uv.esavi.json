@@ -6,11 +6,11 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ESAVI</h2><p>The official URL for this implementation guide is: </p><pre>https://paho.org/fhir/esavi/ImplementationGuide/uv.esavi</pre></div>"
   },
   "url" : "https://paho.org/fhir/esavi/ImplementationGuide/uv.esavi",
-  "version" : "0.1.41",
+  "version" : "0.1.42",
   "name" : "ESAVI",
   "title" : "Guía de Implementación FHIR de ESAVI",
   "status" : "draft",
-  "date" : "2023-12-19T16:49:38-03:00",
+  "date" : "2024-01-16T11:37:21-03:00",
   "publisher" : "ESAVI -",
   "contact" : [{
     "name" : "ESAVI -",
@@ -330,7 +330,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
-      "valueCode" : "hl7.fhir.uv.tools#current"
+      "valueCode" : "hl7.fhir.uv.tools#0.1.0"
     },
     {
       "extension" : [{
@@ -778,10 +778,22 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/codPaisesCS"
+      },
+      "name" : "Códigos de Paises",
+      "description" : "Codigos definidos para la identificación de países segun norma ISO3166-3",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/CodPaises"
+        "reference" : "ValueSet/codPaises"
       },
       "name" : "Códigos de Países",
       "description" : "Codigos definidos para la identificación de países segun norma ISO3166-N",
@@ -795,7 +807,7 @@
       "reference" : {
         "reference" : "ValueSet/ComplicacionEmbarazoMedDRAVS"
       },
-      "name" : "Códigos MEDDRA Complicaciones en Embarazo ESAVI ",
+      "name" : "Códigos MEDDRA Complicaciones en Embarazo ESAVI",
       "description" : "Codificacion Estandarizada de diagnóticos de complicaciones de embarazo mediante códigos MedDRA",
       "exampleBoolean" : false
     },
@@ -880,6 +892,7 @@
         "reference" : "QuestionnaireResponse/ejUnoNuevo"
       },
       "name" : "ejUnoNuevo",
+      "description" : "Ejemplo de cuestionario Respondido 1",
       "exampleCanonical" : "https://paho.org/fhir/esavi/StructureDefinition/ESAVIQuestionnaireResponse"
     },
     {
@@ -986,7 +999,7 @@
       "reference" : {
         "reference" : "ValueSet/ComplicacionEmbarazoOtroVS"
       },
-      "name" : "Otros Códigos Complicaciones en Embarazo ESAVI ",
+      "name" : "Otros Códigos Complicaciones en Embarazo ESAVI",
       "description" : "Codificacion Estandarizada de diagnóticos de complicaciones de embarazo mediante códigos Snomed y CIE-10",
       "exampleBoolean" : false
     },
@@ -999,7 +1012,7 @@
         "reference" : "ValueSet/EsaviOtroVS"
       },
       "name" : "Otros Códigos Evento Adverso",
-      "description" : "Evento Adverso en otro sistema según Snomed, ATC y CIE-10",
+      "description" : "Evento Adverso en otro sistema según Snomed y CIE-10",
       "exampleBoolean" : false
     },
     {
@@ -1251,6 +1264,24 @@
         }],
         "nameUrl" : "consideraciones.html",
         "title" : "Consideraciones",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "operaciones.html"
+        }],
+        "nameUrl" : "operaciones.html",
+        "title" : "Operaciones",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "seguridad.html"
+        }],
+        "nameUrl" : "seguridad.html",
+        "title" : "Seguridad",
         "generation" : "markdown"
       }]
     },

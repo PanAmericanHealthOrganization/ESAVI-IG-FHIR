@@ -3,13 +3,14 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="RespuestaSiNoNosabeCS"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This  code system <code>https://paho.org/fhir/esavi/CodeSystem/RespuestaSiNoNosabeCS</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">1<a name="RespuestaSiNoNosabeCS-1"> </a></td><td>Si</td></tr><tr><td style="white-space:nowrap">2<a name="RespuestaSiNoNosabeCS-2"> </a></td><td>No</td></tr><tr><td style="white-space:nowrap">3<a name="RespuestaSiNoNosabeCS-3"> </a></td><td>No sabe</td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This case-insensitive code system <code>https://paho.org/fhir/esavi/CodeSystem/RespuestaSiNoNosabeCS</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">1<a name="RespuestaSiNoNosabeCS-1"> </a></td><td>Si</td></tr><tr><td style="white-space:nowrap">2<a name="RespuestaSiNoNosabeCS-2"> </a></td><td>No</td></tr><tr><td style="white-space:nowrap">3<a name="RespuestaSiNoNosabeCS-3"> </a></td><td>No sabe</td></tr></table></div>
   </text>
   <url value="https://paho.org/fhir/esavi/CodeSystem/RespuestaSiNoNosabeCS"/>
-  <version value="0.1.41"/>
+  <version value="0.1.42"/>
   <name value="RespuestaSiNoNosabeCS"/>
   <title value="Respuestas Simples"/>
   <status value="active"/>
+  <experimental value="false"/>
   <date value="2021-03-11T00:00:00-03:00"/>
   <publisher value="ESAVI -"/>
   <contact>
@@ -30,6 +31,7 @@
       <code value="001"/>
     </coding>
   </jurisdiction>
+  <caseSensitive value="false"/>
   <content value="complete"/>
   <count value="3"/>
   <concept>

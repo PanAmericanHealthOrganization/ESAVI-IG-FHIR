@@ -6,10 +6,11 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-RespuestaSiNoNosabeCS.html"><code>https://paho.org/fhir/esavi/CodeSystem/RespuestaSiNoNosabeCS</code></a></li></ul></div>
   </text>
   <url value="https://paho.org/fhir/esavi/ValueSet/RespuestaSiNoNosabeVS"/>
-  <version value="0.1.41"/>
+  <version value="0.1.42"/>
   <name value="RespuestaSiNoNosabeVS"/>
   <title value="Respuestas Simples"/>
   <status value="active"/>
+  <experimental value="false"/>
   <date value="2021-03-11T00:00:00-03:00"/>
   <publisher value="ESAVI -"/>
   <contact>

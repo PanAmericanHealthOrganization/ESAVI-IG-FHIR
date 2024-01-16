@@ -86,7 +86,7 @@
     },
     {
       "url" : "https://paho.org/fhir/esavi/ValueSet/ClasificacionDesenlaceNaranjoVS",
-      "version" : "0.1.41",
+      "version" : "0.1.42",
       "status" : "active",
       "name" : "ClasificacionDesenlaceNaranjoVS",
       "title" : "Clasificación de causalidad Naranjo",
@@ -100,7 +100,7 @@
     },
     {
       "url" : "https://paho.org/fhir/esavi/ValueSet/ClasificacionDesenlaceVS",
-      "version" : "0.1.41",
+      "version" : "0.1.42",
       "status" : "active",
       "name" : "ClasificacionDesenlaceVS",
       "title" : "Desenlaces Tras ESAVI",
@@ -114,7 +114,7 @@
     },
     {
       "url" : "https://paho.org/fhir/esavi/ValueSet/ClasificacionDesenlaceWHOAEFIVS",
-      "version" : "0.1.41",
+      "version" : "0.1.42",
       "status" : "active",
       "name" : "ClasificacionDesenlaceWHOAEFIVS",
       "title" : "Clasificación de causalidad WHO-AEFI",
@@ -128,7 +128,7 @@
     },
     {
       "url" : "https://paho.org/fhir/esavi/ValueSet/ClasificacionDesenlaceWHOUMCVS",
-      "version" : "0.1.41",
+      "version" : "0.1.42",
       "status" : "active",
       "name" : "ClasificacionDesenlaceWHOUMCVS",
       "title" : "Clasificación de causalidad WHO-UMC",
@@ -141,20 +141,8 @@
       "Questionnaire-CuestionarioESAVI.html" : "Questionario para ESAVI de OPS"
     },
     {
-      "url" : "https://paho.org/fhir/esavi/ValueSet/CodPaises",
-      "version" : "0.1.41",
-      "status" : "active",
-      "name" : "CodPaises",
-      "title" : "Códigos de Países",
-      "description" : "Codigos definidos para la identificación de países segun norma ISO3166-N",
-      "systems" : ["urn:iso:std:iso:3166"],
-      "uses" : {
-      },
-      "Questionnaire-CuestionarioESAVI.html" : "Questionario para ESAVI de OPS"
-    },
-    {
       "url" : "https://paho.org/fhir/esavi/ValueSet/CodigoMedDRAEnfPreviaVS",
-      "version" : "0.1.41",
+      "version" : "0.1.42",
       "status" : "active",
       "name" : "CodigoMedDRAEnfPreviaVS",
       "title" : "Códigos de MedDRA para representar enfermedades previas en un ESAVI-PAHO",
@@ -166,39 +154,31 @@
     },
     {
       "url" : "https://paho.org/fhir/esavi/ValueSet/CodigoMedicamentoVS",
-      "version" : "0.1.41",
+      "version" : "0.1.42",
       "status" : "active",
       "name" : "CodigoMedicamentoVS",
       "title" : "Codigo Medicamento",
       "description" : "Codigo Medicamento",
-      "systems" : [
-        "http://id.who.int/icd11/mms",
-        "http://snomed.info/sct",
-        "http://www.whocc.no/atc"
-      ],
+      "systems" : ["http://snomed.info/sct"],
       "uses" : {
       },
       "Questionnaire-CuestionarioESAVI.html" : "Questionario para ESAVI de OPS"
     },
     {
       "url" : "https://paho.org/fhir/esavi/ValueSet/CodigoNoWhoVacunaVS",
-      "version" : "0.1.41",
+      "version" : "0.1.42",
       "status" : "active",
       "name" : "CodigoNoWhoVacunaVS",
       "title" : "Código no WHODrug de la Vacuna",
       "description" : "Código no WHODrug de la Vacuna",
-      "systems" : [
-        "http://id.who.int/icd11/mms",
-        "http://www.whocc.no/atc",
-        "http://snomed.info/sct"
-      ],
+      "systems" : ["http://snomed.info/sct"],
       "uses" : {
       },
       "Questionnaire-CuestionarioESAVI.html" : "Questionario para ESAVI de OPS"
     },
     {
       "url" : "https://paho.org/fhir/esavi/ValueSet/CodigoWhoFabricanteVS",
-      "version" : "0.1.41",
+      "version" : "0.1.42",
       "status" : "active",
       "name" : "CodigoWhoFabricanteVS",
       "title" : "Fabricantes Vacuna",
@@ -212,7 +192,7 @@
     },
     {
       "url" : "https://paho.org/fhir/esavi/ValueSet/CodigoWhoVacunaVS",
-      "version" : "0.1.41",
+      "version" : "0.1.42",
       "status" : "active",
       "name" : "CodigoWhoVacunaVS",
       "title" : "Codigo WHODrug de la vacuna",
@@ -227,10 +207,10 @@
     },
     {
       "url" : "https://paho.org/fhir/esavi/ValueSet/ComplicacionEmbarazoMedDRAVS",
-      "version" : "0.1.41",
+      "version" : "0.1.42",
       "status" : "active",
       "name" : "ComplicacionEmbarazoMedDRAVS",
-      "title" : "Códigos MEDDRA Complicaciones en Embarazo ESAVI ",
+      "title" : "Códigos MEDDRA Complicaciones en Embarazo ESAVI",
       "description" : "Codificacion Estandarizada de diagnóticos de complicaciones de embarazo mediante códigos MedDRA",
       "systems" : ["https://www.meddra.org"],
       "uses" : {
@@ -239,10 +219,10 @@
     },
     {
       "url" : "https://paho.org/fhir/esavi/ValueSet/ComplicacionEmbarazoOtroVS",
-      "version" : "0.1.41",
+      "version" : "0.1.42",
       "status" : "active",
       "name" : "ComplicacionEmbarazoOtroVS",
-      "title" : "Otros Códigos Complicaciones en Embarazo ESAVI ",
+      "title" : "Otros Códigos Complicaciones en Embarazo ESAVI",
       "description" : "Codificacion Estandarizada de diagnóticos de complicaciones de embarazo mediante códigos Snomed y CIE-10",
       "systems" : ["http://hl7.org/fhir/sid/icd-10", "http://snomed.info/sct"],
       "uses" : {
@@ -251,7 +231,7 @@
     },
     {
       "url" : "https://paho.org/fhir/esavi/ValueSet/ComplicacionEmbarazoVS",
-      "version" : "0.1.41",
+      "version" : "0.1.42",
       "status" : "active",
       "name" : "ComplicacionEmbarazoVS",
       "title" : "Complicaciones Embarazo",
@@ -265,7 +245,7 @@
     },
     {
       "url" : "https://paho.org/fhir/esavi/ValueSet/DirOrgNotiVS",
-      "version" : "0.1.41",
+      "version" : "0.1.42",
       "status" : "active",
       "name" : "DirOrgNotiVS",
       "title" : "Códigos PAHO para Direcciones",
@@ -277,23 +257,19 @@
     },
     {
       "url" : "https://paho.org/fhir/esavi/ValueSet/EnfermedadesPreviasCodificacionVS",
-      "version" : "0.1.41",
+      "version" : "0.1.42",
       "status" : "active",
       "name" : "EnfermedadesPreviasCodificacionVS",
       "title" : "Enfermedades previas en un ESAVI-PAHO",
       "description" : "Describe las enfermedades previas en un ESAVI codificadas en CIE10, CIE11 o SNOMED CT",
-      "systems" : [
-        "http://id.who.int/icd11/mms",
-        "http://hl7.org/fhir/sid/icd-10",
-        "http://snomed.info/sct"
-      ],
+      "systems" : ["http://hl7.org/fhir/sid/icd-10", "http://snomed.info/sct"],
       "uses" : {
       },
       "Questionnaire-CuestionarioESAVI.html" : "Questionario para ESAVI de OPS"
     },
     {
       "url" : "https://paho.org/fhir/esavi/ValueSet/EsaviMedDRAVS",
-      "version" : "0.1.41",
+      "version" : "0.1.42",
       "status" : "active",
       "name" : "EsaviMedDRAVS",
       "title" : "Código MedDRA del Evento Adverso notificado",
@@ -305,23 +281,19 @@
     },
     {
       "url" : "https://paho.org/fhir/esavi/ValueSet/EsaviOtroVS",
-      "version" : "0.1.41",
+      "version" : "0.1.42",
       "status" : "active",
       "name" : "EsaviOtroVS",
       "title" : "Otros Códigos Evento Adverso",
-      "description" : "Evento Adverso en otro sistema según Snomed, ATC y CIE-10",
-      "systems" : [
-        "http://id.who.int/icd11/mms",
-        "http://hl7.org/fhir/sid/icd-10",
-        "http://snomed.info/sct"
-      ],
+      "description" : "Evento Adverso en otro sistema según Snomed y CIE-10",
+      "systems" : ["http://snomed.info/sct"],
       "uses" : {
       },
       "Questionnaire-CuestionarioESAVI.html" : "Questionario para ESAVI de OPS"
     },
     {
       "url" : "https://paho.org/fhir/esavi/ValueSet/FormaFarmaceuticaVS",
-      "version" : "0.1.41",
+      "version" : "0.1.42",
       "status" : "active",
       "name" : "FormaFarmaceuticaVS",
       "title" : "Identificación Formas Farmacéuticas",
@@ -333,7 +305,7 @@
     },
     {
       "url" : "https://paho.org/fhir/esavi/ValueSet/ModoConfirmacionInfeccionVS",
-      "version" : "0.1.41",
+      "version" : "0.1.42",
       "status" : "active",
       "name" : "ModoConfirmacionInfeccionVS",
       "title" : "Modos Confirmación Infección COVID-19",
@@ -347,7 +319,7 @@
     },
     {
       "url" : "https://paho.org/fhir/esavi/ValueSet/ModoVerificacionVacunaVS",
-      "version" : "0.1.41",
+      "version" : "0.1.42",
       "status" : "active",
       "name" : "ModoVerificacionVacunaVS",
       "title" : "Modos Verificación Vacuna Previa",
@@ -361,7 +333,7 @@
     },
     {
       "url" : "https://paho.org/fhir/esavi/ValueSet/ProfesionalNotificadorVS",
-      "version" : "0.1.41",
+      "version" : "0.1.42",
       "status" : "active",
       "name" : "ProfesionalNotificadorVS",
       "title" : "Tipo de Profesional Notificador",
@@ -375,7 +347,7 @@
     },
     {
       "url" : "https://paho.org/fhir/esavi/ValueSet/RespuestaSiNoNosabeVS",
-      "version" : "0.1.41",
+      "version" : "0.1.42",
       "status" : "active",
       "name" : "RespuestaSiNoNosabeVS",
       "title" : "Respuestas Simples",
@@ -389,7 +361,7 @@
     },
     {
       "url" : "https://paho.org/fhir/esavi/ValueSet/SistemaClasfCausalidadVS",
-      "version" : "0.1.41",
+      "version" : "0.1.42",
       "status" : "active",
       "name" : "SistemaClasfCausalidadVS",
       "title" : "Tipo de Método de clasificación de causalidad",
@@ -403,7 +375,7 @@
     },
     {
       "url" : "https://paho.org/fhir/esavi/ValueSet/SistemasDeCodificacionVS",
-      "version" : "0.1.41",
+      "version" : "0.1.42",
       "status" : "active",
       "name" : "SistemasDeCodificacionVS",
       "title" : "Sistemas De Codificacion",
@@ -417,12 +389,24 @@
     },
     {
       "url" : "https://paho.org/fhir/esavi/ValueSet/ViaAdminMedicamentoVS",
-      "version" : "0.1.41",
+      "version" : "0.1.42",
       "status" : "active",
       "name" : "ViaAdminMedicamentoVS",
       "title" : "Vías de Administración de Medicamentos",
       "description" : "Describe y lista las vías de administración de medicamentos para registro en ESAVI segun SNOMED CT",
       "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "Questionnaire-CuestionarioESAVI.html" : "Questionario para ESAVI de OPS"
+    },
+    {
+      "url" : "https://paho.org/fhir/esavi/ValueSet/codPaises",
+      "version" : "0.1.42",
+      "status" : "active",
+      "name" : "CodPaises",
+      "title" : "Códigos de Países",
+      "description" : "Codigos definidos para la identificación de países segun norma ISO3166-N",
+      "systems" : ["https://paho.org/fhir/esavi/CodeSystem/codPaisesCS"],
       "uses" : {
       },
       "Questionnaire-CuestionarioESAVI.html" : "Questionario para ESAVI de OPS"

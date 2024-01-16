@@ -3,13 +3,14 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="SistemasDeCodificacionCS"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This  code system <code>https://paho.org/fhir/esavi/CodeSystem/SistemasDeCodificacionCS</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">1<a name="SistemasDeCodificacionCS-1"> </a></td><td>SNOMED-CT</td></tr><tr><td style="white-space:nowrap">2<a name="SistemasDeCodificacionCS-2"> </a></td><td>WHODrug</td></tr><tr><td style="white-space:nowrap">3<a name="SistemasDeCodificacionCS-3"> </a></td><td>ATC</td></tr><tr><td style="white-space:nowrap">4<a name="SistemasDeCodificacionCS-4"> </a></td><td>CIE-11</td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This case-insensitive code system <code>https://paho.org/fhir/esavi/CodeSystem/SistemasDeCodificacionCS</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">1<a name="SistemasDeCodificacionCS-1"> </a></td><td>SNOMED-CT</td></tr><tr><td style="white-space:nowrap">2<a name="SistemasDeCodificacionCS-2"> </a></td><td>WHODrug</td></tr><tr><td style="white-space:nowrap">3<a name="SistemasDeCodificacionCS-3"> </a></td><td>ATC</td></tr><tr><td style="white-space:nowrap">4<a name="SistemasDeCodificacionCS-4"> </a></td><td>CIE-11</td></tr></table></div>
   </text>
   <url value="https://paho.org/fhir/esavi/CodeSystem/SistemasDeCodificacionCS"/>
-  <version value="0.1.41"/>
+  <version value="0.1.42"/>
   <name value="SistemasDeCodificacionCS"/>
   <title value="Sistemas De Codificacion"/>
   <status value="active"/>
+  <experimental value="false"/>
   <date value="2021-03-11T00:00:00-03:00"/>
   <publisher value="ESAVI -"/>
   <contact>
@@ -30,6 +31,7 @@
       <code value="001"/>
     </coding>
   </jurisdiction>
+  <caseSensitive value="false"/>
   <content value="complete"/>
   <count value="4"/>
   <concept>

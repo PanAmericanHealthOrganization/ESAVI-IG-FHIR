@@ -3,13 +3,14 @@
   "id" : "CodigoNoWhoVacunaVS",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from <a href=\"http://www.whocc.no/atc\"><code>http://www.whocc.no/atc</code></a> where concept  is-a  J07BN</li><li>Include all codes defined in <code>http://id.who.int/icd11/mms</code></li><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  410942007</li></ul></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  410942007 (Drug or medicament (substance))</li></ul></div>"
   },
   "url" : "https://paho.org/fhir/esavi/ValueSet/CodigoNoWhoVacunaVS",
-  "version" : "0.1.41",
+  "version" : "0.1.42",
   "name" : "CodigoNoWhoVacunaVS",
   "title" : "Código no WHODrug de la Vacuna",
   "status" : "active",
+  "experimental" : false,
   "date" : "2021-03-11T00:00:00-03:00",
   "publisher" : "ESAVI -",
   "contact" : [{
@@ -32,17 +33,6 @@
   }],
   "compose" : {
     "include" : [{
-      "system" : "http://www.whocc.no/atc",
-      "filter" : [{
-        "property" : "concept",
-        "op" : "is-a",
-        "value" : "J07BN"
-      }]
-    },
-    {
-      "system" : "http://id.who.int/icd11/mms"
-    },
-    {
       "system" : "http://snomed.info/sct",
       "filter" : [{
         "property" : "concept",
