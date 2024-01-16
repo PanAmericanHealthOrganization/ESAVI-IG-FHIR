@@ -6,11 +6,11 @@
     <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>ESAVI</h2><p>The official URL for this implementation guide is: </p><pre>https://paho.org/fhir/esavi/ImplementationGuide/uv.esavi</pre></div>
   </text>
   <url value="https://paho.org/fhir/esavi/ImplementationGuide/uv.esavi"/>
-  <version value="0.1.42"/>
+  <version value="0.1.43"/>
   <name value="ESAVI"/>
   <title value="Guía de Implementación FHIR de ESAVI"/>
   <status value="draft"/>
-  <date value="2024-01-16T11:37:21-03:00"/>
+  <date value="2024-01-16T11:42:34-03:00"/>
   <publisher value="ESAVI -"/>
   <contact>
     <name value="ESAVI -"/>

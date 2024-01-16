@@ -6,7 +6,7 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="http://terminology.hl7.org/5.3.0/CodeSystem-mdr.html"><code>https://www.meddra.org</code></a></li></ul></div>
   </text>
   <url value="https://paho.org/fhir/esavi/ValueSet/EsaviMedDRAVS"/>
-  <version value="0.1.42"/>
+  <version value="0.1.43"/>
   <name value="EsaviMedDRAVS"/>
   <title value="Código MedDRA del Evento Adverso notificado"/>
   <status value="active"/>

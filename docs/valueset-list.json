@@ -2,7 +2,7 @@
   "codeSystems" : [
     {
       "url" : "https://paho.org/fhir/esavi/ValueSet/ClasificacionDesenlaceNaranjoVS",
-      "version" : "0.1.42",
+      "version" : "0.1.43",
       "status" : "active",
       "name" : "ClasificacionDesenlaceNaranjoVS",
       "title" : "Clasificación de causalidad Naranjo",
@@ -13,7 +13,7 @@
     },
     {
       "url" : "https://paho.org/fhir/esavi/ValueSet/ClasificacionDesenlaceVS",
-      "version" : "0.1.42",
+      "version" : "0.1.43",
       "status" : "active",
       "name" : "ClasificacionDesenlaceVS",
       "title" : "Desenlaces Tras ESAVI",
@@ -24,7 +24,7 @@
     },
     {
       "url" : "https://paho.org/fhir/esavi/ValueSet/ClasificacionDesenlaceWHOAEFIVS",
-      "version" : "0.1.42",
+      "version" : "0.1.43",
       "status" : "active",
       "name" : "ClasificacionDesenlaceWHOAEFIVS",
       "title" : "Clasificación de causalidad WHO-AEFI",
@@ -35,7 +35,7 @@
     },
     {
       "url" : "https://paho.org/fhir/esavi/ValueSet/ClasificacionDesenlaceWHOUMCVS",
-      "version" : "0.1.42",
+      "version" : "0.1.43",
       "status" : "active",
       "name" : "ClasificacionDesenlaceWHOUMCVS",
       "title" : "Clasificación de causalidad WHO-UMC",
@@ -46,7 +46,7 @@
     },
     {
       "url" : "https://paho.org/fhir/esavi/ValueSet/CodigoMedDRAEnfPreviaVS",
-      "version" : "0.1.42",
+      "version" : "0.1.43",
       "status" : "active",
       "name" : "CodigoMedDRAEnfPreviaVS",
       "title" : "Códigos de MedDRA para representar enfermedades previas en un ESAVI-PAHO",
@@ -55,7 +55,7 @@
     },
     {
       "url" : "https://paho.org/fhir/esavi/ValueSet/CodigoMedicamentoVS",
-      "version" : "0.1.42",
+      "version" : "0.1.43",
       "status" : "active",
       "name" : "CodigoMedicamentoVS",
       "title" : "Codigo Medicamento",
@@ -64,7 +64,7 @@
     },
     {
       "url" : "https://paho.org/fhir/esavi/ValueSet/CodigoNoWhoVacunaVS",
-      "version" : "0.1.42",
+      "version" : "0.1.43",
       "status" : "active",
       "name" : "CodigoNoWhoVacunaVS",
       "title" : "Código no WHODrug de la Vacuna",
@@ -73,7 +73,7 @@
     },
     {
       "url" : "https://paho.org/fhir/esavi/ValueSet/CodigoWhoFabricanteVS",
-      "version" : "0.1.42",
+      "version" : "0.1.43",
       "status" : "active",
       "name" : "CodigoWhoFabricanteVS",
       "title" : "Fabricantes Vacuna",
@@ -84,7 +84,7 @@
     },
     {
       "url" : "https://paho.org/fhir/esavi/ValueSet/CodigoWhoVacunaVS",
-      "version" : "0.1.42",
+      "version" : "0.1.43",
       "status" : "active",
       "name" : "CodigoWhoVacunaVS",
       "title" : "Codigo WHODrug de la vacuna",
@@ -96,7 +96,7 @@
     },
     {
       "url" : "https://paho.org/fhir/esavi/ValueSet/ComplicacionEmbarazoMedDRAVS",
-      "version" : "0.1.42",
+      "version" : "0.1.43",
       "status" : "active",
       "name" : "ComplicacionEmbarazoMedDRAVS",
       "title" : "Códigos MEDDRA Complicaciones en Embarazo ESAVI",
@@ -105,7 +105,7 @@
     },
     {
       "url" : "https://paho.org/fhir/esavi/ValueSet/ComplicacionEmbarazoOtroVS",
-      "version" : "0.1.42",
+      "version" : "0.1.43",
       "status" : "active",
       "name" : "ComplicacionEmbarazoOtroVS",
       "title" : "Otros Códigos Complicaciones en Embarazo ESAVI",
@@ -114,7 +114,7 @@
     },
     {
       "url" : "https://paho.org/fhir/esavi/ValueSet/ComplicacionEmbarazoVS",
-      "version" : "0.1.42",
+      "version" : "0.1.43",
       "status" : "active",
       "name" : "ComplicacionEmbarazoVS",
       "title" : "Complicaciones Embarazo",
@@ -125,7 +125,7 @@
     },
     {
       "url" : "https://paho.org/fhir/esavi/ValueSet/DirOrgNotiVS",
-      "version" : "0.1.42",
+      "version" : "0.1.43",
       "status" : "active",
       "name" : "DirOrgNotiVS",
       "title" : "Códigos PAHO para Direcciones",
@@ -134,7 +134,7 @@
     },
     {
       "url" : "https://paho.org/fhir/esavi/ValueSet/EnfermedadesPreviasCodificacionVS",
-      "version" : "0.1.42",
+      "version" : "0.1.43",
       "status" : "active",
       "name" : "EnfermedadesPreviasCodificacionVS",
       "title" : "Enfermedades previas en un ESAVI-PAHO",
@@ -143,7 +143,7 @@
     },
     {
       "url" : "https://paho.org/fhir/esavi/ValueSet/EsaviMedDRAVS",
-      "version" : "0.1.42",
+      "version" : "0.1.43",
       "status" : "active",
       "name" : "EsaviMedDRAVS",
       "title" : "Código MedDRA del Evento Adverso notificado",
@@ -152,7 +152,7 @@
     },
     {
       "url" : "https://paho.org/fhir/esavi/ValueSet/EsaviOtroVS",
-      "version" : "0.1.42",
+      "version" : "0.1.43",
       "status" : "active",
       "name" : "EsaviOtroVS",
       "title" : "Otros Códigos Evento Adverso",
@@ -161,7 +161,7 @@
     },
     {
       "url" : "https://paho.org/fhir/esavi/ValueSet/FormaFarmaceuticaVS",
-      "version" : "0.1.42",
+      "version" : "0.1.43",
       "status" : "active",
       "name" : "FormaFarmaceuticaVS",
       "title" : "Identificación Formas Farmacéuticas",
@@ -170,7 +170,7 @@
     },
     {
       "url" : "https://paho.org/fhir/esavi/ValueSet/ModoConfirmacionInfeccionVS",
-      "version" : "0.1.42",
+      "version" : "0.1.43",
       "status" : "active",
       "name" : "ModoConfirmacionInfeccionVS",
       "title" : "Modos Confirmación Infección COVID-19",
@@ -181,7 +181,7 @@
     },
     {
       "url" : "https://paho.org/fhir/esavi/ValueSet/ModoVerificacionVacunaVS",
-      "version" : "0.1.42",
+      "version" : "0.1.43",
       "status" : "active",
       "name" : "ModoVerificacionVacunaVS",
       "title" : "Modos Verificación Vacuna Previa",
@@ -192,7 +192,7 @@
     },
     {
       "url" : "https://paho.org/fhir/esavi/ValueSet/ProfesionalNotificadorVS",
-      "version" : "0.1.42",
+      "version" : "0.1.43",
       "status" : "active",
       "name" : "ProfesionalNotificadorVS",
       "title" : "Tipo de Profesional Notificador",
@@ -203,7 +203,7 @@
     },
     {
       "url" : "https://paho.org/fhir/esavi/ValueSet/RespuestaSiNoNosabeVS",
-      "version" : "0.1.42",
+      "version" : "0.1.43",
       "status" : "active",
       "name" : "RespuestaSiNoNosabeVS",
       "title" : "Respuestas Simples",
@@ -214,7 +214,7 @@
     },
     {
       "url" : "https://paho.org/fhir/esavi/ValueSet/SistemaClasfCausalidadVS",
-      "version" : "0.1.42",
+      "version" : "0.1.43",
       "status" : "active",
       "name" : "SistemaClasfCausalidadVS",
       "title" : "Tipo de Método de clasificación de causalidad",
@@ -225,7 +225,7 @@
     },
     {
       "url" : "https://paho.org/fhir/esavi/ValueSet/SistemasDeCodificacionVS",
-      "version" : "0.1.42",
+      "version" : "0.1.43",
       "status" : "active",
       "name" : "SistemasDeCodificacionVS",
       "title" : "Sistemas De Codificacion",
@@ -236,7 +236,7 @@
     },
     {
       "url" : "https://paho.org/fhir/esavi/ValueSet/ViaAdminMedicamentoVS",
-      "version" : "0.1.42",
+      "version" : "0.1.43",
       "status" : "active",
       "name" : "ViaAdminMedicamentoVS",
       "title" : "Vías de Administración de Medicamentos",
@@ -245,7 +245,7 @@
     },
     {
       "url" : "https://paho.org/fhir/esavi/ValueSet/codPaises",
-      "version" : "0.1.42",
+      "version" : "0.1.43",
       "status" : "active",
       "name" : "CodPaises",
       "title" : "Códigos de Países",

@@ -13,7 +13,7 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-DirOrgNotiCS.html\"><code>https://paho.org/fhir/esavi/CodeSystem/DirOrgNotiCS</code></a></li></ul></div>"
   ] ; # 
   fhir:url [ fhir:v "https://paho.org/fhir/esavi/ValueSet/DirOrgNotiVS"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "0.1.42"] ; # 
+  fhir:version [ fhir:v "0.1.43"] ; # 
   fhir:name [ fhir:v "DirOrgNotiVS"] ; # 
   fhir:title [ fhir:v "Códigos PAHO para Direcciones"] ; # 
   fhir:status [ fhir:v "active"] ; # 

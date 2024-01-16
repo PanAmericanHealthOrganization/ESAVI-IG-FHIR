@@ -2,7 +2,6 @@
 =========================================
 
 /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/QuestionnaireResponse-ejUnoNuevo.json: line 428, col 20, Warning - The code provided 10002218 cannot be validated in the options value set (Código MedDRA del Evento Adverso notificado) in the questionnaire because the system https://paho.org/fhir/esavi/ValueSet/EsaviMedDRAVS could not be found (CODEINVALID)
-/Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/ValueSet-EnfermedadesPreviasCodificacionVS.json: line 0, col 0, Warning - Error from http://tx.fhir.org/r4: Unable to provide support for code system http://id.who.int/icd11/mms (EXCEPTION)
 
-err = 0, warn = 2, info = 0
+err = 0, warn = 1, info = 0
 IG Publisher Version: 1.5.11

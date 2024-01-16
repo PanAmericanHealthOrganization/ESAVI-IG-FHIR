@@ -6,7 +6,7 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-ModoVerificacionVacunaCS.html\"><code>https://paho.org/fhir/esavi/CodeSystem/ModoVerificacionVacunaCS</code></a></li></ul></div>"
   },
   "url" : "https://paho.org/fhir/esavi/ValueSet/ModoVerificacionVacunaVS",
-  "version" : "0.1.42",
+  "version" : "0.1.43",
   "name" : "ModoVerificacionVacunaVS",
   "title" : "Modos Verificación Vacuna Previa",
   "status" : "active",

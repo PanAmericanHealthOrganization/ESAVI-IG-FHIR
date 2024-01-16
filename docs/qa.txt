@@ -1,9 +1,9 @@
 ﻿ESAVI : Validation Results
 =========================================
 
-err = 0, warn = 2, info = 0
+err = 0, warn = 1, info = 0
 IG Publisher Version: 1.5.11
-Generated Tue Jan 16 11:38:08 CLST 2024. FHIR version 4.0.1 for uv.esavi#0.1.42 (canonical = https://paho.org/fhir/esavi)
+Generated Tue Jan 16 11:43:46 CLST 2024. FHIR version 4.0.1 for uv.esavi#0.1.43 (canonical = https://paho.org/fhir/esavi)
  Build Errors : 0 / 0 / 0
  /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/CodeSystem-ClasificacionDesenlaceCS : 0 / 0 / 1
  /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/CodeSystem-ClasificacionDesenlaceNaranjoCS : 0 / 0 / 1
@@ -40,7 +40,7 @@ Generated Tue Jan 16 11:38:08 CLST 2024. FHIR version 4.0.1 for uv.esavi#0.1.42 
  /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/ValueSet-ComplicacionEmbarazoOtroVS : 0 / 0 / 1
  /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/ValueSet-ComplicacionEmbarazoVS : 0 / 0 / 1
  /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/ValueSet-DirOrgNotiVS : 0 / 0 / 1
- /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/ValueSet-EnfermedadesPreviasCodificacionVS : 0 / 1 / 1
+ /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/ValueSet-EnfermedadesPreviasCodificacionVS : 0 / 0 / 1
  /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/ValueSet-EsaviMedDRAVS : 0 / 1 / 1
  /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/ValueSet-EsaviOtroVS : 0 / 0 / 1
  /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/ValueSet-FormaFarmaceuticaVS : 0 / 0 / 1
@@ -91,7 +91,6 @@ WARNING: QuestionnaireResponse/ejUnoNuevo: QuestionnaireResponse.item[4].item[0]
 == fsh-generated/resources/ValueSet-ComplicacionEmbarazoVS.json ==
 == fsh-generated/resources/ValueSet-DirOrgNotiVS.json ==
 == fsh-generated/resources/ValueSet-EnfermedadesPreviasCodificacionVS.json ==
-WARNING: ValueSet.where(id = 'EnfermedadesPreviasCodificacionVS'): Error from http://tx.fhir.org/r4: Unable to provide support for code system http://id.who.int/icd11/mms
 == fsh-generated/resources/ValueSet-EsaviMedDRAVS.json ==
 == fsh-generated/resources/ValueSet-EsaviOtroVS.json ==
 == fsh-generated/resources/ValueSet-FormaFarmaceuticaVS.json ==

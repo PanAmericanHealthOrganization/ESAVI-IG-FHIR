@@ -13,7 +13,7 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-mdr.html\"><code>https://www.meddra.org</code></a></li></ul></div>"
   ] ; # 
   fhir:url [ fhir:v "https://paho.org/fhir/esavi/ValueSet/CodigoMedDRAEnfPreviaVS"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "0.1.42"] ; # 
+  fhir:version [ fhir:v "0.1.43"] ; # 
   fhir:name [ fhir:v "CodigoMedDRAEnfPreviaVS"] ; # 
   fhir:title [ fhir:v "Códigos de MedDRA para representar enfermedades previas en un ESAVI-PAHO"] ; # 
   fhir:status [ fhir:v "active"] ; # 
