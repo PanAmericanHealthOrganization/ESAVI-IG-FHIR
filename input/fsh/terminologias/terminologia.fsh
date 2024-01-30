@@ -330,8 +330,9 @@ Description: "Codificación Estandarizda del código de las Vacunas según WhoDr
 * insert RuleSetVS
 
 //* include codes from system CodigoWhoVacunaCS //Acotado a Vacunas COVID
-* include codes from system WHODrugPMID 
-* include codes from system WHODrugDC
+//* include codes from system WHODrugPMID 
+//* include codes from system WHODrugDC
+* include codes from system WHODrug
 
 ValueSet: FormaFarmaceuticaVS //revisado OKs CS externo LinkID: codigoFormaFarmaceutica
 Id: FormaFarmaceuticaVS

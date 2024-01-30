@@ -18,6 +18,7 @@ Alias: $RespuestaSiNoNosabeCS = https://paho.org/fhir/esavi/CodeSystem/Respuesta
 //Alias: $EsaviMedDRACS = https://paho.org/fhir/esavi/CodeSystem/EsaviMedDRACS
 //Alias: $EsaviOtroCS = https://paho.org/fhir/esavi/CodeSystem/EsaviOtroCS
 Alias: $ClasificacionDesenlaceCS = https://paho.org/fhir/esavi/CodeSystem/ClasificacionDesenlaceCS
+Alias: WHODrug = https://apiportaldemo.who-umc.org
 
 RuleSet: RuleSetMeta
 * ^version = "0.9.0"
