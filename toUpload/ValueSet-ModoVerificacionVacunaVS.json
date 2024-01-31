@@ -1,0 +1,39 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "ModoVerificacionVacunaVS",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-ModoVerificacionVacunaCS.html\"><code>https://paho.org/fhir/esavi/CodeSystem/ModoVerificacionVacunaCS</code></a></li></ul></div>"
+  },
+  "url" : "https://paho.org/fhir/esavi/ValueSet/ModoVerificacionVacunaVS",
+  "version" : "0.1.43",
+  "name" : "ModoVerificacionVacunaVS",
+  "title" : "Modos Verificación Vacuna Previa",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2021-03-11T00:00:00-03:00",
+  "publisher" : "ESAVI -",
+  "contact" : [{
+    "name" : "ESAVI -",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://covid-19pharmacovigilance.paho.org/resources/updates-on-aefi"
+    },
+    {
+      "system" : "email",
+      "value" : "rizzatodan@paho.org"
+    }]
+  }],
+  "description" : "Modos de Verificacion de Vacuna o Esquema de Vacunación Completado",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://paho.org/fhir/esavi/CodeSystem/ModoVerificacionVacunaCS"
+    }]
+  }
+}

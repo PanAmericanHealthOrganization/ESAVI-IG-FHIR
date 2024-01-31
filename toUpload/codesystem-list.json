@@ -1,0 +1,132 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "https://paho.org/fhir/esavi/CodeSystem/ClasificacionDesenlaceCS",
+      "version" : "0.1.43",
+      "status" : "active",
+      "name" : "ClasificacionDesenlaceCS",
+      "title" : "Desenlaces Tras ESAVI",
+      "description" : "Clasificación de Desenlace Tras Sufrir ESAVI"
+    },
+    {
+      "url" : "https://paho.org/fhir/esavi/CodeSystem/ClasificacionDesenlaceNaranjoCS",
+      "version" : "0.1.43",
+      "status" : "active",
+      "name" : "ClasificacionDesenlaceNaranjoCS",
+      "title" : "Clasificación de causalidad Naranjo",
+      "description" : "Método de clasificación de causalidad Naranjo"
+    },
+    {
+      "url" : "https://paho.org/fhir/esavi/CodeSystem/ClasificacionDesenlaceWHOAEFICS",
+      "version" : "0.1.43",
+      "status" : "active",
+      "name" : "ClasificacionDesenlaceWHOAEFICS",
+      "title" : "Clasificación de causalidad WHO-AEFI",
+      "description" : "Método de clasificación de causalidad WHO-AEFI"
+    },
+    {
+      "url" : "https://paho.org/fhir/esavi/CodeSystem/ClasificacionDesenlaceWHOUMCCS",
+      "version" : "0.1.43",
+      "status" : "active",
+      "name" : "ClasificacionDesenlaceWHOUMCCS",
+      "title" : "Clasificación de causalidad WHO-UMC",
+      "description" : "Método de clasificación de causalidad WHO-UMC"
+    },
+    {
+      "url" : "https://paho.org/fhir/esavi/CodeSystem/CodigoWhoFabricanteCS",
+      "version" : "0.1.43",
+      "status" : "active",
+      "name" : "CodigoWhoFabricanteCS",
+      "title" : "Fabricante   Vacuna",
+      "description" : "Códigos Fabricantes Vacunas de WHO"
+    },
+    {
+      "url" : "https://paho.org/fhir/esavi/CodeSystem/ComplicacionEmbarazoCS",
+      "version" : "0.1.43",
+      "status" : "active",
+      "name" : "ComplicacionEmbarazoCS",
+      "title" : "Complicaciones de Embarazo",
+      "description" : "Códigos para las Complicaciones de Embarazo"
+    },
+    {
+      "url" : "https://paho.org/fhir/esavi/CodeSystem/DirOrgNotiCS",
+      "version" : "0.1.43",
+      "status" : "active",
+      "name" : "DirOrgNotiCS",
+      "title" : "Códigos PAHO para Direcciones",
+      "description" : "Códigos para Direcciones según PAHO"
+    },
+    {
+      "url" : "https://paho.org/fhir/esavi/CodeSystem/ModoConfirmacionInfeccionCS",
+      "version" : "0.1.43",
+      "status" : "active",
+      "name" : "ModoConfirmacionInfeccionCS",
+      "title" : "Modo de Confirmación de la Infección",
+      "description" : "Modos de Confirmacion de Infección por COVID-19"
+    },
+    {
+      "url" : "https://paho.org/fhir/esavi/CodeSystem/ModoVerificacionVacunaCS",
+      "version" : "0.1.43",
+      "status" : "active",
+      "name" : "ModoVerificacionVacunaCS",
+      "title" : "Modo de Verificación de Vacunación Previa",
+      "description" : "Modos de Verificacion de Vacuna o Esquema de Vacunación Completado"
+    },
+    {
+      "url" : "https://paho.org/fhir/esavi/CodeSystem/ProfesionalNotificadorCS",
+      "version" : "0.1.43",
+      "status" : "active",
+      "name" : "ProfesionalNotificadorCS",
+      "title" : "Tipo de Profesional Notificador",
+      "description" : "Códigos de Tipo de Notificadores de ESAVI para PAHO"
+    },
+    {
+      "url" : "https://paho.org/fhir/esavi/CodeSystem/RespuestaSiNoNosabeCS",
+      "version" : "0.1.43",
+      "status" : "active",
+      "name" : "RespuestaSiNoNosabeCS",
+      "title" : "Respuestas Simples",
+      "description" : "Códigos para capturar respuestas simples si/no/no sabe"
+    },
+    {
+      "url" : "https://paho.org/fhir/esavi/CodeSystem/SistemaClasfCausalidadCS",
+      "version" : "0.1.43",
+      "status" : "active",
+      "name" : "SistemaClasfCausalidadCS",
+      "title" : "Tipo de Método de clasificación de causalidad",
+      "description" : "Códigos para Tipos de Métodos de Clasificación de Causalidad"
+    },
+    {
+      "url" : "https://paho.org/fhir/esavi/CodeSystem/SistemasDeCodificacionCS",
+      "version" : "0.1.43",
+      "status" : "active",
+      "name" : "SistemasDeCodificacionCS",
+      "title" : "Sistemas De Codificacion",
+      "description" : "Sistemas De Codificacion para Determinación de Códigos"
+    },
+    {
+      "url" : "https://paho.org/fhir/esavi/CodeSystem/WHODrugDC",
+      "version" : "0.1.43",
+      "status" : "active",
+      "name" : "WHODrugDC",
+      "title" : "WHODrug DrugCode",
+      "description" : "Fragmento de WHODrug completo con nombres genéricos y comerciales en inglés mayormente codificados por drugcode"
+    },
+    {
+      "url" : "https://paho.org/fhir/esavi/CodeSystem/WHODrugPMID",
+      "version" : "0.1.43",
+      "status" : "active",
+      "name" : "WHODrugPMID",
+      "title" : "WHODrug PMID",
+      "description" : "Fragmento de WHODrug completo con nombres genericos y comerciales en inglés mayormente codificados por PMID"
+    },
+    {
+      "url" : "https://paho.org/fhir/esavi/CodeSystem/codPaisesCS",
+      "version" : "0.1.43",
+      "status" : "active",
+      "name" : "CodPaisesCS",
+      "title" : "Códigos de Paises",
+      "description" : "Codigos definidos para la identificación de países segun norma ISO3166-3"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "CodigoNoWhoVacunaVS",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  410942007 (Drug or medicament (substance))</li></ul></div>"
+  },
+  "url" : "https://paho.org/fhir/esavi/ValueSet/CodigoNoWhoVacunaVS",
+  "version" : "0.1.43",
+  "name" : "CodigoNoWhoVacunaVS",
+  "title" : "Código no WHODrug de la Vacuna",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2021-03-11T00:00:00-03:00",
+  "publisher" : "ESAVI -",
+  "contact" : [{
+    "name" : "ESAVI -",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://covid-19pharmacovigilance.paho.org/resources/updates-on-aefi"
+    },
+    {
+      "system" : "email",
+      "value" : "rizzatodan@paho.org"
+    }]
+  }],
+  "description" : "Código no WHODrug de la Vacuna",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "410942007"
+      }]
+    }]
+  }
+}

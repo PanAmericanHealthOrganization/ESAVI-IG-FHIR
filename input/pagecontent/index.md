@@ -29,7 +29,7 @@ Esta guía está dividida en varias secciones que se muestran en la barra de men
 
 ### Del modelo lógico a la implementación
 
-El modelo lógico está basado en las recomendaciones del [Manual Regional de Vigilancia de ESAVI](https://iris.paho.org/handle/10665.2/55384) para el reporte individual de casos, donde cada estado miembro informa hacia el Sistema Regional de Vacunación Segura de la OPS. Como paso previo se estructuró un Diccionario de Datos para Notificación de ESAVI ES en formato tabular. Este modelo lógico se encuentra mapeado a un recurso [Questionnaire] https://build.fhir.org/ig/PanAmericanHealthOrganization/OPS-ESAVI/StructureDefinition-ESAVIQuestionnaireResponse.html)
+El modelo lógico está basado en las recomendaciones del [Manual Regional de Vigilancia de ESAVI](https://iris.paho.org/handle/10665.2/55384) para el reporte individual de casos, donde cada estado miembro informa hacia el Sistema Regional de Vacunación Segura de la OPS. Como paso previo se estructuró un Diccionario de Datos para Notificación de ESAVI ES en formato tabular. Este modelo lógico se encuentra mapeado a un recurso [Questionnaire] (https://build.fhir.org/ig/PanAmericanHealthOrganization/OPS-ESAVI/StructureDefinition-ESAVIQuestionnaireResponse.html)
 
 ### Requerimientos de Conformidad
 
@@ -60,13 +60,17 @@ En este contexto, surge la propuesta de adoptar FHIR (Fast Healthcare Interopera
 ### Dependencias, versiones y propiedad intelectual
 
 #### Dependencias
+
 {% include dependency-table.xhtml %}
 
 #### Analisis de versiones cruzadas
+
 {% include cross-version-analysis.xhtml %}
 
 #### Perfiles globales
+
 {% include globals-table.xhtml %}
 
 #### Declaracion de propiedad intelectual
+
 {% include ip-statements.xhtml %}
