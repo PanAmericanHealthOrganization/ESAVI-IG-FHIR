@@ -671,8 +671,8 @@ Usage: #example
 * item[=].item[=].item[+].type = #choice
 * item[=].item[=].item[=].answerValueSet = "https://paho.org/fhir/esavi/ValueSet/RespuestaSiNoNosabeVS"
 * item[=].item[=].item[=].required = true
-* item[=].item[=].item[=].linkId = "codigoMonitoreoPosteriorVacuna"
-* item[=].item[=].item[=].text = "Código correspondiente a la respuesta a la consulta sobre si se monitoreó paciente una vez vacunada"
+* item[=].item[=].item[=].linkId = "monitoreoPosteriorVacuna"
+* item[=].item[=].item[=].text = "Respuesta correspondiente a la consulta sobre si se monitoreó al paciente una vez vacunada"
 
 * item[=].item[=].item[=].enableWhen.question = "embarazadaMomentoVacuna"
 * item[=].item[=].item[=].enableWhen.operator = #=

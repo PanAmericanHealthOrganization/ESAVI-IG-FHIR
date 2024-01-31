@@ -1,10 +1,14 @@
 CodeSystem: WHODrugPMID
 Title: "WHODrug PMID"
 Description: "Fragmento de WHODrug completo con nombres genericos y comerciales en inglés mayormente codificados por PMID"
+
+
+
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2023-05-25T13:22:48.124+00:00"
 * ^status = #active
-* ^experimental = true
+* ^caseSensitive = true
+* ^experimental = false
 * ^date = "2023-05-25T00:00:00-04:00"
 * ^publisher = "UMC"
 * ^contact.name = "WHO"

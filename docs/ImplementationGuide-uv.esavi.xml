@@ -6,11 +6,11 @@
     <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>ESAVI</h2><p>The official URL for this implementation guide is: </p><pre>https://paho.org/fhir/esavi/ImplementationGuide/uv.esavi</pre></div>
   </text>
   <url value="https://paho.org/fhir/esavi/ImplementationGuide/uv.esavi"/>
-  <version value="0.1.41"/>
+  <version value="0.1.43"/>
   <name value="ESAVI"/>
   <title value="Guía de Implementación FHIR de ESAVI"/>
   <status value="draft"/>
-  <date value="2023-12-19T16:49:38-03:00"/>
+  <date value="2024-01-16T11:42:34-03:00"/>
   <publisher value="ESAVI -"/>
   <contact>
     <name value="ESAVI -"/>
@@ -250,7 +250,7 @@
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
-      <valueCode value="hl7.fhir.uv.tools#current"/>
+      <valueCode value="hl7.fhir.uv.tools#0.1.0"/>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
@@ -608,10 +608,21 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/codPaisesCS"/>
+      </reference>
+      <name value="Códigos de Paises"/>
+      <description value="Codigos definidos para la identificación de países segun norma ISO3166-3"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/CodPaises"/>
+        <reference value="ValueSet/codPaises"/>
       </reference>
       <name value="Códigos de Países"/>
       <description value="Codigos definidos para la identificación de países segun norma ISO3166-N"/>
@@ -624,7 +635,7 @@
       <reference>
         <reference value="ValueSet/ComplicacionEmbarazoMedDRAVS"/>
       </reference>
-      <name value="Códigos MEDDRA Complicaciones en Embarazo ESAVI "/>
+      <name value="Códigos MEDDRA Complicaciones en Embarazo ESAVI"/>
       <description value="Codificacion Estandarizada de diagnóticos de complicaciones de embarazo mediante códigos MedDRA"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -702,6 +713,7 @@
         <reference value="QuestionnaireResponse/ejUnoNuevo"/>
       </reference>
       <name value="ejUnoNuevo"/>
+      <description value="Ejemplo de cuestionario Respondido 1"/>
       <exampleCanonical value="https://paho.org/fhir/esavi/StructureDefinition/ESAVIQuestionnaireResponse"/>
     </resource>
     <resource>
@@ -799,7 +811,7 @@
       <reference>
         <reference value="ValueSet/ComplicacionEmbarazoOtroVS"/>
       </reference>
-      <name value="Otros Códigos Complicaciones en Embarazo ESAVI "/>
+      <name value="Otros Códigos Complicaciones en Embarazo ESAVI"/>
       <description value="Codificacion Estandarizada de diagnóticos de complicaciones de embarazo mediante códigos Snomed y CIE-10"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -811,7 +823,7 @@
         <reference value="ValueSet/EsaviOtroVS"/>
       </reference>
       <name value="Otros Códigos Evento Adverso"/>
-      <description value="Evento Adverso en otro sistema según Snomed, ATC y CIE-10"/>
+      <description value="Evento Adverso en otro sistema según Snomed y CIE-10"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1039,6 +1051,22 @@
         </extension>
         <nameUrl value="consideraciones.html"/>
         <title value="Consideraciones"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="operaciones.html"/>
+        </extension>
+        <nameUrl value="operaciones.html"/>
+        <title value="Operaciones"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="seguridad.html"/>
+        </extension>
+        <nameUrl value="seguridad.html"/>
+        <title value="Seguridad"/>
         <generation value="markdown"/>
       </page>
     </page>

@@ -10,13 +10,14 @@
   fhir:id [ fhir:v "CodigoMedicamentoVS"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  105590001</li><li>Include all codes defined in <a href=\"http://www.whocc.no/atc\"><code>http://www.whocc.no/atc</code></a></li><li>Include codes from <code>http://id.who.int/icd11/mms</code> where concept  is-a  XM4843</li></ul></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  105590001 (Substance)</li></ul></div>"
   ] ; # 
   fhir:url [ fhir:v "https://paho.org/fhir/esavi/ValueSet/CodigoMedicamentoVS"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "0.1.41"] ; # 
+  fhir:version [ fhir:v "0.1.43"] ; # 
   fhir:name [ fhir:v "CodigoMedicamentoVS"] ; # 
   fhir:title [ fhir:v "Codigo Medicamento"] ; # 
   fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
   fhir:date [ fhir:v "2021-03-11T00:00:00-03:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ESAVI -"] ; # 
   fhir:contact ( [
@@ -43,15 +44,6 @@
          fhir:property [ fhir:v "concept" ] ;
          fhir:op [ fhir:v "is-a" ] ;
          fhir:value [ fhir:v "105590001" ]
-       ] )
-     ] [
-       fhir:system [ fhir:v "http://www.whocc.no/atc"^^xsd:anyURI ]
-     ] [
-       fhir:system [ fhir:v "http://id.who.int/icd11/mms"^^xsd:anyURI ] ;
-       fhir:filter ( [
-         fhir:property [ fhir:v "concept" ] ;
-         fhir:op [ fhir:v "is-a" ] ;
-         fhir:value [ fhir:v "XM4843" ]
        ] )
      ] )
   ] . # 
