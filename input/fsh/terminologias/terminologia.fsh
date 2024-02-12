@@ -479,7 +479,7 @@ Id: RespuestaSiNoNosabeCS
 Title: "Respuestas Simples"
 Description:  "Códigos para capturar respuestas simples si/no/no sabe"
 * insert RuleSetCS
-
+* ^count = 3
 * #1 "Si"
 * #2 "No"
 * #3 "No sabe"
