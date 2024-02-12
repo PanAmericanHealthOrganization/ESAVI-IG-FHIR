@@ -6,11 +6,11 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ESAVI</h2><p>The official URL for this implementation guide is: </p><pre>https://paho.org/fhir/esavi/ImplementationGuide/uv.esavi</pre></div>"
   },
   "url" : "https://paho.org/fhir/esavi/ImplementationGuide/uv.esavi",
-  "version" : "0.1.43",
+  "version" : "0.1.44",
   "name" : "ESAVI",
   "title" : "Guía de Implementación FHIR de ESAVI",
   "status" : "draft",
-  "date" : "2024-01-16T11:42:34-03:00",
+  "date" : "2024-02-12T18:40:26-03:00",
   "publisher" : "ESAVI -",
   "contact" : [{
     "name" : "ESAVI -",
@@ -877,18 +877,6 @@
         "valueString" : "QuestionnaireResponse"
       }],
       "reference" : {
-        "reference" : "QuestionnaireResponse/ejTresNuevo"
-      },
-      "name" : "ejTresNuevo",
-      "description" : "Ejemplo de cuestionario Respondido 3",
-      "exampleCanonical" : "https://paho.org/fhir/esavi/StructureDefinition/ESAVIQuestionnaireResponse"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "QuestionnaireResponse"
-      }],
-      "reference" : {
         "reference" : "QuestionnaireResponse/ejUnoNuevo"
       },
       "name" : "ejUnoNuevo",
@@ -1133,30 +1121,6 @@
       },
       "name" : "Vías de Administración de Medicamentos",
       "description" : "Describe y lista las vías de administración de medicamentos para registro en ESAVI segun SNOMED CT",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/WHODrugDC"
-      },
-      "name" : "WHODrug DrugCode",
-      "description" : "Fragmento de WHODrug completo con nombres genéricos y comerciales en inglés mayormente codificados por drugcode",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/WHODrugPMID"
-      },
-      "name" : "WHODrug PMID",
-      "description" : "Fragmento de WHODrug completo con nombres genericos y comerciales en inglés mayormente codificados por PMID",
       "exampleBoolean" : false
     }],
     "page" : {

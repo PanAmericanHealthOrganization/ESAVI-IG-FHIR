@@ -6,11 +6,11 @@
     <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>ESAVI</h2><p>The official URL for this implementation guide is: </p><pre>https://paho.org/fhir/esavi/ImplementationGuide/uv.esavi</pre></div>
   </text>
   <url value="https://paho.org/fhir/esavi/ImplementationGuide/uv.esavi"/>
-  <version value="0.1.43"/>
+  <version value="0.1.44"/>
   <name value="ESAVI"/>
   <title value="Guía de Implementación FHIR de ESAVI"/>
   <status value="draft"/>
-  <date value="2024-01-16T11:42:34-03:00"/>
+  <date value="2024-02-12T18:40:26-03:00"/>
   <publisher value="ESAVI -"/>
   <contact>
     <name value="ESAVI -"/>
@@ -699,17 +699,6 @@
         <valueString value="QuestionnaireResponse"/>
       </extension>
       <reference>
-        <reference value="QuestionnaireResponse/ejTresNuevo"/>
-      </reference>
-      <name value="ejTresNuevo"/>
-      <description value="Ejemplo de cuestionario Respondido 3"/>
-      <exampleCanonical value="https://paho.org/fhir/esavi/StructureDefinition/ESAVIQuestionnaireResponse"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="QuestionnaireResponse"/>
-      </extension>
-      <reference>
         <reference value="QuestionnaireResponse/ejUnoNuevo"/>
       </reference>
       <name value="ejUnoNuevo"/>
@@ -934,28 +923,6 @@
       </reference>
       <name value="Vías de Administración de Medicamentos"/>
       <description value="Describe y lista las vías de administración de medicamentos para registro en ESAVI segun SNOMED CT"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/WHODrugDC"/>
-      </reference>
-      <name value="WHODrug DrugCode"/>
-      <description value="Fragmento de WHODrug completo con nombres genéricos y comerciales en inglés mayormente codificados por drugcode"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/WHODrugPMID"/>
-      </reference>
-      <name value="WHODrug PMID"/>
-      <description value="Fragmento de WHODrug completo con nombres genericos y comerciales en inglés mayormente codificados por PMID"/>
       <exampleBoolean value="false"/>
     </resource>
     <page>

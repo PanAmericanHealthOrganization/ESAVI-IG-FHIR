@@ -1,9 +1,9 @@
 ﻿ESAVI : Validation Results
 =========================================
 
-err = 0, warn = 1, info = 0
-IG Publisher Version: 1.5.11
-Generated Tue Jan 16 11:43:46 CLST 2024. FHIR version 4.0.1 for uv.esavi#0.1.43 (canonical = https://paho.org/fhir/esavi)
+err = 13, warn = 2, info = 0
+IG Publisher Version: 1.5.11 Out of date - current version is 1.5.16
+Generated Mon Feb 12 18:41:03 CLST 2024. FHIR version 4.0.1 for uv.esavi#0.1.44 (canonical = https://paho.org/fhir/esavi)
  Build Errors : 0 / 0 / 0
  /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/CodeSystem-ClasificacionDesenlaceCS : 0 / 0 / 1
  /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/CodeSystem-ClasificacionDesenlaceNaranjoCS : 0 / 0 / 1
@@ -18,13 +18,10 @@ Generated Tue Jan 16 11:43:46 CLST 2024. FHIR version 4.0.1 for uv.esavi#0.1.43 
  /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/CodeSystem-RespuestaSiNoNosabeCS : 0 / 0 / 1
  /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/CodeSystem-SistemaClasfCausalidadCS : 0 / 0 / 1
  /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/CodeSystem-SistemasDeCodificacionCS : 0 / 0 / 1
- /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/CodeSystem-WHODrugDC : 0 / 0 / 1
- /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/CodeSystem-WHODrugPMID : 0 / 0 / 1
  /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/CodeSystem-codPaisesCS : 0 / 0 / 1
  /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/ImplementationGuide-uv.esavi : 0 / 0 / 1
- /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/Questionnaire-CuestionarioESAVI : 0 / 0 / 1
- /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/QuestionnaireResponse-ejDosNuevo : 0 / 4 / 1
- /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/QuestionnaireResponse-ejTresNuevo : 0 / 19 / 1
+ /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/Questionnaire-CuestionarioESAVI : 10 / 0 / 1
+ /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/QuestionnaireResponse-ejDosNuevo : 1 / 4 / 1
  /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/QuestionnaireResponse-ejUnoNuevo : 0 / 2 / 1
  /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/StructureDefinition-ESAVIQuestionnaireResponse : 0 / 0 / 1
  /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/ValueSet-ClasificacionDesenlaceNaranjoVS : 0 / 0 / 1
@@ -35,12 +32,12 @@ Generated Tue Jan 16 11:43:46 CLST 2024. FHIR version 4.0.1 for uv.esavi#0.1.43 
  /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/ValueSet-CodigoMedicamentoVS : 0 / 0 / 1
  /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/ValueSet-CodigoNoWhoVacunaVS : 0 / 0 / 1
  /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/ValueSet-CodigoWhoFabricanteVS : 0 / 0 / 1
- /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/ValueSet-CodigoWhoVacunaVS : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/ValueSet-CodigoWhoVacunaVS : 0 / 1 / 1
  /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/ValueSet-ComplicacionEmbarazoMedDRAVS : 0 / 1 / 1
- /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/ValueSet-ComplicacionEmbarazoOtroVS : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/ValueSet-ComplicacionEmbarazoOtroVS : 1 / 0 / 1
  /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/ValueSet-ComplicacionEmbarazoVS : 0 / 0 / 1
  /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/ValueSet-DirOrgNotiVS : 0 / 0 / 1
- /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/ValueSet-EnfermedadesPreviasCodificacionVS : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/ValueSet-EnfermedadesPreviasCodificacionVS : 1 / 0 / 1
  /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/ValueSet-EsaviMedDRAVS : 0 / 1 / 1
  /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/ValueSet-EsaviOtroVS : 0 / 0 / 1
  /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/ValueSet-FormaFarmaceuticaVS : 0 / 0 / 1
@@ -67,13 +64,21 @@ Generated Tue Jan 16 11:43:46 CLST 2024. FHIR version 4.0.1 for uv.esavi#0.1.43 
 == fsh-generated/resources/CodeSystem-RespuestaSiNoNosabeCS.json ==
 == fsh-generated/resources/CodeSystem-SistemaClasfCausalidadCS.json ==
 == fsh-generated/resources/CodeSystem-SistemasDeCodificacionCS.json ==
-== fsh-generated/resources/CodeSystem-WHODrugDC.json ==
-== fsh-generated/resources/CodeSystem-WHODrugPMID.json ==
 == fsh-generated/resources/CodeSystem-codPaisesCS.json ==
 == fsh-generated/resources/ImplementationGuide-uv.esavi.json ==
 == fsh-generated/resources/Questionnaire-CuestionarioESAVI.json ==
+ERROR: Questionnaire/CuestionarioESAVI: Questionnaire.item[2].item[4].item[2].enableWhen[0].answer.ofType(Coding): The Coding references a value set, not a code system ('https://paho.org/fhir/esavi/ValueSet/RespuestaSiNoNosabeVS')
+ERROR: Questionnaire/CuestionarioESAVI: Questionnaire.item[2].item[4].item[2].enableWhen[1].answer.ofType(Coding): The Coding references a value set, not a code system ('https://paho.org/fhir/esavi/ValueSet/RespuestaSiNoNosabeVS')
+ERROR: Questionnaire/CuestionarioESAVI: Questionnaire.item[2].item[4].item[3].enableWhen[0].answer.ofType(Coding): The Coding references a value set, not a code system ('https://paho.org/fhir/esavi/ValueSet/RespuestaSiNoNosabeVS')
+ERROR: Questionnaire/CuestionarioESAVI: Questionnaire.item[2].item[4].item[3].enableWhen[1].answer.ofType(Coding): The Coding references a value set, not a code system ('https://paho.org/fhir/esavi/ValueSet/RespuestaSiNoNosabeVS')
+ERROR: Questionnaire/CuestionarioESAVI: Questionnaire.item[2].item[4].item[5].enableWhen[0].answer.ofType(Coding): The Coding references a value set, not a code system ('https://paho.org/fhir/esavi/ValueSet/RespuestaSiNoNosabeVS')
+ERROR: Questionnaire/CuestionarioESAVI: Questionnaire.item[4].item[1].enableWhen[0].answer.ofType(Coding): The Coding references a value set, not a code system ('https://paho.org/fhir/esavi/ValueSet/RespuestaSiNoNosabeVS')
+ERROR: Questionnaire/CuestionarioESAVI: Questionnaire.item[4].item[2].item[6].enableWhen[0].answer.ofType(Coding): The Coding references a value set, not a code system ('https://paho.org/fhir/esavi/ValueSet/RespuestaSiNoNosabeVS')
+ERROR: Questionnaire/CuestionarioESAVI: Questionnaire.item[4].item[2].item[6].enableWhen[1].answer.ofType(Coding): The Coding references a value set, not a code system ('https://paho.org/fhir/esavi/ValueSet/RespuestaSiNoNosabeVS')
+ERROR: Questionnaire/CuestionarioESAVI: Questionnaire.item[4].item[2].item[7].enableWhen[0].answer.ofType(Coding): The Coding references a value set, not a code system ('https://paho.org/fhir/esavi/ValueSet/RespuestaSiNoNosabeVS')
+ERROR: Questionnaire/CuestionarioESAVI: Questionnaire.item[4].item[2].item[7].enableWhen[1].answer.ofType(Coding): The Coding references a value set, not a code system ('https://paho.org/fhir/esavi/ValueSet/RespuestaSiNoNosabeVS')
 == fsh-generated/resources/QuestionnaireResponse-ejDosNuevo.json ==
-== fsh-generated/resources/QuestionnaireResponse-ejTresNuevo.json ==
+ERROR: QuestionnaireResponse/ejDosNuevo: QuestionnaireResponse.item[0].item[1]: No response answer found for required item 'fechaNotificacion'
 == fsh-generated/resources/QuestionnaireResponse-ejUnoNuevo.json ==
 WARNING: QuestionnaireResponse/ejUnoNuevo: QuestionnaireResponse.item[4].item[0].item[2].answer[0]: The code provided 10002218 cannot be validated in the options value set (Código MedDRA del Evento Adverso notificado) in the questionnaire because the system https://paho.org/fhir/esavi/ValueSet/EsaviMedDRAVS could not be found
 == fsh-generated/resources/StructureDefinition-ESAVIQuestionnaireResponse.json ==
@@ -86,11 +91,14 @@ WARNING: QuestionnaireResponse/ejUnoNuevo: QuestionnaireResponse.item[4].item[0]
 == fsh-generated/resources/ValueSet-CodigoNoWhoVacunaVS.json ==
 == fsh-generated/resources/ValueSet-CodigoWhoFabricanteVS.json ==
 == fsh-generated/resources/ValueSet-CodigoWhoVacunaVS.json ==
+WARNING: ValueSet.where(id = 'CodigoWhoVacunaVS'): Error from http://tx.fhir.org/r4: Unable to provide support for code system https://apiportaldemo.who-umc.org
 == fsh-generated/resources/ValueSet-ComplicacionEmbarazoMedDRAVS.json ==
 == fsh-generated/resources/ValueSet-ComplicacionEmbarazoOtroVS.json ==
+ERROR: ValueSet.where(id = 'ComplicacionEmbarazoOtroVS'): The value set https://paho.org/fhir/esavi/ValueSet/ComplicacionEmbarazoOtroVS has too many codes to display (>1000) (and Error from http://tx.fhir.org/r4: The value set 'https://paho.org/fhir/esavi/ValueSet/ComplicacionEmbarazoOtroVS|0.1.44' expansion has 1388 codes, which is too many to display (>1000))
 == fsh-generated/resources/ValueSet-ComplicacionEmbarazoVS.json ==
 == fsh-generated/resources/ValueSet-DirOrgNotiVS.json ==
 == fsh-generated/resources/ValueSet-EnfermedadesPreviasCodificacionVS.json ==
+ERROR: ValueSet.where(id = 'EnfermedadesPreviasCodificacionVS'): The value set https://paho.org/fhir/esavi/ValueSet/EnfermedadesPreviasCodificacionVS has too many codes to display (>1000) (and Error from http://tx.fhir.org/r4: The value set 'https://paho.org/fhir/esavi/ValueSet/EnfermedadesPreviasCodificacionVS|0.1.44' expansion has 10000 codes, which is too many to display (>1000))
 == fsh-generated/resources/ValueSet-EsaviMedDRAVS.json ==
 == fsh-generated/resources/ValueSet-EsaviOtroVS.json ==
 == fsh-generated/resources/ValueSet-FormaFarmaceuticaVS.json ==

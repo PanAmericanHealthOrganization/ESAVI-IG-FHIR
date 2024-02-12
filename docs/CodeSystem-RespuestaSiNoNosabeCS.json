@@ -6,7 +6,7 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-insensitive code system <code>https://paho.org/fhir/esavi/CodeSystem/RespuestaSiNoNosabeCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"RespuestaSiNoNosabeCS-1\"> </a></td><td>Si</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"RespuestaSiNoNosabeCS-2\"> </a></td><td>No</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"RespuestaSiNoNosabeCS-3\"> </a></td><td>No sabe</td></tr></table></div>"
   },
   "url" : "https://paho.org/fhir/esavi/CodeSystem/RespuestaSiNoNosabeCS",
-  "version" : "0.1.43",
+  "version" : "0.1.44",
   "name" : "RespuestaSiNoNosabeCS",
   "title" : "Respuestas Simples",
   "status" : "active",

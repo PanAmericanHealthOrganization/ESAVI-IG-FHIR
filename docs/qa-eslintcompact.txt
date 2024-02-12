@@ -1,7 +1,21 @@
 ﻿ESAVI
 =========================================
 
+/Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/Questionnaire-CuestionarioESAVI.json: line 1, col 225097, Error - The Coding references a value set, not a code system ('https://paho.org/fhir/esavi/ValueSet/RespuestaSiNoNosabeVS') (CODEINVALID)
+/Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/Questionnaire-CuestionarioESAVI.json: line 1, col 225248, Error - The Coding references a value set, not a code system ('https://paho.org/fhir/esavi/ValueSet/RespuestaSiNoNosabeVS') (CODEINVALID)
+/Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/Questionnaire-CuestionarioESAVI.json: line 1, col 225614, Error - The Coding references a value set, not a code system ('https://paho.org/fhir/esavi/ValueSet/RespuestaSiNoNosabeVS') (CODEINVALID)
+/Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/Questionnaire-CuestionarioESAVI.json: line 1, col 225765, Error - The Coding references a value set, not a code system ('https://paho.org/fhir/esavi/ValueSet/RespuestaSiNoNosabeVS') (CODEINVALID)
+/Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/Questionnaire-CuestionarioESAVI.json: line 1, col 226475, Error - The Coding references a value set, not a code system ('https://paho.org/fhir/esavi/ValueSet/RespuestaSiNoNosabeVS') (CODEINVALID)
+/Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/Questionnaire-CuestionarioESAVI.json: line 1, col 233831, Error - The Coding references a value set, not a code system ('https://paho.org/fhir/esavi/ValueSet/RespuestaSiNoNosabeVS') (CODEINVALID)
+/Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/Questionnaire-CuestionarioESAVI.json: line 1, col 236067, Error - The Coding references a value set, not a code system ('https://paho.org/fhir/esavi/ValueSet/RespuestaSiNoNosabeVS') (CODEINVALID)
+/Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/Questionnaire-CuestionarioESAVI.json: line 1, col 236218, Error - The Coding references a value set, not a code system ('https://paho.org/fhir/esavi/ValueSet/RespuestaSiNoNosabeVS') (CODEINVALID)
+/Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/Questionnaire-CuestionarioESAVI.json: line 1, col 236493, Error - The Coding references a value set, not a code system ('https://paho.org/fhir/esavi/ValueSet/RespuestaSiNoNosabeVS') (CODEINVALID)
+/Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/Questionnaire-CuestionarioESAVI.json: line 1, col 236644, Error - The Coding references a value set, not a code system ('https://paho.org/fhir/esavi/ValueSet/RespuestaSiNoNosabeVS') (CODEINVALID)
+/Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/QuestionnaireResponse-ejDosNuevo.json: line 75, col 10, Error - No response answer found for required item 'fechaNotificacion' (REQUIRED)
 /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/QuestionnaireResponse-ejUnoNuevo.json: line 428, col 20, Warning - The code provided 10002218 cannot be validated in the options value set (Código MedDRA del Evento Adverso notificado) in the questionnaire because the system https://paho.org/fhir/esavi/ValueSet/EsaviMedDRAVS could not be found (CODEINVALID)
+/Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/ValueSet-CodigoWhoVacunaVS.json: line 0, col 0, Warning - Error from http://tx.fhir.org/r4: Unable to provide support for code system https://apiportaldemo.who-umc.org (EXCEPTION)
+/Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/ValueSet-ComplicacionEmbarazoOtroVS.json: line 0, col 0, Error - The value set https://paho.org/fhir/esavi/ValueSet/ComplicacionEmbarazoOtroVS has too many codes to display (>1000) (and Error from http://tx.fhir.org/r4: The value set 'https://paho.org/fhir/esavi/ValueSet/ComplicacionEmbarazoOtroVS|0.1.44' expansion has 1388 codes, which is too many to display (>1000)) (EXCEPTION)
+/Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/ValueSet-EnfermedadesPreviasCodificacionVS.json: line 0, col 0, Error - The value set https://paho.org/fhir/esavi/ValueSet/EnfermedadesPreviasCodificacionVS has too many codes to display (>1000) (and Error from http://tx.fhir.org/r4: The value set 'https://paho.org/fhir/esavi/ValueSet/EnfermedadesPreviasCodificacionVS|0.1.44' expansion has 10000 codes, which is too many to display (>1000)) (EXCEPTION)
 
-err = 0, warn = 1, info = 0
+err = 13, warn = 2, info = 0
 IG Publisher Version: 1.5.11

@@ -3,10 +3,10 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="CodigoWhoVacunaVS"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href="CodeSystem-WHODrugPMID.html"><code>https://paho.org/fhir/esavi/CodeSystem/WHODrugPMID</code></a></li><li>Include all codes defined in <a href="CodeSystem-WHODrugDC.html"><code>https://paho.org/fhir/esavi/CodeSystem/WHODrugDC</code></a></li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <code>https://apiportaldemo.who-umc.org</code></li></ul></div>
   </text>
   <url value="https://paho.org/fhir/esavi/ValueSet/CodigoWhoVacunaVS"/>
-  <version value="0.1.43"/>
+  <version value="0.1.44"/>
   <name value="CodigoWhoVacunaVS"/>
   <title value="Codigo WHODrug de la vacuna"/>
   <status value="active"/>
@@ -33,10 +33,7 @@
   </jurisdiction>
   <compose>
     <include>
-      <system value="https://paho.org/fhir/esavi/CodeSystem/WHODrugPMID"/>
-    </include>
-    <include>
-      <system value="https://paho.org/fhir/esavi/CodeSystem/WHODrugDC"/>
+      <system value="https://apiportaldemo.who-umc.org"/>
     </include>
   </compose>
 </ValueSet>

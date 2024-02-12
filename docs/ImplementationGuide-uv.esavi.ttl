@@ -13,11 +13,11 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ESAVI</h2><p>The official URL for this implementation guide is: </p><pre>https://paho.org/fhir/esavi/ImplementationGuide/uv.esavi</pre></div>"
   ] ; # 
   fhir:url [ fhir:v "https://paho.org/fhir/esavi/ImplementationGuide/uv.esavi"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "0.1.43"] ; # 
+  fhir:version [ fhir:v "0.1.44"] ; # 
   fhir:name [ fhir:v "ESAVI"] ; # 
   fhir:title [ fhir:v "Guía de Implementación FHIR de ESAVI"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-01-16T11:42:34-03:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-02-12T18:40:26-03:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ESAVI -"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ESAVI -" ] ;
@@ -791,21 +791,6 @@
          fhir:value [ fhir:v "QuestionnaireResponse" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://paho.org/fhir/esavi/QuestionnaireResponse/ejTresNuevo> ;
-         fhir:reference [ fhir:v "QuestionnaireResponse/ejTresNuevo" ]
-       ] ;
-       fhir:name [ fhir:v "ejTresNuevo" ] ;
-       fhir:description [ fhir:v "Ejemplo de cuestionario Respondido 3" ] ;
-       fhir:example [
-         fhir:v "https://paho.org/fhir/esavi/StructureDefinition/ESAVIQuestionnaireResponse"^^xsd:anyURI ;
-         fhir:link <https://paho.org/fhir/esavi/StructureDefinition/ESAVIQuestionnaireResponse>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "QuestionnaireResponse" ]
-       ] ) ;
-       fhir:reference [
          fhir:link <https://paho.org/fhir/esavi/QuestionnaireResponse/ejUnoNuevo> ;
          fhir:reference [ fhir:v "QuestionnaireResponse/ejUnoNuevo" ]
        ] ;
@@ -1054,30 +1039,6 @@
        ] ;
        fhir:name [ fhir:v "Vías de Administración de Medicamentos" ] ;
        fhir:description [ fhir:v "Describe y lista las vías de administración de medicamentos para registro en ESAVI segun SNOMED CT" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "CodeSystem" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://paho.org/fhir/esavi/CodeSystem/WHODrugDC> ;
-         fhir:reference [ fhir:v "CodeSystem/WHODrugDC" ]
-       ] ;
-       fhir:name [ fhir:v "WHODrug DrugCode" ] ;
-       fhir:description [ fhir:v "Fragmento de WHODrug completo con nombres genéricos y comerciales en inglés mayormente codificados por drugcode" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "CodeSystem" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://paho.org/fhir/esavi/CodeSystem/WHODrugPMID> ;
-         fhir:reference [ fhir:v "CodeSystem/WHODrugPMID" ]
-       ] ;
-       fhir:name [ fhir:v "WHODrug PMID" ] ;
-       fhir:description [ fhir:v "Fragmento de WHODrug completo con nombres genericos y comerciales en inglés mayormente codificados por PMID" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] ) ;
      fhir:page [

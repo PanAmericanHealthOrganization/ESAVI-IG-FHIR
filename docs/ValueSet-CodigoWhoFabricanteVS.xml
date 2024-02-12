@@ -6,7 +6,7 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-CodigoWhoFabricanteCS.html"><code>https://paho.org/fhir/esavi/CodeSystem/CodigoWhoFabricanteCS</code></a></li></ul></div>
   </text>
   <url value="https://paho.org/fhir/esavi/ValueSet/CodigoWhoFabricanteVS"/>
-  <version value="0.1.43"/>
+  <version value="0.1.44"/>
   <name value="CodigoWhoFabricanteVS"/>
   <title value="Fabricantes Vacuna"/>
   <status value="active"/>

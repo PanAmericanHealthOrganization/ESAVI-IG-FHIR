@@ -6,7 +6,7 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-ClasificacionDesenlaceWHOUMCCS.html"><code>https://paho.org/fhir/esavi/CodeSystem/ClasificacionDesenlaceWHOUMCCS</code></a></li></ul></div>
   </text>
   <url value="https://paho.org/fhir/esavi/ValueSet/ClasificacionDesenlaceWHOUMCVS"/>
-  <version value="0.1.43"/>
+  <version value="0.1.44"/>
   <name value="ClasificacionDesenlaceWHOUMCVS"/>
   <title value="Clasificación de causalidad WHO-UMC"/>
   <status value="active"/>

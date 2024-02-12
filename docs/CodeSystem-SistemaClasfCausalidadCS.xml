@@ -6,7 +6,7 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This case-insensitive code system <code>https://paho.org/fhir/esavi/CodeSystem/SistemaClasfCausalidadCS</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">WHO-UMC<a name="SistemaClasfCausalidadCS-WHO-UMC"> </a></td><td>WHO-UMC</td></tr><tr><td style="white-space:nowrap">WHO-AEFI<a name="SistemaClasfCausalidadCS-WHO-AEFI"> </a></td><td>WHO-AEFI</td></tr><tr><td style="white-space:nowrap">Naranjo<a name="SistemaClasfCausalidadCS-Naranjo"> </a></td><td>Naranjo</td></tr><tr><td style="white-space:nowrap">otro<a name="SistemaClasfCausalidadCS-otro"> </a></td><td>Otro sistema de clasificacion de causalidad</td></tr></table></div>
   </text>
   <url value="https://paho.org/fhir/esavi/CodeSystem/SistemaClasfCausalidadCS"/>
-  <version value="0.1.43"/>
+  <version value="0.1.44"/>
   <name value="SistemaClasfCausalidadCS"/>
   <title value="Tipo de Método de clasificación de causalidad"/>
   <status value="active"/>
