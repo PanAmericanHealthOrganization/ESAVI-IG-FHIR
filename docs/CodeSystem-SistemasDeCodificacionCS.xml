@@ -6,7 +6,7 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This case-insensitive code system <code>https://paho.org/fhir/esavi/CodeSystem/SistemasDeCodificacionCS</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">1<a name="SistemasDeCodificacionCS-1"> </a></td><td>SNOMED-CT</td></tr><tr><td style="white-space:nowrap">2<a name="SistemasDeCodificacionCS-2"> </a></td><td>WHODrug</td></tr><tr><td style="white-space:nowrap">3<a name="SistemasDeCodificacionCS-3"> </a></td><td>ATC</td></tr><tr><td style="white-space:nowrap">4<a name="SistemasDeCodificacionCS-4"> </a></td><td>CIE-11</td></tr></table></div>
   </text>
   <url value="https://paho.org/fhir/esavi/CodeSystem/SistemasDeCodificacionCS"/>
-  <version value="0.1.44"/>
+  <version value="0.1.45"/>
   <name value="SistemasDeCodificacionCS"/>
   <title value="Sistemas De Codificacion"/>
   <status value="active"/>

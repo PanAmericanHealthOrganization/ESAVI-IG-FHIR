@@ -6,7 +6,7 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <code>https://apiportaldemo.who-umc.org</code></li></ul></div>
   </text>
   <url value="https://paho.org/fhir/esavi/ValueSet/CodigoWhoVacunaVS"/>
-  <version value="0.1.44"/>
+  <version value="0.1.45"/>
   <name value="CodigoWhoVacunaVS"/>
   <title value="Codigo WHODrug de la vacuna"/>
   <status value="active"/>

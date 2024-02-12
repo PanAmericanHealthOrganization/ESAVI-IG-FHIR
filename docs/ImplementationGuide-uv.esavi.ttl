@@ -13,11 +13,11 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ESAVI</h2><p>The official URL for this implementation guide is: </p><pre>https://paho.org/fhir/esavi/ImplementationGuide/uv.esavi</pre></div>"
   ] ; # 
   fhir:url [ fhir:v "https://paho.org/fhir/esavi/ImplementationGuide/uv.esavi"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "0.1.44"] ; # 
+  fhir:version [ fhir:v "0.1.45"] ; # 
   fhir:name [ fhir:v "ESAVI"] ; # 
   fhir:title [ fhir:v "Guía de Implementación FHIR de ESAVI"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-02-12T18:40:26-03:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-02-12T18:43:38-03:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ESAVI -"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ESAVI -" ] ;

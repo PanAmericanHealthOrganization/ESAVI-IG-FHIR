@@ -3,7 +3,7 @@
 
 err = 13, warn = 2, info = 0
 IG Publisher Version: 1.5.11 Out of date - current version is 1.5.16
-Generated Mon Feb 12 18:41:03 CLST 2024. FHIR version 4.0.1 for uv.esavi#0.1.44 (canonical = https://paho.org/fhir/esavi)
+Generated Mon Feb 12 18:45:22 CLST 2024. FHIR version 4.0.1 for uv.esavi#0.1.45 (canonical = https://paho.org/fhir/esavi)
  Build Errors : 0 / 0 / 0
  /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/CodeSystem-ClasificacionDesenlaceCS : 0 / 0 / 1
  /Users/jorgemansilla/IGs/OPS-ESAVI/fsh-generated/resources/CodeSystem-ClasificacionDesenlaceNaranjoCS : 0 / 0 / 1
@@ -94,11 +94,11 @@ WARNING: QuestionnaireResponse/ejUnoNuevo: QuestionnaireResponse.item[4].item[0]
 WARNING: ValueSet.where(id = 'CodigoWhoVacunaVS'): Error from http://tx.fhir.org/r4: Unable to provide support for code system https://apiportaldemo.who-umc.org
 == fsh-generated/resources/ValueSet-ComplicacionEmbarazoMedDRAVS.json ==
 == fsh-generated/resources/ValueSet-ComplicacionEmbarazoOtroVS.json ==
-ERROR: ValueSet.where(id = 'ComplicacionEmbarazoOtroVS'): The value set https://paho.org/fhir/esavi/ValueSet/ComplicacionEmbarazoOtroVS has too many codes to display (>1000) (and Error from http://tx.fhir.org/r4: The value set 'https://paho.org/fhir/esavi/ValueSet/ComplicacionEmbarazoOtroVS|0.1.44' expansion has 1388 codes, which is too many to display (>1000))
+ERROR: ValueSet.where(id = 'ComplicacionEmbarazoOtroVS'): The value set https://paho.org/fhir/esavi/ValueSet/ComplicacionEmbarazoOtroVS has too many codes to display (>1000) (and Error from http://tx.fhir.org/r4: The value set 'https://paho.org/fhir/esavi/ValueSet/ComplicacionEmbarazoOtroVS|0.1.45' expansion has 1388 codes, which is too many to display (>1000))
 == fsh-generated/resources/ValueSet-ComplicacionEmbarazoVS.json ==
 == fsh-generated/resources/ValueSet-DirOrgNotiVS.json ==
 == fsh-generated/resources/ValueSet-EnfermedadesPreviasCodificacionVS.json ==
-ERROR: ValueSet.where(id = 'EnfermedadesPreviasCodificacionVS'): The value set https://paho.org/fhir/esavi/ValueSet/EnfermedadesPreviasCodificacionVS has too many codes to display (>1000) (and Error from http://tx.fhir.org/r4: The value set 'https://paho.org/fhir/esavi/ValueSet/EnfermedadesPreviasCodificacionVS|0.1.44' expansion has 10000 codes, which is too many to display (>1000))
+ERROR: ValueSet.where(id = 'EnfermedadesPreviasCodificacionVS'): The value set https://paho.org/fhir/esavi/ValueSet/EnfermedadesPreviasCodificacionVS has too many codes to display (>1000) (and Error from http://tx.fhir.org/r4: The value set 'https://paho.org/fhir/esavi/ValueSet/EnfermedadesPreviasCodificacionVS|0.1.45' expansion has 10000 codes, which is too many to display (>1000))
 == fsh-generated/resources/ValueSet-EsaviMedDRAVS.json ==
 == fsh-generated/resources/ValueSet-EsaviOtroVS.json ==
 == fsh-generated/resources/ValueSet-FormaFarmaceuticaVS.json ==
