@@ -15,7 +15,7 @@ releaseLabel: ci-build
 
 jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001
 publisher:
-  name: ESAVI -
+  name: ESAVI - 
   url: https://covid-19pharmacovigilance.paho.org/resources/updates-on-aefi
   email: rizzatodan@paho.org
 
