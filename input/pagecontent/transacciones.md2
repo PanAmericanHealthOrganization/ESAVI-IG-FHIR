@@ -6,12 +6,9 @@ En esta página se definiran los casos de uso de intercambio de datos, que se pu
 
 *  Diagrama
 <br>
-
-<div align="center" >
-  {% include Caso1.svg %}
+<div align="center">
+  <img style="border: 1px solid; color: black;" src="EnvioCaso.jpeg">
 </div>
-<br clear="all"/>
-
 <br>
 
 * Detalle
@@ -36,12 +33,9 @@ En esta página se definiran los casos de uso de intercambio de datos, que se pu
 *  Diagrama
 
 <br>
-
-<div align="center" >
-  {% include Caso2.svg %}
+<div align="center">
+  <img style="border: 1px solid; color: black;" src="ActualizacionNotificacion.jpeg">
 </div>
-<br clear="all"/>
-
 <br>
 
 * Detalle
@@ -64,17 +58,14 @@ En esta página se definiran los casos de uso de intercambio de datos, que se pu
 
 
 
-#### Caso 3: Consulta de Solicitud
+#### Caso 3: Solicitud de datos de Adherencia
 
 *  Diagrama
 
 <br>
-
-<div align="center" >
-  {% include Caso3.svg %}
+<div align="center">
+  <img style="border: 1px solid; color: black;" src="SolicitudAdherencia.jpeg">
 </div>
-<br clear="all"/>
-
 <br>
 
 * Detalle
@@ -108,12 +99,9 @@ En esta página se definiran los casos de uso de intercambio de datos, que se pu
 
 *  Diagrama
 <br>
-
-<div align="center" >
-  {% include Caso4.svg %}
+<div align="center">
+  <img style="border: 1px solid; color: black;" src="BusquedaVersion.jpeg">
 </div>
-<br clear="all"/>
-
 <br>
 
 * Detalle
