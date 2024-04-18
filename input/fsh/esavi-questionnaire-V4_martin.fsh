@@ -628,10 +628,12 @@ Usage: #example
 * item[=].item[=].item[=].enableBehavior = #any
 * item[=].item[=].item[=].enableWhen[0].question = "embarazadaMomentoVacuna"
 * item[=].item[=].item[=].enableWhen[=].operator = #=
-* item[=].item[=].item[=].enableWhen[=].answerBoolean = true
+* item[=].item[=].item[=].enableWhen[=].answerCoding.system = Canonical(RespuestaSiNoNosabeVS)
+* item[=].item[=].item[=].enableWhen[=].answerCoding.code = #1
 * item[=].item[=].item[=].enableWhen[+].question = "embarazadaMomentoESAVI"
 * item[=].item[=].item[=].enableWhen[=].operator = #=
-* item[=].item[=].item[=].enableWhen[=].answerBoolean = true
+* item[=].item[=].item[=].enableWhen[=].answerCoding.system = Canonical(RespuestaSiNoNosabeVS)
+* item[=].item[=].item[=].enableWhen[=].answerCoding.code = #1
 
 //SUBIR
 /////////////////////  Grupo antecedentesEmbarazo //////////////////////////////////
