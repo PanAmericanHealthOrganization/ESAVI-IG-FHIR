@@ -281,7 +281,7 @@ Usage: #example
 * extension[=].extension[+].url = "location"
 * extension[=].extension[=].valueString = "item.item.where(linkId='registroVacunaCovidOtras').answer.value"
 */
-* version = "0.85"
+* version = "5.0.0"
 * name = "OPSQuestionarioESAVI"
 * title = "Questionario para ESAVI de OPS"
 * status = #draft

@@ -1,9 +1,9 @@
 {
   "name" : "uv.esavi",
-  "version" : "0.1.47",
+  "version" : "0.1.48",
   "tools-version" : 3,
   "type" : "IG",
-  "date" : "20240418121647",
+  "date" : "20240422234619",
   "license" : "CC0-1.0",
   "canonical" : "https://paho.org/fhir/esavi",
   "notForPublication" : true,
@@ -12,7 +12,7 @@
   "fhirVersions" : ["4.0.1"],
   "dependencies" : {
     "hl7.fhir.r4.core" : "4.0.1",
-    "hl7.terminology.r4" : "5.3.0",
+    "hl7.terminology.r4" : "5.5.0",
     "hl7.fhir.uv.extensions.r4" : "1.0.0"
   },
   "author" : "ESAVI -",
