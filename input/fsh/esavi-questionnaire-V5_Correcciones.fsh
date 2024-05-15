@@ -7,280 +7,7 @@ Description: "Cuestionario ESAVI"
 InstanceOf: Questionnaire
 Usage: #example
 
-///////////////////////*****************************//////////////////////////
-
-
 * status = #draft
-///////////////////////*****************************//////////////////////////
-//// extension para respuesta condicionada de fecha para fechaConsulta   /////
-///////////////////////*****************************//////////////////////////
-
-/*
-* extension[+].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-constraint" 
-* extension[=].extension[0].url = "key"
-* extension[=].extension[=].valueId = "ExFechaCon"
-
-* extension[=].extension[+].url = "severity"
-* extension[=].extension[=].valueCode = #warning 
-
-* extension[=].extension[+].url = "human"
-* extension[=].extension[=].valueString = "Fecha de Consulta no sea menor que la de nacimiento" 
-
-* extension[=].extension[+].url = "expression"
-* extension[=].extension[=].valueString =  "item.where(linkId='datosNotificacionGeneral').item.where(linkId='datosNotificacion').item.where(linkId='fechas').item.where(linkId='fechaConsulta').answer.where(value >= item.where(linkId='datosVacunadoCaso').item.where(linkId='datosPaciente').item.where(linkId='fechaNacimiento').answer).exists()"
-
-* extension[=].extension[+].url = "location"
-* extension[=].extension[=].valueString = "item.item.where(linkId='fechaConsulta').answer.value"
-//  
-
-
-/// extension para respuesta condicionada de fecha para fechaNotificacion ////
-
-* extension[+].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-constraint" 
-* extension[=].extension[0].url = "key"
-* extension[=].extension[=].valueId = "ExFechaNot"
-
-* extension[=].extension[+].url = "severity"
-* extension[=].extension[=].valueCode = #warning 
-
-* extension[=].extension[+].url = "human"
-* extension[=].extension[=].valueString = "Control de que la fecha de Notificación no sea menor que la fecha de Consulta" 
-
-* extension[=].extension[+].url = "expression"
-* extension[=].extension[=].valueString =  "item.where(linkId='datosNotificacionGeneral').item.where(linkId='datosNotificacion').item.where(linkId='fechas').item.where(linkId='fechaNotificacion').answer.where(value >= item.where(linkId='datosNotificacionGeneral').item.where(linkId='datosNotificacion').item.where(linkId='fechas').item.where(linkId='fechaConsulta').answer).exists()"
-
-* extension[=].extension[+].url = "location"
-* extension[=].extension[=].valueString = "item.item.where(linkId='fechaNotificacion').answer.value"
-// 
-///////////////////////****************************
-///// extension para respuesta condicionada de fechaNotificacion 2 ///////////
-///////////////////////****************************
-* extension[+].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-constraint" 
-* extension[=].extension[0].url = "key"
-* extension[=].extension[=].valueId = "ExFechaNot2"
-
-* extension[=].extension[+].url = "severity"
-* extension[=].extension[=].valueCode = #warning 
-
-* extension[=].extension[+].url = "human"
-* extension[=].extension[=].valueString = "Control de que la fecha de notificción no sea menor que la de nacimiento" 
-
-* extension[=].extension[+].url = "expression"
-* extension[=].extension[=].valueString =  "item.where(linkId='datosNotificacionGeneral').item.where(linkId='datosNotificacion').item.where(linkId='fechas').item.where(linkId='fechaNotificacion').answer.where(value >= item.where(linkId='datosVacunadoCaso').item.where(linkId='datosPaciente').item.where(linkId='fechaNacimiento').answer).exists()"
-
-* extension[=].extension[+].url = "location"
-* extension[=].extension[=].valueString = "item.item.where(linkId='fechaNotificacion').answer.value"
-
-///////////////////////****************************
-/// extension para respuesta condicionada de fecha para fechaLlenadoFicha ////
-///////////////////////***************************
-* extension[+].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-constraint" 
-* extension[=].extension[0].url = "key"
-* extension[=].extension[=].valueId = "ExFechaLlenadoFicha"
-
-* extension[=].extension[+].url = "severity"
-* extension[=].extension[=].valueCode = #warning 
-
-* extension[=].extension[+].url = "human"
-* extension[=].extension[=].valueString = "Control de que la fecha de llenado de Ficha no sea menor que la fecha de Consulta" 
-
-* extension[=].extension[+].url = "expression"
-* extension[=].extension[=].valueString =  "item.where(linkId='datosNotificacionGeneral').item.where(linkId='datosNotificacion').item.where(linkId='fechas').item.where(linkId='fechaLlenadoFicha').answer.where(value >= item.where(linkId='datosNotificacionGeneral').item.where(linkId='datosNotificacion').item.where(linkId='fechas').item.where(linkId='fechaConsulta').answer).exists()"
-
-* extension[=].extension[+].url = "location"
-* extension[=].extension[=].valueString = "item.item.where(linkId='fechaLlenadoFicha').answer.value"
- 
-///////////////////////****************************
-// extension para respuesta condicionada de fecha para fechaLlenadoFicha 2  //
-///////////////////////****************************
-* extension[+].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-constraint" 
-* extension[=].extension[0].url = "key"
-* extension[=].extension[=].valueId = "ExFechaLlenadoFicha2"
-
-* extension[=].extension[+].url = "severity"
-* extension[=].extension[=].valueCode = #warning 
-
-* extension[=].extension[+].url = "human"
-* extension[=].extension[=].valueString = "Control de que la fecha de llenado de Ficha no sea menor que la fecha de Notificación" 
-
-* extension[=].extension[+].url = "expression"
-* extension[=].extension[=].valueString =  "item.where(linkId='datosNotificacionGeneral').item.where(linkId='datosNotificacion').item.where(linkId='fechas').item.where(linkId='fechaLlenadoFicha').answer.where(value >= item.where(linkId='datosNotificacionGeneral').item.where(linkId='datosNotificacion').item.where(linkId='fechas').item.where(linkId='fechaNotificacion').answer).exists()"
-
-* extension[=].extension[+].url = "location"
-* extension[=].extension[=].valueString = "item.item.where(linkId='fechaLlenadoFicha').answer.value"
-
-
-///////////////////////***************************
-/////// extension para respuesta condicionada de fechaLlenadoFicha 3  ////////
-///////////////////////***************************
-
-* extension[+].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-constraint" 
-* extension[=].extension[0].url = "key"
-* extension[=].extension[=].valueId = "ExFechaLlenadoFicha3"
-
-* extension[=].extension[+].url = "severity"
-* extension[=].extension[=].valueCode = #warning 
-
-* extension[=].extension[+].url = "human"
-* extension[=].extension[=].valueString = "Control de que la fecha de Llenado de Ficha no sea menor que la de nacimiento" 
-
-* extension[=].extension[+].url = "expression"
-* extension[=].extension[=].valueString =  "item.where(linkId='datosNotificacionGeneral').item.where(linkId='datosNotificacion').item.where(linkId='fechas').item.where(linkId='fechaLlenadoFicha').answer.where(value >= item.where(linkId='datosVacunadoCaso').item.where(linkId='datosPaciente').item.where(linkId='fechaNacimiento').answer).exists()"
-
-* extension[=].extension[+].url = "location"
-* extension[=].extension[=].valueString = "item.item.where(linkId='fechaLlenadoFicha').answer.value"
-
-///////////////////////***************************
-//extension para respuesta condicionada de fecha para fechaAlmacenaRepNacional (JORGE)// 
-///////////////////////***********************
-
-* extension[+].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-constraint" 
-* extension[=].extension[0].url = "key"
-* extension[=].extension[=].valueId = "ExFechaAlmacenaRepNacional"
-
-* extension[=].extension[+].url = "severity"
-* extension[=].extension[=].valueCode = #warning 
-
-* extension[=].extension[+].url = "human"
-* extension[=].extension[=].valueString = "Control de que la fecha de llenado de Ficha en Repositorio Nacional sea mayor que las otras fechas de Notificación" 
-
-* extension[=].extension[+].url = "expression"
-* extension[=].extension[=].valueString =  "item.where(linkId='datosNotificacionGeneral').item.where(linkId='fechas').item.where(linkId='fechaRepoNacional').answer.where(value >= item.where(linkId='datosNotificacionGeneral').item.where(linkId='fechas').item.where(linkId='fechaNotificacion').answer).exists()"
-
-* extension[=].extension[+].url = "location"
-* extension[=].extension[=].valueString = "item.item.where(linkId='fechaRepoNacional').answer.value"
-
-// extension para respuesta condicionada de fecha para fechaLlenadoFicha OK ///
-
-* extension[+].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-constraint" 
-* extension[=].extension[0].url = "key"
-* extension[=].extension[=].valueId = "ExFechaLlenadoFicha"
-
-* extension[=].extension[+].url = "severity"
-* extension[=].extension[=].valueCode = #warning 
-
-* extension[=].extension[+].url = "human"
-* extension[=].extension[=].valueString = "Control de que la fecha de llenado de Ficha sea mayor que las otras fechas de Notificación" 
-
-* extension[=].extension[+].url = "expression"
-* extension[=].extension[=].valueString =  "item.where(linkId='datosNotificacionGeneral').item.where(linkId='fechas').item.where(linkId='fechaLlenadoFicha').answer.where(value >= item.where(linkId='datosNotificacionGeneral').item.where(linkId='fechas').item.where(linkId='fechaNotificacion').answer).exists()"
-
-* extension[=].extension[+].url = "location"
-* extension[=].extension[=].valueString = "item.item.where(linkId='fechaLlenadoFicha').answer.value"
- 
-
-// extension para respuesta condicionada de fecha para fechaSintomasCovid19 OK//
-
-* extension[+].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-constraint" 
-* extension[=].extension[0].url = "key"
-* extension[=].extension[=].valueId = "ExFechaSitomasCovid19"
-
-* extension[=].extension[+].url = "severity"
-* extension[=].extension[=].valueCode = #warning 
-
-* extension[=].extension[+].url = "human"
-* extension[=].extension[=].valueString = "Control de que la fecha de sintomas de Covid 19 no sea menor que las otras fechas de Notificación" 
-
-* extension[=].extension[+].url = "expression"
-* extension[=].extension[=].valueString =  "item.where(linkId='antecedentesMedicos').item.where(linkId='antecedentesSarsCov2').item.where(linkId='fechaSintomasCovid19').answer.where(value <= item.where(linkId='datosNotificacionGeneral').item.where(linkId='fechas').item.where(linkId='fechaNotificacion').answer).exists()"
-
-* extension[=].extension[+].url = "location"
-* extension[=].extension[=].valueString = "item.item.where(linkId='fechaSintomasCovid19').answer.value"
- 
-
-
-// extension para respuesta condicionada de fecha para fechaTomaMuestraCovid19 OK
- 
-
-* extension[+].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-constraint" 
-* extension[=].extension[0].url = "key"
-* extension[=].extension[=].valueId = "ExFechaTomaMuestraCovid19"
-
-* extension[=].extension[+].url = "severity"
-* extension[=].extension[=].valueCode = #warning 
-
-* extension[=].extension[+].url = "human"
-* extension[=].extension[=].valueString = "Control de que la fecha de llenado de toma de muestra de Covid 19 no sea menor que las otras fechas de Notificación" 
-
-* extension[=].extension[+].url = "expression"
-* extension[=].extension[=].valueString =  "item.where(linkId='antecedentesMedicos').item.where(linkId='antecedentesSarsCov2').item.where(linkId='fechaTomaMuestraCovid19').answer.where(value <= item.where(linkId='datosNotificacionGeneral').item.where(linkId='fechas').item.where(linkId='fechaLlenadoFicha').answer).exists()"
-
-* extension[=].extension[+].url = "location"
-* extension[=].extension[=].valueString = "item.item.where(linkId='fechaTomaMuestraCovid19').answer.value"
- 
-// extension para respuesta condicionada de fecha para fechaTomaMuestraCovid2 OK
-* extension[+].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-constraint" 
-* extension[=].extension[0].url = "key"
-* extension[=].extension[=].valueId = "ExFechaTomaMuestraCovid192"
-
-* extension[=].extension[+].url = "severity"
-* extension[=].extension[=].valueCode = #warning 
-
-* extension[=].extension[+].url = "human"
-* extension[=].extension[=].valueString = "Control de que la fecha de llenado de toma de muestra de Covid 19 no sea menor que la  fechas de Sintomas de COVID 19" 
-
-* extension[=].extension[+].url = "expression"
-* extension[=].extension[=].valueString =  "item.where(linkId='antecedentesMedicos').item.where(linkId='antecedentesSarsCov2').item.where(linkId='fechaTomaMuestraCovid19').answer.where(value <= item.where(item.where(linkId='antecedentesMedicos').item.where(linkId='antecedentesSarsCov2').item.where(linkId='fechaSintomasCovid19').answer).exists()"
-
-* extension[=].extension[+].url = "location"
-* extension[=].extension[=].valueString = "item.item.where(linkId='fechaTomaMuestraCovid19').answer.value"
-
-/////// extension para respuesta condicionada de fecha para fechaPartoESAVI OK///////
-* extension[+].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-constraint" 
-* extension[=].extension[0].url = "key"
-* extension[=].extension[=].valueId = "ExFechaParto"
-
-* extension[=].extension[+].url = "severity"
-* extension[=].extension[=].valueCode = #warning 
-
-* extension[=].extension[+].url = "human"
-* extension[=].extension[=].valueString = "Control de que la fecha departo no sea menor que la  fecha de ultima Regla" 
-
-* extension[=].extension[+].url = "expression"
-* extension[=].extension[=].valueString =  "item.where(linkId='registroESAVI').item.where(linkId='antecedentesEmbarazoESAVI').item.where(linkId='fechaPartoESAVI').answer.where(value >= item.where(linkId='registroESAVI').item.where(linkId='antecedentesEmbarazoESAVI').item.where(linkId='fechaUltimaMenstruacionESAVI').answer).exists()"
-
-* extension[=].extension[+].url = "location"
-* extension[=].extension[=].valueString = "item.item.where(linkId='fechaPartoESAVI').answer.value"
- 
-
-/////// extension para respuesta condicionada de fecha para fechaParto OK ///////
-* extension[+].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-constraint" 
-* extension[=].extension[0].url = "key"
-* extension[=].extension[=].valueId = "ExFechaParto2"
-
-* extension[=].extension[+].url = "severity"
-* extension[=].extension[=].valueCode = #warning 
-
-* extension[=].extension[+].url = "human"
-* extension[=].extension[=].valueString = "Control de que la fecha departo no sea menor que la  fecha de ultima Regla" 
-
-* extension[=].extension[+].url = "expression"
-* extension[=].extension[=].valueString =  "item.where(linkId='antecedentesMedicos').item.where(linkId='antecedentesEmbarazo').item.where(linkId='fechaParto').answer.where(value >= item.where(linkId='antecedentesMedicos').item.where(linkId='antecedentesEmbarazo').item.where(linkId='fechaUltimaMenstruacion').answer).exists()"
-
-* extension[=].extension[+].url = "location"
-* extension[=].extension[=].valueString = "item.item.where(linkId='fechaParto').answer.value"
-*/
-
-///////////////////////*****************************//////////////////////////
-// extension para respuesta condicionada de fecha para fechaAlmacenaRepOPS 
-///////////////////////*****************************//////////////////////////
-/*
-* extension[+].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-constraint" 
-* extension[=].extension[0].url = "key"
-* extension[=].extension[=].valueId = "ExFechaHoraVacunacion"
-
-* extension[=].extension[+].url = "severity"
-* extension[=].extension[=].valueCode = #warning 
-
-* extension[=].extension[+].url = "human"
-* extension[=].extension[=].valueString = "Control de que la fecha de vacunacion no sea mayor que las otras fechas de Notificación" 
-
-* extension[=].extension[+].url = "expression"
-* extension[=].extension[=].valueString =  "item.where(linkId='registroVacunaCovidOtras').item.where(linkId='fechaHoraVacunacion').answer.where(value <= item.where(linkId='datosNotificacionGeneral').item.where(linkId='fechas').item.where(linkId='fechaAlmacenaRepOPS').answer).exists()"
-
-* extension[=].extension[+].url = "location"
-* extension[=].extension[=].valueString = "item.item.where(linkId='registroVacunaCovidOtras').answer.value"
-*/
 * version = "5.0.0"
 * name = "OPSQuestionarioESAVI"
 * title = "Questionario para ESAVI de OPS"
@@ -320,7 +47,6 @@ Usage: #example
 * item[=].item[=].item[=].linkId = "codigoDireccionOrganizacion"
 * item[=].item[=].item[=].text = "Código del Nivel Geográfico Subnacional de la Ubicación de la Institución que Notifica"
 
-
 * item[=].item[=].item[+].type = #string
 * item[=].item[=].item[=].required = true
 * item[=].item[=].item[=].linkId = "nombreDireccionOrganizacion"
@@ -346,8 +72,6 @@ Usage: #example
 * item[=].item[=].item[=].text = "Fecha de la primera consulta al servicio de salud por causa del ESAVI"
 * item[=].item[=].item[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/minValue"
 * item[=].item[=].item[=].extension[=].valueDate = "2019-12-01"
-
-
 
 * item[=].item[=].item[+].type = #date
 * item[=].item[=].item[=].required = true
@@ -387,8 +111,6 @@ Usage: #example
 * item[=].item.item[=].required = true
 * item[=].item.item[=].linkId = "numeroCaso"
 * item[=].item.item[=].text = "UUID que identifica el caso o notificación. Una persona puede tener más de una notificación."
-
-
 
 ////////////////////////////
 * item[=].item.item[+].type = #string
@@ -438,7 +160,6 @@ Usage: #example
 * item[=].text = "Antecedentes médicos identificados por el paciente"
 
 //////////////////////////////////
-
 
 * item[=].item[0].type = #group
 * item[=].item[=].required = false
@@ -554,9 +275,6 @@ Usage: #example
 
 
 
-
-
-
 /////////////////////////////////////////////////////////////////////////////////
 * item[=].item[+].type = #group
 * item[=].item[=].required = false
@@ -584,8 +302,6 @@ Usage: #example
 //////////////////////////////////
 
 
-
-
 * item[=].item[=].item[+].type = #date
 * item[=].item[=].item[=].required = false
 * item[=].item[=].item[=].linkId = "fechaUltimaMenstruacion"
@@ -594,11 +310,10 @@ Usage: #example
 * item[=].item[=].item[=].enableBehavior = #any
 * item[=].item[=].item[=].enableWhen[0].question = "embarazadaMomentoVacuna"
 * item[=].item[=].item[=].enableWhen[=].operator = #=
-//* item[=].item[=].item[=].enableWhen[=].answerCoding.system = Canonical(RespuestaSiNoNosabeVS)
+
 * item[=].item[=].item[=].enableWhen[=].answerCoding.code = #1
 * item[=].item[=].item[=].enableWhen[+].question = "embarazadaMomentoESAVI"
 * item[=].item[=].item[=].enableWhen[=].operator = #=
-//* item[=].item[=].item[=].enableWhen[=].answerCoding.system = Canonical(RespuestaSiNoNosabeVS)
 * item[=].item[=].item[=].enableWhen[=].answerCoding.code = #1
 
 /////////////
@@ -610,14 +325,11 @@ Usage: #example
 * item[=].item[=].item[=].enableBehavior = #any
 * item[=].item[=].item[=].enableWhen[0].question = "embarazadaMomentoVacuna"
 * item[=].item[=].item[=].enableWhen[=].operator = #=
-//* item[=].item[=].item[=].enableWhen[=].answerCoding.system = Canonical(RespuestaSiNoNosabeVS)
 * item[=].item[=].item[=].enableWhen[=].answerCoding.code = #1
 
 * item[=].item[=].item[=].enableWhen[+].question = "embarazadaMomentoESAVI"
 * item[=].item[=].item[=].enableWhen[=].operator = #=
-//* item[=].item[=].item[=].enableWhen[=].answerCoding.system = Canonical(RespuestaSiNoNosabeVS)
 * item[=].item[=].item[=].enableWhen[=].answerCoding.code = #1
-
 
 
 * item[=].item[=].item[+].type = #integer
@@ -628,52 +340,10 @@ Usage: #example
 * item[=].item[=].item[=].enableBehavior = #any
 * item[=].item[=].item[=].enableWhen[0].question = "embarazadaMomentoVacuna"
 * item[=].item[=].item[=].enableWhen[=].operator = #=
-//* item[=].item[=].item[=].enableWhen[=].answerCoding.system = Canonical(RespuestaSiNoNosabeVS)
 * item[=].item[=].item[=].enableWhen[=].answerCoding.code = #1
 * item[=].item[=].item[=].enableWhen[+].question = "embarazadaMomentoESAVI"
 * item[=].item[=].item[=].enableWhen[=].operator = #=
-//* item[=].item[=].item[=].enableWhen[=].answerCoding.system = Canonical(RespuestaSiNoNosabeVS)
 * item[=].item[=].item[=].enableWhen[=].answerCoding.code = #1
-
-//SUBIR
-/////////////////////  Grupo antecedentesEmbarazo //////////////////////////////////
-/*
-* item[=].item[+].type = #group
-* item[=].item[=].required = false
-* item[=].item[=].repeats = false
-* item[=].item[=].linkId = "pacienteEmbarazada"
-* item[=].item[=].text = "Historia obstétrica o de embarazo"
-
-///////////////////// Enable When
-* item[=].item[=].enableWhen[0].question = "embarazadaMomentoVacuna"
-* item[=].item[=].enableWhen[=].operator = #=
-* item[=].item[=].enableWhen[=].answerBoolean = true
-
-* item[=].item[=].enableWhen[+].question = "embarazadaMomentoESAVI"
-* item[=].item[=].enableWhen[=].operator = #=
-* item[=].item[=].enableWhen[=].answerBoolean = true
-
-
-
-/////////////////////
-* item[=].item[=].item[+].type = #date
-* item[=].item[=].item[=].required = false
-* item[=].item[=].item[=].linkId = "fechaUltimaMenstruacion"
-* item[=].item[=].item[=].text = "Fecha de la última menstruación de la Paciente"
-
-/////////////////////
-* item[=].item[=].item[+].type = #date
-* item[=].item[=].item[=].required = false
-* item[=].item[=].item[=].linkId = "fechaProbableParto"
-* item[=].item[=].item[=].text = "Fecha del parto, o fecha probable del parto (calculada)"
-
-* item[=].item[=].item[+].type = #integer
-* item[=].item[=].item[=].required = false
-* item[=].item[=].item[=].linkId = "edadGestacional"
-* item[=].item[=].item[=].text = "Edad gestacional actual si cursa embarazo o al momento del parto del embrazo mas reciente"
-*/
-//SUBIR
-
 
 
 /////////////////////
@@ -687,8 +357,6 @@ Usage: #example
 * item[=].item[=].item[=].enableWhen.operator = #=
 //* item[=].item[=].item[=].enableWhen.answerCoding.system = Canonical(RespuestaSiNoNosabeVS)
 * item[=].item[=].item[=].enableWhen.answerCoding.code = #1
-
-
 
 /////////////////////////////////////////////////////////////////////////////////
 /////////////////////  Grupo antecedentesFarmacosVacunas //////////////////////////////////
@@ -762,7 +430,6 @@ Usage: #example
 * item[=].item[=].item[=].text = "Código Via administración del medicamento"
 
 
-
 /////////////////////////////////////////////////////////////////////////////////
 /////////////////////  Grupo datosVacunas //////////////////////////////////
 * item[=].item[+].type = #group
@@ -776,12 +443,6 @@ Usage: #example
 * item[=].item[=].item[=].required = true
 * item[=].item[=].item[=].linkId = "nombreVacuna"
 * item[=].item[=].item[=].text = "Nombre de la vacuna administrada"
-
-/////////////////////Desea Nombre Normalizado
-//* item[=].item[=].item[+].type = #boolean
-//* item[=].item[=].item[=].required = false
-//* item[=].item[=].item[=].linkId = "nombreNormalizado"
-//* item[=].item[=].item[=].text = "¿Desea ingresar nombre normalizado?"
 
 
 ///////////////////// OK
@@ -836,7 +497,6 @@ Usage: #example
 ///////////////////// dosis de vacuna con valor maximo y mínimo
 
 * item[=].item[=].item[+].type = #integer
-//* item[=].item[=].item[=].answerValueSet = "https://paho.org/fhir/esavi/ValueSet/DosisVacunaVS"
 * item[=].item[=].item[=].required = true
 * item[=].item[=].item[=].linkId = "numeroDosisVacuna"
 * item[=].item[=].item[=].text = "Numero ordinal de la dosis administrada"
@@ -998,7 +658,6 @@ Usage: #example
 * item[=].item[=].text = "Datos relacionados con condiciones médicas ocurridas durante el embarazo en el que se recibió la vacuna y/o ocurrió el ESAVI."
 
 
-
 * item[=].item[=].enableWhen.question = "embarazadaMomentoVacuna"
 * item[=].item[=].enableWhen.operator = #=
 //* item[=].item[=].enableWhen.answerCoding.system = Canonical(RespuestaSiNoNosabeVS)
@@ -1009,7 +668,6 @@ Usage: #example
 * item[=].item[=].enableWhen.operator = #=
 //* item[=].item[=].enableWhen.answerCoding.system = Canonical(RespuestaSiNoNosabeVS)
 * item[=].item[=].enableWhen.answerCoding.code = #1
-
 
 ////////////////////////////////////////////////////////////////////////////////
 /////////////////////  Grupo complicacionesEmbarazo //////////////////////////////////
@@ -1054,7 +712,6 @@ Usage: #example
 * item[=].item[=].item[=].required = true
 * item[=].item[=].item[=].linkId = "tipoGravedad"
 * item[=].item[=].item[=].text = "¿ESAVI Grave?"
-
 
 
 /////////////////////
@@ -1111,16 +768,12 @@ Usage: #example
 * item[=].item[=].item[=].enableBehavior = #any
 * item[=].item[=].item[=].enableWhen[0].question = "embarazadaMomentoVacuna"
 * item[=].item[=].item[=].enableWhen[=].operator = #=
-//* item[=].item[=].item[=].enableWhen[=].answerCoding.system = Canonical(RespuestaSiNoNosabeVS)
 * item[=].item[=].item[=].enableWhen[=].answerCoding.code = #1
 
 
 * item[=].item[=].item[=].enableWhen[+].question = "embarazadaMomentoESAVI"
 * item[=].item[=].item[=].enableWhen[=].operator = #=
-//* item[=].item[=].item[=].enableWhen[=].answerCoding.system = Canonical(RespuestaSiNoNosabeVS)
 * item[=].item[=].item[=].enableWhen[=].answerCoding.code = #1
-
-
 
 
 /////////////////////
@@ -1256,14 +909,6 @@ Usage: #example
 * item[=].item[=].item[=].linkId = "fechaCausalidadESAVI"
 * item[=].item[=].item[=].text = "Fecha de clasificación final del caso"
 
-/////////////////////  s
-//* item[=].item[=].item[+].type = #choice
-//* item[=].item[=].item[=].answerValueSet = "https://paho.org/fhir/esavi/ValueSet/EsaviClasificaciónCausalidad"
-//* item[=].item[=].item[=].required = true
-//* item[=].item[=].item[=].linkId = "sistemaclasfcausalidadESAVI"
-//* item[=].item[=].item[=].text = "Método de clasificación de causalidad del ESAVI"
-
-////////////////*******************************
 ///////////////////// 
 * item[=].item[=].item[+].type = #choice
 * item[=].item[=].item[=].answerValueSet = Canonical(SistemaClasfCausalidadVS)
@@ -1279,7 +924,6 @@ Usage: #example
 ///////////////////// Enable When
 * item[=].item[=].item[=].enableWhen.question = "sistemaClasfcausalidad"
 * item[=].item[=].item[=].enableWhen.operator = #=
-//* item[=].item[=].item[=].enableWhen.answerCoding.system = Canonical(SistemaClasfCausalidadCS)
 * item[=].item[=].item[=].enableWhen.answerCoding.code = #otro
 
 
@@ -1310,7 +954,6 @@ Usage: #example
 
 * item[=].item[=].item[=].enableWhen.question = "sistemaClasfcausalidad"
 * item[=].item[=].item[=].enableWhen.operator = #=
-//* item[=].item[=].item[=].enableWhen.answerCoding.system = Canonical(SistemaClasfCausalidadCS)
 * item[=].item[=].item[=].enableWhen.answerCoding.code = #WHO-UMC
 
 /////////////////////UMC
@@ -1323,7 +966,6 @@ Usage: #example
 * item[=].item[=].item[=].enableWhen.question = "sistemaClasfcausalidad"
 * item[=].item[=].item[=].enableWhen.operator = #=
 * item[=].item[=].item[=].enableWhen.answerCoding.code = #Naranjo
-//* item[=].item[=].item[=].enableWhen.answerCoding.system = Canonical(SistemaClasfCausalidadCS)
 
 //////////////Identificador vacuna OK
 * item[=].item[=].item[+].type = #integer

@@ -37,6 +37,8 @@ Usage: #example
 * item[=].item[+].linkId = "fechas"
 * item[=].item[=].item[0].linkId = "fechaConsulta"
 * item[=].item[=].item[=].answer.valueDate = "2021-07-01"
+* item[=].item[=].item[+].linkId = "fechaNotificacion"
+* item[=].item[=].item[=].answer.valueDate = "2020-08-13"
 * item[=].item[=].item[+].linkId = "fechaLlenadoFicha"
 * item[=].item[=].item[=].answer.valueDate = "2021-09-21"
 * item[+].linkId = "datosIdVacunado"
