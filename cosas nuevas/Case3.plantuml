@@ -1,0 +1,7 @@
+@startuml
+National_System -> PAHO: Token Request
+PAHO -> National_System:  Token
+
+National_System -> PAHO: Notification Update
+PAHO --> National_System:  Response
+@enduml

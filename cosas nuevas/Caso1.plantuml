@@ -1,0 +1,9 @@
+@startuml
+
+Sistema_Nacional -> OPS: Solicitud de Token
+OPS -> Sistema_Nacional:  Token
+
+Sistema_Nacional -> OPS: Notificación
+OPS --> Sistema_Nacional:  Respuesta
+
+@enduml

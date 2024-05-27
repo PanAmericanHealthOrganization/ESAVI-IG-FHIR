@@ -1,0 +1,7 @@
+@startuml
+National_System -> PAHO: Token Request
+PAHO -> National_System:  Token
+
+National_System -> PAHO: Get Param
+PAHO --> National_System:  Bundle
+@enduml
