@@ -6,7 +6,7 @@ id: uv.esavi
 canonical: https://paho.org/fhir/esavi
 name: ESAVI
 status: draft
-version: 0.1.3409
+version: 0.1.48
 fhirVersion: 4.0.1
 title: Guía de Implementación FHIR de ESAVI
 copyrightYear: 2021+
@@ -15,7 +15,7 @@ releaseLabel: ci-build
 
 jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001
 publisher:
-  name: ESAVI -
+  name: ESAVI - 
   url: https://covid-19pharmacovigilance.paho.org/resources/updates-on-aefi
   email: rizzatodan@paho.org
 
@@ -32,6 +32,8 @@ pages:
     title: Alcance
   uso.md:
     title: Como llenar la Guía
+  transacciones.md:
+    title: Transacciones
   actores_CasosUso.md:
     title: Actores y Casos de Uso
   artifacts.html:
@@ -46,14 +48,17 @@ pages:
     title: Generalidades
   consideraciones.md:
     title: Consideraciones
-
-
+  operaciones.md:
+    title: Operaciones
+  seguridad.md:
+    title: Seguridad
 
 menu:
   Inicio: index.html
   Objetivos: objetivos.html
   Alcance: alcance.html
   Uso: uso.html
+  Transacciones: transacciones.html
   Actores y Casos de Uso: actores_CasosUso.html
   Artefactos: artifacts.html
   Mapeos: mapeos.html

@@ -1,15 +1,6 @@
-Alias: $DirOrgNotiCS = https://paho.org/fhir/esavi/CodeSystem/DirOrgNotiCS
-Alias: $ProfesionalNotificadorVS = https://paho.org/fhir/esavi/CodeSystem/ProfesionalNotificadorVS
-Alias: $CodPaises = http://paho.org/esavi/CodeSystem/CodPaises
-Alias: $administrative-gender = http://hl7.org/fhir/administrative-gender
-Alias: $EnfermedadesPreviasCodificacionCS = http://paho.org/esavi/CodeSystem/EnfermedadesPreviasCodificacionCS
-Alias: $RespuestaSiNoNosabeCS = https://paho.org/fhir/esavi/CodeSystem/RespuestaSiNoNosabeCS
-Alias: $EsaviMedDRACS = https://paho.org/fhir/esavi/CodeSystem/EsaviMedDRACS
-Alias: $EsaviOtroCS = http://paho.org/esavi/CodeSystem/EsaviOtroCS
-Alias: $ClasificacionDesenlaceCS = https://paho.org/fhir/esavi/CodeSystem/ClasificacionDesenlaceCS
-
 Instance: ejUnoNuevo
 InstanceOf: QuestionnaireResponse
+Description: "Ejemplo de cuestionario Respondido 1"
 Usage: #example
 * status = #completed
 * authored = "2023-04-12T19:09:52.678Z"
@@ -20,7 +11,8 @@ Usage: #example
 * item[0].linkId = "datosNotificacionGeneral"
 * item[=].item[0].linkId = "datosNotificacion"
 * item[=].item[=].item[0].linkId = "paisOrigen-Reg"
-* item[=].item[=].item[=].answer.valueCoding = $CodPaises#MX "México"
+* item[=].item[=].item[=].answer.valueCoding.system = Canonical(codPaisesCS)
+* item[=].item[=].item[=].answer.valueCoding.code = #MEX "México"
 * item[=].item[=].item[+].linkId = "nombreOrganizacionNotificadora"
 * item[=].item[=].item[=].answer.valueString = "Subdrector Epiemyp, responsable del Sistema de ESAVI-Hospital General de México"
 * item[=].item[=].item[+].linkId = "codigoDireccionOrganizacion"
@@ -28,7 +20,8 @@ Usage: #example
 * item[=].item[=].item[+].linkId = "nombreDireccionOrganizacion"
 * item[=].item[=].item[=].answer.valueString = "Amatán (Municipio), Chiapas, Mexico"
 * item[=].item[=].item[+].linkId = "codigoProfesionNotificador"
-* item[=].item[=].item[=].answer.valueCoding = $ProfesionalNotificadorVS#5 "Usuario o otro profesional no sanitario"
+* item[=].item[=].item[=].answer.valueCoding.system = Canonical(ProfesionalNotificadorCS) 
+* item[=].item[=].item[=].answer.valueCoding.code = #5 "Usuario o otro profesional no sanitario"
 * item[=].item[+].linkId = "fechas"
 * item[=].item[=].text = "Fechas Administrativas (al menos una fecha es necesaria)"
 * item[=].item[=].item[0].linkId = "fechaConsulta"
@@ -61,9 +54,11 @@ Usage: #example
 * item[=].item[=].item[0].linkId = "descripcionEnfPrevia"
 * item[=].item[=].item[=].answer.valueString = "Alergia a Penicilina"
 * item[=].item[=].item[+].linkId = "codigoMedDRAEnfPrevia"
-* item[=].item[=].item[=].answer.valueCoding = http://paho.org/esavi/CodeSystem/CodigoMedDRAEnfPreviaCS#10034292 "alergia a penicilina"
+* item[=].item[=].item[=].answer.valueCoding.system = Canonical(MedDRA)
+* item[=].item[=].item[=].answer.valueCoding.code = #10034292 "alergia a penicilina"
 * item[=].item[=].item[+].linkId = "otrosCodigosEnfPrevia"
-* item[=].item[=].item[=].answer.valueCoding = $EnfermedadesPreviasCodificacionCS#91936005 "alergia a penicilina"
+* item[=].item[=].item[=].answer.valueCoding.system = Canonical(SCT)
+* item[=].item[=].item[=].answer.valueCoding.code = #91936005 "alergia a penicilina"
 * item[=].item[+].linkId = "antecedentesEventosAdversos"
 * item[=].item[=].item[0].linkId = "antecedentesAdvSimilar"
 * item[=].item[=].item[=].answer.valueCoding = $RespuestaSiNoNosabeCS#1 "Si"
@@ -111,9 +106,11 @@ Usage: #example
 * item[=].item[=].item[+].linkId = "IdentificadorESAVI"
 * item[=].item[=].item[=].answer.valueInteger = 1
 * item[=].item[=].item[+].linkId = "codigoESAVIMedDRA"
-* item[=].item[=].item[=].answer.valueCoding = $EsaviMedDRACS#10002218 "anafilaxia"
+* item[=].item[=].item[=].answer.valueCoding.system = Canonical(EsaviMedDRAVS)
+* item[=].item[=].item[=].answer.valueCoding.code = #10002218 "anafilaxia"
 * item[=].item[=].item[+].linkId = "codigoESAVIOtro"
-* item[=].item[=].item[=].answer.valueCoding = $EsaviOtroCS#39579001 "anafilaxia"
+* item[=].item[=].item[=].answer.valueCoding.system = Canonical(SCT)
+* item[=].item[=].item[=].answer.valueCoding.code = #39579001 "anafilaxia"
 * item[=].item[=].item[+].linkId = "fechaESAVI"
 * item[=].item[=].item[=].answer.valueDate = "2020-12-24"
 * item[=].item[=].item[+].linkId = "horaESAVI"
@@ -140,3 +137,4 @@ Usage: #example
 * item[=].item[=].item[=].answer.valueCoding = $ClasificacionDesenlaceCS#1 "Recuperado Completamente"
 * item[=].item[=].item[+].linkId = "fechaInicioInvestigacion"
 * item[=].item[=].item[=].answer.valueDate = "2020-12-25"
+

@@ -4,10 +4,11 @@
 
 Ver detalles en [Seguridad](seguridad.html)
 
-### Informe de AEFI
-[Informe AEFI](informe_aefi.html)
-Como parte de los programas de AEFI, esta API brinda una manera estandarizada de informar un efecto adverso
+### Informe de ESAVI
+
+Como parte de los programas de ESAVI, esta API brinda una manera estandarizada de informar un efecto adverso probablemente asociado a vacunación o inmunización.
 
 ### Consulta de Terminologia
-[Consulta Terminologica](terminologia.html)
-Esta API permite consultar el vocabulario controlado de AEFI
+
+[Consulta Terminologica](terminologias.html)
+Esta API permite consultar los vocabularios controlados de ESAVI
