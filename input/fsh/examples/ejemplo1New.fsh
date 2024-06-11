@@ -52,10 +52,10 @@ Usage: #example
 * item[=].text = "Antecedentes médicos identificados por el paciente"
 * item[=].item[0].linkId = "antecedentesEnfermedadesPrevias"
 * item[=].item[=].item[0].linkId = "descripcionEnfPrevia"
-* item[=].item[=].item[=].answer.valueString = "Alergia a Penicilina"
+* item[=].item[=].item[=].answer.valueString = "Malformación Arteria"
 * item[=].item[=].item[+].linkId = "codigoMedDRAEnfPrevia"
-* item[=].item[=].item[=].answer.valueCoding.system = Canonical(MedDRA)
-* item[=].item[=].item[=].answer.valueCoding.code = #10034292 "alergia a penicilina"
+* item[=].item[=].item[=].answer.valueCoding.system = "https://paho.org/fhir/esavi/CodeSystem/MedDRACS"
+* item[=].item[=].item[=].answer.valueCoding.code = #10003236 "Malformación de Arteria"
 * item[=].item[=].item[+].linkId = "otrosCodigosEnfPrevia"
 * item[=].item[=].item[=].answer.valueCoding.system = Canonical(SCT)
 * item[=].item[=].item[=].answer.valueCoding.code = #91936005 "alergia a penicilina"
@@ -102,15 +102,14 @@ Usage: #example
 * item[=].item[0].linkId = "datosESAVI"
 * item[=].item[=].item[0].linkId = "nombreESAVI"
 * item[=].item[=].item[=].text = "Nombre del ESAVI"
-* item[=].item[=].item[=].answer.valueString = "Anafilaxia"
+* item[=].item[=].item[=].answer.valueString = "Sangrado en Vejiga"
 * item[=].item[=].item[+].linkId = "IdentificadorESAVI"
 * item[=].item[=].item[=].answer.valueInteger = 1
 * item[=].item[=].item[+].linkId = "codigoESAVIMedDRA"
-* item[=].item[=].item[=].answer.valueCoding.system = Canonical(EsaviMedDRAVS)
-* item[=].item[=].item[=].answer.valueCoding.code = #10002218 "anafilaxia"
+* item[=].item[=].item[=].answer.valueCoding.system = "https://paho.org/fhir/esavi/CodeSystem/MedDRACS"
+* item[=].item[=].item[=].answer.valueCoding.code = #10005044 "Hemorragia de la vejiga"
 * item[=].item[=].item[+].linkId = "codigoESAVIOtro"
-* item[=].item[=].item[=].answer.valueCoding.system = Canonical(SCT)
-* item[=].item[=].item[=].answer.valueCoding.code = #39579001 "anafilaxia"
+
 * item[=].item[=].item[+].linkId = "fechaESAVI"
 * item[=].item[=].item[=].answer.valueDate = "2020-12-24"
 * item[=].item[=].item[+].linkId = "horaESAVI"

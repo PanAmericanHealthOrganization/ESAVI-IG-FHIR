@@ -1,0 +1,75 @@
+CodeSystem: MedDRACS
+Title: "Fragmento de MedDRA en español"
+Description: "Códigos MedDRA con descripción en español"
+* ^meta.versionId = "1"
+* ^meta.lastUpdated = "2023-06-27T13:22:48.124+00:00"
+* ^status = #active
+* ^experimental = true
+* ^date = "2023-06-27T00:00:00-04:00"
+* ^content = #complete
+* ^caseSensitive = false
+
+* #10000001 "Neumonitis de ventilación"
+
+* #10000116 "Percepción auditiva anormal no especificada"
+* #10000118 "Comportamiento anormal NEOM"
+* #10000119 "Ruidos intestinales anormales"
+* #10000120 "Ruidos torácicos anormales"
+* #10000121 "Ruidos torácicos anormales NEOM"
+* #10000122 "Perfil anormal de coagulación"
+* #10000123 "Fijación anormal del complemento"
+* #10000124 "Curva anormal de adaptación a la oscuridad"
+* #10000125 "Sueños anormales"
+* #10000126 "ECG anormal"
+* #10000127 "EEG anormal"
+* #10000128 "Eyaculación anormal"
+* #10000129 "ECG anormal"
+* #10000130 "Electroencefalograma anormal"
+* #10000131 "EMG anormal"
+
+* #10000269 "Absceso"
+* #10000270 "Absceso anorrectal"
+
+* #10001909 "Ambliopía ex anopsia"
+* #10001911 "Ambliopía NEOM"
+* #10001912 "Ambliopía estrábica"
+* #10001913 "Ambliopía por supresión"
+
+* #10003229 "Malformaciones arteriovenosas"
+* #10003230 "Arteritis"
+* #10003232 "Arteritis coronaria"
+* #10003233 "Arteritis NEOM"
+* #10003234 "Arteritis trombótica"
+* #10003235 "Arteritis no especificada"
+* #10003236 "Malformación de arteria"
+* #10003237 "Rotura arterial"
+* #10003238 "Artropatía no especificada, con afectación de la mano"
+* #10003239 "Artralgia"
+* #10003240 "Empeoramiento de la artralgia"
+
+* #10005040 "Radioterapia de vejiga con radiación externa"
+* #10005041 "Radioterapia de vejiga con radiación externa"
+* #10005042 "Fibrosis vesical"
+* #10005043 "Granuloma de vejiga"
+* #10005044 "Hemorragia de la vejiga"
+* #10005045 "Incapacidad para vaciar la vejiga"
+* #10005046 "Incontinencia vesical"
+* #10005047 "Infección vesical"
+
+* #10008212 "Ciertas complicaciones precoces de los traumatismos"
+* #10008213 "Ciertas secuelas del infarto de miocardio no clasificadas bajo otro concepto"
+* #10008214 "Ciertos tipos de iridociclitis"
+* #10008215 "Ciertos tipos de queratoconjuntivitis"
+* #10008216 "Ceruloplasmina anormal"
+
+* #10011307 "Lesión traumática de los pares craneales NEOM"
+* #10011308 "Lesión traumática de pares craneales, secundaria a parto traumático"
+* #10011309 "Lesión de los pares craneales"
+
+* #10011333 "Creatina elevada"
+* #10011334 "Creatina quinasa"
+* #10011335 "Creatina quinasa alta"
+* #10011336 "Creatina quinasa aumentada"
+* #10011337 "Creatina quinasa MB"
+* #10011338 "Creatina quinasa MB alta"
+* #10011339 "Creatina quinasa MB elevada"

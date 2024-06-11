@@ -10,6 +10,7 @@ Description: "Códigos para Direcciones según PAHO"
 * ^contact.telecom.value = ""
 * ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#419 "Latin America and the Caribbean"
 * ^experimental = false
+* ^caseSensitive = false
 
 * #AR_B_06126 "Campana (Partido), Buenos Aires, Argentina"
 * #AR_B_06134 "Cañuelas (Partido), Buenos Aires, Argentina"

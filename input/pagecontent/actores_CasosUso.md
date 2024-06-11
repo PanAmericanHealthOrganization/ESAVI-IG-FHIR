@@ -21,10 +21,10 @@ Este caso de uso describe la generación de un **formulario FHIR** diseñado par
 <br>
 
 
-<div align="center">
-  <img src="CU1ESAVI.png"> 
-  <p>Tributación Informe ESAVI a Repositorio OPS</p>
-</div>
+  <div align="center">
+    <img src="CU1ESAVI.png"> 
+    <p>Tributación Informe ESAVI a Repositorio OPS</p>
+  </div>
 
 <br>
 

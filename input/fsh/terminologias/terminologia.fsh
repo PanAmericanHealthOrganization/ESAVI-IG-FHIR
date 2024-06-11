@@ -12,7 +12,7 @@ Id: codPaises
 Title: "Códigos de Países"
 Description: "Codigos definidos para la identificación de países segun norma ISO3166-N"
 * insert RuleSetVS
-* include codes from system CodPaisesCS
+* include codes from system codPaisesCS
 //* include codes from system urn:iso:std:iso:3166
 
 CodeSystem: CodPaisesCS
@@ -276,14 +276,14 @@ Id: EsaviMedDRAVS
 Title: "Código MedDRA del Evento Adverso notificado"
 Description: "Código MedDRA del Evento Adverso notificado"
 * insert RuleSetVS
-* include codes from system MedDRA
+* include codes from system MedDRACS
 
 ValueSet: ComplicacionEmbarazoMedDRAVS //revisado OKs CS interno definido aparte, completo en el servidor LinkID: odigoMedDRAComplicacionEmbarazoESAVI
 Id: ComplicacionEmbarazoMedDRAVS
 Title: "Códigos MEDDRA Complicaciones en Embarazo ESAVI"
 Description: "Codificacion Estandarizada de diagnóticos de complicaciones de embarazo mediante códigos MedDRA"
 * insert RuleSetVS
-* include codes from system MedDRA
+* include codes from system MedDRACS
 
 ValueSet: ComplicacionEmbarazoOtroVS //revisado OKS CS externo LinkID: otrosCodigosComplicacionEmbarazoESAVI
 Id: ComplicacionEmbarazoOtroVS
@@ -332,7 +332,7 @@ Description: "Codificación Estandarizda del código de las Vacunas según WhoDr
 //* include codes from system CodigoWhoVacunaCS //Acotado a Vacunas COVID
 //* include codes from system WHODrugPMID 
 //* include codes from system WHODrugDC
-* include codes from system WHODrug
+* include codes from system WHODrugDCCS
 
 ValueSet: FormaFarmaceuticaVS //revisado OKs CS externo LinkID: codigoFormaFarmaceutica
 Id: FormaFarmaceuticaVS
@@ -607,7 +607,7 @@ Title: "Códigos de MedDRA para representar enfermedades previas en un ESAVI-PAH
 Description: "Describe las enfermedades previas en un ESAVI codificadas en MedDRA"
 * insert RuleSetVS
 
-* include codes from system MedDRA
+* include codes from system MedDRACS
 
 ValueSet: SistemaClasfCausalidadVS //revisado OKs CS interno a continuación LinkID: sistemaClasfcausalidad
 Id: SistemaClasfCausalidadVS
@@ -641,13 +641,16 @@ Title: "Clasificación de causalidad WHO-AEFI"
 Description:  "Método de clasificación de causalidad WHO-AEFI"
 * insert RuleSetCS
 
-* #A1 "Evento relacionado con la vacuna o cualquiera de sus componentes"	
-* #A2 "Evento relacionado con una desviacion de calidad del producto biologico o la vacuna"
-* #A3 "Evento relacionado con un error programatico"
-* #A4 "Evento por estres que tuvo lugar inmediatemente antes, durante o inmediatamente despues del proceso de vacunacion"
-* #B1 "La relacion temporal es congruente, pero no hay evidencia definitiva suficiente sobre una relacion causal con la vacuna (puede ser un evento recientemente asociadoa  la vacuna [señal])"
-* #B2 "Factores determinantes para la clasificación muestran tendencias conflictivas a favor y en contra de una asociacion causal con la vacunació"
-* #C "Causa Coincidente"
+
+* #A  "Con asociación causal congruente con la vacuna o proceso de vacunación"
+  * #A1 "Evento relacionado con la vacuna o cualquiera de sus componentes"	
+  * #A2 "Evento relacionado con una desviacion de calidad del producto biologico o la vacuna"
+  * #A3 "Evento relacionado con un error programatico"
+  * #A4 "Evento por estres que tuvo lugar inmediatemente antes, durante o inmediatamente despues del proceso de vacunacion"
+* #B "Indeterminado"
+  * #B1 "La relacion temporal es congruente, pero no hay evidencia definitiva suficiente sobre una relacion causal con la vacuna (puede ser un evento recientemente asociadoa  la vacuna [señal])"
+  * #B2 "Factores determinantes para la clasificación muestran tendencias conflictivas a favor y en contra de una asociacion causal con la vacunació"
+* #C "Sin Asociacion causal congruente con la vacuna o proceso de vacunacion"
 * #NC "No clasificable"
 
 

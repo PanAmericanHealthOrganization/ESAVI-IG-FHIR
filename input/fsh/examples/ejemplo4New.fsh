@@ -10,6 +10,7 @@ Alias: $ClasificacionDesenlaceCS = https://paho.org/fhir/esavi/CodeSystem/Clasif
 
 Instance: ejCuatroNuevo
 InstanceOf: QuestionnaireResponse
+Description: "Ejemplo de cuestionario más completo"
 Usage: #example
 * status = #completed
 * authored = "2022-03-10T10:20:00Z"
@@ -20,14 +21,16 @@ Usage: #example
 * item[0].linkId = "datosNotificacionGeneral"
 * item[=].text = "Datos Administrativos de la Notificación"
 * item[=].item[0].linkId = "datosNotificacion"
+* item[=].item[=].item[0].linkId = "paisOrigen-Reg"
+* item[=].item[=].item[=].answer.valueCoding = https://paho.org/fhir/esavi/CodeSystem/codPaisesCS#GTM "Guatemala"
 * item[=].item[=].item[+].linkId = "nombreOrganizacionNotificadora"
 * item[=].item[=].item[=].answer.valueString = "Ministerio de Salud Pública y Asistencia Social"
 * item[=].item[=].item[+].linkId = "codigoDireccionOrganizacion"
-* item[=].item[=].item[=].answer.valueCoding = http://paho.org/esavi/CodeSystem/DirOrgNotiCS#GT_GU_0101 "Guatemala (Municipio), Guatemala, Guatemala"
+* item[=].item[=].item[=].answer.valueCoding = https://paho.org/fhir/esavi/CodeSystem/DirOrgNotiCS#GT_QZ_0912 "San Martín Sacatepéquez (Municipio), Quetzaltenango, Guatemala"
 * item[=].item[=].item[+].linkId = "nombreDireccionOrganizacion"
 * item[=].item[=].item[=].answer.valueString = "Guatemala (Municipio), Guatemala, Guatemala"
 * item[=].item[=].item[+].linkId = "codigoProfesionNotificador"
-* item[=].item[=].item[=].answer.valueCoding = http://paho.org/esavi/CodeSystem/ProfesionalNotificadorCS#5 "Usuario u otro profesional no sanitario"
+* item[=].item[=].item[=].answer.valueCoding = https://paho.org/fhir/esavi/CodeSystem/ProfesionalNotificadorCS#5 "Usuario u otro profesional no sanitario"
 * item[=].item[+].linkId = "fechas"
 * item[=].item[=].text = "Fechas Administrativas (al menos una fecha es necesaria)"
 * item[=].item[=].item[0].linkId = "fechaConsulta"
@@ -60,9 +63,9 @@ Usage: #example
 * item[=].item[=].item[0].linkId = "descripcionEnfPrevia"
 * item[=].item[=].item[=].answer.valueString = "Alergia a Penicilina"
 * item[=].item[=].item[+].linkId = "codigoMedDRAEnfPrevia"
-* item[=].item[=].item[=].answer.valueCoding = http://paho.org/esavi/CodeSystem/CodigoMedDRAEnfPreviaCS#10034292 "alergia a penicilina"
+* item[=].item[=].item[=].answer.valueCoding = https://paho.org/fhir/esavi/CodeSystem/MedDRACS#10000116 "Percepción auditiva anormal no especificada"
 * item[=].item[=].item[+].linkId = "otrosCodigosEnfPrevia"
-* item[=].item[=].item[=].answer.valueCoding = $EnfermedadesPreviasCodificacionCS#91936005 "alergia a penicilina"
+* item[=].item[=].item[=].answer.valueCoding = http://snomed.info/sct#1824008 "Allergic gastritis"
 * item[=].item[+].linkId = "antecedentesEventosAdversos"
 * item[=].item[=].item[0].linkId = "antecedentesAdvSimilar"
 * item[=].item[=].item[=].answer.valueCoding = $RespuestaSiNoNosabeCS#1 "Si"
@@ -110,9 +113,8 @@ Usage: #example
 * item[=].item[=].item[+].linkId = "IdentificadorESAVI"
 * item[=].item[=].item[=].answer.valueInteger = 1
 * item[=].item[=].item[+].linkId = "codigoESAVIMedDRA"
-* item[=].item[=].item[=].answer.valueCoding = $EsaviMedDRACS#10002218 "anafilaxia"
-* item[=].item[=].item[+].linkId = "codigoESAVIOtro"
-* item[=].item[=].item[=].answer.valueCoding = $EsaviOtroCS#39579001 "anafilaxia"
+* item[=].item[=].item[=].answer.valueCoding = https://paho.org/fhir/esavi/CodeSystem/MedDRACS#10000269 "Absceso"
+
 * item[=].item[=].item[+].linkId = "fechaESAVI"
 * item[=].item[=].item[=].answer.valueDate = "2020-12-24"
 * item[=].item[=].item[+].linkId = "horaESAVI"
