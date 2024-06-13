@@ -8,9 +8,9 @@ Alias: $EsaviMedDRACS = https://paho.org/fhir/esavi/CodeSystem/EsaviMedDRACS
 Alias: $EsaviOtroCS = http://paho.org/esavi/CodeSystem/EsaviOtroCS
 Alias: $ClasificacionDesenlaceCS = https://paho.org/fhir/esavi/CodeSystem/ClasificacionDesenlaceCS
 
-Instance: ejCuatroNuevo
+Instance: Ejemplo2DHIS2
 InstanceOf: QuestionnaireResponse
-Description: "Ejemplo de cuestionario más completo"
+Description: "Ejemplo de respuesta de cuestionario basado en un caso mapeado desde DHIS2 con paciente embarazada y complicaciones, antecedentes médicos previos y registro de SARS COV2"
 Usage: #example
 * status = #completed
 * authored = "2022-03-10T10:20:00Z"

@@ -1,6 +1,6 @@
-Instance: ejUnoNuevo
+Instance: EjemploSimple1
 InstanceOf: QuestionnaireResponse
-Description: "Ejemplo de cuestionario Respondido 1"
+Description: "Ejemplo de Respuesta de Questionario Simple con registro de enfermedades previas y sin causalidad"
 Usage: #example
 * status = #completed
 * authored = "2023-04-12T19:09:52.678Z"

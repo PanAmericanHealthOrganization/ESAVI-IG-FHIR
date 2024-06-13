@@ -4,7 +4,7 @@ Description: "Códigos MedDRA con descripción en español"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2023-06-27T13:22:48.124+00:00"
 * ^status = #active
-* ^experimental = true
+* ^experimental = false
 * ^date = "2023-06-27T00:00:00-04:00"
 * ^content = #complete
 * ^caseSensitive = false
@@ -26,6 +26,7 @@ Description: "Códigos MedDRA con descripción en español"
 * #10000129 "ECG anormal"
 * #10000130 "Electroencefalograma anormal"
 * #10000131 "EMG anormal"
+* #10018766 "Síndrome de Guillain Barré"
 
 * #10000269 "Absceso"
 * #10000270 "Absceso anorrectal"

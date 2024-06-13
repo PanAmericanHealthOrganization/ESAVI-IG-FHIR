@@ -88,6 +88,10 @@ Description: "Fragmento de WHODrug completo con nombres genéricos y comerciales
   * #00000202023 "Orciprenalina"
   * #00000202030 "Orciprenalini sulfas"
   * #00000202032 "Orlin"
+
+* #01362601001 "Montelukast"
+  * #01362601020 "Asmax (Montelukast)"
+
 * #00000301001 "Aminosalicylic acid"
   * #00000301003 "Pas"
   * #00000301007 "Para-aminosalicylic acid"
@@ -221,5 +225,7 @@ Description: "Fragmento de WHODrug completo con nombres genéricos y comerciales
   * #00000402459 "Noctamid"
   * #00000402468 "Difenhidramina hcl"
   * #00000402491 "Sloth"
+
+* #15268625001 "Tozinameran"
 
   

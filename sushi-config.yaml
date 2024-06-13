@@ -6,7 +6,7 @@ id: uv.esavi
 canonical: https://paho.org/fhir/esavi
 name: ESAVI
 status: draft
-version: 0.1.48
+version: 0.1.51
 fhirVersion: 4.0.1
 title: Guía de Implementación FHIR de ESAVI
 copyrightYear: 2021+
@@ -52,6 +52,8 @@ pages:
     title: Operaciones
   seguridad.md:
     title: Seguridad
+  cambios.md:
+    title: Control de Cambios
 
 menu:
   Inicio: index.html
@@ -67,6 +69,7 @@ menu:
   Descargas: descargas.html
   Generalidades: generalidades.html
   Consideraciones: consideraciones.html
+  Control de Cambios: cambios.html
   #Datos Generales:
   #  Generalidades: generalidades.html
   #  Actores y Casos de Uso: actores_CasosUso.html

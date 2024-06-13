@@ -2,14 +2,15 @@ Alias: $codPaisesCS = https://paho.org/fhir/esavi/CodeSystem/codPaisesCS
 Alias: $ProfesionalNotificadorCS = https://paho.org/fhir/esavi/CodeSystem/ProfesionalNotificadorCS
 Alias: $administrative-gender = http://hl7.org/fhir/administrative-gender
 Alias: $RespuestaSiNoNosabeCS = https://paho.org/fhir/esavi/CodeSystem/RespuestaSiNoNosabeCS
-Alias: $apiportaldemo = https://apiportaldemo.who-umc.org
+Alias: $apiportaldemo = https://paho.org/fhir/esavi/CodeSystem/WHODrugDCCS
 Alias: $SistemasDeCodificacionCS = https://paho.org/fhir/esavi/CodeSystem/SistemasDeCodificacionCS
 Alias: $ModoVerificacionVacunaCS = https://paho.org/fhir/esavi/CodeSystem/ModoVerificacionVacunaCS
-Alias: $meddra = https://www.meddra.org
+Alias: $meddra = https://paho.org/fhir/esavi/CodeSystem/MedDRACS
 Alias: $ClasificacionDesenlaceCS = https://paho.org/fhir/esavi/CodeSystem/ClasificacionDesenlaceCS
 
-Instance: EjemploDHIS2
+Instance: Ejemplo1DHIS2
 InstanceOf: QuestionnaireResponse
+Description: "Ejemplo de respuesta de cuestionario basado en un caso mapeado desde DHIS2 con antecedentes médicos previos y registro de SARS COV2"
 Usage: #example
 * meta.profile = "https://paho.org/fhir/esavi/StructureDefinition/ESAVIQuestionnaireResponse"
 * identifier.system = "http://ops.org/esavi/PRY"
@@ -82,7 +83,7 @@ Usage: #example
 * item[=].item[=].item[0].linkId = "nombreMedicamento"
 * item[=].item[=].item[=].answer.valueString = "Metildopa (Methyldopa)"
 * item[=].item[=].item[+].linkId = "codigoMedicamento"
-* item[=].item[=].item[=].answer.valueCoding = $apiportaldemo#00000101091 "Metildopa (Methyldopa)"
+* item[=].item[=].item[=].answer.valueCoding = $apiportaldemo#00000101091 "Metildopa"
 * item[=].item[=].item[+].linkId = "nombreFormaFarmaceutica"
 * item[=].item[=].item[=].answer.valueString = "Tableta / Comprimido"
 * item[=].item[=].item[+].linkId = "nombreViaAdministracion"
@@ -97,7 +98,7 @@ Usage: #example
 * item[=].item[=].item[+].linkId = "identificadorVacuna"
 * item[=].item[=].item[=].answer.valueInteger = 1
 * item[=].item[=].item[+].linkId = "codigoVacunaWHODrug"
-* item[=].item[=].item[=].answer.valueCoding = $apiportaldemo#15268625001 "Pfizer"
+* item[=].item[=].item[=].answer.valueCoding = $apiportaldemo#15268625001 "Tozinameran"
 * item[=].item[=].item[+].linkId = "nombreFabricante"
 * item[=].item[=].item[=].answer.valueString = "Biohtech"
 * item[=].item[=].item[+].linkId = "numeroDosisVacuna"

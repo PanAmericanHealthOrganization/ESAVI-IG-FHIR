@@ -491,6 +491,8 @@ Title: "Codigo Medicamento"
 Description:  "Codigo Medicamento"
 * insert RuleSetVS
 * include codes from system SCT where concept is-a #105590001 "Sustancia"
+* include codes from system SCT where concept is-a #105590001 "Sustancia"
+* include codes from system WHODrugDCCS
 //* include codes from system ATCCS //NO expande
 //* include codes from system ICD11mms where concept is-a #XM4843 //No expande!!!
 

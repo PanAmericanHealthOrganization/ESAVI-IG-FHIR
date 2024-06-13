@@ -8,8 +8,8 @@
 // Alias: $EsaviOtroCS = https://paho.org/esavi/CodeSystem/EsaviOtroCS
 // Alias: $ClasificacionDesenlaceCS = https://paho.org/fhir/esavi/CodeSystem/ClasificacionDesenlaceCS
 
-Instance: ejDosNuevo
-Description: "Ejemplo de cuestionario Respondido 2"
+Instance: EjemploSimple2
+Description: "Ejemplo de Respuesta de Questionario Simple solo con registro de vacuna y sin causalidad"
 InstanceOf: ESAVIQuestionnaireResponse
 Usage: #example
 * status = #completed
