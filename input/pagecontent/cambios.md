@@ -26,4 +26,9 @@ Se describen los cambios desarrollados entre versiones a partir de la version 0.
 
   * Se **Agrega otro ejempolo** basado en caso mapeado desde DHIS2 
 
+#### Versión 0.2.0
+<br>
 
+  * Se **Agrega Bundle Transaction**
+  * Se **Agrega ejemplo de Bundle**
+  * Se **Agrega transacción Bundle**

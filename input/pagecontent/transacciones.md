@@ -20,14 +20,21 @@ En esta página se definiran los casos de uso de intercambio de datos, que se pu
   * El sistema de **Notificación Nacional** envía la Notificación al **Sistema de Registro OPS**
 
 * Recursos
-  * Envío: QuestionnaireResponse
+  * Envío: QuestionnaireResponse/Bundle 
   * Respuesta: QuestionnaireResponse/OperationOutcome
 
 * Operaciones
-  La operación usada será POST para el recurso
+  La operación usada será POST para el recurso.
 
   ```
   POST: {BaseURL}/QuestionnaireResponse
+  ```
+
+  <br>
+  En caso de transar con *Bundle*
+
+  ```
+  POST: {BaseURL}/
   ```
 
 
