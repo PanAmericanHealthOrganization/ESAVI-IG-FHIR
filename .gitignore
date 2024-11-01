@@ -12,3 +12,5 @@ local-template/
 input/.DS_Store
 input/fsh/.DS_Store
 wip
+tools/__pycache__/
+tools

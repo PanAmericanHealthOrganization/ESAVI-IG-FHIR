@@ -29,8 +29,11 @@ Description:    "Este Perfil describe como debe ser el recurso Bundle que permit
 
 * entry and entry.resource MS
 * entry ^short = "Recursos Contenidos en el Bundle, que corresponden a Notificaciones ESAVI"
-* entry.resource only ESAVIQuestionnaireResponse
-* entry.request 1..1 MS
-  * ^short = "Método para servidor"
-  * method = #POST
+  * fullUrl 0..1 MS
+    * ^short = "URI para el recurso (Absoluta o para UUID u OID)"
+  * resource 1..1 MS
+  * resource only ESAVIQuestionnaireResponse
+  * request 1..1 MS
+    * ^short = "Método para servidor"
+    * method = #POST
 
