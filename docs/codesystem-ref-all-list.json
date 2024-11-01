@@ -82,8 +82,8 @@
       "oids" : ["2.16.840.1.113883.6.3"],
       "uses" : {
       },
-      "ValueSet-ComplicacionEmbarazoOtroVS.html" : "Otros Códigos Complicaciones en Embarazo ESAVI",
-      "ValueSet-EnfermedadesPreviasCodificacionVS.html" : "Enfermedades previas en un ESAVI-PAHO"
+      "ValueSet-EnfermedadesPreviasCodificacionVS.html" : "Enfermedades previas en un ESAVI-PAHO",
+      "ValueSet-ComplicacionEmbarazoOtroVS.html" : "Otros Códigos Complicaciones en Embarazo ESAVI"
     },
     {
       "url" : "http://snomed.info/sct",
@@ -96,13 +96,13 @@
       "uses" : {
       },
       "ValueSet-EsaviOtroVS.html" : "Otros Códigos Evento Adverso",
-      "http://hl7.org/fhir/R4/valueset-questionnaire-answers.html" : "Questionnaire Answer Codes",
-      "ValueSet-CodigoNoWhoVacunaVS.html" : "Código no WHODrug de la Vacuna",
-      "ValueSet-FormaFarmaceuticaVS.html" : "Identificación Formas Farmacéuticas",
-      "ValueSet-ComplicacionEmbarazoOtroVS.html" : "Otros Códigos Complicaciones en Embarazo ESAVI",
-      "ValueSet-CodigoMedicamentoVS.html" : "Codigo Medicamento",
       "ValueSet-EnfermedadesPreviasCodificacionVS.html" : "Enfermedades previas en un ESAVI-PAHO",
-      "ValueSet-ViaAdminMedicamentoVS.html" : "Vías de Administración de Medicamentos"
+      "ValueSet-ViaAdminMedicamentoVS.html" : "Vías de Administración de Medicamentos",
+      "ValueSet-ComplicacionEmbarazoOtroVS.html" : "Otros Códigos Complicaciones en Embarazo ESAVI",
+      "http://hl7.org/fhir/R4/valueset-questionnaire-answers.html" : "Questionnaire Answer Codes",
+      "ValueSet-CodigoMedicamentoVS.html" : "Codigo Medicamento",
+      "ValueSet-FormaFarmaceuticaVS.html" : "Identificación Formas Farmacéuticas",
+      "ValueSet-CodigoNoWhoVacunaVS.html" : "Código no WHODrug de la Vacuna"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v2-0203",
@@ -202,9 +202,9 @@
       "description" : "Códigos MedDRA con descripción en español",
       "uses" : {
       },
-      "ValueSet-CodigoMedDRAEnfPreviaVS.html" : "Códigos de MedDRA para representar enfermedades previas en un ESAVI-PAHO",
       "ValueSet-ComplicacionEmbarazoMedDRAVS.html" : "Códigos MEDDRA Complicaciones en Embarazo ESAVI",
-      "ValueSet-EsaviMedDRAVS.html" : "Código MedDRA del Evento Adverso notificado"
+      "ValueSet-EsaviMedDRAVS.html" : "Código MedDRA del Evento Adverso notificado",
+      "ValueSet-CodigoMedDRAEnfPreviaVS.html" : "Códigos de MedDRA para representar enfermedades previas en un ESAVI-PAHO"
     },
     {
       "url" : "https://paho.org/fhir/esavi/CodeSystem/ModoConfirmacionInfeccionCS",
@@ -281,8 +281,8 @@
       "description" : "Fragmento de WHODrug completo con nombres genéricos y comerciales en inglés mayormente codificados por drugcode",
       "uses" : {
       },
-      "ValueSet-CodigoMedicamentoVS.html" : "Codigo Medicamento",
-      "ValueSet-CodigoWhoVacunaVS.html" : "Codigo WHODrug de la vacuna"
+      "ValueSet-CodigoWhoVacunaVS.html" : "Codigo WHODrug de la vacuna",
+      "ValueSet-CodigoMedicamentoVS.html" : "Codigo Medicamento"
     },
     {
       "url" : "https://paho.org/fhir/esavi/CodeSystem/codPaisesCS",

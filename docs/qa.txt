@@ -3,7 +3,7 @@ ESAVI : Validation Results
 
 err = 0, warn = 16, info = 4
 IG Publisher Version: 1.7.1
-Generated Thu Oct 31 17:17:56 CST 2024. FHIR version 4.0.1 for uv.esavi#0.2.0 (canonical = https://paho.org/fhir/esavi)
+Generated Fri Nov 01 00:15:12 CST 2024. FHIR version 4.0.1 for uv.esavi#0.2.0 (canonical = https://paho.org/fhir/esavi)
  Build Errors : 0 / 0 / 0
  /ig/fsh-generated/resources/Bundle-BundESAVI : 0 / 0 / 3
  /ig/fsh-generated/resources/CodeSystem-ClasificacionDesenlaceCS : 0 / 0 / 1

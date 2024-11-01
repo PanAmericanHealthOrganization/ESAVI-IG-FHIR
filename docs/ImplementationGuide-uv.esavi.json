@@ -10,7 +10,7 @@
   "name" : "ESAVI",
   "title" : "Guía de Implementación FHIR de ESAVI",
   "status" : "draft",
-  "date" : "2024-10-31T17:15:01-06:00",
+  "date" : "2024-11-01T00:12:21-06:00",
   "publisher" : "ESAVI -",
   "contact" : [{
     "name" : "ESAVI -",
@@ -1265,15 +1265,6 @@
         "nameUrl" : "artifacts.html",
         "title" : "Artefactos",
         "generation" : "html"
-      },
-      {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "mapeos.html"
-        }],
-        "nameUrl" : "mapeos.html",
-        "title" : "Mapeos",
-        "generation" : "markdown"
       },
       {
         "extension" : [{

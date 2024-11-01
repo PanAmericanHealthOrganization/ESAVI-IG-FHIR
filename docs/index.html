@@ -19,6 +19,10 @@
     <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
   	<link href="assets/css/prism.css" rel="stylesheet" />
     <!-- Placeholder for child template CSS declarations -->
+<!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/fix-fonts.css" rel="stylesheet" />
+<link href="assets/css/paho.css" rel="stylesheet" />
+
 
     <script type="text/javascript" src="fhir-table-scripts.js"> </script>
 
@@ -46,6 +50,17 @@
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
 
+<div id="project-nav">
+    <div style="height: 60px;width: 170px;">
+        
+    </div>
+</div>
+
+<div id="family-nav">
+    <a no-external="true">
+        <img width="170" height="60" alt="Visitar PAHO" src="assets/images/HL7_FHIR_logo.png" />
+    </a>
+</div>
 
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Guía de Implementación FHIR de ESAVI</span>
@@ -101,9 +116,6 @@
   </li>
   <li>
     <a href="artifacts.html">Artefactos</a>
-  </li>
-  <li>
-    <a href="mapeos.html">Mapeos</a>
   </li>
   <li>
     <a href="terminologias.html">Terminologias</a>
@@ -183,7 +195,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
         
           Draft
           
-            as of 2024-10-31
+            as of 2024-11-01
           
         
       </td>
@@ -244,8 +256,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><a href="generalidades.html">Datos Generales</a>: Aspectos Generales respecto al proyecto y la Guía</li>
   <li><a href="actores_CasosUso.html">Actores y Casos de Uso</a>: Definición de los Casos de Uso.</li>
   <li><a href="operaciones.html">Operaciones FHIR</a>: Operaciones Rest usadas para el proyecto.</li>
-  <li><a href="artifacts.html">Artefactos</a>: Estas páginas proveen descripciones detalladas y definiciones formales para los objetos FHIR presentes en la guía.</li>
-  <li><a href="descargas.html">Mapeos</a>: Desarrollo de los Mapeos entre DHIS2 y E2B XML(R3) con FHIR.</li>
+  <li><a href="artifacts.html">Artefactos</a>: Estas páginas proveen descripciones detalladas y definiciones formales para los objetos FHIR presentes en la guía.
+<!-- - [Mapeos](descargas.html): Desarrollo de los Mapeos entre DHIS2 y E2B XML(R3) con FHIR. --></li>
   <li><a href="uso.html">Uso</a>: Explica las interpretaciones e intenciones de la semántica de los recursos.</li>
   <li><a href="seguridad.html">Seguridad</a>: Explica los formatos de seguridad para la conexión con el Sistema Regional.</li>
   <li><a href="descargas.html">Descargas</a>: Agrupa las descargas disponibles como perfiles, paquete de validación, ejemplos, etc.</li>
@@ -334,7 +346,7 @@ La estrategia de la OPS se basó en apoyar a los países según su nivel de desa
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://covid-19pharmacovigilance.paho.org/resources/updates-on-aefi">ESAVI -</a>.  Package uv.esavi#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Oct 31, 2024 17:15-0600">2024-10-31</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://covid-19pharmacovigilance.paho.org/resources/updates-on-aefi">ESAVI -</a>.  Package uv.esavi#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Nov 1, 2024 00:12-0600">2024-11-01</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
