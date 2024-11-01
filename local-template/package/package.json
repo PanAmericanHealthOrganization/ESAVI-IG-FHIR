@@ -1,12 +1,12 @@
 {
-    "name": "who.fhir.smart-ig-empty-locarl",
-    "version": "0.0.1",
+    "name": "uv.esavi",
+    "version": "0.2.0",
     "type": "fhir.template",
     "license": "CC0-1.0",
-    "description": "Local template extension for WHO SMART FHIR IG",
-    "author": "http://who.int",
-      "base":  "who.fhir.template",
+    "description": "Local template extension for PAHO FHIR IG",
+    "author": "https://paho.org",
+    "base":  "fhir.base.template",
     "dependencies": {
-      "who.fhir.template": "current"
+      "fhir.base.template": "current"
     }
   }

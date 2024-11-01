@@ -1,0 +1,16 @@
+/* Noto Sans Import */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: "Noto Sans", sans-serif !important;
+    font-size: 14px;
+    color: #888;
+    font-weight: 400;
+    background: #f4f7fa;
+    position: relative;
+}
+
+.navbar-inverse {
+    background-color: #00205C;
+    color: #ffffff;
+}
