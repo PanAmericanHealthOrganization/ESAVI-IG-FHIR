@@ -5,7 +5,7 @@
 # docker build -t paho-esavi/sushi:v1 -f Dockerfile .
 
 # Para ejecutar un contenedor basado en la imagen creada, ejecutar el siguiente comando en la terminal:
-# docker run --rm -it --name sushi-paho -v $(pwd):/ig -d meddyg/sushi:v1
+# docker run --rm -it --name sushi-paho -v $(pwd):/ig -d paho-esavi/sushi:v1
 
 # Utilizar la última versión de Ubuntu 24.04 como base
 FROM ubuntu:24.04

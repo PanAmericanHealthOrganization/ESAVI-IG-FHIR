@@ -38,8 +38,8 @@ pages:
     title: Actores y Casos de Uso
   artifacts.html:
     title: Artefactos
-  mapeos.md:
-    title:  Mapeos
+  # mapeos.md:
+  #   title:  Mapeos
   terminologias.md:
     title: Terminologias
   descargas.md:
@@ -63,7 +63,7 @@ menu:
   Transacciones: transacciones.html
   Actores y Casos de Uso: actores_CasosUso.html
   Artefactos: artifacts.html
-  Mapeos: mapeos.html
+  # Mapeos: mapeos.html
   #  Seguridad: seguridad.html
   Terminologias: terminologias.html
   Descargas: descargas.html
