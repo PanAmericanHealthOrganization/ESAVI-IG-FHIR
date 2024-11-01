@@ -1,0 +1,61 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://paho.org/fhir/esavi/CodeSystem/ComplicacionEmbarazoCS> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ComplicacionEmbarazoCS"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ComplicacionEmbarazoCS</b></p><a name=\"ComplicacionEmbarazoCS\"> </a><a name=\"hcComplicacionEmbarazoCS\"> </a><a name=\"ComplicacionEmbarazoCS-en-US\"> </a><p>This case-insensitive code system <code>https://paho.org/fhir/esavi/CodeSystem/ComplicacionEmbarazoCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">01<a name=\"ComplicacionEmbarazoCS-01\"> </a></td><td>Del Embarazo</td></tr><tr><td style=\"white-space:nowrap\">02<a name=\"ComplicacionEmbarazoCS-02\"> </a></td><td>Del Parto</td></tr><tr><td style=\"white-space:nowrap\">03<a name=\"ComplicacionEmbarazoCS-03\"> </a></td><td>Puerperio fetal</td></tr><tr><td style=\"white-space:nowrap\">04<a name=\"ComplicacionEmbarazoCS-04\"> </a></td><td>Neonatal</td></tr><tr><td style=\"white-space:nowrap\">05<a name=\"ComplicacionEmbarazoCS-05\"> </a></td><td>Anomalía Congénita</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://paho.org/fhir/esavi/CodeSystem/ComplicacionEmbarazoCS"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.2.0"] ; # 
+  fhir:name [ fhir:v "ComplicacionEmbarazoCS"] ; # 
+  fhir:title [ fhir:v "Complicaciones de Embarazo"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2021-03-11T00:00:00-03:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "ESAVI -"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "ESAVI -" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://covid-19pharmacovigilance.paho.org/resources/updates-on-aefi" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rizzatodan@paho.org" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Códigos para las Complicaciones de Embarazo"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "001" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "5"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "01" ] ;
+     fhir:display [ fhir:v "Del Embarazo" ]
+  ] [
+     fhir:code [ fhir:v "02" ] ;
+     fhir:display [ fhir:v "Del Parto" ]
+  ] [
+     fhir:code [ fhir:v "03" ] ;
+     fhir:display [ fhir:v "Puerperio fetal" ]
+  ] [
+     fhir:code [ fhir:v "04" ] ;
+     fhir:display [ fhir:v "Neonatal" ]
+  ] [
+     fhir:code [ fhir:v "05" ] ;
+     fhir:display [ fhir:v "Anomalía Congénita" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

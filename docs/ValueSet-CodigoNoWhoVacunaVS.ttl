@@ -1,0 +1,52 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://paho.org/fhir/esavi/ValueSet/CodigoNoWhoVacunaVS> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "CodigoNoWhoVacunaVS"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet CodigoNoWhoVacunaVS</b></p><a name=\"CodigoNoWhoVacunaVS\"> </a><a name=\"hcCodigoNoWhoVacunaVS\"> </a><a name=\"CodigoNoWhoVacunaVS-en-US\"> </a><ul><li>Include codes from<a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a 410942007 (Drug or medicament (substance))</li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://paho.org/fhir/esavi/ValueSet/CodigoNoWhoVacunaVS"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.2.0"] ; # 
+  fhir:name [ fhir:v "CodigoNoWhoVacunaVS"] ; # 
+  fhir:title [ fhir:v "Código no WHODrug de la Vacuna"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2021-03-11T00:00:00-03:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "ESAVI -"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "ESAVI -" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://covid-19pharmacovigilance.paho.org/resources/updates-on-aefi" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rizzatodan@paho.org" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Código no WHODrug de la Vacuna"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "001" ]
+     ] )
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "concept" ] ;
+         fhir:op [ fhir:v "is-a" ] ;
+         fhir:value [ fhir:v "410942007" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

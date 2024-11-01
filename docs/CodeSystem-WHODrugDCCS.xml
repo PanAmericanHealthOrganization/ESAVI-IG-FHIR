@@ -1,0 +1,865 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="WHODrugDCCS"/>
+  <meta>
+    <versionId value="1"/>
+    <lastUpdated value="2023-05-25T13:22:48.124+00:00"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem WHODrugDCCS</b></p><a name="WHODrugDCCS"> </a><a name="hcWHODrugDCCS"> </a><a name="WHODrugDCCS-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">version: 1; Last updated: 2023-05-25 13:22:48+0000</p></div><p>This case-insensitive code system <code>https://paho.org/fhir/esavi/CodeSystem/WHODrugDCCS</code> provides <b>a fragment</b> that includes following codes in a Is-A hierarchy:</p><table class="codes"><tr><td><b>Lvl</b></td><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>1</td><td style="white-space:nowrap">00000101001<a name="WHODrugDCCS-00000101001"> </a></td><td>Methyldopa</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000101002<a name="WHODrugDCCS-00000101002"> </a></td><td>Aldomet</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000101012<a name="WHODrugDCCS-00000101012"> </a></td><td>Metyldopa</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000101041<a name="WHODrugDCCS-00000101041"> </a></td><td>Alfametildopa</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000101044<a name="WHODrugDCCS-00000101044"> </a></td><td>Almedop</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000101045<a name="WHODrugDCCS-00000101045"> </a></td><td>Cardin</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000101046<a name="WHODrugDCCS-00000101046"> </a></td><td>Methyldopum</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000101086<a name="WHODrugDCCS-00000101086"> </a></td><td>Prodop</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000101087<a name="WHODrugDCCS-00000101087"> </a></td><td>Hipermessel</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000101089<a name="WHODrugDCCS-00000101089"> </a></td><td>Tensioval</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000101090<a name="WHODrugDCCS-00000101090"> </a></td><td>Cardiodopa</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000101091<a name="WHODrugDCCS-00000101091"> </a></td><td>Metildopa</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000101092<a name="WHODrugDCCS-00000101092"> </a></td><td>Etildopanan</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000101093<a name="WHODrugDCCS-00000101093"> </a></td><td>Aldotensin</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000101094<a name="WHODrugDCCS-00000101094"> </a></td><td>Angimet</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000101095<a name="WHODrugDCCS-00000101095"> </a></td><td>Metilcord</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000101096<a name="WHODrugDCCS-00000101096"> </a></td><td>Metilprod</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000101097<a name="WHODrugDCCS-00000101097"> </a></td><td>Pressomet</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000101098<a name="WHODrugDCCS-00000101098"> </a></td><td>Metilpress</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000101099<a name="WHODrugDCCS-00000101099"> </a></td><td>Ductomet</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000101100<a name="WHODrugDCCS-00000101100"> </a></td><td>Tildomet</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000101101<a name="WHODrugDCCS-00000101101"> </a></td><td>Kindomet</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000101102<a name="WHODrugDCCS-00000101102"> </a></td><td>Dometil</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000101103<a name="WHODrugDCCS-00000101103"> </a></td><td>Dopametil</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000101104<a name="WHODrugDCCS-00000101104"> </a></td><td>Aldoless</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000101105<a name="WHODrugDCCS-00000101105"> </a></td><td>Aldotil</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000101106<a name="WHODrugDCCS-00000101106"> </a></td><td>Medpress</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000101107<a name="WHODrugDCCS-00000101107"> </a></td><td>Gendomet</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000101108<a name="WHODrugDCCS-00000101108"> </a></td><td>Metilvita</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000101109<a name="WHODrugDCCS-00000101109"> </a></td><td>Dimipress</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000101110<a name="WHODrugDCCS-00000101110"> </a></td><td>Dopatral</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000101111<a name="WHODrugDCCS-00000101111"> </a></td><td>Dopagrand</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000101117<a name="WHODrugDCCS-00000101117"> </a></td><td>Dopasan</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000101118<a name="WHODrugDCCS-00000101118"> </a></td><td>Tensodopa</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000101121<a name="WHODrugDCCS-00000101121"> </a></td><td>Aldopa</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000101124<a name="WHODrugDCCS-00000101124"> </a></td><td>Coradopa</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000101135<a name="WHODrugDCCS-00000101135"> </a></td><td>Tremesal</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000101152<a name="WHODrugDCCS-00000101152"> </a></td><td>Methyldopa cf</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000101158<a name="WHODrugDCCS-00000101158"> </a></td><td>Metildopamek</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000101173<a name="WHODrugDCCS-00000101173"> </a></td><td>Toparal</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000101178<a name="WHODrugDCCS-00000101178"> </a></td><td>Hipermet</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000101179<a name="WHODrugDCCS-00000101179"> </a></td><td>Metildopa ethical</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000101184<a name="WHODrugDCCS-00000101184"> </a></td><td>Alpha-methyldopa</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000101185<a name="WHODrugDCCS-00000101185"> </a></td><td>Methyldopum anhydricum</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000101187<a name="WHODrugDCCS-00000101187"> </a></td><td>Metildopa icu-vita</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000101188<a name="WHODrugDCCS-00000101188"> </a></td><td>Venopressin</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000101193<a name="WHODrugDCCS-00000101193"> </a></td><td>Dopatab M250</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000101199<a name="WHODrugDCCS-00000101199"> </a></td><td>Furp metildopa</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000101200<a name="WHODrugDCCS-00000101200"> </a></td><td>Lfm metildopa</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000101223<a name="WHODrugDCCS-00000101223"> </a></td><td>Alfametildopa dutriec</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000101224<a name="WHODrugDCCS-00000101224"> </a></td><td>Dopa pres</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000101225<a name="WHODrugDCCS-00000101225"> </a></td><td>Alfametildopa vivele</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000101226<a name="WHODrugDCCS-00000101226"> </a></td><td>Alfametildopa phi</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000101227<a name="WHODrugDCCS-00000101227"> </a></td><td>Alfametildopa heisecke</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000101228<a name="WHODrugDCCS-00000101228"> </a></td><td>Aditol</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000101229<a name="WHODrugDCCS-00000101229"> </a></td><td>Alfametildopa dallas</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000101230<a name="WHODrugDCCS-00000101230"> </a></td><td>Alfametildopa avanova</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000101231<a name="WHODrugDCCS-00000101231"> </a></td><td>Dopabrit</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000101232<a name="WHODrugDCCS-00000101232"> </a></td><td>Apo methyldopa</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000101236<a name="WHODrugDCCS-00000101236"> </a></td><td>Aldoperten</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000101238<a name="WHODrugDCCS-00000101238"> </a></td><td>M dopakant</td></tr><tr><td>1</td><td style="white-space:nowrap">00000202001<a name="WHODrugDCCS-00000202001"> </a></td><td>Orciprenaline sulfate</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000202002<a name="WHODrugDCCS-00000202002"> </a></td><td>Alupent</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000202003<a name="WHODrugDCCS-00000202003"> </a></td><td>Metaprel</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000202005<a name="WHODrugDCCS-00000202005"> </a></td><td>Metaproterenol sulfate</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000202011<a name="WHODrugDCCS-00000202011"> </a></td><td>Metaproterenol</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000202022<a name="WHODrugDCCS-00000202022"> </a></td><td>Metaproternol sulfate</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000202023<a name="WHODrugDCCS-00000202023"> </a></td><td>Orciprenalina</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000202030<a name="WHODrugDCCS-00000202030"> </a></td><td>Orciprenalini sulfas</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000202032<a name="WHODrugDCCS-00000202032"> </a></td><td>Orlin</td></tr><tr><td>1</td><td style="white-space:nowrap">01362601001<a name="WHODrugDCCS-01362601001"> </a></td><td>Montelukast</td></tr><tr><td>2</td><td style="white-space:nowrap">  01362601020<a name="WHODrugDCCS-01362601020"> </a></td><td>Asmax (Montelukast)</td></tr><tr><td>1</td><td style="white-space:nowrap">00000301001<a name="WHODrugDCCS-00000301001"> </a></td><td>Aminosalicylic acid</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000301003<a name="WHODrugDCCS-00000301003"> </a></td><td>Pas</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000301007<a name="WHODrugDCCS-00000301007"> </a></td><td>Para-aminosalicylic acid</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000301008<a name="WHODrugDCCS-00000301008"> </a></td><td>Aminosalylum</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000301014<a name="WHODrugDCCS-00000301014"> </a></td><td>Paser</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000301023<a name="WHODrugDCCS-00000301023"> </a></td><td>4-aminosalicylic acid</td></tr><tr><td>1</td><td style="white-space:nowrap">00000304001<a name="WHODrugDCCS-00000304001"> </a></td><td>Aminosalicylate sodium</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000304004<a name="WHODrugDCCS-00000304004"> </a></td><td>Sodium pas</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000304018<a name="WHODrugDCCS-00000304018"> </a></td><td>Monopas</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000304019<a name="WHODrugDCCS-00000304019"> </a></td><td>Pas</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000304031<a name="WHODrugDCCS-00000304031"> </a></td><td>Sodium aminosalicylate</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000304040<a name="WHODrugDCCS-00000304040"> </a></td><td>Aminosalicylic acid sodium</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000304041<a name="WHODrugDCCS-00000304041"> </a></td><td>Med pass</td></tr><tr><td>1</td><td style="white-space:nowrap">00000401001<a name="WHODrugDCCS-00000401001"> </a></td><td>Diphenhydramine</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000401021<a name="WHODrugDCCS-00000401021"> </a></td><td>Bionaryl</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000401022<a name="WHODrugDCCS-00000401022"> </a></td><td>Therafilm</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000401023<a name="WHODrugDCCS-00000401023"> </a></td><td>Difenidrammina</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000401024<a name="WHODrugDCCS-00000401024"> </a></td><td>Diphenhydraminum</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000401025<a name="WHODrugDCCS-00000401025"> </a></td><td>Difenhidramina</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000401028<a name="WHODrugDCCS-00000401028"> </a></td><td>Gelbeck</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000401029<a name="WHODrugDCCS-00000401029"> </a></td><td>Blenifen</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000401030<a name="WHODrugDCCS-00000401030"> </a></td><td>Difenhidramina larjan</td></tr><tr><td>1</td><td style="white-space:nowrap">00000402001<a name="WHODrugDCCS-00000402001"> </a></td><td>Diphenhydramine hydrochloride</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402002<a name="WHODrugDCCS-00000402002"> </a></td><td>Benadryl</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402027<a name="WHODrugDCCS-00000402027"> </a></td><td>Diphenhist</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402031<a name="WHODrugDCCS-00000402031"> </a></td><td>Hydramine</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402032<a name="WHODrugDCCS-00000402032"> </a></td><td>Unisom</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402036<a name="WHODrugDCCS-00000402036"> </a></td><td>Dimedrolum</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402045<a name="WHODrugDCCS-00000402045"> </a></td><td>Nytol</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402058<a name="WHODrugDCCS-00000402058"> </a></td><td>Simply sleep</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402085<a name="WHODrugDCCS-00000402085"> </a></td><td>Difenhidramina gi</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402086<a name="WHODrugDCCS-00000402086"> </a></td><td>Indumir</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402087<a name="WHODrugDCCS-00000402087"> </a></td><td>Brudifen</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402088<a name="WHODrugDCCS-00000402088"> </a></td><td>Bonanoti</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402089<a name="WHODrugDCCS-00000402089"> </a></td><td>Tovan</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402092<a name="WHODrugDCCS-00000402092"> </a></td><td>Diphenhydramine</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402109<a name="WHODrugDCCS-00000402109"> </a></td><td>Diphenhydramin hcl</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402110<a name="WHODrugDCCS-00000402110"> </a></td><td>Altaryl</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402111<a name="WHODrugDCCS-00000402111"> </a></td><td>Siladryl</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402113<a name="WHODrugDCCS-00000402113"> </a></td><td>Benadryl Allergy</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402116<a name="WHODrugDCCS-00000402116"> </a></td><td>Compoz</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402117<a name="WHODrugDCCS-00000402117"> </a></td><td>Silphen</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402126<a name="WHODrugDCCS-00000402126"> </a></td><td>Fada difenhidramin</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402127<a name="WHODrugDCCS-00000402127"> </a></td><td>Klonadryl antialergico</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402129<a name="WHODrugDCCS-00000402129"> </a></td><td>Difenhidramina df</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402130<a name="WHODrugDCCS-00000402130"> </a></td><td>Histaler</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402131<a name="WHODrugDCCS-00000402131"> </a></td><td>Fabolergic</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402144<a name="WHODrugDCCS-00000402144"> </a></td><td>Cielozam</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402145<a name="WHODrugDCCS-00000402145"> </a></td><td>Benadryl A</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402153<a name="WHODrugDCCS-00000402153"> </a></td><td>Difedrin</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402154<a name="WHODrugDCCS-00000402154"> </a></td><td>Fendramin</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402155<a name="WHODrugDCCS-00000402155"> </a></td><td>Difenhidramina</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402156<a name="WHODrugDCCS-00000402156"> </a></td><td>Histam</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402157<a name="WHODrugDCCS-00000402157"> </a></td><td>Histomin</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402158<a name="WHODrugDCCS-00000402158"> </a></td><td>Aledryl</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402159<a name="WHODrugDCCS-00000402159"> </a></td><td>Antalergin</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402160<a name="WHODrugDCCS-00000402160"> </a></td><td>Benacyma</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402161<a name="WHODrugDCCS-00000402161"> </a></td><td>Idramin</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402162<a name="WHODrugDCCS-00000402162"> </a></td><td>Fenilar</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402163<a name="WHODrugDCCS-00000402163"> </a></td><td>Fenidramin</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402172<a name="WHODrugDCCS-00000402172"> </a></td><td>Pasifen</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402173<a name="WHODrugDCCS-00000402173"> </a></td><td>Somol</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402189<a name="WHODrugDCCS-00000402189"> </a></td><td>Antil</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402190<a name="WHODrugDCCS-00000402190"> </a></td><td>Cerylana</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402191<a name="WHODrugDCCS-00000402191"> </a></td><td>Childrens allergy</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402192<a name="WHODrugDCCS-00000402192"> </a></td><td>Complete allergy</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402225<a name="WHODrugDCCS-00000402225"> </a></td><td>Dermarest Dricort</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402232<a name="WHODrugDCCS-00000402232"> </a></td><td>Benadrilina</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402234<a name="WHODrugDCCS-00000402234"> </a></td><td>Nauzene</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402246<a name="WHODrugDCCS-00000402246"> </a></td><td>Diphenhydramine HCL</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402252<a name="WHODrugDCCS-00000402252"> </a></td><td>Dormilong</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402253<a name="WHODrugDCCS-00000402253"> </a></td><td>Diphenhydramin Hydrchloride</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402254<a name="WHODrugDCCS-00000402254"> </a></td><td>Triaminic Cough and Runny Nose</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402263<a name="WHODrugDCCS-00000402263"> </a></td><td>Geri-dryl allergy relief</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402274<a name="WHODrugDCCS-00000402274"> </a></td><td>Dicopanol</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402279<a name="WHODrugDCCS-00000402279"> </a></td><td>Nelfigen</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402280<a name="WHODrugDCCS-00000402280"> </a></td><td>Itch Relief</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402283<a name="WHODrugDCCS-00000402283"> </a></td><td>Theraflu Alergia</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402284<a name="WHODrugDCCS-00000402284"> </a></td><td>Difenhidramina Northia</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402288<a name="WHODrugDCCS-00000402288"> </a></td><td>Diphenhydramin hydrochloride</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402300<a name="WHODrugDCCS-00000402300"> </a></td><td>Pharbedryl</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402306<a name="WHODrugDCCS-00000402306"> </a></td><td>Dormessa</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402308<a name="WHODrugDCCS-00000402308"> </a></td><td>Amodormin</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402310<a name="WHODrugDCCS-00000402310"> </a></td><td>Lurispan</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402311<a name="WHODrugDCCS-00000402311"> </a></td><td>Drafen</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402312<a name="WHODrugDCCS-00000402312"> </a></td><td>Vicnite</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402316<a name="WHODrugDCCS-00000402316"> </a></td><td>Drepatil</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402320<a name="WHODrugDCCS-00000402320"> </a></td><td>Difenhidramina fada</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402321<a name="WHODrugDCCS-00000402321"> </a></td><td>Fadalex</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402324<a name="WHODrugDCCS-00000402324"> </a></td><td>Difenhidramina sintesis</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402325<a name="WHODrugDCCS-00000402325"> </a></td><td>Morfeo</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402326<a name="WHODrugDCCS-00000402326"> </a></td><td>Zzzquil</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402328<a name="WHODrugDCCS-00000402328"> </a></td><td>Dormotin</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402329<a name="WHODrugDCCS-00000402329"> </a></td><td>Triaminic allergy</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402330<a name="WHODrugDCCS-00000402330"> </a></td><td>Alka seltzer plus allergy</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402333<a name="WHODrugDCCS-00000402333"> </a></td><td>Fendramin sueno</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402343<a name="WHODrugDCCS-00000402343"> </a></td><td>Benzhydramine HCL</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402344<a name="WHODrugDCCS-00000402344"> </a></td><td>Benzhydramine hydrochloride</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402345<a name="WHODrugDCCS-00000402345"> </a></td><td>Diphenhydramini hydrochloridum</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402349<a name="WHODrugDCCS-00000402349"> </a></td><td>Difenhidramina puntanos</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402361<a name="WHODrugDCCS-00000402361"> </a></td><td>Difenhidramina surar pharma</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402366<a name="WHODrugDCCS-00000402366"> </a></td><td>Nighttime sleep aid</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402377<a name="WHODrugDCCS-00000402377"> </a></td><td>Difenidrin</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402379<a name="WHODrugDCCS-00000402379"> </a></td><td>Difenhidramina clorhidrato</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402388<a name="WHODrugDCCS-00000402388"> </a></td><td>The itch eraser max strength</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402389<a name="WHODrugDCCS-00000402389"> </a></td><td>Unisom sleepgels</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402391<a name="WHODrugDCCS-00000402391"> </a></td><td>Vanamine pd</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402397<a name="WHODrugDCCS-00000402397"> </a></td><td>Dormin</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402399<a name="WHODrugDCCS-00000402399"> </a></td><td>Vickzzz</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402402<a name="WHODrugDCCS-00000402402"> </a></td><td>Geri dryl liquid allergy relief</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402407<a name="WHODrugDCCS-00000402407"> </a></td><td>Unisom sleepmelts</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402414<a name="WHODrugDCCS-00000402414"> </a></td><td>Sleepy</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402416<a name="WHODrugDCCS-00000402416"> </a></td><td>Hidrigort</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402417<a name="WHODrugDCCS-00000402417"> </a></td><td>Melatol difen</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402419<a name="WHODrugDCCS-00000402419"> </a></td><td>Childrens dye free diphenhydramine hcl</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402422<a name="WHODrugDCCS-00000402422"> </a></td><td>Childrens pediaclear cough</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402423<a name="WHODrugDCCS-00000402423"> </a></td><td>Samay sleep gels</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402424<a name="WHODrugDCCS-00000402424"> </a></td><td>M dryl</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402425<a name="WHODrugDCCS-00000402425"> </a></td><td>Diphen elixir</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402428<a name="WHODrugDCCS-00000402428"> </a></td><td>Liquid allergy relief</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402439<a name="WHODrugDCCS-00000402439"> </a></td><td>Nervessa</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402442<a name="WHODrugDCCS-00000402442"> </a></td><td>Ferlen plus</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402446<a name="WHODrugDCCS-00000402446"> </a></td><td>Di phen</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402447<a name="WHODrugDCCS-00000402447"> </a></td><td>Nyquil z</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402448<a name="WHODrugDCCS-00000402448"> </a></td><td>Sorenex</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402450<a name="WHODrugDCCS-00000402450"> </a></td><td>Bionaryl</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402451<a name="WHODrugDCCS-00000402451"> </a></td><td>Difamhed</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402452<a name="WHODrugDCCS-00000402452"> </a></td><td>Difenhistat</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402453<a name="WHODrugDCCS-00000402453"> </a></td><td>Difedram</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402454<a name="WHODrugDCCS-00000402454"> </a></td><td>Ulcoid</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402459<a name="WHODrugDCCS-00000402459"> </a></td><td>Noctamid</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402468<a name="WHODrugDCCS-00000402468"> </a></td><td>Difenhidramina hcl</td></tr><tr><td>2</td><td style="white-space:nowrap">  00000402491<a name="WHODrugDCCS-00000402491"> </a></td><td>Sloth</td></tr><tr><td>1</td><td style="white-space:nowrap">15268625001<a name="WHODrugDCCS-15268625001"> </a></td><td>Tozinameran</td></tr></table></div>
+  </text>
+  <url value="https://paho.org/fhir/esavi/CodeSystem/WHODrugDCCS"/>
+  <version value="0.2.0"/>
+  <name value="WHODrugDCCS"/>
+  <title value="WHODrug DrugCode"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-05-25T00:00:00-04:00"/>
+  <publisher value="ESAVI -"/>
+  <contact>
+    <name value="ESAVI -"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://covid-19pharmacovigilance.paho.org/resources/updates-on-aefi"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="rizzatodan@paho.org"/>
+    </telecom>
+  </contact>
+  <description value="Fragmento de WHODrug completo con nombres genéricos y comerciales en inglés mayormente codificados por drugcode"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="false"/>
+  <hierarchyMeaning value="is-a"/>
+  <content value="fragment"/>
+  <concept>
+    <code value="00000101001"/>
+    <display value="Methyldopa"/>
+    <concept>
+      <code value="00000101002"/>
+      <display value="Aldomet"/>
+    </concept>
+    <concept>
+      <code value="00000101012"/>
+      <display value="Metyldopa"/>
+    </concept>
+    <concept>
+      <code value="00000101041"/>
+      <display value="Alfametildopa"/>
+    </concept>
+    <concept>
+      <code value="00000101044"/>
+      <display value="Almedop"/>
+    </concept>
+    <concept>
+      <code value="00000101045"/>
+      <display value="Cardin"/>
+    </concept>
+    <concept>
+      <code value="00000101046"/>
+      <display value="Methyldopum"/>
+    </concept>
+    <concept>
+      <code value="00000101086"/>
+      <display value="Prodop"/>
+    </concept>
+    <concept>
+      <code value="00000101087"/>
+      <display value="Hipermessel"/>
+    </concept>
+    <concept>
+      <code value="00000101089"/>
+      <display value="Tensioval"/>
+    </concept>
+    <concept>
+      <code value="00000101090"/>
+      <display value="Cardiodopa"/>
+    </concept>
+    <concept>
+      <code value="00000101091"/>
+      <display value="Metildopa"/>
+    </concept>
+    <concept>
+      <code value="00000101092"/>
+      <display value="Etildopanan"/>
+    </concept>
+    <concept>
+      <code value="00000101093"/>
+      <display value="Aldotensin"/>
+    </concept>
+    <concept>
+      <code value="00000101094"/>
+      <display value="Angimet"/>
+    </concept>
+    <concept>
+      <code value="00000101095"/>
+      <display value="Metilcord"/>
+    </concept>
+    <concept>
+      <code value="00000101096"/>
+      <display value="Metilprod"/>
+    </concept>
+    <concept>
+      <code value="00000101097"/>
+      <display value="Pressomet"/>
+    </concept>
+    <concept>
+      <code value="00000101098"/>
+      <display value="Metilpress"/>
+    </concept>
+    <concept>
+      <code value="00000101099"/>
+      <display value="Ductomet"/>
+    </concept>
+    <concept>
+      <code value="00000101100"/>
+      <display value="Tildomet"/>
+    </concept>
+    <concept>
+      <code value="00000101101"/>
+      <display value="Kindomet"/>
+    </concept>
+    <concept>
+      <code value="00000101102"/>
+      <display value="Dometil"/>
+    </concept>
+    <concept>
+      <code value="00000101103"/>
+      <display value="Dopametil"/>
+    </concept>
+    <concept>
+      <code value="00000101104"/>
+      <display value="Aldoless"/>
+    </concept>
+    <concept>
+      <code value="00000101105"/>
+      <display value="Aldotil"/>
+    </concept>
+    <concept>
+      <code value="00000101106"/>
+      <display value="Medpress"/>
+    </concept>
+    <concept>
+      <code value="00000101107"/>
+      <display value="Gendomet"/>
+    </concept>
+    <concept>
+      <code value="00000101108"/>
+      <display value="Metilvita"/>
+    </concept>
+    <concept>
+      <code value="00000101109"/>
+      <display value="Dimipress"/>
+    </concept>
+    <concept>
+      <code value="00000101110"/>
+      <display value="Dopatral"/>
+    </concept>
+    <concept>
+      <code value="00000101111"/>
+      <display value="Dopagrand"/>
+    </concept>
+    <concept>
+      <code value="00000101117"/>
+      <display value="Dopasan"/>
+    </concept>
+    <concept>
+      <code value="00000101118"/>
+      <display value="Tensodopa"/>
+    </concept>
+    <concept>
+      <code value="00000101121"/>
+      <display value="Aldopa"/>
+    </concept>
+    <concept>
+      <code value="00000101124"/>
+      <display value="Coradopa"/>
+    </concept>
+    <concept>
+      <code value="00000101135"/>
+      <display value="Tremesal"/>
+    </concept>
+    <concept>
+      <code value="00000101152"/>
+      <display value="Methyldopa cf"/>
+    </concept>
+    <concept>
+      <code value="00000101158"/>
+      <display value="Metildopamek"/>
+    </concept>
+    <concept>
+      <code value="00000101173"/>
+      <display value="Toparal"/>
+    </concept>
+    <concept>
+      <code value="00000101178"/>
+      <display value="Hipermet"/>
+    </concept>
+    <concept>
+      <code value="00000101179"/>
+      <display value="Metildopa ethical"/>
+    </concept>
+    <concept>
+      <code value="00000101184"/>
+      <display value="Alpha-methyldopa"/>
+    </concept>
+    <concept>
+      <code value="00000101185"/>
+      <display value="Methyldopum anhydricum"/>
+    </concept>
+    <concept>
+      <code value="00000101187"/>
+      <display value="Metildopa icu-vita"/>
+    </concept>
+    <concept>
+      <code value="00000101188"/>
+      <display value="Venopressin"/>
+    </concept>
+    <concept>
+      <code value="00000101193"/>
+      <display value="Dopatab M250"/>
+    </concept>
+    <concept>
+      <code value="00000101199"/>
+      <display value="Furp metildopa"/>
+    </concept>
+    <concept>
+      <code value="00000101200"/>
+      <display value="Lfm metildopa"/>
+    </concept>
+    <concept>
+      <code value="00000101223"/>
+      <display value="Alfametildopa dutriec"/>
+    </concept>
+    <concept>
+      <code value="00000101224"/>
+      <display value="Dopa pres"/>
+    </concept>
+    <concept>
+      <code value="00000101225"/>
+      <display value="Alfametildopa vivele"/>
+    </concept>
+    <concept>
+      <code value="00000101226"/>
+      <display value="Alfametildopa phi"/>
+    </concept>
+    <concept>
+      <code value="00000101227"/>
+      <display value="Alfametildopa heisecke"/>
+    </concept>
+    <concept>
+      <code value="00000101228"/>
+      <display value="Aditol"/>
+    </concept>
+    <concept>
+      <code value="00000101229"/>
+      <display value="Alfametildopa dallas"/>
+    </concept>
+    <concept>
+      <code value="00000101230"/>
+      <display value="Alfametildopa avanova"/>
+    </concept>
+    <concept>
+      <code value="00000101231"/>
+      <display value="Dopabrit"/>
+    </concept>
+    <concept>
+      <code value="00000101232"/>
+      <display value="Apo methyldopa"/>
+    </concept>
+    <concept>
+      <code value="00000101236"/>
+      <display value="Aldoperten"/>
+    </concept>
+    <concept>
+      <code value="00000101238"/>
+      <display value="M dopakant"/>
+    </concept>
+  </concept>
+  <concept>
+    <code value="00000202001"/>
+    <display value="Orciprenaline sulfate"/>
+    <concept>
+      <code value="00000202002"/>
+      <display value="Alupent"/>
+    </concept>
+    <concept>
+      <code value="00000202003"/>
+      <display value="Metaprel"/>
+    </concept>
+    <concept>
+      <code value="00000202005"/>
+      <display value="Metaproterenol sulfate"/>
+    </concept>
+    <concept>
+      <code value="00000202011"/>
+      <display value="Metaproterenol"/>
+    </concept>
+    <concept>
+      <code value="00000202022"/>
+      <display value="Metaproternol sulfate"/>
+    </concept>
+    <concept>
+      <code value="00000202023"/>
+      <display value="Orciprenalina"/>
+    </concept>
+    <concept>
+      <code value="00000202030"/>
+      <display value="Orciprenalini sulfas"/>
+    </concept>
+    <concept>
+      <code value="00000202032"/>
+      <display value="Orlin"/>
+    </concept>
+  </concept>
+  <concept>
+    <code value="01362601001"/>
+    <display value="Montelukast"/>
+    <concept>
+      <code value="01362601020"/>
+      <display value="Asmax (Montelukast)"/>
+    </concept>
+  </concept>
+  <concept>
+    <code value="00000301001"/>
+    <display value="Aminosalicylic acid"/>
+    <concept>
+      <code value="00000301003"/>
+      <display value="Pas"/>
+    </concept>
+    <concept>
+      <code value="00000301007"/>
+      <display value="Para-aminosalicylic acid"/>
+    </concept>
+    <concept>
+      <code value="00000301008"/>
+      <display value="Aminosalylum"/>
+    </concept>
+    <concept>
+      <code value="00000301014"/>
+      <display value="Paser"/>
+    </concept>
+    <concept>
+      <code value="00000301023"/>
+      <display value="4-aminosalicylic acid"/>
+    </concept>
+  </concept>
+  <concept>
+    <code value="00000304001"/>
+    <display value="Aminosalicylate sodium"/>
+    <concept>
+      <code value="00000304004"/>
+      <display value="Sodium pas"/>
+    </concept>
+    <concept>
+      <code value="00000304018"/>
+      <display value="Monopas"/>
+    </concept>
+    <concept>
+      <code value="00000304019"/>
+      <display value="Pas"/>
+    </concept>
+    <concept>
+      <code value="00000304031"/>
+      <display value="Sodium aminosalicylate"/>
+    </concept>
+    <concept>
+      <code value="00000304040"/>
+      <display value="Aminosalicylic acid sodium"/>
+    </concept>
+    <concept>
+      <code value="00000304041"/>
+      <display value="Med pass"/>
+    </concept>
+  </concept>
+  <concept>
+    <code value="00000401001"/>
+    <display value="Diphenhydramine"/>
+    <concept>
+      <code value="00000401021"/>
+      <display value="Bionaryl"/>
+    </concept>
+    <concept>
+      <code value="00000401022"/>
+      <display value="Therafilm"/>
+    </concept>
+    <concept>
+      <code value="00000401023"/>
+      <display value="Difenidrammina"/>
+    </concept>
+    <concept>
+      <code value="00000401024"/>
+      <display value="Diphenhydraminum"/>
+    </concept>
+    <concept>
+      <code value="00000401025"/>
+      <display value="Difenhidramina"/>
+    </concept>
+    <concept>
+      <code value="00000401028"/>
+      <display value="Gelbeck"/>
+    </concept>
+    <concept>
+      <code value="00000401029"/>
+      <display value="Blenifen"/>
+    </concept>
+    <concept>
+      <code value="00000401030"/>
+      <display value="Difenhidramina larjan"/>
+    </concept>
+  </concept>
+  <concept>
+    <code value="00000402001"/>
+    <display value="Diphenhydramine hydrochloride"/>
+    <concept>
+      <code value="00000402002"/>
+      <display value="Benadryl"/>
+    </concept>
+    <concept>
+      <code value="00000402027"/>
+      <display value="Diphenhist"/>
+    </concept>
+    <concept>
+      <code value="00000402031"/>
+      <display value="Hydramine"/>
+    </concept>
+    <concept>
+      <code value="00000402032"/>
+      <display value="Unisom"/>
+    </concept>
+    <concept>
+      <code value="00000402036"/>
+      <display value="Dimedrolum"/>
+    </concept>
+    <concept>
+      <code value="00000402045"/>
+      <display value="Nytol"/>
+    </concept>
+    <concept>
+      <code value="00000402058"/>
+      <display value="Simply sleep"/>
+    </concept>
+    <concept>
+      <code value="00000402085"/>
+      <display value="Difenhidramina gi"/>
+    </concept>
+    <concept>
+      <code value="00000402086"/>
+      <display value="Indumir"/>
+    </concept>
+    <concept>
+      <code value="00000402087"/>
+      <display value="Brudifen"/>
+    </concept>
+    <concept>
+      <code value="00000402088"/>
+      <display value="Bonanoti"/>
+    </concept>
+    <concept>
+      <code value="00000402089"/>
+      <display value="Tovan"/>
+    </concept>
+    <concept>
+      <code value="00000402092"/>
+      <display value="Diphenhydramine"/>
+    </concept>
+    <concept>
+      <code value="00000402109"/>
+      <display value="Diphenhydramin hcl"/>
+    </concept>
+    <concept>
+      <code value="00000402110"/>
+      <display value="Altaryl"/>
+    </concept>
+    <concept>
+      <code value="00000402111"/>
+      <display value="Siladryl"/>
+    </concept>
+    <concept>
+      <code value="00000402113"/>
+      <display value="Benadryl Allergy"/>
+    </concept>
+    <concept>
+      <code value="00000402116"/>
+      <display value="Compoz"/>
+    </concept>
+    <concept>
+      <code value="00000402117"/>
+      <display value="Silphen"/>
+    </concept>
+    <concept>
+      <code value="00000402126"/>
+      <display value="Fada difenhidramin"/>
+    </concept>
+    <concept>
+      <code value="00000402127"/>
+      <display value="Klonadryl antialergico"/>
+    </concept>
+    <concept>
+      <code value="00000402129"/>
+      <display value="Difenhidramina df"/>
+    </concept>
+    <concept>
+      <code value="00000402130"/>
+      <display value="Histaler"/>
+    </concept>
+    <concept>
+      <code value="00000402131"/>
+      <display value="Fabolergic"/>
+    </concept>
+    <concept>
+      <code value="00000402144"/>
+      <display value="Cielozam"/>
+    </concept>
+    <concept>
+      <code value="00000402145"/>
+      <display value="Benadryl A"/>
+    </concept>
+    <concept>
+      <code value="00000402153"/>
+      <display value="Difedrin"/>
+    </concept>
+    <concept>
+      <code value="00000402154"/>
+      <display value="Fendramin"/>
+    </concept>
+    <concept>
+      <code value="00000402155"/>
+      <display value="Difenhidramina"/>
+    </concept>
+    <concept>
+      <code value="00000402156"/>
+      <display value="Histam"/>
+    </concept>
+    <concept>
+      <code value="00000402157"/>
+      <display value="Histomin"/>
+    </concept>
+    <concept>
+      <code value="00000402158"/>
+      <display value="Aledryl"/>
+    </concept>
+    <concept>
+      <code value="00000402159"/>
+      <display value="Antalergin"/>
+    </concept>
+    <concept>
+      <code value="00000402160"/>
+      <display value="Benacyma"/>
+    </concept>
+    <concept>
+      <code value="00000402161"/>
+      <display value="Idramin"/>
+    </concept>
+    <concept>
+      <code value="00000402162"/>
+      <display value="Fenilar"/>
+    </concept>
+    <concept>
+      <code value="00000402163"/>
+      <display value="Fenidramin"/>
+    </concept>
+    <concept>
+      <code value="00000402172"/>
+      <display value="Pasifen"/>
+    </concept>
+    <concept>
+      <code value="00000402173"/>
+      <display value="Somol"/>
+    </concept>
+    <concept>
+      <code value="00000402189"/>
+      <display value="Antil"/>
+    </concept>
+    <concept>
+      <code value="00000402190"/>
+      <display value="Cerylana"/>
+    </concept>
+    <concept>
+      <code value="00000402191"/>
+      <display value="Childrens allergy"/>
+    </concept>
+    <concept>
+      <code value="00000402192"/>
+      <display value="Complete allergy"/>
+    </concept>
+    <concept>
+      <code value="00000402225"/>
+      <display value="Dermarest Dricort"/>
+    </concept>
+    <concept>
+      <code value="00000402232"/>
+      <display value="Benadrilina"/>
+    </concept>
+    <concept>
+      <code value="00000402234"/>
+      <display value="Nauzene"/>
+    </concept>
+    <concept>
+      <code value="00000402246"/>
+      <display value="Diphenhydramine HCL"/>
+    </concept>
+    <concept>
+      <code value="00000402252"/>
+      <display value="Dormilong"/>
+    </concept>
+    <concept>
+      <code value="00000402253"/>
+      <display value="Diphenhydramin Hydrchloride"/>
+    </concept>
+    <concept>
+      <code value="00000402254"/>
+      <display value="Triaminic Cough and Runny Nose"/>
+    </concept>
+    <concept>
+      <code value="00000402263"/>
+      <display value="Geri-dryl allergy relief"/>
+    </concept>
+    <concept>
+      <code value="00000402274"/>
+      <display value="Dicopanol"/>
+    </concept>
+    <concept>
+      <code value="00000402279"/>
+      <display value="Nelfigen"/>
+    </concept>
+    <concept>
+      <code value="00000402280"/>
+      <display value="Itch Relief"/>
+    </concept>
+    <concept>
+      <code value="00000402283"/>
+      <display value="Theraflu Alergia"/>
+    </concept>
+    <concept>
+      <code value="00000402284"/>
+      <display value="Difenhidramina Northia"/>
+    </concept>
+    <concept>
+      <code value="00000402288"/>
+      <display value="Diphenhydramin hydrochloride"/>
+    </concept>
+    <concept>
+      <code value="00000402300"/>
+      <display value="Pharbedryl"/>
+    </concept>
+    <concept>
+      <code value="00000402306"/>
+      <display value="Dormessa"/>
+    </concept>
+    <concept>
+      <code value="00000402308"/>
+      <display value="Amodormin"/>
+    </concept>
+    <concept>
+      <code value="00000402310"/>
+      <display value="Lurispan"/>
+    </concept>
+    <concept>
+      <code value="00000402311"/>
+      <display value="Drafen"/>
+    </concept>
+    <concept>
+      <code value="00000402312"/>
+      <display value="Vicnite"/>
+    </concept>
+    <concept>
+      <code value="00000402316"/>
+      <display value="Drepatil"/>
+    </concept>
+    <concept>
+      <code value="00000402320"/>
+      <display value="Difenhidramina fada"/>
+    </concept>
+    <concept>
+      <code value="00000402321"/>
+      <display value="Fadalex"/>
+    </concept>
+    <concept>
+      <code value="00000402324"/>
+      <display value="Difenhidramina sintesis"/>
+    </concept>
+    <concept>
+      <code value="00000402325"/>
+      <display value="Morfeo"/>
+    </concept>
+    <concept>
+      <code value="00000402326"/>
+      <display value="Zzzquil"/>
+    </concept>
+    <concept>
+      <code value="00000402328"/>
+      <display value="Dormotin"/>
+    </concept>
+    <concept>
+      <code value="00000402329"/>
+      <display value="Triaminic allergy"/>
+    </concept>
+    <concept>
+      <code value="00000402330"/>
+      <display value="Alka seltzer plus allergy"/>
+    </concept>
+    <concept>
+      <code value="00000402333"/>
+      <display value="Fendramin sueno"/>
+    </concept>
+    <concept>
+      <code value="00000402343"/>
+      <display value="Benzhydramine HCL"/>
+    </concept>
+    <concept>
+      <code value="00000402344"/>
+      <display value="Benzhydramine hydrochloride"/>
+    </concept>
+    <concept>
+      <code value="00000402345"/>
+      <display value="Diphenhydramini hydrochloridum"/>
+    </concept>
+    <concept>
+      <code value="00000402349"/>
+      <display value="Difenhidramina puntanos"/>
+    </concept>
+    <concept>
+      <code value="00000402361"/>
+      <display value="Difenhidramina surar pharma"/>
+    </concept>
+    <concept>
+      <code value="00000402366"/>
+      <display value="Nighttime sleep aid"/>
+    </concept>
+    <concept>
+      <code value="00000402377"/>
+      <display value="Difenidrin"/>
+    </concept>
+    <concept>
+      <code value="00000402379"/>
+      <display value="Difenhidramina clorhidrato"/>
+    </concept>
+    <concept>
+      <code value="00000402388"/>
+      <display value="The itch eraser max strength"/>
+    </concept>
+    <concept>
+      <code value="00000402389"/>
+      <display value="Unisom sleepgels"/>
+    </concept>
+    <concept>
+      <code value="00000402391"/>
+      <display value="Vanamine pd"/>
+    </concept>
+    <concept>
+      <code value="00000402397"/>
+      <display value="Dormin"/>
+    </concept>
+    <concept>
+      <code value="00000402399"/>
+      <display value="Vickzzz"/>
+    </concept>
+    <concept>
+      <code value="00000402402"/>
+      <display value="Geri dryl liquid allergy relief"/>
+    </concept>
+    <concept>
+      <code value="00000402407"/>
+      <display value="Unisom sleepmelts"/>
+    </concept>
+    <concept>
+      <code value="00000402414"/>
+      <display value="Sleepy"/>
+    </concept>
+    <concept>
+      <code value="00000402416"/>
+      <display value="Hidrigort"/>
+    </concept>
+    <concept>
+      <code value="00000402417"/>
+      <display value="Melatol difen"/>
+    </concept>
+    <concept>
+      <code value="00000402419"/>
+      <display value="Childrens dye free diphenhydramine hcl"/>
+    </concept>
+    <concept>
+      <code value="00000402422"/>
+      <display value="Childrens pediaclear cough"/>
+    </concept>
+    <concept>
+      <code value="00000402423"/>
+      <display value="Samay sleep gels"/>
+    </concept>
+    <concept>
+      <code value="00000402424"/>
+      <display value="M dryl"/>
+    </concept>
+    <concept>
+      <code value="00000402425"/>
+      <display value="Diphen elixir"/>
+    </concept>
+    <concept>
+      <code value="00000402428"/>
+      <display value="Liquid allergy relief"/>
+    </concept>
+    <concept>
+      <code value="00000402439"/>
+      <display value="Nervessa"/>
+    </concept>
+    <concept>
+      <code value="00000402442"/>
+      <display value="Ferlen plus"/>
+    </concept>
+    <concept>
+      <code value="00000402446"/>
+      <display value="Di phen"/>
+    </concept>
+    <concept>
+      <code value="00000402447"/>
+      <display value="Nyquil z"/>
+    </concept>
+    <concept>
+      <code value="00000402448"/>
+      <display value="Sorenex"/>
+    </concept>
+    <concept>
+      <code value="00000402450"/>
+      <display value="Bionaryl"/>
+    </concept>
+    <concept>
+      <code value="00000402451"/>
+      <display value="Difamhed"/>
+    </concept>
+    <concept>
+      <code value="00000402452"/>
+      <display value="Difenhistat"/>
+    </concept>
+    <concept>
+      <code value="00000402453"/>
+      <display value="Difedram"/>
+    </concept>
+    <concept>
+      <code value="00000402454"/>
+      <display value="Ulcoid"/>
+    </concept>
+    <concept>
+      <code value="00000402459"/>
+      <display value="Noctamid"/>
+    </concept>
+    <concept>
+      <code value="00000402468"/>
+      <display value="Difenhidramina hcl"/>
+    </concept>
+    <concept>
+      <code value="00000402491"/>
+      <display value="Sloth"/>
+    </concept>
+  </concept>
+  <concept>
+    <code value="15268625001"/>
+    <display value="Tozinameran"/>
+  </concept>
+</CodeSystem>

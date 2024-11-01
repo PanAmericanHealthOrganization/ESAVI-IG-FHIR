@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="MedDRACS"/>
+  <meta>
+    <versionId value="1"/>
+    <lastUpdated value="2023-06-27T13:22:48.124+00:00"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem MedDRACS</b></p><a name="MedDRACS"> </a><a name="hcMedDRACS"> </a><a name="MedDRACS-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">version: 1; Last updated: 2023-06-27 13:22:48+0000</p></div><p>This case-insensitive code system <code>https://paho.org/fhir/esavi/CodeSystem/MedDRACS</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">10000001<a name="MedDRACS-10000001"> </a></td><td>Neumonitis de ventilación</td></tr><tr><td style="white-space:nowrap">10000116<a name="MedDRACS-10000116"> </a></td><td>Percepción auditiva anormal no especificada</td></tr><tr><td style="white-space:nowrap">10000118<a name="MedDRACS-10000118"> </a></td><td>Comportamiento anormal NEOM</td></tr><tr><td style="white-space:nowrap">10000119<a name="MedDRACS-10000119"> </a></td><td>Ruidos intestinales anormales</td></tr><tr><td style="white-space:nowrap">10000120<a name="MedDRACS-10000120"> </a></td><td>Ruidos torácicos anormales</td></tr><tr><td style="white-space:nowrap">10000121<a name="MedDRACS-10000121"> </a></td><td>Ruidos torácicos anormales NEOM</td></tr><tr><td style="white-space:nowrap">10000122<a name="MedDRACS-10000122"> </a></td><td>Perfil anormal de coagulación</td></tr><tr><td style="white-space:nowrap">10000123<a name="MedDRACS-10000123"> </a></td><td>Fijación anormal del complemento</td></tr><tr><td style="white-space:nowrap">10000124<a name="MedDRACS-10000124"> </a></td><td>Curva anormal de adaptación a la oscuridad</td></tr><tr><td style="white-space:nowrap">10000125<a name="MedDRACS-10000125"> </a></td><td>Sueños anormales</td></tr><tr><td style="white-space:nowrap">10000126<a name="MedDRACS-10000126"> </a></td><td>ECG anormal</td></tr><tr><td style="white-space:nowrap">10000127<a name="MedDRACS-10000127"> </a></td><td>EEG anormal</td></tr><tr><td style="white-space:nowrap">10000128<a name="MedDRACS-10000128"> </a></td><td>Eyaculación anormal</td></tr><tr><td style="white-space:nowrap">10000129<a name="MedDRACS-10000129"> </a></td><td>ECG anormal</td></tr><tr><td style="white-space:nowrap">10000130<a name="MedDRACS-10000130"> </a></td><td>Electroencefalograma anormal</td></tr><tr><td style="white-space:nowrap">10000131<a name="MedDRACS-10000131"> </a></td><td>EMG anormal</td></tr><tr><td style="white-space:nowrap">10018766<a name="MedDRACS-10018766"> </a></td><td>Síndrome de Guillain Barré</td></tr><tr><td style="white-space:nowrap">10000269<a name="MedDRACS-10000269"> </a></td><td>Absceso</td></tr><tr><td style="white-space:nowrap">10000270<a name="MedDRACS-10000270"> </a></td><td>Absceso anorrectal</td></tr><tr><td style="white-space:nowrap">10001909<a name="MedDRACS-10001909"> </a></td><td>Ambliopía ex anopsia</td></tr><tr><td style="white-space:nowrap">10001911<a name="MedDRACS-10001911"> </a></td><td>Ambliopía NEOM</td></tr><tr><td style="white-space:nowrap">10001912<a name="MedDRACS-10001912"> </a></td><td>Ambliopía estrábica</td></tr><tr><td style="white-space:nowrap">10001913<a name="MedDRACS-10001913"> </a></td><td>Ambliopía por supresión</td></tr><tr><td style="white-space:nowrap">10003229<a name="MedDRACS-10003229"> </a></td><td>Malformaciones arteriovenosas</td></tr><tr><td style="white-space:nowrap">10003230<a name="MedDRACS-10003230"> </a></td><td>Arteritis</td></tr><tr><td style="white-space:nowrap">10003232<a name="MedDRACS-10003232"> </a></td><td>Arteritis coronaria</td></tr><tr><td style="white-space:nowrap">10003233<a name="MedDRACS-10003233"> </a></td><td>Arteritis NEOM</td></tr><tr><td style="white-space:nowrap">10003234<a name="MedDRACS-10003234"> </a></td><td>Arteritis trombótica</td></tr><tr><td style="white-space:nowrap">10003235<a name="MedDRACS-10003235"> </a></td><td>Arteritis no especificada</td></tr><tr><td style="white-space:nowrap">10003236<a name="MedDRACS-10003236"> </a></td><td>Malformación de arteria</td></tr><tr><td style="white-space:nowrap">10003237<a name="MedDRACS-10003237"> </a></td><td>Rotura arterial</td></tr><tr><td style="white-space:nowrap">10003238<a name="MedDRACS-10003238"> </a></td><td>Artropatía no especificada, con afectación de la mano</td></tr><tr><td style="white-space:nowrap">10003239<a name="MedDRACS-10003239"> </a></td><td>Artralgia</td></tr><tr><td style="white-space:nowrap">10003240<a name="MedDRACS-10003240"> </a></td><td>Empeoramiento de la artralgia</td></tr><tr><td style="white-space:nowrap">10005040<a name="MedDRACS-10005040"> </a></td><td>Radioterapia de vejiga con radiación externa</td></tr><tr><td style="white-space:nowrap">10005041<a name="MedDRACS-10005041"> </a></td><td>Radioterapia de vejiga con radiación externa</td></tr><tr><td style="white-space:nowrap">10005042<a name="MedDRACS-10005042"> </a></td><td>Fibrosis vesical</td></tr><tr><td style="white-space:nowrap">10005043<a name="MedDRACS-10005043"> </a></td><td>Granuloma de vejiga</td></tr><tr><td style="white-space:nowrap">10005044<a name="MedDRACS-10005044"> </a></td><td>Hemorragia de la vejiga</td></tr><tr><td style="white-space:nowrap">10005045<a name="MedDRACS-10005045"> </a></td><td>Incapacidad para vaciar la vejiga</td></tr><tr><td style="white-space:nowrap">10005046<a name="MedDRACS-10005046"> </a></td><td>Incontinencia vesical</td></tr><tr><td style="white-space:nowrap">10005047<a name="MedDRACS-10005047"> </a></td><td>Infección vesical</td></tr><tr><td style="white-space:nowrap">10008212<a name="MedDRACS-10008212"> </a></td><td>Ciertas complicaciones precoces de los traumatismos</td></tr><tr><td style="white-space:nowrap">10008213<a name="MedDRACS-10008213"> </a></td><td>Ciertas secuelas del infarto de miocardio no clasificadas bajo otro concepto</td></tr><tr><td style="white-space:nowrap">10008214<a name="MedDRACS-10008214"> </a></td><td>Ciertos tipos de iridociclitis</td></tr><tr><td style="white-space:nowrap">10008215<a name="MedDRACS-10008215"> </a></td><td>Ciertos tipos de queratoconjuntivitis</td></tr><tr><td style="white-space:nowrap">10008216<a name="MedDRACS-10008216"> </a></td><td>Ceruloplasmina anormal</td></tr><tr><td style="white-space:nowrap">10011307<a name="MedDRACS-10011307"> </a></td><td>Lesión traumática de los pares craneales NEOM</td></tr><tr><td style="white-space:nowrap">10011308<a name="MedDRACS-10011308"> </a></td><td>Lesión traumática de pares craneales, secundaria a parto traumático</td></tr><tr><td style="white-space:nowrap">10011309<a name="MedDRACS-10011309"> </a></td><td>Lesión de los pares craneales</td></tr><tr><td style="white-space:nowrap">10011333<a name="MedDRACS-10011333"> </a></td><td>Creatina elevada</td></tr><tr><td style="white-space:nowrap">10011334<a name="MedDRACS-10011334"> </a></td><td>Creatina quinasa</td></tr><tr><td style="white-space:nowrap">10011335<a name="MedDRACS-10011335"> </a></td><td>Creatina quinasa alta</td></tr><tr><td style="white-space:nowrap">10011336<a name="MedDRACS-10011336"> </a></td><td>Creatina quinasa aumentada</td></tr><tr><td style="white-space:nowrap">10011337<a name="MedDRACS-10011337"> </a></td><td>Creatina quinasa MB</td></tr><tr><td style="white-space:nowrap">10011338<a name="MedDRACS-10011338"> </a></td><td>Creatina quinasa MB alta</td></tr><tr><td style="white-space:nowrap">10011339<a name="MedDRACS-10011339"> </a></td><td>Creatina quinasa MB elevada</td></tr></table></div>
+  </text>
+  <url value="https://paho.org/fhir/esavi/CodeSystem/MedDRACS"/>
+  <version value="0.2.0"/>
+  <name value="MedDRACS"/>
+  <title value="Fragmento de MedDRA en español"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-06-27T00:00:00-04:00"/>
+  <publisher value="ESAVI -"/>
+  <contact>
+    <name value="ESAVI -"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://covid-19pharmacovigilance.paho.org/resources/updates-on-aefi"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="rizzatodan@paho.org"/>
+    </telecom>
+  </contact>
+  <description value="Códigos MedDRA con descripción en español"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <count value="57"/>
+  <concept>
+    <code value="10000001"/>
+    <display value="Neumonitis de ventilación"/>
+  </concept>
+  <concept>
+    <code value="10000116"/>
+    <display value="Percepción auditiva anormal no especificada"/>
+  </concept>
+  <concept>
+    <code value="10000118"/>
+    <display value="Comportamiento anormal NEOM"/>
+  </concept>
+  <concept>
+    <code value="10000119"/>
+    <display value="Ruidos intestinales anormales"/>
+  </concept>
+  <concept>
+    <code value="10000120"/>
+    <display value="Ruidos torácicos anormales"/>
+  </concept>
+  <concept>
+    <code value="10000121"/>
+    <display value="Ruidos torácicos anormales NEOM"/>
+  </concept>
+  <concept>
+    <code value="10000122"/>
+    <display value="Perfil anormal de coagulación"/>
+  </concept>
+  <concept>
+    <code value="10000123"/>
+    <display value="Fijación anormal del complemento"/>
+  </concept>
+  <concept>
+    <code value="10000124"/>
+    <display value="Curva anormal de adaptación a la oscuridad"/>
+  </concept>
+  <concept>
+    <code value="10000125"/>
+    <display value="Sueños anormales"/>
+  </concept>
+  <concept>
+    <code value="10000126"/>
+    <display value="ECG anormal"/>
+  </concept>
+  <concept>
+    <code value="10000127"/>
+    <display value="EEG anormal"/>
+  </concept>
+  <concept>
+    <code value="10000128"/>
+    <display value="Eyaculación anormal"/>
+  </concept>
+  <concept>
+    <code value="10000129"/>
+    <display value="ECG anormal"/>
+  </concept>
+  <concept>
+    <code value="10000130"/>
+    <display value="Electroencefalograma anormal"/>
+  </concept>
+  <concept>
+    <code value="10000131"/>
+    <display value="EMG anormal"/>
+  </concept>
+  <concept>
+    <code value="10018766"/>
+    <display value="Síndrome de Guillain Barré"/>
+  </concept>
+  <concept>
+    <code value="10000269"/>
+    <display value="Absceso"/>
+  </concept>
+  <concept>
+    <code value="10000270"/>
+    <display value="Absceso anorrectal"/>
+  </concept>
+  <concept>
+    <code value="10001909"/>
+    <display value="Ambliopía ex anopsia"/>
+  </concept>
+  <concept>
+    <code value="10001911"/>
+    <display value="Ambliopía NEOM"/>
+  </concept>
+  <concept>
+    <code value="10001912"/>
+    <display value="Ambliopía estrábica"/>
+  </concept>
+  <concept>
+    <code value="10001913"/>
+    <display value="Ambliopía por supresión"/>
+  </concept>
+  <concept>
+    <code value="10003229"/>
+    <display value="Malformaciones arteriovenosas"/>
+  </concept>
+  <concept>
+    <code value="10003230"/>
+    <display value="Arteritis"/>
+  </concept>
+  <concept>
+    <code value="10003232"/>
+    <display value="Arteritis coronaria"/>
+  </concept>
+  <concept>
+    <code value="10003233"/>
+    <display value="Arteritis NEOM"/>
+  </concept>
+  <concept>
+    <code value="10003234"/>
+    <display value="Arteritis trombótica"/>
+  </concept>
+  <concept>
+    <code value="10003235"/>
+    <display value="Arteritis no especificada"/>
+  </concept>
+  <concept>
+    <code value="10003236"/>
+    <display value="Malformación de arteria"/>
+  </concept>
+  <concept>
+    <code value="10003237"/>
+    <display value="Rotura arterial"/>
+  </concept>
+  <concept>
+    <code value="10003238"/>
+    <display value="Artropatía no especificada, con afectación de la mano"/>
+  </concept>
+  <concept>
+    <code value="10003239"/>
+    <display value="Artralgia"/>
+  </concept>
+  <concept>
+    <code value="10003240"/>
+    <display value="Empeoramiento de la artralgia"/>
+  </concept>
+  <concept>
+    <code value="10005040"/>
+    <display value="Radioterapia de vejiga con radiación externa"/>
+  </concept>
+  <concept>
+    <code value="10005041"/>
+    <display value="Radioterapia de vejiga con radiación externa"/>
+  </concept>
+  <concept>
+    <code value="10005042"/>
+    <display value="Fibrosis vesical"/>
+  </concept>
+  <concept>
+    <code value="10005043"/>
+    <display value="Granuloma de vejiga"/>
+  </concept>
+  <concept>
+    <code value="10005044"/>
+    <display value="Hemorragia de la vejiga"/>
+  </concept>
+  <concept>
+    <code value="10005045"/>
+    <display value="Incapacidad para vaciar la vejiga"/>
+  </concept>
+  <concept>
+    <code value="10005046"/>
+    <display value="Incontinencia vesical"/>
+  </concept>
+  <concept>
+    <code value="10005047"/>
+    <display value="Infección vesical"/>
+  </concept>
+  <concept>
+    <code value="10008212"/>
+    <display value="Ciertas complicaciones precoces de los traumatismos"/>
+  </concept>
+  <concept>
+    <code value="10008213"/>
+    <display value="Ciertas secuelas del infarto de miocardio no clasificadas bajo otro concepto"/>
+  </concept>
+  <concept>
+    <code value="10008214"/>
+    <display value="Ciertos tipos de iridociclitis"/>
+  </concept>
+  <concept>
+    <code value="10008215"/>
+    <display value="Ciertos tipos de queratoconjuntivitis"/>
+  </concept>
+  <concept>
+    <code value="10008216"/>
+    <display value="Ceruloplasmina anormal"/>
+  </concept>
+  <concept>
+    <code value="10011307"/>
+    <display value="Lesión traumática de los pares craneales NEOM"/>
+  </concept>
+  <concept>
+    <code value="10011308"/>
+    <display value="Lesión traumática de pares craneales, secundaria a parto traumático"/>
+  </concept>
+  <concept>
+    <code value="10011309"/>
+    <display value="Lesión de los pares craneales"/>
+  </concept>
+  <concept>
+    <code value="10011333"/>
+    <display value="Creatina elevada"/>
+  </concept>
+  <concept>
+    <code value="10011334"/>
+    <display value="Creatina quinasa"/>
+  </concept>
+  <concept>
+    <code value="10011335"/>
+    <display value="Creatina quinasa alta"/>
+  </concept>
+  <concept>
+    <code value="10011336"/>
+    <display value="Creatina quinasa aumentada"/>
+  </concept>
+  <concept>
+    <code value="10011337"/>
+    <display value="Creatina quinasa MB"/>
+  </concept>
+  <concept>
+    <code value="10011338"/>
+    <display value="Creatina quinasa MB alta"/>
+  </concept>
+  <concept>
+    <code value="10011339"/>
+    <display value="Creatina quinasa MB elevada"/>
+  </concept>
+</CodeSystem>

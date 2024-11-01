@@ -1,0 +1,675 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://paho.org/fhir/esavi/CodeSystem/WHODrugDCCS> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "WHODrugDCCS"] ; # 
+  fhir:meta [
+     fhir:versionId [ fhir:v "1" ] ;
+     fhir:lastUpdated [ fhir:v "2023-05-25T13:22:48.124+00:00"^^xsd:dateTime ]
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem WHODrugDCCS</b></p><a name=\"WHODrugDCCS\"> </a><a name=\"hcWHODrugDCCS\"> </a><a name=\"WHODrugDCCS-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">version: 1; Last updated: 2023-05-25 13:22:48+0000</p></div><p>This case-insensitive code system <code>https://paho.org/fhir/esavi/CodeSystem/WHODrugDCCS</code> provides <b>a fragment</b> that includes following codes in a Is-A hierarchy:</p><table class=\"codes\"><tr><td><b>Lvl</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>1</td><td style=\"white-space:nowrap\">00000101001<a name=\"WHODrugDCCS-00000101001\"> </a></td><td>Methyldopa</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000101002<a name=\"WHODrugDCCS-00000101002\"> </a></td><td>Aldomet</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000101012<a name=\"WHODrugDCCS-00000101012\"> </a></td><td>Metyldopa</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000101041<a name=\"WHODrugDCCS-00000101041\"> </a></td><td>Alfametildopa</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000101044<a name=\"WHODrugDCCS-00000101044\"> </a></td><td>Almedop</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000101045<a name=\"WHODrugDCCS-00000101045\"> </a></td><td>Cardin</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000101046<a name=\"WHODrugDCCS-00000101046\"> </a></td><td>Methyldopum</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000101086<a name=\"WHODrugDCCS-00000101086\"> </a></td><td>Prodop</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000101087<a name=\"WHODrugDCCS-00000101087\"> </a></td><td>Hipermessel</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000101089<a name=\"WHODrugDCCS-00000101089\"> </a></td><td>Tensioval</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000101090<a name=\"WHODrugDCCS-00000101090\"> </a></td><td>Cardiodopa</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000101091<a name=\"WHODrugDCCS-00000101091\"> </a></td><td>Metildopa</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000101092<a name=\"WHODrugDCCS-00000101092\"> </a></td><td>Etildopanan</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000101093<a name=\"WHODrugDCCS-00000101093\"> </a></td><td>Aldotensin</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000101094<a name=\"WHODrugDCCS-00000101094\"> </a></td><td>Angimet</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000101095<a name=\"WHODrugDCCS-00000101095\"> </a></td><td>Metilcord</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000101096<a name=\"WHODrugDCCS-00000101096\"> </a></td><td>Metilprod</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000101097<a name=\"WHODrugDCCS-00000101097\"> </a></td><td>Pressomet</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000101098<a name=\"WHODrugDCCS-00000101098\"> </a></td><td>Metilpress</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000101099<a name=\"WHODrugDCCS-00000101099\"> </a></td><td>Ductomet</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000101100<a name=\"WHODrugDCCS-00000101100\"> </a></td><td>Tildomet</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000101101<a name=\"WHODrugDCCS-00000101101\"> </a></td><td>Kindomet</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000101102<a name=\"WHODrugDCCS-00000101102\"> </a></td><td>Dometil</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000101103<a name=\"WHODrugDCCS-00000101103\"> </a></td><td>Dopametil</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000101104<a name=\"WHODrugDCCS-00000101104\"> </a></td><td>Aldoless</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000101105<a name=\"WHODrugDCCS-00000101105\"> </a></td><td>Aldotil</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000101106<a name=\"WHODrugDCCS-00000101106\"> </a></td><td>Medpress</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000101107<a name=\"WHODrugDCCS-00000101107\"> </a></td><td>Gendomet</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000101108<a name=\"WHODrugDCCS-00000101108\"> </a></td><td>Metilvita</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000101109<a name=\"WHODrugDCCS-00000101109\"> </a></td><td>Dimipress</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000101110<a name=\"WHODrugDCCS-00000101110\"> </a></td><td>Dopatral</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000101111<a name=\"WHODrugDCCS-00000101111\"> </a></td><td>Dopagrand</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000101117<a name=\"WHODrugDCCS-00000101117\"> </a></td><td>Dopasan</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000101118<a name=\"WHODrugDCCS-00000101118\"> </a></td><td>Tensodopa</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000101121<a name=\"WHODrugDCCS-00000101121\"> </a></td><td>Aldopa</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000101124<a name=\"WHODrugDCCS-00000101124\"> </a></td><td>Coradopa</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000101135<a name=\"WHODrugDCCS-00000101135\"> </a></td><td>Tremesal</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000101152<a name=\"WHODrugDCCS-00000101152\"> </a></td><td>Methyldopa cf</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000101158<a name=\"WHODrugDCCS-00000101158\"> </a></td><td>Metildopamek</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000101173<a name=\"WHODrugDCCS-00000101173\"> </a></td><td>Toparal</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000101178<a name=\"WHODrugDCCS-00000101178\"> </a></td><td>Hipermet</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000101179<a name=\"WHODrugDCCS-00000101179\"> </a></td><td>Metildopa ethical</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000101184<a name=\"WHODrugDCCS-00000101184\"> </a></td><td>Alpha-methyldopa</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000101185<a name=\"WHODrugDCCS-00000101185\"> </a></td><td>Methyldopum anhydricum</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000101187<a name=\"WHODrugDCCS-00000101187\"> </a></td><td>Metildopa icu-vita</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000101188<a name=\"WHODrugDCCS-00000101188\"> </a></td><td>Venopressin</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000101193<a name=\"WHODrugDCCS-00000101193\"> </a></td><td>Dopatab M250</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000101199<a name=\"WHODrugDCCS-00000101199\"> </a></td><td>Furp metildopa</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000101200<a name=\"WHODrugDCCS-00000101200\"> </a></td><td>Lfm metildopa</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000101223<a name=\"WHODrugDCCS-00000101223\"> </a></td><td>Alfametildopa dutriec</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000101224<a name=\"WHODrugDCCS-00000101224\"> </a></td><td>Dopa pres</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000101225<a name=\"WHODrugDCCS-00000101225\"> </a></td><td>Alfametildopa vivele</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000101226<a name=\"WHODrugDCCS-00000101226\"> </a></td><td>Alfametildopa phi</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000101227<a name=\"WHODrugDCCS-00000101227\"> </a></td><td>Alfametildopa heisecke</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000101228<a name=\"WHODrugDCCS-00000101228\"> </a></td><td>Aditol</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000101229<a name=\"WHODrugDCCS-00000101229\"> </a></td><td>Alfametildopa dallas</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000101230<a name=\"WHODrugDCCS-00000101230\"> </a></td><td>Alfametildopa avanova</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000101231<a name=\"WHODrugDCCS-00000101231\"> </a></td><td>Dopabrit</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000101232<a name=\"WHODrugDCCS-00000101232\"> </a></td><td>Apo methyldopa</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000101236<a name=\"WHODrugDCCS-00000101236\"> </a></td><td>Aldoperten</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000101238<a name=\"WHODrugDCCS-00000101238\"> </a></td><td>M dopakant</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">00000202001<a name=\"WHODrugDCCS-00000202001\"> </a></td><td>Orciprenaline sulfate</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000202002<a name=\"WHODrugDCCS-00000202002\"> </a></td><td>Alupent</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000202003<a name=\"WHODrugDCCS-00000202003\"> </a></td><td>Metaprel</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000202005<a name=\"WHODrugDCCS-00000202005\"> </a></td><td>Metaproterenol sulfate</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000202011<a name=\"WHODrugDCCS-00000202011\"> </a></td><td>Metaproterenol</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000202022<a name=\"WHODrugDCCS-00000202022\"> </a></td><td>Metaproternol sulfate</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000202023<a name=\"WHODrugDCCS-00000202023\"> </a></td><td>Orciprenalina</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000202030<a name=\"WHODrugDCCS-00000202030\"> </a></td><td>Orciprenalini sulfas</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000202032<a name=\"WHODrugDCCS-00000202032\"> </a></td><td>Orlin</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">01362601001<a name=\"WHODrugDCCS-01362601001\"> </a></td><td>Montelukast</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  01362601020<a name=\"WHODrugDCCS-01362601020\"> </a></td><td>Asmax (Montelukast)</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">00000301001<a name=\"WHODrugDCCS-00000301001\"> </a></td><td>Aminosalicylic acid</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000301003<a name=\"WHODrugDCCS-00000301003\"> </a></td><td>Pas</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000301007<a name=\"WHODrugDCCS-00000301007\"> </a></td><td>Para-aminosalicylic acid</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000301008<a name=\"WHODrugDCCS-00000301008\"> </a></td><td>Aminosalylum</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000301014<a name=\"WHODrugDCCS-00000301014\"> </a></td><td>Paser</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000301023<a name=\"WHODrugDCCS-00000301023\"> </a></td><td>4-aminosalicylic acid</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">00000304001<a name=\"WHODrugDCCS-00000304001\"> </a></td><td>Aminosalicylate sodium</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000304004<a name=\"WHODrugDCCS-00000304004\"> </a></td><td>Sodium pas</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000304018<a name=\"WHODrugDCCS-00000304018\"> </a></td><td>Monopas</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000304019<a name=\"WHODrugDCCS-00000304019\"> </a></td><td>Pas</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000304031<a name=\"WHODrugDCCS-00000304031\"> </a></td><td>Sodium aminosalicylate</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000304040<a name=\"WHODrugDCCS-00000304040\"> </a></td><td>Aminosalicylic acid sodium</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000304041<a name=\"WHODrugDCCS-00000304041\"> </a></td><td>Med pass</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">00000401001<a name=\"WHODrugDCCS-00000401001\"> </a></td><td>Diphenhydramine</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000401021<a name=\"WHODrugDCCS-00000401021\"> </a></td><td>Bionaryl</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000401022<a name=\"WHODrugDCCS-00000401022\"> </a></td><td>Therafilm</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000401023<a name=\"WHODrugDCCS-00000401023\"> </a></td><td>Difenidrammina</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000401024<a name=\"WHODrugDCCS-00000401024\"> </a></td><td>Diphenhydraminum</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000401025<a name=\"WHODrugDCCS-00000401025\"> </a></td><td>Difenhidramina</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000401028<a name=\"WHODrugDCCS-00000401028\"> </a></td><td>Gelbeck</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000401029<a name=\"WHODrugDCCS-00000401029\"> </a></td><td>Blenifen</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000401030<a name=\"WHODrugDCCS-00000401030\"> </a></td><td>Difenhidramina larjan</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">00000402001<a name=\"WHODrugDCCS-00000402001\"> </a></td><td>Diphenhydramine hydrochloride</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402002<a name=\"WHODrugDCCS-00000402002\"> </a></td><td>Benadryl</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402027<a name=\"WHODrugDCCS-00000402027\"> </a></td><td>Diphenhist</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402031<a name=\"WHODrugDCCS-00000402031\"> </a></td><td>Hydramine</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402032<a name=\"WHODrugDCCS-00000402032\"> </a></td><td>Unisom</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402036<a name=\"WHODrugDCCS-00000402036\"> </a></td><td>Dimedrolum</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402045<a name=\"WHODrugDCCS-00000402045\"> </a></td><td>Nytol</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402058<a name=\"WHODrugDCCS-00000402058\"> </a></td><td>Simply sleep</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402085<a name=\"WHODrugDCCS-00000402085\"> </a></td><td>Difenhidramina gi</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402086<a name=\"WHODrugDCCS-00000402086\"> </a></td><td>Indumir</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402087<a name=\"WHODrugDCCS-00000402087\"> </a></td><td>Brudifen</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402088<a name=\"WHODrugDCCS-00000402088\"> </a></td><td>Bonanoti</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402089<a name=\"WHODrugDCCS-00000402089\"> </a></td><td>Tovan</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402092<a name=\"WHODrugDCCS-00000402092\"> </a></td><td>Diphenhydramine</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402109<a name=\"WHODrugDCCS-00000402109\"> </a></td><td>Diphenhydramin hcl</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402110<a name=\"WHODrugDCCS-00000402110\"> </a></td><td>Altaryl</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402111<a name=\"WHODrugDCCS-00000402111\"> </a></td><td>Siladryl</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402113<a name=\"WHODrugDCCS-00000402113\"> </a></td><td>Benadryl Allergy</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402116<a name=\"WHODrugDCCS-00000402116\"> </a></td><td>Compoz</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402117<a name=\"WHODrugDCCS-00000402117\"> </a></td><td>Silphen</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402126<a name=\"WHODrugDCCS-00000402126\"> </a></td><td>Fada difenhidramin</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402127<a name=\"WHODrugDCCS-00000402127\"> </a></td><td>Klonadryl antialergico</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402129<a name=\"WHODrugDCCS-00000402129\"> </a></td><td>Difenhidramina df</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402130<a name=\"WHODrugDCCS-00000402130\"> </a></td><td>Histaler</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402131<a name=\"WHODrugDCCS-00000402131\"> </a></td><td>Fabolergic</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402144<a name=\"WHODrugDCCS-00000402144\"> </a></td><td>Cielozam</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402145<a name=\"WHODrugDCCS-00000402145\"> </a></td><td>Benadryl A</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402153<a name=\"WHODrugDCCS-00000402153\"> </a></td><td>Difedrin</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402154<a name=\"WHODrugDCCS-00000402154\"> </a></td><td>Fendramin</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402155<a name=\"WHODrugDCCS-00000402155\"> </a></td><td>Difenhidramina</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402156<a name=\"WHODrugDCCS-00000402156\"> </a></td><td>Histam</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402157<a name=\"WHODrugDCCS-00000402157\"> </a></td><td>Histomin</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402158<a name=\"WHODrugDCCS-00000402158\"> </a></td><td>Aledryl</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402159<a name=\"WHODrugDCCS-00000402159\"> </a></td><td>Antalergin</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402160<a name=\"WHODrugDCCS-00000402160\"> </a></td><td>Benacyma</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402161<a name=\"WHODrugDCCS-00000402161\"> </a></td><td>Idramin</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402162<a name=\"WHODrugDCCS-00000402162\"> </a></td><td>Fenilar</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402163<a name=\"WHODrugDCCS-00000402163\"> </a></td><td>Fenidramin</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402172<a name=\"WHODrugDCCS-00000402172\"> </a></td><td>Pasifen</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402173<a name=\"WHODrugDCCS-00000402173\"> </a></td><td>Somol</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402189<a name=\"WHODrugDCCS-00000402189\"> </a></td><td>Antil</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402190<a name=\"WHODrugDCCS-00000402190\"> </a></td><td>Cerylana</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402191<a name=\"WHODrugDCCS-00000402191\"> </a></td><td>Childrens allergy</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402192<a name=\"WHODrugDCCS-00000402192\"> </a></td><td>Complete allergy</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402225<a name=\"WHODrugDCCS-00000402225\"> </a></td><td>Dermarest Dricort</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402232<a name=\"WHODrugDCCS-00000402232\"> </a></td><td>Benadrilina</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402234<a name=\"WHODrugDCCS-00000402234\"> </a></td><td>Nauzene</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402246<a name=\"WHODrugDCCS-00000402246\"> </a></td><td>Diphenhydramine HCL</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402252<a name=\"WHODrugDCCS-00000402252\"> </a></td><td>Dormilong</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402253<a name=\"WHODrugDCCS-00000402253\"> </a></td><td>Diphenhydramin Hydrchloride</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402254<a name=\"WHODrugDCCS-00000402254\"> </a></td><td>Triaminic Cough and Runny Nose</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402263<a name=\"WHODrugDCCS-00000402263\"> </a></td><td>Geri-dryl allergy relief</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402274<a name=\"WHODrugDCCS-00000402274\"> </a></td><td>Dicopanol</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402279<a name=\"WHODrugDCCS-00000402279\"> </a></td><td>Nelfigen</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402280<a name=\"WHODrugDCCS-00000402280\"> </a></td><td>Itch Relief</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402283<a name=\"WHODrugDCCS-00000402283\"> </a></td><td>Theraflu Alergia</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402284<a name=\"WHODrugDCCS-00000402284\"> </a></td><td>Difenhidramina Northia</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402288<a name=\"WHODrugDCCS-00000402288\"> </a></td><td>Diphenhydramin hydrochloride</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402300<a name=\"WHODrugDCCS-00000402300\"> </a></td><td>Pharbedryl</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402306<a name=\"WHODrugDCCS-00000402306\"> </a></td><td>Dormessa</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402308<a name=\"WHODrugDCCS-00000402308\"> </a></td><td>Amodormin</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402310<a name=\"WHODrugDCCS-00000402310\"> </a></td><td>Lurispan</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402311<a name=\"WHODrugDCCS-00000402311\"> </a></td><td>Drafen</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402312<a name=\"WHODrugDCCS-00000402312\"> </a></td><td>Vicnite</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402316<a name=\"WHODrugDCCS-00000402316\"> </a></td><td>Drepatil</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402320<a name=\"WHODrugDCCS-00000402320\"> </a></td><td>Difenhidramina fada</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402321<a name=\"WHODrugDCCS-00000402321\"> </a></td><td>Fadalex</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402324<a name=\"WHODrugDCCS-00000402324\"> </a></td><td>Difenhidramina sintesis</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402325<a name=\"WHODrugDCCS-00000402325\"> </a></td><td>Morfeo</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402326<a name=\"WHODrugDCCS-00000402326\"> </a></td><td>Zzzquil</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402328<a name=\"WHODrugDCCS-00000402328\"> </a></td><td>Dormotin</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402329<a name=\"WHODrugDCCS-00000402329\"> </a></td><td>Triaminic allergy</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402330<a name=\"WHODrugDCCS-00000402330\"> </a></td><td>Alka seltzer plus allergy</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402333<a name=\"WHODrugDCCS-00000402333\"> </a></td><td>Fendramin sueno</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402343<a name=\"WHODrugDCCS-00000402343\"> </a></td><td>Benzhydramine HCL</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402344<a name=\"WHODrugDCCS-00000402344\"> </a></td><td>Benzhydramine hydrochloride</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402345<a name=\"WHODrugDCCS-00000402345\"> </a></td><td>Diphenhydramini hydrochloridum</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402349<a name=\"WHODrugDCCS-00000402349\"> </a></td><td>Difenhidramina puntanos</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402361<a name=\"WHODrugDCCS-00000402361\"> </a></td><td>Difenhidramina surar pharma</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402366<a name=\"WHODrugDCCS-00000402366\"> </a></td><td>Nighttime sleep aid</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402377<a name=\"WHODrugDCCS-00000402377\"> </a></td><td>Difenidrin</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402379<a name=\"WHODrugDCCS-00000402379\"> </a></td><td>Difenhidramina clorhidrato</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402388<a name=\"WHODrugDCCS-00000402388\"> </a></td><td>The itch eraser max strength</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402389<a name=\"WHODrugDCCS-00000402389\"> </a></td><td>Unisom sleepgels</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402391<a name=\"WHODrugDCCS-00000402391\"> </a></td><td>Vanamine pd</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402397<a name=\"WHODrugDCCS-00000402397\"> </a></td><td>Dormin</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402399<a name=\"WHODrugDCCS-00000402399\"> </a></td><td>Vickzzz</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402402<a name=\"WHODrugDCCS-00000402402\"> </a></td><td>Geri dryl liquid allergy relief</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402407<a name=\"WHODrugDCCS-00000402407\"> </a></td><td>Unisom sleepmelts</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402414<a name=\"WHODrugDCCS-00000402414\"> </a></td><td>Sleepy</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402416<a name=\"WHODrugDCCS-00000402416\"> </a></td><td>Hidrigort</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402417<a name=\"WHODrugDCCS-00000402417\"> </a></td><td>Melatol difen</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402419<a name=\"WHODrugDCCS-00000402419\"> </a></td><td>Childrens dye free diphenhydramine hcl</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402422<a name=\"WHODrugDCCS-00000402422\"> </a></td><td>Childrens pediaclear cough</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402423<a name=\"WHODrugDCCS-00000402423\"> </a></td><td>Samay sleep gels</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402424<a name=\"WHODrugDCCS-00000402424\"> </a></td><td>M dryl</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402425<a name=\"WHODrugDCCS-00000402425\"> </a></td><td>Diphen elixir</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402428<a name=\"WHODrugDCCS-00000402428\"> </a></td><td>Liquid allergy relief</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402439<a name=\"WHODrugDCCS-00000402439\"> </a></td><td>Nervessa</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402442<a name=\"WHODrugDCCS-00000402442\"> </a></td><td>Ferlen plus</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402446<a name=\"WHODrugDCCS-00000402446\"> </a></td><td>Di phen</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402447<a name=\"WHODrugDCCS-00000402447\"> </a></td><td>Nyquil z</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402448<a name=\"WHODrugDCCS-00000402448\"> </a></td><td>Sorenex</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402450<a name=\"WHODrugDCCS-00000402450\"> </a></td><td>Bionaryl</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402451<a name=\"WHODrugDCCS-00000402451\"> </a></td><td>Difamhed</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402452<a name=\"WHODrugDCCS-00000402452\"> </a></td><td>Difenhistat</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402453<a name=\"WHODrugDCCS-00000402453\"> </a></td><td>Difedram</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402454<a name=\"WHODrugDCCS-00000402454\"> </a></td><td>Ulcoid</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402459<a name=\"WHODrugDCCS-00000402459\"> </a></td><td>Noctamid</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402468<a name=\"WHODrugDCCS-00000402468\"> </a></td><td>Difenhidramina hcl</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  00000402491<a name=\"WHODrugDCCS-00000402491\"> </a></td><td>Sloth</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">15268625001<a name=\"WHODrugDCCS-15268625001\"> </a></td><td>Tozinameran</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://paho.org/fhir/esavi/CodeSystem/WHODrugDCCS"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.2.0"] ; # 
+  fhir:name [ fhir:v "WHODrugDCCS"] ; # 
+  fhir:title [ fhir:v "WHODrug DrugCode"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-05-25T00:00:00-04:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "ESAVI -"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "ESAVI -" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://covid-19pharmacovigilance.paho.org/resources/updates-on-aefi" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rizzatodan@paho.org" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Fragmento de WHODrug completo con nombres genéricos y comerciales en inglés mayormente codificados por drugcode"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "001" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:hierarchyMeaning [ fhir:v "is-a"] ; # 
+  fhir:content [ fhir:v "fragment"] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "00000101001" ] ;
+     fhir:display [ fhir:v "Methyldopa" ] ;
+     fhir:concept ( [
+       fhir:code [ fhir:v "00000101002" ] ;
+       fhir:display [ fhir:v "Aldomet" ]
+     ] [
+       fhir:code [ fhir:v "00000101012" ] ;
+       fhir:display [ fhir:v "Metyldopa" ]
+     ] [
+       fhir:code [ fhir:v "00000101041" ] ;
+       fhir:display [ fhir:v "Alfametildopa" ]
+     ] [
+       fhir:code [ fhir:v "00000101044" ] ;
+       fhir:display [ fhir:v "Almedop" ]
+     ] [
+       fhir:code [ fhir:v "00000101045" ] ;
+       fhir:display [ fhir:v "Cardin" ]
+     ] [
+       fhir:code [ fhir:v "00000101046" ] ;
+       fhir:display [ fhir:v "Methyldopum" ]
+     ] [
+       fhir:code [ fhir:v "00000101086" ] ;
+       fhir:display [ fhir:v "Prodop" ]
+     ] [
+       fhir:code [ fhir:v "00000101087" ] ;
+       fhir:display [ fhir:v "Hipermessel" ]
+     ] [
+       fhir:code [ fhir:v "00000101089" ] ;
+       fhir:display [ fhir:v "Tensioval" ]
+     ] [
+       fhir:code [ fhir:v "00000101090" ] ;
+       fhir:display [ fhir:v "Cardiodopa" ]
+     ] [
+       fhir:code [ fhir:v "00000101091" ] ;
+       fhir:display [ fhir:v "Metildopa" ]
+     ] [
+       fhir:code [ fhir:v "00000101092" ] ;
+       fhir:display [ fhir:v "Etildopanan" ]
+     ] [
+       fhir:code [ fhir:v "00000101093" ] ;
+       fhir:display [ fhir:v "Aldotensin" ]
+     ] [
+       fhir:code [ fhir:v "00000101094" ] ;
+       fhir:display [ fhir:v "Angimet" ]
+     ] [
+       fhir:code [ fhir:v "00000101095" ] ;
+       fhir:display [ fhir:v "Metilcord" ]
+     ] [
+       fhir:code [ fhir:v "00000101096" ] ;
+       fhir:display [ fhir:v "Metilprod" ]
+     ] [
+       fhir:code [ fhir:v "00000101097" ] ;
+       fhir:display [ fhir:v "Pressomet" ]
+     ] [
+       fhir:code [ fhir:v "00000101098" ] ;
+       fhir:display [ fhir:v "Metilpress" ]
+     ] [
+       fhir:code [ fhir:v "00000101099" ] ;
+       fhir:display [ fhir:v "Ductomet" ]
+     ] [
+       fhir:code [ fhir:v "00000101100" ] ;
+       fhir:display [ fhir:v "Tildomet" ]
+     ] [
+       fhir:code [ fhir:v "00000101101" ] ;
+       fhir:display [ fhir:v "Kindomet" ]
+     ] [
+       fhir:code [ fhir:v "00000101102" ] ;
+       fhir:display [ fhir:v "Dometil" ]
+     ] [
+       fhir:code [ fhir:v "00000101103" ] ;
+       fhir:display [ fhir:v "Dopametil" ]
+     ] [
+       fhir:code [ fhir:v "00000101104" ] ;
+       fhir:display [ fhir:v "Aldoless" ]
+     ] [
+       fhir:code [ fhir:v "00000101105" ] ;
+       fhir:display [ fhir:v "Aldotil" ]
+     ] [
+       fhir:code [ fhir:v "00000101106" ] ;
+       fhir:display [ fhir:v "Medpress" ]
+     ] [
+       fhir:code [ fhir:v "00000101107" ] ;
+       fhir:display [ fhir:v "Gendomet" ]
+     ] [
+       fhir:code [ fhir:v "00000101108" ] ;
+       fhir:display [ fhir:v "Metilvita" ]
+     ] [
+       fhir:code [ fhir:v "00000101109" ] ;
+       fhir:display [ fhir:v "Dimipress" ]
+     ] [
+       fhir:code [ fhir:v "00000101110" ] ;
+       fhir:display [ fhir:v "Dopatral" ]
+     ] [
+       fhir:code [ fhir:v "00000101111" ] ;
+       fhir:display [ fhir:v "Dopagrand" ]
+     ] [
+       fhir:code [ fhir:v "00000101117" ] ;
+       fhir:display [ fhir:v "Dopasan" ]
+     ] [
+       fhir:code [ fhir:v "00000101118" ] ;
+       fhir:display [ fhir:v "Tensodopa" ]
+     ] [
+       fhir:code [ fhir:v "00000101121" ] ;
+       fhir:display [ fhir:v "Aldopa" ]
+     ] [
+       fhir:code [ fhir:v "00000101124" ] ;
+       fhir:display [ fhir:v "Coradopa" ]
+     ] [
+       fhir:code [ fhir:v "00000101135" ] ;
+       fhir:display [ fhir:v "Tremesal" ]
+     ] [
+       fhir:code [ fhir:v "00000101152" ] ;
+       fhir:display [ fhir:v "Methyldopa cf" ]
+     ] [
+       fhir:code [ fhir:v "00000101158" ] ;
+       fhir:display [ fhir:v "Metildopamek" ]
+     ] [
+       fhir:code [ fhir:v "00000101173" ] ;
+       fhir:display [ fhir:v "Toparal" ]
+     ] [
+       fhir:code [ fhir:v "00000101178" ] ;
+       fhir:display [ fhir:v "Hipermet" ]
+     ] [
+       fhir:code [ fhir:v "00000101179" ] ;
+       fhir:display [ fhir:v "Metildopa ethical" ]
+     ] [
+       fhir:code [ fhir:v "00000101184" ] ;
+       fhir:display [ fhir:v "Alpha-methyldopa" ]
+     ] [
+       fhir:code [ fhir:v "00000101185" ] ;
+       fhir:display [ fhir:v "Methyldopum anhydricum" ]
+     ] [
+       fhir:code [ fhir:v "00000101187" ] ;
+       fhir:display [ fhir:v "Metildopa icu-vita" ]
+     ] [
+       fhir:code [ fhir:v "00000101188" ] ;
+       fhir:display [ fhir:v "Venopressin" ]
+     ] [
+       fhir:code [ fhir:v "00000101193" ] ;
+       fhir:display [ fhir:v "Dopatab M250" ]
+     ] [
+       fhir:code [ fhir:v "00000101199" ] ;
+       fhir:display [ fhir:v "Furp metildopa" ]
+     ] [
+       fhir:code [ fhir:v "00000101200" ] ;
+       fhir:display [ fhir:v "Lfm metildopa" ]
+     ] [
+       fhir:code [ fhir:v "00000101223" ] ;
+       fhir:display [ fhir:v "Alfametildopa dutriec" ]
+     ] [
+       fhir:code [ fhir:v "00000101224" ] ;
+       fhir:display [ fhir:v "Dopa pres" ]
+     ] [
+       fhir:code [ fhir:v "00000101225" ] ;
+       fhir:display [ fhir:v "Alfametildopa vivele" ]
+     ] [
+       fhir:code [ fhir:v "00000101226" ] ;
+       fhir:display [ fhir:v "Alfametildopa phi" ]
+     ] [
+       fhir:code [ fhir:v "00000101227" ] ;
+       fhir:display [ fhir:v "Alfametildopa heisecke" ]
+     ] [
+       fhir:code [ fhir:v "00000101228" ] ;
+       fhir:display [ fhir:v "Aditol" ]
+     ] [
+       fhir:code [ fhir:v "00000101229" ] ;
+       fhir:display [ fhir:v "Alfametildopa dallas" ]
+     ] [
+       fhir:code [ fhir:v "00000101230" ] ;
+       fhir:display [ fhir:v "Alfametildopa avanova" ]
+     ] [
+       fhir:code [ fhir:v "00000101231" ] ;
+       fhir:display [ fhir:v "Dopabrit" ]
+     ] [
+       fhir:code [ fhir:v "00000101232" ] ;
+       fhir:display [ fhir:v "Apo methyldopa" ]
+     ] [
+       fhir:code [ fhir:v "00000101236" ] ;
+       fhir:display [ fhir:v "Aldoperten" ]
+     ] [
+       fhir:code [ fhir:v "00000101238" ] ;
+       fhir:display [ fhir:v "M dopakant" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "00000202001" ] ;
+     fhir:display [ fhir:v "Orciprenaline sulfate" ] ;
+     fhir:concept ( [
+       fhir:code [ fhir:v "00000202002" ] ;
+       fhir:display [ fhir:v "Alupent" ]
+     ] [
+       fhir:code [ fhir:v "00000202003" ] ;
+       fhir:display [ fhir:v "Metaprel" ]
+     ] [
+       fhir:code [ fhir:v "00000202005" ] ;
+       fhir:display [ fhir:v "Metaproterenol sulfate" ]
+     ] [
+       fhir:code [ fhir:v "00000202011" ] ;
+       fhir:display [ fhir:v "Metaproterenol" ]
+     ] [
+       fhir:code [ fhir:v "00000202022" ] ;
+       fhir:display [ fhir:v "Metaproternol sulfate" ]
+     ] [
+       fhir:code [ fhir:v "00000202023" ] ;
+       fhir:display [ fhir:v "Orciprenalina" ]
+     ] [
+       fhir:code [ fhir:v "00000202030" ] ;
+       fhir:display [ fhir:v "Orciprenalini sulfas" ]
+     ] [
+       fhir:code [ fhir:v "00000202032" ] ;
+       fhir:display [ fhir:v "Orlin" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "01362601001" ] ;
+     fhir:display [ fhir:v "Montelukast" ] ;
+     fhir:concept ( [
+       fhir:code [ fhir:v "01362601020" ] ;
+       fhir:display [ fhir:v "Asmax (Montelukast)" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "00000301001" ] ;
+     fhir:display [ fhir:v "Aminosalicylic acid" ] ;
+     fhir:concept ( [
+       fhir:code [ fhir:v "00000301003" ] ;
+       fhir:display [ fhir:v "Pas" ]
+     ] [
+       fhir:code [ fhir:v "00000301007" ] ;
+       fhir:display [ fhir:v "Para-aminosalicylic acid" ]
+     ] [
+       fhir:code [ fhir:v "00000301008" ] ;
+       fhir:display [ fhir:v "Aminosalylum" ]
+     ] [
+       fhir:code [ fhir:v "00000301014" ] ;
+       fhir:display [ fhir:v "Paser" ]
+     ] [
+       fhir:code [ fhir:v "00000301023" ] ;
+       fhir:display [ fhir:v "4-aminosalicylic acid" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "00000304001" ] ;
+     fhir:display [ fhir:v "Aminosalicylate sodium" ] ;
+     fhir:concept ( [
+       fhir:code [ fhir:v "00000304004" ] ;
+       fhir:display [ fhir:v "Sodium pas" ]
+     ] [
+       fhir:code [ fhir:v "00000304018" ] ;
+       fhir:display [ fhir:v "Monopas" ]
+     ] [
+       fhir:code [ fhir:v "00000304019" ] ;
+       fhir:display [ fhir:v "Pas" ]
+     ] [
+       fhir:code [ fhir:v "00000304031" ] ;
+       fhir:display [ fhir:v "Sodium aminosalicylate" ]
+     ] [
+       fhir:code [ fhir:v "00000304040" ] ;
+       fhir:display [ fhir:v "Aminosalicylic acid sodium" ]
+     ] [
+       fhir:code [ fhir:v "00000304041" ] ;
+       fhir:display [ fhir:v "Med pass" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "00000401001" ] ;
+     fhir:display [ fhir:v "Diphenhydramine" ] ;
+     fhir:concept ( [
+       fhir:code [ fhir:v "00000401021" ] ;
+       fhir:display [ fhir:v "Bionaryl" ]
+     ] [
+       fhir:code [ fhir:v "00000401022" ] ;
+       fhir:display [ fhir:v "Therafilm" ]
+     ] [
+       fhir:code [ fhir:v "00000401023" ] ;
+       fhir:display [ fhir:v "Difenidrammina" ]
+     ] [
+       fhir:code [ fhir:v "00000401024" ] ;
+       fhir:display [ fhir:v "Diphenhydraminum" ]
+     ] [
+       fhir:code [ fhir:v "00000401025" ] ;
+       fhir:display [ fhir:v "Difenhidramina" ]
+     ] [
+       fhir:code [ fhir:v "00000401028" ] ;
+       fhir:display [ fhir:v "Gelbeck" ]
+     ] [
+       fhir:code [ fhir:v "00000401029" ] ;
+       fhir:display [ fhir:v "Blenifen" ]
+     ] [
+       fhir:code [ fhir:v "00000401030" ] ;
+       fhir:display [ fhir:v "Difenhidramina larjan" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "00000402001" ] ;
+     fhir:display [ fhir:v "Diphenhydramine hydrochloride" ] ;
+     fhir:concept ( [
+       fhir:code [ fhir:v "00000402002" ] ;
+       fhir:display [ fhir:v "Benadryl" ]
+     ] [
+       fhir:code [ fhir:v "00000402027" ] ;
+       fhir:display [ fhir:v "Diphenhist" ]
+     ] [
+       fhir:code [ fhir:v "00000402031" ] ;
+       fhir:display [ fhir:v "Hydramine" ]
+     ] [
+       fhir:code [ fhir:v "00000402032" ] ;
+       fhir:display [ fhir:v "Unisom" ]
+     ] [
+       fhir:code [ fhir:v "00000402036" ] ;
+       fhir:display [ fhir:v "Dimedrolum" ]
+     ] [
+       fhir:code [ fhir:v "00000402045" ] ;
+       fhir:display [ fhir:v "Nytol" ]
+     ] [
+       fhir:code [ fhir:v "00000402058" ] ;
+       fhir:display [ fhir:v "Simply sleep" ]
+     ] [
+       fhir:code [ fhir:v "00000402085" ] ;
+       fhir:display [ fhir:v "Difenhidramina gi" ]
+     ] [
+       fhir:code [ fhir:v "00000402086" ] ;
+       fhir:display [ fhir:v "Indumir" ]
+     ] [
+       fhir:code [ fhir:v "00000402087" ] ;
+       fhir:display [ fhir:v "Brudifen" ]
+     ] [
+       fhir:code [ fhir:v "00000402088" ] ;
+       fhir:display [ fhir:v "Bonanoti" ]
+     ] [
+       fhir:code [ fhir:v "00000402089" ] ;
+       fhir:display [ fhir:v "Tovan" ]
+     ] [
+       fhir:code [ fhir:v "00000402092" ] ;
+       fhir:display [ fhir:v "Diphenhydramine" ]
+     ] [
+       fhir:code [ fhir:v "00000402109" ] ;
+       fhir:display [ fhir:v "Diphenhydramin hcl" ]
+     ] [
+       fhir:code [ fhir:v "00000402110" ] ;
+       fhir:display [ fhir:v "Altaryl" ]
+     ] [
+       fhir:code [ fhir:v "00000402111" ] ;
+       fhir:display [ fhir:v "Siladryl" ]
+     ] [
+       fhir:code [ fhir:v "00000402113" ] ;
+       fhir:display [ fhir:v "Benadryl Allergy" ]
+     ] [
+       fhir:code [ fhir:v "00000402116" ] ;
+       fhir:display [ fhir:v "Compoz" ]
+     ] [
+       fhir:code [ fhir:v "00000402117" ] ;
+       fhir:display [ fhir:v "Silphen" ]
+     ] [
+       fhir:code [ fhir:v "00000402126" ] ;
+       fhir:display [ fhir:v "Fada difenhidramin" ]
+     ] [
+       fhir:code [ fhir:v "00000402127" ] ;
+       fhir:display [ fhir:v "Klonadryl antialergico" ]
+     ] [
+       fhir:code [ fhir:v "00000402129" ] ;
+       fhir:display [ fhir:v "Difenhidramina df" ]
+     ] [
+       fhir:code [ fhir:v "00000402130" ] ;
+       fhir:display [ fhir:v "Histaler" ]
+     ] [
+       fhir:code [ fhir:v "00000402131" ] ;
+       fhir:display [ fhir:v "Fabolergic" ]
+     ] [
+       fhir:code [ fhir:v "00000402144" ] ;
+       fhir:display [ fhir:v "Cielozam" ]
+     ] [
+       fhir:code [ fhir:v "00000402145" ] ;
+       fhir:display [ fhir:v "Benadryl A" ]
+     ] [
+       fhir:code [ fhir:v "00000402153" ] ;
+       fhir:display [ fhir:v "Difedrin" ]
+     ] [
+       fhir:code [ fhir:v "00000402154" ] ;
+       fhir:display [ fhir:v "Fendramin" ]
+     ] [
+       fhir:code [ fhir:v "00000402155" ] ;
+       fhir:display [ fhir:v "Difenhidramina" ]
+     ] [
+       fhir:code [ fhir:v "00000402156" ] ;
+       fhir:display [ fhir:v "Histam" ]
+     ] [
+       fhir:code [ fhir:v "00000402157" ] ;
+       fhir:display [ fhir:v "Histomin" ]
+     ] [
+       fhir:code [ fhir:v "00000402158" ] ;
+       fhir:display [ fhir:v "Aledryl" ]
+     ] [
+       fhir:code [ fhir:v "00000402159" ] ;
+       fhir:display [ fhir:v "Antalergin" ]
+     ] [
+       fhir:code [ fhir:v "00000402160" ] ;
+       fhir:display [ fhir:v "Benacyma" ]
+     ] [
+       fhir:code [ fhir:v "00000402161" ] ;
+       fhir:display [ fhir:v "Idramin" ]
+     ] [
+       fhir:code [ fhir:v "00000402162" ] ;
+       fhir:display [ fhir:v "Fenilar" ]
+     ] [
+       fhir:code [ fhir:v "00000402163" ] ;
+       fhir:display [ fhir:v "Fenidramin" ]
+     ] [
+       fhir:code [ fhir:v "00000402172" ] ;
+       fhir:display [ fhir:v "Pasifen" ]
+     ] [
+       fhir:code [ fhir:v "00000402173" ] ;
+       fhir:display [ fhir:v "Somol" ]
+     ] [
+       fhir:code [ fhir:v "00000402189" ] ;
+       fhir:display [ fhir:v "Antil" ]
+     ] [
+       fhir:code [ fhir:v "00000402190" ] ;
+       fhir:display [ fhir:v "Cerylana" ]
+     ] [
+       fhir:code [ fhir:v "00000402191" ] ;
+       fhir:display [ fhir:v "Childrens allergy" ]
+     ] [
+       fhir:code [ fhir:v "00000402192" ] ;
+       fhir:display [ fhir:v "Complete allergy" ]
+     ] [
+       fhir:code [ fhir:v "00000402225" ] ;
+       fhir:display [ fhir:v "Dermarest Dricort" ]
+     ] [
+       fhir:code [ fhir:v "00000402232" ] ;
+       fhir:display [ fhir:v "Benadrilina" ]
+     ] [
+       fhir:code [ fhir:v "00000402234" ] ;
+       fhir:display [ fhir:v "Nauzene" ]
+     ] [
+       fhir:code [ fhir:v "00000402246" ] ;
+       fhir:display [ fhir:v "Diphenhydramine HCL" ]
+     ] [
+       fhir:code [ fhir:v "00000402252" ] ;
+       fhir:display [ fhir:v "Dormilong" ]
+     ] [
+       fhir:code [ fhir:v "00000402253" ] ;
+       fhir:display [ fhir:v "Diphenhydramin Hydrchloride" ]
+     ] [
+       fhir:code [ fhir:v "00000402254" ] ;
+       fhir:display [ fhir:v "Triaminic Cough and Runny Nose" ]
+     ] [
+       fhir:code [ fhir:v "00000402263" ] ;
+       fhir:display [ fhir:v "Geri-dryl allergy relief" ]
+     ] [
+       fhir:code [ fhir:v "00000402274" ] ;
+       fhir:display [ fhir:v "Dicopanol" ]
+     ] [
+       fhir:code [ fhir:v "00000402279" ] ;
+       fhir:display [ fhir:v "Nelfigen" ]
+     ] [
+       fhir:code [ fhir:v "00000402280" ] ;
+       fhir:display [ fhir:v "Itch Relief" ]
+     ] [
+       fhir:code [ fhir:v "00000402283" ] ;
+       fhir:display [ fhir:v "Theraflu Alergia" ]
+     ] [
+       fhir:code [ fhir:v "00000402284" ] ;
+       fhir:display [ fhir:v "Difenhidramina Northia" ]
+     ] [
+       fhir:code [ fhir:v "00000402288" ] ;
+       fhir:display [ fhir:v "Diphenhydramin hydrochloride" ]
+     ] [
+       fhir:code [ fhir:v "00000402300" ] ;
+       fhir:display [ fhir:v "Pharbedryl" ]
+     ] [
+       fhir:code [ fhir:v "00000402306" ] ;
+       fhir:display [ fhir:v "Dormessa" ]
+     ] [
+       fhir:code [ fhir:v "00000402308" ] ;
+       fhir:display [ fhir:v "Amodormin" ]
+     ] [
+       fhir:code [ fhir:v "00000402310" ] ;
+       fhir:display [ fhir:v "Lurispan" ]
+     ] [
+       fhir:code [ fhir:v "00000402311" ] ;
+       fhir:display [ fhir:v "Drafen" ]
+     ] [
+       fhir:code [ fhir:v "00000402312" ] ;
+       fhir:display [ fhir:v "Vicnite" ]
+     ] [
+       fhir:code [ fhir:v "00000402316" ] ;
+       fhir:display [ fhir:v "Drepatil" ]
+     ] [
+       fhir:code [ fhir:v "00000402320" ] ;
+       fhir:display [ fhir:v "Difenhidramina fada" ]
+     ] [
+       fhir:code [ fhir:v "00000402321" ] ;
+       fhir:display [ fhir:v "Fadalex" ]
+     ] [
+       fhir:code [ fhir:v "00000402324" ] ;
+       fhir:display [ fhir:v "Difenhidramina sintesis" ]
+     ] [
+       fhir:code [ fhir:v "00000402325" ] ;
+       fhir:display [ fhir:v "Morfeo" ]
+     ] [
+       fhir:code [ fhir:v "00000402326" ] ;
+       fhir:display [ fhir:v "Zzzquil" ]
+     ] [
+       fhir:code [ fhir:v "00000402328" ] ;
+       fhir:display [ fhir:v "Dormotin" ]
+     ] [
+       fhir:code [ fhir:v "00000402329" ] ;
+       fhir:display [ fhir:v "Triaminic allergy" ]
+     ] [
+       fhir:code [ fhir:v "00000402330" ] ;
+       fhir:display [ fhir:v "Alka seltzer plus allergy" ]
+     ] [
+       fhir:code [ fhir:v "00000402333" ] ;
+       fhir:display [ fhir:v "Fendramin sueno" ]
+     ] [
+       fhir:code [ fhir:v "00000402343" ] ;
+       fhir:display [ fhir:v "Benzhydramine HCL" ]
+     ] [
+       fhir:code [ fhir:v "00000402344" ] ;
+       fhir:display [ fhir:v "Benzhydramine hydrochloride" ]
+     ] [
+       fhir:code [ fhir:v "00000402345" ] ;
+       fhir:display [ fhir:v "Diphenhydramini hydrochloridum" ]
+     ] [
+       fhir:code [ fhir:v "00000402349" ] ;
+       fhir:display [ fhir:v "Difenhidramina puntanos" ]
+     ] [
+       fhir:code [ fhir:v "00000402361" ] ;
+       fhir:display [ fhir:v "Difenhidramina surar pharma" ]
+     ] [
+       fhir:code [ fhir:v "00000402366" ] ;
+       fhir:display [ fhir:v "Nighttime sleep aid" ]
+     ] [
+       fhir:code [ fhir:v "00000402377" ] ;
+       fhir:display [ fhir:v "Difenidrin" ]
+     ] [
+       fhir:code [ fhir:v "00000402379" ] ;
+       fhir:display [ fhir:v "Difenhidramina clorhidrato" ]
+     ] [
+       fhir:code [ fhir:v "00000402388" ] ;
+       fhir:display [ fhir:v "The itch eraser max strength" ]
+     ] [
+       fhir:code [ fhir:v "00000402389" ] ;
+       fhir:display [ fhir:v "Unisom sleepgels" ]
+     ] [
+       fhir:code [ fhir:v "00000402391" ] ;
+       fhir:display [ fhir:v "Vanamine pd" ]
+     ] [
+       fhir:code [ fhir:v "00000402397" ] ;
+       fhir:display [ fhir:v "Dormin" ]
+     ] [
+       fhir:code [ fhir:v "00000402399" ] ;
+       fhir:display [ fhir:v "Vickzzz" ]
+     ] [
+       fhir:code [ fhir:v "00000402402" ] ;
+       fhir:display [ fhir:v "Geri dryl liquid allergy relief" ]
+     ] [
+       fhir:code [ fhir:v "00000402407" ] ;
+       fhir:display [ fhir:v "Unisom sleepmelts" ]
+     ] [
+       fhir:code [ fhir:v "00000402414" ] ;
+       fhir:display [ fhir:v "Sleepy" ]
+     ] [
+       fhir:code [ fhir:v "00000402416" ] ;
+       fhir:display [ fhir:v "Hidrigort" ]
+     ] [
+       fhir:code [ fhir:v "00000402417" ] ;
+       fhir:display [ fhir:v "Melatol difen" ]
+     ] [
+       fhir:code [ fhir:v "00000402419" ] ;
+       fhir:display [ fhir:v "Childrens dye free diphenhydramine hcl" ]
+     ] [
+       fhir:code [ fhir:v "00000402422" ] ;
+       fhir:display [ fhir:v "Childrens pediaclear cough" ]
+     ] [
+       fhir:code [ fhir:v "00000402423" ] ;
+       fhir:display [ fhir:v "Samay sleep gels" ]
+     ] [
+       fhir:code [ fhir:v "00000402424" ] ;
+       fhir:display [ fhir:v "M dryl" ]
+     ] [
+       fhir:code [ fhir:v "00000402425" ] ;
+       fhir:display [ fhir:v "Diphen elixir" ]
+     ] [
+       fhir:code [ fhir:v "00000402428" ] ;
+       fhir:display [ fhir:v "Liquid allergy relief" ]
+     ] [
+       fhir:code [ fhir:v "00000402439" ] ;
+       fhir:display [ fhir:v "Nervessa" ]
+     ] [
+       fhir:code [ fhir:v "00000402442" ] ;
+       fhir:display [ fhir:v "Ferlen plus" ]
+     ] [
+       fhir:code [ fhir:v "00000402446" ] ;
+       fhir:display [ fhir:v "Di phen" ]
+     ] [
+       fhir:code [ fhir:v "00000402447" ] ;
+       fhir:display [ fhir:v "Nyquil z" ]
+     ] [
+       fhir:code [ fhir:v "00000402448" ] ;
+       fhir:display [ fhir:v "Sorenex" ]
+     ] [
+       fhir:code [ fhir:v "00000402450" ] ;
+       fhir:display [ fhir:v "Bionaryl" ]
+     ] [
+       fhir:code [ fhir:v "00000402451" ] ;
+       fhir:display [ fhir:v "Difamhed" ]
+     ] [
+       fhir:code [ fhir:v "00000402452" ] ;
+       fhir:display [ fhir:v "Difenhistat" ]
+     ] [
+       fhir:code [ fhir:v "00000402453" ] ;
+       fhir:display [ fhir:v "Difedram" ]
+     ] [
+       fhir:code [ fhir:v "00000402454" ] ;
+       fhir:display [ fhir:v "Ulcoid" ]
+     ] [
+       fhir:code [ fhir:v "00000402459" ] ;
+       fhir:display [ fhir:v "Noctamid" ]
+     ] [
+       fhir:code [ fhir:v "00000402468" ] ;
+       fhir:display [ fhir:v "Difenhidramina hcl" ]
+     ] [
+       fhir:code [ fhir:v "00000402491" ] ;
+       fhir:display [ fhir:v "Sloth" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "15268625001" ] ;
+     fhir:display [ fhir:v "Tozinameran" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

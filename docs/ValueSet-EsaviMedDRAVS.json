@@ -1,0 +1,39 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "EsaviMedDRAVS",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet EsaviMedDRAVS</b></p><a name=\"EsaviMedDRAVS\"> </a><a name=\"hcEsaviMedDRAVS\"> </a><a name=\"EsaviMedDRAVS-en-US\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-MedDRACS.html\"><code>https://paho.org/fhir/esavi/CodeSystem/MedDRACS</code></a></li></ul></div>"
+  },
+  "url" : "https://paho.org/fhir/esavi/ValueSet/EsaviMedDRAVS",
+  "version" : "0.2.0",
+  "name" : "EsaviMedDRAVS",
+  "title" : "Código MedDRA del Evento Adverso notificado",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2021-03-11T00:00:00-03:00",
+  "publisher" : "ESAVI -",
+  "contact" : [{
+    "name" : "ESAVI -",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://covid-19pharmacovigilance.paho.org/resources/updates-on-aefi"
+    },
+    {
+      "system" : "email",
+      "value" : "rizzatodan@paho.org"
+    }]
+  }],
+  "description" : "Código MedDRA del Evento Adverso notificado",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://paho.org/fhir/esavi/CodeSystem/MedDRACS"
+    }]
+  }
+}

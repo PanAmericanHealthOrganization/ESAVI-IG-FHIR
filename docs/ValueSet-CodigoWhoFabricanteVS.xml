@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="CodigoWhoFabricanteVS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet CodigoWhoFabricanteVS</b></p><a name="CodigoWhoFabricanteVS"> </a><a name="hcCodigoWhoFabricanteVS"> </a><a name="CodigoWhoFabricanteVS-en-US"> </a><ul><li>Include all codes defined in <a href="CodeSystem-CodigoWhoFabricanteCS.html"><code>https://paho.org/fhir/esavi/CodeSystem/CodigoWhoFabricanteCS</code></a></li></ul></div>
+  </text>
+  <url value="https://paho.org/fhir/esavi/ValueSet/CodigoWhoFabricanteVS"/>
+  <version value="0.2.0"/>
+  <name value="CodigoWhoFabricanteVS"/>
+  <title value="Fabricantes Vacuna"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2021-03-11T00:00:00-03:00"/>
+  <publisher value="ESAVI -"/>
+  <contact>
+    <name value="ESAVI -"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://covid-19pharmacovigilance.paho.org/resources/updates-on-aefi"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="rizzatodan@paho.org"/>
+    </telecom>
+  </contact>
+  <description value="Códigos Fabricantes Vacunas de WHO"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://paho.org/fhir/esavi/CodeSystem/CodigoWhoFabricanteCS"/>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,1321 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://paho.org/fhir/esavi/CodeSystem/DirOrgNotiCS> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "DirOrgNotiCS"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem DirOrgNotiCS</b></p><a name=\"DirOrgNotiCS\"> </a><a name=\"hcDirOrgNotiCS\"> </a><a name=\"DirOrgNotiCS-en-US\"> </a><p>This case-insensitive code system <code>https://paho.org/fhir/esavi/CodeSystem/DirOrgNotiCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">AR_B_06126<a name=\"DirOrgNotiCS-AR_B_06126\"> </a></td><td>Campana (Partido), Buenos Aires, Argentina</td></tr><tr><td style=\"white-space:nowrap\">AR_B_06134<a name=\"DirOrgNotiCS-AR_B_06134\"> </a></td><td>Cañuelas (Partido), Buenos Aires, Argentina</td></tr><tr><td style=\"white-space:nowrap\">AR_B_06140<a name=\"DirOrgNotiCS-AR_B_06140\"> </a></td><td>Capitán Sarmiento (Partido), Buenos Aires, Argentina</td></tr><tr><td style=\"white-space:nowrap\">AR_B_06147<a name=\"DirOrgNotiCS-AR_B_06147\"> </a></td><td>Carlos Casares (Partido), Buenos Aires, Argentina</td></tr><tr><td style=\"white-space:nowrap\">AR_B_06154<a name=\"DirOrgNotiCS-AR_B_06154\"> </a></td><td>Carlos Tejedor (Partido), Buenos Aires, Argentina</td></tr><tr><td style=\"white-space:nowrap\">AR_B_06161<a name=\"DirOrgNotiCS-AR_B_06161\"> </a></td><td>Carmen de Areco (Partido), Buenos Aires, Argentina</td></tr><tr><td style=\"white-space:nowrap\">AR_B_06168<a name=\"DirOrgNotiCS-AR_B_06168\"> </a></td><td>Castelli (Partido), Buenos Aires, Argentina</td></tr><tr><td style=\"white-space:nowrap\">AR_B_06175<a name=\"DirOrgNotiCS-AR_B_06175\"> </a></td><td>Colón (Partido), Buenos Aires, Argentina</td></tr><tr><td style=\"white-space:nowrap\">AR_B_06182<a name=\"DirOrgNotiCS-AR_B_06182\"> </a></td><td>Coronel de Marina Leonardo Rosales (Partido), Buenos Aires, Argentina</td></tr><tr><td style=\"white-space:nowrap\">AR_B_06189<a name=\"DirOrgNotiCS-AR_B_06189\"> </a></td><td>Coronel Dorrego (Partido), Buenos Aires, Argentina</td></tr><tr><td style=\"white-space:nowrap\">AR_B_06196<a name=\"DirOrgNotiCS-AR_B_06196\"> </a></td><td>Coronel Pringles (Partido), Buenos Aires, Argentina</td></tr><tr><td style=\"white-space:nowrap\">AR_B_06203<a name=\"DirOrgNotiCS-AR_B_06203\"> </a></td><td>Coronel Suárez (Partido), Buenos Aires, Argentina</td></tr><tr><td style=\"white-space:nowrap\">AR_B_06665<a name=\"DirOrgNotiCS-AR_B_06665\"> </a></td><td>Ramallo (Partido), Buenos Aires, Argentina</td></tr><tr><td style=\"white-space:nowrap\">AR_C_02001<a name=\"DirOrgNotiCS-AR_C_02001\"> </a></td><td>Comuna 1 (Comuna), Ciudad Autonoma de Buenos Aires, Argentina</td></tr><tr><td style=\"white-space:nowrap\">AR_C_02002<a name=\"DirOrgNotiCS-AR_C_02002\"> </a></td><td>Comuna 2 (Comuna), Ciudad Autonoma de Buenos Aires, Argentina</td></tr><tr><td style=\"white-space:nowrap\">AR_C_02003<a name=\"DirOrgNotiCS-AR_C_02003\"> </a></td><td>Comuna 3 (Comuna), Ciudad Autonoma de Buenos Aires, Argentina</td></tr><tr><td style=\"white-space:nowrap\">AR_C_02004<a name=\"DirOrgNotiCS-AR_C_02004\"> </a></td><td>Comuna 4 (Comuna), Ciudad Autonoma de Buenos Aires, Argentina</td></tr><tr><td style=\"white-space:nowrap\">AR_C_02005<a name=\"DirOrgNotiCS-AR_C_02005\"> </a></td><td>Comuna 5 (Comuna), Ciudad Autonoma de Buenos Aires, Argentina</td></tr><tr><td style=\"white-space:nowrap\">AR_C_02006<a name=\"DirOrgNotiCS-AR_C_02006\"> </a></td><td>Comuna 6 (Comuna), Ciudad Autonoma de Buenos Aires, Argentina</td></tr><tr><td style=\"white-space:nowrap\">AR_C_02007<a name=\"DirOrgNotiCS-AR_C_02007\"> </a></td><td>Comuna 7 (Comuna), Ciudad Autonoma de Buenos Aires, Argentina</td></tr><tr><td style=\"white-space:nowrap\">AR_C_02008<a name=\"DirOrgNotiCS-AR_C_02008\"> </a></td><td>Comuna 8 (Comuna), Ciudad Autonoma de Buenos Aires, Argentina</td></tr><tr><td style=\"white-space:nowrap\">AR_C_02009<a name=\"DirOrgNotiCS-AR_C_02009\"> </a></td><td>Comuna 9 (Comuna), Ciudad Autonoma de Buenos Aires, Argentina</td></tr><tr><td style=\"white-space:nowrap\">AR_C_02010<a name=\"DirOrgNotiCS-AR_C_02010\"> </a></td><td>Comuna 10 (Comuna), Ciudad Autonoma de Buenos Aires, Argentina</td></tr><tr><td style=\"white-space:nowrap\">AR_C_02011<a name=\"DirOrgNotiCS-AR_C_02011\"> </a></td><td>Comuna 11 (Comuna), Ciudad Autonoma de Buenos Aires, Argentina</td></tr><tr><td style=\"white-space:nowrap\">AR_C_02012<a name=\"DirOrgNotiCS-AR_C_02012\"> </a></td><td>Comuna 12 (Comuna), Ciudad Autonoma de Buenos Aires, Argentina</td></tr><tr><td style=\"white-space:nowrap\">AR_C_02013<a name=\"DirOrgNotiCS-AR_C_02013\"> </a></td><td>Comuna 13 (Comuna), Ciudad Autonoma de Buenos Aires, Argentina</td></tr><tr><td style=\"white-space:nowrap\">AR_C_02014<a name=\"DirOrgNotiCS-AR_C_02014\"> </a></td><td>Comuna 14 (Comuna), Ciudad Autonoma de Buenos Aires, Argentina</td></tr><tr><td style=\"white-space:nowrap\">AR_C_02015<a name=\"DirOrgNotiCS-AR_C_02015\"> </a></td><td>Comuna 15 (Comuna), Ciudad Autonoma de Buenos Aires, Argentina</td></tr><tr><td style=\"white-space:nowrap\">BO_B_080801<a name=\"DirOrgNotiCS-BO_B_080801\"> </a></td><td>Magdalena (Municipio), Beni, Bolivia (Plurinational State of)</td></tr><tr><td style=\"white-space:nowrap\">BO_B_080802<a name=\"DirOrgNotiCS-BO_B_080802\"> </a></td><td>Baures (Municipio), Beni, Bolivia (Plurinational State of)</td></tr><tr><td style=\"white-space:nowrap\">BO_B_080803<a name=\"DirOrgNotiCS-BO_B_080803\"> </a></td><td>Huacaraje (Municipio), Beni, Bolivia (Plurinational State of)</td></tr><tr><td style=\"white-space:nowrap\">BO_C_030101<a name=\"DirOrgNotiCS-BO_C_030101\"> </a></td><td>Cochabamba (Municipio), Cochabamba, Bolivia (Plurinational State of)</td></tr><tr><td style=\"white-space:nowrap\">BO_C_030201<a name=\"DirOrgNotiCS-BO_C_030201\"> </a></td><td>Aiquile (Municipio), Cochabamba, Bolivia (Plurinational State of)</td></tr><tr><td style=\"white-space:nowrap\">BO_C_030202<a name=\"DirOrgNotiCS-BO_C_030202\"> </a></td><td>Pasorapa (Municipio), Cochabamba, Bolivia (Plurinational State of)</td></tr><tr><td style=\"white-space:nowrap\">BO_C_030203<a name=\"DirOrgNotiCS-BO_C_030203\"> </a></td><td>Omereque (Municipio), Cochabamba, Bolivia (Plurinational State of)</td></tr><tr><td style=\"white-space:nowrap\">BO_C_030301<a name=\"DirOrgNotiCS-BO_C_030301\"> </a></td><td>Ayopaya (Municipio), Cochabamba, Bolivia (Plurinational State of)</td></tr><tr><td style=\"white-space:nowrap\">BO_C_030302<a name=\"DirOrgNotiCS-BO_C_030302\"> </a></td><td>Morochata (Municipio), Cochabamba, Bolivia (Plurinational State of)</td></tr><tr><td style=\"white-space:nowrap\">BO_C_030303<a name=\"DirOrgNotiCS-BO_C_030303\"> </a></td><td>Cocapata (Municipio), Cochabamba, Bolivia (Plurinational State of)</td></tr><tr><td style=\"white-space:nowrap\">BO_C_030401<a name=\"DirOrgNotiCS-BO_C_030401\"> </a></td><td>Tarata (Municipio), Cochabamba, Bolivia (Plurinational State of)</td></tr><tr><td style=\"white-space:nowrap\">BR_AL_27_05705<a name=\"DirOrgNotiCS-BR_AL_27_05705\"> </a></td><td>Olho d'Água das Flores (Municipio), Alagoas, Brazil</td></tr><tr><td style=\"white-space:nowrap\">BR_AL_27_05804<a name=\"DirOrgNotiCS-BR_AL_27_05804\"> </a></td><td>Olho d'Água do Casado (Municipio), Alagoas, Brazil</td></tr><tr><td style=\"white-space:nowrap\">BR_AL_27_05903<a name=\"DirOrgNotiCS-BR_AL_27_05903\"> </a></td><td>Olho d'Água Grande (Municipio), Alagoas, Brazil</td></tr><tr><td style=\"white-space:nowrap\">BR_AL_27_06000<a name=\"DirOrgNotiCS-BR_AL_27_06000\"> </a></td><td>Olivença (Municipio), Alagoas, Brazil</td></tr><tr><td style=\"white-space:nowrap\">BR_AL_27_06109<a name=\"DirOrgNotiCS-BR_AL_27_06109\"> </a></td><td>Ouro Branco (Municipio), Alagoas, Brazil</td></tr><tr><td style=\"white-space:nowrap\">BR_AL_27_06208<a name=\"DirOrgNotiCS-BR_AL_27_06208\"> </a></td><td>Palestina (Municipio), Alagoas, Brazil</td></tr><tr><td style=\"white-space:nowrap\">BR_AL_27_06307<a name=\"DirOrgNotiCS-BR_AL_27_06307\"> </a></td><td>Palmeira dos Índios (Municipio), Alagoas, Brazil</td></tr><tr><td style=\"white-space:nowrap\">BR_AL_27_06406<a name=\"DirOrgNotiCS-BR_AL_27_06406\"> </a></td><td>Pão de Açúcar (Municipio), Alagoas, Brazil</td></tr><tr><td style=\"white-space:nowrap\">BR_AL_27_06422<a name=\"DirOrgNotiCS-BR_AL_27_06422\"> </a></td><td>Pariconha (Municipio), Alagoas, Brazil</td></tr><tr><td style=\"white-space:nowrap\">BR_AL_27_06448<a name=\"DirOrgNotiCS-BR_AL_27_06448\"> </a></td><td>Paripueira (Municipio), Alagoas, Brazil</td></tr><tr><td style=\"white-space:nowrap\">BR_AL_27_06505<a name=\"DirOrgNotiCS-BR_AL_27_06505\"> </a></td><td>Passo de Camaragibe (Municipio), Alagoas, Brazil</td></tr><tr><td style=\"white-space:nowrap\">BR_AL_27_06604<a name=\"DirOrgNotiCS-BR_AL_27_06604\"> </a></td><td>Paulo Jacinto (Municipio), Alagoas, Brazil</td></tr><tr><td style=\"white-space:nowrap\">BR_AL_27_06703<a name=\"DirOrgNotiCS-BR_AL_27_06703\"> </a></td><td>Penedo (Municipio), Alagoas, Brazil</td></tr><tr><td style=\"white-space:nowrap\">BR_AL_27_06802<a name=\"DirOrgNotiCS-BR_AL_27_06802\"> </a></td><td>Piaçabuçu (Municipio), Alagoas, Brazil</td></tr><tr><td style=\"white-space:nowrap\">CL_AI_11101<a name=\"DirOrgNotiCS-CL_AI_11101\"> </a></td><td>Coyhaique (Comuna), Region de Aysen del Gral. Ibanez del Campo, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_AI_11102<a name=\"DirOrgNotiCS-CL_AI_11102\"> </a></td><td>Lago Verde (Comuna), Region de Aysen del Gral. Ibanez del Campo, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_AI_11201<a name=\"DirOrgNotiCS-CL_AI_11201\"> </a></td><td>Aysén (Comuna), Region de Aysen del Gral. Ibanez del Campo, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_AI_11202<a name=\"DirOrgNotiCS-CL_AI_11202\"> </a></td><td>Cisnes (Comuna), Region de Aysen del Gral. Ibanez del Campo, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_AI_11203<a name=\"DirOrgNotiCS-CL_AI_11203\"> </a></td><td>Guaitecas (Comuna), Region de Aysen del Gral. Ibanez del Campo, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_AI_11301<a name=\"DirOrgNotiCS-CL_AI_11301\"> </a></td><td>Cochrane (Comuna), Region de Aysen del Gral. Ibanez del Campo, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_AI_11302<a name=\"DirOrgNotiCS-CL_AI_11302\"> </a></td><td>O'Higgins (Comuna), Region de Aysen del Gral. Ibanez del Campo, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_AI_11303<a name=\"DirOrgNotiCS-CL_AI_11303\"> </a></td><td>Tortel (Comuna), Region de Aysen del Gral. Ibanez del Campo, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_AI_11401<a name=\"DirOrgNotiCS-CL_AI_11401\"> </a></td><td>Chile Chico (Comuna), Region de Aysen del Gral. Ibanez del Campo, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_AI_11402<a name=\"DirOrgNotiCS-CL_AI_11402\"> </a></td><td>Río Ibáñez (Comuna), Region de Aysen del Gral. Ibanez del Campo, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_AN_02101<a name=\"DirOrgNotiCS-CL_AN_02101\"> </a></td><td>Antofagasta (Comuna), Region de Antofagasta, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_AN_02102<a name=\"DirOrgNotiCS-CL_AN_02102\"> </a></td><td>Mejillones (Comuna), Region de Antofagasta, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_AN_02103<a name=\"DirOrgNotiCS-CL_AN_02103\"> </a></td><td>Sierra Gorda (Comuna), Region de Antofagasta, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_AN_02104<a name=\"DirOrgNotiCS-CL_AN_02104\"> </a></td><td>Taltal (Comuna), Region de Antofagasta, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_AN_02201<a name=\"DirOrgNotiCS-CL_AN_02201\"> </a></td><td>Calama (Comuna), Region de Antofagasta, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_AN_02202<a name=\"DirOrgNotiCS-CL_AN_02202\"> </a></td><td>Ollagüe (Comuna), Region de Antofagasta, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_AN_02203<a name=\"DirOrgNotiCS-CL_AN_02203\"> </a></td><td>San Pedro de Atacama (Comuna), Region de Antofagasta, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_AN_02301<a name=\"DirOrgNotiCS-CL_AN_02301\"> </a></td><td>Tocopilla (Comuna), Region de Antofagasta, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_AN_02302<a name=\"DirOrgNotiCS-CL_AN_02302\"> </a></td><td>María Elena (Comuna), Region de Antofagasta, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_AP_15101<a name=\"DirOrgNotiCS-CL_AP_15101\"> </a></td><td>Arica (Comuna), Region de Arica y Parinacota, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_AP_15102<a name=\"DirOrgNotiCS-CL_AP_15102\"> </a></td><td>Camarones (Comuna), Region de Arica y Parinacota, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_AP_15201<a name=\"DirOrgNotiCS-CL_AP_15201\"> </a></td><td>Putre (Comuna), Region de Arica y Parinacota, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_AP_15202<a name=\"DirOrgNotiCS-CL_AP_15202\"> </a></td><td>General Lagos (Comuna), Region de Arica y Parinacota, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_AR_09101<a name=\"DirOrgNotiCS-CL_AR_09101\"> </a></td><td>Temuco (Comuna), Region de La Araucania, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_AR_09102<a name=\"DirOrgNotiCS-CL_AR_09102\"> </a></td><td>Carahue (Comuna), Region de La Araucania, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_AR_09103<a name=\"DirOrgNotiCS-CL_AR_09103\"> </a></td><td>Cunco (Comuna), Region de La Araucania, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_AR_09104<a name=\"DirOrgNotiCS-CL_AR_09104\"> </a></td><td>Curarrehue (Comuna), Region de La Araucania, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_AR_09105<a name=\"DirOrgNotiCS-CL_AR_09105\"> </a></td><td>Freire (Comuna), Region de La Araucania, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_AR_09106<a name=\"DirOrgNotiCS-CL_AR_09106\"> </a></td><td>Galvarino (Comuna), Region de La Araucania, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_AR_09107<a name=\"DirOrgNotiCS-CL_AR_09107\"> </a></td><td>Gorbea (Comuna), Region de La Araucania, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_AR_09108<a name=\"DirOrgNotiCS-CL_AR_09108\"> </a></td><td>Lautaro (Comuna), Region de La Araucania, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_AR_09109<a name=\"DirOrgNotiCS-CL_AR_09109\"> </a></td><td>Loncoche (Comuna), Region de La Araucania, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_AR_09110<a name=\"DirOrgNotiCS-CL_AR_09110\"> </a></td><td>Melipeuco (Comuna), Region de La Araucania, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_AR_09111<a name=\"DirOrgNotiCS-CL_AR_09111\"> </a></td><td>Nueva Imperial (Comuna), Region de La Araucania, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_AR_09112<a name=\"DirOrgNotiCS-CL_AR_09112\"> </a></td><td>Padre Las Casas (Comuna), Region de La Araucania, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_AR_09113<a name=\"DirOrgNotiCS-CL_AR_09113\"> </a></td><td>Perquenco (Comuna), Region de La Araucania, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_AR_09114<a name=\"DirOrgNotiCS-CL_AR_09114\"> </a></td><td>Pitrufquén (Comuna), Region de La Araucania, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_AR_09115<a name=\"DirOrgNotiCS-CL_AR_09115\"> </a></td><td>Pucón (Comuna), Region de La Araucania, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_AR_09116<a name=\"DirOrgNotiCS-CL_AR_09116\"> </a></td><td>Saavedra (Comuna), Region de La Araucania, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_AR_09117<a name=\"DirOrgNotiCS-CL_AR_09117\"> </a></td><td>Teodoro Schmidt (Comuna), Region de La Araucania, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_AR_09118<a name=\"DirOrgNotiCS-CL_AR_09118\"> </a></td><td>Toltén (Comuna), Region de La Araucania, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_AR_09119<a name=\"DirOrgNotiCS-CL_AR_09119\"> </a></td><td>Vilcún (Comuna), Region de La Araucania, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_AR_09120<a name=\"DirOrgNotiCS-CL_AR_09120\"> </a></td><td>Villarrica (Comuna), Region de La Araucania, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_AR_09121<a name=\"DirOrgNotiCS-CL_AR_09121\"> </a></td><td>Cholchol (Comuna), Region de La Araucania, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_AR_09201<a name=\"DirOrgNotiCS-CL_AR_09201\"> </a></td><td>Angol (Comuna), Region de La Araucania, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_AR_09202<a name=\"DirOrgNotiCS-CL_AR_09202\"> </a></td><td>Collipulli (Comuna), Region de La Araucania, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_AR_09203<a name=\"DirOrgNotiCS-CL_AR_09203\"> </a></td><td>Curacautín (Comuna), Region de La Araucania, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_AR_09204<a name=\"DirOrgNotiCS-CL_AR_09204\"> </a></td><td>Ercilla (Comuna), Region de La Araucania, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_AR_09205<a name=\"DirOrgNotiCS-CL_AR_09205\"> </a></td><td>Lonquimay (Comuna), Region de La Araucania, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_AR_09206<a name=\"DirOrgNotiCS-CL_AR_09206\"> </a></td><td>Los Sauces (Comuna), Region de La Araucania, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_AR_09207<a name=\"DirOrgNotiCS-CL_AR_09207\"> </a></td><td>Lumaco (Comuna), Region de La Araucania, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_AR_09208<a name=\"DirOrgNotiCS-CL_AR_09208\"> </a></td><td>Purén (Comuna), Region de La Araucania, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_AR_09209<a name=\"DirOrgNotiCS-CL_AR_09209\"> </a></td><td>Renaico (Comuna), Region de La Araucania, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_AR_09210<a name=\"DirOrgNotiCS-CL_AR_09210\"> </a></td><td>Traiguén (Comuna), Region de La Araucania, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_AR_09211<a name=\"DirOrgNotiCS-CL_AR_09211\"> </a></td><td>Victoria (Comuna), Region de La Araucania, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_AT_03101<a name=\"DirOrgNotiCS-CL_AT_03101\"> </a></td><td>Copiapó (Comuna), Region de Atacama, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_AT_03102<a name=\"DirOrgNotiCS-CL_AT_03102\"> </a></td><td>Caldera (Comuna), Region de Atacama, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_AT_03103<a name=\"DirOrgNotiCS-CL_AT_03103\"> </a></td><td>Tierra Amarilla (Comuna), Region de Atacama, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_AT_03201<a name=\"DirOrgNotiCS-CL_AT_03201\"> </a></td><td>Chañaral (Comuna), Region de Atacama, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_AT_03202<a name=\"DirOrgNotiCS-CL_AT_03202\"> </a></td><td>Diego de Almagro (Comuna), Region de Atacama, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_AT_03301<a name=\"DirOrgNotiCS-CL_AT_03301\"> </a></td><td>Vallenar (Comuna), Region de Atacama, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_AT_03302<a name=\"DirOrgNotiCS-CL_AT_03302\"> </a></td><td>Alto del Carmen (Comuna), Region de Atacama, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_AT_03303<a name=\"DirOrgNotiCS-CL_AT_03303\"> </a></td><td>Freirina (Comuna), Region de Atacama, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_AT_03304<a name=\"DirOrgNotiCS-CL_AT_03304\"> </a></td><td>Huasco (Comuna), Region de Atacama, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_BI_08101<a name=\"DirOrgNotiCS-CL_BI_08101\"> </a></td><td>Concepción (Comuna), Region del Biobio, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_BI_08102<a name=\"DirOrgNotiCS-CL_BI_08102\"> </a></td><td>Coronel (Comuna), Region del Biobio, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_BI_08103<a name=\"DirOrgNotiCS-CL_BI_08103\"> </a></td><td>Chiguayante (Comuna), Region del Biobio, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_BI_08104<a name=\"DirOrgNotiCS-CL_BI_08104\"> </a></td><td>Florida (Comuna), Region del Biobio, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_BI_08105<a name=\"DirOrgNotiCS-CL_BI_08105\"> </a></td><td>Hualqui (Comuna), Region del Biobio, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_BI_08106<a name=\"DirOrgNotiCS-CL_BI_08106\"> </a></td><td>Lota (Comuna), Region del Biobio, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_BI_08107<a name=\"DirOrgNotiCS-CL_BI_08107\"> </a></td><td>Penco (Comuna), Region del Biobio, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_BI_08108<a name=\"DirOrgNotiCS-CL_BI_08108\"> </a></td><td>San Pedro de la Paz (Comuna), Region del Biobio, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_BI_08109<a name=\"DirOrgNotiCS-CL_BI_08109\"> </a></td><td>Santa Juana (Comuna), Region del Biobio, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_BI_08110<a name=\"DirOrgNotiCS-CL_BI_08110\"> </a></td><td>Talcahuano (Comuna), Region del Biobio, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_BI_08111<a name=\"DirOrgNotiCS-CL_BI_08111\"> </a></td><td>Tomé (Comuna), Region del Biobio, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_BI_08112<a name=\"DirOrgNotiCS-CL_BI_08112\"> </a></td><td>Hualpén (Comuna), Region del Biobio, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_BI_08201<a name=\"DirOrgNotiCS-CL_BI_08201\"> </a></td><td>Lebu (Comuna), Region del Biobio, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_BI_08202<a name=\"DirOrgNotiCS-CL_BI_08202\"> </a></td><td>Arauco (Comuna), Region del Biobio, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_BI_08203<a name=\"DirOrgNotiCS-CL_BI_08203\"> </a></td><td>Cañete (Comuna), Region del Biobio, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_BI_08204<a name=\"DirOrgNotiCS-CL_BI_08204\"> </a></td><td>Contulmo (Comuna), Region del Biobio, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_BI_08205<a name=\"DirOrgNotiCS-CL_BI_08205\"> </a></td><td>Curanilahue (Comuna), Region del Biobio, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_BI_08206<a name=\"DirOrgNotiCS-CL_BI_08206\"> </a></td><td>Los Alamos (Comuna), Region del Biobio, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_BI_08207<a name=\"DirOrgNotiCS-CL_BI_08207\"> </a></td><td>Tirúa (Comuna), Region del Biobio, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_BI_08301<a name=\"DirOrgNotiCS-CL_BI_08301\"> </a></td><td>Los Angeles (Comuna), Region del Biobio, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_BI_08302<a name=\"DirOrgNotiCS-CL_BI_08302\"> </a></td><td>Antuco (Comuna), Region del Biobio, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_BI_08303<a name=\"DirOrgNotiCS-CL_BI_08303\"> </a></td><td>Cabrero (Comuna), Region del Biobio, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_BI_08304<a name=\"DirOrgNotiCS-CL_BI_08304\"> </a></td><td>Laja (Comuna), Region del Biobio, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_BI_08305<a name=\"DirOrgNotiCS-CL_BI_08305\"> </a></td><td>Mulchén (Comuna), Region del Biobio, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_BI_08306<a name=\"DirOrgNotiCS-CL_BI_08306\"> </a></td><td>Nacimiento (Comuna), Region del Biobio, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_BI_08307<a name=\"DirOrgNotiCS-CL_BI_08307\"> </a></td><td>Negrete (Comuna), Region del Biobio, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_BI_08308<a name=\"DirOrgNotiCS-CL_BI_08308\"> </a></td><td>Quilaco (Comuna), Region del Biobio, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_BI_08309<a name=\"DirOrgNotiCS-CL_BI_08309\"> </a></td><td>Quilleco (Comuna), Region del Biobio, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_BI_08310<a name=\"DirOrgNotiCS-CL_BI_08310\"> </a></td><td>San Rosendo (Comuna), Region del Biobio, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_BI_08311<a name=\"DirOrgNotiCS-CL_BI_08311\"> </a></td><td>Santa Bárbara (Comuna), Region del Biobio, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_BI_08312<a name=\"DirOrgNotiCS-CL_BI_08312\"> </a></td><td>Tucapel (Comuna), Region del Biobio, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_BI_08313<a name=\"DirOrgNotiCS-CL_BI_08313\"> </a></td><td>Yumbel (Comuna), Region del Biobio, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_BI_08314<a name=\"DirOrgNotiCS-CL_BI_08314\"> </a></td><td>Alto Biobío (Comuna), Region del Biobio, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_CO_04101<a name=\"DirOrgNotiCS-CL_CO_04101\"> </a></td><td>La Serena (Comuna), Region de Coquimbo, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_CO_04102<a name=\"DirOrgNotiCS-CL_CO_04102\"> </a></td><td>Coquimbo (Comuna), Region de Coquimbo, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_CO_04103<a name=\"DirOrgNotiCS-CL_CO_04103\"> </a></td><td>Andacollo (Comuna), Region de Coquimbo, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_CO_04104<a name=\"DirOrgNotiCS-CL_CO_04104\"> </a></td><td>La Higuera (Comuna), Region de Coquimbo, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_CO_04105<a name=\"DirOrgNotiCS-CL_CO_04105\"> </a></td><td>Paihuano (Comuna), Region de Coquimbo, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_CO_04106<a name=\"DirOrgNotiCS-CL_CO_04106\"> </a></td><td>Vicuña (Comuna), Region de Coquimbo, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_CO_04201<a name=\"DirOrgNotiCS-CL_CO_04201\"> </a></td><td>Illapel (Comuna), Region de Coquimbo, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_CO_04202<a name=\"DirOrgNotiCS-CL_CO_04202\"> </a></td><td>Canela (Comuna), Region de Coquimbo, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_CO_04203<a name=\"DirOrgNotiCS-CL_CO_04203\"> </a></td><td>Los Vilos (Comuna), Region de Coquimbo, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_CO_04204<a name=\"DirOrgNotiCS-CL_CO_04204\"> </a></td><td>Salamanca (Comuna), Region de Coquimbo, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_CO_04301<a name=\"DirOrgNotiCS-CL_CO_04301\"> </a></td><td>Ovalle (Comuna), Region de Coquimbo, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_CO_04302<a name=\"DirOrgNotiCS-CL_CO_04302\"> </a></td><td>Combarbalá (Comuna), Region de Coquimbo, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_CO_04303<a name=\"DirOrgNotiCS-CL_CO_04303\"> </a></td><td>Monte Patria (Comuna), Region de Coquimbo, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_CO_04304<a name=\"DirOrgNotiCS-CL_CO_04304\"> </a></td><td>Punitaqui (Comuna), Region de Coquimbo, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_CO_04305<a name=\"DirOrgNotiCS-CL_CO_04305\"> </a></td><td>Río Hurtado (Comuna), Region de Coquimbo, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_LI_06101<a name=\"DirOrgNotiCS-CL_LI_06101\"> </a></td><td>Rancagua (Comuna), Region del Libertador Bernardo OHiggins, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_LI_06102<a name=\"DirOrgNotiCS-CL_LI_06102\"> </a></td><td>Codegua (Comuna), Region del Libertador Bernardo OHiggins, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_LI_06103<a name=\"DirOrgNotiCS-CL_LI_06103\"> </a></td><td>Coinco (Comuna), Region del Libertador Bernardo OHiggins, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_LI_06104<a name=\"DirOrgNotiCS-CL_LI_06104\"> </a></td><td>Coltauco (Comuna), Region del Libertador Bernardo OHiggins, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_LI_06105<a name=\"DirOrgNotiCS-CL_LI_06105\"> </a></td><td>Doñihue (Comuna), Region del Libertador Bernardo OHiggins, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_LI_06106<a name=\"DirOrgNotiCS-CL_LI_06106\"> </a></td><td>Graneros (Comuna), Region del Libertador Bernardo OHiggins, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_LI_06107<a name=\"DirOrgNotiCS-CL_LI_06107\"> </a></td><td>Las Cabras (Comuna), Region del Libertador Bernardo OHiggins, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_LI_06108<a name=\"DirOrgNotiCS-CL_LI_06108\"> </a></td><td>Machalí (Comuna), Region del Libertador Bernardo OHiggins, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_LI_06109<a name=\"DirOrgNotiCS-CL_LI_06109\"> </a></td><td>Malloa (Comuna), Region del Libertador Bernardo OHiggins, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_LI_06110<a name=\"DirOrgNotiCS-CL_LI_06110\"> </a></td><td>Mostazal (Comuna), Region del Libertador Bernardo OHiggins, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_LI_06111<a name=\"DirOrgNotiCS-CL_LI_06111\"> </a></td><td>Olivar (Comuna), Region del Libertador Bernardo OHiggins, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_LI_06112<a name=\"DirOrgNotiCS-CL_LI_06112\"> </a></td><td>Peumo (Comuna), Region del Libertador Bernardo OHiggins, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_LI_06113<a name=\"DirOrgNotiCS-CL_LI_06113\"> </a></td><td>Pichidegua (Comuna), Region del Libertador Bernardo OHiggins, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_LI_06114<a name=\"DirOrgNotiCS-CL_LI_06114\"> </a></td><td>Quinta de Tilcoco (Comuna), Region del Libertador Bernardo OHiggins, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_LI_06115<a name=\"DirOrgNotiCS-CL_LI_06115\"> </a></td><td>Rengo (Comuna), Region del Libertador Bernardo OHiggins, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_LI_06116<a name=\"DirOrgNotiCS-CL_LI_06116\"> </a></td><td>Requínoa (Comuna), Region del Libertador Bernardo OHiggins, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_LI_06117<a name=\"DirOrgNotiCS-CL_LI_06117\"> </a></td><td>San Vicente (Comuna), Region del Libertador Bernardo OHiggins, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_LI_06201<a name=\"DirOrgNotiCS-CL_LI_06201\"> </a></td><td>Pichilemu (Comuna), Region del Libertador Bernardo OHiggins, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_LI_06202<a name=\"DirOrgNotiCS-CL_LI_06202\"> </a></td><td>La Estrella (Comuna), Region del Libertador Bernardo OHiggins, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_LI_06203<a name=\"DirOrgNotiCS-CL_LI_06203\"> </a></td><td>Litueche (Comuna), Region del Libertador Bernardo OHiggins, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_LI_06204<a name=\"DirOrgNotiCS-CL_LI_06204\"> </a></td><td>Marchigüe (Comuna), Region del Libertador Bernardo OHiggins, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_LI_06205<a name=\"DirOrgNotiCS-CL_LI_06205\"> </a></td><td>Navidad (Comuna), Region del Libertador Bernardo OHiggins, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_LI_06206<a name=\"DirOrgNotiCS-CL_LI_06206\"> </a></td><td>Paredones (Comuna), Region del Libertador Bernardo OHiggins, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_LI_06301<a name=\"DirOrgNotiCS-CL_LI_06301\"> </a></td><td>San Fernando (Comuna), Region del Libertador Bernardo OHiggins, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_LI_06302<a name=\"DirOrgNotiCS-CL_LI_06302\"> </a></td><td>Chépica (Comuna), Region del Libertador Bernardo OHiggins, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_LI_06303<a name=\"DirOrgNotiCS-CL_LI_06303\"> </a></td><td>Chimbarongo (Comuna), Region del Libertador Bernardo OHiggins, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_LI_06304<a name=\"DirOrgNotiCS-CL_LI_06304\"> </a></td><td>Lolol (Comuna), Region del Libertador Bernardo OHiggins, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_LI_06305<a name=\"DirOrgNotiCS-CL_LI_06305\"> </a></td><td>Nancagua (Comuna), Region del Libertador Bernardo OHiggins, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_LI_06306<a name=\"DirOrgNotiCS-CL_LI_06306\"> </a></td><td>Palmilla (Comuna), Region del Libertador Bernardo OHiggins, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_LI_06307<a name=\"DirOrgNotiCS-CL_LI_06307\"> </a></td><td>Peralillo (Comuna), Region del Libertador Bernardo OHiggins, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_LI_06308<a name=\"DirOrgNotiCS-CL_LI_06308\"> </a></td><td>Placilla (Comuna), Region del Libertador Bernardo OHiggins, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_LI_06309<a name=\"DirOrgNotiCS-CL_LI_06309\"> </a></td><td>Pumanque (Comuna), Region del Libertador Bernardo OHiggins, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_LI_06310<a name=\"DirOrgNotiCS-CL_LI_06310\"> </a></td><td>Santa Cruz (Comuna), Region del Libertador Bernardo OHiggins, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_LL_10101<a name=\"DirOrgNotiCS-CL_LL_10101\"> </a></td><td>Puerto Montt (Comuna), Region de Los Lagos, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_LL_10102<a name=\"DirOrgNotiCS-CL_LL_10102\"> </a></td><td>Calbuco (Comuna), Region de Los Lagos, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_LL_10103<a name=\"DirOrgNotiCS-CL_LL_10103\"> </a></td><td>Cochamó (Comuna), Region de Los Lagos, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_LL_10104<a name=\"DirOrgNotiCS-CL_LL_10104\"> </a></td><td>Fresia (Comuna), Region de Los Lagos, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_LL_10105<a name=\"DirOrgNotiCS-CL_LL_10105\"> </a></td><td>Frutillar (Comuna), Region de Los Lagos, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_LL_10106<a name=\"DirOrgNotiCS-CL_LL_10106\"> </a></td><td>Los Muermos (Comuna), Region de Los Lagos, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_LL_10107<a name=\"DirOrgNotiCS-CL_LL_10107\"> </a></td><td>Llanquihue (Comuna), Region de Los Lagos, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_LL_10108<a name=\"DirOrgNotiCS-CL_LL_10108\"> </a></td><td>Maullín (Comuna), Region de Los Lagos, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_LL_10109<a name=\"DirOrgNotiCS-CL_LL_10109\"> </a></td><td>Puerto Varas (Comuna), Region de Los Lagos, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_LL_10201<a name=\"DirOrgNotiCS-CL_LL_10201\"> </a></td><td>Castro (Comuna), Region de Los Lagos, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_LL_10202<a name=\"DirOrgNotiCS-CL_LL_10202\"> </a></td><td>Ancud (Comuna), Region de Los Lagos, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_LL_10203<a name=\"DirOrgNotiCS-CL_LL_10203\"> </a></td><td>Chonchi (Comuna), Region de Los Lagos, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_LL_10204<a name=\"DirOrgNotiCS-CL_LL_10204\"> </a></td><td>Curaco de Vélez (Comuna), Region de Los Lagos, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_LL_10205<a name=\"DirOrgNotiCS-CL_LL_10205\"> </a></td><td>Dalcahue (Comuna), Region de Los Lagos, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_LL_10206<a name=\"DirOrgNotiCS-CL_LL_10206\"> </a></td><td>Puqueldón (Comuna), Region de Los Lagos, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_LL_10207<a name=\"DirOrgNotiCS-CL_LL_10207\"> </a></td><td>Queilén (Comuna), Region de Los Lagos, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_LL_10208<a name=\"DirOrgNotiCS-CL_LL_10208\"> </a></td><td>Quellón (Comuna), Region de Los Lagos, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_LL_10209<a name=\"DirOrgNotiCS-CL_LL_10209\"> </a></td><td>Quemchi (Comuna), Region de Los Lagos, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_LL_10210<a name=\"DirOrgNotiCS-CL_LL_10210\"> </a></td><td>Quinchao (Comuna), Region de Los Lagos, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_LL_10301<a name=\"DirOrgNotiCS-CL_LL_10301\"> </a></td><td>Osorno (Comuna), Region de Los Lagos, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_LL_10302<a name=\"DirOrgNotiCS-CL_LL_10302\"> </a></td><td>Puerto Octay (Comuna), Region de Los Lagos, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_LL_10303<a name=\"DirOrgNotiCS-CL_LL_10303\"> </a></td><td>Purranque (Comuna), Region de Los Lagos, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_LL_10304<a name=\"DirOrgNotiCS-CL_LL_10304\"> </a></td><td>Puyehue (Comuna), Region de Los Lagos, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_LL_10305<a name=\"DirOrgNotiCS-CL_LL_10305\"> </a></td><td>Río Negro (Comuna), Region de Los Lagos, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_LL_10306<a name=\"DirOrgNotiCS-CL_LL_10306\"> </a></td><td>San Juan de la Costa (Comuna), Region de Los Lagos, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_LL_10307<a name=\"DirOrgNotiCS-CL_LL_10307\"> </a></td><td>San Pablo (Comuna), Region de Los Lagos, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_LL_10401<a name=\"DirOrgNotiCS-CL_LL_10401\"> </a></td><td>Chaitén (Comuna), Region de Los Lagos, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_LL_10402<a name=\"DirOrgNotiCS-CL_LL_10402\"> </a></td><td>Futaleufú (Comuna), Region de Los Lagos, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_LL_10403<a name=\"DirOrgNotiCS-CL_LL_10403\"> </a></td><td>Hualaihué (Comuna), Region de Los Lagos, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_LL_10404<a name=\"DirOrgNotiCS-CL_LL_10404\"> </a></td><td>Palena (Comuna), Region de Los Lagos, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_LR_14101<a name=\"DirOrgNotiCS-CL_LR_14101\"> </a></td><td>Valdivia (Comuna), Region de Los Rios, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_LR_14102<a name=\"DirOrgNotiCS-CL_LR_14102\"> </a></td><td>Corral (Comuna), Region de Los Rios, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_LR_14103<a name=\"DirOrgNotiCS-CL_LR_14103\"> </a></td><td>Lanco (Comuna), Region de Los Rios, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_LR_14104<a name=\"DirOrgNotiCS-CL_LR_14104\"> </a></td><td>Los Lagos (Comuna), Region de Los Rios, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_LR_14105<a name=\"DirOrgNotiCS-CL_LR_14105\"> </a></td><td>Máfil (Comuna), Region de Los Rios, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_LR_14106<a name=\"DirOrgNotiCS-CL_LR_14106\"> </a></td><td>Mariquina (Comuna), Region de Los Rios, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_LR_14107<a name=\"DirOrgNotiCS-CL_LR_14107\"> </a></td><td>Paillaco (Comuna), Region de Los Rios, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_LR_14108<a name=\"DirOrgNotiCS-CL_LR_14108\"> </a></td><td>Panguipulli (Comuna), Region de Los Rios, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_LR_14201<a name=\"DirOrgNotiCS-CL_LR_14201\"> </a></td><td>La Unión (Comuna), Region de Los Rios, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_LR_14202<a name=\"DirOrgNotiCS-CL_LR_14202\"> </a></td><td>Futrono (Comuna), Region de Los Rios, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_LR_14203<a name=\"DirOrgNotiCS-CL_LR_14203\"> </a></td><td>Lago Ranco (Comuna), Region de Los Rios, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_LR_14204<a name=\"DirOrgNotiCS-CL_LR_14204\"> </a></td><td>Río Bueno (Comuna), Region de Los Rios, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_MA_12101<a name=\"DirOrgNotiCS-CL_MA_12101\"> </a></td><td>Punta Arenas (Comuna), Region de Magallanes y Antartica Chilena, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_MA_12102<a name=\"DirOrgNotiCS-CL_MA_12102\"> </a></td><td>Laguna Blanca (Comuna), Region de Magallanes y Antartica Chilena, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_MA_12103<a name=\"DirOrgNotiCS-CL_MA_12103\"> </a></td><td>Río Verde (Comuna), Region de Magallanes y Antartica Chilena, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_MA_12104<a name=\"DirOrgNotiCS-CL_MA_12104\"> </a></td><td>San Gregorio (Comuna), Region de Magallanes y Antartica Chilena, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_MA_12201<a name=\"DirOrgNotiCS-CL_MA_12201\"> </a></td><td>Cabo de Hornos (Comuna), Region de Magallanes y Antartica Chilena, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_MA_12202<a name=\"DirOrgNotiCS-CL_MA_12202\"> </a></td><td>Antartica (Comuna), Region de Magallanes y Antartica Chilena, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_MA_12301<a name=\"DirOrgNotiCS-CL_MA_12301\"> </a></td><td>Porvenir (Comuna), Region de Magallanes y Antartica Chilena, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_MA_12302<a name=\"DirOrgNotiCS-CL_MA_12302\"> </a></td><td>Primavera (Comuna), Region de Magallanes y Antartica Chilena, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_MA_12303<a name=\"DirOrgNotiCS-CL_MA_12303\"> </a></td><td>Timaukel (Comuna), Region de Magallanes y Antartica Chilena, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_MA_12401<a name=\"DirOrgNotiCS-CL_MA_12401\"> </a></td><td>Natales (Comuna), Region de Magallanes y Antartica Chilena, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_MA_12402<a name=\"DirOrgNotiCS-CL_MA_12402\"> </a></td><td>Torres del Paine (Comuna), Region de Magallanes y Antartica Chilena, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_ML_07101<a name=\"DirOrgNotiCS-CL_ML_07101\"> </a></td><td>Talca (Comuna), Region del Maule, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_ML_07102<a name=\"DirOrgNotiCS-CL_ML_07102\"> </a></td><td>Constitución (Comuna), Region del Maule, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_ML_07103<a name=\"DirOrgNotiCS-CL_ML_07103\"> </a></td><td>Curepto (Comuna), Region del Maule, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_ML_07104<a name=\"DirOrgNotiCS-CL_ML_07104\"> </a></td><td>Empedrado (Comuna), Region del Maule, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_ML_07105<a name=\"DirOrgNotiCS-CL_ML_07105\"> </a></td><td>Maule (Comuna), Region del Maule, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_ML_07106<a name=\"DirOrgNotiCS-CL_ML_07106\"> </a></td><td>Pelarco (Comuna), Region del Maule, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_ML_07107<a name=\"DirOrgNotiCS-CL_ML_07107\"> </a></td><td>Pencahue (Comuna), Region del Maule, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_ML_07108<a name=\"DirOrgNotiCS-CL_ML_07108\"> </a></td><td>Río Claro (Comuna), Region del Maule, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_ML_07109<a name=\"DirOrgNotiCS-CL_ML_07109\"> </a></td><td>San Clemente (Comuna), Region del Maule, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_ML_07110<a name=\"DirOrgNotiCS-CL_ML_07110\"> </a></td><td>San Rafael (Comuna), Region del Maule, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_ML_07201<a name=\"DirOrgNotiCS-CL_ML_07201\"> </a></td><td>Cauquenes (Comuna), Region del Maule, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_ML_07202<a name=\"DirOrgNotiCS-CL_ML_07202\"> </a></td><td>Chanco (Comuna), Region del Maule, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_ML_07203<a name=\"DirOrgNotiCS-CL_ML_07203\"> </a></td><td>Pelluhue (Comuna), Region del Maule, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_ML_07301<a name=\"DirOrgNotiCS-CL_ML_07301\"> </a></td><td>Curicó (Comuna), Region del Maule, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_ML_07302<a name=\"DirOrgNotiCS-CL_ML_07302\"> </a></td><td>Hualañé (Comuna), Region del Maule, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_ML_07303<a name=\"DirOrgNotiCS-CL_ML_07303\"> </a></td><td>Licantén (Comuna), Region del Maule, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_ML_07304<a name=\"DirOrgNotiCS-CL_ML_07304\"> </a></td><td>Molina (Comuna), Region del Maule, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_ML_07305<a name=\"DirOrgNotiCS-CL_ML_07305\"> </a></td><td>Rauco (Comuna), Region del Maule, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_ML_07306<a name=\"DirOrgNotiCS-CL_ML_07306\"> </a></td><td>Romeral (Comuna), Region del Maule, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_ML_07307<a name=\"DirOrgNotiCS-CL_ML_07307\"> </a></td><td>Sagrada Familia (Comuna), Region del Maule, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_ML_07308<a name=\"DirOrgNotiCS-CL_ML_07308\"> </a></td><td>Teno (Comuna), Region del Maule, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_ML_07309<a name=\"DirOrgNotiCS-CL_ML_07309\"> </a></td><td>Vichuquén (Comuna), Region del Maule, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_ML_07401<a name=\"DirOrgNotiCS-CL_ML_07401\"> </a></td><td>Linares (Comuna), Region del Maule, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_ML_07402<a name=\"DirOrgNotiCS-CL_ML_07402\"> </a></td><td>Colbún (Comuna), Region del Maule, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_ML_07403<a name=\"DirOrgNotiCS-CL_ML_07403\"> </a></td><td>Longaví (Comuna), Region del Maule, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_ML_07404<a name=\"DirOrgNotiCS-CL_ML_07404\"> </a></td><td>Parral (Comuna), Region del Maule, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_ML_07405<a name=\"DirOrgNotiCS-CL_ML_07405\"> </a></td><td>Retiro (Comuna), Region del Maule, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_ML_07406<a name=\"DirOrgNotiCS-CL_ML_07406\"> </a></td><td>San Javier (Comuna), Region del Maule, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_ML_07407<a name=\"DirOrgNotiCS-CL_ML_07407\"> </a></td><td>Villa Alegre (Comuna), Region del Maule, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_ML_07408<a name=\"DirOrgNotiCS-CL_ML_07408\"> </a></td><td>Yerbas Buenas (Comuna), Region del Maule, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_NB_16101<a name=\"DirOrgNotiCS-CL_NB_16101\"> </a></td><td>Chillán (Comuna), Region de Nuble, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_NB_16102<a name=\"DirOrgNotiCS-CL_NB_16102\"> </a></td><td>Bulnes (Comuna), Region de Nuble, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_NB_16103<a name=\"DirOrgNotiCS-CL_NB_16103\"> </a></td><td>Chillán Viejo (Comuna), Region de Nuble, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_NB_16104<a name=\"DirOrgNotiCS-CL_NB_16104\"> </a></td><td>El Carmen (Comuna), Region de Nuble, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_NB_16105<a name=\"DirOrgNotiCS-CL_NB_16105\"> </a></td><td>Pemuco (Comuna), Region de Nuble, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_NB_16106<a name=\"DirOrgNotiCS-CL_NB_16106\"> </a></td><td>Pinto (Comuna), Region de Nuble, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_NB_16107<a name=\"DirOrgNotiCS-CL_NB_16107\"> </a></td><td>Quillón (Comuna), Region de Nuble, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_NB_16108<a name=\"DirOrgNotiCS-CL_NB_16108\"> </a></td><td>San Ignacio (Comuna), Region de Nuble, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_NB_16109<a name=\"DirOrgNotiCS-CL_NB_16109\"> </a></td><td>Yungay (Comuna), Region de Nuble, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_NB_16201<a name=\"DirOrgNotiCS-CL_NB_16201\"> </a></td><td>Quirihue (Comuna), Region de Nuble, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_NB_16202<a name=\"DirOrgNotiCS-CL_NB_16202\"> </a></td><td>Cobquecura (Comuna), Region de Nuble, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_NB_16203<a name=\"DirOrgNotiCS-CL_NB_16203\"> </a></td><td>Coelemu (Comuna), Region de Nuble, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_NB_16204<a name=\"DirOrgNotiCS-CL_NB_16204\"> </a></td><td>Ninhue (Comuna), Region de Nuble, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_NB_16205<a name=\"DirOrgNotiCS-CL_NB_16205\"> </a></td><td>Portezuelo (Comuna), Region de Nuble, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_NB_16206<a name=\"DirOrgNotiCS-CL_NB_16206\"> </a></td><td>RaNquil (Comuna), Region de Nuble, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_NB_16207<a name=\"DirOrgNotiCS-CL_NB_16207\"> </a></td><td>Treguaco (Comuna), Region de Nuble, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_NB_16301<a name=\"DirOrgNotiCS-CL_NB_16301\"> </a></td><td>San Carlos (Comuna), Region de Nuble, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_NB_16302<a name=\"DirOrgNotiCS-CL_NB_16302\"> </a></td><td>Coihueco (Comuna), Region de Nuble, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_NB_16303<a name=\"DirOrgNotiCS-CL_NB_16303\"> </a></td><td>Ñiquén (Comuna), Region de Nuble, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_NB_16304<a name=\"DirOrgNotiCS-CL_NB_16304\"> </a></td><td>San Fabián (Comuna), Region de Nuble, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_NB_16305<a name=\"DirOrgNotiCS-CL_NB_16305\"> </a></td><td>San Nicolás (Comuna), Region de Nuble, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_RM_13101<a name=\"DirOrgNotiCS-CL_RM_13101\"> </a></td><td>Santiago (Comuna), Region Metropolitana de Santiago, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_RM_13102<a name=\"DirOrgNotiCS-CL_RM_13102\"> </a></td><td>Cerrillos (Comuna), Region Metropolitana de Santiago, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_RM_13103<a name=\"DirOrgNotiCS-CL_RM_13103\"> </a></td><td>Cerro Navia (Comuna), Region Metropolitana de Santiago, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_RM_13104<a name=\"DirOrgNotiCS-CL_RM_13104\"> </a></td><td>Conchalí (Comuna), Region Metropolitana de Santiago, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_RM_13105<a name=\"DirOrgNotiCS-CL_RM_13105\"> </a></td><td>El Bosque (Comuna), Region Metropolitana de Santiago, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_RM_13106<a name=\"DirOrgNotiCS-CL_RM_13106\"> </a></td><td>Estación Central (Comuna), Region Metropolitana de Santiago, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_RM_13107<a name=\"DirOrgNotiCS-CL_RM_13107\"> </a></td><td>Huechuraba (Comuna), Region Metropolitana de Santiago, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_RM_13108<a name=\"DirOrgNotiCS-CL_RM_13108\"> </a></td><td>Independencia (Comuna), Region Metropolitana de Santiago, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_RM_13109<a name=\"DirOrgNotiCS-CL_RM_13109\"> </a></td><td>La Cisterna (Comuna), Region Metropolitana de Santiago, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_RM_13110<a name=\"DirOrgNotiCS-CL_RM_13110\"> </a></td><td>La Florida (Comuna), Region Metropolitana de Santiago, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_RM_13111<a name=\"DirOrgNotiCS-CL_RM_13111\"> </a></td><td>La Granja (Comuna), Region Metropolitana de Santiago, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_RM_13112<a name=\"DirOrgNotiCS-CL_RM_13112\"> </a></td><td>La Pintana (Comuna), Region Metropolitana de Santiago, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_RM_13113<a name=\"DirOrgNotiCS-CL_RM_13113\"> </a></td><td>La Reina (Comuna), Region Metropolitana de Santiago, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_RM_13114<a name=\"DirOrgNotiCS-CL_RM_13114\"> </a></td><td>Las Condes (Comuna), Region Metropolitana de Santiago, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_RM_13115<a name=\"DirOrgNotiCS-CL_RM_13115\"> </a></td><td>Lo Barnechea (Comuna), Region Metropolitana de Santiago, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_RM_13116<a name=\"DirOrgNotiCS-CL_RM_13116\"> </a></td><td>Lo Espejo (Comuna), Region Metropolitana de Santiago, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_RM_13117<a name=\"DirOrgNotiCS-CL_RM_13117\"> </a></td><td>Lo Prado (Comuna), Region Metropolitana de Santiago, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_RM_13118<a name=\"DirOrgNotiCS-CL_RM_13118\"> </a></td><td>Macul (Comuna), Region Metropolitana de Santiago, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_RM_13119<a name=\"DirOrgNotiCS-CL_RM_13119\"> </a></td><td>Maipú (Comuna), Region Metropolitana de Santiago, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_RM_13120<a name=\"DirOrgNotiCS-CL_RM_13120\"> </a></td><td>Ñuñoa (Comuna), Region Metropolitana de Santiago, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_RM_13121<a name=\"DirOrgNotiCS-CL_RM_13121\"> </a></td><td>Pedro Aguirre Cerda (Comuna), Region Metropolitana de Santiago, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_RM_13122<a name=\"DirOrgNotiCS-CL_RM_13122\"> </a></td><td>Peñalolén (Comuna), Region Metropolitana de Santiago, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_RM_13123<a name=\"DirOrgNotiCS-CL_RM_13123\"> </a></td><td>Providencia (Comuna), Region Metropolitana de Santiago, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_RM_13124<a name=\"DirOrgNotiCS-CL_RM_13124\"> </a></td><td>Pudahuel (Comuna), Region Metropolitana de Santiago, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_RM_13125<a name=\"DirOrgNotiCS-CL_RM_13125\"> </a></td><td>Quilicura (Comuna), Region Metropolitana de Santiago, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_RM_13126<a name=\"DirOrgNotiCS-CL_RM_13126\"> </a></td><td>Quinta Normal (Comuna), Region Metropolitana de Santiago, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_RM_13127<a name=\"DirOrgNotiCS-CL_RM_13127\"> </a></td><td>Recoleta (Comuna), Region Metropolitana de Santiago, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_RM_13128<a name=\"DirOrgNotiCS-CL_RM_13128\"> </a></td><td>Renca (Comuna), Region Metropolitana de Santiago, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_RM_13129<a name=\"DirOrgNotiCS-CL_RM_13129\"> </a></td><td>San Joaquín (Comuna), Region Metropolitana de Santiago, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_RM_13130<a name=\"DirOrgNotiCS-CL_RM_13130\"> </a></td><td>San Miguel (Comuna), Region Metropolitana de Santiago, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_RM_13131<a name=\"DirOrgNotiCS-CL_RM_13131\"> </a></td><td>San Ramón (Comuna), Region Metropolitana de Santiago, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_RM_13132<a name=\"DirOrgNotiCS-CL_RM_13132\"> </a></td><td>Vitacura (Comuna), Region Metropolitana de Santiago, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_RM_13201<a name=\"DirOrgNotiCS-CL_RM_13201\"> </a></td><td>Puente Alto (Comuna), Region Metropolitana de Santiago, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_RM_13202<a name=\"DirOrgNotiCS-CL_RM_13202\"> </a></td><td>Pirque (Comuna), Region Metropolitana de Santiago, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_RM_13203<a name=\"DirOrgNotiCS-CL_RM_13203\"> </a></td><td>San José de Maipo (Comuna), Region Metropolitana de Santiago, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_RM_13301<a name=\"DirOrgNotiCS-CL_RM_13301\"> </a></td><td>Colina (Comuna), Region Metropolitana de Santiago, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_RM_13302<a name=\"DirOrgNotiCS-CL_RM_13302\"> </a></td><td>Lampa (Comuna), Region Metropolitana de Santiago, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_RM_13303<a name=\"DirOrgNotiCS-CL_RM_13303\"> </a></td><td>Tiltil (Comuna), Region Metropolitana de Santiago, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_RM_13401<a name=\"DirOrgNotiCS-CL_RM_13401\"> </a></td><td>San Bernardo (Comuna), Region Metropolitana de Santiago, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_RM_13402<a name=\"DirOrgNotiCS-CL_RM_13402\"> </a></td><td>Buin (Comuna), Region Metropolitana de Santiago, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_RM_13403<a name=\"DirOrgNotiCS-CL_RM_13403\"> </a></td><td>Calera de Tango (Comuna), Region Metropolitana de Santiago, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_RM_13404<a name=\"DirOrgNotiCS-CL_RM_13404\"> </a></td><td>Paine (Comuna), Region Metropolitana de Santiago, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_RM_13501<a name=\"DirOrgNotiCS-CL_RM_13501\"> </a></td><td>Melipilla (Comuna), Region Metropolitana de Santiago, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_RM_13502<a name=\"DirOrgNotiCS-CL_RM_13502\"> </a></td><td>Alhué (Comuna), Region Metropolitana de Santiago, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_RM_13503<a name=\"DirOrgNotiCS-CL_RM_13503\"> </a></td><td>Curacaví (Comuna), Region Metropolitana de Santiago, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_RM_13504<a name=\"DirOrgNotiCS-CL_RM_13504\"> </a></td><td>María Pinto (Comuna), Region Metropolitana de Santiago, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_RM_13505<a name=\"DirOrgNotiCS-CL_RM_13505\"> </a></td><td>San Pedro (Comuna), Region Metropolitana de Santiago, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_RM_13601<a name=\"DirOrgNotiCS-CL_RM_13601\"> </a></td><td>Talagante (Comuna), Region Metropolitana de Santiago, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_RM_13602<a name=\"DirOrgNotiCS-CL_RM_13602\"> </a></td><td>El Monte (Comuna), Region Metropolitana de Santiago, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_RM_13603<a name=\"DirOrgNotiCS-CL_RM_13603\"> </a></td><td>Isla de Maipo (Comuna), Region Metropolitana de Santiago, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_RM_13604<a name=\"DirOrgNotiCS-CL_RM_13604\"> </a></td><td>Padre Hurtado (Comuna), Region Metropolitana de Santiago, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_RM_13605<a name=\"DirOrgNotiCS-CL_RM_13605\"> </a></td><td>Peñaflor (Comuna), Region Metropolitana de Santiago, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_TA_01101<a name=\"DirOrgNotiCS-CL_TA_01101\"> </a></td><td>Iquique (Comuna), Region de Tarapaca, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_TA_01107<a name=\"DirOrgNotiCS-CL_TA_01107\"> </a></td><td>Alto Hospicio (Comuna), Region de Tarapaca, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_TA_01401<a name=\"DirOrgNotiCS-CL_TA_01401\"> </a></td><td>Tocopilla (Comuna), Region de Tarapaca, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_TA_01402<a name=\"DirOrgNotiCS-CL_TA_01402\"> </a></td><td>Camiña (Comuna), Region de Tarapaca, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_TA_01403<a name=\"DirOrgNotiCS-CL_TA_01403\"> </a></td><td>Colchane (Comuna), Region de Tarapaca, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_TA_01404<a name=\"DirOrgNotiCS-CL_TA_01404\"> </a></td><td>Huara (Comuna), Region de Tarapaca, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_TA_01405<a name=\"DirOrgNotiCS-CL_TA_01405\"> </a></td><td>Pica (Comuna), Region de Tarapaca, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_VS_05101<a name=\"DirOrgNotiCS-CL_VS_05101\"> </a></td><td>Valparaíso (Comuna), Region de Valparaiso, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_VS_05102<a name=\"DirOrgNotiCS-CL_VS_05102\"> </a></td><td>Casablanca (Comuna), Region de Valparaiso, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_VS_05103<a name=\"DirOrgNotiCS-CL_VS_05103\"> </a></td><td>Concón (Comuna), Region de Valparaiso, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_VS_05104<a name=\"DirOrgNotiCS-CL_VS_05104\"> </a></td><td>Juan Fernández (Comuna), Region de Valparaiso, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_VS_05105<a name=\"DirOrgNotiCS-CL_VS_05105\"> </a></td><td>Puchuncaví (Comuna), Region de Valparaiso, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_VS_05107<a name=\"DirOrgNotiCS-CL_VS_05107\"> </a></td><td>Quintero (Comuna), Region de Valparaiso, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_VS_05109<a name=\"DirOrgNotiCS-CL_VS_05109\"> </a></td><td>Viña del Mar (Comuna), Region de Valparaiso, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_VS_05201<a name=\"DirOrgNotiCS-CL_VS_05201\"> </a></td><td>Isla de Pascua (Comuna), Region de Valparaiso, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_VS_05301<a name=\"DirOrgNotiCS-CL_VS_05301\"> </a></td><td>Los Andes (Comuna), Region de Valparaiso, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_VS_05302<a name=\"DirOrgNotiCS-CL_VS_05302\"> </a></td><td>Calle Larga (Comuna), Region de Valparaiso, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_VS_05303<a name=\"DirOrgNotiCS-CL_VS_05303\"> </a></td><td>Rinconada (Comuna), Region de Valparaiso, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_VS_05304<a name=\"DirOrgNotiCS-CL_VS_05304\"> </a></td><td>San Esteban (Comuna), Region de Valparaiso, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_VS_05401<a name=\"DirOrgNotiCS-CL_VS_05401\"> </a></td><td>La Ligua (Comuna), Region de Valparaiso, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_VS_05402<a name=\"DirOrgNotiCS-CL_VS_05402\"> </a></td><td>Cabildo (Comuna), Region de Valparaiso, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_VS_05403<a name=\"DirOrgNotiCS-CL_VS_05403\"> </a></td><td>Papudo (Comuna), Region de Valparaiso, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_VS_05404<a name=\"DirOrgNotiCS-CL_VS_05404\"> </a></td><td>Petorca (Comuna), Region de Valparaiso, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_VS_05405<a name=\"DirOrgNotiCS-CL_VS_05405\"> </a></td><td>Zapallar (Comuna), Region de Valparaiso, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_VS_05501<a name=\"DirOrgNotiCS-CL_VS_05501\"> </a></td><td>Quillota (Comuna), Region de Valparaiso, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_VS_05502<a name=\"DirOrgNotiCS-CL_VS_05502\"> </a></td><td>Calera (Comuna), Region de Valparaiso, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_VS_05503<a name=\"DirOrgNotiCS-CL_VS_05503\"> </a></td><td>Hijuelas (Comuna), Region de Valparaiso, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_VS_05504<a name=\"DirOrgNotiCS-CL_VS_05504\"> </a></td><td>La Cruz (Comuna), Region de Valparaiso, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_VS_05506<a name=\"DirOrgNotiCS-CL_VS_05506\"> </a></td><td>Nogales (Comuna), Region de Valparaiso, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_VS_05601<a name=\"DirOrgNotiCS-CL_VS_05601\"> </a></td><td>San Antonio (Comuna), Region de Valparaiso, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_VS_05602<a name=\"DirOrgNotiCS-CL_VS_05602\"> </a></td><td>Algarrobo (Comuna), Region de Valparaiso, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_VS_05603<a name=\"DirOrgNotiCS-CL_VS_05603\"> </a></td><td>Cartagena (Comuna), Region de Valparaiso, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_VS_05604<a name=\"DirOrgNotiCS-CL_VS_05604\"> </a></td><td>El Quisco (Comuna), Region de Valparaiso, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_VS_05605<a name=\"DirOrgNotiCS-CL_VS_05605\"> </a></td><td>El Tabo (Comuna), Region de Valparaiso, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_VS_05606<a name=\"DirOrgNotiCS-CL_VS_05606\"> </a></td><td>Santo Domingo (Comuna), Region de Valparaiso, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_VS_05701<a name=\"DirOrgNotiCS-CL_VS_05701\"> </a></td><td>San Felipe (Comuna), Region de Valparaiso, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_VS_05702<a name=\"DirOrgNotiCS-CL_VS_05702\"> </a></td><td>Catemu (Comuna), Region de Valparaiso, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_VS_05703<a name=\"DirOrgNotiCS-CL_VS_05703\"> </a></td><td>Llaillay (Comuna), Region de Valparaiso, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_VS_05704<a name=\"DirOrgNotiCS-CL_VS_05704\"> </a></td><td>Panquehue (Comuna), Region de Valparaiso, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_VS_05705<a name=\"DirOrgNotiCS-CL_VS_05705\"> </a></td><td>Putaendo (Comuna), Region de Valparaiso, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_VS_05706<a name=\"DirOrgNotiCS-CL_VS_05706\"> </a></td><td>Santa María (Comuna), Region de Valparaiso, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_VS_05801<a name=\"DirOrgNotiCS-CL_VS_05801\"> </a></td><td>Quilpué (Comuna), Region de Valparaiso, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_VS_05802<a name=\"DirOrgNotiCS-CL_VS_05802\"> </a></td><td>Limache (Comuna), Region de Valparaiso, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_VS_05803<a name=\"DirOrgNotiCS-CL_VS_05803\"> </a></td><td>Olmué (Comuna), Region de Valparaiso, Chile</td></tr><tr><td style=\"white-space:nowrap\">CL_VS_05804<a name=\"DirOrgNotiCS-CL_VS_05804\"> </a></td><td>Villa Alemana (Comuna), Region de Valparaiso, Chile</td></tr><tr><td style=\"white-space:nowrap\">CO_AMA_91001<a name=\"DirOrgNotiCS-CO_AMA_91001\"> </a></td><td>Leticia (Municipio), Amazonas, Colombia</td></tr><tr><td style=\"white-space:nowrap\">CO_AMA_91263<a name=\"DirOrgNotiCS-CO_AMA_91263\"> </a></td><td>El Encanto (Municipio), Amazonas, Colombia</td></tr><tr><td style=\"white-space:nowrap\">CO_AMA_91405<a name=\"DirOrgNotiCS-CO_AMA_91405\"> </a></td><td>La Chorrera (Municipio), Amazonas, Colombia</td></tr><tr><td style=\"white-space:nowrap\">CO_AMA_91407<a name=\"DirOrgNotiCS-CO_AMA_91407\"> </a></td><td>La Pedrera (Municipio), Amazonas, Colombia</td></tr><tr><td style=\"white-space:nowrap\">CO_AMA_91430<a name=\"DirOrgNotiCS-CO_AMA_91430\"> </a></td><td>La Victoria (Municipio), Amazonas, Colombia</td></tr><tr><td style=\"white-space:nowrap\">CO_AMA_91460<a name=\"DirOrgNotiCS-CO_AMA_91460\"> </a></td><td>Mirití- Paraná (Municipio), Amazonas, Colombia</td></tr><tr><td style=\"white-space:nowrap\">DO_0904<a name=\"DirOrgNotiCS-DO_0904\"> </a></td><td>Jamao al Norte (Municipio), Espaillat, Dominican Republic</td></tr><tr><td style=\"white-space:nowrap\">DO_1001<a name=\"DirOrgNotiCS-DO_1001\"> </a></td><td>Jimaní (Municipio), Independencia, Dominican Republic</td></tr><tr><td style=\"white-space:nowrap\">DO_1002<a name=\"DirOrgNotiCS-DO_1002\"> </a></td><td>Duvergé (Municipio), Independencia, Dominican Republic</td></tr><tr><td style=\"white-space:nowrap\">EC_D_2203<a name=\"DirOrgNotiCS-EC_D_2203\"> </a></td><td>La Joya de Los Sachas (Canton), Orellana, Ecuador</td></tr><tr><td style=\"white-space:nowrap\">EC_D_2204<a name=\"DirOrgNotiCS-EC_D_2204\"> </a></td><td>Loreto (Canton), Orellana, Ecuador</td></tr><tr><td style=\"white-space:nowrap\">EC_E_0801<a name=\"DirOrgNotiCS-EC_E_0801\"> </a></td><td>Esmeraldas (Canton), Esmeraldas, Ecuador</td></tr><tr><td style=\"white-space:nowrap\">GT_QZ_0908<a name=\"DirOrgNotiCS-GT_QZ_0908\"> </a></td><td>San Miguel Sigüila (Municipio), Quetzaltenango, Guatemala</td></tr><tr><td style=\"white-space:nowrap\">GT_QZ_0909<a name=\"DirOrgNotiCS-GT_QZ_0909\"> </a></td><td>Ostuncalco (Municipio), Quetzaltenango, Guatemala</td></tr><tr><td style=\"white-space:nowrap\">GT_QZ_0910<a name=\"DirOrgNotiCS-GT_QZ_0910\"> </a></td><td>San Mateo (Municipio), Quetzaltenango, Guatemala</td></tr><tr><td style=\"white-space:nowrap\">GT_QZ_0911<a name=\"DirOrgNotiCS-GT_QZ_0911\"> </a></td><td>Concepción Chiquirichapa (Municipio), Quetzaltenango, Guatemala</td></tr><tr><td style=\"white-space:nowrap\">GT_QZ_0912<a name=\"DirOrgNotiCS-GT_QZ_0912\"> </a></td><td>San Martín Sacatepéquez (Municipio), Quetzaltenango, Guatemala</td></tr><tr><td style=\"white-space:nowrap\">HN_CH_0601<a name=\"DirOrgNotiCS-HN_CH_0601\"> </a></td><td>Choluteca (Municipio), Choluteca, Honduras</td></tr><tr><td style=\"white-space:nowrap\">HN_CH_0602<a name=\"DirOrgNotiCS-HN_CH_0602\"> </a></td><td>Apacilagua (Municipio), Choluteca, Honduras</td></tr><tr><td style=\"white-space:nowrap\">HN_CH_0603<a name=\"DirOrgNotiCS-HN_CH_0603\"> </a></td><td>Concepción de María (Municipio), Choluteca, Honduras</td></tr><tr><td style=\"white-space:nowrap\">HN_CH_0604<a name=\"DirOrgNotiCS-HN_CH_0604\"> </a></td><td>Duyure (Municipio), Choluteca, Honduras</td></tr><tr><td style=\"white-space:nowrap\">MX_CS_07003<a name=\"DirOrgNotiCS-MX_CS_07003\"> </a></td><td>Acapetahua (Municipio), Chiapas, Mexico</td></tr><tr><td style=\"white-space:nowrap\">MX_CS_07004<a name=\"DirOrgNotiCS-MX_CS_07004\"> </a></td><td>Altamirano (Municipio), Chiapas, Mexico</td></tr><tr><td style=\"white-space:nowrap\">MX_CS_07005<a name=\"DirOrgNotiCS-MX_CS_07005\"> </a></td><td>Amatán (Municipio), Chiapas, Mexico</td></tr><tr><td style=\"white-space:nowrap\">PE_ICA_0201<a name=\"DirOrgNotiCS-PE_ICA_0201\"> </a></td><td>Chincha Alta (Distrito), Ica, Peru</td></tr><tr><td style=\"white-space:nowrap\">PE_ICA_0211<a name=\"DirOrgNotiCS-PE_ICA_0211\"> </a></td><td>Tambo de Mora (Distrito), Ica, Peru</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://paho.org/fhir/esavi/CodeSystem/DirOrgNotiCS"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.2.0"] ; # 
+  fhir:name [ fhir:v "DirOrgNotiCS"] ; # 
+  fhir:title [ fhir:v "Códigos PAHO para Direcciones"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2021-03-11T00:00:00-03:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "ESAVI -"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "ESAVI -" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://covid-19pharmacovigilance.paho.org/resources/updates-on-aefi" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rizzatodan@paho.org" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Códigos para Direcciones según PAHO"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "001" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "425"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "AR_B_06126" ] ;
+     fhir:display [ fhir:v "Campana (Partido), Buenos Aires, Argentina" ]
+  ] [
+     fhir:code [ fhir:v "AR_B_06134" ] ;
+     fhir:display [ fhir:v "Cañuelas (Partido), Buenos Aires, Argentina" ]
+  ] [
+     fhir:code [ fhir:v "AR_B_06140" ] ;
+     fhir:display [ fhir:v "Capitán Sarmiento (Partido), Buenos Aires, Argentina" ]
+  ] [
+     fhir:code [ fhir:v "AR_B_06147" ] ;
+     fhir:display [ fhir:v "Carlos Casares (Partido), Buenos Aires, Argentina" ]
+  ] [
+     fhir:code [ fhir:v "AR_B_06154" ] ;
+     fhir:display [ fhir:v "Carlos Tejedor (Partido), Buenos Aires, Argentina" ]
+  ] [
+     fhir:code [ fhir:v "AR_B_06161" ] ;
+     fhir:display [ fhir:v "Carmen de Areco (Partido), Buenos Aires, Argentina" ]
+  ] [
+     fhir:code [ fhir:v "AR_B_06168" ] ;
+     fhir:display [ fhir:v "Castelli (Partido), Buenos Aires, Argentina" ]
+  ] [
+     fhir:code [ fhir:v "AR_B_06175" ] ;
+     fhir:display [ fhir:v "Colón (Partido), Buenos Aires, Argentina" ]
+  ] [
+     fhir:code [ fhir:v "AR_B_06182" ] ;
+     fhir:display [ fhir:v "Coronel de Marina Leonardo Rosales (Partido), Buenos Aires, Argentina" ]
+  ] [
+     fhir:code [ fhir:v "AR_B_06189" ] ;
+     fhir:display [ fhir:v "Coronel Dorrego (Partido), Buenos Aires, Argentina" ]
+  ] [
+     fhir:code [ fhir:v "AR_B_06196" ] ;
+     fhir:display [ fhir:v "Coronel Pringles (Partido), Buenos Aires, Argentina" ]
+  ] [
+     fhir:code [ fhir:v "AR_B_06203" ] ;
+     fhir:display [ fhir:v "Coronel Suárez (Partido), Buenos Aires, Argentina" ]
+  ] [
+     fhir:code [ fhir:v "AR_B_06665" ] ;
+     fhir:display [ fhir:v "Ramallo (Partido), Buenos Aires, Argentina" ]
+  ] [
+     fhir:code [ fhir:v "AR_C_02001" ] ;
+     fhir:display [ fhir:v "Comuna 1 (Comuna), Ciudad Autonoma de Buenos Aires, Argentina" ]
+  ] [
+     fhir:code [ fhir:v "AR_C_02002" ] ;
+     fhir:display [ fhir:v "Comuna 2 (Comuna), Ciudad Autonoma de Buenos Aires, Argentina" ]
+  ] [
+     fhir:code [ fhir:v "AR_C_02003" ] ;
+     fhir:display [ fhir:v "Comuna 3 (Comuna), Ciudad Autonoma de Buenos Aires, Argentina" ]
+  ] [
+     fhir:code [ fhir:v "AR_C_02004" ] ;
+     fhir:display [ fhir:v "Comuna 4 (Comuna), Ciudad Autonoma de Buenos Aires, Argentina" ]
+  ] [
+     fhir:code [ fhir:v "AR_C_02005" ] ;
+     fhir:display [ fhir:v "Comuna 5 (Comuna), Ciudad Autonoma de Buenos Aires, Argentina" ]
+  ] [
+     fhir:code [ fhir:v "AR_C_02006" ] ;
+     fhir:display [ fhir:v "Comuna 6 (Comuna), Ciudad Autonoma de Buenos Aires, Argentina" ]
+  ] [
+     fhir:code [ fhir:v "AR_C_02007" ] ;
+     fhir:display [ fhir:v "Comuna 7 (Comuna), Ciudad Autonoma de Buenos Aires, Argentina" ]
+  ] [
+     fhir:code [ fhir:v "AR_C_02008" ] ;
+     fhir:display [ fhir:v "Comuna 8 (Comuna), Ciudad Autonoma de Buenos Aires, Argentina" ]
+  ] [
+     fhir:code [ fhir:v "AR_C_02009" ] ;
+     fhir:display [ fhir:v "Comuna 9 (Comuna), Ciudad Autonoma de Buenos Aires, Argentina" ]
+  ] [
+     fhir:code [ fhir:v "AR_C_02010" ] ;
+     fhir:display [ fhir:v "Comuna 10 (Comuna), Ciudad Autonoma de Buenos Aires, Argentina" ]
+  ] [
+     fhir:code [ fhir:v "AR_C_02011" ] ;
+     fhir:display [ fhir:v "Comuna 11 (Comuna), Ciudad Autonoma de Buenos Aires, Argentina" ]
+  ] [
+     fhir:code [ fhir:v "AR_C_02012" ] ;
+     fhir:display [ fhir:v "Comuna 12 (Comuna), Ciudad Autonoma de Buenos Aires, Argentina" ]
+  ] [
+     fhir:code [ fhir:v "AR_C_02013" ] ;
+     fhir:display [ fhir:v "Comuna 13 (Comuna), Ciudad Autonoma de Buenos Aires, Argentina" ]
+  ] [
+     fhir:code [ fhir:v "AR_C_02014" ] ;
+     fhir:display [ fhir:v "Comuna 14 (Comuna), Ciudad Autonoma de Buenos Aires, Argentina" ]
+  ] [
+     fhir:code [ fhir:v "AR_C_02015" ] ;
+     fhir:display [ fhir:v "Comuna 15 (Comuna), Ciudad Autonoma de Buenos Aires, Argentina" ]
+  ] [
+     fhir:code [ fhir:v "BO_B_080801" ] ;
+     fhir:display [ fhir:v "Magdalena (Municipio), Beni, Bolivia (Plurinational State of)" ]
+  ] [
+     fhir:code [ fhir:v "BO_B_080802" ] ;
+     fhir:display [ fhir:v "Baures (Municipio), Beni, Bolivia (Plurinational State of)" ]
+  ] [
+     fhir:code [ fhir:v "BO_B_080803" ] ;
+     fhir:display [ fhir:v "Huacaraje (Municipio), Beni, Bolivia (Plurinational State of)" ]
+  ] [
+     fhir:code [ fhir:v "BO_C_030101" ] ;
+     fhir:display [ fhir:v "Cochabamba (Municipio), Cochabamba, Bolivia (Plurinational State of)" ]
+  ] [
+     fhir:code [ fhir:v "BO_C_030201" ] ;
+     fhir:display [ fhir:v "Aiquile (Municipio), Cochabamba, Bolivia (Plurinational State of)" ]
+  ] [
+     fhir:code [ fhir:v "BO_C_030202" ] ;
+     fhir:display [ fhir:v "Pasorapa (Municipio), Cochabamba, Bolivia (Plurinational State of)" ]
+  ] [
+     fhir:code [ fhir:v "BO_C_030203" ] ;
+     fhir:display [ fhir:v "Omereque (Municipio), Cochabamba, Bolivia (Plurinational State of)" ]
+  ] [
+     fhir:code [ fhir:v "BO_C_030301" ] ;
+     fhir:display [ fhir:v "Ayopaya (Municipio), Cochabamba, Bolivia (Plurinational State of)" ]
+  ] [
+     fhir:code [ fhir:v "BO_C_030302" ] ;
+     fhir:display [ fhir:v "Morochata (Municipio), Cochabamba, Bolivia (Plurinational State of)" ]
+  ] [
+     fhir:code [ fhir:v "BO_C_030303" ] ;
+     fhir:display [ fhir:v "Cocapata (Municipio), Cochabamba, Bolivia (Plurinational State of)" ]
+  ] [
+     fhir:code [ fhir:v "BO_C_030401" ] ;
+     fhir:display [ fhir:v "Tarata (Municipio), Cochabamba, Bolivia (Plurinational State of)" ]
+  ] [
+     fhir:code [ fhir:v "BR_AL_27_05705" ] ;
+     fhir:display [ fhir:v "Olho d'Água das Flores (Municipio), Alagoas, Brazil" ]
+  ] [
+     fhir:code [ fhir:v "BR_AL_27_05804" ] ;
+     fhir:display [ fhir:v "Olho d'Água do Casado (Municipio), Alagoas, Brazil" ]
+  ] [
+     fhir:code [ fhir:v "BR_AL_27_05903" ] ;
+     fhir:display [ fhir:v "Olho d'Água Grande (Municipio), Alagoas, Brazil" ]
+  ] [
+     fhir:code [ fhir:v "BR_AL_27_06000" ] ;
+     fhir:display [ fhir:v "Olivença (Municipio), Alagoas, Brazil" ]
+  ] [
+     fhir:code [ fhir:v "BR_AL_27_06109" ] ;
+     fhir:display [ fhir:v "Ouro Branco (Municipio), Alagoas, Brazil" ]
+  ] [
+     fhir:code [ fhir:v "BR_AL_27_06208" ] ;
+     fhir:display [ fhir:v "Palestina (Municipio), Alagoas, Brazil" ]
+  ] [
+     fhir:code [ fhir:v "BR_AL_27_06307" ] ;
+     fhir:display [ fhir:v "Palmeira dos Índios (Municipio), Alagoas, Brazil" ]
+  ] [
+     fhir:code [ fhir:v "BR_AL_27_06406" ] ;
+     fhir:display [ fhir:v "Pão de Açúcar (Municipio), Alagoas, Brazil" ]
+  ] [
+     fhir:code [ fhir:v "BR_AL_27_06422" ] ;
+     fhir:display [ fhir:v "Pariconha (Municipio), Alagoas, Brazil" ]
+  ] [
+     fhir:code [ fhir:v "BR_AL_27_06448" ] ;
+     fhir:display [ fhir:v "Paripueira (Municipio), Alagoas, Brazil" ]
+  ] [
+     fhir:code [ fhir:v "BR_AL_27_06505" ] ;
+     fhir:display [ fhir:v "Passo de Camaragibe (Municipio), Alagoas, Brazil" ]
+  ] [
+     fhir:code [ fhir:v "BR_AL_27_06604" ] ;
+     fhir:display [ fhir:v "Paulo Jacinto (Municipio), Alagoas, Brazil" ]
+  ] [
+     fhir:code [ fhir:v "BR_AL_27_06703" ] ;
+     fhir:display [ fhir:v "Penedo (Municipio), Alagoas, Brazil" ]
+  ] [
+     fhir:code [ fhir:v "BR_AL_27_06802" ] ;
+     fhir:display [ fhir:v "Piaçabuçu (Municipio), Alagoas, Brazil" ]
+  ] [
+     fhir:code [ fhir:v "CL_AI_11101" ] ;
+     fhir:display [ fhir:v "Coyhaique (Comuna), Region de Aysen del Gral. Ibanez del Campo, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_AI_11102" ] ;
+     fhir:display [ fhir:v "Lago Verde (Comuna), Region de Aysen del Gral. Ibanez del Campo, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_AI_11201" ] ;
+     fhir:display [ fhir:v "Aysén (Comuna), Region de Aysen del Gral. Ibanez del Campo, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_AI_11202" ] ;
+     fhir:display [ fhir:v "Cisnes (Comuna), Region de Aysen del Gral. Ibanez del Campo, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_AI_11203" ] ;
+     fhir:display [ fhir:v "Guaitecas (Comuna), Region de Aysen del Gral. Ibanez del Campo, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_AI_11301" ] ;
+     fhir:display [ fhir:v "Cochrane (Comuna), Region de Aysen del Gral. Ibanez del Campo, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_AI_11302" ] ;
+     fhir:display [ fhir:v "O'Higgins (Comuna), Region de Aysen del Gral. Ibanez del Campo, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_AI_11303" ] ;
+     fhir:display [ fhir:v "Tortel (Comuna), Region de Aysen del Gral. Ibanez del Campo, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_AI_11401" ] ;
+     fhir:display [ fhir:v "Chile Chico (Comuna), Region de Aysen del Gral. Ibanez del Campo, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_AI_11402" ] ;
+     fhir:display [ fhir:v "Río Ibáñez (Comuna), Region de Aysen del Gral. Ibanez del Campo, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_AN_02101" ] ;
+     fhir:display [ fhir:v "Antofagasta (Comuna), Region de Antofagasta, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_AN_02102" ] ;
+     fhir:display [ fhir:v "Mejillones (Comuna), Region de Antofagasta, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_AN_02103" ] ;
+     fhir:display [ fhir:v "Sierra Gorda (Comuna), Region de Antofagasta, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_AN_02104" ] ;
+     fhir:display [ fhir:v "Taltal (Comuna), Region de Antofagasta, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_AN_02201" ] ;
+     fhir:display [ fhir:v "Calama (Comuna), Region de Antofagasta, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_AN_02202" ] ;
+     fhir:display [ fhir:v "Ollagüe (Comuna), Region de Antofagasta, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_AN_02203" ] ;
+     fhir:display [ fhir:v "San Pedro de Atacama (Comuna), Region de Antofagasta, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_AN_02301" ] ;
+     fhir:display [ fhir:v "Tocopilla (Comuna), Region de Antofagasta, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_AN_02302" ] ;
+     fhir:display [ fhir:v "María Elena (Comuna), Region de Antofagasta, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_AP_15101" ] ;
+     fhir:display [ fhir:v "Arica (Comuna), Region de Arica y Parinacota, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_AP_15102" ] ;
+     fhir:display [ fhir:v "Camarones (Comuna), Region de Arica y Parinacota, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_AP_15201" ] ;
+     fhir:display [ fhir:v "Putre (Comuna), Region de Arica y Parinacota, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_AP_15202" ] ;
+     fhir:display [ fhir:v "General Lagos (Comuna), Region de Arica y Parinacota, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_AR_09101" ] ;
+     fhir:display [ fhir:v "Temuco (Comuna), Region de La Araucania, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_AR_09102" ] ;
+     fhir:display [ fhir:v "Carahue (Comuna), Region de La Araucania, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_AR_09103" ] ;
+     fhir:display [ fhir:v "Cunco (Comuna), Region de La Araucania, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_AR_09104" ] ;
+     fhir:display [ fhir:v "Curarrehue (Comuna), Region de La Araucania, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_AR_09105" ] ;
+     fhir:display [ fhir:v "Freire (Comuna), Region de La Araucania, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_AR_09106" ] ;
+     fhir:display [ fhir:v "Galvarino (Comuna), Region de La Araucania, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_AR_09107" ] ;
+     fhir:display [ fhir:v "Gorbea (Comuna), Region de La Araucania, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_AR_09108" ] ;
+     fhir:display [ fhir:v "Lautaro (Comuna), Region de La Araucania, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_AR_09109" ] ;
+     fhir:display [ fhir:v "Loncoche (Comuna), Region de La Araucania, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_AR_09110" ] ;
+     fhir:display [ fhir:v "Melipeuco (Comuna), Region de La Araucania, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_AR_09111" ] ;
+     fhir:display [ fhir:v "Nueva Imperial (Comuna), Region de La Araucania, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_AR_09112" ] ;
+     fhir:display [ fhir:v "Padre Las Casas (Comuna), Region de La Araucania, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_AR_09113" ] ;
+     fhir:display [ fhir:v "Perquenco (Comuna), Region de La Araucania, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_AR_09114" ] ;
+     fhir:display [ fhir:v "Pitrufquén (Comuna), Region de La Araucania, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_AR_09115" ] ;
+     fhir:display [ fhir:v "Pucón (Comuna), Region de La Araucania, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_AR_09116" ] ;
+     fhir:display [ fhir:v "Saavedra (Comuna), Region de La Araucania, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_AR_09117" ] ;
+     fhir:display [ fhir:v "Teodoro Schmidt (Comuna), Region de La Araucania, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_AR_09118" ] ;
+     fhir:display [ fhir:v "Toltén (Comuna), Region de La Araucania, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_AR_09119" ] ;
+     fhir:display [ fhir:v "Vilcún (Comuna), Region de La Araucania, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_AR_09120" ] ;
+     fhir:display [ fhir:v "Villarrica (Comuna), Region de La Araucania, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_AR_09121" ] ;
+     fhir:display [ fhir:v "Cholchol (Comuna), Region de La Araucania, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_AR_09201" ] ;
+     fhir:display [ fhir:v "Angol (Comuna), Region de La Araucania, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_AR_09202" ] ;
+     fhir:display [ fhir:v "Collipulli (Comuna), Region de La Araucania, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_AR_09203" ] ;
+     fhir:display [ fhir:v "Curacautín (Comuna), Region de La Araucania, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_AR_09204" ] ;
+     fhir:display [ fhir:v "Ercilla (Comuna), Region de La Araucania, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_AR_09205" ] ;
+     fhir:display [ fhir:v "Lonquimay (Comuna), Region de La Araucania, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_AR_09206" ] ;
+     fhir:display [ fhir:v "Los Sauces (Comuna), Region de La Araucania, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_AR_09207" ] ;
+     fhir:display [ fhir:v "Lumaco (Comuna), Region de La Araucania, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_AR_09208" ] ;
+     fhir:display [ fhir:v "Purén (Comuna), Region de La Araucania, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_AR_09209" ] ;
+     fhir:display [ fhir:v "Renaico (Comuna), Region de La Araucania, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_AR_09210" ] ;
+     fhir:display [ fhir:v "Traiguén (Comuna), Region de La Araucania, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_AR_09211" ] ;
+     fhir:display [ fhir:v "Victoria (Comuna), Region de La Araucania, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_AT_03101" ] ;
+     fhir:display [ fhir:v "Copiapó (Comuna), Region de Atacama, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_AT_03102" ] ;
+     fhir:display [ fhir:v "Caldera (Comuna), Region de Atacama, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_AT_03103" ] ;
+     fhir:display [ fhir:v "Tierra Amarilla (Comuna), Region de Atacama, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_AT_03201" ] ;
+     fhir:display [ fhir:v "Chañaral (Comuna), Region de Atacama, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_AT_03202" ] ;
+     fhir:display [ fhir:v "Diego de Almagro (Comuna), Region de Atacama, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_AT_03301" ] ;
+     fhir:display [ fhir:v "Vallenar (Comuna), Region de Atacama, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_AT_03302" ] ;
+     fhir:display [ fhir:v "Alto del Carmen (Comuna), Region de Atacama, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_AT_03303" ] ;
+     fhir:display [ fhir:v "Freirina (Comuna), Region de Atacama, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_AT_03304" ] ;
+     fhir:display [ fhir:v "Huasco (Comuna), Region de Atacama, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_BI_08101" ] ;
+     fhir:display [ fhir:v "Concepción (Comuna), Region del Biobio, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_BI_08102" ] ;
+     fhir:display [ fhir:v "Coronel (Comuna), Region del Biobio, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_BI_08103" ] ;
+     fhir:display [ fhir:v "Chiguayante (Comuna), Region del Biobio, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_BI_08104" ] ;
+     fhir:display [ fhir:v "Florida (Comuna), Region del Biobio, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_BI_08105" ] ;
+     fhir:display [ fhir:v "Hualqui (Comuna), Region del Biobio, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_BI_08106" ] ;
+     fhir:display [ fhir:v "Lota (Comuna), Region del Biobio, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_BI_08107" ] ;
+     fhir:display [ fhir:v "Penco (Comuna), Region del Biobio, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_BI_08108" ] ;
+     fhir:display [ fhir:v "San Pedro de la Paz (Comuna), Region del Biobio, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_BI_08109" ] ;
+     fhir:display [ fhir:v "Santa Juana (Comuna), Region del Biobio, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_BI_08110" ] ;
+     fhir:display [ fhir:v "Talcahuano (Comuna), Region del Biobio, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_BI_08111" ] ;
+     fhir:display [ fhir:v "Tomé (Comuna), Region del Biobio, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_BI_08112" ] ;
+     fhir:display [ fhir:v "Hualpén (Comuna), Region del Biobio, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_BI_08201" ] ;
+     fhir:display [ fhir:v "Lebu (Comuna), Region del Biobio, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_BI_08202" ] ;
+     fhir:display [ fhir:v "Arauco (Comuna), Region del Biobio, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_BI_08203" ] ;
+     fhir:display [ fhir:v "Cañete (Comuna), Region del Biobio, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_BI_08204" ] ;
+     fhir:display [ fhir:v "Contulmo (Comuna), Region del Biobio, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_BI_08205" ] ;
+     fhir:display [ fhir:v "Curanilahue (Comuna), Region del Biobio, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_BI_08206" ] ;
+     fhir:display [ fhir:v "Los Alamos (Comuna), Region del Biobio, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_BI_08207" ] ;
+     fhir:display [ fhir:v "Tirúa (Comuna), Region del Biobio, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_BI_08301" ] ;
+     fhir:display [ fhir:v "Los Angeles (Comuna), Region del Biobio, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_BI_08302" ] ;
+     fhir:display [ fhir:v "Antuco (Comuna), Region del Biobio, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_BI_08303" ] ;
+     fhir:display [ fhir:v "Cabrero (Comuna), Region del Biobio, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_BI_08304" ] ;
+     fhir:display [ fhir:v "Laja (Comuna), Region del Biobio, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_BI_08305" ] ;
+     fhir:display [ fhir:v "Mulchén (Comuna), Region del Biobio, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_BI_08306" ] ;
+     fhir:display [ fhir:v "Nacimiento (Comuna), Region del Biobio, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_BI_08307" ] ;
+     fhir:display [ fhir:v "Negrete (Comuna), Region del Biobio, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_BI_08308" ] ;
+     fhir:display [ fhir:v "Quilaco (Comuna), Region del Biobio, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_BI_08309" ] ;
+     fhir:display [ fhir:v "Quilleco (Comuna), Region del Biobio, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_BI_08310" ] ;
+     fhir:display [ fhir:v "San Rosendo (Comuna), Region del Biobio, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_BI_08311" ] ;
+     fhir:display [ fhir:v "Santa Bárbara (Comuna), Region del Biobio, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_BI_08312" ] ;
+     fhir:display [ fhir:v "Tucapel (Comuna), Region del Biobio, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_BI_08313" ] ;
+     fhir:display [ fhir:v "Yumbel (Comuna), Region del Biobio, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_BI_08314" ] ;
+     fhir:display [ fhir:v "Alto Biobío (Comuna), Region del Biobio, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_CO_04101" ] ;
+     fhir:display [ fhir:v "La Serena (Comuna), Region de Coquimbo, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_CO_04102" ] ;
+     fhir:display [ fhir:v "Coquimbo (Comuna), Region de Coquimbo, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_CO_04103" ] ;
+     fhir:display [ fhir:v "Andacollo (Comuna), Region de Coquimbo, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_CO_04104" ] ;
+     fhir:display [ fhir:v "La Higuera (Comuna), Region de Coquimbo, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_CO_04105" ] ;
+     fhir:display [ fhir:v "Paihuano (Comuna), Region de Coquimbo, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_CO_04106" ] ;
+     fhir:display [ fhir:v "Vicuña (Comuna), Region de Coquimbo, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_CO_04201" ] ;
+     fhir:display [ fhir:v "Illapel (Comuna), Region de Coquimbo, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_CO_04202" ] ;
+     fhir:display [ fhir:v "Canela (Comuna), Region de Coquimbo, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_CO_04203" ] ;
+     fhir:display [ fhir:v "Los Vilos (Comuna), Region de Coquimbo, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_CO_04204" ] ;
+     fhir:display [ fhir:v "Salamanca (Comuna), Region de Coquimbo, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_CO_04301" ] ;
+     fhir:display [ fhir:v "Ovalle (Comuna), Region de Coquimbo, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_CO_04302" ] ;
+     fhir:display [ fhir:v "Combarbalá (Comuna), Region de Coquimbo, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_CO_04303" ] ;
+     fhir:display [ fhir:v "Monte Patria (Comuna), Region de Coquimbo, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_CO_04304" ] ;
+     fhir:display [ fhir:v "Punitaqui (Comuna), Region de Coquimbo, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_CO_04305" ] ;
+     fhir:display [ fhir:v "Río Hurtado (Comuna), Region de Coquimbo, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_LI_06101" ] ;
+     fhir:display [ fhir:v "Rancagua (Comuna), Region del Libertador Bernardo OHiggins, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_LI_06102" ] ;
+     fhir:display [ fhir:v "Codegua (Comuna), Region del Libertador Bernardo OHiggins, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_LI_06103" ] ;
+     fhir:display [ fhir:v "Coinco (Comuna), Region del Libertador Bernardo OHiggins, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_LI_06104" ] ;
+     fhir:display [ fhir:v "Coltauco (Comuna), Region del Libertador Bernardo OHiggins, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_LI_06105" ] ;
+     fhir:display [ fhir:v "Doñihue (Comuna), Region del Libertador Bernardo OHiggins, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_LI_06106" ] ;
+     fhir:display [ fhir:v "Graneros (Comuna), Region del Libertador Bernardo OHiggins, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_LI_06107" ] ;
+     fhir:display [ fhir:v "Las Cabras (Comuna), Region del Libertador Bernardo OHiggins, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_LI_06108" ] ;
+     fhir:display [ fhir:v "Machalí (Comuna), Region del Libertador Bernardo OHiggins, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_LI_06109" ] ;
+     fhir:display [ fhir:v "Malloa (Comuna), Region del Libertador Bernardo OHiggins, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_LI_06110" ] ;
+     fhir:display [ fhir:v "Mostazal (Comuna), Region del Libertador Bernardo OHiggins, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_LI_06111" ] ;
+     fhir:display [ fhir:v "Olivar (Comuna), Region del Libertador Bernardo OHiggins, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_LI_06112" ] ;
+     fhir:display [ fhir:v "Peumo (Comuna), Region del Libertador Bernardo OHiggins, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_LI_06113" ] ;
+     fhir:display [ fhir:v "Pichidegua (Comuna), Region del Libertador Bernardo OHiggins, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_LI_06114" ] ;
+     fhir:display [ fhir:v "Quinta de Tilcoco (Comuna), Region del Libertador Bernardo OHiggins, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_LI_06115" ] ;
+     fhir:display [ fhir:v "Rengo (Comuna), Region del Libertador Bernardo OHiggins, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_LI_06116" ] ;
+     fhir:display [ fhir:v "Requínoa (Comuna), Region del Libertador Bernardo OHiggins, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_LI_06117" ] ;
+     fhir:display [ fhir:v "San Vicente (Comuna), Region del Libertador Bernardo OHiggins, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_LI_06201" ] ;
+     fhir:display [ fhir:v "Pichilemu (Comuna), Region del Libertador Bernardo OHiggins, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_LI_06202" ] ;
+     fhir:display [ fhir:v "La Estrella (Comuna), Region del Libertador Bernardo OHiggins, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_LI_06203" ] ;
+     fhir:display [ fhir:v "Litueche (Comuna), Region del Libertador Bernardo OHiggins, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_LI_06204" ] ;
+     fhir:display [ fhir:v "Marchigüe (Comuna), Region del Libertador Bernardo OHiggins, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_LI_06205" ] ;
+     fhir:display [ fhir:v "Navidad (Comuna), Region del Libertador Bernardo OHiggins, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_LI_06206" ] ;
+     fhir:display [ fhir:v "Paredones (Comuna), Region del Libertador Bernardo OHiggins, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_LI_06301" ] ;
+     fhir:display [ fhir:v "San Fernando (Comuna), Region del Libertador Bernardo OHiggins, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_LI_06302" ] ;
+     fhir:display [ fhir:v "Chépica (Comuna), Region del Libertador Bernardo OHiggins, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_LI_06303" ] ;
+     fhir:display [ fhir:v "Chimbarongo (Comuna), Region del Libertador Bernardo OHiggins, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_LI_06304" ] ;
+     fhir:display [ fhir:v "Lolol (Comuna), Region del Libertador Bernardo OHiggins, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_LI_06305" ] ;
+     fhir:display [ fhir:v "Nancagua (Comuna), Region del Libertador Bernardo OHiggins, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_LI_06306" ] ;
+     fhir:display [ fhir:v "Palmilla (Comuna), Region del Libertador Bernardo OHiggins, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_LI_06307" ] ;
+     fhir:display [ fhir:v "Peralillo (Comuna), Region del Libertador Bernardo OHiggins, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_LI_06308" ] ;
+     fhir:display [ fhir:v "Placilla (Comuna), Region del Libertador Bernardo OHiggins, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_LI_06309" ] ;
+     fhir:display [ fhir:v "Pumanque (Comuna), Region del Libertador Bernardo OHiggins, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_LI_06310" ] ;
+     fhir:display [ fhir:v "Santa Cruz (Comuna), Region del Libertador Bernardo OHiggins, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_LL_10101" ] ;
+     fhir:display [ fhir:v "Puerto Montt (Comuna), Region de Los Lagos, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_LL_10102" ] ;
+     fhir:display [ fhir:v "Calbuco (Comuna), Region de Los Lagos, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_LL_10103" ] ;
+     fhir:display [ fhir:v "Cochamó (Comuna), Region de Los Lagos, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_LL_10104" ] ;
+     fhir:display [ fhir:v "Fresia (Comuna), Region de Los Lagos, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_LL_10105" ] ;
+     fhir:display [ fhir:v "Frutillar (Comuna), Region de Los Lagos, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_LL_10106" ] ;
+     fhir:display [ fhir:v "Los Muermos (Comuna), Region de Los Lagos, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_LL_10107" ] ;
+     fhir:display [ fhir:v "Llanquihue (Comuna), Region de Los Lagos, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_LL_10108" ] ;
+     fhir:display [ fhir:v "Maullín (Comuna), Region de Los Lagos, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_LL_10109" ] ;
+     fhir:display [ fhir:v "Puerto Varas (Comuna), Region de Los Lagos, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_LL_10201" ] ;
+     fhir:display [ fhir:v "Castro (Comuna), Region de Los Lagos, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_LL_10202" ] ;
+     fhir:display [ fhir:v "Ancud (Comuna), Region de Los Lagos, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_LL_10203" ] ;
+     fhir:display [ fhir:v "Chonchi (Comuna), Region de Los Lagos, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_LL_10204" ] ;
+     fhir:display [ fhir:v "Curaco de Vélez (Comuna), Region de Los Lagos, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_LL_10205" ] ;
+     fhir:display [ fhir:v "Dalcahue (Comuna), Region de Los Lagos, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_LL_10206" ] ;
+     fhir:display [ fhir:v "Puqueldón (Comuna), Region de Los Lagos, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_LL_10207" ] ;
+     fhir:display [ fhir:v "Queilén (Comuna), Region de Los Lagos, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_LL_10208" ] ;
+     fhir:display [ fhir:v "Quellón (Comuna), Region de Los Lagos, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_LL_10209" ] ;
+     fhir:display [ fhir:v "Quemchi (Comuna), Region de Los Lagos, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_LL_10210" ] ;
+     fhir:display [ fhir:v "Quinchao (Comuna), Region de Los Lagos, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_LL_10301" ] ;
+     fhir:display [ fhir:v "Osorno (Comuna), Region de Los Lagos, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_LL_10302" ] ;
+     fhir:display [ fhir:v "Puerto Octay (Comuna), Region de Los Lagos, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_LL_10303" ] ;
+     fhir:display [ fhir:v "Purranque (Comuna), Region de Los Lagos, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_LL_10304" ] ;
+     fhir:display [ fhir:v "Puyehue (Comuna), Region de Los Lagos, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_LL_10305" ] ;
+     fhir:display [ fhir:v "Río Negro (Comuna), Region de Los Lagos, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_LL_10306" ] ;
+     fhir:display [ fhir:v "San Juan de la Costa (Comuna), Region de Los Lagos, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_LL_10307" ] ;
+     fhir:display [ fhir:v "San Pablo (Comuna), Region de Los Lagos, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_LL_10401" ] ;
+     fhir:display [ fhir:v "Chaitén (Comuna), Region de Los Lagos, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_LL_10402" ] ;
+     fhir:display [ fhir:v "Futaleufú (Comuna), Region de Los Lagos, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_LL_10403" ] ;
+     fhir:display [ fhir:v "Hualaihué (Comuna), Region de Los Lagos, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_LL_10404" ] ;
+     fhir:display [ fhir:v "Palena (Comuna), Region de Los Lagos, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_LR_14101" ] ;
+     fhir:display [ fhir:v "Valdivia (Comuna), Region de Los Rios, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_LR_14102" ] ;
+     fhir:display [ fhir:v "Corral (Comuna), Region de Los Rios, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_LR_14103" ] ;
+     fhir:display [ fhir:v "Lanco (Comuna), Region de Los Rios, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_LR_14104" ] ;
+     fhir:display [ fhir:v "Los Lagos (Comuna), Region de Los Rios, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_LR_14105" ] ;
+     fhir:display [ fhir:v "Máfil (Comuna), Region de Los Rios, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_LR_14106" ] ;
+     fhir:display [ fhir:v "Mariquina (Comuna), Region de Los Rios, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_LR_14107" ] ;
+     fhir:display [ fhir:v "Paillaco (Comuna), Region de Los Rios, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_LR_14108" ] ;
+     fhir:display [ fhir:v "Panguipulli (Comuna), Region de Los Rios, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_LR_14201" ] ;
+     fhir:display [ fhir:v "La Unión (Comuna), Region de Los Rios, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_LR_14202" ] ;
+     fhir:display [ fhir:v "Futrono (Comuna), Region de Los Rios, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_LR_14203" ] ;
+     fhir:display [ fhir:v "Lago Ranco (Comuna), Region de Los Rios, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_LR_14204" ] ;
+     fhir:display [ fhir:v "Río Bueno (Comuna), Region de Los Rios, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_MA_12101" ] ;
+     fhir:display [ fhir:v "Punta Arenas (Comuna), Region de Magallanes y Antartica Chilena, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_MA_12102" ] ;
+     fhir:display [ fhir:v "Laguna Blanca (Comuna), Region de Magallanes y Antartica Chilena, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_MA_12103" ] ;
+     fhir:display [ fhir:v "Río Verde (Comuna), Region de Magallanes y Antartica Chilena, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_MA_12104" ] ;
+     fhir:display [ fhir:v "San Gregorio (Comuna), Region de Magallanes y Antartica Chilena, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_MA_12201" ] ;
+     fhir:display [ fhir:v "Cabo de Hornos (Comuna), Region de Magallanes y Antartica Chilena, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_MA_12202" ] ;
+     fhir:display [ fhir:v "Antartica (Comuna), Region de Magallanes y Antartica Chilena, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_MA_12301" ] ;
+     fhir:display [ fhir:v "Porvenir (Comuna), Region de Magallanes y Antartica Chilena, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_MA_12302" ] ;
+     fhir:display [ fhir:v "Primavera (Comuna), Region de Magallanes y Antartica Chilena, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_MA_12303" ] ;
+     fhir:display [ fhir:v "Timaukel (Comuna), Region de Magallanes y Antartica Chilena, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_MA_12401" ] ;
+     fhir:display [ fhir:v "Natales (Comuna), Region de Magallanes y Antartica Chilena, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_MA_12402" ] ;
+     fhir:display [ fhir:v "Torres del Paine (Comuna), Region de Magallanes y Antartica Chilena, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_ML_07101" ] ;
+     fhir:display [ fhir:v "Talca (Comuna), Region del Maule, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_ML_07102" ] ;
+     fhir:display [ fhir:v "Constitución (Comuna), Region del Maule, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_ML_07103" ] ;
+     fhir:display [ fhir:v "Curepto (Comuna), Region del Maule, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_ML_07104" ] ;
+     fhir:display [ fhir:v "Empedrado (Comuna), Region del Maule, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_ML_07105" ] ;
+     fhir:display [ fhir:v "Maule (Comuna), Region del Maule, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_ML_07106" ] ;
+     fhir:display [ fhir:v "Pelarco (Comuna), Region del Maule, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_ML_07107" ] ;
+     fhir:display [ fhir:v "Pencahue (Comuna), Region del Maule, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_ML_07108" ] ;
+     fhir:display [ fhir:v "Río Claro (Comuna), Region del Maule, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_ML_07109" ] ;
+     fhir:display [ fhir:v "San Clemente (Comuna), Region del Maule, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_ML_07110" ] ;
+     fhir:display [ fhir:v "San Rafael (Comuna), Region del Maule, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_ML_07201" ] ;
+     fhir:display [ fhir:v "Cauquenes (Comuna), Region del Maule, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_ML_07202" ] ;
+     fhir:display [ fhir:v "Chanco (Comuna), Region del Maule, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_ML_07203" ] ;
+     fhir:display [ fhir:v "Pelluhue (Comuna), Region del Maule, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_ML_07301" ] ;
+     fhir:display [ fhir:v "Curicó (Comuna), Region del Maule, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_ML_07302" ] ;
+     fhir:display [ fhir:v "Hualañé (Comuna), Region del Maule, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_ML_07303" ] ;
+     fhir:display [ fhir:v "Licantén (Comuna), Region del Maule, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_ML_07304" ] ;
+     fhir:display [ fhir:v "Molina (Comuna), Region del Maule, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_ML_07305" ] ;
+     fhir:display [ fhir:v "Rauco (Comuna), Region del Maule, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_ML_07306" ] ;
+     fhir:display [ fhir:v "Romeral (Comuna), Region del Maule, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_ML_07307" ] ;
+     fhir:display [ fhir:v "Sagrada Familia (Comuna), Region del Maule, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_ML_07308" ] ;
+     fhir:display [ fhir:v "Teno (Comuna), Region del Maule, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_ML_07309" ] ;
+     fhir:display [ fhir:v "Vichuquén (Comuna), Region del Maule, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_ML_07401" ] ;
+     fhir:display [ fhir:v "Linares (Comuna), Region del Maule, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_ML_07402" ] ;
+     fhir:display [ fhir:v "Colbún (Comuna), Region del Maule, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_ML_07403" ] ;
+     fhir:display [ fhir:v "Longaví (Comuna), Region del Maule, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_ML_07404" ] ;
+     fhir:display [ fhir:v "Parral (Comuna), Region del Maule, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_ML_07405" ] ;
+     fhir:display [ fhir:v "Retiro (Comuna), Region del Maule, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_ML_07406" ] ;
+     fhir:display [ fhir:v "San Javier (Comuna), Region del Maule, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_ML_07407" ] ;
+     fhir:display [ fhir:v "Villa Alegre (Comuna), Region del Maule, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_ML_07408" ] ;
+     fhir:display [ fhir:v "Yerbas Buenas (Comuna), Region del Maule, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_NB_16101" ] ;
+     fhir:display [ fhir:v "Chillán (Comuna), Region de Nuble, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_NB_16102" ] ;
+     fhir:display [ fhir:v "Bulnes (Comuna), Region de Nuble, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_NB_16103" ] ;
+     fhir:display [ fhir:v "Chillán Viejo (Comuna), Region de Nuble, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_NB_16104" ] ;
+     fhir:display [ fhir:v "El Carmen (Comuna), Region de Nuble, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_NB_16105" ] ;
+     fhir:display [ fhir:v "Pemuco (Comuna), Region de Nuble, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_NB_16106" ] ;
+     fhir:display [ fhir:v "Pinto (Comuna), Region de Nuble, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_NB_16107" ] ;
+     fhir:display [ fhir:v "Quillón (Comuna), Region de Nuble, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_NB_16108" ] ;
+     fhir:display [ fhir:v "San Ignacio (Comuna), Region de Nuble, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_NB_16109" ] ;
+     fhir:display [ fhir:v "Yungay (Comuna), Region de Nuble, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_NB_16201" ] ;
+     fhir:display [ fhir:v "Quirihue (Comuna), Region de Nuble, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_NB_16202" ] ;
+     fhir:display [ fhir:v "Cobquecura (Comuna), Region de Nuble, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_NB_16203" ] ;
+     fhir:display [ fhir:v "Coelemu (Comuna), Region de Nuble, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_NB_16204" ] ;
+     fhir:display [ fhir:v "Ninhue (Comuna), Region de Nuble, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_NB_16205" ] ;
+     fhir:display [ fhir:v "Portezuelo (Comuna), Region de Nuble, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_NB_16206" ] ;
+     fhir:display [ fhir:v "RaNquil (Comuna), Region de Nuble, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_NB_16207" ] ;
+     fhir:display [ fhir:v "Treguaco (Comuna), Region de Nuble, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_NB_16301" ] ;
+     fhir:display [ fhir:v "San Carlos (Comuna), Region de Nuble, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_NB_16302" ] ;
+     fhir:display [ fhir:v "Coihueco (Comuna), Region de Nuble, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_NB_16303" ] ;
+     fhir:display [ fhir:v "Ñiquén (Comuna), Region de Nuble, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_NB_16304" ] ;
+     fhir:display [ fhir:v "San Fabián (Comuna), Region de Nuble, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_NB_16305" ] ;
+     fhir:display [ fhir:v "San Nicolás (Comuna), Region de Nuble, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_RM_13101" ] ;
+     fhir:display [ fhir:v "Santiago (Comuna), Region Metropolitana de Santiago, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_RM_13102" ] ;
+     fhir:display [ fhir:v "Cerrillos (Comuna), Region Metropolitana de Santiago, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_RM_13103" ] ;
+     fhir:display [ fhir:v "Cerro Navia (Comuna), Region Metropolitana de Santiago, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_RM_13104" ] ;
+     fhir:display [ fhir:v "Conchalí (Comuna), Region Metropolitana de Santiago, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_RM_13105" ] ;
+     fhir:display [ fhir:v "El Bosque (Comuna), Region Metropolitana de Santiago, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_RM_13106" ] ;
+     fhir:display [ fhir:v "Estación Central (Comuna), Region Metropolitana de Santiago, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_RM_13107" ] ;
+     fhir:display [ fhir:v "Huechuraba (Comuna), Region Metropolitana de Santiago, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_RM_13108" ] ;
+     fhir:display [ fhir:v "Independencia (Comuna), Region Metropolitana de Santiago, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_RM_13109" ] ;
+     fhir:display [ fhir:v "La Cisterna (Comuna), Region Metropolitana de Santiago, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_RM_13110" ] ;
+     fhir:display [ fhir:v "La Florida (Comuna), Region Metropolitana de Santiago, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_RM_13111" ] ;
+     fhir:display [ fhir:v "La Granja (Comuna), Region Metropolitana de Santiago, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_RM_13112" ] ;
+     fhir:display [ fhir:v "La Pintana (Comuna), Region Metropolitana de Santiago, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_RM_13113" ] ;
+     fhir:display [ fhir:v "La Reina (Comuna), Region Metropolitana de Santiago, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_RM_13114" ] ;
+     fhir:display [ fhir:v "Las Condes (Comuna), Region Metropolitana de Santiago, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_RM_13115" ] ;
+     fhir:display [ fhir:v "Lo Barnechea (Comuna), Region Metropolitana de Santiago, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_RM_13116" ] ;
+     fhir:display [ fhir:v "Lo Espejo (Comuna), Region Metropolitana de Santiago, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_RM_13117" ] ;
+     fhir:display [ fhir:v "Lo Prado (Comuna), Region Metropolitana de Santiago, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_RM_13118" ] ;
+     fhir:display [ fhir:v "Macul (Comuna), Region Metropolitana de Santiago, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_RM_13119" ] ;
+     fhir:display [ fhir:v "Maipú (Comuna), Region Metropolitana de Santiago, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_RM_13120" ] ;
+     fhir:display [ fhir:v "Ñuñoa (Comuna), Region Metropolitana de Santiago, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_RM_13121" ] ;
+     fhir:display [ fhir:v "Pedro Aguirre Cerda (Comuna), Region Metropolitana de Santiago, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_RM_13122" ] ;
+     fhir:display [ fhir:v "Peñalolén (Comuna), Region Metropolitana de Santiago, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_RM_13123" ] ;
+     fhir:display [ fhir:v "Providencia (Comuna), Region Metropolitana de Santiago, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_RM_13124" ] ;
+     fhir:display [ fhir:v "Pudahuel (Comuna), Region Metropolitana de Santiago, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_RM_13125" ] ;
+     fhir:display [ fhir:v "Quilicura (Comuna), Region Metropolitana de Santiago, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_RM_13126" ] ;
+     fhir:display [ fhir:v "Quinta Normal (Comuna), Region Metropolitana de Santiago, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_RM_13127" ] ;
+     fhir:display [ fhir:v "Recoleta (Comuna), Region Metropolitana de Santiago, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_RM_13128" ] ;
+     fhir:display [ fhir:v "Renca (Comuna), Region Metropolitana de Santiago, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_RM_13129" ] ;
+     fhir:display [ fhir:v "San Joaquín (Comuna), Region Metropolitana de Santiago, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_RM_13130" ] ;
+     fhir:display [ fhir:v "San Miguel (Comuna), Region Metropolitana de Santiago, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_RM_13131" ] ;
+     fhir:display [ fhir:v "San Ramón (Comuna), Region Metropolitana de Santiago, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_RM_13132" ] ;
+     fhir:display [ fhir:v "Vitacura (Comuna), Region Metropolitana de Santiago, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_RM_13201" ] ;
+     fhir:display [ fhir:v "Puente Alto (Comuna), Region Metropolitana de Santiago, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_RM_13202" ] ;
+     fhir:display [ fhir:v "Pirque (Comuna), Region Metropolitana de Santiago, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_RM_13203" ] ;
+     fhir:display [ fhir:v "San José de Maipo (Comuna), Region Metropolitana de Santiago, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_RM_13301" ] ;
+     fhir:display [ fhir:v "Colina (Comuna), Region Metropolitana de Santiago, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_RM_13302" ] ;
+     fhir:display [ fhir:v "Lampa (Comuna), Region Metropolitana de Santiago, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_RM_13303" ] ;
+     fhir:display [ fhir:v "Tiltil (Comuna), Region Metropolitana de Santiago, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_RM_13401" ] ;
+     fhir:display [ fhir:v "San Bernardo (Comuna), Region Metropolitana de Santiago, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_RM_13402" ] ;
+     fhir:display [ fhir:v "Buin (Comuna), Region Metropolitana de Santiago, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_RM_13403" ] ;
+     fhir:display [ fhir:v "Calera de Tango (Comuna), Region Metropolitana de Santiago, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_RM_13404" ] ;
+     fhir:display [ fhir:v "Paine (Comuna), Region Metropolitana de Santiago, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_RM_13501" ] ;
+     fhir:display [ fhir:v "Melipilla (Comuna), Region Metropolitana de Santiago, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_RM_13502" ] ;
+     fhir:display [ fhir:v "Alhué (Comuna), Region Metropolitana de Santiago, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_RM_13503" ] ;
+     fhir:display [ fhir:v "Curacaví (Comuna), Region Metropolitana de Santiago, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_RM_13504" ] ;
+     fhir:display [ fhir:v "María Pinto (Comuna), Region Metropolitana de Santiago, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_RM_13505" ] ;
+     fhir:display [ fhir:v "San Pedro (Comuna), Region Metropolitana de Santiago, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_RM_13601" ] ;
+     fhir:display [ fhir:v "Talagante (Comuna), Region Metropolitana de Santiago, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_RM_13602" ] ;
+     fhir:display [ fhir:v "El Monte (Comuna), Region Metropolitana de Santiago, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_RM_13603" ] ;
+     fhir:display [ fhir:v "Isla de Maipo (Comuna), Region Metropolitana de Santiago, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_RM_13604" ] ;
+     fhir:display [ fhir:v "Padre Hurtado (Comuna), Region Metropolitana de Santiago, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_RM_13605" ] ;
+     fhir:display [ fhir:v "Peñaflor (Comuna), Region Metropolitana de Santiago, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_TA_01101" ] ;
+     fhir:display [ fhir:v "Iquique (Comuna), Region de Tarapaca, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_TA_01107" ] ;
+     fhir:display [ fhir:v "Alto Hospicio (Comuna), Region de Tarapaca, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_TA_01401" ] ;
+     fhir:display [ fhir:v "Tocopilla (Comuna), Region de Tarapaca, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_TA_01402" ] ;
+     fhir:display [ fhir:v "Camiña (Comuna), Region de Tarapaca, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_TA_01403" ] ;
+     fhir:display [ fhir:v "Colchane (Comuna), Region de Tarapaca, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_TA_01404" ] ;
+     fhir:display [ fhir:v "Huara (Comuna), Region de Tarapaca, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_TA_01405" ] ;
+     fhir:display [ fhir:v "Pica (Comuna), Region de Tarapaca, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_VS_05101" ] ;
+     fhir:display [ fhir:v "Valparaíso (Comuna), Region de Valparaiso, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_VS_05102" ] ;
+     fhir:display [ fhir:v "Casablanca (Comuna), Region de Valparaiso, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_VS_05103" ] ;
+     fhir:display [ fhir:v "Concón (Comuna), Region de Valparaiso, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_VS_05104" ] ;
+     fhir:display [ fhir:v "Juan Fernández (Comuna), Region de Valparaiso, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_VS_05105" ] ;
+     fhir:display [ fhir:v "Puchuncaví (Comuna), Region de Valparaiso, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_VS_05107" ] ;
+     fhir:display [ fhir:v "Quintero (Comuna), Region de Valparaiso, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_VS_05109" ] ;
+     fhir:display [ fhir:v "Viña del Mar (Comuna), Region de Valparaiso, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_VS_05201" ] ;
+     fhir:display [ fhir:v "Isla de Pascua (Comuna), Region de Valparaiso, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_VS_05301" ] ;
+     fhir:display [ fhir:v "Los Andes (Comuna), Region de Valparaiso, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_VS_05302" ] ;
+     fhir:display [ fhir:v "Calle Larga (Comuna), Region de Valparaiso, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_VS_05303" ] ;
+     fhir:display [ fhir:v "Rinconada (Comuna), Region de Valparaiso, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_VS_05304" ] ;
+     fhir:display [ fhir:v "San Esteban (Comuna), Region de Valparaiso, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_VS_05401" ] ;
+     fhir:display [ fhir:v "La Ligua (Comuna), Region de Valparaiso, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_VS_05402" ] ;
+     fhir:display [ fhir:v "Cabildo (Comuna), Region de Valparaiso, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_VS_05403" ] ;
+     fhir:display [ fhir:v "Papudo (Comuna), Region de Valparaiso, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_VS_05404" ] ;
+     fhir:display [ fhir:v "Petorca (Comuna), Region de Valparaiso, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_VS_05405" ] ;
+     fhir:display [ fhir:v "Zapallar (Comuna), Region de Valparaiso, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_VS_05501" ] ;
+     fhir:display [ fhir:v "Quillota (Comuna), Region de Valparaiso, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_VS_05502" ] ;
+     fhir:display [ fhir:v "Calera (Comuna), Region de Valparaiso, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_VS_05503" ] ;
+     fhir:display [ fhir:v "Hijuelas (Comuna), Region de Valparaiso, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_VS_05504" ] ;
+     fhir:display [ fhir:v "La Cruz (Comuna), Region de Valparaiso, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_VS_05506" ] ;
+     fhir:display [ fhir:v "Nogales (Comuna), Region de Valparaiso, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_VS_05601" ] ;
+     fhir:display [ fhir:v "San Antonio (Comuna), Region de Valparaiso, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_VS_05602" ] ;
+     fhir:display [ fhir:v "Algarrobo (Comuna), Region de Valparaiso, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_VS_05603" ] ;
+     fhir:display [ fhir:v "Cartagena (Comuna), Region de Valparaiso, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_VS_05604" ] ;
+     fhir:display [ fhir:v "El Quisco (Comuna), Region de Valparaiso, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_VS_05605" ] ;
+     fhir:display [ fhir:v "El Tabo (Comuna), Region de Valparaiso, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_VS_05606" ] ;
+     fhir:display [ fhir:v "Santo Domingo (Comuna), Region de Valparaiso, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_VS_05701" ] ;
+     fhir:display [ fhir:v "San Felipe (Comuna), Region de Valparaiso, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_VS_05702" ] ;
+     fhir:display [ fhir:v "Catemu (Comuna), Region de Valparaiso, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_VS_05703" ] ;
+     fhir:display [ fhir:v "Llaillay (Comuna), Region de Valparaiso, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_VS_05704" ] ;
+     fhir:display [ fhir:v "Panquehue (Comuna), Region de Valparaiso, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_VS_05705" ] ;
+     fhir:display [ fhir:v "Putaendo (Comuna), Region de Valparaiso, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_VS_05706" ] ;
+     fhir:display [ fhir:v "Santa María (Comuna), Region de Valparaiso, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_VS_05801" ] ;
+     fhir:display [ fhir:v "Quilpué (Comuna), Region de Valparaiso, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_VS_05802" ] ;
+     fhir:display [ fhir:v "Limache (Comuna), Region de Valparaiso, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_VS_05803" ] ;
+     fhir:display [ fhir:v "Olmué (Comuna), Region de Valparaiso, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CL_VS_05804" ] ;
+     fhir:display [ fhir:v "Villa Alemana (Comuna), Region de Valparaiso, Chile" ]
+  ] [
+     fhir:code [ fhir:v "CO_AMA_91001" ] ;
+     fhir:display [ fhir:v "Leticia (Municipio), Amazonas, Colombia" ]
+  ] [
+     fhir:code [ fhir:v "CO_AMA_91263" ] ;
+     fhir:display [ fhir:v "El Encanto (Municipio), Amazonas, Colombia" ]
+  ] [
+     fhir:code [ fhir:v "CO_AMA_91405" ] ;
+     fhir:display [ fhir:v "La Chorrera (Municipio), Amazonas, Colombia" ]
+  ] [
+     fhir:code [ fhir:v "CO_AMA_91407" ] ;
+     fhir:display [ fhir:v "La Pedrera (Municipio), Amazonas, Colombia" ]
+  ] [
+     fhir:code [ fhir:v "CO_AMA_91430" ] ;
+     fhir:display [ fhir:v "La Victoria (Municipio), Amazonas, Colombia" ]
+  ] [
+     fhir:code [ fhir:v "CO_AMA_91460" ] ;
+     fhir:display [ fhir:v "Mirití- Paraná (Municipio), Amazonas, Colombia" ]
+  ] [
+     fhir:code [ fhir:v "DO_0904" ] ;
+     fhir:display [ fhir:v "Jamao al Norte (Municipio), Espaillat, Dominican Republic" ]
+  ] [
+     fhir:code [ fhir:v "DO_1001" ] ;
+     fhir:display [ fhir:v "Jimaní (Municipio), Independencia, Dominican Republic" ]
+  ] [
+     fhir:code [ fhir:v "DO_1002" ] ;
+     fhir:display [ fhir:v "Duvergé (Municipio), Independencia, Dominican Republic" ]
+  ] [
+     fhir:code [ fhir:v "EC_D_2203" ] ;
+     fhir:display [ fhir:v "La Joya de Los Sachas (Canton), Orellana, Ecuador" ]
+  ] [
+     fhir:code [ fhir:v "EC_D_2204" ] ;
+     fhir:display [ fhir:v "Loreto (Canton), Orellana, Ecuador" ]
+  ] [
+     fhir:code [ fhir:v "EC_E_0801" ] ;
+     fhir:display [ fhir:v "Esmeraldas (Canton), Esmeraldas, Ecuador" ]
+  ] [
+     fhir:code [ fhir:v "GT_QZ_0908" ] ;
+     fhir:display [ fhir:v "San Miguel Sigüila (Municipio), Quetzaltenango, Guatemala" ]
+  ] [
+     fhir:code [ fhir:v "GT_QZ_0909" ] ;
+     fhir:display [ fhir:v "Ostuncalco (Municipio), Quetzaltenango, Guatemala" ]
+  ] [
+     fhir:code [ fhir:v "GT_QZ_0910" ] ;
+     fhir:display [ fhir:v "San Mateo (Municipio), Quetzaltenango, Guatemala" ]
+  ] [
+     fhir:code [ fhir:v "GT_QZ_0911" ] ;
+     fhir:display [ fhir:v "Concepción Chiquirichapa (Municipio), Quetzaltenango, Guatemala" ]
+  ] [
+     fhir:code [ fhir:v "GT_QZ_0912" ] ;
+     fhir:display [ fhir:v "San Martín Sacatepéquez (Municipio), Quetzaltenango, Guatemala" ]
+  ] [
+     fhir:code [ fhir:v "HN_CH_0601" ] ;
+     fhir:display [ fhir:v "Choluteca (Municipio), Choluteca, Honduras" ]
+  ] [
+     fhir:code [ fhir:v "HN_CH_0602" ] ;
+     fhir:display [ fhir:v "Apacilagua (Municipio), Choluteca, Honduras" ]
+  ] [
+     fhir:code [ fhir:v "HN_CH_0603" ] ;
+     fhir:display [ fhir:v "Concepción de María (Municipio), Choluteca, Honduras" ]
+  ] [
+     fhir:code [ fhir:v "HN_CH_0604" ] ;
+     fhir:display [ fhir:v "Duyure (Municipio), Choluteca, Honduras" ]
+  ] [
+     fhir:code [ fhir:v "MX_CS_07003" ] ;
+     fhir:display [ fhir:v "Acapetahua (Municipio), Chiapas, Mexico" ]
+  ] [
+     fhir:code [ fhir:v "MX_CS_07004" ] ;
+     fhir:display [ fhir:v "Altamirano (Municipio), Chiapas, Mexico" ]
+  ] [
+     fhir:code [ fhir:v "MX_CS_07005" ] ;
+     fhir:display [ fhir:v "Amatán (Municipio), Chiapas, Mexico" ]
+  ] [
+     fhir:code [ fhir:v "PE_ICA_0201" ] ;
+     fhir:display [ fhir:v "Chincha Alta (Distrito), Ica, Peru" ]
+  ] [
+     fhir:code [ fhir:v "PE_ICA_0211" ] ;
+     fhir:display [ fhir:v "Tambo de Mora (Distrito), Ica, Peru" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

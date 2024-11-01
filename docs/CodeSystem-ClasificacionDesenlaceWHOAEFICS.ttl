@@ -1,0 +1,78 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://paho.org/fhir/esavi/CodeSystem/ClasificacionDesenlaceWHOAEFICS> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ClasificacionDesenlaceWHOAEFICS"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ClasificacionDesenlaceWHOAEFICS</b></p><a name=\"ClasificacionDesenlaceWHOAEFICS\"> </a><a name=\"hcClasificacionDesenlaceWHOAEFICS\"> </a><a name=\"ClasificacionDesenlaceWHOAEFICS-en-US\"> </a><p>This case-insensitive code system <code>https://paho.org/fhir/esavi/CodeSystem/ClasificacionDesenlaceWHOAEFICS</code> defines the following codes in an undefined hierarchy:</p><table class=\"codes\"><tr><td><b>Lvl</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>1</td><td style=\"white-space:nowrap\">A<a name=\"ClasificacionDesenlaceWHOAEFICS-A\"> </a></td><td>Con asociación causal congruente con la vacuna o proceso de vacunación</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  A1<a name=\"ClasificacionDesenlaceWHOAEFICS-A1\"> </a></td><td>Evento relacionado con la vacuna o cualquiera de sus componentes</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  A2<a name=\"ClasificacionDesenlaceWHOAEFICS-A2\"> </a></td><td>Evento relacionado con una desviacion de calidad del producto biologico o la vacuna</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  A3<a name=\"ClasificacionDesenlaceWHOAEFICS-A3\"> </a></td><td>Evento relacionado con un error programatico</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  A4<a name=\"ClasificacionDesenlaceWHOAEFICS-A4\"> </a></td><td>Evento por estres que tuvo lugar inmediatemente antes, durante o inmediatamente despues del proceso de vacunacion</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">B<a name=\"ClasificacionDesenlaceWHOAEFICS-B\"> </a></td><td>Indeterminado</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  B1<a name=\"ClasificacionDesenlaceWHOAEFICS-B1\"> </a></td><td>La relacion temporal es congruente, pero no hay evidencia definitiva suficiente sobre una relacion causal con la vacuna (puede ser un evento recientemente asociadoa  la vacuna [señal])</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  B2<a name=\"ClasificacionDesenlaceWHOAEFICS-B2\"> </a></td><td>Factores determinantes para la clasificación muestran tendencias conflictivas a favor y en contra de una asociacion causal con la vacunació</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">C<a name=\"ClasificacionDesenlaceWHOAEFICS-C\"> </a></td><td>Sin Asociacion causal congruente con la vacuna o proceso de vacunacion</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">NC<a name=\"ClasificacionDesenlaceWHOAEFICS-NC\"> </a></td><td>No clasificable</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://paho.org/fhir/esavi/CodeSystem/ClasificacionDesenlaceWHOAEFICS"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.2.0"] ; # 
+  fhir:name [ fhir:v "ClasificacionDesenlaceWHOAEFICS"] ; # 
+  fhir:title [ fhir:v "Clasificación de causalidad WHO-AEFI"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2021-03-11T00:00:00-03:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "ESAVI -"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "ESAVI -" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://covid-19pharmacovigilance.paho.org/resources/updates-on-aefi" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rizzatodan@paho.org" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Método de clasificación de causalidad WHO-AEFI"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "001" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "10"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "A" ] ;
+     fhir:display [ fhir:v "Con asociación causal congruente con la vacuna o proceso de vacunación" ] ;
+     fhir:concept ( [
+       fhir:code [ fhir:v "A1" ] ;
+       fhir:display [ fhir:v "Evento relacionado con la vacuna o cualquiera de sus componentes" ]
+     ] [
+       fhir:code [ fhir:v "A2" ] ;
+       fhir:display [ fhir:v "Evento relacionado con una desviacion de calidad del producto biologico o la vacuna" ]
+     ] [
+       fhir:code [ fhir:v "A3" ] ;
+       fhir:display [ fhir:v "Evento relacionado con un error programatico" ]
+     ] [
+       fhir:code [ fhir:v "A4" ] ;
+       fhir:display [ fhir:v "Evento por estres que tuvo lugar inmediatemente antes, durante o inmediatamente despues del proceso de vacunacion" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "B" ] ;
+     fhir:display [ fhir:v "Indeterminado" ] ;
+     fhir:concept ( [
+       fhir:code [ fhir:v "B1" ] ;
+       fhir:display [ fhir:v "La relacion temporal es congruente, pero no hay evidencia definitiva suficiente sobre una relacion causal con la vacuna (puede ser un evento recientemente asociadoa  la vacuna [señal])" ]
+     ] [
+       fhir:code [ fhir:v "B2" ] ;
+       fhir:display [ fhir:v "Factores determinantes para la clasificación muestran tendencias conflictivas a favor y en contra de una asociacion causal con la vacunació" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "C" ] ;
+     fhir:display [ fhir:v "Sin Asociacion causal congruente con la vacuna o proceso de vacunacion" ]
+  ] [
+     fhir:code [ fhir:v "NC" ] ;
+     fhir:display [ fhir:v "No clasificable" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,26 @@
+ESAVI
+=========================================
+
+/ig/fsh-generated/resources/CodeSystem-ClasificacionDesenlaceWHOAEFICS.json: line 0, col 0, Info - CodeSystems SHOULD have a stated value for the hierarchyMeaning element so that users know the status and meaning of the code system clearly (BUSINESSRULE)
+/ig/fsh-generated/resources/Questionnaire-CuestionarioESAVI.json: line 1, col 224576, Warning - A code with no system has no defined meaning, and it cannot be validated. A system should be provided (CODEINVALID)
+/ig/fsh-generated/resources/Questionnaire-CuestionarioESAVI.json: line 1, col 224657, Warning - A code with no system has no defined meaning, and it cannot be validated. A system should be provided (CODEINVALID)
+/ig/fsh-generated/resources/Questionnaire-CuestionarioESAVI.json: line 1, col 224953, Warning - A code with no system has no defined meaning, and it cannot be validated. A system should be provided (CODEINVALID)
+/ig/fsh-generated/resources/Questionnaire-CuestionarioESAVI.json: line 1, col 225034, Warning - A code with no system has no defined meaning, and it cannot be validated. A system should be provided (CODEINVALID)
+/ig/fsh-generated/resources/Questionnaire-CuestionarioESAVI.json: line 1, col 225316, Warning - A code with no system has no defined meaning, and it cannot be validated. A system should be provided (CODEINVALID)
+/ig/fsh-generated/resources/Questionnaire-CuestionarioESAVI.json: line 1, col 225397, Warning - A code with no system has no defined meaning, and it cannot be validated. A system should be provided (CODEINVALID)
+/ig/fsh-generated/resources/Questionnaire-CuestionarioESAVI.json: line 1, col 225688, Warning - A code with no system has no defined meaning, and it cannot be validated. A system should be provided (CODEINVALID)
+/ig/fsh-generated/resources/Questionnaire-CuestionarioESAVI.json: line 1, col 232974, Warning - A code with no system has no defined meaning, and it cannot be validated. A system should be provided (CODEINVALID)
+/ig/fsh-generated/resources/Questionnaire-CuestionarioESAVI.json: line 1, col 235140, Warning - A code with no system has no defined meaning, and it cannot be validated. A system should be provided (CODEINVALID)
+/ig/fsh-generated/resources/Questionnaire-CuestionarioESAVI.json: line 1, col 235221, Warning - A code with no system has no defined meaning, and it cannot be validated. A system should be provided (CODEINVALID)
+/ig/fsh-generated/resources/Questionnaire-CuestionarioESAVI.json: line 1, col 235426, Warning - A code with no system has no defined meaning, and it cannot be validated. A system should be provided (CODEINVALID)
+/ig/fsh-generated/resources/Questionnaire-CuestionarioESAVI.json: line 1, col 235507, Warning - A code with no system has no defined meaning, and it cannot be validated. A system should be provided (CODEINVALID)
+/ig/fsh-generated/resources/Questionnaire-CuestionarioESAVI.json: line 1, col 238319, Warning - A code with no system has no defined meaning, and it cannot be validated. A system should be provided (CODEINVALID)
+/ig/fsh-generated/resources/Questionnaire-CuestionarioESAVI.json: line 1, col 238703, Warning - A code with no system has no defined meaning, and it cannot be validated. A system should be provided (CODEINVALID)
+/ig/fsh-generated/resources/Questionnaire-CuestionarioESAVI.json: line 1, col 239036, Warning - A code with no system has no defined meaning, and it cannot be validated. A system should be provided (CODEINVALID)
+/ig/fsh-generated/resources/Questionnaire-CuestionarioESAVI.json: line 1, col 239369, Warning - A code with no system has no defined meaning, and it cannot be validated. A system should be provided (CODEINVALID)
+/ig/fsh-generated/resources/Questionnaire-CuestionarioESAVI.json: line 0, col 0, Info - This resource could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root) (BUSINESSRULE)
+/ig/fsh-generated/resources/ValueSet-CodigoMedicamentoVS.json: line 1, col 1708, Info - The value set references CodeSystem 'https://paho.org/fhir/esavi/CodeSystem/WHODrugDCCS' which has status 'fragment' (INVALID)
+/ig/fsh-generated/resources/ValueSet-CodigoWhoVacunaVS.json: line 1, col 1194, Info - The value set references CodeSystem 'https://paho.org/fhir/esavi/CodeSystem/WHODrugDCCS' which has status 'fragment' (INVALID)
+
+err = 0, warn = 16, info = 4
+IG Publisher Version: 1.7.1

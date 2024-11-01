@@ -1,0 +1,129 @@
+ESAVI : Validation Results
+=========================================
+
+err = 0, warn = 16, info = 4
+IG Publisher Version: 1.7.1
+Generated Thu Oct 31 17:17:56 CST 2024. FHIR version 4.0.1 for uv.esavi#0.2.0 (canonical = https://paho.org/fhir/esavi)
+ Build Errors : 0 / 0 / 0
+ /ig/fsh-generated/resources/Bundle-BundESAVI : 0 / 0 / 3
+ /ig/fsh-generated/resources/CodeSystem-ClasificacionDesenlaceCS : 0 / 0 / 1
+ /ig/fsh-generated/resources/CodeSystem-ClasificacionDesenlaceNaranjoCS : 0 / 0 / 1
+ /ig/fsh-generated/resources/CodeSystem-ClasificacionDesenlaceWHOAEFICS : 0 / 0 / 2
+ /ig/fsh-generated/resources/CodeSystem-ClasificacionDesenlaceWHOUMCCS : 0 / 0 / 1
+ /ig/fsh-generated/resources/CodeSystem-CodigoWhoFabricanteCS : 0 / 0 / 1
+ /ig/fsh-generated/resources/CodeSystem-ComplicacionEmbarazoCS : 0 / 0 / 1
+ /ig/fsh-generated/resources/CodeSystem-DirOrgNotiCS : 0 / 0 / 1
+ /ig/fsh-generated/resources/CodeSystem-MedDRACS : 0 / 0 / 1
+ /ig/fsh-generated/resources/CodeSystem-ModoConfirmacionInfeccionCS : 0 / 0 / 1
+ /ig/fsh-generated/resources/CodeSystem-ModoVerificacionVacunaCS : 0 / 0 / 1
+ /ig/fsh-generated/resources/CodeSystem-ProfesionalNotificadorCS : 0 / 0 / 1
+ /ig/fsh-generated/resources/CodeSystem-RespuestaSiNoNosabeCS : 0 / 0 / 1
+ /ig/fsh-generated/resources/CodeSystem-SistemaClasfCausalidadCS : 0 / 0 / 1
+ /ig/fsh-generated/resources/CodeSystem-SistemasDeCodificacionCS : 0 / 0 / 1
+ /ig/fsh-generated/resources/CodeSystem-WHODrugDCCS : 0 / 0 / 1
+ /ig/fsh-generated/resources/CodeSystem-codPaisesCS : 0 / 0 / 1
+ /ig/fsh-generated/resources/ImplementationGuide-uv.esavi : 0 / 0 / 1
+ /ig/fsh-generated/resources/Questionnaire-CuestionarioESAVI : 0 / 16 / 2
+ /ig/fsh-generated/resources/QuestionnaireResponse-Ejemplo1DHIS2 : 0 / 0 / 1
+ /ig/fsh-generated/resources/QuestionnaireResponse-Ejemplo2DHIS2 : 0 / 0 / 1
+ /ig/fsh-generated/resources/QuestionnaireResponse-EjemploSimple1 : 0 / 0 / 1
+ /ig/fsh-generated/resources/QuestionnaireResponse-EjemploSimple2 : 0 / 0 / 1
+ /ig/fsh-generated/resources/StructureDefinition-BundleESAVI : 0 / 0 / 1
+ /ig/fsh-generated/resources/StructureDefinition-ESAVIQuestionnaireResponse : 0 / 0 / 1
+ /ig/fsh-generated/resources/ValueSet-ClasificacionDesenlaceNaranjoVS : 0 / 0 / 1
+ /ig/fsh-generated/resources/ValueSet-ClasificacionDesenlaceVS : 0 / 0 / 1
+ /ig/fsh-generated/resources/ValueSet-ClasificacionDesenlaceWHOAEFIVS : 0 / 0 / 1
+ /ig/fsh-generated/resources/ValueSet-ClasificacionDesenlaceWHOUMCVS : 0 / 0 / 1
+ /ig/fsh-generated/resources/ValueSet-CodigoMedDRAEnfPreviaVS : 0 / 0 / 1
+ /ig/fsh-generated/resources/ValueSet-CodigoMedicamentoVS : 0 / 0 / 2
+ /ig/fsh-generated/resources/ValueSet-CodigoNoWhoVacunaVS : 0 / 0 / 1
+ /ig/fsh-generated/resources/ValueSet-CodigoWhoFabricanteVS : 0 / 0 / 1
+ /ig/fsh-generated/resources/ValueSet-CodigoWhoVacunaVS : 0 / 0 / 2
+ /ig/fsh-generated/resources/ValueSet-ComplicacionEmbarazoMedDRAVS : 0 / 0 / 1
+ /ig/fsh-generated/resources/ValueSet-ComplicacionEmbarazoOtroVS : 0 / 0 / 1
+ /ig/fsh-generated/resources/ValueSet-ComplicacionEmbarazoVS : 0 / 0 / 1
+ /ig/fsh-generated/resources/ValueSet-DirOrgNotiVS : 0 / 0 / 1
+ /ig/fsh-generated/resources/ValueSet-EnfermedadesPreviasCodificacionVS : 0 / 0 / 1
+ /ig/fsh-generated/resources/ValueSet-EsaviMedDRAVS : 0 / 0 / 1
+ /ig/fsh-generated/resources/ValueSet-EsaviOtroVS : 0 / 0 / 1
+ /ig/fsh-generated/resources/ValueSet-FormaFarmaceuticaVS : 0 / 0 / 1
+ /ig/fsh-generated/resources/ValueSet-ModoConfirmacionInfeccionVS : 0 / 0 / 1
+ /ig/fsh-generated/resources/ValueSet-ModoVerificacionVacunaVS : 0 / 0 / 1
+ /ig/fsh-generated/resources/ValueSet-ProfesionalNotificadorVS : 0 / 0 / 1
+ /ig/fsh-generated/resources/ValueSet-RespuestaSiNoNosabeVS : 0 / 0 / 1
+ /ig/fsh-generated/resources/ValueSet-SistemaClasfCausalidadVS : 0 / 0 / 1
+ /ig/fsh-generated/resources/ValueSet-SistemasDeCodificacionVS : 0 / 0 / 1
+ /ig/fsh-generated/resources/ValueSet-ViaAdminMedicamentoVS : 0 / 0 / 1
+ /ig/fsh-generated/resources/ValueSet-codPaises : 0 / 0 / 1
+</table>
+== n/a ==
+== fsh-generated/resources/Bundle-BundESAVI.json ==
+== fsh-generated/resources/CodeSystem-ClasificacionDesenlaceCS.json ==
+== fsh-generated/resources/CodeSystem-ClasificacionDesenlaceNaranjoCS.json ==
+== fsh-generated/resources/CodeSystem-ClasificacionDesenlaceWHOAEFICS.json ==
+INFORMATION: CodeSystem/ClasificacionDesenlaceWHOAEFICS: CodeSystem: CodeSystems SHOULD have a stated value for the hierarchyMeaning element so that users know the status and meaning of the code system clearly
+== fsh-generated/resources/CodeSystem-ClasificacionDesenlaceWHOUMCCS.json ==
+== fsh-generated/resources/CodeSystem-CodigoWhoFabricanteCS.json ==
+== fsh-generated/resources/CodeSystem-ComplicacionEmbarazoCS.json ==
+== fsh-generated/resources/CodeSystem-DirOrgNotiCS.json ==
+== fsh-generated/resources/CodeSystem-MedDRACS.json ==
+== fsh-generated/resources/CodeSystem-ModoConfirmacionInfeccionCS.json ==
+== fsh-generated/resources/CodeSystem-ModoVerificacionVacunaCS.json ==
+== fsh-generated/resources/CodeSystem-ProfesionalNotificadorCS.json ==
+== fsh-generated/resources/CodeSystem-RespuestaSiNoNosabeCS.json ==
+== fsh-generated/resources/CodeSystem-SistemaClasfCausalidadCS.json ==
+== fsh-generated/resources/CodeSystem-SistemasDeCodificacionCS.json ==
+== fsh-generated/resources/CodeSystem-WHODrugDCCS.json ==
+== fsh-generated/resources/CodeSystem-codPaisesCS.json ==
+== fsh-generated/resources/ImplementationGuide-uv.esavi.json ==
+== fsh-generated/resources/Questionnaire-CuestionarioESAVI.json ==
+WARNING: Questionnaire/CuestionarioESAVI: Questionnaire.item[2].item[4].item[2].enableWhen[0].answer.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Questionnaire/CuestionarioESAVI: Questionnaire.item[2].item[4].item[2].enableWhen[1].answer.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Questionnaire/CuestionarioESAVI: Questionnaire.item[2].item[4].item[3].enableWhen[0].answer.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Questionnaire/CuestionarioESAVI: Questionnaire.item[2].item[4].item[3].enableWhen[1].answer.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Questionnaire/CuestionarioESAVI: Questionnaire.item[2].item[4].item[4].enableWhen[0].answer.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Questionnaire/CuestionarioESAVI: Questionnaire.item[2].item[4].item[4].enableWhen[1].answer.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Questionnaire/CuestionarioESAVI: Questionnaire.item[2].item[4].item[5].enableWhen[0].answer.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Questionnaire/CuestionarioESAVI: Questionnaire.item[4].item[1].enableWhen[0].answer.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Questionnaire/CuestionarioESAVI: Questionnaire.item[4].item[2].item[6].enableWhen[0].answer.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Questionnaire/CuestionarioESAVI: Questionnaire.item[4].item[2].item[6].enableWhen[1].answer.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Questionnaire/CuestionarioESAVI: Questionnaire.item[4].item[2].item[7].enableWhen[0].answer.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Questionnaire/CuestionarioESAVI: Questionnaire.item[4].item[2].item[7].enableWhen[1].answer.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Questionnaire/CuestionarioESAVI: Questionnaire.item[4].item[4].item[2].enableWhen[0].answer.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Questionnaire/CuestionarioESAVI: Questionnaire.item[4].item[4].item[4].enableWhen[0].answer.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Questionnaire/CuestionarioESAVI: Questionnaire.item[4].item[4].item[5].enableWhen[0].answer.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Questionnaire/CuestionarioESAVI: Questionnaire.item[4].item[4].item[6].enableWhen[0].answer.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+INFORMATION: Resource: This resource could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/QuestionnaireResponse-Ejemplo1DHIS2.json ==
+== fsh-generated/resources/QuestionnaireResponse-Ejemplo2DHIS2.json ==
+== fsh-generated/resources/QuestionnaireResponse-EjemploSimple1.json ==
+== fsh-generated/resources/QuestionnaireResponse-EjemploSimple2.json ==
+== fsh-generated/resources/StructureDefinition-BundleESAVI.json ==
+== fsh-generated/resources/StructureDefinition-ESAVIQuestionnaireResponse.json ==
+== fsh-generated/resources/ValueSet-ClasificacionDesenlaceNaranjoVS.json ==
+== fsh-generated/resources/ValueSet-ClasificacionDesenlaceVS.json ==
+== fsh-generated/resources/ValueSet-ClasificacionDesenlaceWHOAEFIVS.json ==
+== fsh-generated/resources/ValueSet-ClasificacionDesenlaceWHOUMCVS.json ==
+== fsh-generated/resources/ValueSet-CodigoMedDRAEnfPreviaVS.json ==
+== fsh-generated/resources/ValueSet-CodigoMedicamentoVS.json ==
+INFORMATION: ValueSet/CodigoMedicamentoVS: ValueSet.compose.include[2]: The value set references CodeSystem 'https://paho.org/fhir/esavi/CodeSystem/WHODrugDCCS' which has status 'fragment'
+== fsh-generated/resources/ValueSet-CodigoNoWhoVacunaVS.json ==
+== fsh-generated/resources/ValueSet-CodigoWhoFabricanteVS.json ==
+== fsh-generated/resources/ValueSet-CodigoWhoVacunaVS.json ==
+INFORMATION: ValueSet/CodigoWhoVacunaVS: ValueSet.compose.include[0]: The value set references CodeSystem 'https://paho.org/fhir/esavi/CodeSystem/WHODrugDCCS' which has status 'fragment'
+== fsh-generated/resources/ValueSet-ComplicacionEmbarazoMedDRAVS.json ==
+== fsh-generated/resources/ValueSet-ComplicacionEmbarazoOtroVS.json ==
+== fsh-generated/resources/ValueSet-ComplicacionEmbarazoVS.json ==
+== fsh-generated/resources/ValueSet-DirOrgNotiVS.json ==
+== fsh-generated/resources/ValueSet-EnfermedadesPreviasCodificacionVS.json ==
+== fsh-generated/resources/ValueSet-EsaviMedDRAVS.json ==
+== fsh-generated/resources/ValueSet-EsaviOtroVS.json ==
+== fsh-generated/resources/ValueSet-FormaFarmaceuticaVS.json ==
+== fsh-generated/resources/ValueSet-ModoConfirmacionInfeccionVS.json ==
+== fsh-generated/resources/ValueSet-ModoVerificacionVacunaVS.json ==
+== fsh-generated/resources/ValueSet-ProfesionalNotificadorVS.json ==
+== fsh-generated/resources/ValueSet-RespuestaSiNoNosabeVS.json ==
+== fsh-generated/resources/ValueSet-SistemaClasfCausalidadVS.json ==
+== fsh-generated/resources/ValueSet-SistemasDeCodificacionVS.json ==
+== fsh-generated/resources/ValueSet-ViaAdminMedicamentoVS.json ==
+== fsh-generated/resources/ValueSet-codPaises.json ==

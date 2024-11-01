@@ -1,0 +1,61 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://paho.org/fhir/esavi/CodeSystem/ModoConfirmacionInfeccionCS> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ModoConfirmacionInfeccionCS"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ModoConfirmacionInfeccionCS</b></p><a name=\"ModoConfirmacionInfeccionCS\"> </a><a name=\"hcModoConfirmacionInfeccionCS\"> </a><a name=\"ModoConfirmacionInfeccionCS-en-US\"> </a><p>This case-insensitive code system <code>https://paho.org/fhir/esavi/CodeSystem/ModoConfirmacionInfeccionCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"ModoConfirmacionInfeccionCS-1\"> </a></td><td>Por criterio clínico epidemiológico</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"ModoConfirmacionInfeccionCS-2\"> </a></td><td>por inmunoensayo</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"ModoConfirmacionInfeccionCS-3\"> </a></td><td>Por pruebas moleculares</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"ModoConfirmacionInfeccionCS-4\"> </a></td><td>Por aislamiento viral</td></tr><tr><td style=\"white-space:nowrap\">5<a name=\"ModoConfirmacionInfeccionCS-5\"> </a></td><td>Otra</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://paho.org/fhir/esavi/CodeSystem/ModoConfirmacionInfeccionCS"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.2.0"] ; # 
+  fhir:name [ fhir:v "ModoConfirmacionInfeccionCS"] ; # 
+  fhir:title [ fhir:v "Modo de Confirmación de la Infección"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2021-03-11T00:00:00-03:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "ESAVI -"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "ESAVI -" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://covid-19pharmacovigilance.paho.org/resources/updates-on-aefi" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "rizzatodan@paho.org" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Modos de Confirmacion de Infección por COVID-19"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "001" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "5"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "1" ] ;
+     fhir:display [ fhir:v "Por criterio clínico epidemiológico" ]
+  ] [
+     fhir:code [ fhir:v "2" ] ;
+     fhir:display [ fhir:v "por inmunoensayo" ]
+  ] [
+     fhir:code [ fhir:v "3" ] ;
+     fhir:display [ fhir:v "Por pruebas moleculares" ]
+  ] [
+     fhir:code [ fhir:v "4" ] ;
+     fhir:display [ fhir:v "Por aislamiento viral" ]
+  ] [
+     fhir:code [ fhir:v "5" ] ;
+     fhir:display [ fhir:v "Otra" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+
