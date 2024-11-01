@@ -1,0 +1,21 @@
+.navbar-inverse {
+    background-color: #00205C;
+    color: #ffffff;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover, 
+.navbar-inverse .navbar-nav > li > a:focus {
+    color: #ffffff;
+    background-color: #00aae4;
+}
+
+#segment-footer > .container {
+    background-color: #00205C;
+    color: #ffffff;
+}
+
+@media (min-width: 1100px) {
+    .container {
+        max-width: 1170px;
+    }
+}

@@ -82,8 +82,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-ESAVIQuestionnaireResponse.html" : "Respuesta de Cuestionario ESAVI",
-      "StructureDefinition-BundleESAVI.html" : "Bundle Transacción de gupos de notificaciones"
+      "StructureDefinition-BundleESAVI.html" : "Bundle Transacción de gupos de notificaciones",
+      "StructureDefinition-ESAVIQuestionnaireResponse.html" : "Respuesta de Cuestionario ESAVI"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/questionnaire-answers",

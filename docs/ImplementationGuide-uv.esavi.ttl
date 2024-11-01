@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "ESAVI"] ; # 
   fhir:title [ fhir:v "Guía de Implementación FHIR de ESAVI"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-10-31T17:15:01-06:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-11-01T00:12:21-06:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ESAVI -"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ESAVI -" ] ;
@@ -1186,14 +1186,6 @@
          fhir:name [ fhir:v "artifacts.html"^^xsd:anyURI ] ;
          fhir:title [ fhir:v "Artefactos" ] ;
          fhir:generation [ fhir:v "html" ]
-       ] [
-         fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
-           fhir:value [ fhir:v "mapeos.html"^^xsd:anyURI ]
-         ] ) ;
-         fhir:name [ fhir:v "mapeos.html"^^xsd:anyURI ] ;
-         fhir:title [ fhir:v "Mapeos" ] ;
-         fhir:generation [ fhir:v "markdown" ]
        ] [
          fhir:extension ( [
            fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
