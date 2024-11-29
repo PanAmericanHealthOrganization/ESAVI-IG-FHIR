@@ -1,0 +1,292 @@
+map "http://hl7.org/fhir/StructureMap/TrackedEntityToBundle" = "Tracked Entity to Bundle Conversion"
+
+uses "https://paho.org/fhir/esavi/StructureDefinition/tracked-entity-logical-model" alias TrackedEntityLogicalModel as source
+uses "http://hl7.org/fhir/StructureDefinition/Bundle" alias Bundle as target
+uses "http://hl7.org/fhir/StructureDefinition/BackboneElement" alias BackboneElement as target
+uses "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse" alias QuestionnaireResponse as target
+uses "http://hl7.org/fhir/StructureDefinition/Meta" alias Meta as target
+uses "http://hl7.org/fhir/StructureDefinition/Narrative" alias Narrative as target
+uses "http://hl7.org/fhir/StructureDefinition/Identifier" alias Identifier as target
+
+group trackedEntityToBundle(source trackedEntity : TrackedEntityLogicalModel, target bundle : Bundle) {
+    trackedEntity -> bundle.type = 'batch' "type";
+    trackedEntity as te -> evaluate(te, te.attributes.where(attribute = 'KSr2yTdu1AI').first().value) as caseId,
+                           ('lSpdre0srBn') as esaviProgramStageId,
+                           evaluate(te, te.enrollments.first().repeat(events).where(programStage = esaviProgramStageId).first().completedAt) as completedAt,
+                           bundle.entry as e then {
+                                te -> e.resource = create('QuestionnaireResponse') as qr then questionnaireResponse(completedAt, caseId, te, qr) "resource";
+                                      te.trackedEntity as id -> e.request = create('BackboneElement') as request,
+                                      request.method = 'PUT', request.url = append('QuestionnaireResponse?identifier=', id) "request";
+                           } "bundle";
+}
+
+group questionnaireResponse(source completedAt : dateTime, source caseId : string, source trackedEntity : TrackedEntityLogicalModel, target qr : QuestionnaireResponse) {
+    trackedEntity.trackedEntity as id -> qr.id = id;
+    trackedEntity -> qr.meta = create('Meta') as meta, meta.profile = 'https://paho.org/fhir/esavi/StructureDefinition/ESAVIQuestionnaireResponse' "meta";
+    trackedEntity -> qr.text = create('Narrative') as narrative then narrative(caseId, trackedEntity, narrative) "text";
+    trackedEntity -> qr.identifier = create('Identifier') as identifier then identifier(caseId, trackedEntity, identifier) "identifier";
+    trackedEntity -> qr.questionnaire = 'https://paho.org/fhir/esavi/Questionnaire/CuestionarioESAVI' "questionnaire";
+    trackedEntity -> qr.status = 'completed' "status";
+    completedAt -> qr.authored = completedAt "authored";
+    trackedEntity then item(caseId, completedAt, trackedEntity, qr) "item";
+}
+
+group item(source caseId : string, source completedAt : dateTime, source trackedEntity : TrackedEntityLogicalModel, target qr : QuestionnaireResponse) {
+    trackedEntity -> qr.item = create('BackboneElement') as item then datosNotificacionGeneralItem(completedAt, trackedEntity, item) "datosNotificacionGeneral";
+    trackedEntity -> qr.item = create('BackboneElement') as item then patientDemographicsItem(caseId, trackedEntity, item) "patientDemographics";
+    trackedEntity -> qr.item = create('BackboneElement') as item then medicalBackgroundItem(trackedEntity, item) "medicalBackground";
+    trackedEntity -> qr.item = create('BackboneElement') as item then pharmaceuticalBackgroundItem(trackedEntity, item) "pharmaceuticalBackground";
+    trackedEntity -> qr.item = create('BackboneElement') as item then esaviRegistrationItem(trackedEntity, item) "esaviRegistration";
+}
+
+group authored(source esaviProgramStageId : string, source event : Event, target qr : QuestionnaireResponse) {
+    event.completedAt as completedAt where (event.programStage = esaviProgramStageId) -> qr.authored = completedAt "authored";
+}
+
+group narrative(source caseId : string, source trackedEntity : TrackedEntityLogicalModel, target narrative : Narrative) {
+    trackedEntity -> narrative.status = 'generated',
+                     narrative.div = append('<div xmlns="http://www.w3.org/1999/xhtml">RESPUESTA A CUESTIONARIO ID ', caseId, '</div>') "narrative";
+}
+
+group identifier(source caseId : string, source trackedEntity : TrackedEntityLogicalModel, target identifier : Identifier) {
+    trackedEntity as te -> identifier.system = 'http://ops.org/esavi/PRY',
+                           identifier.value = caseId "identifier";
+}
+
+group datosNotificacionGeneralItem(source completedAt : dateTime, source trackedEntity : TrackedEntityLogicalModel, target item : BackboneElement) {
+    trackedEntity -> item.linkId = 'datosNotificacionGeneral' "linkId";
+    trackedEntity -> item.item = create('BackboneElement') as item then datosNotificacionItem(trackedEntity, item) "datosNotificacion";
+    trackedEntity -> item.item = create('BackboneElement') as item,
+                    evaluate(completedAt, completedAt.toString().substring(0, 10)) as completedAtDate
+                    then fechasItem(completedAtDate, trackedEntity, item) "fechas";
+}
+
+group datosNotificacionItem(source trackedEntity : TrackedEntityLogicalModel, target item : BackboneElement) {
+    trackedEntity -> item.linkId = 'datosNotificacion' "linkId";
+
+    trackedEntity -> item.item = create('BackboneElement') as caseOriginCountryItem,
+                     caseOriginCountryItem.linkId = 'paisOrigen-Reg',
+                     c('https://paho.org/fhir/esavi/CodeSystem/codPaisesCS', 'PRY') as paraguayCoding
+                     // TODO (Future) Update source of this field. Currently fixed to Paraguay (PRY)
+                     then answerCoding(paraguayCoding, caseOriginCountryItem) "caseOriginCountry";
+
+    trackedEntity as te -> item.item = create('BackboneElement') as nombreOrganizacionNotificadoraItem,
+                           nombreOrganizacionNotificadoraItem.linkId = 'nombreOrganizacionNotificadora',
+                           evaluate(te, te.enrollments.first().orgUnitName) as orgUnitName
+                           then answerString(orgUnitName, nombreOrganizacionNotificadoraItem) "nombreOrganizacionNotificadora";
+
+    trackedEntity -> item.item = create('BackboneElement') as nombreDireccionOrganizacionItem,
+                     nombreDireccionOrganizacionItem.linkId = 'nombreDireccionOrganizacion',
+                     ('Bogota, D.C. (Municipio), Santa Fe de Bogota DC, Colombia') as nombreDireccionOrganizacion
+                     then answerString(nombreDireccionOrganizacion, nombreDireccionOrganizacionItem) "nombreDireccionOrganizacion";
+
+    trackedEntity.enrollments first as enrollments -> ('Tgi4xP5DCzr') as positionDepartmentEsaviId then {
+        enrollments.events as e then {
+              e.dataValues first as dv ->
+              item.item = create('BackboneElement') as codigoProfesionNotificadorItem,
+              codigoProfesionNotificadorItem.linkId = 'codigoProfesionNotificador',
+              c('https://paho.org/fhir/esavi/CodeSystem/ProfesionalNotificadorCS', 6) as profesionalNotificadorCoding,
+              evaluate(dv, iif(dv.where(dataElement = positionDepartmentEsaviId).exists(), dv.value, profesionalNotificadorCoding)) as v
+              then answerCodingOrString(v, codigoProfesionNotificadorItem) "codigoProfesionNotificador";
+        } "events";
+    } "codigoProfesionNotificador";
+}
+
+group answerCodingOrString(source value, target item : BackboneElement) {
+   value where(value is Coding) then answerCoding(value, item) "answerCoding";
+   value where(value is string) then answerString(value, item) "answerString";
+}
+
+group answerString(source valueString : string, target item : BackboneElement) {
+    valueString -> item.answer = create('BackboneElement') as answer,
+                   answer.value = valueString "answer";
+}
+
+group answerDate(source valueDate : string, target item : BackboneElement) {
+    valueDate -> item.answer = create('BackboneElement') as answer,
+                 answer.value = cast(valueDate, 'date') "answer";
+}
+
+group answerCoding(source coding : Coding, target item : BackboneElement) {
+    coding -> item.answer = create('BackboneElement') as answer,
+                            answer.value = create('Coding') as v
+                            then {
+                                coding.system as system -> v.system = system;
+                                coding.code as code -> v.code = code;
+                                coding.display as display -> v.display = display;
+                            } "answer";
+}
+
+group fechasItem(source completedAtDate : string, source trackedEntity : TrackedEntityLogicalModel, target item : BackboneElement) {
+    trackedEntity -> item.linkId = 'fechas' "linkId";
+
+    trackedEntity as te -> item.item = create('BackboneElement') as fechaConsultaItem,
+                           fechaConsultaItem.linkId = 'fechaConsulta',
+                           evaluate(te, te.enrollments.first().repeat(events).repeat(dataValues).where(dataElement = 'PW0dQpcY2wD').first().value) as v
+                           then answerDate(v, fechaConsultaItem) "fechaConsulta";
+
+    completedAtDate -> item.item = create('BackboneElement') as fechaNotificacionItem,
+                        fechaNotificacionItem.linkId = 'fechaNotificacion'
+                        then answerDate(completedAtDate, fechaNotificacionItem) "fechaNotificacion";
+
+    completedAtDate -> item.item = create('BackboneElement') as fechaLlenadoFichaItem,
+                        fechaLlenadoFichaItem.linkId = 'fechaLlenadoFicha'
+                        then answerDate(completedAtDate, fechaLlenadoFichaItem) "fechaLlenadoFicha";
+
+    completedAtDate -> item.item = create('BackboneElement') as fechaRepoNacionalItem,
+                        fechaRepoNacionalItem.linkId = 'fechaRepoNacional'
+                        then answerDate(completedAtDate, fechaRepoNacionalItem) "fechaRepoNacional";
+}
+
+group patientDemographicsItem(source caseId : string, source trackedEntity : TrackedEntityLogicalModel, target item : BackboneElement) {
+    trackedEntity -> item.linkId = 'datosIdVacunado' "linkId";
+
+    trackedEntity -> item.item = create('BackboneElement') as caseOriginCountryItem,
+                     caseOriginCountryItem.linkId = 'datosPaciente'
+                     then patientItem(caseId, trackedEntity, caseOriginCountryItem) "caseOriginCountry";
+}
+
+group patientItem(source caseId : string, source trackedEntity : TrackedEntityLogicalModel, target item : BackboneElement) {
+    trackedEntity -> item.linkId = 'datosPaciente' "linkId";
+
+    caseId -> item.item = create('BackboneElement') as caseIdItem,
+                          caseIdItem.linkId = 'numeroCaso'
+                          then answerString(caseId, caseIdItem) "caseId";
+
+    trackedEntity.enrollments as e -> ('Ewi7FUfcHAD') as nationalId then {
+        e where (first().attributes.where(attribute = nationalId).exists()) ->
+            item.item = create('BackboneElement') as patientIdItem,
+            patientIdItem.linkId = 'idPaciente',
+            evaluate(e, e.first().attributes.where(attribute = nationalId).value) as v
+            then answerString(v, patientIdItem) "patientId";
+    } "patientId";
+
+    trackedEntity.enrollments as e -> ('eISp65Kw0Z7') as teaResidenciaId then {
+        e where (first().attributes.where(attribute = teaResidenciaId).exists()) ->
+            item.item = create('BackboneElement') as patientResidenceItem,
+            patientResidenceItem.linkId = 'nombreResidenciaHabitual',
+            evaluate(e, e.first().attributes.where(attribute = teaResidenciaId).value) as v,
+            c('https://paho.org/fhir/esavi/CodeSystem/DirOrgNotiCS', v) as dirOrgNotiCoding,
+            dirOrgNotiCoding.display as dirOrgNotiCodingDisplay
+            then answerString(dirOrgNotiCodingDisplay, patientResidenceItem) "patientResidence";
+    } "patientResidence";
+
+     trackedEntity.enrollments as e -> ('oindugucx72') as patinfoSexId then {
+         e where (first().attributes.where(attribute = patinfoSexId).exists()) ->
+             item.item = create('BackboneElement') as patientGenderItem,
+             patientGenderItem.linkId = 'sexoPaciente',
+             evaluate(e, e.first().attributes.where(attribute = patinfoSexId).value) as v,
+             ('unknown') as sexOptionSetCode,
+             translate(v, 'https://paho.org/fhir/esavi/ConceptMap/SexOptionSetToAdminGender', "code") as sexOptionSetCode,
+             c('http://hl7.org/fhir/administrative-gender', sexOptionSetCode) as adminGenderCoding
+             then answerCoding(adminGenderCoding, patientGenderItem) "patientGender";
+     } "patientGender";
+
+     trackedEntity.enrollments as e -> ('NI0QRzJvQ0k') as dateOfBirthId then {
+         e where (first().attributes.where(attribute = dateOfBirthId).exists()) ->
+             item.item = create('BackboneElement') as patientDateOfBirthItem,
+             patientDateOfBirthItem.linkId = 'fechaNacimiento',
+             evaluate(e, e.first().attributes.where(attribute = dateOfBirthId).value) as v
+             then answerString(v, patientDateOfBirthItem) "patientDateOfBirth";
+     } "patientDateOfBirth";
+}
+
+group medicalBackgroundItem(source trackedEntity : TrackedEntityLogicalModel, target item : BackboneElement) {
+    trackedEntity.enrollments first as e ->
+        item.item = create('BackboneElement') as antecedentesEnfermedadesPreviasItem
+        then {
+            e -> ('qefbRP79xOR') as medicalHistoryId then enfPreviaAnswers(medicalHistoryId, e, antecedentesEnfermedadesPreviasItem) "qefbRP79xOR";
+            e -> ('AFZZf15RB9H') as medicalHistoryId then enfPreviaAnswers(medicalHistoryId, e, antecedentesEnfermedadesPreviasItem) "AFZZf15RB9H";
+            e -> ('IHAuvjbCaiq') as medicalHistoryId then enfPreviaAnswers(medicalHistoryId, e, antecedentesEnfermedadesPreviasItem) "IHAuvjbCaiq";
+            e -> ('q5gX7VOf0LI') as medicalHistoryId then enfPreviaAnswers(medicalHistoryId, e, antecedentesEnfermedadesPreviasItem) "q5gX7VOf0LI";
+            e -> ('j6J8gLoFePq') as medicalHistoryId then enfPreviaAnswers(medicalHistoryId, e, antecedentesEnfermedadesPreviasItem) "j6J8gLoFePq";
+            e -> ('Fm78gKjGygn') as medicalHistoryId then enfPreviaAnswers(medicalHistoryId, e, antecedentesEnfermedadesPreviasItem) "Fm78gKjGygn";
+            e -> ('ZKn2LDznlHd') as medicalHistoryId then enfPreviaAnswers(medicalHistoryId, e, antecedentesEnfermedadesPreviasItem) "ZKn2LDznlHd";
+            e -> ('FUxdYjcINIh') as medicalHistoryId then enfPreviaAnswers(medicalHistoryId, e, antecedentesEnfermedadesPreviasItem) "FUxdYjcINIh";
+            e -> ('j9yee5ZTdyE') as medicalHistoryId then enfPreviaAnswers(medicalHistoryId, e, antecedentesEnfermedadesPreviasItem) "j9yee5ZTdyE";
+            trackedEntity -> antecedentesEnfermedadesPreviasItem.linkId = evaluate(antecedentesEnfermedadesPreviasItem, iif(first().item.exists(), 'antecedentesEnfermedadesPrevias')) "linkId";
+        } "antecedentesEnfermedadesPrevias";
+
+    trackedEntity.enrollments first as e ->
+        item.item = create('BackboneElement') as antecedentesEventosAdversosItem
+        then {
+            e -> ('IdCrdz34ZBK') as eventoSimilarId, ('antecedentesAdvSimilar') as linkId then respuestaSimpleItem(eventoSimilarId, linkId, e, antecedentesEventosAdversosItem) "eventoSimilar";
+            e -> ('rgVs3pWqzx2') as alergiaMedicamentosId, ('alergiaMedicamentos') as linkId then respuestaSimpleItem(alergiaMedicamentosId, linkId, e, antecedentesEventosAdversosItem) "alergiaMedicamentos";
+            e -> ('CywpFDbxPqH') as alergiaVacunasId, ('alergiaVacunas') as linkId then respuestaSimpleItem(alergiaVacunasId, linkId, e, antecedentesEventosAdversosItem) "alergiaVacunas";
+            trackedEntity -> antecedentesEventosAdversosItem.linkId = evaluate(antecedentesEventosAdversosItem, iif(first().item.exists(), 'antecedentesEventosAdversos')) "linkId";
+        } "antecedentesEventosAdversos";
+
+    trackedEntity.enrollments first as e ->
+        item.item = create('BackboneElement') as antecedentesSarsCov2Item
+        then {
+            e -> ('XBU8oloqd7i') as antecedenteCovidId, ('diagnosticoprevioSarsCov2') as linkId then respuestaSimpleItem(antecedenteCovidId, linkId, e, antecedentesSarsCov2Item) "antecedenteCovid";
+            trackedEntity -> antecedentesSarsCov2Item.linkId = evaluate(antecedentesSarsCov2Item, iif(first().item.exists(), 'antecedentesSarsCov2')) "linkId";
+        } "antecedentesSarsCov2";
+
+    trackedEntity.enrollments first as e ->
+        item.item = create('BackboneElement') as pacienteEmbarazadaItem
+        then {
+            e -> ('U19JzF3LjsS') as embarazadaEnLaVacunacionId, ('embarazadaMomentoVacuna') as linkId then respuestaSimpleItem(embarazadaEnLaVacunacionId, linkId, e, pacienteEmbarazadaItem) "embarazadaEnLaVacunacion";
+            e -> ('ZzoWAqln5xc') as embarazadaAlInicioId, ('embarazadaMomentoESAVI') as linkId then respuestaSimpleItem(embarazadaAlInicioId, linkId, e, pacienteEmbarazadaItem) "embarazadaAlInicio";
+            e -> ('oCKpt0i7VeZ') as fechaUltimaMenstruacionId, ('fechaUltimaMenstruacion') as linkId then dateItem(fechaUltimaMenstruacionId, linkId, e, pacienteEmbarazadaItem) "fechaUltimaMenstruacion";
+            e -> ('mfGQRlcG7cc') as fechaProbableDePartoId, ('fechaProbableParto') as linkId then dateItem(fechaProbableDePartoId, linkId, e, pacienteEmbarazadaItem) "fechaProbableDeParto";
+            e -> ('Nl96399itF0') as seguimientoGestanteId, ('monitoreoPosteriorVacuna') as linkId then booleanItem(seguimientoGestanteId, linkId, e, pacienteEmbarazadaItem) "seguimientoGestante";
+            trackedEntity -> pacienteEmbarazadaItem.linkId = evaluate(pacienteEmbarazadaItem, iif(first().item.exists(), 'pacienteEmbarazada')) "linkId";
+        } "pacienteEmbarazada";
+
+    trackedEntity -> item.linkId = evaluate(item, iif(item.exists(), 'antecedentesMedicos')) "linkId";
+}
+
+group booleanItem(source dataElementId : string, source linkId : string, source enrollment : Enrollment, target item : BackboneElement) {
+    enrollment where (repeat(events).repeat(dataValues).where(dataElement = dataElementId).exists()) ->
+        item.item = create('BackboneElement') as itemInside,
+        itemInside.linkId = linkId,
+        evaluate(enrollment, enrollment.repeat(events).repeat(dataValues).where(dataElement = dataElementId).first().value) as v,
+        translate(v, 'https://paho.org/fhir/esavi/ConceptMap/MonitoreoPostVacunaValueTypeToRespuestaSiNoNosabeCS', "code") as code
+        then respuestaSimpleAnswer(code, itemInside) "answer";
+}
+
+group dateItem(source dataElementId : string, source linkId : string, source enrollment : Enrollment, target item : BackboneElement) {
+    enrollment where (repeat(events).repeat(dataValues).where(dataElement = dataElementId).exists()) ->
+        item.item = create('BackboneElement') as itemInside,
+        itemInside.linkId = linkId,
+        evaluate(enrollment, enrollment.repeat(events).repeat(dataValues).where(dataElement = dataElementId).first().value) as v
+        then answerDate(v, itemInside) "answer";
+}
+
+group respuestaSimpleItem(source dataElementId : string, source linkId : string, source enrollment : Enrollment, target item : BackboneElement) {
+    enrollment where (repeat(events).repeat(dataValues).where(dataElement = dataElementId).exists()) ->
+        item.item = create('BackboneElement') as itemInside,
+        itemInside.linkId = linkId,
+        evaluate(enrollment, enrollment.repeat(events).repeat(dataValues).where(dataElement = dataElementId).first().value) as v
+        then respuestaSimpleAnswer(v, itemInside) "answer";
+}
+
+group respuestaSimpleAnswer(source value : string, target item : BackboneElement) {
+    value -> c('https://paho.org/fhir/esavi/CodeSystem/RespuestaSiNoNosabeCS', value) as respuestaSiNoNosabeCoding
+             then answerCoding(respuestaSiNoNosabeCoding, item) "answer";
+}
+
+group enfPreviaAnswers(source medicalHistoryId : string, source enrollment : Enrollment, target item : BackboneElement) {
+    enrollment where (repeat(events).repeat(dataValues).where(dataElement = medicalHistoryId).exists()) ->
+        item.item = create('BackboneElement') as descripcionEnfPreviaItem,
+        descripcionEnfPreviaItem.linkId = 'descripcionEnfPrevia',
+        item.item = create('BackboneElement') as codigoMedDRAEnfPreviaItem,
+        codigoMedDRAEnfPreviaItem.linkId = 'codigoMedDRAEnfPrevia',
+        evaluate(enrollment, enrollment.repeat(events).repeat(dataValues).where(dataElement = medicalHistoryId).first().value) as v,
+        c('https://paho.org/fhir/esavi/CodeSystem/MedDRACS', v) as medDracsCoding
+        then {
+            enrollment then answerString(v, descripcionEnfPreviaItem) "descripcionEnfPrevia";
+            enrollment then answerCoding(medDracsCoding, codigoMedDRAEnfPreviaItem) "codigoMedDRAEnfPrevia";
+        } "enfPrevia";
+}
+
+group pharmaceuticalBackgroundItem(source trackedEntity : TrackedEntityLogicalModel, target item : BackboneElement) {
+    // TODO
+    trackedEntity -> item "todo";
+}
+
+group esaviRegistrationItem(source trackedEntity : TrackedEntityLogicalModel, target item : BackboneElement) {
+    // TODO
+    trackedEntity -> item "todo";
+}
